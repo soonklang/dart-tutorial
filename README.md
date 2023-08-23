@@ -1,7 +1,7 @@
 # Dart Programming Tutorial 
 
 เอกสารประกอบการเรียนรู้ภาษา Dart เบื้องต้น
-อ้างอิงจากเว็บ https://dart-tutorial.com/ เป็นหลัก
+อ้างอิงหัวข้อจากเว็บ https://dart-tutorial.com/ 
 
 ## List of contents
 

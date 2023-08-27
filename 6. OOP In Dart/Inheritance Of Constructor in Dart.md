@@ -47,3 +47,57 @@ MacBook constructor</code>
     - ในส่วน "main" เราสร้างอ็อบเจ็กต์ของคลาส "MacBook" ด้วย __var macbook = MacBook();__
     - เมื่อสร้างอ็อบเจ็กต์จากคลาส "MacBook" ตัวที่สร้างจะทำการเรียกคอนสตรักเตอร์ของทั้ง "MacBook" และ "Laptop"
     - ผลลัพธ์ที่แสดงจะเป็นตามลำดับของการเรียกคอนสตรักเตอร์โดยเริ่มจาก "Laptop constructor" และตามด้วย "MacBook constructor"
+
+#### `ตัวอย่างที่ 2` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์ใน Dart
+>ในตัวอย่างที่2 มีคลาสที่ชื่อว่า "Laptop" มีคอนสตรักเตอร์ที่รับพารามิเตอร์ และมีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดจากคลาส "Laptop" คลาส "MacBook" มีคอนสตรักเตอร์ที่รับพารามิเตอร์ของตัวเองด้วยเช่นกัน
+
+```dart
+class Laptop {
+  // Constructor
+  Laptop(String name, String color) {
+    print("Laptop constructor");
+    print("Name: $name");
+    print("Color: $color");
+  }
+}
+
+class MacBook extends Laptop {
+  // Constructor
+  MacBook(String name, String color) : super(name, color) {
+    print("MacBook constructor");
+  }
+}
+
+void main() {
+  var macbook = MacBook("MacBook Pro", "Silver");
+}
+```
+<details>
+<summary><strong>แสดงผลลัพธ์</strong></summary>
+<pre>
+<code>Laptop constructor
+Name: MacBook Pro
+Color: Silver
+MacBook constructor</code>
+</pre>
+</details>
+
+##### `คำอธิบายตัวอย่างที่2` การสร้างคลาส "Laptop" และคลาส "MacBook" ในภาษา Dart โดยทั้งสองคลาสนี้มีคอนสตรักเตอร์ที่รับพารามิเตอร์ และแสดงผลลัพธ์เมื่อมีการสร้างอ็อบเจ็กต์
+1. `class Laptop`:
+   - คลาส "Laptop" มีคอนสตรักเตอร์ที่รับพารามิเตอร์ "name" และ "color"
+   - ในส่วนของคอนสตรักเตอร์ของ "Laptop" มีคำสั่ง `print` เพื่อแสดงข้อความ 
+     "Laptop constructor", ชื่อ "Name: [name]" และสี "Color: [color]" 
+      โดยแทนค่า [name] และ [color] ด้วยค่าจริงที่รับเข้ามาในคอนสตรักเตอร์
+2. `class MacBook extends Laptop`:
+- คลาส "MacBook" สืบทอดมาจาก "Laptop" และมีคอนสตรักเตอร์ที่รับพารามิเตอร์ "name" และ    
+  "color" เหมือนกับคลาส “Laptop”
+   - ในส่วนของคอนสตรักเตอร์ของ "MacBook" มีคำสั่ง `super(name, color);` 
+     เพื่อเรียกใช้คอนสตรักเตอร์ของคลาสแม่ ("Laptop") โดยส่งพารามิเตอร์ "name" และ "color" 
+     เพื่อกำหนดค่าในคลาสแม่ ("Laptop ")
+3. `void main()`:
+   - ในส่วน "main" เราสร้างอ็อบเจ็กต์ของคลาส "MacBook" ด้วย 
+                  `var macbook = MacBook("MacBook Pro", "Silver");`
+   - เมื่อสร้างอ็อบเจ็กต์จากคลาส "MacBook" ตัวที่สร้างจะทำการเรียกคอนสตรักเตอร์ของทั้ง 
+                 "MacBook" และ "Laptop" และแสดงผลลัพธ์การสร้างอ็อบเจ็กต์ที่ประกอบด้วยข้อความต่าง ๆ 
+                 ตามที่ระบุในคอนสตรักเตอร์ของคลาส "Laptop" และ "MacBook"
+

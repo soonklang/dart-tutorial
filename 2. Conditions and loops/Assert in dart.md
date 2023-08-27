@@ -83,7 +83,10 @@ int main(){
 
 **Java : Syntax assert booleanExpression; and assert booleanExpression: expression;**
 
->String ที่แทนข้อความแสดงรายละเอียดของความผิดพลาด
+expression: String ที่แทนข้อความแสดงรายละเอียดของความผิดพลาด
+ใช้ได้เฉพาะรุ่น 1.4 เป็นต้นไป
+ >javac -source 1.4 Test.java
+ >java -ea Test
 
 ```java
 public class Main{

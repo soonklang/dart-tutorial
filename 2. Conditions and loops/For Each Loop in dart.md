@@ -34,6 +34,15 @@ numbers.forEach((number) {
   print(number);
 });
 ```
+<details open>
+<summary><b>output</b></summary>
+1<br>
+2<br>
+3<br>
+4<br>
+5
+</details>
+
 2.การประมวลผลทั้งหมดใน Collection: ถ้าคุณมี Collection อื่น ๆ เช่น Set, Map, หรือ Iterable อื่น ๆ การใช้ for each loop จะช่วยในการประมวลผลทั้งหมดหรือดำเนินการกับสมาชิกทั้งหมดใน Collection นั้น ๆ.
 ```dart
 Set<String> names = {'Alice', 'Bob', 'Charlie'};
@@ -42,7 +51,12 @@ names.forEach((name) {
   print("Hello, $name!");
 });
 ```
-
+<details open>
+<summary><b>output</b></summary>
+Hello, Alice!<br>
+Hello, Bob!<br>
+Hello, Charlie!
+</details>
 3.การแปลงและปรับแต่งข้อมูล: for each loop สามารถใช้ในการแปลงหรือปรับแต่งข้อมูลของแต่ละสมาชิก โดยการปรับเปลี่ยนค่าของสมาชิกแต่ละตัวให้เข้ากับการประมวลผลที่ต้องการ.
 ```dart
 List<int> originalList = [1, 2, 3, 4, 5];

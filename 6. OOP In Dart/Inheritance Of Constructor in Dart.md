@@ -30,7 +30,9 @@ void main() {
 <details>
 <summary><strong>แสดงผลลัพธ์</strong></summary>
 <pre>
+```
 Laptop constructor
 MacBook constructor
+```
 </pre>
 </details>

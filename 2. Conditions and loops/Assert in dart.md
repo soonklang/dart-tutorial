@@ -41,7 +41,7 @@ void main(){
   int x = 20;
   int y = 10;
   assert(x>y, "x should be greater then y");
-print("Program continues after then assert");
+ print("Program continues after then assert");
 }
 ```
 
@@ -52,12 +52,27 @@ print("Program continues after then assert");
   <pre><code>Program continues after then assert</code></pre>
 </details>
 
-### หมายเหตุ
+### Note
 
 **condition:** ค่าที่ต้องเป็นจริงเพื่อให้โปรแกรมทำงานต่อไป ถ้าเงื่อนไขเป็นเท็จจะหยุดทำงาน
 
 **message:** ข้อความที่สามารถระบุได้ เพื่ออธิบายเงื่อนไขที่ถูกตรวจสอบ ถ้าเงื่อนไขเป็นเท็จจึงถูกแสดง
 
+## Example: Assert in C,Java and Python
+
+**C : Syntax assert(int expression)**
+
+```c
+#include<stdio.h>
+#include<assert.h>
+int main(){
+ int x = 20;
+ int y = 10;
+ assert(x>y);
+printf("Program continues after then assert\n");
+return 0;
+}
+```
 
 
 

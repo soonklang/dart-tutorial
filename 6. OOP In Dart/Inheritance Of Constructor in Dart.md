@@ -26,3 +26,10 @@ void main() {
   var macbook = MacBook();
 }
 ```
+<details>
+<summary>แสดงผลลัพธ์</summary>
+
+นี่คือเนื้อหาที่จะขยายเมื่อคลิก
+สามารถเพิ่มเนื้อหาเพิ่มเติมได้ที่นี่
+
+</details>

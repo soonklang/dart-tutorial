@@ -29,5 +29,4 @@ void main() {
 ```
 <details>
 <summary>แสดงผลลัพธ์</summary>
-
 </details>

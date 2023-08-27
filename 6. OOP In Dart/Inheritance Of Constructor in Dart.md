@@ -36,14 +36,14 @@ MacBook constructor</code>
 </details>
 
 ##### `คำอธิบายตัวอย่างที่1` การสร้างคลาส "Laptop" และคลาส "MacBook" ในภาษา Dart โดยทั้งสองคลาสนี้มีคอนสตรักเตอร์ของตัวเอง
-**1. class Laptop**
+1. `class Laptop`
    - มีคอนสตรักเตอร์ที่ไม่รับพารามิเตอร์ และในส่วนของคอนสตรักเตอร์มีคำสั่ง `print("Laptop constructor");`
    - ซึ่งจะแสดงข้อความ "Laptop constructor" เมื่อมีการสร้างอ็อบเจ็กต์จากคลาส Laptop
-**2. `class MacBook extends Laptop`**
+2. `class MacBook extends Laptop`**
    - คลาส "MacBook" สืบทอดมาจาก "Laptop" ซึ่งมีคอนสตรักเตอร์ของตัวเองอยู่แล้ว
    - คอนสตรักเตอร์ของ "MacBook" ไม่รับพารามิเตอร์ และมีคำสั่ง `print("MacBook constructor");`ซึ่งจะแสดงข้อความว่า
     "MacBook constructor" เมื่อมีการสร้างอ็อบเจ็กต์จากคลาส "MacBook"
-**3. `void main()`**
+3. `void main()`
    - ในส่วน "main" เราสร้างอ็อบเจ็กต์ของคลาส "MacBook" ด้วย `var macbook = MacBook();`
    - เมื่อสร้างอ็อบเจ็กต์จากคลาส "MacBook" ตัวที่สร้างจะทำการเรียกคอนสตรักเตอร์ของทั้ง "MacBook" และ "Laptop"
    - ผลลัพธ์ที่แสดงใน Output จะเป็นตามลำดับของการเรียกคอนสตรักเตอร์ เริ่มจาก "Laptop constructor" 

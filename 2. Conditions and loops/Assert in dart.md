@@ -12,7 +12,7 @@
   }
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง จึงไม่แสดงอะไรออกมา
+>จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
 
 <details>
   <summary><strong>Output</strong></summary>
@@ -29,9 +29,46 @@ void main(){
 }
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นเท็จ จึงแสดงข้อความ Uncaught Error: Assertion failed: "x should be greater then y"
+>จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นเท็จ
 
 <details>
   <summary><strong>Output1</strong></summary>
   <pre><code>Uncaught Error: Assertion failed: "x should be greater then y"</code></pre>
 </details>
+
+```dart
+void main(){
+  int x = 20;
+  int y = 10;
+  assert(x>y, "x should be greater then y");
+print("Program continues after then assert");
+}
+```
+
+>จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
+
+<details>
+  <summary><strong>Output1</strong></summary>
+  <pre><code>Program continues after then assert</code></pre>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

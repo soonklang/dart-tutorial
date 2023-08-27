@@ -29,7 +29,7 @@ void main() {
 
 <details>
 <summary>แสดงผลลัพธ์</summary>
-```dart
+```
 Laptop constructor
 MacBook constructor
 ```

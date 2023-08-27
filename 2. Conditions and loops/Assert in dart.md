@@ -8,11 +8,11 @@
   void main(){
     int x = 20;
     int y = 10;
-    assert(x>y);
+    assert(x > y);
   }
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
+>จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
 <details>
   <summary><strong>Output</strong></summary>
@@ -25,11 +25,11 @@
 void main(){
   int x = 5;
   int y = 10;
-  assert(x>y, "x should be greater than y");
+  assert(x > y, "x should be greater than y");
 }
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นเท็จ
+>จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นเท็จ
 
 <details>
   <summary><strong>Output1</strong></summary>
@@ -40,19 +40,19 @@ void main(){
 void main(){
   int x = 20;
   int y = 10;
-  assert(x>y, "x should be greater then y");
+  assert(x > y, "x should be greater then y");
  print("Program continues after than assert");
 }
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
+>จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
 <details>
   <summary><strong>Output2</strong></summary>
   <pre><code>Program continues after than assert</code></pre>
 </details>
 
-### < Note >
+### < Note1 >
 
 **condition:** ค่าที่ต้องเป็นจริงเพื่อให้โปรแกรมทำงานต่อไป ถ้าเงื่อนไขเป็นเท็จจะหยุดทำงาน
 
@@ -68,13 +68,13 @@ void main(){
 int main(){
     int x = 20;
     int y = 10;
-    assert(x>y);
+    assert(x > y);
     printf("Program continues after than assert\n");
     return 0;
 }
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
+>จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
 <details>
   <summary><strong>Output</strong></summary>
@@ -89,20 +89,20 @@ int main(){
 
  >java -ea Test
 
-**ใช้ได้เฉพาะรุ่น 1.4 เป็นต้นไป**
+*ใช้ได้เฉพาะรุ่น 1.4 เป็นต้นไป*
 
 ```java
 public class Main{
   public static void main(String[] args){
     int x = 20;
     int y = 10;
-    assert x>y : "x should be greater than y";
+    assert x > y : "x should be greater than y";
     System.out.println("Program continues after than assert");
  }
 }
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
+>จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
 <details>
   <summary><strong>Output</strong></summary>
@@ -114,16 +114,19 @@ public class Main{
 ```java
 x = 20
 y = 10
-assert x>y, "x should be greater than y"
+assert x > y, "x should be greater than y"
 print("Program continues after than assert")
 ```
 
->จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
+>จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>Program continues after than assert</code></pre>
 </details>
+
+### < Note2 >
+
 
 
 

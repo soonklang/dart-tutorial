@@ -25,7 +25,7 @@
 void main(){
   int x = 5;
   int y = 10;
-  assert(x>y, "x should be greater then y");
+  assert(x>y, "x should be greater than y");
 }
 ```
 
@@ -41,7 +41,7 @@ void main(){
   int x = 20;
   int y = 10;
   assert(x>y, "x should be greater then y");
- print("Program continues after then assert");
+ print("Program continues after than assert");
 }
 ```
 
@@ -49,7 +49,7 @@ void main(){
 
 <details>
   <summary><strong>Output2</strong></summary>
-  <pre><code>Program continues after then assert</code></pre>
+  <pre><code>Program continues after than assert</code></pre>
 </details>
 
 ### < Note >
@@ -60,7 +60,7 @@ void main(){
 
 ## Example: Assert in C,Java and Python
 
-**C : Syntax assert(int expression)**
+**C : Syntax assert(int expression);**
 
 ```c
 #include<stdio.h>
@@ -69,7 +69,7 @@ int main(){
     int x = 20;
     int y = 10;
     assert(x>y);
-    printf("Program continues after then assert\n");
+    printf("Program continues after than assert\n");
     return 0;
 }
 ```
@@ -78,13 +78,30 @@ int main(){
 
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Program continues after then assert</code></pre>
+  <pre><code>Program continues after than assert</code></pre>
 </details>
 
+**Java : Syntax assert booleanExpression; and assert booleanExpression: expression;**
 
+>String ที่แทนข้อความแสดงรายละเอียดของความผิดพลาด
 
+```java
+public class Main{
+  public static void main(String[] args){
+    int x = 20;
+    int y = 10;
+    assert x>y : "x should be greater than y";
+    System.out.println("Program continues after than assert");
+ }
+}
+```
 
+>จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
 
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Program continues after than assert</code></pre>
+</details>
 
 
 

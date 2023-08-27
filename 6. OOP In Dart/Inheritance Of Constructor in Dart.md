@@ -29,8 +29,5 @@ void main() {
 ```
 <details>
 <summary>แสดงผลลัพธ์</summary>
-```
-Laptop constructor
-MacBook constructor
-```
+
 </details>

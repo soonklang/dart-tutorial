@@ -29,8 +29,9 @@ void main() {
 
 <details>
 <summary>แสดงผลลัพธ์</summary>
+</details>
+
 ```
 Laptop constructor
 MacBook constructor
 ```
-</details>

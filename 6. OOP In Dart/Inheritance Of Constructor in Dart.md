@@ -235,7 +235,8 @@ MacBook constructor</code>
     - มี constructor แบบ default ซึ่งจะแสดงข้อความว่า "Laptop constructor" เมื่อถูกเรียก 
     - และมี named constructor ที่ชื่อว่า __named__ ซึ่งจะแสดงข้อความว่า "Laptop named constructor" เมื่อถูกเรียกใช้งาน
 2. `class MacBook extends Laptop`
-    - คลาส "MacBook" ที่สืบทอดคุณสมบัติจากคลาส "Laptop" และมี constructor ของตัวเองซึ่งจะแสดงข้อความว่า "MacBook constructor" 
+    - คลาส "MacBook" ที่สืบทอดคุณสมบัติจากคลาส "Laptop" และมี constructor ของตัวเองซึ่งจะแสดงข้อความว่า
+      "MacBook constructor" 
     - และมีการใช้ constructor แบบ super กับ named constructor __super.named()__ เพื่อเรียก named constructor ของคลาสแม่(Laptop) 
 3. `void main()`
     - สร้างอ็อบเจ็กต์ของคลาส "MacBook" ด้วย __var macbook = MacBook();__

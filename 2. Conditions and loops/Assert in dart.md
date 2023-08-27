@@ -11,3 +11,8 @@
     assert(x>y);
   }
 ```
+
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Uncaught Error: Assertion failed</code></pre>
+</details>

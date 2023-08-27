@@ -96,8 +96,102 @@ MacBook constructor</code>
      ตามที่ระบุในคอนสตรักเตอร์ของคลาส "Laptop" และ "MacBook"
 
 #### `ตัวอย่างที่ 3` การสืบทอดคอนสตรักเตอร์แบบที่ส่งค่าพารามิเตอร์ที่รับมาในคลาสลูกไปต่อให้คอนสตรักเตอร์ของคลาสแม่ เพื่อกำหนดค่าในคลาสแม่
->ในตัวอย่างที่3
+>ในตัวอย่างที่3 มีคลาสที่ชื่อว่า "Person" ที่มีคุณสมบัติของชื่อและอายุ และยังมีคลาสอีกอันชื่อ "Student" ที่สืบทอดมาจากคลาส "Person" คลาส "Student" มีคุณสมบัติเพิ่มเติมอย่าง "rollNumber"
+```dart
+class Person {
+  String name;
+  int age;
+
+  // Constructor
+  Person(this.name, this.age);
+}
+
+class Student extends Person {
+  int rollNumber;
+
+  // Constructor
+  Student(String name, int age, this.rollNumber) : super(name, age);
+}
+
+void main() {
+  var student = Student("John", 20, 1);
+  print("Student name: ${student.name}");
+  print("Student age: ${student.age}");
+  print("Student roll number: ${student.rollNumber}");
+}
+```
+<details>
+<summary><strong>แสดงผลลัพธ์</strong></summary>
+<pre>
+<code>Student name: John
+Student age: 20
+Student roll number: 1</code>
+</pre>
+</details>
+
 #### `ตัวอย่างที่ 4` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์แบบชื่อ
->ในตัวอย่างที่4
+>ในตัวอย่างที่4 มีคลาสที่ชื่อว่า "Laptop" ที่มีคอนสตรักเตอร์ที่มีพารามิเตอร์แบบชื่อ และยังมีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดมาจากคลาส "Laptop" คลาส "MacBook" มีคอนสตรักเตอร์ที่มีพารามิเตอร์แบบชื่อด้วย
+```dart
+class Laptop {
+  // Constructor
+  Laptop({String name = '', String color=''}) {
+    print("Laptop constructor");
+    print("Name: $name");
+    print("Color: $color");
+  }
+}
+
+class MacBook extends Laptop {
+  // Constructor
+  MacBook({String name ='', String color =''}): super(name: name, color: color) {
+    print("MacBook constructor");
+  }
+}
+
+void main() {
+  var macbook = MacBook(name: "MacBook Pro", color: "Silver");
+}
+```
+<details>
+<summary><strong>แสดงผลลัพธ์</strong></summary>
+<pre>
+<code>Laptop constructor
+Name: MacBook Pro
+Color: Silver
+MacBook constructor</code>
+</pre>
+</details>
+
 #### `ตัวอย่างที่ 5` เรียกใช้งาน Named Constructor ของคลาสแม่
->ในตัวอย่างที่5
+>ในตัวอย่างที่5 มีคลาสชื่อ "Laptop" ที่มีคอนสตรักเตอร์เริ่มต้นและคอนสตรักเตอร์แบบชื่อหนึ่งตัว มีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดคุณสมบัติจากคลาส "Laptop" และมีคอนสตรักเตอร์ของตัวเองที่สามารถเรียกใช้งานคอนสตรักเตอร์แบบชื่อของคลาสแม่ได้โดยใช้คีย์เวิร์ด "super"
+```dart
+class Laptop {
+  // Default Constructor
+  Laptop() {
+    print("Laptop constructor");
+  }
+
+  // Named Constructor
+  Laptop.named() {
+    print("Laptop named constructor");
+  }
+}
+
+class MacBook extends Laptop {
+  // Constructor
+  MacBook() : super.named() {
+    print("MacBook constructor");
+  }
+}
+
+void main() {
+  var macbook = MacBook();
+}
+```
+<details>
+<summary><strong>แสดงผลลัพธ์</strong></summary>
+<pre>
+<code>Laptop named constructor
+MacBook constructor</code>
+</pre>
+</details>

@@ -237,8 +237,7 @@ MacBook constructor</code>
 2. `class MacBook extends Laptop`
     - คลาส "MacBook" ที่สืบทอดคุณสมบัติจากคลาส "Laptop" และมี constructor ของตัวเองซึ่ง 
       จะแสดงข้อความว่า "MacBook constructor" 
-    - และมีการใช้ constructor แบบ super กับ named constructor __super.named()__    
- เพื่อเรียก named constructor ของคลาสแม่(Laptop) 
+    - และมีการใช้ constructor แบบ super กับ named constructor __super.named()__ เพื่อเรียก named constructor ของคลาสแม่(Laptop) 
 3. `void main()`
     - สร้างอ็อบเจ็กต์ของคลาส "MacBook" ด้วย __var macbook = MacBook();__
     - เมื่อสร้างอ็อบเจ็กต์จากคลาส "MacBook" ตัวสร้างจะทำการเรียกคอนสตรักเตอร์ของทั้ง "MacBook" และ "Laptop" โดยจะเรียกคอนสตรักเตอร์จากคลาส "Laptop"

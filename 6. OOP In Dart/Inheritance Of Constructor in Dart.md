@@ -27,12 +27,10 @@ void main() {
   var macbook = MacBook();
 }
 ```
+<details>
+<summary>แสดงผลลัพธ์</summary>
 ```
 Laptop constructor
 MacBook constructor
 ```
-<details>
-<summary>แสดงผลลัพธ์</summary>
 </details>
-
-

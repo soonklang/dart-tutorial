@@ -29,4 +29,7 @@ void main() {
 ```
 <details>
 <summary>แสดงผลลัพธ์</summary>
+  ```
+  code here
+  ```
 </details>

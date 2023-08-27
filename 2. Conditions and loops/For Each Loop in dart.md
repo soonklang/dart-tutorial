@@ -36,11 +36,12 @@ numbers.forEach((number) {
 ```
 <details open>
 <summary><b>output</b></summary>
-1<br>
-2<br>
-3<br>
-4<br>
-5
+ <pre>
+1
+2
+3
+4
+5</pre>
 </details>
 
 2.การประมวลผลทั้งหมดใน Collection: ถ้าคุณมี Collection อื่น ๆ เช่น Set, Map, หรือ Iterable อื่น ๆ การใช้ for each loop จะช่วยในการประมวลผลทั้งหมดหรือดำเนินการกับสมาชิกทั้งหมดใน Collection นั้น ๆ.
@@ -53,10 +54,13 @@ names.forEach((name) {
 ```
 <details open>
 <summary><b>output</b></summary>
-Hello, Alice!<br>
-Hello, Bob!<br>
+ <pre>
+Hello, Alice!
+Hello, Bob!
 Hello, Charlie!
+</pre>
 </details>
+
 3.การแปลงและปรับแต่งข้อมูล: for each loop สามารถใช้ในการแปลงหรือปรับแต่งข้อมูลของแต่ละสมาชิก โดยการปรับเปลี่ยนค่าของสมาชิกแต่ละตัวให้เข้ากับการประมวลผลที่ต้องการ.
 ```dart
 List<int> originalList = [1, 2, 3, 4, 5];
@@ -66,8 +70,14 @@ originalList.forEach((number) {
   squaredList.add(number * number);
 });
 
-print(squaredList); // [1, 4, 9, 16, 25]
+print(squaredList);
 ```
+<details open>
+<summary><b>output</b></summary>
+ <pre>
+[1, 4, 9, 16, 25]
+</pre>
+</details>
 
 4.การค้นหาข้อมูล: คุณสามารถใช้ for each loop เพื่อค้นหาข้อมูลที่ตรงตามเงื่อนไขในคอลเลกชัน เช่นการค้นหาข้อมูลที่มีค่ามากกว่าหรือน้อยกว่าที่กำหนด.
 ```dart
@@ -80,6 +90,12 @@ numbers.forEach((number) {
   }
 });
 ```
+<details open>
+<summary><b>output</b></summary>
+ <pre>
+Found 30!
+</pre>
+</details>
 
 5.การเรียกใช้ฟังก์ชันบนสมาชิก: คุณสามารถเรียกใช้ฟังก์ชันบนแต่ละสมาชิกในคอลเลกชันโดยใช้ for each loop เพื่อดำเนินการหรือประมวลผลต่อสมาชิกที่แต่ละตัว.
 ```dart
@@ -89,6 +105,14 @@ fruits.forEach((fruit) {
   print(fruit.toUpperCase());
 });
 ```
+<details open>
+<summary><b>output</b></summary>
+ <pre>
+APPLE
+BANANA
+CHERRY
+</pre>
+</details>
 
 6.การประมวลผลลำดับของการกระทำ: การใช้ for each loop เพื่อทำลำดับของการกระทำหรือการดำเนินการตามลำดับ โดยจะดำเนินการกับแต่ละขั้นตอนในลูป.
 ```dart
@@ -98,4 +122,14 @@ actions.forEach((action) {
   print("Performing: $action");
 });
 ```
+<details open>
+<summary><b>output</b></summary>
+ <pre>
+Performing: Jump
+Performing: Run
+Performing: Swim
+Performing: Climb
+</pre>
+</details>
+
 การใช้งาน for each loop ช่วยให้โค้ดมีความอ่านง่าย ลดความซับซ้อน และเพิ่มความคล้ายคลึงกับภาษาธรรมชาติในการพูดคุยเกี่ยวกับแต่ละสมาชิกในคอลเลกชัน.

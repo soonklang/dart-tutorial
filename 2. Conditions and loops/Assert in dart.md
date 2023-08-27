@@ -58,7 +58,7 @@ void main(){
 
 **message:** ข้อความที่สามารถระบุได้ เพื่ออธิบายเงื่อนไขที่ถูกตรวจสอบ ถ้าเงื่อนไขเป็นเท็จจึงถูกแสดง
 
-## Example: Assert in C, Java and Python
+# Example: Assert in C, Java and Python
 
 ### C : Syntax assert(int expression);
 

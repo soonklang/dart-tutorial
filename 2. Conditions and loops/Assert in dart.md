@@ -60,7 +60,7 @@ void main(){
 
 ## Example: Assert in C,Java and Python
 
-**C : Syntax assert(int expression);**
+### C : Syntax assert(int expression);
 
 ```c
 #include<stdio.h>
@@ -81,7 +81,7 @@ int main(){
   <pre><code>Program continues after than assert</code></pre>
 </details>
 
-**Java : Syntax assert booleanExpression; and assert booleanExpression: expression;**
+### Java : Syntax assert booleanExpression; and assert booleanExpression: expression;
 
  >expression: String ที่แทนข้อความแสดงรายละเอียดของความผิดพลาด
 

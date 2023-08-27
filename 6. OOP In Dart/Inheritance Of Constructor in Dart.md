@@ -30,8 +30,7 @@ void main() {
 <details>
 <summary><strong>แสดงผลลัพธ์</strong></summary>
 <pre>
-  <code>Laptop constructor<br>
-        MacBook constructor
+  <code>Laptop constructor<br>MacBook constructor
   </code>
 </pre>
 </details>

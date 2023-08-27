@@ -28,8 +28,8 @@ void main() {
 ```
 <details>
 <summary>แสดงผลลัพธ์</summary>
-
-นี่คือเนื้อหาที่จะขยายเมื่อคลิก
-สามารถเพิ่มเนื้อหาเพิ่มเติมได้ที่นี่
-
+```dart
+Laptop constructor
+MacBook constructor
+```
 </details>

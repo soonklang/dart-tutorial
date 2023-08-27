@@ -22,11 +22,11 @@
 **2) assert(condition, "message");**
 
 ```dart
-  void main(){
-    int x = 5;
-    int y = 10;
-    assert(x>y, "x should be greater then y");
-  }
+void main(){
+  int x = 5;
+  int y = 10;
+  assert(x>y, "x should be greater then y");
+}
 ```
 
 >จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นเท็จ จึงแสดงข้อความ Uncaught Error: Assertion failed: "x should be greater then y"

@@ -7,6 +7,7 @@
 
 #### `ตัวอย่างที่ 1` การสืบทอดคอนสตรักเตอร์ใน Dart
 >ในตัวอย่างที่1 มีคลาสที่ชื่อว่า "Laptop" ซึ่งมีคอนสตรักเตอร์อยู่ และยังมีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดจากคลาส "Laptop" ซึ่งคลาส "MacBook" ก็มีคอนสตรักเตอร์ของตัวเองด้วยเช่นกัน
+
 ```dart
 class Laptop {
   // Constructor
@@ -26,12 +27,12 @@ void main() {
   var macbook = MacBook();
 }
 ```
-
-<details>
-<summary>แสดงผลลัพธ์</summary>
-</details>
-
 ```
 Laptop constructor
 MacBook constructor
 ```
+<details>
+<summary>แสดงผลลัพธ์</summary>
+</details>
+
+

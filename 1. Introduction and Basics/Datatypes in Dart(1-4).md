@@ -93,7 +93,7 @@ print("The Length of Types is $length");
    ## ภาษาJava 
  จำนวนชนิดของข้อมูลที่มากกว่า 
  - long, short int เป็นต้น
-   ## ภาษาPyhon
+## ภาษาPyhon
    มีการใช้จำนวนชนิดข้อมูลที่เยอะและหลากหลาย และแยกประเภทการใช้งานได้ชัดเจน
  - Text Type:	str
  - Numeric Types:int, float, complex

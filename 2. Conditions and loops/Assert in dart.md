@@ -85,10 +85,10 @@ int main(){
 
  >expression: String ที่แทนข้อความแสดงรายละเอียดของความผิดพลาด
 
-*ใช้ได้เฉพาะรุ่น 1.4 เป็นต้นไป*
  >javac -source 1.4 Test.java
 
  >java -ea Test
+*ใช้ได้เฉพาะรุ่น 1.4 เป็นต้นไป*
 
 ```java
 public class Main{

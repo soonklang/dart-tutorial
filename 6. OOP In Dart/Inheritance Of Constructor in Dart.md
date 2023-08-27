@@ -6,25 +6,23 @@
 การสืบทอด (Inheritance) ของตัวสร้าง (Constructor) ในภาษาโปรแกรม Dart คือกระบวนการที่ทำให้คอนสตรักเตอร์ของคลาสแม่ถูกส่งต่อให้คลาสลูกไปใช้งาน นั่นคือเราสามารถนำคอนสตรักเตอร์จากคลาสแม่มาใช้ในคลาสลูกได้ เปรียบเสมือนการนำโค้ดที่เคยเขียนไว้ในคลาสแม่มาใช้ซ้ำในคลาสลูก
 
 #### `ตัวอย่างที่ 1` การสืบทอดคอนสตรักเตอร์ใน Dart
->ในตัวอย่างที่1 มีคลาสที่ชื่อว่า "Laptop" ซึ่งมีคอนสตรักเตอร์อยู่ และยังมีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดจากคลาส "Laptop" และคลาส "MacBook" ก็มีคอนสตรักเตอร์ของตัวเองด้วย
+>ในตัวอย่างที่1 มีคลาสที่ชื่อว่า "Laptop" ซึ่งมีคอนสตรักเตอร์อยู่ และยังมีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดจากคลาส "Laptop" ซึ่งคลาส "MacBook" ก็มีคอนสตรักเตอร์ของตัวเองด้วยเช่นกัน
 ```dart
 class Laptop {
   // Constructor
-  Laptop(String name, String color) {
+  Laptop() {
     print("Laptop constructor");
-    print("Name: $name");
-    print("Color: $color");
   }
 }
 
 class MacBook extends Laptop {
   // Constructor
-  MacBook(String name, String color) : super(name, color) {
+  MacBook() {
     print("MacBook constructor");
   }
 }
 
 void main() {
-  var macbook = MacBook("MacBook Pro", "Silver");
+  var macbook = MacBook();
 }
 ```

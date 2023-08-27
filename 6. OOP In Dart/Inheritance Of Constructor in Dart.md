@@ -46,4 +46,4 @@ MacBook constructor</code>
 3. `void main()`
     - ในส่วน "main" เราสร้างอ็อบเจ็กต์ของคลาส "MacBook" ด้วย __var macbook = MacBook();__
     - เมื่อสร้างอ็อบเจ็กต์จากคลาส "MacBook" ตัวที่สร้างจะทำการเรียกคอนสตรักเตอร์ของทั้ง "MacBook" และ "Laptop"
-    - ผลลัพธ์ที่แสดงใน Output จะเป็นตามลำดับของการเรียกคอนสตรักเตอร์ เริ่มจาก "Laptop constructor" และตามด้วย "MacBook constructor"
+    - ผลลัพธ์ที่แสดงจะเป็นตามลำดับของการเรียกคอนสตรักเตอร์โดยเริ่มจาก "Laptop constructor" และตามด้วย "MacBook constructor"

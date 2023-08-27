@@ -52,7 +52,7 @@ void main(){
   <pre><code>Program continues after then assert</code></pre>
 </details>
 
-### <Note: >
+### < Note >
 
 **condition:** ค่าที่ต้องเป็นจริงเพื่อให้โปรแกรมทำงานต่อไป ถ้าเงื่อนไขเป็นเท็จจะหยุดทำงาน
 

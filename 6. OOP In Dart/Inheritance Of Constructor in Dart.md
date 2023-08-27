@@ -34,3 +34,9 @@ void main() {
 MacBook constructor</code>
 </pre>
 </details>
+
+>คำอธิบายตัวอย่างที่1 การสร้างคลาส "Laptop" และคลาส "MacBook" ในภาษา Dart โดยทั้งสองคลาสนี้มีคอนสตรักเตอร์ของตัวเอง
+1. `class Laptop`
+    >มีคอนสตรักเตอร์ที่ไม่รับพารามิเตอร์ และในส่วนของคอนสตรักเตอร์มีคำสั่ง `print("Laptop constructor");`
+     ซึ่งจะแสดงข้อความ "Laptop constructor" เมื่อมีการสร้างอ็อบเจ็กต์จากคลาสLaptop
+

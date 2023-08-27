@@ -31,10 +31,8 @@ void main() {
 <summary><strong>แสดงผลลัพธ์</strong></summary>
 <pre>
 <code>
-&#96;&#96;&#96;
 Laptop constructor
 MacBook constructor
-&#96;&#96;&#96;
 </code>
 </pre>
 </details>

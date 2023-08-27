@@ -74,7 +74,12 @@ int main(){
 }
 ```
 
+>จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
 
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Program continues after then assert</code></pre>
+</details>
 
 
 

@@ -26,6 +26,7 @@ void main() {
   var macbook = MacBook();
 }
 ```
+
 <details>
 <summary>แสดงผลลัพธ์</summary>
 ```dart

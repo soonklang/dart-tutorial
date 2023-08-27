@@ -195,3 +195,5 @@ void main() {
 MacBook constructor</code>
 </pre>
 </details>
+
+## เมื่อเปรียบเทียบการสืบทอด (inheritance) ของคอนสตรักเตอร์(constructor) ในภาษาโปรแกรม Dart กับภาษาโปรแกรมอื่น ๆ

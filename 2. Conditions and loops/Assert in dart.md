@@ -23,12 +23,15 @@
 
 ```dart
   void main(){
-    int x = 20;
+    int x = 5;
     int y = 10;
     assert(x>y, "x should be greater then y");
   }
 ```
 
+>จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นเท็จ แสดงข้อความ Uncaught Error: Assertion failed: "x should be greater then y"
 
-
-
+<details>
+  <summary><strong>Output1</strong></summary>
+  <pre><code>Uncaught Error: Assertion failed: "x should be greater then y"</code></pre>
+</details>

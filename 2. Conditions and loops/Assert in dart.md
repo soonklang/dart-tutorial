@@ -109,6 +109,21 @@ public class Main{
   <pre><code>Program continues after than assert</code></pre>
 </details>
 
+### Python : Syntax assert condition, "message"
+
+```java
+x = 20
+y = 10
+assert x>y, "x should be greater than y"
+print("Program continues after than assert")
+```
+
+>จากตัวอย่าง assert ตรวจสอบว่า x>y เป็นจริง
+
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Program continues after than assert</code></pre>
+</details>
 
 
 

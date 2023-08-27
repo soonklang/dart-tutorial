@@ -66,11 +66,11 @@ void main(){
 #include<stdio.h>
 #include<assert.h>
 int main(){
- int x = 20;
- int y = 10;
- assert(x>y);
- printf("Program continues after then assert\n");
- return 0;
+    int x = 20;
+    int y = 10;
+    assert(x>y);
+    printf("Program continues after then assert\n");
+    return 0;
 }
 ```
 

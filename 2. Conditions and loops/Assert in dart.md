@@ -12,6 +12,7 @@
   }
 ```
 
+>จากตัวอย่าง assert จะใช้ตรวจสอบว่า x>y เป็นจริง จึงไม่แสดงอะไรออกมา
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>Uncaught Error: Assertion failed</code></pre>

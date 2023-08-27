@@ -9,7 +9,7 @@
 
 ### Basics
   1. Introduction and Basics
-  2. [Conditions and Loops]
+  2. [Conditions and Loops](https://github.com/soonklang/dart-tutorial/main/6.%20Conditions%20and%20Loops/README.md)<br>
   3. Functions In Dart
   4. Collections In Dart
   5. File Handling In Dart

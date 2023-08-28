@@ -67,10 +67,20 @@ Today I choose Volvo.
 enum Colors { Green, Red, Blue, Yellow, Pink, Black, Rainbow }
 
 void main() {
- // Colors.values: It returns all the values of the enum.
+ // Colors.values: จะคืนค่าทั้งหมดที่อยู่ใน Enum(Colors).
   for (Colors color in Colors.values) {
     print(color);
   }
 }
 
+```
+Output  
+```
+Colors.Green
+Colors.Red
+Colors.Blue
+Colors.Yellow
+Colors.Pink
+Colors.Black
+Colors.Rainbow
 ```

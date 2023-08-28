@@ -296,3 +296,109 @@ Elon,0122112322
 
 
 - **Java**
+
+  ## Create a File
+
+  ในภาษา Java เราสามารถสร้างไฟล์ได้โดยการใช้เมธอด createNewFile() โดยเมธอดนี้จะ return ค่า boolean
+  
+  หากสามารถสร้างไฟล์ได้สำเร็จจะ return ค่า true คืนกลับมา
+  
+  แต่ถ้าหากมีไฟล์อยู่แล้วจะ reeturn ค่า false คืนกลับมา
+
+  ซึ่งเมธอดนี้อยู่ใน catch block ดังนั้นจะส่ง IOException กลับมาหากมีข้อผิดพลาดเกิดขึ้น
+
+  #### `ตัวอย่าง`
+  
+  ```java
+  import java.io.File;  // Import the File class
+  import java.io.IOException;  // Import the IOException class to handle errors
+
+  public class CreateFile {
+    public static void main(String[] args) {
+      try {
+        File myObj = new File("filename.txt");
+        if (myObj.createNewFile()) {
+          System.out.println("File created: " + myObj.getName());
+        } else {
+          System.out.println("File already exists.");
+        }
+      } catch (IOException e) {
+        System.out.println("An error occurred.");
+        e.printStackTrace();
+      }
+    }
+  }
+  ```
+
+  <details>
+  <summary><strong>Output</strong></summary>
+  <pre>
+  <code>File created: filename.txt</code>
+  </pre>
+  </details>
+
+  ถ้าหากต้องการสร้างไฟล์ใน directory เฉพาะ ให้ระบุ **path** ของไฟล์และใช้เครื่องหมาย **double backslashes** (สําหรับ Windows แต่ถ้าเป็น Mac หรือ Linux สามารถเขียน path เช่น: /Users/name/filename.txt ได้เลย)
+
+  #### `ตัวอย่าง`
+  
+  ```java
+  import java.io.File; 
+  import java.io.IOException;
+  
+  public class CreateFileDir {  
+    public static void main(String[] args) {  
+      try {  
+        File myObj = new File("C:\\Users\\MyName\\filename.txt");  
+        if (myObj.createNewFile()) {  
+          System.out.println("File created: " + myObj.getName());  
+          System.out.println("Absolute path: " + myObj.getAbsolutePath());  
+        } else {  
+          System.out.println("File already exists.");  
+        }  
+      } catch (IOException e) {
+        System.out.println("An error occurred.");
+        e.printStackTrace();  
+      }  
+    }  
+  }
+  ```
+
+  <details>
+  <summary><strong>Output</strong></summary>
+  <pre>
+  <code>File created: filename.txt
+  Absolute path: C:\Users\MyName\filename.txt</code>
+  </pre>
+  </details>
+
+  ## Write To a File
+
+  เราจะใช้คลาส **FileWriter** ร่วมกับเมธอด **write()** เพื่อเขียนข้อมูลบางส่วนในไฟล์ที่เราสร้างขึ้นในตัวอย่างด้านบน โดยเมื่อเขียนข้อมูลที่ต้องการใส่ลงในไฟล์เสร็จแล้วควรปิดท้ายด้วยเมธอด **close()**:
+
+  #### `ตัวอย่าง`
+  
+  ```java
+  import java.io.FileWriter;
+  import java.io.IOException;
+
+  public class WriteToFile {  
+    public static void main(String[] args) {  
+      try {  
+        FileWriter myWriter = new FileWriter("filename.txt");
+        myWriter.write("Files in Java might be tricky, but it is fun enough!");
+        myWriter.close();
+        System.out.println("Successfully wrote to the file.");
+      } catch (IOException e) {
+        System.out.println("An error occurred.");
+        e.printStackTrace();
+      } 
+    }  
+  } 
+  ```
+
+  <details>
+  <summary><strong>Output</strong></summary>
+  <pre>
+  <code>Successfully wrote to the file.</code>
+  </pre>
+  </details>

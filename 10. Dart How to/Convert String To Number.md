@@ -19,7 +19,7 @@ extension NumberParsing on String { //คราสที่ชื่อ NumberPa
 }
 
 void main() {
-  print('1'.parseInt());
+  print('1'.parseInt()); //เรียกใช้ฟังก์ชัน parseInt()
 }
 ```
 Output  

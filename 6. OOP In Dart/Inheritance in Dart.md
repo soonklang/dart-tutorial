@@ -140,8 +140,8 @@ Price: 20000
 1. Single Inheritance
    ใน inheritanceประเภทนี้ classจะสามารถทำการinheritanceจาก classเดียวเท่านั้น ใน Dart เราสามารถ extend ได้ครั้งละหนึ่ง class เท่านั้น
    
-   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/ee75e860-3d16-4fae-b44e-b0d200df8999)
-   
+   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/2006eac9-6526-4757-a9c4-0559fb066768)
+
   #### `Example 1 :` Single Inheritance In Dart
   ```dart
     class Car {
@@ -200,3 +200,14 @@ output
   JD
   20
 ```
+2. Multilevel Inheritance
+   
+   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/840d3601-c5f0-4fe1-9f3b-00866a95c2ef)
+
+3. Hierarchical Inheritance
+
+  ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/c85e6699-feb7-4be4-96e8-3d4de6edb8ed)
+
+4. Multiple Inheritance
+
+   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/dd87210d-7acb-4feb-84fc-3286f57c4b6f)

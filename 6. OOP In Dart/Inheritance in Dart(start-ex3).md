@@ -130,6 +130,9 @@ Price: 20000
   2.Multilevel Inheritance
   3.Hierarchical Inheritance
   4.Multiple Inheritance
+  
 แต่ในภาษา Java มี 5 ประเภท จะมีการเพิ่ม Hybrid Inheritance เข้ามา
+
 1 Single Inheritance
+
   ใน inheritanceประเภทนี้ classจะสามารถทำการinheritanceจาก classเดียวเท่านั้น ใน Dart เราสามารถ extend ได้ครั้งละหนึ่ง class เท่านั้น

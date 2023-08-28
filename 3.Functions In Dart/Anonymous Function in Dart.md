@@ -15,10 +15,14 @@
 ```python
 lambda arguments : expression
 ```
- ```java
+- Java
+```java
 (parameters) -> { body }  
-``
-
+```
+- C#
+```c#
+(input-parameters) => { <sequence-of-statements> }
+```
 ### Example : เขียนฟังก์ชันแบบธรรมดา
  ```dart
 int add(int x, int y) {
@@ -54,6 +58,7 @@ sum = lambda x,y:x+y
 print(sum(10,20))
 ```
 -Java
+```java
 public class Main {
     public static void main(String[] args) {
         Operation operation = new Operation() {
@@ -65,3 +70,4 @@ public class Main {
         System.out.println(operation.operate(20, 10));
     }
 }
+```

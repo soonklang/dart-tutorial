@@ -100,7 +100,8 @@ The entered num is 15.2
 # **Comparing user Input in Dart with Java python and c** #
 **User Input in python** <br>
 การรับข้อมูลจากผู้ใช้ (User Input) ในภาษา Python สามารถทำได้โดยใช้ฟังก์ชัน input() ซึ่งสามารถรับข้อมูลได้ทั้งตัวอักษรและตัวเลขได้ตามต้องการ
-ตัวอย่าง การใช้งาน input():
+ตัวอย่าง การใช้งาน input()
+
 **1.String User Input (แบบข้อความ)** <br>
 ```python
 name = input("กรุณากรอกชื่อของคุณ: ")
@@ -141,5 +142,31 @@ print(f"สวัสดีคุณ {name} คุณเกิดในปี {bi
 กรุณากรอกชื่อของคุณ : อิ่มบุญ
 กรุณาป้อนอายุของคุณ : 22
 สวัสดีคุณ อิ่มบุญ คุณเกิดในปี 2001
+</pre>
+</details>
+
+**3.Floating Point User Input (แบบทศนิยม)** <br>
+>ตัวอย่างการคำนวณหาพื้นที่สามเหลี่ยม
+```python
+base = float(input("ป้อนความยาวฐาน: "))
+height = float(input("ป้อนความสูง: "))
+
+area = 0.5 * base * height
+
+print(f"พื้นที่สามเหลี่ยมคือ {area:.2f}")
+```
+
+<details open>
+<summary><b>Input</b></summary>
+ <pre>
+อิ่มบุญ
+22
+</pre>
+</details>
+<summary><b>output</b></summary>
+ <pre>
+ป้อนความยาวฐาน: 10
+ป้อนความสูง: 5
+พื้นที่สามเหลี่ยมคือ 25.00
 </pre>
 </details>

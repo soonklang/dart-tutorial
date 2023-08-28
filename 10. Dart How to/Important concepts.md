@@ -13,7 +13,7 @@ Dart เวอร์ชัน 2.12 ขึ้นไปที่เปิดใช
     print(name);  
   }
 ```
-- Output
+-- Output
   
 ``` dart
 Error: Non-nullable variable 'name' must be assigned before it can be used.

@@ -182,7 +182,7 @@ void main() {
 
 
 
-### Access Modifiers 
+## Access Modifiers 
 คือการกำหนดระดับในการเข้าถึงของ คลาส แอตทริบิวต์ เมธอด โดยมีประโยชน์ในเรื่องของสิทธิในการเข้าใช้งาน และการซ้อนข้อมูล
 
 
@@ -213,6 +213,7 @@ void main() {
 ```dart
 Point(x=10,y=20)
 ```
+---
 
 #### Example : 2 พยายามเข้าถึง ฟิลด์ _x และ ฟิลด์ _y ที่เป็น private ในฟังก์ชัน main()
 
@@ -254,7 +255,7 @@ Point(x=100,y=200)
 #### Example : วิธีการป้องกันการเข้าถึงของฟิลด์ที่เป็น private
 
 > 1.  ให้สร้างไฟล์ใหม่ที่เรียกว่า point.dart และเพิ่ม class Point ให้กักับไฟล์
-  
+
 ```dart
 class Point {
   int _x = 0;
@@ -295,3 +296,143 @@ void main() {
   p1._y = 200;
 }
 ```
+
+### __เปรียบเทียบการเขียนในภาษาอื่นๆ__
+
+1. Java
+
+```java
+class Point {
+    private int x = 0; // กำหนดให้ x เป็น private
+    private int y = 0; // กำหนดให้ y เป็น private
+
+    Point(int x, int y) { // Constructor
+        this.x = x;
+        this.y = y;
+    }
+
+    void show() {
+        System.out.println("Point(x=" + x + ", y=" + y + ")");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Point p1 = new Point(10, 20);
+        p1.show();
+    }
+}
+```
+
+- Output
+  
+```java
+Point(x=10,y=20)
+```
+
+---
+2. C++
+
+```c++
+#include <iostream>
+
+class Point {
+private:
+    int x = 0; // กำหนดให้ x เป็น private
+    int y = 0; // กำหนดให้ y เป็น private
+
+public:
+    Point(int x, int y) { // Constructor
+        this->x = x;
+        this->y = y;
+    }
+
+    void show() {
+        std::cout << "Point(x=" << x << ", y=" << y << ")" << std::endl;
+    }
+};
+
+int main() {
+    Point p1(10, 20);
+    p1.show();
+
+    return 0;
+}
+```
+- Output
+
+```c++
+Point(x=10,y=20)
+```
+
+---
+3. Python
+
+```python
+class Point:
+    def __init__(self, x, y):  # Constructor
+        self.x = x
+        self.y = y
+
+    def show(self):
+        print(f"Point(x={self.x}, y={self.y})")
+
+def main():
+    p1 = Point(10, 20)
+    p1.show()
+
+if __name__ == "__main__":
+    main()
+```
+
+- Output
+
+```python
+Point(x=10,y=20)
+```
+
+
+> โดยตัวอย่างทั้งสามตัวนี้ แสดงให้เห็นว่าภาษา Java กับ C++ จะมีความคล้ายคลึงกันมาก
+> และจะมีคีย์เวิร์ด private แต่ในทางกลับกันภาษา Dart กับ Python นั้นจะไม่มีคีย์เวิร์ดแต่จะแทนด้วยเครื่องหมาย (_)
+
+## Error Handling
+เครื่องมือใน Dart สามารถรายงานปัญหาได้สองประเภทคือ คำเตือน (Warnings) และข้อผิดพลาด (errors)
+
+### 1. Warnings
+เป็นการบอกว่าโค้ดอาจไม่ทำงาน แต่ไม่ได้ขัดขวางการทำงานของโปรแกรม
+### 2. Errors
+ข้อผิดพลาดอาจเป็นได้ทั้ง ข้อผิดพลาดในการคอมไพล์เวลา (Compile-time error) หรือข้อผิดพลาดรันไทม์ (Runtime error)
+-  #### Compile-time error
+   ข้อผิดพลาดในการคอมไพล์เวลาทำให้โค้ดไม่สามารถรันได้เลย 
+-  #### Runtime error
+   ข้อผิดพลาดรันไทม์ส่งผลให้เกิดข้อยกเว้นในขณะการเรียกใช้โค้ด
+
+## Reference
+https://www.tutorialandexample.com/dart-important-concepts
+
+https://benzneststudios.com/blog/dart/hello-sound-null-safety-in-dart/
+
+https://dart.dev/language/variables#null-safety
+
+https://dart.dev/language/type-system
+
+https://dart.dev/language/type-system#type-inference
+
+https://www.youtube.com/watch?v=TF-TBsgIErY&list=PLjxrf2q8roU0Net_g1NT5_vOO3s_FR02J&t=124s
+
+https://www.geeksforgeeks.org/dart-generics/
+
+https://sanjibsinha.com/top-level-functions-in-dart/
+
+https://news.dartlang.org/2012/09/simplify-your-constructors-and-top.html
+
+https://www.darttutorial.org/dart-tutorial/dart-private-fields/
+
+https://www.geeksforgeeks.org/access-modifiers-java/
+
+https://www.geeksforgeeks.org/access-modifiers-in-c/
+
+https://www.geeksforgeeks.org/access-modifiers-in-python-public-private-and-protected/
+
+https://dart.dev/language/error-handling
+

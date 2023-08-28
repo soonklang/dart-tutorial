@@ -38,7 +38,7 @@ https://static.javatpoint.com/cpages/software/tc3.zip
 #### 1 Download Apache NetBeans
 https://netbeans.apache.org/download/index.html
 #### 2 เลือก Versions ที่ต้องการ Download
-#### 3 เรียกใช้โปรแกรมเพื่อติดตั้ง Python
+#### 3 เรียกใช้โปรแกรมเพื่อติดตั้ง Apache NetBeans
 #### 4 ทดลองเรียกใช้โปรแกรม
 
 ## การติดตั้ง Python on Windows

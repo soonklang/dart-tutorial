@@ -67,7 +67,7 @@ The eagle has a sharp vision
         
 
   
-ต่อไปนี้เราจะลองเขียนScenarioเดี๋ยวกันนี้อยู่ในบริบทภาษาอื่นเช่นภาษา Python , Java , และ C++  
+ต่อไปนี้เราจะลองเขียนScenarioเดียวกันนี้อยู่ในบริบทภาษาอื่นเช่นภาษา Python , Java , และ C++  
 
 ####  _Python_
 ```python

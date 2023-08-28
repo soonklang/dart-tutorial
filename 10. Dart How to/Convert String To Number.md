@@ -11,11 +11,6 @@ void main(){
   print(n);
 }
 ```
-Output   
-```dart
-1
-```  
-จากตัวอย่างเราได้แปลง Value_int ที่เป็น String เป็น int โดยใช้ Method int.pares()  
 ## Java
 ```java
 public class Main {
@@ -27,6 +22,11 @@ public class Main {
 }
 
 ```
+Output   
+```dart
+1
+```  
+จากตัวอย่างเราได้แปลง Value_int ที่เป็น String เป็น int โดยใช้ Method int.pares()  
 #
 ### Example การใช้ double.parse()  
 ```dart

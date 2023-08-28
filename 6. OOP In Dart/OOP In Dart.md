@@ -14,7 +14,7 @@
 - Setter in Dart
 - Getter and Setter in Dart
 - Inheritance in Dart
-- Inheritance of Constructors in Dart
+- [Inheritance of Constructors in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/OOP%20In%20Dart.md)<br>
 - Super Keyword in Dart
 - Polymorphism in Dart
 - Static in Dart

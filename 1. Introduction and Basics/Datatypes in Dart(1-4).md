@@ -99,4 +99,9 @@ print("The Length of Types is $length");
  - Numeric Types:int, float, complex
  - Sequence Types:list, tuple, range
  - Mapping Type:dict
-   
+
+Reference
+   - https://www.w3schools.com/java/java_data_types.asp
+   - https://www.w3schools.com/c/c_data_types.php
+   - https://www.digitalocean.com/community/tutorials/python-data-types
+   - https://dart-tutorial.com/introduction-and-basics/datatypes-in-dart/

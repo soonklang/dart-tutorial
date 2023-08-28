@@ -7,7 +7,7 @@
 - _Hierarchical Inheritance_
 
 
-## 3. Multilevel Inheritance  
+## 3.  Multilevel Inheritance  
 
    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/840d3601-c5f0-4fe1-9f3b-00866a95c2ef)
 
@@ -184,4 +184,5 @@ The eagle has a sharp vision
 </details>
 
       สังเกตเห็นว่า Syntax ของ Dart กับ Java มีลักษณะคล้ายคลึงกัน
-   
+
+## 4.  Hierarchical Inheritance

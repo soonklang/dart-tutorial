@@ -95,7 +95,7 @@ void main() {
 Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (String name1 = name!;) ในกรณีนี้ name เป็น null จึงทำให้เกิด **NullError**
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (String name1 = name!;) ในกรณีนี้ name เป็น null จึงทำให้เกิด NullError
  ```
 
 
@@ -210,7 +210,7 @@ void main() {
 Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ตัวแรกใน List เป็น null จะทำให้เกิด **NullError**
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ตัวแรกใน List เป็น null จะทำให้เกิด NullError
   
 ```
 </details>
@@ -288,7 +288,7 @@ void main() {
 Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่า return เป็น null จะทำให้เกิด **NullError**
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่า return เป็น null จะทำให้เกิด NullError
   
 ```
 
@@ -370,7 +370,7 @@ void main() {
 Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่าตัวแปร 'name' เป็น null จะทำให้เกิด **NullError**
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่าตัวแปร 'name' เป็น null จะทำให้เกิด NullError
   
 ```
 
@@ -553,7 +553,7 @@ Correct Output
 ```
 Mark
 //เมื่อเราใส่คำสั่ง late ไปตอนประกาศตัวแปร late String _name; จะเป็นการบอกว่าจะกำหนดค่าให้ภายหลัง ใช้ในการประกาศ non-nullable
-หากเราไม่ใส่คำสั่ง late จะเกิด **NullError** เพราะตอนประกาศค่าเป็น null 
+หากเราไม่ใส่คำสั่ง late จะเกิด NullError เพราะตอนประกาศค่าเป็น null 
 ```
 </details>
 

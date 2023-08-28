@@ -14,10 +14,10 @@ class ChildClass extends ParentClass {
 -Java
 ```java
 class Employee{  
-   #code
+   //code
 }  
 class Programmer extends Employee{  
-  #code
+  //code
 } 
 ```
 เมื่อเปรียบเทียบ syntax ของ ภาษา dart กัย java จะมี syntaxที่ใช้ในการ Inheritance ที่เหมือนกัน
@@ -25,11 +25,12 @@ class Programmer extends Employee{
 -Python
 ```python
 class Parent:
- //code
+  #code
 class Child(Parent):
-  //code
+  #code
 ```
 แต่เมื่อเปรียบเทียบ syntax กับภาษา python แล้ว ตัวภาษา pythonจะใช้ () แทน keyword extand
+
 #  Example 1: Inheritance In Dart
 ```dart
 class Person {

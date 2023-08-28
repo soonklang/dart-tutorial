@@ -63,6 +63,87 @@ Output
 2
    ```
 
+## Some More Example OF Stream
+
+### Example 1
+
+```dart
+import 'dart:async';
+
+void main() {
+  var controller = StreamController();
+  controller.stream.listen((event) {
+    print(event);
+  });
+  controller.add('Hello');
+  controller.add(42);
+  controller.addError('Error!');
+  controller.close();
+}
+```
+Output
+
+```dart
+Hello
+42
+Uncaught Error: Error!
+   ```
+
+### Example 2
+
+```dart
+Stream<int> numberOfStream(int number) async* {
+  for (int i = 0; i <= number; i++) {
+    yield i;
+  }
+}
+
+void main(List<String> arguments) {
+  // Calling the Stream 
+  var stream = numberOfStream(6);
+  // Listening to Stream yielding each number
+  stream.listen((s) => print(s));
+}
+```
+Output
+
+```dart
+0
+1
+2
+3
+4
+5
+6
+   ```
+
+
+### Example 3
+
+```dart
+Stream<int> str(int n) async* {
+ for (var i = 1; i <= n; i++) {
+   await Future.delayed(Duration(seconds: 1));
+   yield i;
+ }
+}
+
+void main() {
+ str(10).forEach(print);
+}
+```
+Output
+
+```dart
+1
+2
+3
+4
+5
+   ```
+
+
+
 ## C
 
 ### Example Of async

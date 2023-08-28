@@ -8,4 +8,40 @@
 
 
 ## 3. Multilevel Inheritance
- ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/840d3601-c5f0-4fe1-9f3b-00866a95c2ef)
+   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/840d3601-c5f0-4fe1-9f3b-00866a95c2ef)
+
+      การสืบทอดแบบ Multilevel เป็นกระบวนการอันหนึ่งที่เกิดขึ้นระหว่างที Subclass อันหนึ่งถูกสืบทอดโดยSubclassอื่นอีกที 
+      และมันสามาถรเกิดขึ้นไปได้เรื่อยๆในรูบแบบเป็น chain of inheritance
+      
+      เหมือนกับภาษาส่วนใหญ่ทัวไป ภาษา Dart ก็ถูกพัฒนาขึ้นมาให้ Support การสืบทอดแบบ Multilevel เหมือนกัน
+
+   #### Multilevel inheritane example in Dart :
+
+   ```dart
+class Bird{    
+      void fly()  
+         {  
+            print("The bird can fly");  
+          }  
+   }    
+      // Inherits the super class  
+class Parrot extends Bird{    
+         void speak(){  
+             print("The parrot can speak");  
+                 }  
+             
+}  
+   
+// Inherits the Parror base class  
+class Eagle extends Parrot {  
+          void vision(){  
+             print("The eagle has a sharp vision");  
+                 }  
+}  
+void main() {  
+      // Creating object of the child class  
+      Eagle e=new Eagle();    
+      e.speak();    
+      e.fly();    
+      e.vision();  
+}    

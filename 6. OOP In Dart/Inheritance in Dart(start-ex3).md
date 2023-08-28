@@ -10,7 +10,16 @@ class ChildClass extends ParentClass {
   // Child class code
 }
 ```
-เมื่อเปรียบเทียบ syntax ของ ภาษา dart กัย ภาษา C หรือ java จะมี syntaxที่ใช้ในการ Inheritance ที่เหมือนกัน
+```java
+class ParentClass {
+  // Parent class code
+}
+
+class ChildClass extends ParentClass {
+  // Child class code
+}
+```
+เมื่อเปรียบเทียบ syntax ของ ภาษา dart กัย java จะมี syntaxที่ใช้ในการ Inheritance ที่เหมือนกัน
 
 #  Example 1: Inheritance In Dart
 ```dart

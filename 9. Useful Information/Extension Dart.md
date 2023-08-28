@@ -5,4 +5,13 @@
 
 ## Dart extension method syntax
 
+method ของการใช้งาน Extension dart จะเป็นดังนี้
+```dart
+extension <extension name> on <type> {
+  (<member definition>)*
+}
+   ```
+
+ในส่วนของ Extension name นั้นสามารถละไว้ได้ แต่ที่ Dart แนะนำให้เราตั้งชื่อด้วยนั้น เนื่องจากเราไม่รู้ว่านักพัฒนาคนอื่น ๆ ในทีมจะมีการตั้งชื่อ Method ใน Extension ซ้ำกับเราหรือไม่ ซึ่งอาจทำให้เกิดความสับสนได้
+
 

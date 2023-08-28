@@ -13,7 +13,10 @@
 ## Community and support
 เป็นชุมชนให้ความช่วยเหลือ และพูดคุยหรือแลกเปลี่ยนเกี่ยวกับภาษา Dart มีดังนี้
 
--[StackOverflow](https://stackoverflow.com/questions/tagged/dart)
+- [StackOverflow](https://stackoverflow.com/questions/tagged/dart)
+  
   เป็นพื้นที่ที่ดีสุดสำหรับคำถามหรือวิธีการต่างๆ
 
--[Dart on Reddit](https://www.reddit.com/r/dartlang/)
+- [Dart on Reddit](https://www.reddit.com/r/dartlang/)
+
+  เป็นสิ่งที่รวบรวมทุกสิ่งที่เกี่ยวข้องกับ Dart 

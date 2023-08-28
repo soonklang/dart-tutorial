@@ -344,7 +344,7 @@ void main() {
   print("The length of the string is $length");
 }
 ```
-[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=0a70f601cabfa763d68a5e13bdbf62ae)
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=81fff84aec7bbb853094bcae06cbeea1)
 
 <details>
   <summary><strong>Correct Code</strong></summary>

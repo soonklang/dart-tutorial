@@ -14,8 +14,25 @@
 }
 ```
 ### • Java
+```java
+import java.util.*;
+   class Sample {
+    public static void main(String args[])
+    {
+        System.out.println("Your name");
+    }
+}
+```
 ### • Python
+```python
+   print("Your name");
+```
 ## 2.Write a program to print Hello I am “John Doe” and Hello I’am “John Doe” with single and double quotes.
+ ```dart
+  void main(){
+    print("Your name");
+}
+   ```
 ### • C
 ### • Java
 ### • Python

@@ -26,13 +26,12 @@ void main() {
 }
 ```
 
-<details>
-  <summary><strong>Correct Output</strong></summary>
-  <pre>
-<code>Age is null
+Correct Output
+```
+Age is null
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' code จะรันผ่านและขึ้นผลลัพธ์
-  </code></pre>
-</details>
+```
+
 </details>
 
 ## Exercise 2: Nullable Type Parameter For Generics
@@ -58,13 +57,12 @@ void main() {
 }
 ```
 
-<details>
-  <summary><strong>Correct Output</strong></summary>
-  <pre>
-<code>[1, 2, null, 4]
+Correct Output
+```
+[1, 2, null, 4]
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' code จะรันผ่านและขึ้นผลลัพธ์
-  </code></pre>
-</details>
+```
+
 </details>
 
 ## Exercise 3: Null Assertion Operator (!)
@@ -94,36 +92,52 @@ void main() {
 }
 ```
 
-<details>
-  <summary><strong>Correct Output</strong></summary>
-  <pre>
-<code>Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ name เป็น null จึงทำให้เกิด <strong>NullError</strong>
-  </code></pre>
+Correct Output
+```
+Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ name เป็น null จึงทำให้เกิด **NullError**
+ ```
 
-<details>
-  <summary><strong>Code if 'name' is not null</strong></summary>
-  
+
+</details>
+
+### Exercise 3.1 : 
+- แล้วถ้าหากตัวแปร name ไม่ใช่ null จะเป็นยังไง ?
+
 ```dart
-//Code if name is not null
+// Try to use null assertion operator(!) to print null if the variable is null
 void main() {
   String? name;
-  name = a;
-  String name1 = name!;
+  name = 'a';
+  String name1 = name;
   print(name1);
 }
 ```
+
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=1d5b5705c27e5160bcbd1872655a26b8)
+
+
 <details>
-  <summary><strong>Output if name is not null</strong></summary>
-  <pre>
-<code>a
-//จะเห็นว่าถ้าหาก name ไม่เป็น null มันก็จะปริ้นค่านั้นออกมา
-  </code></pre>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+//Code if 'name' is not null
+void main() {
+  String? name;
+  name = 'a';
+  String name1 = name!; // เราจะมี '!' หรือไม่มี code ก็จะไม่ error
+  print(name1);
+}
+```
+Correct Output
+```
+a
+//จะเห็นว่าถ้าหาก name ไม่เป็น null มันก็จะปริ้นค่านั้นออกมา 
+```
+
 
 </details>
-</details>
-</details>
-</details>
+
 
 ## Exercise 4: Nullable Assertion Operator (!) For Generics
 - ลองใช้เครื่องหมายที่เป็นตัวยืนยันค่า null นั่นคือ **'!'** เพื่อแสดงค่า null หากตัวแปรมีค่าเป็น null
@@ -154,15 +168,31 @@ void main() {
 }
 ```
 
-<details>
-  <summary><strong>Correct Output</strong></summary>
-  <pre>
-<code>1
+Correct Output
+```
+1
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ code จะรันผ่านและขึ้นผลลัพธ์ 1 เพราตัวแรกใน List มีค่า 1
-  </code></pre>
+```
+
+</details>
+
+### Exercise 4.1 : 
+- แล้วถ้าหากค่าแรกเป็น null จะเป็นยังไง ?
+
+```dart
+// Try to use null assertion operator(!) to print null if the variable is null
+void main() {
+  List<int?> items = [null, 2, 3, 4];
+ 
+  int firstItem = items.first; // .first แสดงตัวแรกใน List
+  
+  print(firstItem);
+}
+```
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=6f9d3ccb17c09fa67fa7329cce464f37)
 
 <details>
-  <summary><strong>Code if null is in the first element</strong></summary>
+  <summary><strong>Correct Code</strong></summary>
   
 ```dart
 //Code if null is in the first element
@@ -174,13 +204,12 @@ void main() {
   print(firstItem);
 }
 ```
-<details>
-  <summary><strong>Output if null is in the first element</strong></summary>
-  <pre>
-<code>Runtime Error
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ตัวแรกใน List เป็น null จะทำให้เกิด <strong>NullError</strong>
-  </code></pre>
+Correct Output
+```
+Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ตัวแรกใน List เป็น null จะทำให้เกิด **NullError**
+  
+```
 </details>
-</details>
-</details>
-</details>
+
+

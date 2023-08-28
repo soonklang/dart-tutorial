@@ -24,7 +24,7 @@ void main() {
   }
 }
 ```
-<details open>
+<details close>
 <summary><b>output</b></summary>
  <pre>
 A

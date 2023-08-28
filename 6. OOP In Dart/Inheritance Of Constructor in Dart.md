@@ -250,9 +250,9 @@ MacBook constructor</code>
 ภาษา C ไม่มีการสนับสนุนสำหรับการสืบทอด Constructor เหมือนกับภาษาอื่น ๆ ที่มีแนวคิดเชิงวัตถุ (Object-Oriented) อย่าง Dart หรือ C++ ซึ่ง C เป็นภาษาโปรแกรมมิ่งแบบ procedural และไม่มีคอนเซ็ปต์ของคลาสและสืบทอดอย่างแท้จริง จึงไม่มีสิ่งที่เรียกว่า "Constructor" และ "Inheritance of Constructor" ในภาษา C โดยสามารถจะใช้ฟังก์ชันเพื่อกำหนดการทำงานเมื่อมีการสร้างอ็อบเจกต์ของโครงสร้าง(struct)
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Java
 การสืบทอด Constructor ใน Java มีลักษณะที่คล้ายคลึงกัน โดยใน Java เราใช้ super() เพื่อเรียก Constructor ของคลาสแม่เช่นกัน แต่ยังมีบางความแตกต่างบ้างที่ควรรู้<br>
-  1.`Default Constructor`<br>
+1.`Default Constructor`<br>
     - Dart ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ<br>
     - Java ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ แต่ถ้าระบุ Constructor ใด ๆ จะต้องระบุ default constructor ด้วยเอง<br>
-  2.`Implicit Call to Super Constructor`
+2.`Implicit Call to Super Constructor`
 
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python

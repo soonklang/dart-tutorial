@@ -2,12 +2,13 @@
 ในการติดตั้ง dart ลงบน Windows ของคุณนั้นทำได้ง่ายๆเพียงแค่ 5 Step เท่านั้น
 ## Step 1: Download Dart SDK
 ไปที่ลิ้งค์ https://dart.dev/tools/sdk/archive.
+
 เลื่อนลงมาจนเจอ Stable channel ทำการเลือก Version และ OS จากนั้น คลิ๊ก Download Dart SDK
 ## Step 2: Extract zip file
 ทำการแตกไฟล์ zip ที่ Download มา
 ## Step 3: Run Dart
-เปิด Command Prompt ใช้คำสั่ง dart ในการ Run Dart บน
-เครื่องของคุณ
+เปิด Command Prompt ใช้คำสั่ง dart ในการ Run Dart บนเครื่องของคุณ
+
 ตัวอย่างการใช้คำสั่ง ; D:\software\dart-sdk\bin>dart
 ## Step 4: Add Dart Path to PATH Environment Variable
 ทำการเปิด Settings เข้าไปที่ 

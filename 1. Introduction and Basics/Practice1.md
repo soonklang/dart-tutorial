@@ -1,4 +1,4 @@
-## Practice1
+# Practice1
 แบบฝึกหัดในเรื่อง Introduction and Basics
 ### 1.Write a program to print your name in Dart.
 ### 2.Write a program to print Hello I am “John Doe” and Hello I’am “John Doe” with single and double quotes.
@@ -11,3 +11,4 @@
 ### 9.Write a program in Dart to remove all whitespaces from String.
 ### 10.Write a dart program to convert String to int.
 ### 11.Suppose, you often go to restaurant with friends and you have to split amount of bill. Write a program to calculate split amount of bill. Formula= (total bill amount) / number of people
+## < Reference >

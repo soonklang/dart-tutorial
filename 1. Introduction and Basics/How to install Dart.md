@@ -28,28 +28,28 @@
 การติดตั้งของภาษาอื่นๆนั้น ไม่มีความซับซ้อนเท่าไหร่เพียงแค่เรา Download โปรแกรมที่ใช้สำหรับการเขียนภาษานั้นๆ เราก็จะสามารถใช้ภาษานั้นๆ ได้ทันที ต่างกับ Dart ที่ต้องใส่ที่อยู๋ Path
 ## การติดตั้ง C on Windows
 การติดตั้งภาษา C โดยใช้โปรแกรม Turbo C++ ใช้ได้ทั้งภาษา C และ C++
-### 1 Download Turbo C++
+#### 1 Download Turbo C++
 https://static.javatpoint.com/cpages/software/tc3.zip
-### 2 สร้างโฟเดอร์ชื่อ turboc ไว้ในไดรฟ์ c และแตกไฟล์ zip ที่ Download มาไว้ใน c:\turboc
-### 3 click ไฟล์ที่ชื่อว่า install.exe เพื่อทำการติดตั้ง
-### 4 เปิด application TC ที่อยู่ในไฟล์ C:\TC\BIN to write the c program
+#### 2 สร้างโฟเดอร์ชื่อ turboc ไว้ในไดรฟ์ c และแตกไฟล์ zip ที่ Download มาไว้ใน c:\turboc
+#### 3 click ไฟล์ที่ชื่อว่า install.exe เพื่อทำการติดตั้ง
+#### 4 เปิด application TC ที่อยู่ในไฟล์ C:\TC\BIN to write the c program
 ## การติดตั้ง Java on Windows
 การติดตั้งภาษา java ทำได้ง่ายๆ เพียงแค่ Download โปรแกรม Apache NetBeans
-### 1 Download Apache NetBeans
+#### 1 Download Apache NetBeans
 https://netbeans.apache.org/download/index.html
-### 2 เลือก Versions ที่ต้องการ Download
-### 3 เรียกใช้โปรแกรมเพื่อติดตั้ง Python
-### 4 ทดลองเรียกใช้โปรแกรม
+#### 2 เลือก Versions ที่ต้องการ Download
+#### 3 เรียกใช้โปรแกรมเพื่อติดตั้ง Python
+#### 4 ทดลองเรียกใช้โปรแกรม
 
 ## การติดตั้ง Python on Windows
 การติดตั้ง Python โดยใช้โปรแกรม 
-### 1 Download Python
+#### 1 Download Python
 https://www.python.org/downloads/
-### 2 เลือก Versions ที่ต้องการ Download
-### 3 เรียกใช้โปรแกรมเพื่อติดตั้ง Python
-### 4 ตรวจสอบการติดตั้ง Python
+#### 2 เลือก Versions ที่ต้องการ Download
+#### 3 เรียกใช้โปรแกรมเพื่อติดตั้ง Python
+#### 4 ตรวจสอบการติดตั้ง Python
 เปิด Command Prompt ใช้คำสั่ง python ถ้าขึ้น version ของ Python แสดงว่าติดตั้งสำเร็จ
-### 5 ตรวจสอบว่าติดตั้ง pip หรือยัง
+#### 5 ตรวจสอบว่าติดตั้ง pip หรือยัง
 เปิด Command Prompt ใช้คำสั่ง pip -V ถ้าขึ้น version ของ pip แสดงว่าติดตั้งสำเร็จ
 # Reference
 - https://www.tutorialkart.com/dart/install-dart-onwindows/#gsc.tab=0

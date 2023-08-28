@@ -137,6 +137,8 @@ print("Program continues after than assert")
 
 # Assert in Dart VS Assert in C, Java and Python
 
+
+
 ### *< Reference >*
 https://dart-tutorial.com/conditions-and-loops/assert-in-dart/
 
@@ -151,6 +153,8 @@ https://www.onlinegdb.com/
 https://www.tutorialspoint.com/c_standard_library/c_macro_assert.htm
 
 https://www.cp.eng.chula.ac.th/~somchai/spj/slides/Java/intro/java_v4_08_Exception.pdf
+
+https://holmskaya.org/what-is-assert-in-java-with-example
 
 https://www.mindphp.com/developer/tips-python/7888-assert-function-python.html
 

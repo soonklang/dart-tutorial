@@ -122,6 +122,41 @@ void main() {
   print(d.map);
 }
 ```
+# ความแตกต่าง Dart and Java and Python
+
+### Dart
+```
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        return self._name
+
+```
+### Java
+```
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        return self._name
+
+```
+### Python
+```
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        return self._name
+
+```
 
 # ทำไม Getter มีความสำคัญใน Dart?
 
@@ -130,4 +165,4 @@ void main() {
 2.เพื่อจำกัดการเข้าถึงสมาชิกข้อมูลในคลาส
 
 # สรุป
-Getter เป็นเมธตอดในค่าที่การเข้าถึงแบบ private แต่ถ้าหากต้องการเข้าไปแก้ไขค่าจะต้องใช่ Setter แทน
+Getter เป็นเมธตอดในค่าที่การเข้าถึงแบบ private แต่ถ้าหากต้องการเข้าไปแก้ไขค่าจะต้องใช่ [Setter](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/setter%20in%20Dart.md) แทน

@@ -7,6 +7,12 @@
 }
    ```
 ### • C
+```c
+#include <stdio.h>
+ main() {
+  printf("Your name";
+}
+```
 ### • Java
 ### • Python
 ## 2.Write a program to print Hello I am “John Doe” and Hello I’am “John Doe” with single and double quotes.

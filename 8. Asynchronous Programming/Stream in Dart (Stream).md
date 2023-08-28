@@ -1,44 +1,18 @@
-<h1>:shipit:Stream:shipit:</h1>
-Stream ใน Dart คือกลไกหนึ่งที่ใช้ในการจัดการและการทำงานกับข้อมูลที่เปลี่ยนแปลงได้ตลอดเวลาอย่างมีประสิทธิภาพ มันเปรียบเสมือนเป็นท่อที่ข้อมูลสามารถไหลผ่านไปมาได้เรื่อยๆ และคุณสามารถติดตามสถานะและจัดการกับข้อมูลเหล่านั้นได้เมื่อมีการเปลี่ยนแปลงเกิดขึ้น
+# Stream (กระแสข้อมูล)
+ยินดีต้อนรับทุกท่านเข้าสู่เนื้อหา **Stream** ของหัว Asynchronous Programming 
+หลายๆท่านอาจจะยังไม่คุ้นชินกับคำว่า **Stream** สักเท่าไหร่
+จึงจะขอยกตัวอย่างที่จะได้เห็นภาพง่าย ๆ ก่อนจะเข้าเนื้อหาหลักของเรา
 
-ใน Dart, Stream คืออะไรก็ตามที่สามารถส่งข้อมูลได้ในรูปแบบไม่จำเป็นต้องรอให้ข้อมูลทั้งหมดเตรียมพร้อมก่อน มันเหมาะสำหรับกรณีที่คุณต้องการจัดการกับข้อมูลอย่างแบบเรียลไทม์ เช่น การอัปเดตสถานะของแอปพลิเคชันเมื่อข้อมูลมีการเปลี่ยนแปลง การดึงข้อมูลจากแหล่งต่างๆ อย่างเช่น APIs, การทำงานกับไฟล์ข้อมูล หรือการเอาข้อมูลจากอุปกรณ์ต่างๆ เป็นต้น
+## **Stream** หรือถ้าแปลเป็นภาษาไทยจะได้ความหมายว่า "กระแส" หรือ "สายน้ำ"
+ซึ่งเมื่อพูดถึงสายน้ำดังกล่าวจะสามารถมี **เหตุการณ์ (Events)** ต่างๆเกิดขึ้น เช่น
+>เด็กที่กำลังตกปลา ผู้ดีที่กำลังอุจจาระ หรืออาจจะเป็น ปลาที่กำลังพลอดรักกันอย่างดุเดือด
 
-การสร้าง Stream ใน Dart นั้นสามารถทำได้โดยใช้คลาส Stream หรือ StreamController ซึ่งเป็นคลาสที่ใช้ในการสร้าง Stream และสั่งให้ข้อมูลไหลผ่าน Stream ตามที่คุณต้องการ คุณสามารถเพิ่มข้อมูลลงใน Stream ด้วยเมธอด .add() และสามารถจัดการกับการปิด Stream ด้วยเมธอด .close() เมื่อไม่ต้องการใช้งาน Stream ต่อไป
-```dart
-import 'dart:async';
+เหตุการณ์ที่เกิดขึ้นอาจจะส่งค่ากลับมา เช่น 
+>เด็กตกปลาได้ 2 ตัว 
+ผู้ดีอุจจาระไป 4 ก้อน 
+ปลาออกลูกมา 50 ตัว
 
-class Number {
-  Number() {
-    Timer.periodic(
-      Duration(seconds: 1),
-      (timer) {
-        _controller.sink.add(_count);
-        _count++;
-      },
-    );
-  }
+ซึ่งหมายความว่า Stream จะแตกต่างจาก Future ก่อนหน้านี้ที่ ตอบกลับมาแค่ 1 ค่านั่นเอง
 
-  //  create a StreamController
-  final _controller = StreamController<int>();
-  var _count = 1;
-
-  // property that returns the stream object
-  Stream<int> get stream => _controller.stream;
-}
-
-
-void main() {
-  var stream = Number().stream.asBroadcastStream();
-
-  stream.listen(
-    (event) => print('listener 1: $event'),
-  );
-
-  // cause exception
-  stream.listen(
-    (event) => print('listener 2: $event'),
-  );
-}
-
-
-   ```
+[Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
+[Asynchronous programming: Streams | Dart (dart.dev)](https://dart.dev/tutorials/language/streams)

@@ -135,9 +135,26 @@ print("Program continues after than assert")
 
  >การใช้งาน “assert” ในภาษา Dart และ Python จะแสดงผลผิดพลาดทันทีเมื่อเงื่อนไขไม่ถูกต้อง
 
-# Assert in Dart VS Assert in C, Java and Python
+# Comparison Assert in Dart with C, Java and Python
 
+## Syntax
+>Dart: assert(condition); and assert(condition, "message");
 
+>C: assert(int expression);
+
+>Java: assert booleanExpression; and assert booleanExpression: expression;
+
+>Python: assert condition, "message"
+
+จะเห็นว่า Syntax ของแต่ละภาษาใช้งานแตกต่างกันเล็กน้อย แต่ในแง่ของหลักการทั้งใน dart, c, java และ python คล้ายกันโดยตรวจสอบเงื่อนไขและการแสดงข้อความข้อผิดพลาดเมื่อเงื่อนไขเป็นเท็จ แต่มีความแตกต่างในวิธีการเปิดใช้งาน โหมดที่ใช้งานและรายละเอียดเทคนิคต่าง ๆ ของแต่ละภาษา
+
+>C: ในการประกาศเงื่อนไขจะไม่สามารถระบุข้อความข้อผิดพลาดเพิ่มเติมได้และอาจจะถูกปิดใช้งานการรันระบบจริงๆ
+
+>Java: ตามจริงแล้วไม่มีคำสั่ง "assert" ต้องทำการเปิดโหมดการใช้งานโหมด "assertions" ของ java เพื่อให้ทำงานได้
+
+>*การเปิดโหมดใช้งานโดย*
+
+>java -ea หรือ java -enableassertions
 
 ### *< Reference >*
 https://dart-tutorial.com/conditions-and-loops/assert-in-dart/

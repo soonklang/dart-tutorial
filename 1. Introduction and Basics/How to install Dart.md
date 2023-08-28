@@ -42,7 +42,6 @@ https://netbeans.apache.org/download/index.html
 #### 4 ทดลองเรียกใช้โปรแกรม
 
 ## การติดตั้ง Python on Windows
-การติดตั้ง Python โดยใช้โปรแกรม 
 #### 1 Download Python
 https://www.python.org/downloads/
 #### 2 เลือก Versions ที่ต้องการ Download

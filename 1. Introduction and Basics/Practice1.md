@@ -1,6 +1,11 @@
 # Practice1
 แบบฝึกหัดในเรื่อง Introduction and Basics
 ### 1.Write a program to print your name in Dart.
+ ```dart
+  void main(){
+    print("Your name");
+}
+   ```
 ### 2.Write a program to print Hello I am “John Doe” and Hello I’am “John Doe” with single and double quotes.
 ### 3.Declare constant type** of int set value 7.
 ### 4.Write a program in Dart that finds simple interest. Formula= (p * t * r) / 100

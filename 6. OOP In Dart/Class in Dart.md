@@ -60,7 +60,7 @@ class Person {
 ```
 ### ตัวอย่างที่ 3: Declaring Area Class In Dart
 
-จากตัวอย่างด้านล่าง class  **Area**  มี 2 properties คือ **length**  และ** breadth** และยังมี method **calculateArea** ที่ใช้สำหรับคำนวณพื้รที่ของสี่เหลี่ยมผืนผ้า
+จากตัวอย่างด้านล่าง class  **Area**  มี 2 properties คือ **length**  และ **breadth** และยังมี method **calculateArea** ที่ใช้สำหรับคำนวณพื้รที่ของสี่เหลี่ยมผืนผ้า
 
 ```dart
 class Area {

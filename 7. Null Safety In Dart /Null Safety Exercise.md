@@ -212,4 +212,81 @@ Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: Ty
 ```
 </details>
 
+## Exercise 5: Null Assertion Operator (!) For Generics
+- ลองใช้เครื่องหมายที่เป็นตัวยืนยันค่า null นั่นคือ **'!'** เพื่อแสดงค่า null หากตัวแปรมีค่าเป็น null
+```dart
+// Try to use null assertion operator(!) to print null if the variable is null
+int? returnNullButSometimesNot() {
+  return -5;
+}
+
+void main() {
+ int result = returnNullButSometimesNot().abs();
+ print(result);
+}
+```
+
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=1b9b4febfbc21b23be8ae5bf146e95c1)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+//Code after using '!'
+int? returnNullButSometimesNot() {
+  return -5;
+}
+
+void main() {
+ int result = returnNullButSometimesNot()!.abs();
+ print(result);
+}
+```
+
+Correct Output
+```
+5
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ค่า return ไม่ใช่ null จึงแสดงผลลัพธ์ 5
+```
+</details>
+
+### Exercise 5.1 : 
+- แล้วถ้าหากค่า return เป็น null จะเป็นยังไง ?
+
+```dart
+// Try to use null assertion operator(!) to print null if the variable is null
+int? returnNullButSometimesNot() {
+  return null;
+}
+
+void main() {
+ int result = returnNullButSometimesNot().abs();
+ print(result);
+}
+```
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=0a70f601cabfa763d68a5e13bdbf62ae)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+//Code if return is null
+int? returnNullButSometimesNot() {
+  return null;
+}
+
+void main() {
+ int result = returnNullButSometimesNot()!.abs();
+ print(result);
+}
+```
+Correct Output
+```
+Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่า return เป็น null จะทำให้เกิด **NullError**
+  
+```
+
+</details>
+
 

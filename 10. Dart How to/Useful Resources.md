@@ -30,8 +30,57 @@
   
   ![Logo](https://m.media-amazon.com/images/I/51B7z49UKQL._AC_UF350,350_QL50_.jpg)
   
-  Dart Apprentice: Fundamentals
-  by Jonathan Sande
+  - [Dart Apprentice: Fundamentals](https://www.kodeco.com/books/dart-apprentice-fundamentals)
+  
+    by Jonathan Sande
 
+    เป็นหนังสือสือที่จะสอนพื้นฐานแนวคิดสำคัญเกี่ยวกับภาษา Dart
+    
+    ---
 
-  [Learning Dart ](https://riptutorial.com/Download/dart.pdf)
+  ![Logo](https://m.media-amazon.com/images/I/41muc5c01ML._SX218_BO1,204,203,200_QL40_FMwebp_.jpg)
+
+  - [Dart Apprentice: Beyond the Basics](https://www.kodeco.com/books/dart-apprentice-beyond-the-basics)
+    
+    by Jonathan Sande
+    
+    เป็นหนังสือเล่มที่สอง ที่จะรวบรวมแนวคิดสำคัญที่นอกเหนือจากพื้นฐานทั้งหมด
+
+    ---
+
+  ![Logo](https://m.media-amazon.com/images/I/41YMNzaa5-L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg)
+
+  - [Data Structures & Algorithms in Darts](https://www.kodeco.com/books/data-structures-algorithms-in-dart)
+    
+    by Jonathan Sande, Vincent Ngo, and Kelvin Lau
+    
+    เป็นหนังสือที่จะเพื่มทักษะการเขียนโปรแกรม และให้ความรู้เรื่อง การสร้างสแต็ก คิว ต้นไม้ กราฟ การเรียงลำดับ และค้นหาอัลกอริธึมที่มีประสิทธิภาพตั้งแต่เริ่มต้น
+    
+    ---
+
+  ![Logo](https://i0.wp.com/www.linuxlinks.com/wp-content/uploads/2020/12/Learning-Dart.png?resize=166%2C235&ssl=1)
+  
+  
+  - [Learning Dart ](https://riptutorial.com/Download/dart.pdf)
+  
+    by Stack Overflow contributors  
+    
+    เป็นหนังสือที่ฟรีสร้างขึ้นเพื่อการศึกษาแต่ไม่เป็นทางการ และเนื้อหาทั้งหมดถูกทำมาจาก Stack Overflow
+
+    ---
+
+    ## Reference
+
+    https://exercism.org/docs/tracks/dart/resources
+    
+    https://www.tutorialspoint.com/dart_programming/dart_programming_quick_guide.htm
+
+    https://dart.dev/tools/dartpad/dartpad-best-practices#what-youll-learn-from-this-guide
+
+    https://dart.dev/community
+
+    https://dart.dev/resources/books#dart-apprentice-beyond-the-basics
+
+    https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#dart
+
+    https://www.linuxlinks.com/free-books-learn-dart/

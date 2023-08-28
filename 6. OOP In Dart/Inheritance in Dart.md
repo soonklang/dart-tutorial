@@ -139,6 +139,7 @@ Price: 20000
 
 1. Single Inheritance
    inheritance ประเภทนี้ sub classจะสามารถทำการinheritanceจาก super class เดียวเท่านั้น
+   
    ใน Dart เราสามารถ extend ได้ครั้งละหนึ่ง class เท่านั้น
    
    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/2006eac9-6526-4757-a9c4-0559fb066768)

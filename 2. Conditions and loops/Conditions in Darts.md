@@ -10,7 +10,7 @@
 เป็นเงื่อนไขที่ง่ายที่สุดในการใช้ควบคุมการไหลของโปรแกรมเรียกใช้งานผ่านการใช้คำสั่ง if โดยโปรแกรมจะทำงานต่อหากเงื่อนไขที่กำหนดเป็นจริง
 ## Syntax
   ```dart
-    if(กำหนดเงื่่อนไข){
+    if(condition){
       Statement 1;
       Statement 2;    
          .
@@ -37,7 +37,7 @@ You are voter.
 </details>
 
 ## เงื่อนไข If-Else
-
+หากผลลัพท์ของเงื่อนไขเป็นจริง โค๊ดที่อยู่ภายใต้เงื่อนไข If จะถูกดำเนินการ แต่ถ้าไม่ โค๊ดที่อยู่ภายใต้เงื่อนไข Else จะถูกดำเนินการ
 
 ## Syntax
 ```dart
@@ -63,5 +63,24 @@ You are voter.
 <summary><b>output</b></summary>
  <pre>
 You are not voter.
+ </pre>
+</details>
+
+## เงื่อนไขที่ขึ้นอยู่กับค่าของบูลีน
+ถ้าหากสถานะแต่งงานไม่เป็นจริง โปรแกรมจะพิมพ์ข้อความ you are single ออกมา แต่ถ้าสถานะแต่งงานเป็นจริง โปรแกรมจะพิมพ์ข้อความ you are married ออกมา
+```dart
+  void main(){
+    bool isMarried = false;
+    if(isMarried){
+      print("You are married.");
+    }else{
+      print("You are single.");
+    }
+  }
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+You are single.
  </pre>
 </details>

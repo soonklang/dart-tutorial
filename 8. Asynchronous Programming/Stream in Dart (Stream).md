@@ -12,8 +12,8 @@
 <br>ผู้ดีอุจจาระไป 4 ก้อน 
 <br>ปลาออกลูกมา 50 ตัว
 
-หมายความว่า **กลุ่มค่า** ที่ส่งกลับมาจาก **เหตุการณ์ (Events)** เราจะมองเป็น **กระแสข้อมูล (Stream)** นั่นเอง
-ซึ่งหมายความว่า Stream จะแตกต่างจาก Future ก่อนหน้านี้ที่ ตอบกลับมาแค่ 1 ค่านั่นเอง
+หมายความว่า **กลุ่มค่า** ที่ส่งกลับมาจาก **เหตุการณ์ (Events)** เราจะมองเป็น **กระแสข้อมูล (Stream)** 
+ซึ่งหมายความว่า Stream จะแตกต่างจาก Future ก่อนหน้านี้ที่ ตอบกลับมาแค่ 1 ค่าเท่านั้นนั่นเอง
 
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>

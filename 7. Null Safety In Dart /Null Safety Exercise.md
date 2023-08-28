@@ -289,4 +289,81 @@ Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: Ty
 
 </details>
 
+## Exercise 6: Null Assertion Operator (!)
+- ลองใช้เครื่องหมายที่เป็นตัวยืนยันค่า null นั่นคือ **'!'** เพื่อแสดงค่าความยาวของ String หรือ return null ถ้าตัวแปรเป็น null
+```dart
+// Try to use null assertion operator(!) to print the length of the String or return null if the variable is null
+int findLength(String? name) {
+    // add null assertion operator here
+  return name.length;
+}
 
+void main() {
+  int? length = findLength("Hello");
+  print("The length of the string is $length");
+}
+```
+
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=ae7997a085f35212078c2db830d3b673)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+//Code after using '!'
+int findLength(String? name) {
+    // add null assertion operator here
+  return name!.length;
+}
+
+void main() {
+  int? length = findLength("Hello");
+  print("The length of the string is $length");
+}
+```
+
+Correct Output
+```
+The length of the string is 5
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ค่า length ของ 'name' = 5 ก็จะแสดง 5 ออกมา
+```
+</details>
+
+### Exercise 6.1 : 
+- แล้วถ้าหากค่า return เป็น null จะเป็นยังไง ?
+
+```dart
+// Try to use null assertion operator(!) to print null if the variable is null
+int? returnNullButSometimesNot() {
+  return null;
+}
+
+void main() {
+ int result = returnNullButSometimesNot().abs();
+ print(result);
+}
+```
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=0a70f601cabfa763d68a5e13bdbf62ae)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+//Code if return is null
+int? returnNullButSometimesNot() {
+  return null;
+}
+
+void main() {
+ int result = returnNullButSometimesNot()!.abs();
+ print(result);
+}
+```
+Correct Output
+```
+Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่า return เป็น null จะทำให้เกิด **NullError**
+  
+```
+
+</details>

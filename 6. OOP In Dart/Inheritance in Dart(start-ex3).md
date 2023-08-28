@@ -141,7 +141,62 @@ Price: 20000
    ใน inheritanceประเภทนี้ classจะสามารถทำการinheritanceจาก classเดียวเท่านั้น ใน Dart เราสามารถ extend ได้ครั้งละหนึ่ง class เท่านั้น
    
    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/ee75e860-3d16-4fae-b44e-b0d200df8999)
+   
+  #### `Example 1 :` Single Inheritance In Dart
+  ```dart
+    class Car {
+    // Properties
+    String? name;
+    double? prize;
+  }
+  
+  class Tesla extends Car {
+    // Method to display the values of the properties
+    void display() {
+      print("Name: ${name}");
+      print("Prize: ${prize}");
+    }
+  }
+  
+  void main() {
+    // Create an object of Tesla class
+    Tesla t = new Tesla();
+    // setting values to the object
+    t.name = "Tesla Model 3";
+    t.prize = 50000.00;
+    // Display the values of the object
+    t.display();
+  }
+  ```
+จากตัวอย่างด้านบนนี้ มีsuper classชื่อ Car พร้อมด้วยชื่อคุณสมบัติ มีsub classชื่อ Tesla ซึ่งสืบทอดคุณสมบัติของsuper class 
+output
+```
+Name: Tesla Model 3
+Prize: 50000.0
+```
+ #### `Example 2 :` Single Inheritance In Dart
+ ```dart
+  class Person{
+    void showName(String name){
+      print(name);
+    }
 
-2. 
-  
-  
+    void showAge(int age){
+      print(age);
+    }
+  }
+
+  class Jay extends Person {}
+
+  main(){
+    var jay = new Jay();
+
+    jay.showName("JD");
+    jay.showAge(20);
+  }
+```
+output
+```
+  JD
+  20
+```

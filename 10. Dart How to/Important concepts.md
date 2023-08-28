@@ -33,3 +33,21 @@ Error: Non-nullable variable 'name' must be assigned before it can be used.
 ``` dart
 null
 ```
+## Type Annotations & Type Inference
+### Type Annotations
+คือภาษาที่ต้องมีการประกาศ และบอกว่าตัวแปรนี้จะเป็นข้อมูลประเภทไหนซึ่งตัว developer จะต้องกำหนดว่าตัวแปร ฟังก์ชัน วัตถุ นั้นมี type เป็นอะไร 
+#### Example 
+```dart
+void main() {
+  String name = "John";
+  int age = 30;
+  print(name);
+  print(age);
+}
+```
+- Output
+  
+``` dart
+John
+30
+```

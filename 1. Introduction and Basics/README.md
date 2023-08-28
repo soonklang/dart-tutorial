@@ -7,7 +7,6 @@
   โครงสร้างโปรแกรม (Basic program)<br>
   ตัวแปร (Variable) <br>
   [ชนิดข้อมูล (Data types)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/Datatypes%20in%20Dart(1-4).md)
- 
   คอมเม้นต์ (Comments)<br>
   ตัวดำเนินการ (Operators)<br>
   คำสั่งรับข้อมูล (User Input)<br>

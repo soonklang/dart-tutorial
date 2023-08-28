@@ -18,7 +18,9 @@ Dart เวอร์ชัน 2.12 ขึ้นไปที่เปิดใช
 ``` dart
 Error: Non-nullable variable 'name' must be assigned before it can be used.
 ```
+
 จากตัวอย่างจะทำให้เกิดการ runtime error หากต้องการระบุว่าตัวแปรอาจมีค่าเป็น null จะต้องเพื่มเครื่องหมายคำถาม ? ไปที่ประเภทข้อมูล 
+
 ### Example 
 ```dart
   void main() {

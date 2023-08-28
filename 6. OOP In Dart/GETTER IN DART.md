@@ -18,7 +18,7 @@ class Person {
 }
 ```
 # Example 1: Getter In Dart
-ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ employee คลาสนี้มีคุณสมบัติสองอัน คือ firstName และ lastName นอกจากนี้ยังมี getter ชื่อ fullName ที่รับค่ามารวมกันเป็นชื่อเต็ม
+ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ employee คลาสนี้มีคุณสมบัติสองอัน คือ firstName และ lastName และในโค้ดนี้ getter นอกจากจะเข้าถึงอ่านค่าของคุณสมบัติ ยังนำค่ามารวมกันที่ตัวแปรชื่อ fullName ที่รับค่ามารวมกันมาเป็นชื่อเต็ม
 
 * DART
 ```
@@ -469,6 +469,10 @@ class Person {
 public class Person {
     private String name; // นี่คือ property ที่เก็บชื่อของบุคคล
 
+     // Constructor
+    public Person(String name) {
+        this._name = name;
+    }
     public String getName() {
         return name;
     }
@@ -488,12 +492,14 @@ class Person:
 ```
 
 * สรุป:
+  
+    ใน Dart, จะการเขียนต่อนข้างคล้าย javaแต่มีการเขียนที่ง่ายกว่า
 
-    ใน Java, เราใช้ชื่อเมทอดที่เรียกว่า "get" ร่วมกับชื่อ property
+    ใน Java, จะการเขียนต่อนข้างยากกว่า Dart เล็กน้อย
 
-    ใน Python, เราใช้ @property decorator ร่วมกับเมทอดที่มีชื่อเหมือนกับ property
+    ใน Python, เขียนได้ง่ายกว่าแต่อ่านได้ยากกว่าทั้งสองภาษา
 
-    ใน Dart, เราใช้คีย์เวิร์ด get ร่วมกับชื่อเมทอดที่เป็นชื่อเดียวกับ property
+   
 
 
 

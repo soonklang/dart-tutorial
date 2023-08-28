@@ -84,3 +84,6 @@ You are not voter.
 You are single.
  </pre>
 </details>
+
+## เงื่อนไข If-Else-IF
+หากมีเงื่อนไข If หลายเงื่อนไข สามารถใช้ if-else-if

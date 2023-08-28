@@ -22,7 +22,7 @@ Error: Non-nullable variable 'name' must be assigned before it can be used.
 ### Example 
 ```dart
   void main() {
-    String? name;  
+    String? name;  // ประกาศตัวแปร name โดยระบุว่าอาจจะมีค่าเป็น null
     print(name);  
   }
 ```

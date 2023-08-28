@@ -42,6 +42,13 @@ void main() {
   }
 }
 ```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+A
+ </pre>
+</details>
+
 ### Example 3: Break In Dart While Loop
 ```dart
 void main() {
@@ -55,6 +62,13 @@ void main() {
  }
 }
 ```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+A
+ </pre>
+</details>
+
 ### Example 4: Break In Switch Case
 ```dart
 void main() {
@@ -72,6 +86,13 @@ void main() {
   }
 }
 ```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+A
+ </pre>
+</details>
+
 >Example : Break In C For Loop
 
 >Example : Break In Java For Loop
@@ -100,6 +121,13 @@ void main() {
   }
 }
 ```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+A
+ </pre>
+</details>
+
 ### Example 2: Continue In For Loop Dart
 ```dart
 void main() {
@@ -111,6 +139,13 @@ void main() {
   }
 }
 ```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+A
+ </pre>
+</details>
+
 ### Example 3: Continue In Dart While Loop
 ```dart
 void main() {
@@ -125,6 +160,12 @@ void main() {
   }
 }
 ```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+A
+ </pre>
+</details>
 
 >Example : Continue In C For Loop
 

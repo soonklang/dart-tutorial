@@ -206,5 +206,8 @@ Start Task 1
 End Task 1
 ```
 
-
+## อ้างอิง
+:https://www.tamemo.com/post/178/async-in-dart-1-isolates-event-loop/<br>
+:https://www.tamemo.com/post/179/async-in-dart-2-future/<br>
+:https://www.tamemo.com/post/180/async-in-dart-3-stream/
 

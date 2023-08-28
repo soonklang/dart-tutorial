@@ -16,7 +16,7 @@ Output
 21
    ```
 
-### Example Of sync
+### Example Of sync*
 
 ```dart
 Stream<int> countForOneMinute() async* {

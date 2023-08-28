@@ -28,7 +28,7 @@
 ## Book about Dart
   หัวข้อนี้จะเป็นเกี่ยวกับหนังสือเกี่ยวภาษา Dart
   
-  [Logo]: (https://dart.dev/assets/img/cover/dart-apprentice-fundamentals.webp)
+  ![Logo](https://dart.dev/assets/img/cover/dart-apprentice-fundamentals.webp)
   Dart Apprentice: Fundamentals
   by Jonathan Sande
 

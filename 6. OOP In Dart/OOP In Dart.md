@@ -1,7 +1,7 @@
 # Dart Object Oriented Programming
 ในส่วนนี้คุณจะได้เรียนรู้เกี่ยวกับพื้นฐานของการเขียนโปรแกรมแบบเชิงวัตถุด้วยภาษาโปรแกรม Dart เพื่อให้คุณสามารถสร้างสรรค์ผลงานที่น่าทึ่งของตนเองได้ โดยคุณจะได้เรียนรู้หัวข้อที่เป็นพื้นฐานสำคัญดังต่อไปนี้:
 - OOP in Dart
-- Class in Dart
+- [Class in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20in%20Dart.md)
 - Objects in Dart
 - Class and Objects in Dart
 - Constructor in Dart

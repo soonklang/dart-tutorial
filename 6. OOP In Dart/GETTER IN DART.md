@@ -94,7 +94,7 @@ void main() {
 ```
 # Example 4: Getter In Dart
 
-ในตัวอย่างด้านล่างนี้, มีคลาสชื่อ Doctor ในคลาสนี้มีคุณสมบัติสองอันที่เป็นส่วนตัว คือ _name, _age และ _gender นอกจากนี้ยังมี getter อยู่สามตัว คือ name, age และ gender เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้ นอกจากนี้ยังมี getter ชื่อ map ที่ใช้ในการรับ Map ของอ็อบเจกต์
+ในตัวอย่างด้านล่างนี้, มีคลาสชื่อ Doctor ในคลาสนี้มีคุณสมบัติสองอันที่เป็นส่วนตัว คือ _name, _age และ _gender นอกจากนี้ยังมี getter อยู่สามตัว คือ name, age และ gender เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้ นอกจากนี้ยังมี getter ชื่อ [map](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Map%20in%20Dart.md) ที่ใช้ในการรับ [Map](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Map%20in%20Dart.md) ของอ็อบเจกต์
 ```
 class Doctor {
 // Private properties
@@ -126,25 +126,26 @@ void main() {
 
 ### Dart
 ```
-class Person:
-    def __init__(self, name):
-        self._name = name
+class Person {
+  String _name;
 
-    @property
-    def name(self):
-        return self._name
+  Person(this._name);
+
+  String get name {
+    return _name;
+  }
+}
 
 ```
 ### Java
 ```
-class Person:
-    def __init__(self, name):
-        self._name = name
+public class Person {
+    private String name;
 
-    @property
-    def name(self):
-        return self._name
-
+    public String getName() {
+        return name;
+    }
+}
 ```
 ### Python
 ```

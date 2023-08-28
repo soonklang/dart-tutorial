@@ -5,7 +5,7 @@
   แนะนำภาษา Dart (Introduction)<br>
   การติดตั้ง (Install Dart)<br>
   โครงสร้างโปรแกรม (Basic program)<br>
-  ตัวแปร (Variable)<br>
+  [ตัวแปร (Variable)](User Input in Dart.md)<br>
   ชนิดข้อมูล (Data types)<br>
   คอมเม้นต์ (Comments)<br>
   ตัวดำเนินการ (Operators)<br>

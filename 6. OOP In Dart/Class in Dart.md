@@ -112,7 +112,7 @@ class Dog:
 ### Java
 ```java
 class Dog {
-    String breed = "Java";
+    	String breed = "Java";
 	String name = "Dog";	
 	void displayInfo() {
 	  System.out.println("Breed: "+breed);

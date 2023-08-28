@@ -330,17 +330,18 @@ The length of the string is 5
 </details>
 
 ### Exercise 6.1 : 
-- แล้วถ้าหากค่า return เป็น null จะเป็นยังไง ?
+- แล้วถ้าหากค่า 'name' เป็น null จะเป็นยังไง ?
 
 ```dart
-// Try to use null assertion operator(!) to print null if the variable is null
-int? returnNullButSometimesNot() {
-  return null;
+// Code if 'name' is null
+int findLength(String? name) {
+    // add null assertion operator here
+  return name.length;
 }
 
 void main() {
- int result = returnNullButSometimesNot().abs();
- print(result);
+  int? length = findLength(null);
+  print("The length of the string is $length");
 }
 ```
 [ลองทำแบบฝึกหัด](https://dartpad.dev/?id=0a70f601cabfa763d68a5e13bdbf62ae)
@@ -350,19 +351,20 @@ void main() {
   
 ```dart
 //Code if return is null
-int? returnNullButSometimesNot() {
-  return null;
+int findLength(String? name) {
+    // add null assertion operator here
+  return name!.length;
 }
 
 void main() {
- int result = returnNullButSometimesNot()!.abs();
- print(result);
+  int? length = findLength(null);
+  print("The length of the string is $length");
 }
 ```
 Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่า return เป็น null จะทำให้เกิด **NullError**
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่าตัวแปร 'name' เป็น null จะทำให้เกิด **NullError**
   
 ```
 

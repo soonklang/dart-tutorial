@@ -100,7 +100,7 @@ print("The Length of Types is $length");
  - Sequence Types:list, tuple, range
  - Mapping Type:dict
 
-Reference
+## Reference
    - https://www.w3schools.com/java/java_data_types.asp
    - https://www.w3schools.com/c/c_data_types.php
    - https://www.digitalocean.com/community/tutorials/python-data-types

@@ -1,5 +1,20 @@
 ## Enum in Dart  
 
+Enum คือ ...
+
+## syntax ของ enum
+```dart
+enum cars {
+  Toyota,
+  Honda,
+  Nissan,
+  Ferrari,
+  Bugatti,
+  Benz,
+  Volvo
+}
+```
+## example of enum
 ```dart
 enum cars {
   Toyota,
@@ -42,4 +57,19 @@ void main() {
 Output  
 ```
 Today I choose Volvo.
+```
+
+## how to print all of Enum
+
+
+```dart
+enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+
+void main() {
+ // Days.values: It returns all the values of the enum.
+  for (Days day in Days.values) {
+    print(day);
+  }
+}
+
 ```

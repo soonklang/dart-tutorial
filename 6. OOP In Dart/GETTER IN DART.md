@@ -7,6 +7,16 @@ return_type get property_name {
   // Getter body
 }
 ```
+หมายเหตุ: แทนที่จะเขียน { } หลังชื่อ property คุณยังสามารถเขียน => (เครื่องหมายลูกศรหนา) หลังชื่อ property ได้เช่นกัน
+```
+class Person {
+  String _name;
+  
+  Person(this._name);
+  
+  String get name => _name; // ใช้เครื่องหมายลูกศรแทนการใส่ { return ...; }
+}
+```
 # Example 1: Getter In Dart
 ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ Person คลาสนี้มีคุณสมบัติสองอัน คือ firstName และ lastName นอกจากนี้ยังมี getter ชื่อ fullName ที่รับผิดชอบในการรับชื่อเต็มของบุคคล
 ```
@@ -122,12 +132,14 @@ void main() {
   print(d.map);
 }
 ```
-# ความแตกต่าง Dart and Java and Python
+# การเขียน Dart and Java and Python
+การเขียน Getter ใน Java, Python, และ Dart นั้นมีความแตกต่างกันเล็กน้อยในลักษณะการเขียนและไวยากรณ์ ดังนี้:
 
 ### Dart
+ใน Dart, เราใช้คีย์เวิร์ด get ร่วมกับชื่อเมทอดเพื่อประกาศ getter ดังนี้:
 ```
 class Person {
-  String _name;
+  String _name; // นี่คือ property ที่เก็บชื่อของบุคคล
 
   Person(this._name);
 
@@ -138,9 +150,10 @@ class Person {
 
 ```
 ### Java
+ใน Java, เราต้องประกาศเมทอดเรียกอีกตัวชื่อเดียวกับ property แต่เติมคำว่า "get" ด้านหน้า และใช้งานในรูปแบบ getType getProperty()
 ```
 public class Person {
-    private String name;
+    private String name; // นี่คือ property ที่เก็บชื่อของบุคคล
 
     public String getName() {
         return name;
@@ -148,16 +161,25 @@ public class Person {
 }
 ```
 ### Python
+ใน Python, เราสามารถใช้ @property decorator เพื่อกำหนดเมทอด getter สำหรับ property ดังนี้:
 ```
 class Person:
     def __init__(self, name):
-        self._name = name
+        self._name = name # นี่คือ property ที่เก็บชื่อของบุคคล
 
     @property
     def name(self):
         return self._name
 
 ```
+
+### สรุป:
+
+ใน Java, เราใช้ชื่อเมทอดที่เรียกว่า "get" ร่วมกับชื่อ property
+
+ใน Python, เราใช้ @property decorator ร่วมกับเมทอดที่มีชื่อเหมือนกับ property
+
+ใน Dart, เราใช้คีย์เวิร์ด get ร่วมกับชื่อเมทอดที่เป็นชื่อเดียวกับ property
 
 # ทำไม Getter มีความสำคัญใน Dart?
 

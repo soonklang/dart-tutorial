@@ -100,5 +100,38 @@ The eagle has a sharp vision
 ```
 
 #### _Java_
-public class 
+```java
+class Bird {
+    void fly(){
+        System.out.println("The bird can fly");
+    }
+}
+class Parrot extends Bird {
+    void speak(){
+        System.out.println("The parrot can speak");
+    }
+}
+class Eagle extends Parrot {
+    void vision(){
+        System.out.println("The Eagle has a sharp vision");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Eagle e = new Eagle();
+        e.vision();
+        e.fly();
+        e.speak();
+    }
+}
+```
+output
+```
+The Eagle has a sharp vision
+The bird can fly
+The parrot can speak
+```
+
    

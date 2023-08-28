@@ -5,7 +5,7 @@
 ## Break Statement
  คำสั่ง break เป็นคำสั่งที่ให้โปรแกรมออกจาก loop ทันที โดยไม่ทำคำสั่งที่เหลือต่อ ซึ่งคำสั่ง break นี้ สามารถใช้ได้กับ loop หลาย ๆ loop ไม่ว่าจะเป็น while, do while, for, switch และอื่น ๆ
 
- รูปเเบบการเขียนภาษา Dark , C , Java 
+รูปเเบบการเขียนภาษา Dark , C , Java 
  ```dart
    break;
  ```

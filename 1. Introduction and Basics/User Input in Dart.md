@@ -104,7 +104,7 @@ The entered num is 15.2
 **1.String User Input (แบบข้อความ)** <br>
 ```python
 name = input("กรุณากรอกชื่อของคุณ: ")
-print("สวัสดี, " + name + "!") 
+print("สวัสดี, " + name + "~") 
 ```
 <details open>
 <summary><b>Input</b></summary>
@@ -114,8 +114,32 @@ print("สวัสดี, " + name + "!")
 </details>
 <summary><b>output</b></summary>
  <pre>
-กรุณากรอกชื่อของคุณ :
-สวัสดี, อิ่มบุญ
+กรุณากรอกชื่อของคุณ : อิ่มบุญ
+สวัสดี, อิ่มบุญ~
 </pre>
 </details>
 
+**2.Integer User Input (แบบจำนวนเต็ม)** <br>
+```python
+name = input("กรุณาป้อนชื่อของคุณ : ")
+age = int(input("กรุณาป้อนอายุของคุณ : "))
+
+current_year = 2023
+birth_year = current_year - age
+
+print(f"สวัสดีคุณ {name} คุณเกิดในปี {birth_year}")
+```
+<details open>
+<summary><b>Input</b></summary>
+ <pre>
+อิ่มบุญ
+22
+</pre>
+</details>
+<summary><b>output</b></summary>
+ <pre>
+กรุณากรอกชื่อของคุณ : อิ่มบุญ
+กรุณาป้อนอายุของคุณ : 22
+สวัสดีคุณ อิ่มบุญ คุณเกิดในปี 2001
+</pre>
+</details>

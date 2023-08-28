@@ -22,7 +22,7 @@ class ClassName {
 - **Properties** ใช้ในการเก็บข้อมูล และมันยังมีชื่อเรียกอีกอย่างว่า **fields**  หรือ **attributes**
 - **Functions** ใช้ในการปฏิบัติหรือทำงานต่างๆ และมันยังมีชื่อเรียกอีกอย่างว่า  **methods**
 
-### ตัวอย่างที่ 1
+### ตัวอย่างที่ 1: Declaring A Class In Dart
 ในตัวอย่างด้านล่างจะมี class **Animal** ที่ประกอบด้วย 3 properties คือ**name** ,**numberOfLegs** ,**lifeSpan** โดย class นี้จะมี method **display** ที่ใช้สำหรับพิมพ์ค่าของ properties  
 ```dart
 class Animal {

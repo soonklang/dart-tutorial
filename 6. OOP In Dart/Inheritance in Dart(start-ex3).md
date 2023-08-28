@@ -130,7 +130,5 @@ Price: 20000
   2.Multilevel Inheritance
   3.Hierarchical Inheritance
   4.Multiple Inheritance
-
-
-
-
+แต่ในภาษา Java มี 5 ประเภท จะมีการเพิ่ม Hybrid Inheritance เข้ามา
+- Single Inheritance -

@@ -30,12 +30,12 @@ Output
 ### Example แปลง String เลขฐาน16เป็น Int  
 ```dart
 void main(){
-  String value = "ABC";
+  String value = "A";
   int n = int.parse(value,radix: 16);
   print(n);
 }
 ```
 Output  
 ```
-2748
+10
 ```

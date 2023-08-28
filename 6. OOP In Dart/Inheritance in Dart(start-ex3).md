@@ -10,6 +10,7 @@ class ChildClass extends ParentClass {
   // Child class code
 }
 ```
+# Syntax ใน ภาษา Java
 ```java
 class ParentClass {
   // Parent class code

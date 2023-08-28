@@ -85,21 +85,53 @@ print("The Length of Types is $length");
  ```
 ## เปรียบเทียบขนิดข้อมูลกับภาษาอื่นๆ
    ## ภาษาC
-   ชนิดของNumber มีการใช้float เข้ามาเพิ่ม โดย float ในภาษาC ใช้กับตัวเลขที่มีทศนิยมไม่เกิน 6 ตำแหน่ง 
-   ชนิดของString ใช้คำว่าChar โดย Char จะแยกเป็นตัวอักษรออกมาจากประโยค
-   ```C
-    char letter ='c'; 
-   ```
-   ## ภาษาJava 
- จำนวนชนิดของข้อมูลที่มากกว่า 
- - long, short int เป็นต้น
+   ## ชนิดข้อมูลของภาษาC มีดังนี้
+   - 1.int    ใช้กับตัวเลขจำนวนเต็ม
+   - 2.float  ใช้กับตัวเลขที่มีทศนิยม 6-7ตตำแหน่ง
+   - 3.double ใช้กับตัวเลขที่มีทศนิยมถึง 15 ตำแหน่ง
+   - 4.char   ใช้เก็บตัวอักขระ,ตัวอักษร
+   ## ตัวระบุพื้นฐาน
+   - 1.%d ใช้กับ int
+   - 2.%f ใช้กับ float
+   - 3.%lf ใช้กับ double
+   - 4.%c ใช้กับ char
+   - 5.%s ใช้กับ string
+  ## ภาษาJava 
+   - ชนิดข้อมูลพื้นฐาน  ประกอบด้วย byte, short, int, long, float, double, booleanและchar
+   - ชนิดข้อมูลที่ไม่ใช่ข้อมูลพื้นฐาน - เช่นString, อาร์เรย์และ คลาส
+   -ตัวอย่างการใช้งาน:
+     ```Java
+     class Main{
+      public static void main(String[] args) {
+       int myNum = 5;             
+       float myFloatNum = 5.99f;    
+       char myLetter = 'D';        
+       boolean myBool = true;       
+       String myText = "Hello";
+     }
+     }
+      ```
 ## ภาษาPyhon
    มีการใช้จำนวนชนิดข้อมูลที่เยอะและหลากหลาย และแยกประเภทการใช้งานได้ชัดเจน
  - Text Type:	str
  - Numeric Types:int, float, complex
  - Sequence Types:list, tuple, range
  - Mapping Type:dict
+ - lists ภาษา Python สามารถเก็บข้อมูลชนิดที่เหมือนกันและต่างชนิดในlistได้ 
+   -ตัวอย่างการใช้งาน
+   ```Pyhton
+       #list of having only integers
+       a= [1,2,3,4,5,6]
+       print(a)
 
+       #list of having only strings
+       b=["hello","john","reese"]
+       print(b)
+
+       #list of having both integers and strings
+       c= ["hey","you",1,2,3,"go"]
+       print(c)
+   ``` 
 ## Reference
    - https://www.w3schools.com/java/java_data_types.asp
    - https://www.w3schools.com/c/c_data_types.php

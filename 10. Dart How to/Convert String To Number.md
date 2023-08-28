@@ -42,13 +42,13 @@ Output
 ### Example การใช้ Try-Catch  
 ```dart
 void main(){
-try {
+try { 
 String value = "Silpakorn";
 int n = int.parse(value);
-print(n);
+print(n); //ถ้าแปลงได้จะPrintกรณีนี้
   }
 catch(ex){
-print("Eror");
+print("Eror"); //ถ้าไม่สามารถแปลงได้Printกรณีนี้
 }
 }
 ```

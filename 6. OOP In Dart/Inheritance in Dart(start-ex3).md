@@ -12,13 +12,12 @@ class ChildClass extends ParentClass {
 ```
 # Syntax ใน ภาษา Java
 ```java
-class ParentClass {
-  // Parent class code
-}
-
-class ChildClass extends ParentClass {
-  // Child class code
-}
+class Employee{  
+ //code
+}  
+class Programmer extends Employee{  
+  //code
+} 
 ```
 เมื่อเปรียบเทียบ syntax ของ ภาษา dart กัย java จะมี syntaxที่ใช้ในการ Inheritance ที่เหมือนกัน
 

@@ -36,6 +36,32 @@ You are voter.
  </pre>
 </details>
 
+## เงื่อนไข If-Else
+
+
+## Syntax
+```dart
+    if(condition){
+      statements;
+    }else{
+      statements;
+    }
+```
 ## ตัวอย่างการทำงานของเงื่อนไข If-Else
-
-
+โปรแกรมภาษา Dart จะพิมพ์ข้อความว่าบุคคลนั้นเป็นผู้มีสิทธิเลือกตั้งหรือไม่ โดยจะพิจารณาจากอายุ
+```dart
+  void main(){
+    int age = 12;
+    if(age >= 18){
+      print("You are voter.");
+    }else{
+      print("You are not voter.");
+    }
+  }
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+You are not voter.
+ </pre>
+</details>

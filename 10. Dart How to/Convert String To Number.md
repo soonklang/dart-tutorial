@@ -20,7 +20,17 @@ public class Main {
         System.out.println(n);
     }
 }
+```
+## C  
+```C
+#include <stdio.h>
+#include <stdlib.h>
 
+int main() {
+    char value_int[] = "1";
+    int n = atoi(value_int);
+    printf("%d\n", n);
+}
 ```
 Output   
 ```dart

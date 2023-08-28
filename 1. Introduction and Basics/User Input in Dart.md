@@ -41,3 +41,36 @@ Hello, Geek!
 Welcome to GeeksforGeeks!!
 </pre>
 </details>
+
+**2.Integer User Input (แบบจำนวนเต็ม)** <br>
+>สามารถรับข้อมูลจำนวนเต็มเพื่อรับค่าตัวเลขจากผู้ใช้โดยที่ไม่มีจุดทศนิยม เช่น 10, 100, -800 ,etc...
+ ```dart
+
+// Importing dart:io file
+import 'dart:io';
+ 
+void main()
+{
+    print("Enter your favourite number:");
+ 
+   // Scanning number
+    int? n = int.parse(stdin.readLineSync()!);
+   // Here ? and ! are for null safety
+ 
+    // Printing that number
+    print("Your favourite number is $n");
+}
+```
+
+<details open>
+<summary><b>Input</b></summary>
+ <pre>
+300
+</pre>
+</details>
+<summary><b>output</b></summary>
+ <pre>
+Enter your favourite number:
+Your favourite number is 300
+</pre>
+</details>

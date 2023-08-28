@@ -56,6 +56,24 @@ void main(){
   <pre><code>Program continues after than assert</code></pre>
 </details>
 
+### More Examples
+อาจจะประกาศเงื่อนไขเพิ่มเติ่มแบบด้านล่างได้สำหรับคำสั่ง "assert"
+
+ ```dart
+// ตรวจสอบว่า text มีค่าที่ไม่ใช่ null
+ assert(text != null);
+```
+
+```dart
+// ตรวจสอบว่า number < 100
+assert(number < 100);
+```
+
+```dart
+// ตรวจสอบว่านี่เป็น URL ที่เริ่มต้นด้วย https
+assert(urlString.startsWith('https'));
+```
+
 ### *< Note1 >*
 
 **condition:** ค่าที่ต้องเป็นจริงเพื่อให้โปรแกรมทำงานต่อไป ถ้าเงื่อนไขเป็นเท็จจะหยุดทำงาน

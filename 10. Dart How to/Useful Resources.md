@@ -19,4 +19,8 @@
 
 - [Dart on Reddit](https://www.reddit.com/r/dartlang/)
 
-  เป็นสิ่งที่รวบรวมข้อมูลทุกสิ่งที่เกี่ยวข้องกับ Dart 
+  เป็นสิ่งที่รวบรวมข้อมูลทุกสิ่งที่เกี่ยวข้องกับ Dart
+
+- [The dart community Discord](https://discord.com/invite/Qt6DgfAWWx)
+
+  เป็นแอปพลิเคชันที่สามารถสนทนาและรับความช่วยเหลือจากนักพัฒนา Dart คนอื่นๆ

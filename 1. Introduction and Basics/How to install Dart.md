@@ -1,5 +1,5 @@
 # How to install dart
-ในการติดตั้ง dart ลงบน Windows ของคุณนั้นติดตั้งไม่ใช้เรื่องยากอย่างที่คุณคิด เพียงแค่ 5 Step
+ในการติดตั้ง Dart ลงบน Windows ของคุณนั้นติดตั้งไม่ใช้เรื่องยากอย่างที่คุณคิด เพียงแค่ 5 Step
 ## Step 1: Download Dart SDK
 ไปที่ลิ้งค์ https://dart.dev/tools/sdk/archive.
 

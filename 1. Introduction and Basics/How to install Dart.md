@@ -11,14 +11,18 @@
 
 ตัวอย่างการใช้คำสั่ง ; D:\software\dart-sdk\bin>dart
 ## Step 4: Add Dart Path to PATH Environment Variable
-ทำการเปิด Settings เข้าไปที่ 
+ทำการเปิด Settings เข้าไปที่
+
 - System > About > Advanced system settings > Environment Variables
 - ทำการเลือก Path ที่อยู่ในกล่อง System variables แล้วกด Edit
 - กด new เพื่อเพิ่ม path ที่อยู่ของไฟล์ที่ได้ทำการแตกไฟล์ไวก่อนหน้า คลิ๊ก ok เพื่อเสร็จสิ้น
+
 ตัวอย่างการใส่ที่อยู่ path ; D:\software\dart-sdk\bin\dart
 ## Step 5: Restart Command Prompt
 ปิดหน้าต่าง command Prompt และทำการเปิดใหม่ จากนั้นใช้คำสั่ง dart
+
 ตัวอย่างการใช้คำสั่ง ; D:\>dart
+
 เสร็จสิ้นการติดตั้ง Dart
 # ข้อแตกต่างในการติดตั้ง Dart กับภาษาอื่นๆ
 การติดตั้งของภาษาอื่นๆนั้น ไม่มีความซับซ้อนเท่าไหร่เพียงแค่เรา Download โปรแกรมที่ใช้สำหรับการเขียนภาษานั้นๆ เราก็จะสามารถใช้ภาษานั้นๆ ได้ทันที ต่างกับ Dart ที่ต้องใส่ที่อยู๋ Path

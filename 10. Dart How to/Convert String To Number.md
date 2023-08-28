@@ -13,7 +13,7 @@ extension <extension name> on <type> {
 ```dart
 extension NumberParsing on String { //คราสที่ชื่อ NumberParsing Type คือ String
   int parseInt() { //มีฟังก์ชันชื่อ parseInt()
-    return int.parse(this);
+    return int.parse(this); //เราใช้ int.parse(this) เพื่อแปลง String เป็น int
   }
 
 }
@@ -21,6 +21,10 @@ extension NumberParsing on String { //คราสที่ชื่อ NumberPa
 void main() {
   print('1'.parseInt());
 }
+```
+Output  
+```dart
+1
 ```
 #
 ### Example การใช้ int.parse() 

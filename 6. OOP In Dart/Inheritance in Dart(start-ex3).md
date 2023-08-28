@@ -126,13 +126,21 @@ Price: 20000
 ```
 # ประเภทของInheritance ใน Dart
 ประเภทของinheritnce ใน dart มีอยู่ 4 ประเภทดังนี้
-  1.Single Inheritance\n
-  2.Multilevel Inheritance\n
+
+  1.Single Inheritance
+  
+  2.Multilevel Inheritance
+  
   3.Hierarchical Inheritance
+  
   4.Multiple Inheritance
   
 แต่ในภาษา Java มี 5 ประเภท จะมีการเพิ่ม Hybrid Inheritance เข้ามา
 
 1. Single Inheritance
+   ใน inheritanceประเภทนี้ classจะสามารถทำการinheritanceจาก classเดียวเท่านั้น ใน Dart เราสามารถ extend ได้ครั้งละหนึ่ง class เท่านั้น
+   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/7ddef29f-684f-4d69-a4e6-f045f6aff021)
 
-  ใน inheritanceประเภทนี้ classจะสามารถทำการinheritanceจาก classเดียวเท่านั้น ใน Dart เราสามารถ extend ได้ครั้งละหนึ่ง class เท่านั้น
+3. 
+  
+  

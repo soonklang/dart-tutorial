@@ -11,27 +11,6 @@ void main(){
   print(n);
 }
 ```
-## Java
-```java
-public class Main {
-    public static void main(String[] args) {
-        String value_int = "1";
-        int n = Integer.parseInt(value_int);
-        System.out.println(n);
-    }
-}
-```
-## C  
-```C
-#include <stdio.h>
-#include <stdlib.h>
-
-int main() {
-    char value_int[] = "1";
-    int n = atoi(value_int);
-    printf("%d\n", n);
-}
-```
 Output   
 ```dart
 1
@@ -81,6 +60,36 @@ print("Eror"); //ถ้าไม่สามารถแปลงได้Print�
 Output  
 ```dart
 Error
+```
+### เทียบกับ C,Java,Python  
+## Dart
+```dart
+void main(){
+  String value_int = "1";
+  int n = int.parse(value_int);
+  print(n);
+}
+```
+## Java
+```java
+public class Main {
+    public static void main(String[] args) {
+        String value_int = "1";
+        int n = Integer.parseInt(value_int);
+        System.out.println(n);
+    }
+}
+```
+## C  
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char value_int[] = "1";
+    int n = atoi(value_int);
+    printf("%d\n", n);
+}
 ```
 
 

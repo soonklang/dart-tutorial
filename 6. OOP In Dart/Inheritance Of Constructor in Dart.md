@@ -270,7 +270,7 @@ MacBook constructor</code>
     - Python เมื่อสร้างอ็อบเจกต์ของคลาสลูกใน การเรียก Constructor ของคลาสแม่จะเกิดขึ้นอัตโนมัติ โดยไม่ต้องระบุการเรียกในคลาสลูก
 3. `การวางตำแหน่งการเรียก Super Constructor (Super Constructor Call Placement)`
     - Dart คำสั่ง super() จะต้องอยู่ในร่างของ Constructor ของคลาสลูกเท่านั้นและไม่สามารถเรียกต่อจากการทำงานอื่นได้
-      ยกตัวอย่าง 
+      ยกตัวอย่าง
   ```dart
    class Parent {
   Parent() {
@@ -290,7 +290,7 @@ void main() {
   var child = Child();
 }
 ```
-
+    - ใน Python, Constructor ของคลาสแม่จะถูกเรียกก่อน Constructor ของคลาสลูกโดยอัตโนมัติและไม่ต้องเรียก super().__init__() แบบชัดเจนใน Constructor ของคลาสลูก
    
 
 

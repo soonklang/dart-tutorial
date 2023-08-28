@@ -1,7 +1,7 @@
 # Useful Resources
 เป็นแหล่งข้อมูลที่เป็นประโยชน์สำหรับการเรียนรู้และพัฒนาภาษาโปรแกรม Dart
 ## DartPad
-เป็นเครื่องมือที่ช่วยให้ผู้เรียนและนักพัฒนาสามารถเริ่มต้นและทดสอบภาษาโปรแกรม Dart ได้โดยผ่านเว็บเบราว์เซอร์และไม่ต้องติดตั้งโปรแกรมใดๆ
+เป็นเครื่องมือที่ช่วยให้ผู้เรียนและนักพัฒนาสามารถเริ่มต้นและทดสอบภาษาโปรแกรม Dart ได้โดยผ่านเว็บเบราว์เซอร์และไม่ต้องติดตั้งโปรแกรม
 
 ### สิ่งที่จะได้เรียนรู้จากคู่มือนี้
   1. วิธีใช้งาน DartPad ในการเขียนและทดสอบโค้ด
@@ -24,3 +24,13 @@
 - [The dart community Discord](https://discord.com/invite/Qt6DgfAWWx)
 
   เป็นแอปพลิเคชันที่สามารถสนทนาและรับความช่วยเหลือจากนักพัฒนา Dart คนอื่นๆ
+
+  ## Book about Dart
+  หัวข้อนี้จะเป็นเกี่ยวกับหนังสือเกี่ยวภาษา Dart
+  
+  [Logo](https://dart.dev/assets/img/cover/dart-apprentice-fundamentals.webp)
+  Dart Apprentice: Fundamentals
+  by Jonathan Sande
+
+
+  [Learning Dart ](https://riptutorial.com/Download/dart.pdf)

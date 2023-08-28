@@ -30,8 +30,14 @@ void main()
 <details open>
 <summary><b>output</b></summary>
  <pre>
-Hello, Alice!
-Hello, Bob!
-Hello, Charlie!
+Geek
+</pre>
+</details>
+<details open>
+<summary><b>output</b></summary>
+ <pre>
+Enter your name?
+Hello, Geek! 
+Welcome to GeeksforGeeks!!
 </pre>
 </details>

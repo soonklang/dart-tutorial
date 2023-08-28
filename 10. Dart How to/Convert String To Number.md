@@ -91,5 +91,11 @@ int main() {
     printf("%d\n", n);
 }
 ```
+## Python  
+```Python
+value_int = "1"
+n = int(value_int)
+print(n)
+```
 
 

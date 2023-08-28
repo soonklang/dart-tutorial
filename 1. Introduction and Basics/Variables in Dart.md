@@ -19,6 +19,6 @@ var: สำหรับจัดเก็บค่าใดๆ เช่น. 'Bi
 # Syntax
 (ไวยากรณ์)
 
-- type variableName = value;
+```type variableName = value;```
 
 

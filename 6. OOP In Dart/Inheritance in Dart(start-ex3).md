@@ -126,13 +126,11 @@ Price: 20000
 ```
 # ประเภทของInheritance ใน Dart
 ประเภทของinheritnce ใน dart มีอยู่ 4 ประเภทดังนี้
+  1.Single Inheritance
+  2.Multilevel Inheritance
+  3.Hierarchical Inheritance
+  4.Multiple Inheritance
 
-  1.Single Inheritance 
-  
-  2.Multilevel Inheritance 
-  
-  3.Hierarchical Inheritance 
-  
-  4.Multiple Inheritance 
+
 
 

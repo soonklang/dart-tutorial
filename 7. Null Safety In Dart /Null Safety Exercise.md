@@ -29,7 +29,7 @@ void main() {
 Correct Output
 ```
 Age is null
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' code จะรันผ่านและขึ้นผลลัพธ์
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' (int? age;) code จะรันผ่านและขึ้นผลลัพธ์
 ```
 
 </details>
@@ -60,7 +60,7 @@ void main() {
 Correct Output
 ```
 [1, 2, null, 4]
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' code จะรันผ่านและขึ้นผลลัพธ์
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' (List<int?> items = [1, 2, null, 4];) code จะรันผ่านและขึ้นผลลัพธ์
 ```
 
 </details>
@@ -95,7 +95,7 @@ void main() {
 Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ name เป็น null จึงทำให้เกิด **NullError**
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (String name1 = name!;) ในกรณีนี้ name เป็น null จึงทำให้เกิด **NullError**
  ```
 
 
@@ -172,7 +172,8 @@ void main() {
 Correct Output
 ```
 1
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ code จะรันผ่านและขึ้นผลลัพธ์ 1 เพราตัวแรกใน List มีค่า 1
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (int firstItem = items.first!;)
+ในกรณีนี้ code จะรันผ่านและขึ้นผลลัพธ์ 1 เพราตัวแรกใน List มีค่า 1
 ```
 
 </details>
@@ -248,7 +249,8 @@ void main() {
 Correct Output
 ```
 5
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ค่า return ไม่ใช่ null จึงแสดงผลลัพธ์ 5
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (int result = returnNullButSometimesNot()!.abs();)
+ในกรณีนี้ค่า return ไม่ใช่ null จึงแสดงผลลัพธ์ 5
 ```
 </details>
 
@@ -328,7 +330,7 @@ void main() {
 Correct Output
 ```
 The length of the string is 5
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ค่า length ของ 'name' = 5 ก็จะแสดง 5 ออกมา
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (return name!.length;) ในกรณีนี้ค่า length ของ 'name' = 5 ก็จะแสดง 5 ออกมา
 ```
 </details>
 
@@ -405,7 +407,8 @@ void main() {
 Correct Output
 ```
 Hello
-//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '??' ต่อหลัง 'name' จะเป็นการกำหนดค่า default ให้กับตัวแปรที่เป็น null ทำให้เราจะสามารถแสดงผลลัพธ์ออกมาได้โดยที่ไม่ error
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '??' ต่อหลัง 'name' (String name1 = name ?? 'Hello';)
+จะเป็นการกำหนดค่า default ให้กับตัวแปรที่เป็น null ทำให้เราจะสามารถแสดงผลลัพธ์ออกมาได้โดยที่ไม่ error
 ```
 </details>
 
@@ -495,8 +498,66 @@ void main() {
 Correct Output
 ```
 The length of value is 5 or The value is not string.
-//จะเห็นว่าเมื่อเราใช้ type promotion 
-
+//ใน code นี้ เรากำหนดตัวแปร 'value' เพื่อจะสุ่มเก็บค่า String (true) หรือไม่ก็ null(false) ตอน random boolean แล้วเราจะ type promoted เป็น non-nullalbe type String ตรง  if(value is String)
+ถ้าสุ่มค่า 'value' เป็น null(false) จะแสดงผลลัพธ์ The value is not string. ถ้าเป็น String(true) ก็จะแสดง The length of value is 5
 ```
 </details>
 
+## Exercise 10: Late Keyword
+- ลองใช้ **late** keyword เพื่อแก้ไข error
+```dart
+// Try to solve the error using late keyword
+class Person{
+    String _name;
+
+    void setName(String name){
+        _name = name;
+    }
+
+    String get name => _name;
+}
+
+void main() {
+    Person person = Person();
+    person.setName("Mark");
+    print(person.name);
+}
+```
+
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=30f4779d30a8f00cc2178cc9662dc8e3)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+// Code after using late keyword
+class Person{
+    late String _name;
+
+    void setName(String name){
+        _name = name;
+    }
+
+    String get name => _name;
+}
+
+void main() {
+    Person person = Person();
+    person.setName("Mark");
+    print(person.name);
+}
+
+```
+
+Correct Output
+```
+Mark
+//เมื่อเราใส่คำสั่ง late ไปตอนประกาศตัวแปร late String _name; จะเป็นการบอกว่าจะกำหนดค่าให้ภายหลัง ใช้ในการประกาศ non-nullable
+หากเราไม่ใส่คำสั่ง late จะเกิด **NullError** เพราะตอนประกาศค่าเป็น null 
+```
+</details>
+
+## References
+- https://dart.dev/codelabs/null-safety
+- https://dart-tutorial.com/null-safety/null-safety-exercise-in-dart/
+- https://benzneststudios.com/blog/dart/hello-sound-null-safety-in-dart/

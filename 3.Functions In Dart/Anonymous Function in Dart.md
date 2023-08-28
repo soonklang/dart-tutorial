@@ -52,22 +52,41 @@ void main() {
 ```
 30
 ```
+### ตัวอย่างเดียวกันในภาษาอื่น
 - Python
 ```python
 sum = lambda x,y:x+y
 print(sum(10,20))
 ```
--Java
+- C#
+```c#
+using System;
+class Program
+{
+    delegate int AddFunction(int x, int y);
+    static void Main()
+    {
+        AddFunction sum = (x, y) => x + y;
+        Console.WriteLine(sum(10, 20));
+    }
+}
+```
+- Java
 ```java
 public class Main {
     public static void main(String[] args) {
-        Operation operation = new Operation() {
+        Operation sum = new Operation() {
             public int operate(int x, int y) {
                 return x + y;
             }
         };
 
-        System.out.println(operation.operate(20, 10));
+        int result = sum.operate(10, 20);
+        System.out.println("Result: " + result);
     }
+}
+
+interface Operation {
+    int operate(int x, int y);
 }
 ```

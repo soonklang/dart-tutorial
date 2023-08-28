@@ -54,7 +54,9 @@ Stream<String> getUserName() async* {
   yield 'Smith';                              //ส่งคืนค่า 'Smith' 
 }
 ```
-
+> yield คล้ายๆกับ return คือการคืนค่าข้อมูลกลับ
+> <br>
+> แต่ yield สามารถข้อมูลกลับได้หลายครั้งนั่นเอง
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>
 [Dart - Streams - GeeksforGeeks](https://www.geeksforgeeks.org/dart-streams/)

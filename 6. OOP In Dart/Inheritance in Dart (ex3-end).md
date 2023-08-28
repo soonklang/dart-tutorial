@@ -67,113 +67,121 @@ The eagle has a sharp vision
         
 
   
-ต่อไปนี้เราจะลองเขียนScenarioเดียวกันนี้อยู่ในบริบทภาษาอื่นเช่นภาษา Python , Java , และ C++  
+*ต่อไปนี้เราจะลองเขียนScenarioเดียวกันนี้อยู่ในบริบทภาษาอื่นเช่นภาษา Python , Java , และ C++* 
 
-####  _Python_
-<details> <summary><strong>code</strong></summary>
-```python
-class Bird:
-   def fly(self) :
-      print("The bird can fly")
+<details> 
+   <summary><strong>Python Code</strong></summary>
 
-
-#inherit from SuperClass Bird
-class Parrot(Bird):
-   def speak(self) :
-      print("The parrot can speak")
-
-
-#inherit from Parrot intermediate class
-class Eagle(Parrot) :
-   def vision(self):
-      print("The eagle has a sharp vision")
-
-e = Eagle()
-e.fly()
-e.speak()
-e.vision()
-```
-output
-```
-The bird can fly
-The parrot can speak
-The eagle has a sharp vision
-```
+   ```python
+   class Bird:
+      def fly(self) :
+         print("The bird can fly")
+   
+   
+   #inherit from SuperClass Bird
+   class Parrot(Bird):
+      def speak(self) :
+         print("The parrot can speak")
+   
+   
+   #inherit from Parrot intermediate class
+   class Eagle(Parrot) :
+      def vision(self):
+         print("The eagle has a sharp vision")
+   
+   e = Eagle()
+   e.fly()
+   e.speak()
+   e.vision()
+   ```
+   output
+   ```
+   The bird can fly
+   The parrot can speak
+   The eagle has a sharp vision
+   ```
 </details>
 
-#### _Java_
-```java
-class Bird {
-    void fly(){
-        System.out.println("The bird can fly");
-    }
-}
-class Parrot extends Bird {
-    void speak(){
-        System.out.println("The parrot can speak");
-    }
-}
-class Eagle extends Parrot {
-    void vision(){
-        System.out.println("The Eagle has a sharp vision");
-    }
-}
+<details> 
+   <summary><strong>Java code</strong></summary>
+   
+   ```java
+      class Bird {
+          void fly(){
+              System.out.println("The bird can fly");
+          }
+      }
+      class Parrot extends Bird {
+          void speak(){
+              System.out.println("The parrot can speak");
+          }
+      }
+      class Eagle extends Parrot {
+          void vision(){
+              System.out.println("The Eagle has a sharp vision");
+          }
+      }
 
 
-public class Main {
-    public static void main(String[] args) {
-        Eagle e = new Eagle();
-        e.vision();
-        e.fly();
-        e.speak();
-    }
-}
-```
-output
-```
-The Eagle has a sharp vision
-The bird can fly
-The parrot can speak
-```
+      public class Main {
+          public static void main(String[] args) {
+              Eagle e = new Eagle();
+              e.vision();
+              e.fly();
+              e.speak();
+          }
+      }
+   ```
+   output
+   ```
+   The Eagle has a sharp vision
+   The bird can fly
+   The parrot can speak
+   ```
+</details>
 
-#### _C++_
-```C++
-#include <iostream>
+<details>
+   <summary><strong>C++ code</strong></summary>
 
-class Bird {
-public:
-    void fly() {
-        std::cout << "The bird can fly" << std::endl;
-    }
-};
+   ```C++
+      #include <iostream>
+      
+      class Bird {
+      public:
+          void fly() {
+              std::cout << "The bird can fly" << std::endl;
+          }
+      };
+      
+      class Parrot : public Bird {
+      public:
+          void speak() {
+              std::cout << "The parrot can speak" << std::endl;
+          }
+      };
+      
+      class Eagle : public Parrot {
+      public:
+          void vision() {
+              std::cout << "The Eagle has a sharp vision" << std::endl;
+          }
+      };
+      
+      int main() {
+          Eagle e;
+          e.vision();
+          e.fly();
+          e.speak();
+          return 0;
+      }
+   ```
+   output
+   ```
+   The Eagle has a sharp vision
+   The bird can fly
+   The parrot can speak
+   ```
+</details>
 
-class Parrot : public Bird {
-public:
-    void speak() {
-        std::cout << "The parrot can speak" << std::endl;
-    }
-};
-
-class Eagle : public Parrot {
-public:
-    void vision() {
-        std::cout << "The Eagle has a sharp vision" << std::endl;
-    }
-};
-
-int main() {
-    Eagle e;
-    e.vision();
-    e.fly();
-    e.speak();
-    return 0;
-}
-```
-output
-```
-The Eagle has a sharp vision
-The bird can fly
-The parrot can speak
-```
-
+      สังเกตเห็นว่า Syntax ของ Dart กับ Java มีลักษณะคล้ายคลึงกัน
    

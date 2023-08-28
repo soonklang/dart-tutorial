@@ -257,25 +257,26 @@ MacBook constructor</code>
 
 // Base class
 struct Laptop {
-// Constructor
-Laptop() {
-printf("Laptop constructor\n");
-}
+  // Constructor
+  Laptop() {
+    printf("Laptop constructor\n");
+  }
 };
 
 // Derived class
 struct MacBook : Laptop {
-// Constructor
-MacBook() {
-printf("MacBook constructor\n");
-}
+  // Constructor
+  MacBook() {
+    printf("MacBook constructor\n");
+  }
 };
 
 int main() {
-struct MacBook macbook;
-return 0;
+  struct MacBook macbook;
+  return 0;
 }
 ```
+  >โค้ดข้างบนเป็นการแปลงโค้ด Dart เป็นภาษา C โดยใช้ struct เพื่อสร้างคลาสและการสืบทอด โดยฟังก์ชัน constructor ถูกแปลงเป็นการใช้ printf เพื่อแสดงผลลัพธ์เช่นเดียวกันกับคำสั่ง print ใน Dart และ main ใน C มีการสร้างอ็อบเจกต์ของคลาส MacBook อย่างเดียวและส่งคืนค่า 0 เพื่อแสดงว่าโปรแกรมทำงานสมบูรณ์แล้ว
 
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Java
   การสืบทอด Constructor ใน Java มีลักษณะที่คล้ายคลึงกัน โดยใน Java เราใช้ super() เพื่อเรียก Constructor ของคลาสแม่เช่นกัน แต่ยังมีบางความแตกต่างบ้างที่ควรรู้

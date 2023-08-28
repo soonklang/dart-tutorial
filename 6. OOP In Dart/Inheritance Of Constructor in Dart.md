@@ -256,12 +256,17 @@ MacBook constructor</code>
 1. `Default Constructor`
     - Dart ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ<br>
     - Java ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ แต่ถ้าระบุ Constructor ใด ๆ จะต้องระบุ default constructor ด้วยเอง
-2. `Implicit Call to Super Constructor`
-    - Dart ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
-    - Java ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
+2. `การเรียก Constructor ของคลาสแม่`(Implicit Call to Super Constructor)
+    - Dart และ Java ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
 3. `Super Constructor Call Placement`
     - Dart ใช้ **super()** เพื่อเรียก Constructor ของคลาสแม่ในร่าง Constructor ของคลาสลูก โดย**จำเป็นต้องเรียกในร่าง Constructor ของคลาสลูก**
     - Java ใช้ **super()** ในร่าง Constructor ของคลาสลูกเพื่อเรียก Constructor ของคลาสแม่ โดยต้องเป็น**คำสั่งแรกในร่าง Constructor ของคลาสลูก**
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python
-  การสืบทอด Constructor ใน Python มีลักษณะที่คล้ายคลึงกันบางประการ แต่ยังมีบางความแตกต่างอย่างสำคัญ ดังนี้:
-    - ภาษา Python ไม่มีการเรียกใช้ Constructor ของคลาสแม่ด้วย super() อย่างเดียว ในคลาสลูกจะใช้ฟังก์ชัน __init__() เพื่อสร้าง Constructor ของตัวเอง และถ้าต้องการเรียก Constructor ของคลาสแม่ จะต้องใช้ชื่อคลาสแม่และฟังก์ชัน __init__() 
+  การสืบทอด Constructor ใน Python คล้ายกันในแง่ของพื้นฐาน แต่ก็มีบางความแตกต่างที่ควรนำเสนอ:
+  1. `Default Constructor`
+    - Dart และ Python ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติและจะถูกเรียกใช้งานเมื่อสร้างอ็อบเจกต์ของคลาสโดยไม่ต้องระบุอะไรเพิ่มเติม
+  2. `การเรียก Constructor ของคลาสแม่`(Implicit Call to Super Constructor)
+    - Dart เมื่อสร้างอ็อบเจกต์ของคลาสลูก โครงสร้าง Constructor ของคลาสแม่จะถูกเรียกก่อน Constructor ของคลาสลูก โดยเราจะใช้ super() เพื่อเรียก Constructor ของคลาสแม่ การเรียก super() จะต้องอยู่ในร่าง Constructor ของคลาสลูกเท่านั้น
+    - Python เมื่อสร้างอ็อบเจกต์ของคลาสลูกใน การเรียก Constructor ของคลาสแม่จะเกิดขึ้นอัตโนมัติ โดยไม่ต้องระบุการเรียกในคลาสลูก
+
+

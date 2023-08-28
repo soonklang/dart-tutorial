@@ -43,7 +43,7 @@ Output
 ```dart
 void main(){
 try {
-String value = "hello";
+String value = "Silpakorn";
 int n = int.parse(value);
 print(n);
   }

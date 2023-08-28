@@ -2,7 +2,13 @@
 เซต (Set) เป็นโครงสรา้งข้อมูลเก็บค่าหรือข้อมูล ซึ่งไม่สามารถเก็บค่าที่ซ้ำกันได้ในเซต โดยไม่มีการเรียงลำดับของข้อมูลทำงานได้เร็วกว่า list เมือต้องใช้กับข้อมูลขนาดใหญ่
   เซตจะกำหนดด้วยปีกกาใหญ่ {}
   
-**List สามารถเพิ่มค่าซ้ำกันได้แต่ Set ไม่สามารถทำได้
+**List สามารถเพิ่มค่าซ้ำกันได้แต่ Set ไม่สามารถทำได้  
+Syntext สร้างเซต
+
+    var variable_name = <variable_type>{};
+    or,
+     Set <variable_type> variable_name = {};
+
 ## คุณสมบัติของ Dart
 first --> แสดงค่าตัวแรกในเซต  
 last --> แสดงค่าตัวสุดท้ายในเซต  
@@ -62,3 +68,7 @@ intersection --> สร้างเซตที่มีค่าซ้ำกั
 
     final intersectionSet = fruits1.intersection(fruits2);
 
+อ้างอิง  
+https://www.geeksforgeeks.org/dart-sets/  
+https://dart-tutorial.com/collections/set-in-dart/  
+https://www.darttutorial.org/dart-tutorial/dart-set/

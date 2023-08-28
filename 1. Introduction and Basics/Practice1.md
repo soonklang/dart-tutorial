@@ -324,46 +324,132 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-## 7.Write a program to find quotient and remainder of two integers.
+
+## 7.Write a program in Dart to remove all whitespaces from String.
 ```dart
+void main() {
+  String input = "This is a sample string with spaces";
+
+  String output = input.replaceAll(' ', '');
+
+  print("Original String: $input");
+  print("String without Spaces: $output");
+}
 ```
 ### • C
 ```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char input[] = "This is a sample string with spaces";
+    char output[sizeof(input)]; // Make sure the output buffer is big enough
+
+    int j = 0;
+    for (int i = 0; i < strlen(input); i++) {
+        if (input[i] != ' ') {
+            output[j++] = input[i];
+        }
+    }
+    output[j] = '\0';
+
+    printf("Original String: %s\n", input);
+    printf("String without Spaces: %s\n", output);
+
+    return 0;
+}
 ```
 ### • Java
 ```java
+import java.util.Scanner;
+
+public class RemoveWhitespace {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        String output = input.replaceAll(" ", "");
+
+        System.out.println("Original String: " + input);
+        System.out.println("String without Spaces: " + output);
+
+        scanner.close();
+    }
+}
 ```
 ### • Python
 ```python
+def main():
+    input_string = input("Enter a string: ")
+
+    output_string = input_string.replace(" ", "")
+
+    print("Original String:", input_string)
+    print("String without Spaces:", output_string)
+
+if __name__ == "__main__":
+    main()
 ```
-## 8.Write a program to swap two numbers.
+## 8.Write a dart program to convert String to int.
+```dart
+void main() {
+  String input = "12345"; // Replace this with the input string
+  int convertedNumber = int.parse(input);
+
+  print("Original String: $input");
+  print("Converted Number: $convertedNumber");
+}
+```
 ### • C
-```c```
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char input[] = "12345"; // Replace this with the input string
+    int convertedNumber = atoi(input);
+
+    printf("Original String: %s\n", input);
+    printf("Converted Number: %d\n", convertedNumber);
+
+    return 0;
+}
+```
 ### • Java
-```c```
+```java
+import java.util.Scanner;
+
+public class StringToInt {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        int convertedNumber = Integer.parseInt(input);
+
+        System.out.println("Original String: " + input);
+        System.out.println("Converted Number: " + convertedNumber);
+
+        scanner.close();
+    }
+}
+```
 ### • Python
-```c```
-## 9.Write a program in Dart to remove all whitespaces from String.
-### • C
-```c```
-### • Java
-```c```
-### • Python
-```c```
-## 10.Write a dart program to convert String to int.
-### • C
-```c```
-### • Java
-```c```
-### • Python
-```c```
-## 11.Suppose, you often go to restaurant with friends and you have to split amount of bill. Write a program to calculate split amount of bill. Formula= (total bill amount) / number of people
-### • C
-```c```
-### • Java
-```c```
-### • Python
-```c```
+```python
+def main():
+    input_string = input("Enter a string: ")
+    converted_number = int(input_string)
+
+    print("Original String:", input_string)
+    print("Converted Number:", converted_number)
+
+if __name__ == "__main__":
+    main()
+```
+
 ## < Reference >
 https://dart-tutorial.com/introduction-and-basics/questions-for-practice-1/
 https://www.tamemo.com/post/172/dart-101-intro/

@@ -26,9 +26,9 @@ Null	       null	        It represents null value
 
 ตัวอย่างฟังก์ชันที่มีการใช้งานร่วมกับ Map บ่อย
 
-1.	addAll()
+1.	addAll()  
 
-ฟังก์ชันสำหรับรวม (merge) key/value เข้ากับ map ตั้งต้น ถ้า key ไม่มีใน map จะเป็นการ add แต่ถ้ามีอยู่แล้ว จะเป็นการ update value ของ key นั้น
+addAll() คือฟังก์ชันสำหรับรวม (merge) key/value เข้ากับ map ตั้งต้น ถ้า key ไม่มีใน map จะเป็นการ add แต่ถ้ามีอยู่แล้ว จะเป็นการ update value ของ key นั้น
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/3629ace3-2d09-4ac0-afa2-5c0c408a5ef0)
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/935bcf35-bb6d-4bcb-833b-4ba243773b29)
@@ -54,7 +54,19 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/d778fb71-08e6-4940-8237-c0e0fab8e2ab)
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/a2db4392-0ae2-42cf-ad7f-3321c5292376)
 
+5.clear()
 
+ฟังก์ชันลบ key/value ทั้งหมดใน map
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/a790c14a-3622-4dea-894e-9b055ec16fda)
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/26f06fe5-8374-4ad9-ba27-d20394a7fd4d)
+
+6.Map.from()
+
+ฟังก์ชันสำหรับสร้าง new map จาก map เดิม (clone)
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/54d355a4-4ffc-4172-a3f5-65b7ffa3f2cd)
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/7491dd5a-2ac9-4d1e-a9ac-7216eb87553d)
 
 
 

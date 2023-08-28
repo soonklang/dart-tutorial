@@ -2,10 +2,10 @@
 แนะนำภาษา Dart และพื้นฐานการเขียนภาษา Dart
 
 ## หัวข้อย่อย
-  [แนะนำภาษา Dart (Introduction](Introduction to Dart.md)<br>
+  [แนะนำภาษา Dart (Introduction](IntroductiontoDart.md)<br>
   การติดตั้ง (Install Dart)<br>
   โครงสร้างโปรแกรม (Basic program)<br>
-  [ตัวแปร (Variable)](User Input in Dart.md) <br>
+  [ตัวแปร (Variable)](UserInputInDart.md) <br>
   ชนิดข้อมูล (Data types)<br>
   คอมเม้นต์ (Comments)<br>
   ตัวดำเนินการ (Operators)<br>

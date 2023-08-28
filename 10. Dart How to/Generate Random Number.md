@@ -85,9 +85,9 @@ import 'dart:math';
 
 void main() {
    Random r1 = new Random();     //ตัวเลขจำนวนเต็มที่บวกเข้าไปข้างหลังmethod จะเป็นตัวกำหนดค่าเริ่มต้น
-   print(r1.nextInt(10)+1);      // สุ่มตัวเลขตั้งแต่ 1-10
-   print(r1.nextBool(100)+1);    // สุ่มตัวเลขตั้งแต่ 1-100
-   print(r1.nextDouble(100)+50); // สุ่มตัวเลขตั้งแต่ 50-100
+   print(r1.nextInt(11)+1);      // สุ่มตัวเลขตั้งแต่ 1-10
+   print(r1.nextBool(101)+1);    // สุ่มตัวเลขตั้งแต่ 1-100
+   print(r1.nextDouble(101)+50); // สุ่มตัวเลขตั้งแต่ 50-100
 }
 ```
 <details>

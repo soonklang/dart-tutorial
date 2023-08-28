@@ -8,7 +8,7 @@
 หัวข้อแบ่งเป็น 2 ส่วนหลัก คือ Basics และ Advanced
 
 ### Basics
-  1. Introduction and Basics
+  1. [Introduction and Basics](https://github.com/soonklang/dart-tutorial/tree/main/1.%20Introduction%20and%20Basics)<br>
   2. [Conditions and Loops](https://github.com/soonklang/dart-tutorial/tree/main/2.%20Conditions%20and%20loops)<br>
   3. [Functions In Dart](https://github.com/soonklang/dart-tutorial/tree/main/3.Functions%20In%20Dart)<br>
   4. [Collections In Dart](https://github.com/soonklang/dart-tutorial/tree/main/4.%20Collections%20In%20Dart)

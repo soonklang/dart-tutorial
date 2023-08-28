@@ -249,5 +249,5 @@ MacBook constructor</code>
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา C 
 |ในภาษา Dart | ในภาษา C  |
 |-----------------------------------------------------------|-------------|
-|![รูปภาพของนาย A](https://www.google.com/url?sa=i&url=https%3A%2F%2Fthiti.dev%2Fblog%2F37%2F&psig=AOvVaw0WWf7XiNwOmUyvtx2ykdV3&ust=1693323200790000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPj0mtDW_4ADFQAAAAAdAAAAABAE)  | ![รูปภาพของนาย A](https://www.ordinateurs-occasions.com/wp-content/uploads/2020/06/C-640x381.jpg) |  
+| ![รูปภาพของนาย A](https://www.ordinateurs-occasions.com/wp-content/uploads/2020/06/C-640x381.jpg)| ![รูปภาพของนาย A](https://www.ordinateurs-occasions.com/wp-content/uploads/2020/06/C-640x381.jpg) |  
 

@@ -70,6 +70,7 @@ void main() {
 }
 ```
 จากในตัวอย่าง เราจะสร้างclass Person จากนั้นสร้างclass Student ที่ inheritance คุณสมบัติ และ methodของclass Person
+** output **
 ```
 Name: John
 Age: 20
@@ -115,6 +116,7 @@ void main(){
 ```
 จากตัวอย่างนี้ parent class คือ Car และ child class คือ Toyota 
 class Toyota จะทำการ inheritance คุณสมบัติและ method ของ Car
+** output **
 ```
 Car started
 Model: Camry

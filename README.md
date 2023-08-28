@@ -16,7 +16,7 @@
 
 ### Advanced
   6. [OOP In Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/OOP%20In%20Dart.md)<br>
-  7. Null Safety In Dart
+  7. [Null Safety In Dart](https://github.com/soonklang/dart-tutorial/tree/main/7.%20Null%20Safety%20In%20Dart%20)<br>
   8. Asynchronous Programming
   9. Useful Information
   10. [Dart How To](https://github.com/soonklang/dart-tutorial/tree/main/10.%20Dart%20How%20to)<br>

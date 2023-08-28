@@ -34,7 +34,7 @@ import 'dart:math';
 void main() {
    print("Using Random()");
    Random r1 = new Random();
-   print(r1.nextInt(100)); //จะทำการสุ่มตััวเลขตั้งแต่ 0-100
+   print(r1.nextInt(100)); //จะทำการสุ่มตััวเลขตั้งแต่ 0-99
    print(r1.nextBool());   //จะทำการสุ่มค่า boolean
    print(r1.nextDouble()); //จะทำการสุ่มเลขทศนิยม
 }

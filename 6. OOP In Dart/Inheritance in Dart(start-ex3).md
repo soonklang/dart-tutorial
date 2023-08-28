@@ -76,7 +76,7 @@ Age: 20
 School Name: ABC School
 School Address: New York
 ```
-##ข้อดีของInheritance ใน Dart
+## ข้อดีของInheritance ใน Dart
 - ส่งเสริมการนำ code กลับมาใช้ซ้ำได้และลด code ที่ซ้ำซ้อน
 - ช่วยในการออกแบบโปรแกรมให้ดีขึ้น
 - ช่วยให้ code ง่ายขึ้น สะอาดขึ้น และประหยัดเวลา

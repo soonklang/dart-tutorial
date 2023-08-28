@@ -253,5 +253,6 @@ MacBook constructor</code>
   1.`Default Constructor`
     - Dart ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ
     - Java ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ แต่ถ้าระบุ Constructor ใด ๆ จะต้องระบุ default constructor ด้วยเอง
+  2.`Implicit Call to Super Constructor`
 
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python

@@ -20,6 +20,17 @@ contains --> เช็คข้อมูลในเซตเป็น True ห�
     print("The length of fruits is ${fruits.length}");
     print(fruits.contains("Mango"));
 
+## แสดงค่าในเซต
+แสดงค่าในเซตด้วยการใช้ loop
+
+    void main(){
+     Set<String> fruits = {"Apple", "Orange", "Mango"};
+  
+     for(String fruit in fruits){
+      print(fruit);
+     }
+      }
+
 ## Methods in Set
 add() --> เพิ่มค่า  
 remove() --> ลบค่า  

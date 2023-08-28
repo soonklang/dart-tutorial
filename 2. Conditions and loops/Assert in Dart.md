@@ -152,7 +152,7 @@ print("Program continues after than assert")
 
 >Java: ตามจริงแล้วไม่มีคำสั่ง "assert" ต้องทำการเปิดโหมดการใช้งานโหมด "assertions" ของ java เพื่อให้ทำงานได้
 
-*การเปิดโหมดใช้งานโดย*
+>*การเปิดโหมดใช้งานโดย*
 
 >java -ea หรือ java -enableassertions
 

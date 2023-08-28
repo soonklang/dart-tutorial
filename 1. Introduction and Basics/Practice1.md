@@ -250,15 +250,79 @@ if __name__ == "__main__":
 ```
 ## 6.Write a program to print full name of a from first name and last name using user input.
 ```dart
+import 'dart:io';
+
+void main() {
+  stdout.write("Enter your first name: ");
+  String firstName = stdin.readLineSync()!;
+
+  stdout.write("Enter your last name: ");
+  String lastName = stdin.readLineSync()!;
+
+  String fullName = "$firstName $lastName";
+
+  print("Full Name: $fullName");
+}
 ```
 ### • C
 ```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char firstName[50];
+    char lastName[50];
+    char fullName[100];
+
+    printf("Enter your first name: ");
+    scanf("%s", firstName);
+
+    printf("Enter your last name: ");
+    scanf("%s", lastName);
+
+    strcpy(fullName, firstName);
+    strcat(fullName, " ");
+    strcat(fullName, lastName);
+
+    printf("Full Name: %s\n", fullName);
+
+    return 0;
+}
 ```
 ### • Java
 ```java
+import java.util.Scanner;
+
+public class FullNamePrinter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your first name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.print("Enter your last name: ");
+        String lastName = scanner.nextLine();
+
+        String fullName = firstName + " " + lastName;
+
+        System.out.println("Full Name: " + fullName);
+
+        scanner.close();
+    }
+}
 ```
 ### • Python
 ```python
+def main():
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
+
+    full_name = first_name + " " + last_name
+
+    print("Full Name:", full_name)
+
+if __name__ == "__main__":
+    main()
 ```
 ## 7.Write a program to find quotient and remainder of two integers.
 ```dart

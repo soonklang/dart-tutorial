@@ -39,6 +39,29 @@ Output
 4
 5
    ```
+### Example Of yield*
+```dart
+Stream<int> str(int n) async* {
+ if (n > 0) {  
+   await Future.delayed(Duration(seconds: 2));
+   yield n;
+   yield* str(n - 2);
+ }
+}
+
+void main() {
+ str(10).forEach(print);
+}
+```
+Output
+
+```dart
+10
+8
+6
+4
+2
+   ```
 
 ## C
 

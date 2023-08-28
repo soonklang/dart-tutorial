@@ -7,7 +7,7 @@ extension <extension name> on <type> {
   (<member definition>)*
 }
 ```
-### Example การใช้ Etension  
+### Example การใช้ Extension  
 ```dart
 extension NumberParsing on String { //คราสที่ชื่อ NumberParsing Type คือ String
   int parseInt() { //มีฟังก์ชันชื่อ parseInt()

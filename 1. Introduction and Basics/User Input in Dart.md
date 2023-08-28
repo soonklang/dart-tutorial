@@ -1,13 +1,13 @@
 # User Input in Dart
 
 ## **บทนำ**
-ในภาษาโปรแกรม Dart นั้นจะสามารถรับข้อมูลสำหรับการนำเข้ามาจากผู้ใช้ผ่านคอนโซลได้โดยใช้ฟังก์ชัน .readLineSync() ซึ่งจะใช้ฟังก์ชันนั้นได้ก็ต้องimportไลบรารีที่ชื่อ dart:io จากไลบรารีของ Dart เพื่อรับข้อมูลจากคอนโซล
+การรับข้อมูลจากผู้ใช้ (User Input) ในภาษา Dart สามารถทำได้โดยใช้ฟังก์ชัน .readLineSync() ซึ่งจะใช้ฟังก์ชันนั้นได้ก็ต้อง import ไลบรารีที่ชื่อ dart:io จากไลบรารีของ Dart เพื่อรับข้อมูลจากคอนโซล 
 
  ```dart
  import 'dart:io';
 ```
 
-คลาสนี้อนุญาตให้ผู้ใช้อ่านข้อมูลจากการนำเข้ามาตรฐานได้ทั้งแบบ Synchronous และ Asynchronous ฟังก์ชัน .readLineSync() เป็นหนึ่งในวิธีการที่ใช้ในการรับข้อมูลจากผู้ใช้ ซึ่งมีหลายรูปแบบ
+คลาสนี้อนุญาตให้ผู้ใช้อ่านข้อมูลจากการนำเข้ามาตรฐานได้ทั้งแบบ Synchronous และ Asynchronous ฟังก์ชัน .readLineSync() เป็นหนึ่งในวิธีการที่ใช้ในการรับข้อมูลจากผู้ใช้ โดยรูปแบบการใช้งาน .readLineSync() ดังนี้
  * String User Input (แบบข้อความ)
  * Integer User Input (แบบจำนวนเต็ม)
  * Floating Point User Input (แบบทศนิยม)
@@ -99,3 +99,23 @@ The entered num is 15.2
 
 # **Comparing user Input in Dart with Java python and c** #
 **User Input in python** <br>
+การรับข้อมูลจากผู้ใช้ (User Input) ในภาษา Python สามารถทำได้โดยใช้ฟังก์ชัน input() ซึ่งสามารถรับข้อมูลได้ทั้งตัวอักษรและตัวเลขได้ตามต้องการ
+ตัวอย่าง การใช้งาน input():
+**1.String User Input (แบบข้อความ)** <br>
+```python
+name = input("กรุณากรอกชื่อของคุณ: ")
+print("สวัสดี, " + name + "!") 
+```
+<details open>
+<summary><b>Input</b></summary>
+ <pre>
+อิ่มบุญ
+</pre>
+</details>
+<summary><b>output</b></summary>
+ <pre>
+กรุณากรอกชื่อของคุณ :
+สวัสดี, อิ่มบุญ
+</pre>
+</details>
+

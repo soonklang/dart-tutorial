@@ -12,5 +12,5 @@
  * Integer User Input (แบบจำนวนเต็ม)
  * Floating Point User Input (แบบทศนิยม)
 
-## **String User Input (แบบข้อความ)** ##
-
+## **ตัวอย่างของการรับข้อมูลทั้ง 3 รูปแบบ** ##
+**1.String User Input (แบบข้อความ)** <br>

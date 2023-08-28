@@ -252,6 +252,9 @@ MacBook constructor</code>
 การสืบทอด Constructor ใน Java มีลักษณะที่คล้ายคลึงกัน โดยใน Java เราใช้ super() เพื่อเรียก Constructor ของคลาสแม่เช่นกัน แต่ยังมีบางความแตกต่างบ้างที่ควรรู้
 1. `Default Constructor`
     - Dart ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ<br>
-    - Java ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ แต่ถ้าระบุ Constructor ใด ๆ จะต้องระบุ default 
+    - Java ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ แต่ถ้าระบุ Constructor ใด ๆ จะต้องระบุ default constructor ด้วยเอง
+2. `Implicit Call to Super Constructor`
+    - Dart ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
+    - Java ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
 
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python

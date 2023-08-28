@@ -21,6 +21,7 @@ class Programmer extends Employee{
 } 
 ```
 เมื่อเปรียบเทียบ syntax ของ ภาษา dart กัย java จะมี syntaxที่ใช้ในการ Inheritance ที่เหมือนกัน
+
 -Python
 ```python
 class Parent:

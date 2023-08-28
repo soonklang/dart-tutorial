@@ -1,6 +1,27 @@
 # Convert String to Number
 ในการแปลง String เป็น number ใน Dart เราสามารถทำได้ด้วยการใช้ Method int.parse() และ double.parse()
-วิธีการนี้สามารถใช้ได้กับ String ที่เป็นตัวเลขและเลขฐาน เราสามารถใช้ Try-Catch เพื่อตรวจว่าแปลงเป็นNumberได้ไหม ถ้าแปลงไม่ได้ให้ส่งข้อความบอกว่าไม่สามารถแปลงได้  
+วิธีการนี้สามารถใช้ได้กับ String ที่เป็นตัวเลขและเลขฐาน เราสามารถใช้ Try-Catch เพื่อตรวจว่าแปลงเป็นNumberได้ไหม ถ้าแปลงไม่ได้ให้ส่งข้อความบอกว่าไม่สามารถแปลงได้ 
+
+อีกวิธีคือการใช้Extension  
+การสร้าง Extension  
+```dart
+extension <extension name> on <type> {
+  (<member definition>)*
+}
+```
+### Example การใช้ Etension  
+```dart
+extension NumberParsing on String { //คราสที่ชื่อ NumberParsing Type คือ String
+  int parseInt() { //มีฟังก์ชันชื่อ parseInt()
+    return int.parse(this);
+  }
+
+}
+
+void main() {
+  print('1'.parseInt());
+}
+```
 #
 ### Example การใช้ int.parse() 
 ## Dart

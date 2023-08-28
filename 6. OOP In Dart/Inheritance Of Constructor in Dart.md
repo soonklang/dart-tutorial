@@ -249,5 +249,23 @@ MacBook constructor</code>
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา C 
 |ในภาษา Dart | ในภาษา C  |
 |-----------------------------------------------------------|-------------|
-| ![รูปภาพของนาย A](https://www.ordinateurs-occasions.com/wp-content/uploads/2020/06/C-640x381.jpg)| ![รูปภาพของนาย A](https://www.ordinateurs-occasions.com/wp-content/uploads/2020/06/C-640x381.jpg) |  
+| ```dart
+class Laptop {
+  // Constructor
+  Laptop() {
+    print("Laptop constructor");
+  }
+}
+
+class MacBook extends Laptop {
+  // Constructor
+  MacBook() {
+    print("MacBook constructor");
+  }
+}
+
+void main() {
+  var macbook = MacBook();
+}
+```| ![รูปภาพของนาย A](https://www.ordinateurs-occasions.com/wp-content/uploads/2020/06/C-640x381.jpg) |  
 

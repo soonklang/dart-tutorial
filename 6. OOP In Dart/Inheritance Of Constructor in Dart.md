@@ -251,31 +251,31 @@ MacBook constructor</code>
   ภาษา C ไม่มีการสนับสนุนสำหรับการสืบทอด Constructor เหมือนกับภาษาอื่น ๆ ที่มีแนวคิดเชิงวัตถุอย่าง Dart หรือ C++
   - ภาษา C เป็นภาษาโปรแกรมมิ่งแบบ procedural และไม่มีคอนเซ็ปต์ของคลาสและสืบทอดอย่างแท้จริง จึงไม่มีสิ่งที่เรียกว่า "Constructor" และ "Inheritance of Constructor"
   - ภาษา C โดยสามารถจะใช้ฟังก์ชันเพื่อกำหนดการทำงานเมื่อมีการสร้างอ็อบเจกต์ของโครงสร้าง(struct)<br>
-    > **จากตัวอย่างที่ 1** เมื่ออยู่ในรูปแบบภาษา C จะสามารถแสดงผลลัพธ์ที่เหมือนกันได้ด้วยวิธีการดังนี้
-```c
-#include <stdio.h>
+    >**จากตัวอย่างที่ 1** เมื่ออยู่ในรูปแบบภาษา C จะสามารถแสดงผลลัพธ์ที่เหมือนกันได้ด้วยวิธีการดังนี้
+                            ```c
+                                #include <stdio.h>
 
-// Base class
-struct Laptop {
-    // Constructor
-    Laptop() {
-        printf("Laptop constructor\n");
-    }
-};
+                                        // Base class
+                                            struct Laptop {
+                            // Constructor
+                              Laptop() {
+                              printf("Laptop constructor\n");
+                          }
+                        };
 
-// Derived class
-struct MacBook : Laptop {
-    // Constructor
-    MacBook() {
-        printf("MacBook constructor\n");
-    }
-};
+                              // Derived class
+                      struct MacBook : Laptop {
+                      // Constructor
+                    MacBook() {
+                          printf("MacBook constructor\n");
+                  }
+                          };
 
-int main() {
-    struct MacBook macbook;
-    return 0;
-}
-```
+                            int main() {
+                            struct MacBook macbook;
+                        return 0;
+        }
+                        ```
 
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Java
   การสืบทอด Constructor ใน Java มีลักษณะที่คล้ายคลึงกัน โดยใน Java เราใช้ super() เพื่อเรียก Constructor ของคลาสแม่เช่นกัน แต่ยังมีบางความแตกต่างบ้างที่ควรรู้

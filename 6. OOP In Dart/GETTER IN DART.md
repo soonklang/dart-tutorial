@@ -1,13 +1,13 @@
 
 # GETTER IN DART
-Getter ใน Dart ใช้ในการรับค่าของคุณสมบัติหรือ property นั้น ๆ โดยมักถูกใช้เพื่อเข้าถึงค่าของคุณสมบัติที่เป็นส่วนตัวหรือเรียก private  โดย Getter จะให้การเข้าถึงอ่านค่าของคุณสมบัติของอ็อบเจกต์เป็นอย่างชัดเจน
+Getter ใน Dart ใช้ในการรับค่าของคุณสมบัติหรือ property นั้น ๆ โดยมักถูกใช้เพื่อเข้าถึงค่าของคุณสมบัติที่เป็นส่วนตัวหรือที่เรียก private  โดย Getter จะให้การเข้าถึงอ่านค่าของคุณสมบัติของอ็อบเจกต์
 # Syntax
 ```
 return_type get property_name {
   // Getter body
 }
 ```
-หมายเหตุ: แทนที่จะเขียน { } หลังชื่อ property คุณยังสามารถเขียน => (เครื่องหมายลูกศรหนา) หลังชื่อ property ได้เช่นกัน
+นอกจากนี้ แทนที่จะเขียน { } หลังชื่อ property คุณยังสามารถเขียน => (เครื่องหมายลูกศรหนา) หลังชื่อ property แทนที่ได้
 ```
 class Person {
   String _name;
@@ -18,32 +18,32 @@ class Person {
 }
 ```
 # Example 1: Getter In Dart
-ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ Person คลาสนี้มีคุณสมบัติสองอัน คือ firstName และ lastName นอกจากนี้ยังมี getter ชื่อ fullName ที่รับผิดชอบในการรับชื่อเต็มของบุคคล
+ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ employee คลาสนี้มีคุณสมบัติสองอัน คือ firstName และ lastName นอกจากนี้ยังมี getter ชื่อ fullName ที่รับค่ามารวมกันเป็นชื่อเต็ม
 
 * DART
 ```
-class Person {
+class employee {
   // Properties
   String? firstName;
   String? lastName;
 
   // Constructor
-  Person(this.firstName, this.lastName);
+  employee(this.firstName, this.lastName);
 
   // Getter
   String get fullName => "$firstName $lastName";
 }
 
 void main() {
-  Person p = Person("John", "Doe");
-  print(p.fullName);
+  employee e = employee("Max", "inwza007");
+  print(e.fullName);
 }
 ```
 <details>
   <summary><strong>Show Output</strong></summary>
   
 ```
-John Doe
+Max inwza007
 ```
 
 </details>
@@ -53,13 +53,13 @@ John Doe
 * java
 
 ```
-public class Person {
+public class Employee {
     // Properties
     private String firstName;
     private String lastName;
 
     // Constructor
-    public Person(String firstName, String lastName) {
+    public Employee(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -70,56 +70,59 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person p = new Person("John", "Doe");
-        System.out.println(p.getFullName());
+        Employee e = new Employee("Max", "inwza007");
+        System.out.println(e.getFullName());
     }
 }
+
 
 ```
 * python
 ```
-class Person:
+class Employee:
+    # Properties
     def __init__(self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
 
+    # Getter
     @property
     def full_name(self):
         return f"{self.first_name} {self.last_name}"
 
 if __name__ == "__main__":
-    p = Person("John", "Doe")
-    print(p.full_name)
+    e = Employee("Max", "inwza007")
+    print(e.full_name)
 
 ```
 
 # Example 2: Getter In Dart
 
-ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ NoteBook คลาสนี้มีคุณสมบัติสองอันที่เป็นส่วนตัว คือ _name และ _prize จึงต้องมี getter สองตัว คือ name และ prize เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้
+ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ employeeName คลาสนี้มีคุณสมบัติสองอันที่เป็น private คือ _name และ _ID จึงต้องมี getter สองตัว คือ name และ ID เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้
 
 * DART
 ```
-class NoteBook {
+class employee {
   // Private properties
   String? _name;
-  double? _prize;
+  String? _ID;
 
   // Constructor
-  NoteBook(this._name, this._prize);
+  employee(this._name, this._ID);
 
   // Getter method to access private property _name
   String get name => this._name!;
 
-  // Getter method to access private property _prize
-  double get prize => this._prize!;
+  // Getter method to access private property _ID
+  String get ID => this._ID!;
 }
 
 void main() {
-  // Create an object of NoteBook class
-  NoteBook nb = new NoteBook("Dell", 500);
+  // Create an object of employee class
+  employee nb = new employee("max", "777");
   // Display the values of the object
   print(nb.name);
-  print(nb.prize);
+  print(nb.ID);
 }
  
 ```
@@ -128,8 +131,8 @@ void main() {
   <summary><strong>Show Output</strong></summary>
   
 ```
-Name: Dell
-Price: 500.0
+Name: max
+ID: 777.0
 ```
   
 </details>
@@ -137,15 +140,15 @@ Price: 500.0
 ## ในภาษาอื่นๆ
 * java
 ```
-public class NoteBook {
+public class Employee {
     // Private properties
     private String _name;
-    private double _prize;
+    private String _ID;
 
     // Constructor
-    public NoteBook(String _name, double _prize) {
+    public Employee(String _name, String _ID) {
         this._name = _name;
-        this._prize = _prize;
+        this._ID = _ID;
     }
 
     // Getter method to access private property _name
@@ -153,60 +156,62 @@ public class NoteBook {
         return this._name;
     }
 
-    // Getter method to access private property _prize
-    public double getPrize() {
-        return this._prize;
+    // Getter method to access private property _ID
+    public String getID() {
+        return this._ID;
     }
 
     public static void main(String[] args) {
-        // Create an object of NoteBook class
-        NoteBook nb = new NoteBook("Dell", 500);
+        // Create an object of Employee class
+        Employee nb = new Employee("max", "777");
         // Display the values of the object
         System.out.println(nb.getName());
-        System.out.println(nb.getPrize());
+        System.out.println(nb.getID());
     }
 }
+
+
 ```
 * python
 
 ```
-class NoteBook:
+class Employee:
     # Private properties
-    def __init__(self, name, prize):
+    def __init__(self, name, ID):
         self._name = name
-        self._prize = prize
+        self._ID = ID
 
     # Getter method to access private property _name
     def get_name(self):
         return self._name
 
-    # Getter method to access private property _prize
-    def get_prize(self):
-        return self._prize
+    # Getter method to access private property _ID
+    def get_ID(self):
+        return self._ID
 
 if __name__ == "__main__":
-    # Create an object of NoteBook class
-    nb = NoteBook("Dell", 500)
+    # Create an object of Employee class
+    nb = Employee("max", "777")
     # Display the values of the object
     print(nb.get_name())
-    print(nb.get_prize())
+    print(nb.get_ID())
 
 ```
 
 
 # Example 3: Getter In Dart With Data Validation
 
-ในตัวอย่างด้านล่างนี้, มีคลาสชื่อ NoteBook ในคลาสนี้มีคุณสมบัติสองอันที่เป็นส่วนตัว คือ _name และ _prize นอกจากนี้ยังมี getter อยู่สองตัว คือ name และ prize เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้ ในส่วนของgetter _nameหากคุณระบุชื่อเป็นค่าว่างเปล่า จะคืนค่า "ไม่มีชื่อ" แต่ถ้ามีค่าก็จะคืนค่าแบบปกติ
+ในตัวอย่างด้านล่างนี้, มีคลาสชื่อ employee ในคลาสนี้มีคุณสมบัติสองอันที่เป็นส่วนตัว คือ _name และ _id นอกจากนี้ยังมี getter อยู่สองตัว คือ name และ id เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้ ในส่วนของgetter _nameหากคุณระบุชื่อเป็นค่าว่างเปล่า จะคืนค่า "ไม่มีชื่อ" แต่ถ้ามีค่าก็จะคืนค่าแบบปกติ
 
 * Dart
 ```
-   class NoteBook {
+   class employee {
   // Private properties
   String _name;
-  double _prize;
+  String _id;
 
   // Constructor
-  NoteBook(this._name, this._prize);
+  employee(this._name, this._id);
 
   // Getter to access private property _name
   String get name {
@@ -217,19 +222,20 @@ if __name__ == "__main__":
   }
 
   // Getter to access private property _prize
-  double get prize {
-    return this._prize;
+  String get id {
+    return this._id;
   }
+
 }
 
 void main() {
-  // Create an object of NoteBook class
-  NoteBook nb = new NoteBook("Apple", 1000);
-  print("First Notebook name: ${nb.name}");
-  print("First Notebook prize: ${nb.prize}");
-  NoteBook nb2 = new NoteBook("", 500);
-  print("Second Notebook name: ${nb2.name}");
-  print("Second Notebook prize: ${nb2.prize}");
+  // Create an object of employee class
+  employee nb = new employee("john", "1423");
+  print("First employee name: ${nb.name}");
+  print("First employee id: ${nb.id}");
+  employee nb2 = new employee("", "9999");
+  print("Second employee name: ${nb2.name}");
+  print("Second employee id: ${nb2.id}");
 }
 
 
@@ -240,25 +246,25 @@ void main() {
   
 
 ```
-  First Notebook name: Apple
-  First Notebook prize: 1000.0
-  Second Notebook name: No Name
-  Second Notebook prize: 500.0
+    First employee name: john
+    First employee id: 1423
+    Second employee name: No Name
+    Second employee id: 9999
 ```
 </details>
 
 ## ในภาษาอื่นๆ
 * java
 ```
-public class NoteBook {
+public class Employee {
     // Private properties
     private String _name;
-    private double _prize;
+    private String _id;
 
     // Constructor
-    public NoteBook(String _name, double _prize) {
+    public Employee(String _name, String _id) {
         this._name = _name;
-        this._prize = _prize;
+        this._id = _id;
     }
 
     // Getter to access private property _name
@@ -269,29 +275,29 @@ public class NoteBook {
         return this._name;
     }
 
-    // Getter to access private property _prize
-    public double getPrize() {
-        return this._prize;
+    // Getter to access private property _id
+    public String getId() {
+        return this._id;
     }
 
     public static void main(String[] args) {
-        // Create an object of NoteBook class
-        NoteBook nb = new NoteBook("Apple", 1000);
-        System.out.println("First Notebook name: " + nb.getName());
-        System.out.println("First Notebook prize: " + nb.getPrize());
-        NoteBook nb2 = new NoteBook("", 500);
-        System.out.println("Second Notebook name: " + nb2.getName());
-        System.out.println("Second Notebook prize: " + nb2.getPrize());
+        // Create an object of Employee class
+        Employee nb = new Employee("john", "1423");
+        System.out.println("First employee name: " + nb.getName());
+        System.out.println("First employee id: " + nb.getId());
+        Employee nb2 = new Employee("", "9999");
+        System.out.println("Second employee name: " + nb2.getName());
     }
 }
+
 ```
 * python
 ```
-class NoteBook:
+class Employee:
     # Private properties
-    def __init__(self, name, prize):
+    def __init__(self, name, id):
         self._name = name
-        self._prize = prize
+        self._id = id
 
     # Getter to access private property _name
     @property
@@ -300,35 +306,34 @@ class NoteBook:
             return "No Name"
         return self._name
 
-    # Getter to access private property _prize
+    # Getter to access private property _id
     @property
-    def prize(self):
-        return self._prize
+    def id(self):
+        return self._id
 
 if __name__ == "__main__":
-    # Create an object of NoteBook class
-    nb = NoteBook("Apple", 1000)
-    print(f"First Notebook name: {nb.name}")
-    print(f"First Notebook prize: {nb.prize}")
-    nb2 = NoteBook("", 500)
-    print(f"Second Notebook name: {nb2.name}")
-    print(f"Second Notebook prize: {nb2.prize}")
+    # Create an object of Employee class
+    nb = Employee("john", "1423")
+    print(f"First employee name: {nb.name}")
+    print(f"First employee id: {nb.id}")
+    nb2 = Employee("", "9999")
+    print(f"Second employee name: {nb2.name}")
 
 ```
 
 # Example 4: Getter In Dart
 
-ในตัวอย่างด้านล่างนี้, มีคลาสชื่อ Doctor ในคลาสนี้มีคุณสมบัติสองอันที่เป็นส่วนตัว คือ _name, _age และ _gender นอกจากนี้ยังมี getter อยู่สามตัว คือ name, age และ gender เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้ นอกจากนี้ยังมี getter ชื่อ [map](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Map%20in%20Dart.md) ที่ใช้ในการรับ [Map](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Map%20in%20Dart.md) ของอ็อบเจกต์
+ในตัวอย่างด้านล่างนี้, มีคลาสชื่อ employee ในคลาสนี้มีคุณสมบัติสองอันที่เป็นส่วนตัว คือ _name, _age และ _gender นอกจากนี้ยังมี getter อยู่สามตัว คือ name, age และ gender เพื่อใช้ในการเข้าถึงค่าของคุณสมบัติเหล่านี้ นอกจากนี้ยังมี getter ชื่อ [map](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Map%20in%20Dart.md) ที่ใช้ในการรับ [Map](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Map%20in%20Dart.md) ของอ็อบเจกต์
 * Dart
 ```
-class Doctor {
+class employee {
 // Private properties
   String _name;
   int _age;
   String _gender;
 
 // Constructor
-  Doctor(this._name, this._age, this._gender);
+  employee(this._name, this._age, this._gender);
 
 // Getters
   String get name => _name;
@@ -342,8 +347,8 @@ class Doctor {
 }
 
 void main() {
-// Create an object of Doctor class
-  Doctor d = Doctor("John", 41, "Male");
+// Create an object of employee class
+  employee d = employee("John", 41, "Male");
   print(d.map);
 }
 
@@ -364,14 +369,14 @@ void main() {
 import java.util.HashMap;
 import java.util.Map;
 
-public class Doctor {
+public class Employee {
     // Private properties
     private String _name;
     private int _age;
     private String _gender;
 
     // Constructor
-    public Doctor(String _name, int _age, String _gender) {
+    public Employee(String _name, int _age, String _gender) {
         this._name = _name;
         this._age = _age;
         this._gender = _gender;
@@ -400,16 +405,17 @@ public class Doctor {
     }
 
     public static void main(String[] args) {
-        // Create an object of Doctor class
-        Doctor d = new Doctor("John", 41, "Male");
+        // Create an object of Employee class
+        Employee d = new Employee("John", 41, "Male");
         System.out.println(d.getMap());
     }
 }
 
+
 ```
 * Python
 ```
-class Doctor:
+class Employee:
     # Private properties
     def __init__(self, name, age, gender):
         self._name = name
@@ -435,8 +441,8 @@ class Doctor:
         return {"name": self._name, "age": self._age, "gender": self._gender}
 
 if __name__ == "__main__":
-    # Create an object of Doctor class
-    d = Doctor("John", 41, "Male")
+    # Create an object of Employee class
+    d = Employee("John", 41, "Male")
     print(d.map)
 
 ```
@@ -489,11 +495,7 @@ class Person:
 
     ใน Dart, เราใช้คีย์เวิร์ด get ร่วมกับชื่อเมทอดที่เป็นชื่อเดียวกับ property
 
-# ทำไม Getter มีความสำคัญใน Dart?
 
-    1.เพื่อเข้าถึงค่าของคุณสมบัติที่เป็นส่วนตัว
-
-    2.เพื่อจำกัดการเข้าถึงสมาชิกข้อมูลในคลาส
 
 # สรุป
 Getter เป็นเมธตอดในค่าที่การเข้าถึงแบบ private แต่ถ้าหากต้องการเข้าไปแก้ไขค่าจะต้องใช่ [Setter](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/setter%20in%20Dart.md) แทน

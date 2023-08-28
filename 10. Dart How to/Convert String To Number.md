@@ -98,7 +98,10 @@ n = int(value_int)
 print(n)
 ```
 ### อ้างอิง  
-https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/
-https://www.educative.io/answers/how-to-convert-a-string-to-an-integer-in-c
-https://www.javatpoint.com/java-string-to-int
+https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/  
+https://www.educative.io/answers/how-to-convert-a-string-to-an-integer-in-c  
+https://www.javatpoint.com/java-string-to-int  
 https://www.scaler.com/topics/convert-string-to-int-python/
+
+
+

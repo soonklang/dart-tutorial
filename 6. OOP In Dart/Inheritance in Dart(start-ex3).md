@@ -71,7 +71,7 @@ void main() {
 ```
 จากในตัวอย่าง เราจะสร้างclass Person จากนั้นสร้างclass Student ที่ inheritance คุณสมบัติ และ methodของclass Person
 
-** output
+output
 ```
 Name: John
 Age: 20
@@ -118,9 +118,15 @@ void main(){
 จากตัวอย่างนี้ parent class คือ Car และ child class คือ Toyota 
 class Toyota จะทำการ inheritance คุณสมบัติและ method ของ Car
 
-**output
+output
 ```
 Car started
 Model: Camry
 Price: 20000
 ```
+# ประเภทของInheritance ใน Dart
+ประเภทของinheritnce ใน dart มีอยู่ 4 ประเภทดังนี้
+  1.Single Inheritance 
+  2.Multilevel Inheritance 
+  3.Hierarchical Inheritance 
+  4.Multiple Inheritance 

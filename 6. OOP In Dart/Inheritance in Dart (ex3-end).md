@@ -70,6 +70,7 @@ The eagle has a sharp vision
 ต่อไปนี้เราจะลองเขียนScenarioเดียวกันนี้อยู่ในบริบทภาษาอื่นเช่นภาษา Python , Java , และ C++  
 
 ####  _Python_
+<details> <summary><strong>code</strong></summary>
 ```python
 class Bird:
    def fly(self) :
@@ -98,6 +99,7 @@ The bird can fly
 The parrot can speak
 The eagle has a sharp vision
 ```
+</details>
 
 #### _Java_
 ```java

@@ -24,6 +24,12 @@ void main() {
   }
 }
 ```
+<details open>
+<summary><b>output</b></summary>
+ <pre>
+A
+ </pre>
+</details>
 ### Example 2: Break In Dart Negative For Loop 
 ```dart
 void main() {

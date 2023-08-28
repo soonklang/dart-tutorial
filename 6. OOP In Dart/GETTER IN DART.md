@@ -39,8 +39,19 @@ void main() {
   print(p.fullName);
 }
 ```
+<details>
+  <summary><strong>Show Output</strong></summary>
+  
+```
+John Doe
+```
+
+</details>
+
 ## ในภาษาอื่นๆ
+
 * java
+
 ```
 public class Person {
     // Properties
@@ -110,7 +121,19 @@ void main() {
   print(nb.name);
   print(nb.prize);
 }
+ 
 ```
+
+<details>
+  <summary><strong>Show Output</strong></summary>
+  
+```
+Name: Dell
+Price: 500.0
+```
+  
+</details>
+
 ## ในภาษาอื่นๆ
 * java
 ```
@@ -208,7 +231,22 @@ void main() {
   print("Second Notebook name: ${nb2.name}");
   print("Second Notebook prize: ${nb2.prize}");
 }
+
+
+  
 ```
+<details>
+  <summary><strong>Show Output</strong></summary>
+  
+
+```
+  First Notebook name: Apple
+  First Notebook prize: 1000.0
+  Second Notebook name: No Name
+  Second Notebook prize: 500.0
+```
+</details>
+
 ## ในภาษาอื่นๆ
 * java
 ```
@@ -308,7 +346,18 @@ void main() {
   Doctor d = Doctor("John", 41, "Male");
   print(d.map);
 }
+
+
+  
 ```
+<details>
+  <summary><strong>Show Output</strong></summary>
+  
+```
+  {name: John, age: 41, gender: Male}
+```
+</details>
+
 ## ในภาษาอื่นๆ
 * java
 ```

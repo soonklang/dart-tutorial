@@ -14,7 +14,7 @@
 
 ## **ตัวอย่างของการรับข้อมูลทั้ง 3 รูปแบบ** ##
 **1.String User Input (แบบข้อความ)** <br>
->ใช้เพื่อเก็บข้อมูลข้อความที่ผู้ใช้ป้อนเข้ามา เช่น ชื่อ, ที่อยู่, คำอธิบาย,etc...
+>ใช้เพื่อเก็บข้อมูลข้อความที่ผู้ใช้ป้อนเข้ามา เช่น ชื่อ, ที่อยู่, คำอธิบาย,etc.
  ```dart
 import 'dart:io';
  
@@ -23,7 +23,6 @@ void main()
     print("Enter your name?");
     String? name = stdin.readLineSync(); 
  
-    // Printing the name
     print("Hello, $name! \nWelcome to GeeksforGeeks!!");
 }
 ```
@@ -43,10 +42,8 @@ Welcome to GeeksforGeeks!!
 </details>
 
 **2.Integer User Input (แบบจำนวนเต็ม)** <br>
->สามารถรับข้อมูลจำนวนเต็มเพื่อรับค่าตัวเลขจากผู้ใช้โดยที่ไม่มีจุดทศนิยม เช่น 10, 100, -800 ,etc...
+>สามารถรับข้อมูลจำนวนเต็มเพื่อรับค่าตัวเลขจากผู้ใช้โดยที่ไม่มีจุดทศนิยม เช่น 10, 100, -800 ,etc.
  ```dart
-
-// Importing dart:io file
 import 'dart:io';
  
 void main()
@@ -57,7 +54,6 @@ void main()
     int? n = int.parse(stdin.readLineSync()!);
    // Here ? and ! are for null safety
  
-    // Printing that number
     print("Your favourite number is $n");
 }
 ```
@@ -72,5 +68,31 @@ void main()
  <pre>
 Enter your favourite number:
 Your favourite number is 300
+</pre>
+</details>
+
+**3.Floating Point User Input (แบบทศนิยม)** <br>
+>คุณสามารถใช้ข้อมูลแบบ float หากคุณต้องการรับค่าตัวเลขจากผู้ใช้ที่มีจุดทศนิยม เช่น 10.5, 100.5, -800.9, etc.
+
+```dart
+
+import 'dart:io';
+
+void main() {
+  print("Enter a floating number:");
+  double n = double.parse(stdin.readLineSync()!);
+  print("The entered num is $n");
+}
+```
+<details open>
+<summary><b>Input</b></summary>
+ <pre>
+15.2
+</pre>
+</details>
+<summary><b>output</b></summary>
+ <pre>
+Enter a floating number:
+The entered num is 15.2
 </pre>
 </details>

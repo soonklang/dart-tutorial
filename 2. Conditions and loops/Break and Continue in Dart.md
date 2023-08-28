@@ -13,7 +13,7 @@
  ```python
    break
  ```
-### Example 1: Break In Dart For Loop in Dart
+### Example 1: Break In Dart For Loop 
 ```dart
 void main() {
   for (int i = 1; i <= 10; i++) {
@@ -24,7 +24,7 @@ void main() {
   }
 }
 ```
-### Example 2: Break In Dart Negative For Loop in Dart
+### Example 2: Break In Dart Negative For Loop 
 ```dart
 void main() {
   for (int i = 10; i >= 1; i--) {
@@ -35,7 +35,7 @@ void main() {
   }
 }
 ```
-### Example 3: Break In Dart While Loop in Dart
+### Example 3: Break In Dart While Loop
 ```dart
 void main() {
  int i =1;
@@ -48,7 +48,7 @@ void main() {
  }
 }
 ```
-### Example 4: Break In Switch Case in Dart
+### Example 4: Break In Switch Case
 ```dart
 void main() {
   var noOfMoneth = 2;
@@ -112,4 +112,11 @@ void main() {
   }
 }
 ```
+>Example : Break In C For Loop
+>Example : Break In Java For Loop
+>Example : Break In Python For Loop
+>Example : Continue In C For Loop
+>Example : Continue In Java For Loop
+>Example : Continue In Python For Loop
+
 ## Reference

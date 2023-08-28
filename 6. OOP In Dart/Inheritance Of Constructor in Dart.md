@@ -256,5 +256,7 @@ MacBook constructor</code>
 2. `Implicit Call to Super Constructor`
     - Dart ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
     - Java ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
-
+3.`Super Constructor Call Placement`
+    - Dart ใช้ **super()** เพื่อเรียก Constructor ของคลาสแม่ในร่าง Constructor ของคลาสลูก โดย**จำเป็นต้องเรียกในร่าง Constructor ของคลาสลูก**
+    - Java ใช้ **super()** ในร่าง Constructor ของคลาสลูกเพื่อเรียก Constructor ของคลาสแม่ โดยต้องเป็น**คำสั่งแรกในร่าง Constructor ของคลาสลูก**
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python

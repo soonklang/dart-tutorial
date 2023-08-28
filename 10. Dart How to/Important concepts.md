@@ -6,10 +6,14 @@
 ## Null Safety
 Dart เวอร์ชัน 2.12 ขึ้นไปที่เปิดใช้งาน null safety เมื่อประกาศตัวแปรจะต้องระบุว่าตัวแปรนั้นจะมีค่า null หรือไม่ ถ้าหากต้องการให้มีค่า null จะต้องเพื่มเครื่องหมายคำถาม? ไปที่ประเภทข้อมูลเช่น int? หมายความว่าค่าของตัวแปร int นั้นอาจจะเป็นค่า null
 
-### Example 
+### Example : ไม่ระบุค่าของตัวแปร name
   ```dart
   void main() {
     String name;  
     print(name);  
   }
+  ```
+- Output
+  ```
+  Error: Non-nullable variable 'name' must be assigned before it can be used.
   ```

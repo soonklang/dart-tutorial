@@ -245,12 +245,38 @@ MacBook constructor</code>
       ข้อความว่า "Laptop named constructor" และตามด้วย "MacBook constructor"
 
 ## การสืบทอดคอนสตรักเตอร์ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษาโปรแกรมอื่น ๆ
-ในส่วนนี้คุณจะได้เรียนรู้เกี่ยวกับการสืบทอดของคอนสตรักเตอร์ในภาษาอื่น ๆ ด้วยวิธีการเปรียบเทียบโค้ดตัวอย่างในภาษาโปรแกรม Dart เมื่อเทียบกับโค้ด ตัวอย่างในภาษาอื่น ซึ่ง**อาจจะ**แสดงกระบวนการที่ใช้ในการหาผลลัพธ์ที่แตกต่างกัน แต่จะให้ผลลัพธ์ที่เหมือนกัน
+ในส่วนนี้คุณจะได้เรียนรู้เกี่ยวกับการสืบทอดของคอนสตรักเตอร์ในภาษาอื่น ๆ ด้วยวิธีการอธิบายถึงข้อแตกต่างเกี่ยวกับการสืบทอดของคอนสตรักเตอร์ ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษาอื่น
 
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา C
   ภาษา C ไม่มีการสนับสนุนสำหรับการสืบทอด Constructor เหมือนกับภาษาอื่น ๆ ที่มีแนวคิดเชิงวัตถุอย่าง Dart หรือ C++
   - ภาษา C เป็นภาษาโปรแกรมมิ่งแบบ procedural และไม่มีคอนเซ็ปต์ของคลาสและสืบทอดอย่างแท้จริง จึงไม่มีสิ่งที่เรียกว่า "Constructor" และ "Inheritance of Constructor"
   - ภาษา C โดยสามารถจะใช้ฟังก์ชันเพื่อกำหนดการทำงานเมื่อมีการสร้างอ็อบเจกต์ของโครงสร้าง(struct)
+  > ยกตัวอย่างจากตัวอย่างที่ 1 เมื่ออยู่ในรูปแบบภาษา C จะสามารถแสดงผลลัพธ์ที่เหมือนกันได้ด้วยวิธีการดังนี้
+```c
+#include <stdio.h>
+
+// Base class
+struct Laptop {
+    // Constructor
+    Laptop() {
+        printf("Laptop constructor\n");
+    }
+};
+
+// Derived class
+struct MacBook : Laptop {
+    // Constructor
+    MacBook() {
+        printf("MacBook constructor\n");
+    }
+};
+
+int main() {
+    struct MacBook macbook;
+    return 0;
+}
+```
+
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Java
   การสืบทอด Constructor ใน Java มีลักษณะที่คล้ายคลึงกัน โดยใน Java เราใช้ super() เพื่อเรียก Constructor ของคลาสแม่เช่นกัน แต่ยังมีบางความแตกต่างบ้างที่ควรรู้
 1. `Default Constructor`
@@ -270,27 +296,4 @@ MacBook constructor</code>
     - Python เมื่อสร้างอ็อบเจกต์ของคลาสลูกใน การเรียก Constructor ของคลาสแม่จะเกิดขึ้นอัตโนมัติ โดยไม่ต้องระบุการเรียกในคลาสลูก
 3. `การวางตำแหน่งการเรียก Super Constructor (Super Constructor Call Placement)`
     - Dart คำสั่ง super() จะต้องอยู่ในร่างของ Constructor ของคลาสลูกเท่านั้นและไม่สามารถเรียกต่อจากการทำงานอื่นได้
-      ยกตัวอย่าง
-  ```dart
-   class Parent {
-  Parent() {
-    print("Parent constructor");
-  }
-}
-
-class Child extends Parent {
-  Child() {
-    // print("Something else"); // ไม่สามารถใช้งานก่อนเรียก super() ได้
-    print("Child constructor");
-    super(); // ต้องเรียก super() หลังจากที่ต้องการทำงานใน Constructor ของคลาสลูก
-  }
-}
-
-void main() {
-  var child = Child();
-}
-```
-    - ใน Python, Constructor ของคลาสแม่จะถูกเรียกก่อน Constructor ของคลาสลูกโดยอัตโนมัติและไม่ต้องเรียก super().__init__() แบบชัดเจนใน Constructor ของคลาสลูก
-   
-
-
+    - Python Constructor ของคลาสแม่จะถูกเรียกก่อน Constructor ของคลาสลูกโดยอัตโนมัติและไม่ต้องเรียก super().__init__() ใน Constructor ของคลาสลูก

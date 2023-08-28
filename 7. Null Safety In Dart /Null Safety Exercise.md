@@ -106,6 +106,7 @@ Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: Ty
 
 ```dart
 // Try to use null assertion operator(!) to print null if the variable is null
+// Code if 'name' is not null
 void main() {
   String? name;
   name = 'a';
@@ -181,6 +182,7 @@ Correct Output
 
 ```dart
 // Try to use null assertion operator(!) to print null if the variable is null
+// Code if null is in the first element
 void main() {
   List<int?> items = [null, 2, 3, 4];
  
@@ -255,6 +257,7 @@ Correct Output
 
 ```dart
 // Try to use null assertion operator(!) to print null if the variable is null
+// Code if return is null
 int? returnNullButSometimesNot() {
   return null;
 }
@@ -270,7 +273,7 @@ void main() {
   <summary><strong>Correct Code</strong></summary>
   
 ```dart
-//Code if return is null
+// Code if return is null
 int? returnNullButSometimesNot() {
   return null;
 }
@@ -333,6 +336,7 @@ The length of the string is 5
 - แล้วถ้าหากค่า 'name' เป็น null จะเป็นยังไง ?
 
 ```dart
+// Try to use null assertion operator(!) to print the length of the String or return null if the variable is null
 // Code if 'name' is null
 int findLength(String? name) {
     // add null assertion operator here
@@ -368,4 +372,39 @@ Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: Ty
   
 ```
 
+</details>
+
+## Exercise 7: Null Coalescing Operator (??)
+- หากคุณต้องการกำหนดค่า default ให้กับตัวแปรหากเป็น null คุณสามารถใช้ coalescing operator **'??'**
+ลองใช้ null coaslescing operator **'??'** เพื่อกำหนดค่า default **Stranger** หากเป็น null
+```dart
+// Try to use null coalescing operator(??) to assign a default value to Stranger if it is null
+void main() {
+  String? name;
+  name = null;
+  String name1 = name;
+  print(name1);
+}
+```
+
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=ebddc5b4f402664e6c0439f2ac2fcce6)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+// Code after using null coalescing operator
+void main() {
+  String? name;
+  name = null;
+  String name1 = name ?? 'Hello';
+  print(name1);
+}
+```
+
+Correct Output
+```
+Hello
+//จะเห็นว่าเมื่อเราใส่เครื่องหมาย '??' ต่อหลัง 'name' จะเป็นการกำหนดค่า default ให้กับตัวแปรที่เป็น null ทำให้เราจะสามารถแสดงผลลัพธ์ออกมาได้โดยที่ไม่ error
+```
 </details>

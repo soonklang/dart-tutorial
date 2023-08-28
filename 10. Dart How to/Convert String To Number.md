@@ -30,7 +30,7 @@ Output
 ```  
 จากตัวอย่างเราได้แปลง Value_double ที่เป็น String เป็น double โดยใช้ Method double.pares()  
 #
-### Example แปลง String เลขฐาน16เป็น Int  
+### Example แปลง String เลขฐาน16เป็น Number  
 ```dart
 void main(){
   String value = "A";

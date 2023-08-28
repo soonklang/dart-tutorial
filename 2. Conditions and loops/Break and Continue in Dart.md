@@ -65,6 +65,12 @@ void main() {
   }
 }
 ```
+>Example : Break In C For Loop
+
+>Example : Break In Java For Loop
+
+>Example : Break In Python For Loop
+
 ## Continue Statement
  คำสั่ง continue; เป็นคำสั่งที่ใช้เพื่อหยุดการทำงานคล้าย ๆ กับคำสั่ง break; แต่จะหยุดการทำงานในการวนรอบรอบปัจจุบัน แล้วไปเริ่มทำงานในรอบต่อไปใหม่ทันที
 
@@ -112,11 +118,6 @@ void main() {
   }
 }
 ```
->Example : Break In C For Loop
-
->Example : Break In Java For Loop
-
->Example : Break In Python For Loop
 
 >Example : Continue In C For Loop
 

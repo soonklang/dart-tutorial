@@ -408,3 +408,98 @@ Hello
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '??' ต่อหลัง 'name' จะเป็นการกำหนดค่า default ให้กับตัวแปรที่เป็น null ทำให้เราจะสามารถแสดงผลลัพธ์ออกมาได้โดยที่ไม่ error
 ```
 </details>
+
+## Exercise 8: Type Promotion
+- แก้ไข error ด้วยการใช้ promotion
+```dart
+// Try to solve the error using type promotion
+Object name = "Mark";
+print("The length of name is ${name.length}");
+```
+
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=b7fa99e858705bc1cf05a94514a7f95e)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+// Code after using type promotion
+void main(){
+Object name = "Mark";
+if(name is String){
+  print("The length of name is ${name.length}");
+}
+}
+```
+
+Correct Output
+```
+4
+//จะเห็นว่าเมื่อเราใช้ type promotion if(name is String) จะปรับปรุงชนิดของตัวแปรโดยอัตโนมัติ ในตัวแปร 'name'
+การที่เราประกาศตัวแปรเป็น Object ไม่สามารถใช้ .length ได้ เมื่อเราทำการ promoted แล้ว จะปรับปรุงให้ 'name' เป็น String โดยอัตโนมัติ
+
+```
+</details>
+
+## Exercise 9: Type Promotion
+- แก้ไข error ด้วยการใช้ promotion
+```dart
+// Try to solve the error using type promotion
+import 'dart:math';
+class DataProvider{
+    String? get stringorNull => Random().nextBool() ? "Hello" : null;
+
+    void myMethod(){
+        if(stringorNull is String){
+            print("The length of value is ${stringorNull.length}");
+        }else{
+            print("The value is not string.");
+        }
+
+    }
+}
+
+void main() {
+    DataProvider().myMethod();
+}
+```
+
+[ลองทำแบบฝึกหัด](https://dartpad.dev/?id=fe82354a868ce0200cc928387296d52b)
+
+<details>
+  <summary><strong>Correct Code</strong></summary>
+  
+```dart
+// Code after using type promotion
+import 'dart:math';
+class DataProvider{
+    String? get stringorNull => Random().nextBool() ? "Hello" : null;
+
+    void myMethod(){
+        String? value = stringorNull; 
+        if(value is String){
+            print("The length of value is ${value.length}");
+        }else{
+            print("The value is not string.");
+        }
+
+    }
+}
+
+void main() {
+    DataProvider().myMethod();
+}
+
+void main() {
+    DataProvider().myMethod();
+}
+```
+
+Correct Output
+```
+The length of value is 5 or The value is not string.
+//จะเห็นว่าเมื่อเราใช้ type promotion 
+
+```
+</details>
+

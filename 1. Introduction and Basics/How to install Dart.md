@@ -1,2 +1,2 @@
-# How to install dart
+- How to install dart
 

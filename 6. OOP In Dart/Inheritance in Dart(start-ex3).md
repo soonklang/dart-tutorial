@@ -11,7 +11,7 @@ class ChildClass extends ParentClass {
 }
 ```
 # Syntax ใน ภาษา ภาษาอื่นๆ
--Java
+- Java
 ```java
 class Employee{  
    //code
@@ -22,7 +22,7 @@ class Programmer extends Employee{
 ```
 เมื่อเปรียบเทียบ syntax ของ ภาษา dart กัย java จะมี syntaxที่ใช้ในการ Inheritance ที่เหมือนกัน
 
--Python
+- Python
 ```python
 class Parent:
   #code
@@ -70,3 +70,14 @@ void main() {
 }
 ```
 จากในตัวอย่าง เราจะสร้างclass Person จากนั้นสร้างclass Student ที่สืบทอด คุณสมบัติและ methodของclass Person
+```
+Name: John
+Age: 20
+School Name: ABC School
+School Address: New York
+```
+#ข้อดีของInheritance ใน Dart
+- ส่งเสริมการนำ code กลับมาใช้ซ้ำได้และลด code ที่ซ้ำซ้อน
+- ช่วยในการออกแบบโปรแกรมให้ดีขึ้น
+- ช่วยให้ code ง่ายขึ้น สะอาดขึ้น และประหยัดเวลา
+- อำนวยความสะดวกในการสร้างclass libraries

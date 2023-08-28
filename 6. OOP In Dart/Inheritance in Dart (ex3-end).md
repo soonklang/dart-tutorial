@@ -24,8 +24,9 @@ class Bird{
          {  
             print("The bird can fly");  
           }  
-   }    
-      // Inherits the super class  
+   }
+    
+// Inherits the super class  
 class Parrot extends Bird{    
          void speak(){  
              print("The parrot can speak");  
@@ -38,7 +39,8 @@ class Eagle extends Parrot {
           void vision(){  
              print("The eagle has a sharp vision");  
                  }  
-}  
+}
+
 void main() {  
       // Creating object of the child class  
       Eagle e=new Eagle();    
@@ -60,4 +62,41 @@ The eagle has a sharp vision
       ในตัว Main เราจะทอดลองด้วยการสร้าง Object ของ Eagle มีชื่อว่า e ขึ้นมาและให้ทดลองเรียกใช้ทั้ง Method speak() ที่เป็นของ Parrot  
       fly() ที่เป็นของ Bird และ vision() ที่เป็นของEagleเองด้วย
 
-      สุดท้ายผลลัพธ์ดังใน Output แสดงว่า Eagle ได้สืบทอดคุณสมบัติมาจากทั้ง Parrot และ Bird ได้สำเร็จ
+      สุดท้ายผลลัพธ์ดังใน Output แสดงว่า Eagle ได้สืบทอดคุณสมบัติมาจากทั้ง Parrot และ Bird ได้สำเร็จ  
+
+        
+
+  
+ต่อไปนี้เราจะลองเขียนScenarioเดี๋ยวกันนี้อยู่ในบริบทภาษาอื่นเช่นภาษา Python , Java , และ C++  
+
+####  _Python_
+```python
+class Bird:
+   def fly(self) :
+      print("The bird can fly")
+
+
+#inherit from SuperClass Bird
+class Parrot(Bird):
+   def speak(self) :
+      print("The parrot can speak")
+
+
+#inherit from Parrot intermediate class
+class Eagle(Parrot) :
+   def vision(self):
+      print("The eagle has a sharp vision")
+
+e = Eagle()
+e.fly()
+e.speak()
+e.vision()
+```
+output
+```
+The bird can fly
+The parrot can speak
+The eagle has a sharp vision
+```
+```
+   

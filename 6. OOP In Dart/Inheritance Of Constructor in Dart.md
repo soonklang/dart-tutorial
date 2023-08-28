@@ -263,5 +263,5 @@ MacBook constructor</code>
 3. `Super Constructor Call Placement`
     - Dart ใช้ **super()** เพื่อเรียก Constructor ของคลาสแม่ในร่าง Constructor ของคลาสลูก โดย**จำเป็นต้องเรียกในร่าง Constructor ของคลาสลูก**
     - Java ใช้ **super()** ในร่าง Constructor ของคลาสลูกเพื่อเรียก Constructor ของคลาสแม่ โดยต้องเป็น**คำสั่งแรกในร่าง Constructor ของคลาสลูก**
-    - 
+      
 ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python

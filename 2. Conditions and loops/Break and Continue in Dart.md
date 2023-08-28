@@ -99,7 +99,3 @@ void main() {
 }
 ```
 ## Reference
-https://dart-tutorial.com/conditions-and-loops/break-and-continue-in-dart/
-https://www.w3schools.com/c/c_break_continue.php
-https://www.w3schools.com/java/java_break.asp
-https://www.w3schools.in/python/break-and-continue

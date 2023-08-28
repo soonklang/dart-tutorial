@@ -69,7 +69,7 @@ void main() {
   student.displaySchoolInfo();
 }
 ```
-จากในตัวอย่าง เราจะสร้างclass Person จากนั้นสร้างclass Student ที่สืบทอด คุณสมบัติและ methodของclass Person
+จากในตัวอย่าง เราจะสร้างclass Person จากนั้นสร้างclass Student ที่ inheritance คุณสมบัติ และ methodของclass Person
 ```
 Name: John
 Age: 20
@@ -81,3 +81,42 @@ School Address: New York
 - ช่วยในการออกแบบโปรแกรมให้ดีขึ้น
 - ช่วยให้ code ง่ายขึ้น สะอาดขึ้น และประหยัดเวลา
 - อำนวยความสะดวกในการสร้างclass libraries
+
+# Example 2: Inheritance In Dart
+```dart
+class Car{
+  String? color;
+  int? year;
+
+  void start(){
+    print("Car started");
+  }  
+}
+
+class Toyota extends Car{
+  String? model;
+  int? prize;
+
+  void showDetails(){
+    print("Model: $model");
+    print("Prize: $prize");
+  }
+}
+
+void main(){
+  var toyota = Toyota();
+  toyota.color = "Red";
+  toyota.year = 2020;
+  toyota.model = "Camry";
+  toyota.prize = 20000;
+  toyota.start();
+  toyota.showDetails();
+}
+```
+จากตัวอย่างนี้ parent class คือ Car และ child class คือ Toyota 
+class Toyota จะทำการ inheritance คุณสมบัติและ method ของ Car
+```
+Car started
+Model: Camry
+Price: 20000
+```

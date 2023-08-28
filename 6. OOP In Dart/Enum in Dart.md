@@ -2,7 +2,7 @@
 
 Enum คือ ...
 
-## syntax ของ enum
+## รูปแบบในการใช้ ของ Enum
 ```dart
 enum cars {
   Toyota,
@@ -14,7 +14,7 @@ enum cars {
   Volvo
 }
 ```
-## example of enum
+## ตัวอย่างการใช้ Enum
 ```dart
 enum cars {
   Toyota,
@@ -59,16 +59,16 @@ Output
 Today I choose Volvo.
 ```
 
-## how to print all of Enum
+## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum
 
 
 ```dart
-enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+enum Colors { Green, Red, Blue, Yellow, Pink, Black, Rainbow }
 
 void main() {
- // Days.values: It returns all the values of the enum.
-  for (Days day in Days.values) {
-    print(day);
+ // Colors.values: It returns all the values of the enum.
+  for (Colors color in Colors.values) {
+    print(color);
   }
 }
 

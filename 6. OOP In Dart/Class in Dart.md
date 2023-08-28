@@ -1,14 +1,14 @@
 
-## Class in Dart
+# Class in Dart
 ในการเขียนโปรแกรมเชิงวัตถุ Class จะเปรียบเสมือนกับ Blueprint หรือแบบแปลนสำหรับสร้าง Object (วัตถุ) ซึ่ง Class จะประกอบด้วย Properties (คุณลักษณะ) และ Method (กระบวนการ) โดย Class จะเป็นตัวกำหนด Properties และ Method ของ Object ยกตัวอย่างเช่น สร้าง Class ชื่อว่า **Dog (สุนัข)** ก็อาจจะมี Properties อย่างการ **Breed (พันธุ์)** , **Color (สี)** และ Method เป็น  **Bark (เห่า)** , **Run(วิ่ง)**
  
 
-## Declaring Class In Dart
+# Declaring Class In Dart
 ในภาษา Dart สามารถสร้าง Class ได้โดยใช้ Keyword ว่า **class** ตามด้วย **ชื่อคลาส** และตามด้วย **{ }** โดยในการตั้งชื่อ class ควรตั้งชื่อโดยใช้รูปแบบ **PascalCase** อย่างเช่น **Employee**,  **Student**,  **QuizBrain**
 >[!NOTE]
 >PascalCase เป็นรูปแบบการตั้งชื่อที่จะขึ้นต้นคำด้วยตัวพิมพ์ใหญ่ทั้งหมด
 
-## Syntax
+# Syntax
 ```dart
 class ClassName {
 // properties or fields
@@ -90,7 +90,7 @@ class Student {
   }
 }
 ```
-## Key Points
+# Key Points
 
 -   สามารถประกาศ class โดยใช้ keyword ว่า **class**
 -   class คือ blueprint สำหรับสร้าง object ใดๆ
@@ -98,7 +98,7 @@ class Student {
 -   properties เรียกอีกอย่างว่า fields, attributes หรือ data members.
 -   methods เรียกอีกอย่างว่า behaviors หรือ member functions.
 
-## Difference Between Dart and Java and Python
+# Difference Between Dart and Java and Python
 จากตัวอย่างด้านล่างจะเป็นการสร้าง class ของทั้ง 3 ภาษา โดย class ชื่อ **Dog** จะมี properties คือ **breed** ,**name** และมี method **displayInfo** สำหรับแสดงค่าของ properties
 ### Python
 ```python
@@ -133,6 +133,6 @@ class Dog {
 ```
 จากตัวอย่างการสร้าง class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
 
-## Reference
+# Reference
 [What is pascal case?](https://www.theserverside.com/definition/Pascal-case)
 

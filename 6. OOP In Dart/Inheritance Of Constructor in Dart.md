@@ -247,22 +247,7 @@ MacBook constructor</code>
 ## การสืบทอดคอนสตรักเตอร์ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษาโปรแกรมอื่น ๆ
 ในส่วนนี้คุณจะได้เรียนรู้เกี่ยวกับการสืบทอดของคอนสตรักเตอร์ในภาษาอื่น ๆ ด้วยวิธีการเปรียบเทียบโค้ดตัวอย่างในภาษาโปรแกรม Dart เมื่อเทียบกับโค้ด ตัวอย่างในภาษาอื่น ซึ่ง**อาจจะ**แสดงกระบวนการที่ใช้ในการหาผลลัพธ์ที่แตกต่างกัน แต่จะให้ผลลัพธ์ที่เหมือนกัน
 ### จากตัวอย่างที่ 1-5 ในภาษาโปรแกรม Dart เมื่อเทียบกับภาษา C 
-```dart                                                   
-class Laptop {
-  // Constructor
-  Laptop() {
-    print("Laptop constructor");
-  }
-}
+|ในภาษา Dart | ในภาษา C  |
+|-----------------------------------------------------------|-------------|
+|![รูปภาพของนาย A](https://example.com/images/personA.jpg)  | ![รูปภาพของนาย A](https://example.com/images/personA.jpg) |  
 
-class MacBook extends Laptop {
-  // Constructor
-  MacBook() {
-    print("MacBook constructor");
-  }
-}
-
-void main() {
-  var macbook = MacBook();
-}
-```                                                    

@@ -1,10 +1,16 @@
 # BREAK AND CONTINUE IN DART
 
 ## Dart Break and Continue
-
+ การใช้งาน Break เเละ Continue ใน๓าษา Dark ใช้ขณะที่ทำงานกับลูปเป็นการทำงานในทันทีเมื่อเจอคำสั่งนี้
 ## Break Statement
+ การทำงานของ Break คือการหยุดคำสั่งนั้นในทันทีเช่นเมื่ออยู่ในลูปจะทำการหยุดลูปนั้นในทันทีเเละเข้าสู่ขั้นตอนต่อไป
+ รูปเเบบการเขียนภาษา Dark , C , Java 
  ```dart
    break;
+ ```
+ รูปเเบบการเขียนภาษา python
+ ```python
+   break
  ```
 ### Example 1: Break In Dart For Loop
 ```dart

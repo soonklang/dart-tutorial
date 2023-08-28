@@ -54,10 +54,10 @@ The bird can fly
 The eagle has a sharp vision
 ```
       ตัวอย่างCodeข้างบน เป็นการสร้าง Class Bird ขึ้นมา และตามมาด้วย Class Parrot ที่ได้รับการถ่ายทอด method มาจาก Class Bird 
-      ทำให้ Class Bird ตอนนี้กล้ายเป็น Parent Class ของ Class Parrot สุดท้ายเราได้สร้าง class Eagle ที่จะสืบทอดต่อมาจาก Class Bird อีกที 
+      ทำให้ Class Bird ตอนนี้กล้ายเป็น Parent Class ของ Class Parrot สุดท้ายเราได้สร้าง class Eagle ที่จะสืบทอดต่อมาจาก Class Parrot อีกที 
       Class Eagle ตอนนีี้มีทั้งคุณสมบัติของ Class Bird และ Class Parrot
       
-      ในตัว Main เราจะทอดลองด้วยการสร้าง Object ของ Eagle มีชื่อว่า e ขึ้นมาและให้ทดลองเรียกใช้ ทั้ง Method speak() ที่เป็นของ Parrot  
-      fly() ที่เป็นของ Bird และ vision() ที่เป็นของต้นเองด้วย
+      ในตัว Main เราจะทอดลองด้วยการสร้าง Object ของ Eagle มีชื่อว่า e ขึ้นมาและให้ทดลองเรียกใช้ทั้ง Method speak() ที่เป็นของ Parrot  
+      fly() ที่เป็นของ Bird และ vision() ที่เป็นของEagleเองด้วย
 
       สุดท้ายผลลัพธ์ดังใน Output แสดงว่า Eagle ได้สืบทอดคุณสมบัติมาจากทั้ง Parrot และ Bird ได้สำเร็จ

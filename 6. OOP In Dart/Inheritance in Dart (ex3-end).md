@@ -134,4 +134,43 @@ The bird can fly
 The parrot can speak
 ```
 
+```C++
+#include <iostream>
+
+class Bird {
+public:
+    void fly() {
+        std::cout << "The bird can fly" << std::endl;
+    }
+};
+
+class Parrot : public Bird {
+public:
+    void speak() {
+        std::cout << "The parrot can speak" << std::endl;
+    }
+};
+
+class Eagle : public Parrot {
+public:
+    void vision() {
+        std::cout << "The Eagle has a sharp vision" << std::endl;
+    }
+};
+
+int main() {
+    Eagle e;
+    e.vision();
+    e.fly();
+    e.speak();
+    return 0;
+}
+```
+output
+```
+The Eagle has a sharp vision
+The bird can fly
+The parrot can speak
+```
+
    

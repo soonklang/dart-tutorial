@@ -28,7 +28,7 @@ void main()
 }
 ```
 <details open>
-<summary><b>output</b></summary>
+<summary><b>Input</b></summary>
  <pre>
 Geek
 </pre>

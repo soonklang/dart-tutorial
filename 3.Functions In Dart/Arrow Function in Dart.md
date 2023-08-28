@@ -54,15 +54,13 @@ void main() {
 - Python
 ```python
 add = lambda a, b: a + b
-print(add(5, 3))  
-
+print(add(5, 3))
 ```
 
 - JavaScript
 ```
 const add = (a, b) => a + b;
-console.log(add(5, 3));  // 8
-
+console.log(add(5, 3));
 ```
 ### For Example 2 :
 - ถึงแม้ว่าเราไม่สามารถใช้  if statement ใน Arrow Function แต่ใน Dart เราสามารถใช้ conditional expression ได้

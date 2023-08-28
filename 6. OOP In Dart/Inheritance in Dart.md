@@ -204,12 +204,12 @@ output
 ```
 2. Multilevel Inheritance
    
-   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/840d3601-c5f0-4fe1-9f3b-00866a95c2ef)
+    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/840d3601-c5f0-4fe1-9f3b-00866a95c2ef)
 
 3. Hierarchical Inheritance
 
-  ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/c85e6699-feb7-4be4-96e8-3d4de6edb8ed)
+    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/c85e6699-feb7-4be4-96e8-3d4de6edb8ed)
 
 4. Multiple Inheritance
 
-   ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/dd87210d-7acb-4feb-84fc-3286f57c4b6f)
+    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/dd87210d-7acb-4feb-84fc-3286f57c4b6f)

@@ -6,9 +6,24 @@
 - การสุ่มตัวเลขจาก 1-100
 
  ## การสุ่มตัวเลขด้วยคลาส Random
- คลาส Random ใช้สร้างค่าสุ่มใน Dart จากไลบรารี dart:math เราสามารถสร้างค่า boolean, integer หรือ double สุ่มได้โดยใช้คลาสนี้
+ คลาส Random ใช้สร้างค่าสุ่มใน Dart จากไลบรารี dart:math เราสามารถสร้างค่า boolean, integer หรือ double สุ่มได้โดยใช้คลาสนี้ ก่อนอื่นต้อง Import dart:math เข้ามาก่อน
+ 
+`Import`
+ ```dart    
+import 'dart:math';
+```
 
- - โดยแบ่งเป็นการสร้างแบบ 2 แบบคือ
+## การสุ่มตัวเลขจากคลาส Random จะมีด้วยกันอยู่ 2 แบบคือ
+
+`แบบที่ 1 Random()`
+ ```dart    
+Random r1 = new Random();
+```
+`แบบที่ 2 Random.secure()`
+ ```dart    
+Random r2 = new Random.secure();
+```
+
 ### แบบที่ 1 คือ Random([int? seed]) ###
    คือ ตัวสร้าง (constructor) ของคลาส Random ในภาษา Dart ที่ใช้สร้าง random number generator โดยมีพารามิเตอร์ชื่อ seed เป็นค่าทางเลือกที่คุณสามารถระบุได้ พารามิเตอร์ seed นี้ถูกใช้เพื่อกำหนดค่าเริ่มต้นของสถานะ random number generator ซึ่งจะทำให้ค่าที่สุ่มออกมามีลักษณะและลำดับที่สอดคล้องกันหากกำหนด seed
 

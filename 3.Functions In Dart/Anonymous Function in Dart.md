@@ -10,7 +10,7 @@
    statement(s)  
 }  
 ```
-## เทียบกับภาษาอื่นๆ
+## เปรียบเทียบกับภาษาอื่นๆ
 - Python
 ```python
 lambda arguments : expression
@@ -37,7 +37,7 @@ int add(int x, int y) {
 }
 ```
 โดยทั่วไป เราจะกำหนดตัวแปรให้กับฟังก์ชันที่ไม่ระบุชื่อ และจะใช้ตัวแปรเพื่อเรียกใช้ฟังก์ชัน 
-### For Example :
+### For Example 1 :
 - Dart
 ```dart
 void main() {
@@ -90,3 +90,83 @@ interface Operation {
     int operate(int x, int y);
 }
 ```
+### For Example 2 :
+- Dart
+```dart
+void show(fn) {
+  for (var i = 0; i < 10; i++) {
+    if (fn(i)) {
+      print(i);
+    }
+  }
+}
+
+void main() {
+  // show even numbers
+  show((int x) {
+    return x % 2 == 0;
+  });
+}
+```
+**output**
+```
+0
+2
+4
+6
+8
+```
+### ตัวอย่างเดียวกันในภาษาอื่น
+- Python
+```python
+def show(fn):
+    for i in range(10):
+        if fn(i):
+            print(i)
+
+def main():
+    # show even numbers
+    show(lambda x: x % 2 == 0)
+
+if __name__ == "__main__":
+    main()
+```
+
+- C#
+```c#
+using System;
+class Program
+{
+    delegate bool FilterDelegate(int x);
+
+    static void Show(FilterDelegate fn)
+    {
+        for (var i = 0; i < 10; i++)
+        {
+            if (fn(i))
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+
+    static void Main(string[] args)
+    {
+        // show even numbers
+        Show((int x) =>
+        {
+            return x % 2 == 0;
+        });
+    }
+}
+```
+
+## สรุป
+Anonymous Function คือฟังก์ชันที่ไม่มีชื่อ
+### *< Reference >*
+https://dart-tutorial.com/dart-functions/anonymous-function-in-dart/
+
+https://www.javatpoint.com/dart-anonymous-function
+
+https://www.darttutorial.org/dart-tutorial/dart-anonymous-functions/
+

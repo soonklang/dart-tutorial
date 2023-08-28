@@ -490,9 +490,6 @@ void main() {
     DataProvider().myMethod();
 }
 
-void main() {
-    DataProvider().myMethod();
-}
 ```
 
 Correct Output

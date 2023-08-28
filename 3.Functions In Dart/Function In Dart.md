@@ -45,6 +45,144 @@ def function_name(arguments):
 }
  ```
 ส่วนใหญ่จะมี syntax ที่คล้ายๆกันแต่จะมีรายละเอียดยิบย่อยที่ต่างกันไปตามภาษา
+## Keypoint ของ Function 
+- ใน Dart function ก็เป็น opject
+- ควรจะตั้งชื่อ function ตามกฎ lowerCamelCase
+- ควรจะตั้งชื่อ function parameter ตามกฎ lowerCamelCase
+## อะไรคือ lowerCamelCase
+ชื่อควรจะเริ่มด้วย ตัวอักษรภาษาอังกฤษแบบ lower-case และ คำที่สองให้เป็น upper-case เช่น num1, fullName, isMarried
 
+## Example : printName() Function
+- Dart
+```dart
+// เขียน function นอก main function.
+void printName(){
+  print("My name is Kritthana Sawankaloke. I am from function.");
+}
+// นี่คือ main function.
+void main(){
+  printName();
+}
+ ```
+**output**
+```
+My name is Kritthana Sawankaloke. I am from function.
+```
+##ตัวอย่างเดียวกันในภาษาอื่น
+- Java
+```java
+public class Main {
+    static void printName() {
+        System.out.println("My name is Kritthana Sawankaloke. I am from function.");
+    }
+    
+    public static void main(String[] args) {
+        printName();
+    }
+}
+ ```
+- C
+```c
+#include <stdio.h>
+
+void printName() {
+    printf("My name is Kritthana Sawankaloke. I am from function.\n");
+}
+
+void main() {
+    printName();
+}
+ ```
+- Phython
+```python
+def printName():
+    print("My name is Kritthana Sawankaloke. I am from function.")
+
+def main():
+    printName()
+ ```
+## Example : Function รวมเลขสองตัวเลข
+- Dart
+```dart
+ void add(int num1, int num2){
+  int sum = num1 + num2;
+   print("The sum is $sum");
+}
+
+void main(){
+  add(10, 20);
+}
+ ```
+**output**
+```
+The sum is 30
+```
+##ตัวอย่างเดียวกันในภาษาอื่น
+- Java
+```java
+public class Main {
+    static void add(int num1, int num2) {
+        int sum = num1 + num2;
+        System.out.println("The sum is " + sum);
+    }
+    
+    public static void main(String[] args) {
+        add(10, 20);
+    }
+}
+ ```
+- C
+```c
+#include <stdio.h>
+
+void add(int num1, int num2) {
+    int sum = num1 + num2;
+    printf("The sum is %d\n", sum);
+}
+
+void main() {
+    add(10, 20);
+}
+ ```
+- Phython
+```python
+def add(num1, num2):
+    sum = num1 + num2
+    print("The sum is", sum)
+
+def main():
+    add(10, 20)
+ ```
+## Function Paramaters Vs Arguments
+```dart
+// ในที่นี้ num1 และ num2 คือ parameter
+void add(int num1, int num2){
+  int sum;
+  sum = num1 + num2;
+   
+  print("The sum is $sum");
+}
+
+void main(){
+// ในที่นี้ 10 และ 20 คือ arguments
+  add(10, 20);
+}
+ ```
+- arguments คือสอ่งที่เป็นเหมือนข้อมูลเข้าให้กับ Function
+- ในที่นี้ add(int num1, int num2), num1 และ num2 เป็น parameters และใน add(10, 20), 10 และ 20 คือ arguments.
+- Parameter คือชื่อและ data type ที่คุณอยากจะให้เป็นข้อมูลเข้าของ function.
+**ข้อควรจำ**
+สำคัญ: ใน dart, ถ้าคุณไม่เขียน return type ของ function. มันก็จะยังสามารถทำงานได้อยู่ดี
+
+### *< Reference >*
+https://www.idtech.com/blog/what-is-an-argument-in-programming
+
+https://dart-tutorial.com/dart-functions/functions-in-dart/
+
+https://www.programiz.com/java-programming/methods
+
+https://www.w3schools.com/c/index.php
+
+https://www.techtarget.com/whatis/definition/lowerCamelCase
 
 

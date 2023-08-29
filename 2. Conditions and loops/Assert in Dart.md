@@ -74,7 +74,7 @@ assert(number < 100);
 assert(urlString.startsWith('https'));
 ```
 
-### *< Note1 >*
+> [!NOTE]
 
 **condition:** ค่าที่ต้องเป็นจริงเพื่อให้โปรแกรมทำงานต่อไป ถ้าเงื่อนไขเป็นเท็จจะหยุดทำงาน
 

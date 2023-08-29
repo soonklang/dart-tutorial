@@ -38,7 +38,7 @@ Wikorn
 </details>
 
 ## **โปรแกรมdartพื้นฐานที่เชื่อมต่อตัวแปรอย่างน้อยหนึ่งตัว** ##
-ที่นี่ $variableNameใช้สําหรับการเชื่อมต่อตัวแปร. กระบวนการเชื่อมต่อนี้ในdartเรียกว่าการแก้ไขสตริง
+ที่นี่ $variableName ใช้สําหรับการเชื่อมต่อตัวแปร. กระบวนการเชื่อมต่อนี้ในdartเรียกว่าการแก้ไขสตริง
 ```dart
  void main(){
   var firstName = "Wikorn";
@@ -110,3 +110,8 @@ The div is 2.0
 คําสั่ง | คําอธิบาย
 ------------ | -------------
 dart รวบรวมแฟ้ม js ชื่อแฟ้ม.dart | คอมไพล์ dart ไปเป็นJavascript. คุณสามารถเรียกใช้ไฟล์นี้ด้วยNode.js
+
+# Reference
+https://www.javatpoint.com/dart-first-program
+https://www.tutorialspoint.com/dart_programming/index.htm
+https://dart-tutorial.com/introduction-and-basics/basic-dart-program/

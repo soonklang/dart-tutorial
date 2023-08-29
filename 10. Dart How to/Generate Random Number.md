@@ -107,11 +107,11 @@ void main() {
 >
 > range ของเลขที่จะสุ่มคือ [ 0 , n - 1]
 
-### เปรียบความแตกต่างของการสุ่มตัวเลขของภาษา Dart , C , Java
+### เปรียบความแตกต่างของการสุ่มตัวเลขของภาษา Dart , C , Java ,Python
 
 - ตัวอย่างการสุ่มเลข 0 - 99
   
-`Dart`
+### Dart
 ```dart    
 import 'dart:math';
 
@@ -129,7 +129,7 @@ void main() {
 40
 ```
 
-`C`
+### C
 ```C  
 #include <stdio.h>      
 #include <stdlib.h>  
@@ -149,7 +149,7 @@ void main()
 65
 ```
 
-`Java`
+### Java
 ```Java 
 import java.util.Random;
    
@@ -171,7 +171,19 @@ public class generateRandom{
 ```Java  
 99
 ```
+### Python
+```Python 
+import random
+print(random.randint(0,99))
+```
 
+<details>
+  <summary><strong>Output</strong></summary>
+</details>
+
+```Python  
+11
+```
 
 ## Reference
 [Random class - dart:math library - Dart API](https://api.dart.dev/stable/3.1.0/dart-math/Random-class.html)
@@ -188,3 +200,4 @@ public class generateRandom{
 
 [Random Function in C - javatpoint](https://www.javatpoint.com/random-function-in-c#:~:text=In%20the%20C%20programming%20language,need%20to%20implement%20the%20stdlib.)
 <br>
+[Python Program to Generate a Random Number](https://www.programiz.com/python-programming/examples/random-number)

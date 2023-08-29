@@ -26,17 +26,17 @@ Generics เป็นวิธีการสร้าง Class, Function หร
     }
     
     void main() {
-      // สร้าง object ของ IntData class
-      IntData intData = IntData(10);
-      DoubleData doubleData = DoubleData(10.5);
+      	// สร้าง object ของ IntData class
+      	IntData intData = IntData(10);
+      	DoubleData doubleData = DoubleData(10.5);
       
-      print("IntData: ${intData.data}");
-      print("DoubleData: ${doubleData.data}");
+      	print("IntData: ${intData.data}");
+      	print("DoubleData: ${doubleData.data}");
     }
  ```
 
 	Output => IntData: 10
-			  DoubleData: 10.5
+		  DoubleData: 10.5
 
 หากต้องการ class ที่สามารถทำงานร่วมกับข้อมูลชนิดอื่นๆ ก็สร้าง `class XXXData` ขึ้นมา 
 เช่นเดียวกับ class ที่ใช้งานกับ `int` และ `double`
@@ -62,22 +62,22 @@ Generics เป็นวิธีการสร้าง Class, Function หร
 
    ```  dart
     class Data<T> {
-      T data;
-      Data(this.data);
+	      T data;
+	      Data(this.data);
     }
     
     void main() {
-      // สร้าง object และกำหนด data type ที่ต้องการ
-      Data<int> intData = Data<int>(10);			/* ต้องการทำงานกับ int */
-      Data<double> doubleData = Data<double>(10.5); /* ต้องการทำงานกับ double */
-    
-      print("IntData: ${intData.data}");
-      print("DoubleData: ${doubleData.data}");
+	      // สร้าง object และกำหนด data type ที่ต้องการ
+	      Data<int> intData = Data<int>(10);			/* ต้องการทำงานกับ int */
+	      Data<double> doubleData = Data<double>(10.5); /* ต้องการทำงานกับ double */
+	    
+	      print("IntData: ${intData.data}");
+	      print("DoubleData: ${doubleData.data}");
     }
  ```
 
      Output => IntData: 10
-    		   DoubleData: 10.5
+    	       DoubleData: 10.5
 
 
 เวลาใช้งาน Generics Class จะระบุชนิดของข้อมูลที่ต้องการในขั้นตอนการสร้าง object จะเห็นว่า สามารถส่ง data type ชนิดใดก็ได้ไปยัง `class Data()` โดยทุกจุดที่ใช้ตัว T จะถูกเปลี่ยนไปตามชนิดที่ส่งมาโดยอัตโนมัติ 
@@ -96,36 +96,14 @@ V – Value
 ```  dart
     /* สามารถใช้ตัวแปรอะไรแทน type ก็ได้ ในที่นี้ใช้ X */
     class Data<X> {
-      X data;
-      Data(this.data);
+	      X data;
+	      Data(this.data);
     }
    ```
 
-## *Dart Map Class*
-
-```  dart
-    abstract class Map<K, V> {
-      // code
-      external factory Map();
-    }
-   ```   
 
 
-คลาส Map นี้ สามารถทำงานกับข้อมูลประเภทใดก็ได้  เนื่องจากประกาศแบบ Generics Class
-```  dart
-void main() {
-  final info = {
-    "name": "John",
-    "age": 20,
-    "height": 5.5,
-  }
-}
-   ```   
-   
-
->Map Syntax in Dart: var identifier = { key1:value1, key2:value2 [,…..,key_n:value_n] }
-
-   Map นี้ สามารถทำงานได้กับ type ที่ต่างกัน
+ 
 
 ## *Generics Methods*
 ประกาศในรูปแบบ
@@ -140,38 +118,122 @@ void main() {
 ```  dart
 // สร้าง generic method
 T genericMethod<T>(T value) {
-  return value;
+ 	 return value;
 }
 
 void main() {
-  // เรียกใช้ generic method
-  print("Int: ${genericMethod<int>(10)}");
-  print("Double: ${genericMethod<double>(10.5)}");
-  print("String: ${genericMethod<String>("Hello")}");
+	  // เรียกใช้ generic method
+	  print("Int: ${genericMethod<int>(10)}");
+	  print("Double: ${genericMethod<double>(10.5)}");
+	  print("String: ${genericMethod<String>("Hello")}");
 }
    ```     
 
     Output : Int: 10
     
-	    	Double: 10.5
+	     Double: 10.5
     
-	    	String: Hello
+	     String: Hello
 
 ## *Example 3*: Generic Method With Multiple Parameters
 หากต้องการ Generics Type มากกว่า1ตัว ให้คั่น generic แต่ละตัวด้วย comma (,)
 ```  dart
 // สร้าง generic method
 T genericMethod<T, U>(T value1, U value2) {
-  return value1;
+  	return value1;
 }
 
 void main() {
-  // เรียกใช้ generic method
-  print(genericMethod<int, String>(10, "Hello"));
-  print(genericMethod<String, int>("Hello", 10));
+	  // เรียกใช้ generic method
+	  print(genericMethod<int, String>(10, "Hello"));
+	  print(genericMethod<String, int>("Hello", 10));
 }
    ```    
 
     Output: 10
 	    Hello
 
+## *Restricting the Type of Data*
+ขณะที่ใช้งาน Generics สามารถจำกัดประเภทของชนิดข้อมูลที่ใช้งานกับ Class หรือ Method ได้โดยใช้คีย์เวิร์ด extends
+
+## Example 4: Generic Class With Restriction
+```  dart
+// ประกาศ generic class โดยจำกัดประเภทของชนิดข้อมูล
+class Data<T extends num> {
+	  T data;
+	  Data(this.data);
+}
+
+void main() {
+  // สร้าง object และกำหนด data type ที่ต้องการ
+	  Data<int> intData = Data<int>(10);				/* ต้องการทำงานกับ int */
+	  Data<double> doubleData = Data<double>(10.5);		/* ต้องการทำงานกับ double */
+	
+	  print("IntData: ${intData.data}");
+	  print("DoubleData: ${doubleData.data}");
+	
+	  // Data<String> stringData = Data<String>("Hello");  // error
+}
+   ```
+`<T extends num>` ทำให้     `Class Data()`  ใช้ได้กับ `int` และ `double` เท่านั้น จะใช้กับประเภทอื่นไม่ได้
+
+## *Example 5*: Generic Method With Restriction
+```  dart
+T getVal<T extends String>(T value1, T value2) {
+  	return (value1);
+}
+
+void main() {
+	  // เรียกใช้ generic method
+	  //print("int: ${getAverage<int>(10, 20)}");				// error
+	  //print("double: ${getAverage<double>("ten point five", 20.5)}");		// error
+	  print("getString: ${getVal<String>("ten point five", "twenty point five")}");
+}
+   ```
+
+    Output => getString: ten point five
+`<T extends String>` ทำให้ `Method getVal()` ใช้ได้กับ `String` เท่านั้น จะใช้กับประเภทอื่นไม่ได้
+
+## *Using Generics with Dart Collections*
+Collections เป็นการเรียกกลุ่มของประเภทตัวแปรที่เก็บข้อมูลหลายๆตัวไว้ด้วยกัน ในที่นี้จะยกตัวอย่าง การใช้งาน Generics กับ Collections in Dart อยู่ 2 ชนิด คือ Map และ List 
+
+> Collection Syntax: `Collection_name <data_type> identifier= new
+> Collection_name<data_type>`
+
+ - Generic Map
+			 
+
+> Map Syntax: `Map <Key_type, value_type>`
+
+			 
+
+```  dart
+	main() { 
+		//Map <String,int> mp={'Ankur':"one",'Arnav':002,'Shivam':003};    // error
+		Map <String,int> mp={'Ankur':1,'Arnav':002,'Shivam':003}; 
+		print('Map :${mp}'); 
+	}
+   ```
+
+    Output => Map :{Ankur: 1, Arnav: 2, Shivam: 3}
+เกิด error เนื่องจากไม่สามารถกำหนดค่าประเภท `String` ให้กับตัวแปรประเภท `int` ได้
+ - Generic List
+
+>  List Syntax: `var list_name = List(initial_size)`
+```  dart
+	main() { 
+	  List<int> listEx = []; 
+	  listEx.add(341); 
+	  listEx.add(1); 
+	  // listEx.add("Three");  // error
+	    
+	  // วนลูปพิมพ์ค่าใน list listEx 
+	  for (int element in listEx) { 
+	     print(element); 
+	  } 
+	}
+   ```
+
+    Output => 341
+    	1
+เกิด error เนื่องจากไม่สามารถกำหนดค่าประเภท `String` ให้กับตัวแปรประเภท `int` ได้

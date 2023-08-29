@@ -97,7 +97,7 @@ Selected month is January.</pre>
 </details>
 
 
-* Example : Break In C For Loop
+### * Example : Break In C For Loop
 ```c
 #include <stdio.h>
 int main() {
@@ -119,7 +119,7 @@ int main() {
 3</pre>
 </details>
 
-* Example : Break In Java For Loop
+### * Example : Break In Java For Loop
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -141,7 +141,7 @@ public class Main {
 3</pre>
 </details>
 
-* Example : Break In Python For Loop
+### * Example : Break In Python For Loop
 ```python
 count = 0
 while count <= 100:
@@ -232,7 +232,7 @@ void main() {
 5</pre>
 </details>
 
-* Example : Continue In C For Loop
+### * Example : Continue In C For Loop
 ```c
 #include <stdio.h>
 int main() {
@@ -255,7 +255,7 @@ int main() {
 5</pre>
 </details>
 
-* Example : Continue In Java For Loop
+### * Example : Continue In Java For Loop
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -278,7 +278,7 @@ public class Main {
 5</pre>
 </details>
 
-* Example : Continue In Python For Loop
+### * Example : Continue In Python For Loop
 ```java
 for i in range(0, 5):
     if i == 3:

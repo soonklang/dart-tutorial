@@ -13,6 +13,10 @@
  ```python
    break
  ```
+Dart , C , Java | Python
+------------ | -------------
+```dart break; ``` | ```python break ```
+
 ### Example 1: Break In Dart For Loop 
 ```dart
 void main() {
@@ -176,6 +180,9 @@ void main() {
 4
 5</pre>
 </details>
+
+C | Java 
+------------ | -------------
 
 >Example : Continue In C For Loop
 

@@ -42,7 +42,7 @@
 
 ### Const และ Final ของภาษาอื่น
 
-####C language
+#### C language
 ในภาษา c นั้นมีแค่ const ไม่มี final
 ```c
 #include <stdio.h>

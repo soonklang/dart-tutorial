@@ -355,6 +355,60 @@ Anya forger love her mom but i have to wait 50 sec ToT
 </code></pre>
 </details>
 
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **C**
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <pthread.h>
+
+typedef struct Future {
+    char* value;
+} Future;
+
+void delay(int seconds) {
+    sleep(seconds);
+}
+
+void complete(Future* future, char* value) {
+    future->value = strdup(value);
+}
+
+void* middleFunction(void* arg) {
+    Future* future = (Future*)arg;
+    delay(50);
+    complete(future, "Anya forger love her mom but I have to wait 50 sec ToT");
+    return NULL;
+}
+
+Future getData() {
+    Future future;
+    pthread_t thread;
+    pthread_create(&thread, NULL, middleFunction, &future);
+    pthread_join(thread, NULL);
+    return future;
+}
+
+int main() {
+    printf("C example :\n");
+    printf("Start tong nee na ja\n");
+    Future dataFuture = getData();
+    printf("%s\n", dataFuture.value);
+    printf("job lao jaaaaa\n");
+    return 0;
+}
+```
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>
+C example :
+Start tong nee na ja 
+job lao jaaaaa
+Anya forger love her mom but i have to wait 50 sec ToT
+</code></pre>
+</details>
+
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
 
 
@@ -399,7 +453,41 @@ Anya forger love her mom but i have to wait 50 sec ToT
 </code></pre>
 </details>
 
-เราจะเห็นได้ว่า โปรแกรมจะแสดงผล "Start tong nee na ja" ก่อน หลังจากนั้น จะเรียก **getData()** เพื่อดึงการในนั้นออกมา แต่การดึงข้อมูลออกมานั้นต้องรอ50วินาที โปรแกรมเลยไปทำงานในส่วนการแสดงผล "job lao jaaaaa" แทน เมื่อครบเวลา จึงแสดง "Anya forger love her mom" จากนั้นก็จบโปรแกรม
+
+```Python
+import asyncio
+
+async def get_data():
+    print("Python example:")
+    print("Start tong nee na ja ")
+    await get_middle_function()
+    print("job lao jaaaaa")
+
+async def get_middle_function():
+    data = await middle_function()
+    print(data)
+
+async def middle_function():
+    await asyncio.sleep(50)  # Sleep for 50 seconds
+    return "Anya forger love her mom but I have to wait 50 sec ToT"
+
+async def main():
+    await get_data()
+
+asyncio.run(main())
+```
+
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>
+Python example :
+Start tong nee na ja 
+job lao jaaaaa
+Anya forger love her mom but i have to wait 50 sec ToT
+</code></pre>
+</details>
+
+เราจะเห็นได้ว่า โปรแกรมจะแสดงผล "ชื่อภาษานั้นๆ example" และตามด้วย "Start tong nee na ja" ก่อน หลังจากนั้น จะเรียก **getData()** เพื่อดึงข้อมูลในนั้นออกมา แต่การดึงข้อมูลออกมานั้นต้องรอ50วินาที โปรแกรมเลยไปทำงานในส่วนการแสดงผล "job lao jaaaaa" แทน เมื่อครบเวลา จึงแสดง "Anya forger love her mom" จากนั้นก็จบโปรแกรม
 
 ## ข้อแตกต่างระหว่าง ของตัว Dart และ ภาษาโปรแกรมอื่นๆ
 1.ภาษา และ Syntax:

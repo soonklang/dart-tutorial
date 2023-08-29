@@ -287,7 +287,7 @@ streamObject.listen((event) {
 });
 ```
 
-
+___
 
 ## Keywords ที่ใช้ใน Stream
 - async* : ใช้ใน Stream เหมือน async ที่ใช้ใน Future

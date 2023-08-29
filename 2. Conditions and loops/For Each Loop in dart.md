@@ -279,4 +279,5 @@ for number in numbers:
 https://dart-tutorial.com/conditions-and-loops/for-each-loop-in-dart/<br>
 https://www.w3schools.com/java/java_foreach_loop.asp<br>
 https://www.educative.io/answers/how-to-iterate-elements-with-foreach-in-dart<br>
-https://www.programiz.com/java-programming/enhanced-for-loop
+https://www.programiz.com/java-programming/enhanced-for-loop<br>
+https://www.pythonpool.com/python-foreach/

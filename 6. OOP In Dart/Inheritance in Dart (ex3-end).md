@@ -393,9 +393,20 @@ int main() {
 ```
 </details>
 
+## References :
+https://www.javatpoint.com/dart-inheritance
 
+https://www.darttutorial.org/dart-tutorial/dart-inheritance/
 
+https://www.geeksforgeeks.org/dart-concept-of-inheritance/?ref=lbp
 
+https://www.w3schools.com/cpp/cpp_inheritance.asp
+
+https://www.w3schools.com/java/java_inheritance.asp
+
+https://www.w3schools.com/python/python_inheritance.asp
+
+https://datatrained.com/post/multilevel-inheritance/#:~:text=Advantages%20of%20Multilevel%20Inheritance&text=By%20using%20multilevel%2C%20the%20same,and%20modified%20in%20various%20ways.
 
 
 

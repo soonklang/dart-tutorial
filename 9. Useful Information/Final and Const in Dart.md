@@ -5,10 +5,10 @@
 ### ตัวอย่างการประกาศ Final และ Const ใน Dart
 ```dart
 	void main() {
-  	final PI_1 = 3.14;
-  	const PI_2 = 3.14;
-	PI_1 = 2; #error
-	PI_2 = 2; #error
+  	  final PI_1 = 3.14;
+  	  const PI_2 = 3.14;
+	  PI_1 = 2; #error
+	  PI_2 = 2; #error
 	}
 ```
 #### สังเกตว่า
@@ -20,7 +20,7 @@
 #### Const
 ```dart
 	void main() {
-		const PI_1 = 3.14;
+	  const PI_1 = 3.14;
 	}
 ```
 เราไม่สามารถสร้างตัวแปล const ป่าวๆได้ จะ Error ทันที เมื่อเราสร้างนั้นต้องระบุค่าทันที
@@ -30,8 +30,8 @@
 #### Final
 ```dart
 	void main() {
-		final PI_2;
-		PI_2 = 3.14;
+	  final PI_2;
+	  PI_2 = 3.14;
 	}
 ```
 
@@ -47,7 +47,7 @@
 ```c
 #include <stdio.h>
 void main(){
-	const int PI = 3.14;
+  const int PI = 3.14;
 }
 ```
 
@@ -64,7 +64,7 @@ IP = "192.168.1.1"
 ## สรุป
 ใช้ const เมื่อต้องการสร้างค่าคงที่ที่เรารู้ค่าแน่นอน และใช้ final เมื่อต้องการสร้างค่าคงที่ที่เราจะรู้ค่าเมื่อ runtime
 
-##Reference
+## Reference
 ☐	[Dart Tutorial](https://dart-tutorial.com/useful-information/final-vs-const-in-dart/)
 ☐	[siriphonnot.medium.com](https://siriphonnot.medium.com/const-static-%E0%B9%81%E0%B8%A5%E0%B8%B0-final-%E0%B9%83%E0%B8%99-dart-%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-f5eceed6b982)
 ☐	[codingninjas](https://www.codingninjas.com/studio/library/dart-const-and-final-keyword)

@@ -192,9 +192,9 @@ The eagle has a sharp vision
       มันทำให้ง่ายขึ้นต่อการควบคุม Application ที่ซับซ้อน เนืองจาก Developer สามารถ Focus กับส่วนของ Program โดยเฉพาะ
       โดยไม่จำเป็นต้องกังวลกับ Program ทั้งหมดทั้งมวลที่มีขนาดอันแสนใหญ่
 
-      นอกจากนี้มันก็ช่วย Improve Readability กับ Reusability ของ Programming อีกเช่นกัน ถถถ
+      นอกจากนี้มันก็ช่วย Improve Readability กับ Reusability ของ Program อีกเช่นกัน ถถถ
 
-      อย่างไรก็ตามบางทีมันจะก่อให้เกิดปัญหา unexpected result ในเมื่อ 2 Levels of class หรือมากกว่านี้ มี Method ที่ลักษณะเหมือนกัน
+      อย่างไรก็ตามบางทีมันจะก่อให้เกิดปัญหา unexpected result ในเมื่อ 2 Levels of class หรือมากกว่านี้ มี Method ที่มีลักษณะเหมือนกัน
       มันจะทำให้มีความลำบากต่อการตัดสินใจว่าต้อง Execute Method ตัวไหน
 
 ## 4.  Hierarchical Inheritance

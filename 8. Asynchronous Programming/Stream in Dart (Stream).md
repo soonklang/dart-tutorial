@@ -46,7 +46,7 @@ Stream สามารถมีผู้ฟัง (Listeners) ได้ตั้
 หลังจากที่รู้แนวคิดของ Stream คร่าวๆแล้วเราจะลอง สร้าง Stream ใน Dart ซึ่ง Stream เป็น class หนึ่งที่อยู่ใน Dart อยู่แล้ว 
 <br>
 
-ต่อไปนี้จะเป็น function ที่จะคืนค่าเป็น Stream<String> หลังจาก 3 วินาทีหลังจากเรียกใช้งาน
+ต่อไปนี้จะเป็น function ที่จะคืนค่าเป็น `Stream<String>` หลังจาก 3 วินาทีหลังจากเรียกใช้งาน
 
 ```dart
 // function ที่คืนค่า Stream
@@ -63,9 +63,9 @@ Stream<String> getUserName() async* {
 > <br>
 > แต่ yield สามารถข้อมูลกลับได้หลายครั้งนั่นเอง
 
-หรือเรายังสามารถสร้าง Stream ด้วยการใช้ method ==Stream.fromIterable()==
+หรือเรายังสามารถสร้าง Stream ด้วยการใช้ method `Stream.fromIterable()`
 <br>
-ต่อไปนี้จะเป็น function ที่จะคืนค่าเป็น Stream<String> โดยทันทีหลังจากเรียกใช้งาน
+ต่อไปนี้จะเป็น function ที่จะคืนค่าเป็น `Stream<String>` โดยทันทีหลังจากเรียกใช้งาน
 <br>
 
 ```dart

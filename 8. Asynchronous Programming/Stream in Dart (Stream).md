@@ -287,12 +287,14 @@ streamObject.listen((event) {
 });
 ```
 
-___
+
 
 ## Keywords ที่ใช้ใน Stream
 - async* : ใช้ใน Stream เหมือน async ที่ใช้ใน Future
 - yield : ใช้ในการส่งค่าออกมาจาก Generator ไม่ว่าจะเป็นแบบ sync หรือ async  
 - yield* : ใช้ในการวนทำ function ของ Iterable หรือ Streamซ้ำ
+___
+
 
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>

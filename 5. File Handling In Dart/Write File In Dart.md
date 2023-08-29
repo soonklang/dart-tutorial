@@ -1,7 +1,9 @@
 # File Handling In Dart
 ## Write File in Dart
 
-สร้างไฟล์ชื่อ **test.txt** ใน directory เดียวกันกับโปรแกรม Dart
+วิธีที่ง่ายที่สุดในการเขียนไฟล์ในภาษา Dart คือการใช้เมธอด **writeAsString()** ของคลาส **File**
+
+ตัวอย่าง สร้างไฟล์ชื่อ **test.txt** ใน directory เดียวกันกับโปรแกรม Dart
 
  #### `test.txt`
 ```dart
@@ -26,9 +28,21 @@ void main() {
 
 **!NOTE** ถ้าหากเรามีข้อมูลบางส่วนในไฟล์ **test.txt** อยู่ก่อนแล้ว ข้อมูลนั้นจะถูกลบออกและถูกแทนที่ด้วยข้อมูลใหม่แทน
 
-## Add New Content To Previous Content
+เมธอด **writeAsString()** มักจะใช้ในการเขียนข้อมูลจํานวนเล็กน้อยเพื่อความรวดเร็ว 
+แต่สําหรับข้อมูลจํานวนมากเราควรใช้เมธอด **writeAsBytes()** แทน เช่น สามารถใช้สร้าง List<int> ได้<br><br>
+ตัวอย่าง หากต้องการเขียนไฟล์ที่มีข้อมูลไบต์ "0x01, 0x02, 0x03" สามารถทำได้ดังนี้:
 
-เราสามารถใช้ **FileMode.append** ในการเพิ่มข้อมูลลงไปในไฟล์ที่มีข้อมูลอยู่ก่อนแล้วได้
+#### `ตัวอย่าง`
+```dart
+import 'dart:io'; 
+
+void main() {
+  final file = File('sample.bin');
+  file.writeAsBytes([0x01, 0x02, 0x03]);
+}
+```
+
+## Add New Content To Previous Content
 
 สมมติว่าไฟล์ **test.txt** มีข้อมูลอยู่ก่อนแล้ว
 
@@ -36,7 +50,23 @@ void main() {
 Welcome to test.txt file.
 ```
 
-ตัวอย่างการเพิ่มข้อมูลในไฟล์โดยการใช้ **FileMode.append**
+หากเราต้องการเพิ่มข้อมูลลงในไฟล์ที่มีอยู่โดยไม่ต้องเขียนทับเนื้อหาที่มีอยู่ สามารถทําได้ด้วยเมธอด **writeAsStringSync()** หรือ **writeAsBytesSync()** ของคลาส **File** 
+วิธีการเหล่านี้ใช้ arguments เดียวกันกับเมธอด *writeAsString()* และ *writeAsBytes()* ปกติ แต่จะเป็นการเพิ่มข้อมูลไปยังส่วนท้ายของไฟล์แทนการเขียนทับ<br><br>
+ตัวอย่าง หากต้องการเพิ่มข้อมูล "Goodbye, world!" ในส่วนท้ายของไฟล์ **test.txt** สามารถทำได้ดังนี้:
+
+#### `ตัวอย่าง`
+```dart
+import 'dart:io'; 
+
+void main() {
+  final file = File('test.txt');
+  file.writeAsStringSync('Goodbye, world!');
+}
+```
+
+นอกจากนี้เราสามารถใช้ **FileMode.append** ในการเพิ่มข้อมูลลงไปในไฟล์ที่มีข้อมูลอยู่ก่อนแล้วได้
+
+ตัวอย่าง การเพิ่มข้อมูลในไฟล์โดยการใช้ **FileMode.append**
 
 ```dart
 // dart program to write to existing file
@@ -107,21 +137,29 @@ Elon,0122112322
 
 **!NOTE** เราสามารถใช้เมธอด **writeAsStringSync()** ในการสร้างไฟล์ประเภทใดก็ได้ ตัวอย่างเช่น .html, .json, .xml เป็นต้น
 
-## Create a reference to the file location
+## Writing to a Stream
 
-เราสามารถทราบได้ว่าจะจัดเก็บไฟล์ไว้ที่ใดโดยการสร้างการอ้างอิงไปยัง full location ของไฟล์ ซึ่งใช้คลาส **File** จากไลบรารี **dart:io**
+ในบางกรณี เราอาจต้องเขียนข้อมูลลงในไฟล์ด้วยวิธีที่ยืดหยุ่นมากขึ้น เช่น อาจจะต้องเขียนข้อมูลเป็นส่วนๆ หรืออาจต้องเขียนข้อมูลจากหลาย ๆ แหล่ง 
+คลาส **File** มีเมธอด **openWrite()** ที่สามารถคืนค่า StreamSink object ได้ โดย object นี้สามารถใช้ในการเขียนข้อมูลไปยังไฟล์ในรูปแบบ streaming
+
+ตัวอย่าง เมื่อต้องการเขียนข้อความ "Hello, world!" แล้วข้อความ "Goodbye, world!" ไปยังไฟล์ **sample.txt** สามารถทำได้ดังนี้:
 
 ```dart
-Future<File> get _localFile async {
-  final path = await _localPath;
-  return File('$path/counter.txt');
+import 'dart:io'; 
+
+void main() {
+  final file = File('sample.txt');
+  final sink = file.openWrite();
+  sink.write('Hello, world!');
+  sink.write('Goodbye, world!');
+  sink.close();
 }
 ```
 
-????
+<br><br><br>
 
 ## การเขียนไฟล์ในภาษาอื่นๆ
-- **Python**
+## - **Python**
   
   ## Write to an Existing File
 
@@ -214,9 +252,7 @@ Future<File> get _localFile async {
   f = open("myfile.txt", "w")
   ```
 
-  
-
-- **C**
+## - **C**
 
   ในภาษา C เราสามารถสร้างไฟล์, อ่านไฟล์, และเขียนไฟล์ได้โดยประกาศตัวชี้ประเภท FILE และใช้ฟังก์ชัน fopen():
   
@@ -226,11 +262,12 @@ Future<File> get _localFile async {
   ```
 
   หากต้องการเปิดไฟล์ เราต้องใช้ฟังก์ชัน fopen() ร่วมกับพารามิเตอร์สองตัว:<br> 
-  **1.** filename	คือชื่อของไฟล์ที่เราต้องการเปิดหรือสร้าง ตัวอย่างเช่น filename.txt<br>
-  **2.** mode คืออักขระที่แสดงถึงสิ่งที่เราต้องการทํากับไฟล์:<br>
-         "w" - การเขียนไฟล์<br>
-         "a" - การเพิ่มข้อมูลใหม่ในไฟล์<br> 
-         "r" - การอ่านไฟล์
+
+  |พารามิเตอร์|  คำอธิบาย  |
+  |--|--|
+  | **filename** | ชื่อของไฟล์ที่เราต้องการเปิดหรือสร้าง ตัวอย่างเช่น filename.txt |
+  | **mode** | อักขระที่แสดงถึงสิ่งที่เราต้องการทํากับไฟล์:<br> "w" - การเขียนไฟล์<br> "a" - การเพิ่มข้อมูลใหม่ในไฟล์<br> "r" - การอ่านไฟล์ |
+
 
   ## Create a File
 
@@ -295,15 +332,13 @@ Future<File> get _localFile async {
 
   **!NOTE** ด้วยเหตุนี้หากเราเปิดไฟล์ **filename.txt** บนคอมพิวเตอร์ของเรา ข้อมูลในไฟล์จะเป็น ```Hello World!``` แทนที่จะเป็น ```Some text```
 
-
-
-- **Java**
+## - **Java**
 
   ## Create a File
 
   ในภาษา Java เราสามารถสร้างไฟล์ได้โดยการใช้เมธอด createNewFile() โดยเมธอดนี้จะ return ค่า boolean<br>
   หากสามารถสร้างไฟล์ได้สำเร็จจะ return ค่า true คืนกลับมา<br>
-  แต่ถ้าหากมีไฟล์อยู่แล้วจะ reeturn ค่า false คืนกลับมา<br>
+  แต่ถ้าหากมีไฟล์อยู่แล้วจะ return ค่า false คืนกลับมา<br>
   ซึ่งเมธอดนี้อยู่ใน catch block ดังนั้นจะส่ง IOException กลับมาหากมีข้อผิดพลาดเกิดขึ้น
 
   #### `ตัวอย่าง`
@@ -372,7 +407,7 @@ Future<File> get _localFile async {
 
   ## Write To a File
 
-  เราจะใช้คลาส **FileWriter** ร่วมกับเมธอด **write()** เพื่อเขียนข้อมูลบางส่วนในไฟล์ที่เราสร้างขึ้นในตัวอย่างด้านบน โดยเมื่อเขียนข้อมูลที่ต้องการใส่ลงในไฟล์เสร็จแล้วควรปิดท้ายด้วยเมธอด **close()**:
+  เราจะใช้คลาส **FileWriter** ร่วมกับเมธอด **write()** เพื่อเขียนข้อมูลบางส่วนในไฟล์ที่เราสร้างขึ้น โดยเมื่อเขียนข้อมูลที่ต้องการใส่ลงในไฟล์เสร็จแล้วควรปิดท้ายด้วยเมธอด **close()**:
 
   #### `ตัวอย่าง`
   
@@ -402,6 +437,11 @@ Future<File> get _localFile async {
   </pre>
   </details>
 
+## เปรียบเทียบการเขียนไฟล์ในภาษา Dart กับภาษาอื่น ๆ
+
+1. ภาษา Dart และภาษา Python มีลักษณะการเขียนโปรแกรมเขียนไฟล์ที่ง่ายและกระชับกว่าภาษา C และภาษา Java
+2. หลังจากเพิ่มข้อมูลในไฟล์เสร็จแล้วภาษา dart ไม่จำเป็นต้องใช้เมธอดเพื่อปิดไฟล์เหมือนกับภาษาอื่น ๆ ยกเว้นการเขียนไฟล์แบบ Stream
+3. ???
 
 ## Reference
 
@@ -410,6 +450,6 @@ https://www.w3schools.com/python/python_file_write.asp<br>
 https://www.w3schools.com/c/c_files.php<br>
 https://www.w3schools.com/c/c_files_write.php<br>
 https://www.w3schools.com/java/java_files_create.asp<br>
-
+https://dart.helpful.codes/tutorials/How-to-Write-Files/<br>
 
 

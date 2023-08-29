@@ -201,12 +201,15 @@ void main() {
 }
 ```
 
-Output 
-```bash
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>10
 Start here
 End
 Anya forger
-```
+</code></pre>
+</details>
+
 
 การใช้งานแบบเดียวกันในภาษา **Java**
 ```bash

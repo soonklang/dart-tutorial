@@ -10,11 +10,12 @@ Future<int> doSomeLongTask() async {
   print(result); // prints '42' after waiting 2 second
 }
    ```
-Output
 
-```dart
-21
-   ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>21
+</code></pre>
+</details>
 
 ### Example Of async*
 
@@ -30,15 +31,16 @@ Stream<int> countForOneMinute() async* {
   }
 }
    ```
-Output
-
-```dart
-1
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>1
 2
 3
 4
 5
-   ```
+</code></pre>
+</details>
+
 ### Example Of yield*
 ```dart
 Stream<int> str(int n) async* {
@@ -53,15 +55,17 @@ void main() {
  str(10).forEach(print);
 }
 ```
-Output
 
-```dart
-10
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>10
 8
 6
 4
 2
-   ```
+</code></pre>
+</details>
+
 
 ## Some More Example OF Stream
 
@@ -81,13 +85,14 @@ void main() {
   controller.close();
 }
 ```
-Output
-
-```dart
-Hello
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>Hello
 42
 Uncaught Error: Error!
-   ```
+</code></pre>
+</details>
+
 
 ### Example 2
 
@@ -105,17 +110,19 @@ void main(List<String> arguments) {
   stream.listen((s) => print(s));
 }
 ```
-Output
 
-```dart
-0
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>0
 1
 2
 3
 4
 5
 6
-   ```
+</code></pre>
+</details>
+
 
 
 ### Example 3
@@ -132,15 +139,17 @@ void main() {
  str(10).forEach(print);
 }
 ```
-Output
 
-```dart
-1
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>1
 2
 3
 4
 5
-   ```
+</code></pre>
+</details>
+
 ## async vs async*
 |async                             |async*                                             |
 |----------------------------------|---------------------------------------------------|

@@ -9,13 +9,13 @@
 เมื่อทำการสร้าง class แล้วจะต้องประกาศobject คุณสามารถประกาศ object โดยใช้ syntax ต่อไปนี้:
 
 # Syntax
-```
+```dart
 ClassName objectName = ClassName();
 ```
 
 # ตัวอย่างที่ 1: Declaring An Objet In Dart
-ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ**currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจจากนี้ยังมี object ของ class**Bicycle** ที่calledเรียก**bicycle**
-```
+ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ**currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจากนี้ยังมี object ของ class**Bicycle** ที่calledเรียก**bicycle**
+```dart
     class Bicycle {
       String? color;
       int? size;
@@ -42,9 +42,15 @@ ClassName objectName = ClassName();
         bicycle.display();
     }
 ```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Color: Red
+Size: 26
+Current Speed: 5</code></pre>
+</details>
 
 # ตัวอย่างที่ 2: Declaring Animal Class Object In dart
-
+ในตัวอย่างนี้มี class **Animal**ทีมี properties 3 ประการ:
 
 # ตัวอย่างที่ 3: Declaring Car Class Object In dart
 

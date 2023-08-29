@@ -88,8 +88,8 @@ with open("hello.txt", "w") as f:
 
 
 ## < Reference >
-https://dart-tutorial.com/introduction-and-basics/questions-for-practice-1/
-https://flutterawesome.com/learn-the-dart-programming-language-in-this-full-tutorial-for-beginners/
-https://www.geeksforgeeks.org/basics-file-handling-c/?ref=lbp
-https://www.geeksforgeeks.org/file-class-in-java/?ref=lbp
-https://www.geeksforgeeks.org/file-handling-python/?ref=lbp
+https://dart-tutorial.com/introduction-and-basics/questions-for-practice-1/<br>
+https://flutterawesome.com/learn-the-dart-programming-language-in-this-full-tutorial-for-beginners/<br>
+https://www.geeksforgeeks.org/basics-file-handling-c/?ref=lbp<br>
+https://www.geeksforgeeks.org/file-class-in-java/?ref=lbp<br>
+https://www.geeksforgeeks.org/file-handling-python/?ref=lbp<br>

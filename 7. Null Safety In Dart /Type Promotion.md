@@ -70,6 +70,6 @@ void main(){
 ```
 
 ## ข้อมูลอ้างอิง
-[dart-tutorial](https://dart-tutorial.com/null-safety/type-promotion-in-dart/)
+[dart-tutorial](https://dart-tutorial.com/null-safety/type-promotion-in-dart/) 
 
 [dart-dev](https://dart.dev/effective-dart/usage#consider-assigning-a-nullable-field-to-a-local-variable-to-enable-type-promotion)

@@ -63,7 +63,7 @@ Stream<String> getUserName() async* {
 > <br>
 > แต่ yield สามารถข้อมูลกลับได้หลายครั้งนั่นเอง
 
-หรือเรายังสามารถสร้าง Stream ด้วยการใช้ method Stream.fromIterable() 
+หรือเรายังสามารถสร้าง Stream ด้วยการใช้ method ==Stream.fromIterable()==
 <br>
 ต่อไปนี้จะเป็น function ที่จะคืนค่าเป็น Stream<String> โดยทันทีหลังจากเรียกใช้งาน
 <br>

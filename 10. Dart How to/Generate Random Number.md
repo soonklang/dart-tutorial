@@ -199,6 +199,8 @@ print(random.randint(0,99))
 <br>
 [java.util.Random (Java Platform SE 8 ) (oracle.com)](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)
 <br>
-[Dart : Random numbers ](https://dart.dev/guides/libraries/library-tour#math-constants)
+[dart:math - math and random](https://dart.dev/guides/libraries/library-tour#math-constants)
 <br>
-[random — Generate pseudo-random numbers](https://docs.python.org/3/library/random.html)
+[Random — Python 3.11.5 documentation](https://docs.python.org/3/library/random.html)
+<br>
+[ISO Random (The GNU C Library)](https://www.gnu.org/software/libc/manual/html_node/ISO-Random.html)

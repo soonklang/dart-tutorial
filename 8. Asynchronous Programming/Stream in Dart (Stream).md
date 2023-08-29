@@ -1,28 +1,28 @@
 
 
-# Stream (กระแสข้อมูล)
-ยินดีต้อนรับทุกท่านเข้าสู่เนื้อหา **Stream** ของหัว Asynchronous Programming 
-<br>
-หลายๆท่านอาจจะยังไม่คุ้นชินกับคำว่า **Stream** สักเท่าไหร่
-<br>
-จึงจะขอยกตัวอย่างที่จะได้เห็นภาพง่าย ๆ ก่อนจะเข้าเนื้อหาหลักของเรา
+ # Stream (กระแสข้อมูล) 🌊☠️🌊🌊🏊🌊🌊🌊🏊‍♂️🌊🌊🌊
 
-## รู้จักกับ **Stream** 
+ยินดีต้อนรับทุกท่านเข้าสู่เนื้อหา **Stream** ของหัว Asynchronous Programming !!
+<br>
+หลายๆท่านอาจจะยังไม่คุ้นชินกับคำว่า **Stream** สักเท่าไหร่ แต่วันนี้แหละเราจะมาทำความรู้จักกัน 
+<br>
+
+## รู้จักกับ **Stream** 🌊🌊🌊
 ![](https://github.com/one1yean3/OsThread/blob/main/source.gif)
 <br>
-Stream หรือถ้าแปลเป็นภาษาไทยจะได้ความว่า "กระแส" หรือ "สายน้ำ" 
+Stream หรือถ้าแปลเป็นภาษาไทยจะได้ความว่า "กระแส" หรือ "สายน้ำ"  🌊
 <br>
-เมื่อพูดถึงสายน้ำแล้ว ให้ทุกท่านนึกถึงภาพที่ได้ไปเที่ยวทะเลหาดทรายขาว 
+เมื่อพูดถึงสายน้ำแล้ว ให้ทุกท่านนึกถึงภาพที่ได้ไปเที่ยวทะเลหาดทรายขาว 🏖️🌞🕶️
 <br>
 ที่ทะเลนั้นจะสามารถมี **เหตุการณ์ (Events)** ต่างๆเกิดขึ้น เช่น
->เด็กที่กำลังตกปลา ผู้ดีที่กำลังอุจจาระ หรืออาจจะเป็น ปลาที่กำลังพลอดรักกันอย่างดุเดือด
+>เด็กที่กำลังตกปลา 🎣 ผู้ดีที่กำลังอุจจาระ 💩 หรืออาจจะเป็น ปลาที่กำลังพลอดรักกันอย่างดุเดือด 🐟❤️🐡
 
 เหตุการณ์ที่เกิดขึ้นอาจจะส่งค่ากลับมา เช่น 
->เด็กตกปลาได้ 2 ตัว ผู้ดีอุจจาระไป 4 ก้อน ปลาออกลูกมา 50 ตัว
+>เด็กตกปลาได้ 2 ตัว 🐟🐟 ผู้ดีอุจจาระไป 4 ก้อน 💩💩💩💩 ปลาออกลูกมา 50 ตัว 🐟🐟🐟🐟🐟🐟
 
-เราจะมองว่า **ค่า** ที่ส่งกลับมาจาก **เหตุการณ์ (Events)** จะอยู่ใน **กระแสข้อมูล (Stream)** 
+เราจะมองว่า **ค่า(Element)** ที่ส่งกลับมาจาก **เหตุการณ์ (Events)** จะอยู่ใน **กระแสข้อมูล (Stream)** 
 <br>
-ซึ่งหมายความว่า Stream จะแตกต่างจาก Future ก่อนหน้านี้ที่ตอบกลับมาแค่ 1 ค่าเท่านั้นนั่นเอง
+ซึ่งหมายความว่า Stream จะแตกต่างจาก Future ก่อนหน้านี้ที่ตอบกลับมาแค่ 1 ค่าเท่านั้นนั่นเอง 
 <br>
 ดูตารางข้างล่าง
 |รูปแบบ\การคืนค่า  |ค่าเดียว  |  ศูนย์หรือมากกว่า|
@@ -37,9 +37,9 @@ Stream หรือถ้าแปลเป็นภาษาไทยจะไ�
 
 ### ผู้ฟัง (Listeners)
 
-การที่ Stream จะใช้งานได้อย่างเต็มที่ต้องพึ่ง ผู้ฟัง (Listeners)
+การที่ Stream จะใช้งานได้อย่างเต็มที่ต้องพึ่ง ผู้ฟัง (Listeners) 🎧
 <br>
-ลองคิดดูว่ามีรายการรายงานข่าวที่ไม่มีคนฟังดูสิ !!! ฟังดูน่าหดหู่มากเลยนะ
+ลองคิดดูว่ามีรายการรายงานข่าวที่ไม่มีคนฟังดูสิ !!! ฟังดูน่าหดหู่มากเลยนะ 😢
 <br>
 Stream สามารถมีผู้ฟัง (Listeners) ได้ตั้งแต่ 1 คนขึ้นไป ซึ่งผู้ฟังทุกคนจะได้รับข้อมูลชุดเดียวกันทั้งหมด
 <br>
@@ -52,33 +52,33 @@ Stream สามารถมีผู้ฟัง (Listeners) ได้ตั้
 ### Stream ใน C  
 - ในภาษา C ไม่มี Stream เตรียมไว้ให้แต่
  แต่จะมี libraries จำพวก I/O (Input Output)  ที่มี function `fopen`
-,`fread`,`fwrite` ที่สามารถอ่านหรือเขียนข้อมูล จากไฟล์ได้
+,`fread`,`fwrite` ที่สามารถอ่านหรือเขียนข้อมูล จาก File📁 ได้ 
 function พวกนี้สามารถทำหน้าที่คล้ายๆกับ Stream ได้แต่จะเป็น Stream ในเชิงของไฟล์ ไม่ใช่ Asynchronous programming แบบใน Dart
 แต่เราก็สามารถประยุกต์ใช้ในรูปแบบ Async ได้เหมือนกัน
 
 ### Stream ใน Java
 - ในภาษา Java มี Stream และสามารถใช้ทำเป็น Asynchronous programming ได้
 แต่จริงๆแล้ว Stream ใน Java จะมุ่งเน้นไปที่การจัดการกับข้อมูลด้วยการใช้ function ซะมากกว่า เช่น
->การ filter (คัดกรองข้อมูลที่ต้องการจาก Stream)
+>การ filter (คัดกรองข้อมูลที่ต้องการจาก Stream) 
 ```java 
 List names = Arrays.asList("Reflection","Collection","Stream");  
 List result = names.stream().filter(s->s.startsWith("S")).collect(Collectors.toList()); 
 ```
-> หรือ sort (เรียงข้อมูลใน Stream)
+> หรือ sort (เรียงข้อมูลใน Stream) 🔢
 ```java
 List names = Arrays.asList("Reflection","Collection","Stream");  
 List result = names.stream().sorted().collect(Collectors.toList());
 ```
 
 
-### Stream ใน Python
-- Python มีแนวคิดของ Stream ในรูปแบบของ File เหมือน C
+### Stream ใน Python🐍
+- Python มีแนวคิดของ Stream ในรูปแบบของ File📁 เหมือน C
 และก็ยังรองรับการเขียนแบบ Asynchronous คล้ายๆกับ Dart โดยมี library ที่ชื่อ `asyncio` 
 โดยจะมี keywords ก็คือ `async` และ `await` เหมือนกัน
 
 
 ## วิธีสร้าง Stream ใน Dart
-หลังจากที่รู้แนวคิดของ Stream คร่าวๆแล้วเราจะลอง สร้าง Stream ใน Dart ซึ่ง Stream เป็น class หนึ่งที่อยู่ใน Dart อยู่แล้ว 
+หลังจากที่รู้แนวคิดของ Stream คร่าวๆแล้วเราจะลอง สร้าง Stream ใน Dart🎯 ซึ่ง Stream เป็น class หนึ่งที่อยู่ใน Dart อยู่แล้ว 
 <br>
 
 ต่อไปนี้จะเป็น function ที่จะคืนค่าเป็น `Stream<String>` หลังจาก 3 วินาทีหลังจากเรียกใช้งาน
@@ -120,7 +120,7 @@ Stream<String> getUserName() {
   return Stream.fromIterable(['Mark', 'John', 'Smith']);  
 }
 ```
-Python ไม่สามารถใช้ method เหมือน dart จึงต้องเขียนตรงๆแบบโค้ดด้านล่าง
+Python🐍 ไม่สามารถใช้ method เหมือน dart จึงต้องเขียนตรงๆแบบโค้ดด้านล่าง
 ```python
 def  get_user_name(): 
 	usernames = ['Mark', 'John', 'Smith'] 
@@ -153,7 +153,7 @@ void main() async {
   }
 }
 ```
-ใน python จะเขียนได้ดังนี้
+ใน Python จะเขียนได้ดังนี้
 ```python
 import asyncio
 async def get_user_name():
@@ -182,7 +182,7 @@ Smith</code></pre>
 </code></pre>
 </details>
 
-## Future ปะทะ Stream
+## Future 🆚 Stream
 | Future | Stream |
 |:--------| :-------------|
 |Future เป็นตัวแทนของค่าหรือข้อผิดพลาดในอนาคต| Stream เป็นวิธีทางให้ได้รับลำดับของเหตุการณ์ต่างๆ |
@@ -194,10 +194,10 @@ Smith</code></pre>
 ## ประเภทของ Stream
 
 Stream มีทั้งหมด 2 ประเภทนั่นก็คือ
-- Single Subscription streams
-- Broadcast streams
+- Single Subscription streams 👨‍🦲
+- Broadcast streams 👨‍🦲👩‍🦲🧑‍🦲👱‍♂️
 
-# Single Subscription Stream
+# Single Subscription Stream 👨‍🦲
 
 ตามปกติแล้ว Stream จะถูกตั้งค่าให้เป็นแบบ Single Subscription
 Stream จะเก็บค่าเอาไว้จนกว่าจะมีสมาชิก(Subscriber)มา Subscription ซึ่ง Stream นั้น
@@ -208,12 +208,12 @@ Subscriber จะได้รับค่าที่ครบถ้วนสม
 >ยกตัวอย่างเช่น คุณกำลังทำข้อสอบ มิดเทอม แล้วหันไปลอกข้อสอบเพื่อน
 >คุณก็จะได้รับ exception จากอาจารย์คุมสอบมาเป็นกากบาทตัวโตๆ
 >หมายความว่าเพื่อนที่คุณไปลอกกำลังใช้ Stream อยู่นั่นเอง 
-# Broadcast Stream
+# Broadcast Stream 👨‍🦲👩‍🦲🧑‍🦲👱‍♂️
 นี่คือ Stream ที่ถูกตั้งค่าสำหรับการมีสมาชิกได้มากกว่า 1
 Stream จะเก็บค่าเอาไว้จนกว่าจะมีสมาชิกมา Subscription ซึ่ง Stream นั้น
 จะมีผู้ฟังเท่าไหร่ก็ได้
 คุณสามารถใช้ Broadcast stream ถ้าอยากให้มีผู้ฟังที่เยอะกว่า 1
-ในส่วนของ Stream controller จะมีได้หลาย Stream แล้วหลาย Subscriber
+ในส่วนของ Stream controller จะมีได้หลาย Stream แล้วหลาย Subscriber 
 >ยกตัวอย่างเช่น คุณใช้ Netflix หรือ Youtube ซึ่งคุณสามารถเลือกดูคลิปแมวเต้นก็ได้ แต่คุณก็ไม่ได้ดูอยู่คนเดียวอาจจะมีคนที่ประเทศจีนกำลังดูอยู่เหมือนกันคุณ คุณยังสามารถไปดูคลิปอื่นได้ถ้าคุณเลิกรับข้อมูลจากคลิปแมวเต้นได้เหมือนกัน
 
 ### Syntax (Broadcast Stream)
@@ -284,7 +284,7 @@ controller.sink.add("Data!");
 
 `listen()` ใช้ในการรับค่าหรือเหตุการณ์ที่ถูกส่งมาจาก Stream
 
-**Syntax**: listen
+**Syntax**: listen 
 ```dart
 final subscription = myStream.listen()
 ```
@@ -301,7 +301,7 @@ method `cancelOnError` จะถูกใช้งานเป็นปกติ
 ```dart 
 cancelOnError :  false
 ```
-method `onDone` จะทำงานเมื่อ Stream เสร็จสิ้นการส่งข้อมูลทั้งหมด เช่น ตอนที่ไฟล์ถูกอ่านจนครบถ้วนแล้ว
+method `onDone` จะทำงานเมื่อ Stream เสร็จสิ้นการส่งข้อมูลทั้งหมด เช่น ตอนที่ไฟล์ถูกอ่านจนครบถ้วนแล้ว 
 - **Syntax**: onDone
 ```dart
 onDone: (){

@@ -199,3 +199,5 @@ print(random.randint(0,99))
 [Python Program to Generate a Random Number](https://www.programiz.com/python-programming/examples/random-number)
 <br>
 [java.util.Random (Java Platform SE 8 ) (oracle.com)](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)
+<br>
+[Dart : Random numbers ](https://dart.dev/guides/libraries/library-tour#math-constants)

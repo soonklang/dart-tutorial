@@ -189,9 +189,9 @@ Num 1 is greater: i.e 1200
   if (condition1) {
     // block of code to be executed if condition1 is true
   } else if (condition2) {
-  // block of code to be executed if the condition1 is false and condition2 is true
+    // block of code to be executed if the condition1 is false and condition2 is true
   } else {
-  // block of code to be executed if the condition1 is false and condition2 is false
+    // block of code to be executed if the condition1 is false and condition2 is false
   }
 ```
 ```dart

@@ -15,7 +15,8 @@
  ```
 Dart , C , Java | Python
 ------------ | -------------
-```dart break; ``` | ```python break ```
+``` break; ``` | ``` break ```
+break; | break
 
 ### Example 1: Break In Dart For Loop 
 ```dart

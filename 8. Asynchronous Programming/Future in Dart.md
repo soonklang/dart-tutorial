@@ -149,7 +149,7 @@ int main() {
 }
 ```
 
-ใน **Java**
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
 ```bash
 import java.util.concurrent.CompletableFuture;
 
@@ -195,6 +195,7 @@ Future<String> getName() async {
 
 // ฟังก์ชั่นหลัก
 void main() {
+  print("Hi! This is Dart language!!");
   print("Start here");
   getName().then((value) => print(value));
   print("End");
@@ -203,7 +204,53 @@ void main() {
 
 <details>
 <summary><strong>Output</strong></summary>
-<pre><code>10
+<pre><code>
+Hi! This is Dart language!!
+Start here
+End
+Anya forger
+</code></pre>
+</details>
+
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **C**
+```bash
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+typedef struct Future {
+    char* value;
+} Future;
+
+void delay(int seconds) {
+    sleep(seconds);
+}
+
+void complete(Future* future, char* value) {
+    future->value = strdup(value);
+}
+
+Future getName() {
+    Future future;
+    delay(10);
+    complete(&future, "Anya forger");
+    return future;
+}
+
+int main() {
+    printf("Hi! This is C language!!");
+    printf("Start here\n");
+    Future nameFuture = getName();
+    printf("%s\n", nameFuture.value);
+    printf("End\n");
+    return 0;
+}
+```
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>
+Hi! This is C language!!
 Start here
 End
 Anya forger
@@ -211,7 +258,7 @@ Anya forger
 </details>
 
 
-การใช้งานแบบเดียวกันในภาษา **Java**
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
 ```bash
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
@@ -229,6 +276,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println("Hi! This is Java language!!");
         System.out.println("Start here");
         CompletableFuture<String> nameFuture = getName();
         nameFuture.thenAccept(value -> System.out.println(value));
@@ -237,7 +285,15 @@ public class Main {
 }
 ```
 
-Output ทีได้ออกมาจะเหมือนในภาษาDart ด้านบน
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>
+Hi! This is Java language!!
+Start here
+End
+Anya forger
+</code></pre>
+</details>
 
 
 
@@ -247,6 +303,7 @@ Output ทีได้ออกมาจะเหมือนในภาษาD
 
 ```bash
 void main() {
+  print("Dart example :")  
   print("Start tong nee na ja ");
   getData();
   print("job lao jaaaaa");
@@ -258,11 +315,20 @@ void getData() async{
 }
 
 Future<String> middleFunction(){
-  return Future.delayed(Duration(seconds:50), ()=> "Anya forger love her mom");
+  return Future.delayed(Duration(seconds:50), ()=> "Anya forger love her mom but i have to wait 50 sec ToT");
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>
+Dart example :
+Start tong nee na ja 
+job lao jaaaaa
+Anya forger love her mom but i have to wait 50 sec ToT
+</code></pre>
+</details>
 
-ตัวอย่าง ในภาษา **Java**
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
 
 
 ```bash
@@ -271,6 +337,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Java example :")
         System.out.println("Start tong nee na ja ");
         getData();
         System.out.println("job lao jaaaaa");
@@ -285,7 +352,7 @@ public class Main {
         return CompletableFuture.supplyAsync(() -> {
             try {
                 TimeUnit.SECONDS.sleep(50); // Sleep for 50 seconds
-                return "Anya forger love her mom";
+                return "Anya forger love her mom but i have to wait 50 sec ToT";
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -295,16 +362,19 @@ public class Main {
 
 ```
 
-Output
-```bash
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>
+Java example :
 Start tong nee na ja 
 job lao jaaaaa
-Anya forger love her mom
-```
+Anya forger love her mom but i have to wait 50 sec ToT
+</code></pre>
+</details>
 
 เราจะเห็นได้ว่า โปรแกรมจะแสดงผล "Start tong nee na ja" ก่อน หลังจากนั้น จะเรียก **getData()** เพื่อดึงการในนั้นออกมา แต่การดึงข้อมูลออกมานั้นต้องรอ50วินาที โปรแกรมเลยไปทำงานในส่วนการแสดงผล "job lao jaaaaa" แทน เมื่อครบเวลา จึงแสดง "Anya forger love her mom" จากนั้นก็จบโปรแกรม
 
-## ข้อแตกต่างระหว่าง ของตัว Dart และ Java
+## ข้อแตกต่างระหว่าง ของตัว Dart และ ภาษาโปรแกรมอื่นๆ
 1.ภาษา และ Syntax:
 - ตัวDart ใช้ **'async'** และ **'wait'** ซึ่งเป็นคีย์เวิร์ดสำคัญที่ใช้ในการเขียนโปรแกรมแบบ asynchronous ทำให้โค้ดอ่านง่ายมากขึ้น
 - ในขณะที่ Java ต้องสร้างclass และ เรียกใช้ Thread เพื่อรองรับการทำงานแบบ asynchronous

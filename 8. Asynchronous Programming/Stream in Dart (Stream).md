@@ -115,6 +115,75 @@ Smith</code></pre>
 </code></pre>
 </details>
 
+## Future ปะทะ Stream
+| Future | Stream |
+|:--------:| :-------------:|
+| centered | right-aligned |
+| | |
+| | |
+| | |
+| | |
+
+## ประเภทของ Stream
+
+Stream มีทั้งหมด 2 ประเภทนั่นก็คือ
+- Single Subscription streams
+- Broadcast streams
+
+# Single Subscription Stream
+
+ตามปกติแล้ว Stream จะถูกตั้งค่าให้เป็นแบบ Single Subscription
+Stream จะเก็บค่าเอาไว้จนกว่าจะมีสมาชิก(Subscriber)มา Subscription ซึ่ง Stream นั้น
+จะมีผู้ฟังได้แค่คนเดียว
+คุณจะได้รับ exception ถ้าพยายามจะมี Subscriber มากกว่า 1 ใน Stream เดียวกัน 
+Subscriber จะได้รับค่าที่ครบถ้วนสมบูรณ์ และมีลำดับที่ถูกต้องจาก Stream 
+ในส่วนของ Stream controller จะมีเพียง Stream เดียวและ 1 Subscriber
+>ยกตัวอย่างเช่น คุณกำลังทำข้อสอบ มิดเทอม แล้วหันไปลอกข้อสอบเพื่อน
+>คุณก็จะได้รับ exception จากอาจารย์คุมสอบมาเป็นกากบาทตัวโตๆ
+>หมายความว่าเพื่อนที่คุณไปลอกกำลังใช้ Stream อยู่นั่นเอง 
+# Broadcast Stream
+นี่คือ Stream ที่ถูกตั้งค่าสำหรับการมีสมาชิกได้มากกว่า 1
+Stream จะเก็บค่าเอาไว้จนกว่าจะมีสมาชิกมา Subscription ซึ่ง Stream นั้น
+จะมีผู้ฟังเท่าไหร่ก็ได้
+คุณสามารถใช้ Broadcast stream ถ้าอยากให้มีผู้ฟังที่เยอะกว่า 1
+ในส่วนของ Stream controller จะมีได้หลาย Stream แล้วหลาย Subscriber
+>ยกตัวอย่างเช่น คุณใช้ Netflix หรือ Youtube ซึ่งคุณสามารถเลือกดูคลิปแมวเต้นก็ได้ แต่คุณก็ไม่ได้ดูอยู่คนเดียวอาจจะมีคนที่ประเทศจีนกำลังดูอยู่เหมือนกันคุณ คุณยังสามารถไปดูคลิปอื่นได้ถ้าคุณเลิกรับข้อมูลจากคลิปแมวเต้นได้เหมือนกัน
+
+### Syntax (Broadcast Stream)
+
+```dart
+StreamController<data_type> controller = StreamController<data_type>.broadcast();
+```
+
+## Stream controller
+นอกจากที่คุณจะสร้างโดยใช้คลาส Stream แล้วเรายังสามารถสร้างในรูปแบบอื่นได้
+ตัวอย่างนี้เราจะสร้าง Stream โดยใช้ `StreamController `
+```dart
+StreamController<data_type> controller = StreamController<data_type>;
+```
+เราสามารถเข้าถึงตัว controller ได้ด้วยการใช้ `stream` ดังนี้
+```dart
+Stream stream = controller.stream;
+```
+### วิธีการสมัครรับข้อมูล (Subscribe) จาก Stream
+หลังจากที่เราสามารถเข้าถึง stream ได้เราสามารถใช้ method `listen()`
+ในการรับข้อมูลจาก Stream ได้ดังนี้
+```dart
+stream.listen((value) {
+	print("Value from controller: $value");
+});
+```
+>listen() จะเหมือน then() ของ Future แต่รับได้เรื่อยๆเพราเป็น Stream นั่นเอง
+
+### วิธีการเพิ่มของลงใน Stream
+เราจะสามารถเพิ่มค่าด้วยการใช้ method `add()` ผ่าน controller นั่นเอง
+จะสามารถเขียนได้ดังนี้
+```dart 
+controller.add(3);
+```
+เมื่อเราลองใช้คำสั่งข้างบนก็จะได้ผลลัพธ์ดังนี้
+` Value from controller: 3`
+### วิธีการจัดการ Stream
 
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>

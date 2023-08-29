@@ -393,6 +393,9 @@ int main() {
 ```
 </details>
 
+### Conclusion :
+      งานนี้เหมาะสำหรับการที่เราอยากสร้างกลุ่มของClasses ที่มีควาทสัมพันกัน ที่มีคุณสมบัติคลายๆกัน
+
 ## References :
 https://www.javatpoint.com/dart-inheritance
 
@@ -407,6 +410,8 @@ https://www.w3schools.com/java/java_inheritance.asp
 https://www.w3schools.com/python/python_inheritance.asp
 
 https://datatrained.com/post/multilevel-inheritance/#:~:text=Advantages%20of%20Multilevel%20Inheritance&text=By%20using%20multilevel%2C%20the%20same,and%20modified%20in%20various%20ways.
+
+https://www.shiksha.com/online-courses/articles/hierarchical-inheritance-in-c-with-real-life-analogy/#
 
 
 

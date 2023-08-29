@@ -76,7 +76,7 @@ void main() {
 ### Example 4: Break In Switch Case
 ```dart
 void main() {
-  var noOfMoneth = 2;
+  var noOfMoneth = 1;
   switch (noOfMoneth) {
     case 1:
       print("Selected month is January.");
@@ -93,15 +93,71 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-Selected month is February.</pre>
+Selected month is January.</pre>
 </details>
 
 
 * Example : Break In C For Loop
+```c
+#include <stdio.h>
+int main() {
+  int i;
+  for (i = 0; i < 10; i++) {
+    if (i == 4) {
+      break;
+    }
+    printf("%d\n", i);
+  }
+}
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+0
+1
+2
+3</pre>
+</details>
 
 * Example : Break In Java For Loop
+```java
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        break;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+0
+1
+2
+3</pre>
+</details>
 
 * Example : Break In Python For Loop
+```python
+count = 0
+while count <= 100:
+    print (count)
+    count += 1
+    if count == 3:
+        break
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+0
+1
+2
+3</pre>
+</details>
 
 ## Continue Statement
  คำสั่ง continue; เป็นคำสั่งที่ใช้เพื่อหยุดการทำงานคล้าย ๆ กับคำสั่ง break; แต่จะหยุดการทำงานในการวนรอบรอบปัจจุบัน แล้วไปเริ่มทำงานในรอบต่อไปใหม่ทันที
@@ -176,13 +232,66 @@ void main() {
 5</pre>
 </details>
 
-C | Java 
------------- | -------------
-
 * Example : Continue In C For Loop
+```c
+#include <stdio.h>
+int main() {
+  int i;
+  for (i = 0; i <= 5; i++) {
+    if (i == 4) {
+      continue;
+    }
+    printf("%d\n", i);
+  }
+}
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+0
+1
+2
+3
+5</pre>
+</details>
 
 * Example : Continue In Java For Loop
+```java
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i <=5; i++) {
+      if (i == 4) {
+        continue;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+0
+1
+2
+3
+5</pre>
+</details>
 
 * Example : Continue In Python For Loop
+```java
+for i in range(0, 5):
+    if i == 3:
+        continue
+    print(i)
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+0
+1
+2
+4</pre>
+</details>
 
 ## Reference

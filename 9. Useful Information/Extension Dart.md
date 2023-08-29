@@ -227,7 +227,7 @@ int main() {
     
 **Python**
   - ใน Python มีคอนเซปต์ของ Extensions ที่คล้ายกับ Dart ที่ช่วยให้คุณเพิ่มเมท็อดหรือฟังก์ชันให้กับคลาสที่มีอยู่แล้วได้ โดยใช้ Decorator และการใช้ `@staticmethod` หรือ `@classmethod`
-  - 
+    
   > ตัวอย่าง python
   
 ```python
@@ -246,6 +246,12 @@ my_string = "hello"
 extension = StringExtension(my_string)
 print(extension.capitalize())  # แสดงผล "Hello"
 ```
+สรุปได้ว่าการใช้งาน Extensions แต่ละภาษาจะมีความแตกต่างกันอย่างมาก โดย Dart และ Python มีคอนเซปต์ของ Extensions ที่ช่วยให้งานด้านนี้ง่ายขึ้น ในขณะที่ Java และ C จะใช้วิธีการสืบทอดหรือประกาศฟังก์ชันแยกเพิ่มเติมเพื่อให้ความสามารถเหล่านี้กับคลาสที่มีอยู่แล้ว
+
+## อ้างอิง
+[Dart Extension Methods](https://www.darttutorial.org/dart-tutorial/dart-extension-methods/)<br>
+[Dart Extension คืออะไร | Inception Hideout](https://blog.intception.me/dev/flutter/dart-extension.html#%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99)<br>
+[Dart: Extension Methods - มาเพิ่มความสามารถให้กับ Third-party Library กันเถอะ](https://www.petepittawat.dev/posts/dart-extension-methods)<br>
 
   
   

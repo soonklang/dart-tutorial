@@ -114,6 +114,28 @@ void main() {
      print("Generated Status: $status");
   }
 }
-
 ```
 [Run code](https://dartpad.dev/?id=0b97978a7e5d8a4f830d9bb2648c65a9)
+
+```bash
+Random Number: 1
+Generated Status: 100
+```
+```bash
+Random Number: 0
+Generated Status: null
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

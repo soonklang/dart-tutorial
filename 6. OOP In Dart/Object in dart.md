@@ -116,9 +116,9 @@ Life Span: 10.</code></pre>
 Audi Car Started.</code></pre>
 </details>
 
-# Keypoint
-**method main** คือจุดเริ่มต้นของโปรแกรม จึงจำเป็นต้องดูผลลัพธ์เสมอ  
-keyword **new** สามารถใช้เพื่อสร้าง object ใหม่ได้ แต่ไม่จำเป็น
+# Keypointห
+- method **main** คือจุดเริ่มต้นของโปรแกรม จึงจำเป็นต้องดูผลลัพธ์เสมอ  
+- keyword **new** สามารถใช้เพื่อสร้าง object ใหม่ได้ แต่ไม่จำเป็น
 
 # Difference Between Dart and Java and Python
 

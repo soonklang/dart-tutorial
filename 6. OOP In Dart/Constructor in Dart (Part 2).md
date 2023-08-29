@@ -102,13 +102,15 @@ Age: 0
 ```
 ## ตัวอย่างที่ 7 : Constructor แบบมีการตั้งชื่อ Parameters (Named Parameters)
 * การตั้งชื่อ Parameters ทำให้สามารถส่งค่าได้ผ่านชื่อของ Parameters โดยไม่ต้องคำนึงถึงลำดับของ Parameters ที่เขียนไว้ใน Constroctor ก็ได้
-
+* ตัวอย่างด้านล่างเราได้สร้าง Class ShowMyDetails มี Property คือ **name**,**lastName** เเละ **age**
+ สำหรับ **lastName** เเละ **age** จะถูกกำหนดเป็น Parameters ที่มีชื่อโดยครอบด้วยเครื่องหมาย {} (ปีกกา)
 **Syntax**
 ```dart
 class ShowMyDeails{
   String? name;
   String? lastName
   int? age;
+
   ShowMyDetails(String name, {String lastName, int age});
 
   void display(){
@@ -125,3 +127,10 @@ class ShowMyDeails{
 ```
 - Output
 >สังเกตที่ฟังก์ชัน Main() ตรงบรรทัดการสร้าง Object ใช้การส่งค่าผ่านชื่อของ Parameters ถึงเเม้ว่าลำดับจะไม่ถูกต้อง Constructor ก็ยังทำงานได้ตามปกติ
+```
+Name : Jay
+Last Name : Tillu
+Age : 24
+```
+
+

@@ -197,3 +197,5 @@ print(random.randint(0,99))
 [Random Function in C - javatpoint](https://www.javatpoint.com/random-function-in-c#:~:text=In%20the%20C%20programming%20language,need%20to%20implement%20the%20stdlib.)
 <br>
 [Python Program to Generate a Random Number](https://www.programiz.com/python-programming/examples/random-number)
+<br>
+[java.util.Random (Java Platform SE 8 ) (oracle.com)](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)

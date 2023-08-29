@@ -8,8 +8,7 @@
 รูปเเบบการเขียนคำสั่งในเเต่ล่ะภาษา
 
 Dart , C , Java | Python
------------- | -------------
-``` break; ``` | ``` break ```
+-|-
 break; | break
 
 ### Example 1: Break In Dart For Loop 

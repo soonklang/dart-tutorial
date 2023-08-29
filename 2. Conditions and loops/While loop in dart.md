@@ -13,4 +13,4 @@ while(conditional expression) {
 > Statements จะต้องเขียนอยู่ในช่วงของบล็อกโค้ด "{}"
 
 **Flowchart While loop in dart มีขั้นตอนการทำงานของ while loop ดังรูปต่อไปนี้**
-![Flowchart]([https://github.com/630710041/Flowchart/blob/[branch]/image.jpg?raw=true](https://github.com/630710041/Flowchart/blob/main/Screenshot%202023-08-30%20013938.png)https://github.com/630710041/Flowchart/blob/main/Screenshot%202023-08-30%20013938.png)
+![Flowchart](https://github.com/630710041/Flowchart/blob/main/Screenshot%202023-08-30%20013938.png)

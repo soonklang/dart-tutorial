@@ -1,11 +1,11 @@
 # Switch Case in Dart
 
-ใน tutorial นี้คุณจะเรียนรู้การใช้ switch case ในภาษา Dart เพื่อควบคุมกระแสของโปรแกรมของคุณ คำสั่ง switch case ใช้ในการประมวลผลบล็อกของโค้ดตามเงื่อนไขที่กำหนด
+ใน tutorial นี้คุณจะเรียนรู้การใช้ switch case ในภาษา Dart เพื่อควบคุมการทำงานของโปรแกรม คำสั่ง switch case ใช้ในการประมวลผลโปรแกรมตามเงื่อนไขที่กำหนด
 
 ### Switch Case Statement
-คำสั่ง switch ทำการประเมินนิพจน์และเปรียบเทียบผลลัพธ์ของมันกับค่าในเซ็ตหนึ่ง ถ้าเท่ากัน คำสั่ง switch จะดำเนินการในส่วนคำสั่งใน case ที่ตรงกัน
+คำสั่ง switch ทำการตรวจสอบนิพจน์และเปรียบเทียบผลลัพธ์กับค่าที่กำหนด ถ้าเท่ากัน คำสั่ง switch จะดำเนินการในคำสั่งส่วนนั้นของ case ที่ตรงกัน
 
-ภายในคำสั่ง switch ใช้ตัวดำเนินการเปรียบเทียบ (==) เพื่อเปรียบเทียบจำนวนเต็ม สตริง ชุดเลขประเภท (enumeration) หรือค่าคงที่ที่ระบุระหว่างการคอมไพล์
+ภายในคำสั่ง switch ใช้ตัวดำเนินการเปรียบเทียบ (==) เพื่อเปรียบเทียบจำนวนเต็ม, สตริง, ชุดเลขประเภท (enumeration) หรือค่าคงที่ที่ระบุระหว่างการคอมไพล์
 
 ### หลักการทำงานของ Switch Case
 ![flow-SwitchCase](https://github.com/soonklang/dart-tutorial/assets/95559071/019cb533-7aea-462f-b251-3144a7a6b9a7)
@@ -42,7 +42,7 @@ match parameter:
     case first  :
         do_something(first)
     case second :
-          do_something(second)       
+        do_something(second)       
     case third :
         do_something(third)
         .............
@@ -59,65 +59,75 @@ match parameter:
 ### ตัวอย่างกรณีที่ใช้ If Else If
 ```dart
 void main(){
-   var color = 2;
-if (color == 1) {
-        print("Pink");
+   var number = 3;
+if (number == 1) {
+        print("Number One.");
   }
-else if (color == 2) {
-       print("Yellow");
+else if (number == 2) {
+       print("Number Two.");
      }
+else if (number == 3) {
+        print("Number Three.");
+    }
 else{
-        print("Invalid color");
+        print("Other.");
      }
  }
 ```
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
-<pre><code> Yellow </code></pre>
+<pre><code> Number Three. </code></pre>
 </details>
 
 ## ตัวอย่างที่ 1: Switch Case
 - ### ในภาษา Dart
 ```dart
 void main() {
-  var color = 2;
-  switch (color) {
+  int number = 3;
+  switch (number) {
     case 1:
-        print("Pink");
-        break;
+      print("Number One.");
+      break;
     case 2:
-        print("Yellow");
+      print("Number Two.");
+      break;
+    case 3:
+      print("Number Three.");
       break;
     default:
-        print("Invalid color");
-      break;
+      print("Other.");
   }
 }
+
 ```
-> ในกรณีที่1 switch ตรงกับ case 1 จะทำการ Print "Pink"
-<br>กรณีที่2 switch ตรงกับ case 2 จะทำการ Print "ํYellow"
-<br>และกรณีที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จึงทำการ Print "Invalid color"
-<br>จากโค้ดข้างต้น เราได้ประกาศและกำหนดค่าของ color ให้มีค่าเป็น 2 ซึ่งเข้าเงื่อนไข case 2 จึง Print "ํYellow" ออกมา
+> ในกรณีที่ 1 switch ตรงกับ case 1 จะแสดงผลลัพธ์ Number One.
+<br>กรณีที่ 2 switch ตรงกับ case 2 จะแสดงผลลัพธ์ Number Two.
+<br>กรณีที่ 3 switch ตรงกับ case 3 จะแสดงผลลัพธ์ Number Three.
+<br>และกรณีที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จึงแสดงผลลัพธ์ Other.
+<br>จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ number ให้มีค่าเป็น 3 ซึ่งเข้าเงื่อนไข case 3 จึงแสดงผลลัพธ์ Number Three. ออกมา
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
-<pre><code> Yellow </code></pre>
+<pre><code> Number Three. </code></pre>
 </details>
 
 - ### ในภาษา Java
 ```dart
 public class Main {
     public static void main(String[] args) {
-        int color = 2;
-        switch (color) {
+        int number = 3;
+        switch (number) {
             case 1:
-                System.out.println("Pink");
+                System.out.println("Number One.");
                 break;
             case 2:
-                System.out.println("Yellow");
+                System.out.println("Number Two.");
+                break;
+            case 3:
+                System.out.println("Number Three.");
                 break;
             default:
-                System.out.println("Invalid color");
+                System.out.println("Other.");
                 break;
         }
     }
@@ -126,20 +136,51 @@ public class Main {
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
-<pre><code> Yellow </code></pre>
+<pre><code> Number Three. </code></pre>
+</details>
+
+- ### ในภาษา C
+```dart
+#include <stdio.h>
+
+int main() {
+    int number = 3;
+    switch (number) {
+        case 1:
+            printf("Number One.\n");
+            break;
+        case 2:
+            printf("Number Two.\n");
+            break;
+        case 3:
+            printf("Number Three.\n");
+            break;
+        default:
+            printf("Other.\n");
+    }
+
+    return 0;
+}
+```
+
+<details>
+<summary><strong>ผลลัพธ์</strong></summary>
+<pre><code> Number Three. </code></pre>
 </details>
 
 - ### ในภาษา Python
 ```dart
 def main():
-    color = 2
-    match color:
+    number = 3
+    match number:
         case 1:
-            print("Pink")
+            print("Number One.")
         case 2:
-            print("Yellow")
+            print("Number Two.")
+        case 3:
+            print("Number Three.")
         case _:
-            print("Invalid color")
+            print("Other.")
 
 if __name__ == "__main__":
     main()
@@ -147,7 +188,7 @@ if __name__ == "__main__":
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
-<pre><code> Yellow </code></pre>
+<pre><code> Number Three. </code></pre>
 </details>
 
 
@@ -174,11 +215,11 @@ void main() {
 }
 ```
 
-> ในกรณีที่1 switch ตรงกับ case sunny จะทำการ Print "Its a sunny day. Put sunscreen."
-<br>กรณีที่2 switch ตรงกับ case snowy จะทำการ Print "Get your skis."
-<br>กรณีที่3 switch ตรงกับ case cloudy หรือ rainy  จะทำการ Print "Please bring umbrella."
-<br>และกรณีสุดท้ายที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จึงทำการ Print "Sorry I am not familiar with such weather."
-<br>จากโค้ดข้างต้น เราได้ประกาศและกำหนดค่าของ weather = "cloudy" ซึ่งเข้าเงื่อนไขของกรณีที่3 จึง Print "Please bring umbrella."
+> ในกรณีที่ 1 switch ตรงกับ case sunny จะแสดงผลลัพธ์ Its a sunny day. Put sunscreen.
+<br>กรณีที่ 2 switch ตรงกับ case snowy จะแสดงผลลัพธ์ Get your skis.
+<br>กรณีที่ 3 switch ตรงกับ case cloudy หรือ rainy  จะแสดงผลลัพธ์ Please bring umbrella.
+<br>และกรณีสุดท้ายที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จะแสดงผลลัพธ์ Sorry I am not familiar with such weather.
+<br>จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ weather = "cloudy" ซึ่งเข้าเงื่อนไขของกรณีที่3 จึงแสดงผลลัพธ์ Please bring umbrella.
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
@@ -190,7 +231,6 @@ void main() {
 public class Main {
     public static void main(String[] args) {
         final String weather = "cloudy";
-
         switch (weather) {
             case "sunny":
                 System.out.println("It's a sunny day. Put sunscreen.");
@@ -219,7 +259,6 @@ public class Main {
 ```dart
 def main():
     weather = "cloudy"
-
     match weather:
         case "sunny":
             print("It's a sunny day. Put sunscreen.")
@@ -248,7 +287,7 @@ enum enum_name {
   constant_value3 
   }
 ```
-- ### Switch Using Enum ในภาษา Dart
+- ### ในภาษา Dart
 ```dart
 // define enum outside main function
 enum Weather{ sunny, snowy, cloudy, rainy}
@@ -272,29 +311,31 @@ void main() {
   }
 }
 ```
+> จากcodeข้างต้น ได้มีการนิยาม enum Weather ที่เก็บสภาพอากาศ (sunny, snowy, cloudy, rainy) โดยได้มีการกำหนดค่า weather ให้เป็น cloudy โดยใช้ enum Weather เป็นชนิดข้อมูล โดยใช้ switch case ในการตรวจสอบค่า weather เมื่อทำการตรวจสอบแล้วพบว่าตรงกับ case Weather.cloudy จึงแสดงผลลัพธ์ Print Please bring an umbrella. ออกมา
+
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>
 
-- ### Switch Using Enum ในภาษา Java
+- ### ในภาษา Java
 ```dart
 public class Main {
     // Define enum outside the main function
-    enum Weather { SUNNY, SNOWY, CLOUDY, RAINY }
+    enum Weather { sunny, snowy, cloudy, rainy }
 
     public static void main(String[] args) {
-        Weather weather = Weather.CLOUDY;
+        Weather weather = Weather.cloudy;
         
         switch (weather) {
-            case SUNNY:
+            case sunny:
                 System.out.println("It's a sunny day. Put sunscreen.");
                 break;
-            case SNOWY:
+            case snowy:
                 System.out.println("Get your skis.");
                 break;
-            case RAINY:
-            case CLOUDY:
+            case rainy:
+            case cloudy:
                 System.out.println("Please bring an umbrella.");
                 break;
             default:
@@ -315,20 +356,20 @@ public class Main {
 #include <string.h>
 
 // Define enum outside the main function
-enum Weather { SUNNY, SNOWY, CLOUDY, RAINY };
+enum Weather { sunny, snowy, cloudy, rainy };
 
 int main() {
-    enum Weather weather = CLOUDY;
+    enum Weather weather = cloudy;
     
     switch (weather) {
-        case SUNNY:
+        case sunny:
             printf("It's a sunny day. Put sunscreen.\n");
             break;
-        case SNOWY:
+        case snowy:
             printf("Get your skis.\n");
             break;
-        case RAINY:
-        case CLOUDY:
+        case rainy:
+        case cloudy:
             printf("Please bring an umbrella.\n");
             break;
         default:
@@ -338,6 +379,36 @@ int main() {
     
     return 0;
 }
+```
+<details>
+<summary><strong>ผลลัพธ์</strong></summary>
+<pre><code> Please bring umbrella. </code></pre>
+</details>
+
+- ### ในภาษา Python
+```dart
+from enum import Enum
+
+class Weather(Enum):
+    sunny = 1
+    snowy = 2
+    cloudy = 3
+    rainy = 4
+
+def main():
+    weather = Weather.cloudy
+    match weather:
+        case Weather.sunny:
+            print("It's a sunny day. Put on sunscreen.")
+        case Weather.snowy:
+            print("Get your skis.")
+        case Weather.rainy| Weather.cloudy:
+            print("Please bring an umbrella.")
+        case _:
+            print("Sorry, I am not familiar with such weather.")
+
+if __name__ == "__main__":
+    main()
 ```
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>

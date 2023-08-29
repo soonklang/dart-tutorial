@@ -97,7 +97,7 @@ The entered num is 15.2
 </pre>
 </details>
 
-# **Comparing user Input in Dart with Java python and c** #
+# **Comparing user Input in Dart with Java and python** #
 **User Input in python** <br>
 การรับข้อมูลจากผู้ใช้ (User Input) ในภาษา Python สามารถทำได้โดยใช้ฟังก์ชัน input() ซึ่งสามารถรับข้อมูลได้ทั้งตัวอักษรและตัวเลขได้ตามต้องการ
 ตัวอย่าง การใช้งาน input()

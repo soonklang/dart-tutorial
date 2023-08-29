@@ -162,14 +162,12 @@ while count <= 100:
 ## Continue Statement
  คำสั่ง continue; เป็นคำสั่งที่ใช้เพื่อหยุดการทำงานคล้าย ๆ กับคำสั่ง break; แต่จะหยุดการทำงานในการวนรอบรอบปัจจุบัน แล้วไปเริ่มทำงานในรอบต่อไปใหม่ทันที
 
-รูปเเบบการเขียนคำสั่งในภาษา Dark , C , Java 
-```dart
-  continue;
-```
-รูปเเบบการเขียนคำสั่งในภาษา python
- ```python
-   continue
- ```
+รูปเเบบการเขียนคำสั่ง
+
+Dart , C , Java | Python
+-|-
+continue; | continue
+
 ### Example 1: Continue In Dart
 ```dart
 void main() {

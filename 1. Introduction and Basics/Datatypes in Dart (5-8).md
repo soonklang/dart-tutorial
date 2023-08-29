@@ -69,6 +69,18 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/54d355a4-4ffc-4172-a3f5-65b7ffa3f2cd)
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/7491dd5a-2ac9-4d1e-a9ac-7216eb87553d)
 
+เปรียบเทียบกับภาษาอื่นที่มี map โครงสร้างคล้ายๆกันเช่น
+
+Java มี HashMap สำหรับเก็บข้อมูลในรูปแบบของ Key/Value 
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/ea545e1e-152f-4e32-bafb-1f81201d423a)
+
+ใน python Map นั้นเป็นตัวที่อนุญาตให้เราสามารถที่จะนำสมาชิกแต่ล่ะตัวที่อยู่ใน List มาใช้
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/383da6d9-184a-496c-ad3c-dc953eb82a90)
+
+
+
   **2. Set**
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/0f015386-4b0c-40dd-9864-1e61d91bb7c8)
@@ -88,6 +100,13 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/98ff4342-7edb-41b1-91c1-489d2dac269c)
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/88220d0f-b513-4185-a367-d8b43286913b)
+
+เปรียบเทียบกับภาษาอื่นที่มี Set โครงสร้างคล้ายๆกันเช่น
+
+set ใน python
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/57cb5e3c-d8ba-47b6-8900-eea6ffe88b7d)
+
 
 **3. Runes**
 
@@ -143,7 +162,9 @@ Dart ได้แบ่ง type เป็น nullable และ non-nullable แ
 -  https://www.geeksforgeeks.org/dart-runes/
 -  https://dart-tutorial.com/introduction-and-basics/datatypes-in-dart/
 -  https://medium.com/@kithe.raker/dart-null-safety-%E0%B8%84%E0%B8%B7%E0%B8%AD-%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%84%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B9%88%E0%B8%B2-4991edde9bca
-
+-  http://marcuscode.com/lang/java/hashmap#google_vignette
+-  https://www.geeksforgeeks.org/python-map-function/
+-  https://www.youtube.com/watch?v=pgQqvRcKf24
 
 
 

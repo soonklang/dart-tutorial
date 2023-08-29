@@ -14,9 +14,12 @@ Runes     	 runes	        It represents Unicode values of String
 Null	       null	        It represents null value
 
  **1. Map**
+
+ ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/07ee592c-6fd8-4d6b-9314-744dd9982ecc)
+
  
-   map นั้นถ้าเทียบกับการใช้ List ซึ่งจะเป็นการเรียกใช้ตำแหน่งผ่านตัวเลข แต่ใน Map จะเรียกใช้ตามชื่อข้อมูลที่ตั้งไว้ เหมาะกับการเก็บข้อมูลโดยอาศัยชื่อเป็นตัวเรียกใช้ข้อมูล
-ตัวอย่างการใช้ Map
+   map นั้นถ้าเทียบกับการใช้ List ซึ่งจะเป็นการเรียกใช้ตำแหน่งผ่านตัวเลข แต่ใน Map จะเรียกใช้ตามชื่อข้อมูลที่ตั้งไว้ เหมาะกับการเก็บข้อมูลโดยอาศัยชื่อเป็นตัวเรียกใช้ข้อมูล โดย Key จะมีได้แค่ Key เดียวเท่านั้น แต่ Value จะซ้ำกันยังไงก็ได้
+ตัวอย่างการใช้ Map 
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/dd0a5948-9fc2-4fa6-9f40-e2bb3ed288e7)
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/cce3274f-1297-4e7d-b1d8-1fd1d7c8240d)
@@ -26,7 +29,7 @@ Null	       null	        It represents null value
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/3903bfe2-3cb3-4926-a812-1038020ec5ed)
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/b079a1c9-e7e5-4681-9add-ef9d6e20bb15)
 
-ตัวอย่างฟังก์ชันที่มีการใช้งานร่วมกับ Map บ่อย
+ตัวอย่างฟังก์ชันที่มีการใช้งานร่วมกับ Map 
 
 1.	addAll()  
 
@@ -72,9 +75,45 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
 
   **2. Set**
 
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/0f015386-4b0c-40dd-9864-1e61d91bb7c8)
+
+   Set ในภาษา Dart คือ ชุดหรือกลุ่มข้อมูลที่ไม่มีการเรียงลำดับ และจะไม่มีทางซ้ำกัน
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/2563aa09-ef29-4743-8557-33266d9bdd83)
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/5a81133b-e2b7-44b2-adf6-51c837e04be9)
+
+ถ้าเราต้องการสร้าง Set เปล่าๆเราสามารถทำได้โดย
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/b477d207-c072-4a94-9ff2-1a8680689d52)
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/4b32fb57-1602-4414-b5d5-e9d92114dbec)
 
 
+ตัวอย่างฟังก์ชันที่มีการใช้งานร่วมกับ Set 
 
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/98ff4342-7edb-41b1-91c1-489d2dac269c)
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/88220d0f-b513-4185-a367-d8b43286913b)
+
+**3. Runes**
+
+   ในภาษา Dart สตริงเป็นเพียงลำดับของ Unicode ซึ่ง Unicode จับคู่อักขระตัวเลขที่ไม่ซ้ำกันเพื่อแสดงตัวเลข ตัวอักษร หรือสัญลักษณ์ทุกตัว rune สามารถเป็นจำนวนเต็มที่ใช้แทน Unicode
+   
+ สตริงใน dart สามารถเข้าถึงรูนได้ด้วยวิธีต่อไปนี้
+ 1. String.codeUnits property
+    
+    ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/94d7fff8-13ab-4f31-98ec-78a2ac947b9b)
+    ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/7cea3421-4fdf-449b-a69c-072653de4388)
+
+ 2. String.runes property
+
+    ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/0fa18ff4-1ac3-423f-a552-11a0e3c36d75)
+    ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/23ae4e48-a40c-48d0-aae7-f7f3dab94505)
+
+ 3. String.codeUnitAt() function
+   
+     ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/7ad80113-f6ec-4a17-b96b-89d5821a6336)
+     ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/00b1d6e5-3bad-44a3-bb74-e031831986c8)
+
+   
 
 
 
@@ -85,9 +124,9 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
 **Reference**
 
 -  https://siriphonnot.medium.com/10-%E0%B8%9F%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%8A%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-map-object-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-dart-1cfd879a14c0
-
+-  https://blog.intception.me/dev/flutter/dart-part-1.html#lists
 -  https://nextflow.in.th/2018/google-flutter-using-dart-list-set-map-data-type-thai/
-
+-  https://www.geeksforgeeks.org/dart-runes/
 
 
 

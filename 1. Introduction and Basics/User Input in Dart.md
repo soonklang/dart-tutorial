@@ -219,3 +219,8 @@ Hello Eim, your favorite number is 30
 </pre>
 </details>
 
+## **อ้างอิง** ##
+https://kittimasak.com/user-input-python/
+https://www.geeksforgeeks.org/dart-standard-input-output/
+http://marcuscode.com/lang/java/input-output
+https://dart-tutorial.com/introduction-and-basics/user-input-in-dart/

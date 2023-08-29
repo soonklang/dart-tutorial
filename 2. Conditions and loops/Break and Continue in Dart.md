@@ -47,8 +47,9 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-A
- </pre>
+10
+9
+8</pre>
 </details>
 
 ### Example 3: Break In Dart While Loop
@@ -67,8 +68,11 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-A
- </pre>
+1
+2
+3
+4
+5</pre>
 </details>
 
 ### Example 4: Break In Switch Case
@@ -91,8 +95,7 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-A
- </pre>
+Selected month is February.</pre>
 </details>
 
 >Example : Break In C For Loop
@@ -115,8 +118,8 @@ A
 ### Example 1: Continue In Dart
 ```dart
 void main() {
-  for (int i = 1; i <= 10; i++) {
-    if (i == 5) {
+  for (int i = 1; i <= 3; i++) {
+    if (i == 2) {
       continue;
     }
     print(i);
@@ -126,15 +129,15 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-A
- </pre>
+1
+3</pre>
 </details>
 
 ### Example 2: Continue In For Loop Dart
 ```dart
 void main() {
-  for (int i = 10; i >= 1; i--) {
-    if (i == 4) {
+  for (int i = 5; i >= 1; i--) {
+    if (i == 3) {
       continue;
     }
     print(i);
@@ -144,16 +147,18 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-A
- </pre>
+5
+4
+2
+1</pre>
 </details>
 
 ### Example 3: Continue In Dart While Loop
 ```dart
 void main() {
   int i = 1;
-  while (i <= 10) {
-    if (i == 5) {
+  while (i <= 5) {
+    if (i == 3) {
       i++;
       continue;
     }
@@ -165,8 +170,11 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-A
- </pre>
+1
+2
+3
+4
+5</pre>
 </details>
 
 >Example : Continue In C For Loop

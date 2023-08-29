@@ -5,7 +5,7 @@
 ## Break Statement
  คำสั่ง break เป็นคำสั่งที่ให้โปรแกรมออกจาก loop ทันที โดยไม่ทำคำสั่งที่เหลือต่อ ซึ่งคำสั่ง break นี้ สามารถใช้ได้กับ loop หลาย ๆ loop ไม่ว่าจะเป็น while, do while, for, switch และอื่น ๆ
 
-รูปเเบบการเขียนคำสั่งในเเต่ล่ะภาษา
+รูปเเบบการเขียนคำสั่ง
 
 Dart , C , Java | Python
 -|-
@@ -96,11 +96,12 @@ void main() {
 Selected month is February.</pre>
 </details>
 
->Example : Break In C For Loop
 
->Example : Break In Java For Loop
+* Example : Break In C For Loop
 
->Example : Break In Python For Loop
+* Example : Break In Java For Loop
+
+* Example : Break In Python For Loop
 
 ## Continue Statement
  คำสั่ง continue; เป็นคำสั่งที่ใช้เพื่อหยุดการทำงานคล้าย ๆ กับคำสั่ง break; แต่จะหยุดการทำงานในการวนรอบรอบปัจจุบัน แล้วไปเริ่มทำงานในรอบต่อไปใหม่ทันที
@@ -178,10 +179,10 @@ void main() {
 C | Java 
 ------------ | -------------
 
->Example : Continue In C For Loop
+* Example : Continue In C For Loop
 
->Example : Continue In Java For Loop
+* Example : Continue In Java For Loop
 
->Example : Continue In Python For Loop
+* Example : Continue In Python For Loop
 
 ## Reference

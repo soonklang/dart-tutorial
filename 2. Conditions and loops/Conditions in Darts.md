@@ -222,3 +222,13 @@ Num 1 is greater: i.e 1200
 
 https://www.youtube.com/watch?v=B17QgDSAovk&t=1s
 
+# Reference
+https://dart-tutorial.com/conditions-and-loops/conditions-in-dart/
+
+https://toupawa.com/learn-dart-from-zero-to-standard/
+
+https://www.w3schools.com/c/c_conditions.php
+
+https://www.w3schools.com/java/java_conditions.asp
+
+https://www.w3schools.com/python/python_conditions.asp

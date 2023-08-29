@@ -1,5 +1,6 @@
 
 
+
 # Future in Dart
 
 ใน dart Future แสดงถึง ค่าของตัวแปร(value) หรือ ข้อผิดพลาด(error) ที่ยังไม่สามารถถูกเรียกใช้ได้ในขณะหนึ่ง แต่มันจะแสดงถึงค่าที่มีความเป็นไปได้สูงที่จะถูกเรียกใช้ในอนาคต 
@@ -9,7 +10,8 @@
  ```bash
  ในเหตุการณ์เหล่านี้ที่ยกมา ตัวกริ่งเอง จะเปรียบเสมือนตัว Future นั่นเอง
 ```
-### สถานะของFuture 
+## สถานะของFuture 
+มีด้วยกันทั้งหมดสองแบบ คือ:
 - Uncompleted
 
 - Completed
@@ -18,7 +20,7 @@
 เมื่อเราเรียกใช้ asynchronous function (เป็นฟั่งก์ชั่นที่เวลา เราสั่งงานอะไรไปแล้วถ้าเป็นงานที่ใช้เวลานาน มันก็จะไล่ไปทำคำสั่งถัดไปเลยโดยไม่ได้รอให้คำสั่งก่อนหน้าทำเสร็จ) มันหมายถึงว่า future นั้นรอเพื่อให้ ฟังก์ชั่น asynchronous ทำงานของมันให้เรียบร้อยก่อน หรือ แสดงerror ออกมา
 
 ### Completed
-หากการทำงานจบลงด้วยดี หรือ ปรากฏข้อผิดพลาดออกมา ชนิดข้อมูลของตัวFuture จะคืนค่าออกมาตามชนิดข้อมูลที่เราประกาศไว้ เช่น `Future<String>` ก็จะคืนค่า String `Future<Int>` ก็จะคืนค่า int แต่ถ้าหากเราไม่ประกาศชนิดตัวแปรไว้เลย ตัวfuture จะไม่คืนค่าอะไรออกมาเลย ดังนั้น ชนิดของข้อมูลของfuture ตัวนี้คือ `Future<void>`
+หากการทำงานจบลงด้วยดี หรือ ปรากฏข้อผิดพลาดออกมา ชนิดข้อมูลของตัวFuture จะคืนค่าออกมาตามชนิดข้อมูลที่เราประกาศไว้ เช่น `Future<String>` ก็จะคืนค่า String `Future<int>` ก็จะคืนค่า int แต่ถ้าหากเราไม่ประกาศชนิดตัวแปรไว้เลย ตัวfuture จะไม่คืนค่าอะไรออกมาเลย ดังนั้น ชนิดของข้อมูลของfuture ตัวนี้คือ `Future<void>`
 
 
 > ℹ️ **Note:** ถ้าการทำงานของ asynchronous function ไม่สำเร็จไม่ว่าจะกรณีใดๆก็ตาม ตัวfuture ก็จะerror ตามไปด้วย
@@ -30,6 +32,41 @@
 // ฟังก์ชั่นเพื่อคืนค่า Future
 Future<String> getName() async {
   return Future.delayed(Duration(seconds: 10), () => 'Mark');
+}
+```
+
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **C**
+```bash
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+typedef struct Future {
+    char* value;
+} Future;
+
+void delay(int seconds) {
+    sleep(seconds);
+}
+
+void complete(Future* future, char* value) {
+    future->value = strdup(value);
+}
+
+Future getName() {
+    Future future;
+    delay(10);
+    complete(&future, "Mark");
+    return future;
+}
+
+int main() {
+    printf("Start\n");
+    Future nameFuture = getName();
+    printf("name: %s\n", nameFuture.value);
+    printf("End\n");
+    return 0;
 }
 ```
 
@@ -59,8 +96,24 @@ public class Main {
 }
 
 ```
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Python**
+```bash
+import asyncio
 
+async def get_name():
+    await asyncio.sleep(10)  # Sleep for 10 seconds
+    return "Mark"
 
+async def main():
+    print("Start")
+    name = await get_name()
+    print(f"name: {name}")
+    print("End")
+
+asyncio.run(main())
+
+```
+ 
 
 
 อีกวิธีในการสร้าง future คือการใช้ method **Future.value()** ที่จะคืนค่า **Future<String>** ในทันที
@@ -69,6 +122,28 @@ public class Main {
 // ฟังก์ชั่นเพื่อคืนค่า Future
 Future<String> getName() {
   return Future.value('Mark');
+}
+```
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **C**
+```bash
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct Future {
+    char* value;
+} Future;
+
+Future createFuture(char* value) {
+    Future future;
+    future.value = strdup(value);
+    return future;
+}
+
+int main() {
+    Future nameFuture = createFuture("Mark");
+    printf("name: %s\n", nameFuture.value);
+    return 0;
 }
 ```
 
@@ -87,6 +162,22 @@ public class Main {
     }
 }
 ```
+
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Python**
+
+```bash
+import asyncio
+
+async def get_name():
+    return "Mark"
+
+async def main():
+    name = await get_name()
+    print(f"name: {name}")
+
+asyncio.run(main())
+```
+
 
 
 ## วิธีการใช้ Future ใน Dart
@@ -166,7 +257,7 @@ Future<String> middleFunction(){
 
 ตัวอย่าง ในภาษา **Java**
 
-Output
+
 ```bash
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
@@ -218,3 +309,9 @@ https://dart-tutorial.com/asynchronous-programming/future-in-dart/
 https://api.dart.dev/stable/3.1.0/dart-async/Future-class.html
 
 https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html
+
+https://devdocs.io/c/language/typedef
+
+https://pubs.opengroup.org/onlinepubs/009696799/functions/sleep.html
+
+https://docs.python.org/3/library/asyncio.html

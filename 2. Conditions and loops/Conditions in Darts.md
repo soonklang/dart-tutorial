@@ -86,4 +86,56 @@ You are single.
 </details>
 
 ## เงื่อนไข If-Else-IF
-หากมีเงื่อนไข If หลายเงื่อนไข สามารถใช้ if-else-if
+หากมีเงื่อนไข If หลายเงื่อนไข สามารถใช้ if-else-if ศึกษาการทำงานได้จากตัวอย่างด้านล่าง 
+## Syntax
+```dart
+  if(condition1){
+    statements1;
+  }else if(condition2){
+    statements2;
+  }else if(condition3){
+    statements3;
+  }
+  .
+  .
+  .
+  else(conditionN){
+    statementsN;
+  }
+```
+## ตัวอย่างการทำงานของเงื่อนไข If-Else-If
+โปรแกรมต่อไปนี้จะทำการพิมพ์ชื่อของเดือนออกมา ตามค่าตัวเลขของเดือนนั้น ผลลัพธ์จะแตกต่างกันออกไปหากเราเปบี่ยนค่าตัวเลขของเดือน
+```dart
+ void main() {
+  int noOfMonth = 5;
+
+  // Check the no of month
+  if (noOfMonth == 1) {
+    print("The month is jan");
+  } else if (noOfMonth == 2) {
+    print("The month is feb");
+  } else if (noOfMonth == 3) {
+    print("The month is march");
+  } else if (noOfMonth == 4) {
+    print("The month is april");
+  } else if (noOfMonth == 5) {
+    print("The month is may");
+  } else if (noOfMonth == 6) {
+    print("The month is june");
+  } else if (noOfMonth == 7) {
+    print("The month is july");
+  } else if (noOfMonth == 8) {
+    print("The month is aug");
+  } else if (noOfMonth == 9) {
+    print("The month is sep");
+  } else if (noOfMonth == 10) {
+    print("The month is oct");
+  } else if (noOfMonth == 11) {
+    print("The month is nov");
+  } else if (noOfMonth == 12) {
+    print("The month is dec");
+  } else {
+    print("Invalid option given.");
+  }
+}
+```

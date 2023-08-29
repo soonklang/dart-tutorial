@@ -200,3 +200,5 @@ print(random.randint(0,99))
 [java.util.Random (Java Platform SE 8 ) (oracle.com)](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)
 <br>
 [Dart : Random numbers ](https://dart.dev/guides/libraries/library-tour#math-constants)
+<br>
+[random — Generate pseudo-random numbers](https://docs.python.org/3/library/random.html)

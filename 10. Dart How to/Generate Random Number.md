@@ -111,3 +111,5 @@ void main() {
 > range ของเลขที่จะสุ่มคือ [ 0 , n - 1]
 
 ### เปรียบความแตกต่างของการสุ่มตัวเลขของภาษา Dart , C , Java
+
+[Random class - dart:math library - Dart API]([https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/](https://api.dart.dev/stable/3.1.0/dart-math/Random-class.html)https://api.dart.dev/stable/3.1.0/dart-math/Random-class.html)

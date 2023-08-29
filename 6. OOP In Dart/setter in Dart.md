@@ -8,9 +8,9 @@ set field_name() {
   ...
 }
 ```
-- **set** เป็น keyword ที่ใช้บอกคอมไพลเลอร์ว่านี่คือ method setter
-- **field_name()** คือ ชื่อของ method โดยในวงเล็บจะเป็นพารามิเตอร์ที่รับค่าเข้ามา เพื่อเปลี่ยนค่าใน method
-- **หมายเหตุ** ด้านหน้าของ keyword set สามารถใส่ตัวกำหนดการคืนค่าได้ เช่น void, int, float
+**set** เป็น keyword ที่ใช้บอกคอมไพลเลอร์ว่านี่คือ method setter <br>
+**field_name()** คือ ชื่อของ method โดยในวงเล็บจะเป็นพารามิเตอร์ที่รับค่าเข้ามา เพื่อเปลี่ยนค่าใน method <br>
+**หมายเหตุ** ด้านหน้าของ keyword set สามารถใส่ตัวกำหนดการคืนค่าได้ เช่น void, int, float
 # ตัวอย่าง การใส่ตัวกำหนดการคืนค่า
  ```dart
 void set employeeName(String name) {
@@ -51,3 +51,9 @@ print("Welcome to ${geek.getName}");
 }
 
 ```
+
+## **Reference**
+[geeksforgeeks](https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/)
+<br>
+[tutorialspoint](https://www.tutorialspoint.com/getter-and-setter-in-dart-programming)
+<br>

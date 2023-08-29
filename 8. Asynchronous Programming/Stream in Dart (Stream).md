@@ -147,12 +147,12 @@ Smith</code></pre>
 
 ## Future ปะทะ Stream
 | Future | Stream |
-|:--------:| :-------------:|
-| centered | right-aligned |
-| | |
-| | |
-| | |
-| | |
+|:--------| :-------------|
+|Future represents the value or error that is supposed to be available in the Future.| Stream is a way by which we receive a sequence of events. |
+| A Future can provide only a single result over time.| Stream can provide zero or more values.|
+|You can use FutureBuilder to view and interact with data. |You can use StreamBuilder to view and interact with data. |
+|It can’t listen to a variable change. |But Stream can listen to a variable change. |
+|Syntax: Future <data_type> class_name | Syntax: Stream <data_type> class_name|
 
 ## ประเภทของ Stream
 
@@ -229,19 +229,68 @@ streamSubscription.cancel();
 ## ประเภทของ Class ต่างๆใน Stream
 มี 4 คลาสหลักของ Dart ที่อยู่ใน async libraries ที่ใช้ในการจัดการกับ Streams
 
-**Stream** : 
-**EventSink** : 
-**StreamController** : 
-**StreamSubscription** : 
+**Stream** :  เป็นตัวแทนของกระแสของข้อมูล แบบ Asynchronous
+เช่น
+```dart
+final controller = StreamController<String>();
+final subscription = controller.stream.listen((String data) {
+  print(data);
+});
+controller.sink.add("Data!");
+```
+**EventSink** :  คือการเพิ่มของใน Stream ไม่ว่าจะเป็นเหตุการณ์ ค่า หรือ Error 
+**StreamController** :  ตัวที่จัดการกับ Stream ไม่ว่าจะสร้าง Stream เพิ่ม (sink) ใน Stream แล้วยัง method ที่ใช้กำกับ Stream 
+**StreamSubscription** : เป็นตัวแทนที่บ่งบอกว่าเป็นสมาชิกของ Stream สามารถ pause เพื่อหยุดรับข้อมูล , resume รับข้อมูลต่อ หรือ cancel ยกเลิกการเป็นสมาชิกของ Stream
 
 ## Method ที่ใช้ใน Stream
 มี method 4 ตัวที่ใช้กับ Stream ได้
-- **Syntax**: listen
+
+`listen()` ใช้ในการรับค่าหรือเหตุการณ์ที่ถูกส่งมาจาก Stream
+
+**Syntax**: listen
+```dart
+final subscription = myStream.listen()
+```
+
+  Stream สามารถเกิด error ขึ้นได้เช่นกันการเพิ่ม method `onError` เข้าไปจะช่วยให้สามารถดักจับความผิดพลาดได้
+**Syntax**: onError
+```dart
+onError: (err){
+
+}
+```
+method `cancelOnError` จะถูกใช้งานเป็นปกติถ้าไม่ได้ตั้งค่า ถ้าตั้งค่า method  นี้ให้เป็น false การสมัครสมาชิกก็จะดำเนินต่อไปแม้จะเกิด Error เกิดขึ้น
+**Syntax**: cancelOnError
+```dart 
+cancelOnError :  false
+```
+method `onDone` จะทำงานเมื่อ Stream เสร็จสิ้นการส่งข้อมูลทั้งหมด เช่น ตอนที่ไฟล์ถูกอ่านจนครบถ้วนแล้ว
+- **Syntax**: onDone
+```dart
+onDone: (){
+  
+}
+```
+### ยกตัวอย่างการใช้ Method ใน Stream
+```dart
+streamObject.listen((event) {
+  //method นี้จะทำงานก็ต่อเมื่อ Stream ส่งค่าหรือเหตุการณ์กลับมา
+  print('Received: $event');
+}, onError: (error) {
+  //method นี้จะทำงานก็ต่อเมื่อมี Error เกิดขึ้นใน Stream
+  print('Error: $error');
+}, onDone: () {
+  //method นี้จะทำงานก็ต่อเมื่อ Stream เสร็จสิ้นการส่งข้อมูลทั้งหมดแล้ว
+  print('Stream is done');
+});
+```
+
+
 
 ## Keywords ที่ใช้ใน Stream
-- async* :
-- yield :
-- yield* :
+- async* : ใช้ใน Stream เหมือน async ที่ใช้ใน Future
+- yield : ใช้ในการส่งค่าออกมาจาก Generator ไม่ว่าจะเป็นแบบ sync หรือ async  
+- yield* : ใช้ในการวนทำ function ของ Iterable หรือ Streamซ้ำ
 
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>
@@ -256,3 +305,5 @@ streamSubscription.cancel();
 [java.util.stream (Java Platform SE 8 ) (oracle.com)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
 <br>
 [Streams — Python 3.11.5 documentation](https://docs.python.org/3/library/asyncio-stream.html)
+<br>
+[DartLangSpecDraft.pdf](https://spec.dart.dev/DartLangSpecDraft.pdf)

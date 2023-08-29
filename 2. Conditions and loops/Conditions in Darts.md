@@ -173,7 +173,47 @@ Num 1 is greater: i.e 1200
 </details>
 
 ## ความแตกต่างของเงื่อนไขในภาษา Dart กับ ภาษา C,Java,Python
-
+ ## Syntax
+```dart
+  ภาษา Dart
+  if(condition1){
+    // block of code to be executed if condition1 is true
+  }else if(condition2){
+    block of code to be executed if the condition1 is false and condition2 is true
+  }else(condition){
+    block of code to be executed if the condition1 is false and condition2 is false
+  }
+```
+```dart
+  ภาษา C
+  if (condition1) {
+    // block of code to be executed if condition1 is true
+  } else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+  } else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+  }
+```
+```dart
+  ภาษา Java
+  if (condition1) {
+    // block of code to be executed if condition1 is true
+  } else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+  } else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+  }
+```
+```dart
+  ภาษา Python
+  if condition:
+    // block of code to be executed if condition1 is true
+  elif condition:
+    // block of code to be executed if the condition1 is false and condition2 is true
+  else:
+    // block of code to be executed if the condition1 is false and condition2 is false
+```
+จากการเปรียบเทียบ Syntax ของทั้ง 4 ภาษาพบว่า ภาษา Dart,C และ Java มี Syntax ในการเขียนโปรแกรมที่เหมือนกัน แต่ในภาษา Python นั้นแตกต่างออกไป
 ## Video
 วิดีโอการศึกษาเกี่ยวกับเงื่อนไขในภาษา Dart
 

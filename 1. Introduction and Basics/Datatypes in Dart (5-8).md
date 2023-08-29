@@ -71,11 +71,11 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
 
 เปรียบเทียบกับภาษาอื่นที่มี map โครงสร้างคล้ายๆกันเช่น
 
-Java มี HashMap สำหรับเก็บข้อมูลในรูปแบบของ Key/Value 
+**HashMap in Java**
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/ea545e1e-152f-4e32-bafb-1f81201d423a)
 
-ใน python Map นั้นเป็นตัวที่อนุญาตให้เราสามารถที่จะนำสมาชิกแต่ล่ะตัวที่อยู่ใน List มาใช้
+ **Map in python**  ที่เป็นตัวที่อนุญาตให้เราสามารถที่จะนำสมาชิกแต่ล่ะตัวที่อยู่ใน List มาใช้
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/383da6d9-184a-496c-ad3c-dc953eb82a90)
 
@@ -103,9 +103,14 @@ Java มี HashMap สำหรับเก็บข้อมูลในรู
 
 เปรียบเทียบกับภาษาอื่นที่มี Set โครงสร้างคล้ายๆกันเช่น
 
-set ใน python
+**Set in python**
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/57cb5e3c-d8ba-47b6-8900-eea6ffe88b7d)
+
+**Set in java**
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/fbd65519-c431-4948-b73e-7e799313cb10)
+
 
 
 **3. Runes**
@@ -127,6 +132,12 @@ set ใน python
    
      ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/7ad80113-f6ec-4a17-b96b-89d5821a6336)
      ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/00b1d6e5-3bad-44a3-bb74-e031831986c8)
+
+**Rune in Golang**
+    
+   ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/79c09cc1-dd3a-44e2-9501-a58561396bfe)
+
+
 
 **4. Null** 
 
@@ -152,10 +163,29 @@ Dart ได้แบ่ง type เป็น nullable และ non-nullable แ
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/c83b3717-4314-4897-a2b4-9c2dca72521d)
 
+**Null in java**
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/e5c8945c-d8ca-446e-97ac-b410f29de039)
+
+**Null in python**
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/7d2ff684-3715-403b-9d36-d48b5a8abfc0)
+
+หรือ
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/45aedfd6-0b27-4b71-a997-de5c60255566)
+
+
+
+
+
+
+
+
+
 
 **Reference**
 
--  https://dartpad.dev/?
 -  https://siriphonnot.medium.com/10-%E0%B8%9F%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B9%8C%E0%B8%8A%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-map-object-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-dart-1cfd879a14c0
 -  https://blog.intception.me/dev/flutter/dart-part-1.html#lists
 -  https://nextflow.in.th/2018/google-flutter-using-dart-list-set-map-data-type-thai/
@@ -165,6 +195,10 @@ Dart ได้แบ่ง type เป็น nullable และ non-nullable แ
 -  http://marcuscode.com/lang/java/hashmap#google_vignette
 -  https://www.geeksforgeeks.org/python-map-function/
 -  https://www.youtube.com/watch?v=pgQqvRcKf24
+-  https://www.geeksforgeeks.org/sets-in-python/
+-  https://www.geeksforgeeks.org/set-in-java/
+-  https://www.geeksforgeeks.org/rune-in-golang/
+-  https://blog.enterprisedna.co/python-null/#:~:text=In%20Python%2C%20the%20equivalent%20of,no%20value%20or%20no%20object.
 
 
 

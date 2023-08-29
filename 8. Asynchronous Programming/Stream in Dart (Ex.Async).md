@@ -187,11 +187,12 @@ class AsyncExample {
     }
 }
 ```
-Output
 
-```dart
-Thread is running
-   ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>Thread is running
+</code></pre>
+</details>
 
 ## ภาษา Python
 
@@ -209,11 +210,12 @@ async def main():
     await asyncio.gather(task1, task2)
 asyncio.run(main())
 ```
-Output
-```dart
-Start Task 1
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>Start Task 1
 End Task 1
-```
+</code></pre>
+</details>
 
 ## อ้างอิง
 :https://www.tamemo.com/post/178/async-in-dart-1-isolates-event-loop/<br>

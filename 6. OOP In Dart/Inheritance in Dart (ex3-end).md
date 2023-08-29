@@ -186,3 +186,8 @@ The eagle has a sharp vision
       สังเกตเห็นว่า Syntax ของ Dart กับ Java มีลักษณะคล้ายคลึงกัน
 
 ## 4.  Hierarchical Inheritance
+![image](https://github.com/soonklang/dart-tutorial/assets/141731788/c85e6699-feb7-4be4-96e8-3d4de6edb8ed)
+
+      การสืบทอดแบบ Hierarchical เกิดขึ้นตอนทีมี 2 Classes หรือมากกว่า 2 Classes ทำการถ่ายทอดมาจาก Class อันหนึ่งเดียวกัน
+
+      ในภาษา Dart นี้ก็เช่นกัน ก็ถูกพัฒนาขึ้นมาให้ perform การสืบทอดแบบ Multilevel ได้โดยดี เราจะไปดูตัวอย่างต่อไปนี้

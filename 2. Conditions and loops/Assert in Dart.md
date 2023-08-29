@@ -157,7 +157,7 @@ print("Program continues after than assert")
 
  >การใช้งาน “assert” ในภาษา Dart และ Python จะแสดงผลผิดพลาดทันทีเมื่อเงื่อนไขไม่ถูกต้อง
 
-# Comparison Assert in Dart with C, Java and Python
+# Comparing Assert in Dart with C, Java, and Python
 
 ## Syntax
 >Dart: assert(condition); and assert(condition, "message");

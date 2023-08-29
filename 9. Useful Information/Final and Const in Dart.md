@@ -7,8 +7,8 @@
 	void main() {
   	  final PI_1 = 3.14;
   	  const PI_2 = 3.14;
-	  PI_1 = 2; #error
-	  PI_2 = 2; #error
+	  PI_1 = 2; //error
+	  PI_2 = 2; //error
 	}
 ```
 #### สังเกตว่า

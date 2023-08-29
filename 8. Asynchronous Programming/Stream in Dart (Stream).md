@@ -1,5 +1,6 @@
 
 
+
  # Stream (กระแสข้อมูล) 🌊☠️🌊🌊🏊🌊🌊🌊🏊‍♂️🌊🌊🌊
 
 ยินดีต้อนรับทุกท่านเข้าสู่เนื้อหา **Stream** ของหัว Asynchronous Programming !!
@@ -230,9 +231,9 @@ First Receive: John
 First Receive: Smith
 </code></pre>
 เมื่อแบ่งเป็นลำดับเวลาการทำงานจะได้ Output ดังนี้
-  <pre><code>Time            │     │    │
-0| Uncaught Error: Bad state: Stream has already been listened to.            1sec.  │    │
-1| First Recieve: Mark  ───────┘    2sec. │
+  <pre><code>Time                           │     │    │
+0| Uncaught Error: Bad state: Stream has already been listened to.
+1| First Recieve: Mark  ─1sec.─┘    2sec. │
 2| First Recieve: John  ─────────────┘  3sec.
 3| First Recieve: Smith ──────────────────┘
 </code></pre>
@@ -250,7 +251,7 @@ Stream จะเก็บค่าเอาไว้จนกว่าจะม�
 
 ```dart
 //แปลงให้กลายเป็น broadcast
-Stream<String> nameStream = getUserName().asBroadcastStream;
+Stream<String> nameStream = getUserName().asBroadcastStream();
 
 var subscription1 = nameStream.listen((name){
     print('First Receive: $name');
@@ -263,6 +264,26 @@ var subscription2 = nameStream.listen((name){
 ```
 
 โค้ดตัวเดียวกับ single ก็สามารถแปลงให้เป็น Broadcast ได้เช่นกันด้วยการใช้ `asBroadcastStream`
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>First Receive: Mark
+Second Receive: Mark
+First Receive: John
+Second Receive: John
+First Receive: Smith
+Second Receive: Smith
+</code></pre>
+เมื่อแบ่งเป็นลำดับเวลาการทำงานจะได้ Output ดังนี้
+  <pre><code>Time                           │     │    │
+0|                           1sec.   │    │
+1| First Recieve: Mark   ──────┘    2sec. │
+ | Second Recieve : Mark ──────┘     |    |
+2| First Recieve: John   ────────────┘  3sec.
+ | Second Recieve : John ────────────┘    |
+3| First Recieve: Smith  ─────────────────┘
+ | Second Recieve : Smith ────────────────┘
+</code></pre>
+</details>
 
 
 

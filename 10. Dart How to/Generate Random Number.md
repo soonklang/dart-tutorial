@@ -42,7 +42,6 @@ void main() {
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Program continues after than assert</code></pre>
 </details>
 
 ```dart  
@@ -68,7 +67,6 @@ void main() {
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Program continues after than assert</code></pre>
 </details>
 
 ```dart  
@@ -96,7 +94,6 @@ void main() {
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Program continues after than assert</code></pre>
 </details>
 
 ```dart  
@@ -112,12 +109,58 @@ void main() {
 
 ### เปรียบความแตกต่างของการสุ่มตัวเลขของภาษา Dart , C , Java
 
+- ตัวอย่างการสุ่มเลข 0 - 99
+  
+`Dart`
+```dart    
+import 'dart:math';
+
+void main() {
+   Random r1 = new Random();
+   print(r1.nextInt(100));
+}
+```
+
+<details>
+  <summary><strong>Output</strong></summary>
+</details>
+
+```dart    
+40
+```
+`C`
+```C  
+#include <stdio.h>      
+#include <stdlib.h>  
+void main()  
+{     
+   int num;  
+   num = rand() % 99
+   printf ("%d", num);  
+}  
+```
+
+<details>
+  <summary><strong>Output</strong></summary>
+</details>
+
+```C   
+65
+```
+
 
 ## Reference
 [Random class - dart:math library - Dart API](https://api.dart.dev/stable/3.1.0/dart-math/Random-class.html)
+<br>
 
 [Generate Random Number - Dart Tutorial](https://dart-tutorial.com/dart-how-to/generate-random-number-in-dart/)
+<br>
 
 [Dart/Flutter - Generate Random Number Examples](https://www.woolha.com/tutorials/dart-generate-random-number-examples)
+<br>
 
 [Generating random numbers in Java](https://www.geeksforgeeks.org/generating-random-numbers-in-java/)
+<br>
+
+[Random Function in C - javatpoint](https://www.javatpoint.com/random-function-in-c#:~:text=In%20the%20C%20programming%20language,need%20to%20implement%20the%20stdlib.)
+<br>

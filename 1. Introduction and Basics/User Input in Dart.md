@@ -170,3 +170,40 @@ print(f"พื้นที่สามเหลี่ยมคือ {area:.2f}"
 พื้นที่สามเหลี่ยมคือ 25.00
 </pre>
 </details>
+
+**User Input in Java** <br>
+การรับข้อมูลจากผู้ใช้(User Input) โดยในภาษา Java นั้นมีคลาส Scanner ใช้ในการรับข้อมูลผ่านทางคีย์บอร์ดของคอมพิวเตอร์ 
+>เริ่มต้นสร้างออบเจ็คจากคลาส Scanner ด้วยคำสั่ง
+```java
+Scanner sn = new Scanner(System.in);
+```
+>โดยการใส่อากิวเมนต์ System.in สำหรับการรับค่าจากคีย์บอร์ด และในการใช้คลาสนี้ จะต้องทำการ import package library ของภาษา Java เข้ามายังโปรแกรม โดยการใช้คำสั่ง import ทำการนำเข้า package มายังโปรแกรม
+```java
+import java.util.Scanner;
+```
+>ต่อไปเราใช้เมธอด sn.next(); ในการอ่านค่าชื่อเข้ามายังตัวแปร name และอ่านค่าตัวเลขด้วยเมธอด sn.nextInt(); มาเก็บไว้ในตัวแปร number
+```java
+import java.util.Scanner;
+
+public class GettingInput {
+    public static void main (String[] atgs) {   
+
+        Scanner sn = new Scanner(System.in);
+
+        String name;  
+        int number;
+
+        System.out.println("\tGreeting program");
+
+        System.out.print("Enter your name: ");
+        name = sn.next();
+
+        System.out.print("Enter your favorite number: ");
+        number = sn.nextInt();
+
+        System.out.print("Hello " + name);
+        System.out.println(", your favorite number is " + number);
+
+    }
+}
+```

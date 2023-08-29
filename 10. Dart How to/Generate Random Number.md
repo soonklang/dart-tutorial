@@ -38,8 +38,6 @@ void main() {
    print("Using Random()");
    Random r1 = new Random();
    print(r1.nextInt(100)); //จะทำการสุ่มตััวเลขตั้งแต่ 0-99
-   print(r1.nextBool());   //จะทำการสุ่มค่า boolean
-   print(r1.nextDouble()); //จะทำการสุ่มเลขทศนิยม
 }
 ```
 <details>
@@ -49,8 +47,6 @@ void main() {
 ```dart  
 Using Random()
 37
-fasle
-0.6111862138481076
 ```
    ### แบบที่ 2 คือ Random.secure() 
  คือ Random.secure() ใช้ สร้างrandom number generator ที่มีความสามารถในการสร้างตัวเลขสุ่มที่เหมาะสำหรับการใช้งานทางความปลอดภัย โดยใช้แหล่งเอนโทรปีที่มีความสามารถในการสร้างตัวเลขสุ่มที่มีความสามารถเพิ่มเติมเหมือนในการทำงานเรื่องความปลอดภัย
@@ -63,8 +59,6 @@ void main() {
    print("\nUsing Random.secure() :");
    Random r2 = new Random.secure();
    print(r2.nextInt(100));
-   print(r2.nextBool());
-   print(r2.nextDouble());
 }
 ```
 <details>
@@ -74,8 +68,6 @@ void main() {
 ```dart  
 Using Random.secure()
 29
-true
-0.9837051540291097
 ```
 > เราจะเห็นได้ว่า method nextInt() ที่รับ parameter เป็นจำนวนเต็ม จะทำการสุ่มตัวเลข ตั้งแต่ค่า default ก็คือ 0 จนถึง n-1
 >

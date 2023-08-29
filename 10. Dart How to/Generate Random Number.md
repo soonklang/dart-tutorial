@@ -128,6 +128,7 @@ void main() {
 ```dart    
 40
 ```
+
 `C`
 ```C  
 #include <stdio.h>      
@@ -146,6 +147,29 @@ void main()
 
 ```C   
 65
+```
+
+`Java`
+```Java 
+import java.util.Random;
+   
+public class generateRandom{
+   
+    public static void main(String args[])
+    {
+        Random rand = new Random();
+        int rand_int1 = rand.nextInt(100);
+        System.out.println(rand_int1);
+    }
+}
+```
+
+<details>
+  <summary><strong>Output</strong></summary>
+</details>
+
+```Java  
+99
 ```
 
 

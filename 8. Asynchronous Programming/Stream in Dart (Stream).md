@@ -90,6 +90,17 @@ Stream<String> getUserName() async* {
   yield 'Smith';                              //ส่งคืนค่า 'Smith' 
 }
 ```
+ใน python จะสามารถเขียนได้ดังนี้
+```py
+async  def  get_user_name(): 
+	await asyncio.sleep(1) 
+	yield  'Mark'  
+	await asyncio.sleep(1) 
+	yield  'John'  
+	await asyncio.sleep(1) 
+	yield  'Smith'  
+```
+
 > yield คล้ายๆกับ return คือการคืนค่าข้อมูลกลับ
 > <br>
 > แต่ yield สามารถข้อมูลกลับได้หลายครั้งนั่นเอง
@@ -104,6 +115,13 @@ Stream<String> getUserName() async* {
 Stream<String> getUserName() {
   return Stream.fromIterable(['Mark', 'John', 'Smith']);  
 }
+```
+Python ไม่สามารถใช้ method เหมือน dart จึงต้องเขียนตรงๆแบบโค้ดด้านล่าง
+```python
+def  get_user_name(): 
+	usernames = ['Mark', 'John', 'Smith'] 
+	for name in usernames: 
+		yield name
 ```
 ## วิธีการใช้ Stream ใน Dart
 หลังจากที่เราสามารถสร้าง function ที่สามารถคืนค่าเป็น Stream ได้แล้ว
@@ -131,6 +149,21 @@ void main() async {
   }
 }
 ```
+ใน python จะเขียนได้ดังนี้
+```python
+import asyncio
+async def get_user_name():
+    await asyncio.sleep(1)  
+    yield 'Mark'            
+    await asyncio.sleep(1)  
+    yield 'John'            
+    await asyncio.sleep(1)  
+    yield 'Smith'           
+    
+async def main():
+    async for name in get_user_name():
+        print(name)
+```
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>Mark
@@ -148,10 +181,10 @@ Smith</code></pre>
 ## Future ปะทะ Stream
 | Future | Stream |
 |:--------| :-------------|
-|Future represents the value or error that is supposed to be available in the Future.| Stream is a way by which we receive a sequence of events. |
-| A Future can provide only a single result over time.| Stream can provide zero or more values.|
-|You can use FutureBuilder to view and interact with data. |You can use StreamBuilder to view and interact with data. |
-|It can’t listen to a variable change. |But Stream can listen to a variable change. |
+|Future เป็นตัวแทนของค่าหรือข้อผิดพลาดในอนาคต| Stream เป็นวิธีทางให้ได้รับลำดับของเหตุการณ์ต่างๆ |
+| Future สามารถให้ผลลัพธ์เดียวในช่วงเวลาเดียวเท่านั้น|แต่กลับกัน Stream สามารถให้ค่าได้ตั้งแต่ 0 หรือมากกว่า 1 ค่า|
+|สามารถใช้ FutureBuilder ในการดูหรือโต้ตอบกับข้อมูล|สามารถใช้ StreamBuilder ในการดูหรือโต้ตอบกับข้อมูล |
+|ไม่สามารถดูการเปลี่ยนแปลงของตัวแปรได้ |แต่ Stream สามารถดูการเปลี่ยนแปลงของตัวแปรได้ |
 |Syntax: Future <data_type> class_name | Syntax: Stream <data_type> class_name|
 
 ## ประเภทของ Stream
@@ -239,9 +272,7 @@ final subscription = controller.stream.listen((String data) {
 controller.sink.add("Data!");
 ```
 **EventSink** :  คือการเพิ่มของใน Stream ไม่ว่าจะเป็นเหตุการณ์ ค่า หรือ Error 
-<br>
 **StreamController** :  ตัวที่จัดการกับ Stream ไม่ว่าจะสร้าง Stream เพิ่ม (sink) ใน Stream แล้วยัง method ที่ใช้กำกับ Stream 
-<br>
 **StreamSubscription** : เป็นตัวแทนที่บ่งบอกว่าเป็นสมาชิกของ Stream สามารถ pause เพื่อหยุดรับข้อมูล , resume รับข้อมูลต่อ หรือ cancel ยกเลิกการเป็นสมาชิกของ Stream
 
 ## Method ที่ใช้ใน Stream
@@ -294,8 +325,7 @@ streamObject.listen((event) {
 - yield : ใช้ในการส่งค่าออกมาจาก Generator ไม่ว่าจะเป็นแบบ sync หรือ async  
 - yield* : ใช้ในการวนทำ function ของ Iterable หรือ Streamซ้ำ
 ___
-
-
+## **Reference**
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>
 [Streams (The GNU C Library)](https://www.gnu.org/software/libc/manual/html_node/Streams.html)

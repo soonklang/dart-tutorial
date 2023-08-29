@@ -8,8 +8,7 @@
 ภายในคำสั่ง switch ใช้ตัวดำเนินการเปรียบเทียบ (==) เพื่อเปรียบเทียบจำนวนเต็ม สตริง ชุดเลขประเภท (enumeration) หรือค่าคงที่ที่ระบุระหว่างการคอมไพล์
 
 ### หลักการทำงานของ Switch Case
-![image](https://github.com/chonnigan/PL/assets/95559071/2c3d088d-25e0-4e04-ad54-466c3e2ba685)
-
+![flow-SwitchCase](https://github.com/soonklang/dart-tutorial/assets/95559071/019cb533-7aea-462f-b251-3144a7a6b9a7)
 ## Syntax
 - ### ในภาษา Dart , C, Java , Javascript ใช้ switch case
 ```dart

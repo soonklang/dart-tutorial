@@ -7,7 +7,7 @@
 ```dart
 void main(){
   String text;
-  print("ข้อความ : $text"); //error
+  print("ข้อความ : $text"); // Error
 }
 ```
 
@@ -41,7 +41,7 @@ void main(){
 void main(){
   Object name = "Dart";
   print("ชื่อตัวแปร $name");
-  print("มีจำนวนตัวอักษร ${name.length}" ตัว); //error
+  print("มีจำนวนตัวอักษร ${name.length}" ตัว); // Error
 }
 ```
 จากตัวอย่างที่ 2.1 มีการประกาศตัวแปร "name" ชนิดข้อมูลเป็น Object เมื่อ print ค่าออกมา แต่บรรทัดที่ 4 จึงทำให้เกิด error เนื่องจาก Object ไม่มี คำสั่ง .length ในชนิดข้อมูล

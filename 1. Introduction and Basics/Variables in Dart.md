@@ -227,4 +227,6 @@ https://expert-programming-tutor.com/tutorial/article/L01_DART_INTRO.php
 
 https://www.tamemo.com/post/172/dart-101-intro/
 
+https://www.geeksforgeeks.org/introduction-to-python/
+
 https://chat.openai.com/

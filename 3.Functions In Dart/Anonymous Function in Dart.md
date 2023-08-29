@@ -21,7 +21,9 @@ lambda arguments : expression
 ```
 - JavaScript 
 ```javascript
-(parameters) => { ... }
+(function () {
+   //...
+});
 ```
 - ไม่มี Anonymous Function ใน ภาษา C หรือ Java
 ### Example : เขียนฟังก์ชันแบบธรรมดา
@@ -178,4 +180,8 @@ https://dart-tutorial.com/dart-functions/anonymous-function-in-dart/
 https://www.javatpoint.com/dart-anonymous-function
 
 https://www.darttutorial.org/dart-tutorial/dart-anonymous-functions/
+
+https://supapongai.com/lambda-function/
+
+https://www.javascripttutorial.net/javascript-anonymous-functions/
 

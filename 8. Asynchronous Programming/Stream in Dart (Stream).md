@@ -239,7 +239,9 @@ final subscription = controller.stream.listen((String data) {
 controller.sink.add("Data!");
 ```
 **EventSink** :  คือการเพิ่มของใน Stream ไม่ว่าจะเป็นเหตุการณ์ ค่า หรือ Error 
+<br>
 **StreamController** :  ตัวที่จัดการกับ Stream ไม่ว่าจะสร้าง Stream เพิ่ม (sink) ใน Stream แล้วยัง method ที่ใช้กำกับ Stream 
+<br>
 **StreamSubscription** : เป็นตัวแทนที่บ่งบอกว่าเป็นสมาชิกของ Stream สามารถ pause เพื่อหยุดรับข้อมูล , resume รับข้อมูลต่อ หรือ cancel ยกเลิกการเป็นสมาชิกของ Stream
 
 ## Method ที่ใช้ใน Stream

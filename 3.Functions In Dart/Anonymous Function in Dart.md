@@ -19,6 +19,11 @@ lambda arguments : expression
 ```c#
 (input-parameters) => { <sequence-of-statements> }
 ```
+- JavaScript 
+```javascript
+(parameters) => { ... }
+```
+- ไม่มี Anonymous Function ใน ภาษา C หรือ Java
 ### Example : เขียนฟังก์ชันแบบธรรมดา
  ```dart
 int add(int x, int y) {
@@ -66,6 +71,13 @@ class Program
         Console.WriteLine(sum(10, 20));
     }
 }
+```
+- JavaScript 
+```javascript
+const sum = (x, y) => {
+    return x + y;
+};
+console.log(sum(10, 20));
 ```
 
 ### For Example 2 :
@@ -137,6 +149,25 @@ class Program
         });
     }
 }
+```
+- JavaScript 
+```javascript
+function show(fn) {
+  for (var i = 0; i < 10; i++) {
+    if (fn(i)) {
+      console.log(i);
+    }
+  }
+}
+
+function main() {
+  // show even numbers
+  show(function(x) {
+    return x % 2 === 0;
+  });
+}
+
+main();
 ```
 
 ## สรุป

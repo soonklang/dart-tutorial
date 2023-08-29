@@ -185,6 +185,13 @@ The eagle has a sharp vision
 
       สังเกตเห็นว่า Syntax ของ Dart กับ Java มีลักษณะคล้ายคลึงกัน
 
+      Multilevel inheritance เกิดมาจากหลาย classes inherit ต่อๆกันในรูบแบบเป็น Chain วิธีนี้เหมาะสำหรับการที่เราอยากจะนำเสนอ
+      ให้เห็นว่าแต่ละLevel of hierarchy มีคุณสมบติส่วนตัวอะไร้บางที่เพิ่มขึ้นไป ต่อจากClassที่ถัดมา 
+      มันทำให้ง่ายขึ้นต่อการควบคุม Application ที่ซับซ้อน เนืองจาก Developer สามารถ Focus กับส่วนของ Program โดยเฉพาะ
+      โดยไม่จำเป็นต้องกังวลกับ Program ทั้งหมดทั้งมวลที่มีขนาดอันแสนใหญ่
+
+      
+
 ## 4.  Hierarchical Inheritance
 ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/c85e6699-feb7-4be4-96e8-3d4de6edb8ed)
 

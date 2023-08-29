@@ -104,10 +104,10 @@ void main() async {
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>Mark
-  John
-  Smith</code></pre>
-  <pre><code>
-Time            │     │    │
+John
+Smith</code></pre>
+เมื่อแบ่งเป็นลำดับเวลาการทำงานจะได้ Output ดังนี้
+  <pre><code>Time            │     │    │
 0|             1sec.  │    │
 1| Mark  ───────┘    2sec. │
 2| John  ─────────────┘  3sec.

@@ -120,7 +120,7 @@ value_int = "1"
 n = int(value_int)
 print(n)
 ```
-จากCodeจะเห็นว่า Dart,C,Java,Pythonมีลักษณะคล้ายกันคือการเรียกใช้ Method
+จากCodeจะเห็นว่า Dart,C,Java,Pythonมีลักษณะคล้ายกันคือการเรียกใช้ Method มาแปลง String เป็น Number
 ### Reference
 https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/  
 https://www.educative.io/answers/how-to-convert-a-string-to-an-integer-in-c  

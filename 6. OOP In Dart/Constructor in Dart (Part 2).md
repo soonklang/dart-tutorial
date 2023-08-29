@@ -2,7 +2,8 @@
 ## ตัวอย่างที่ 5 : การเขียน Constructor แบบย่อ
 *ในตัวอย่างก่อนหน้านี้คุณจำเป็นต้องเขียน Constructor แบบเต็ม เเต่คุณสามารถเขียนแบบย่อให้สั้นลงเหลือเพียงบรรทัด โดยการ Assign ค่าลงไปในพารามิเตอร์ได้เลย
 
-  ```class Person{
+ ```dart
+class Person{
   String? name;
   int? age;
   String? subject;
@@ -17,11 +18,11 @@
     print("Age: ${this.age}");
     print("Subject: ${this.subject}");
     print("Salary: ${this.salary}");
-  }
+    }
 }
 
-void main(){
-  Person person = Person("John", 30, "Maths", 50000.0);
-  person.display();
+  void main(){
+    Person person = Person("John", 30, "Maths", 50000.0);
+    person.display();
 }
 ```

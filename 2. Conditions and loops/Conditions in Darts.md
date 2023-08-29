@@ -175,7 +175,7 @@ Num 1 is greater: i.e 1200
 ## เปรียบเทียบความแตกต่างของเงื่อนไขในภาษา Dart กับ ภาษา C,Java,Python
 
 ## Video
-วิดีโอการศึกษาเกี่ยวกับงื่อนไขในภาษา Dart
+วิดีโอการศึกษาเกี่ยวกับเงื่อนไขในภาษา Dart
 
 https://www.youtube.com/watch?v=B17QgDSAovk&t=1s
 

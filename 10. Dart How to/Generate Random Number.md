@@ -115,3 +115,9 @@ void main() {
 
 ## Reference
 [Random class - dart:math library - Dart API](https://api.dart.dev/stable/3.1.0/dart-math/Random-class.html)
+
+[Generate Random Number - Dart Tutorial](https://dart-tutorial.com/dart-how-to/generate-random-number-in-dart/)
+
+[Dart/Flutter - Generate Random Number Examples](https://www.woolha.com/tutorials/dart-generate-random-number-examples)
+
+[Generating random numbers in Java](https://www.geeksforgeeks.org/generating-random-numbers-in-java/)

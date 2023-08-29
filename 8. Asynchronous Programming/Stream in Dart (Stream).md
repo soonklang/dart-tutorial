@@ -184,9 +184,39 @@ controller.add(3);
 เมื่อเราลองใช้คำสั่งข้างบนก็จะได้ผลลัพธ์ดังนี้
 ` Value from controller: 3`
 ### วิธีการจัดการ Stream
+เราก็ใช้ method `listen()` เพื่อจัดการส่งให้ `streamSubsciption` ควบคุมการรับข้อมูลได้ 
+```dart
+StreamSubscription<int> streamSubscription = stream.listen((value){
+  print("Value from controller: $value");
+});
+```
+### วิธีการยกเลิก Stream
+หลังจากที่มี `streamSubsciption` เราก็สามารถใช้ method
+`cancel()` เพื่อยกเลิกการรับข้อมูลได้
+```dart
+streamSubscription.cancel();
+```
+## ประเภทของ Class ต่างๆใน Stream
+มี 4 คลาสหลักของ Dart ที่อยู่ใน async libraries ที่ใช้ในการจัดการกับ Streams
+
+**Stream** : 
+**EventSink** : 
+**StreamController** : 
+**StreamSubscription** : 
+
+## Method ที่ใช้ใน Stream
+มี method 4 ตัวที่ใช้กับ Stream ได้
+- **Syntax**: listen
+
+## Keywords ที่ใช้ใน Stream
+- async* :
+- yield :
+- yield* :
 
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>
 [Dart - Streams - GeeksforGeeks](https://www.geeksforgeeks.org/dart-streams/)
 <br>
 [Asynchronous programming: Streams | Dart (dart.dev)](https://dart.dev/tutorials/language/streams)
+<br>
+[StreamController class - dart:async library - Dart API](https://api.dart.dev/stable/3.1.0/dart-async/StreamController-class.html)

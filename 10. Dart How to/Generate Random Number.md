@@ -35,7 +35,7 @@ Random r2 = new Random.secure();
 import 'dart:math';
 
 void main() {
-   print("Using Random()");
+   print("\nUsing Random()");
    Random r1 = new Random();
    print(r1.nextInt(100)); //จะทำการสุ่มตััวเลขตั้งแต่ 0-99
 }
@@ -56,7 +56,7 @@ Using Random()
 import 'dart:math';
 
 void main() {
-   print("\nUsing Random.secure() :");
+   print("\nUsing Random.secure()");
    Random r2 = new Random.secure();
    print(r2.nextInt(100));
 }

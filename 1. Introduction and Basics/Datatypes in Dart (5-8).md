@@ -6,12 +6,8 @@ Data types ช่วยให้จัดหมวดหมู่ข้อมู
 
 ประเภทข้อมูลของ Dart
 
- //ค่อยแก้เป็นตารางที่แคปมาหลังเติม Description เสร็จ -->>
-Data Type	   Keyword	      Description
-Maps       	 Map	          แทนชุดของค่าเป็นคู่ key- value
-Sets	       Set	          It is an unordered list of unique values of same types
-Runes     	 runes	        It represents Unicode values of String
-Null	       null	        It represents null value
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/69dfc57d-2a0b-4052-be06-007f6e077c02)
+
 
  **1. Map**
 
@@ -113,12 +109,29 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
      ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/7ad80113-f6ec-4a17-b96b-89d5821a6336)
      ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/00b1d6e5-3bad-44a3-bb74-e031831986c8)
 
-   
+**4. Null** 
 
+    Dart ได้แยก type เป็น 2 type หลักๆก็คือ Non-nullable และ Nullable สองตัวนี้แทบไม่แตกต่างกันเลย เพียงแต่ว่า Nullable นั้นสามารถมี value เป็น null ได้
+    
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/5cfa9de5-94ec-4735-adc4-2413a43447ec)
 
+Dart ได้แบ่ง type เป็น nullable และ non-nullable แล้ว เพราะฉนั้น การประกาศตัวแปรโดยปรกตินั้นจะเป็น non-nullable โดย default
+เพราะงั้นถ้าเราไม่ใส่ค่าให้หรือใส่ null ไปก็จะได้แบบนี้
 
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/a36d70a1-cf8e-49a9-8b5a-52d2434697a6)
 
+-ไม่สามารถกำหนดค่าประเภท 'Null' ให้กับตัวแปรประเภท 'String'
 
+-ต้องกำหนด 'lastname' ตัวแปรท้องถิ่นที่ไม่สามารถเป็นค่าว่างได้ก่อนจึงจะสามารถใช้งานได้
+
+นั้นก็คือ Null-Safety ที่จะคอยบอกเราว่าตัวแปร Non-Nullable นั้นไม่สามารถมีค่าเป็น null แต่หากเราต้องการให้ตัวแปรมีค่าเป็น null ได้ก็ต้องทำให้ตัวแปรนั้นเป็น nullable โดย
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/1ccf635e-c15a-4a5d-84d6-85fd626d338f)
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/4a5ccdf9-67a6-463b-9797-3dfe447bd02d)
+
+วิธีเรียกใช้ตัวแปรที่เป็น nullable
+
+![image](https://github.com/soonklang/dart-tutorial/assets/120002243/c83b3717-4314-4897-a2b4-9c2dca72521d)
 
 
 **Reference**
@@ -127,8 +140,8 @@ containsKey() ฟังก์ชันเช็ค key ที่ให้มา�
 -  https://blog.intception.me/dev/flutter/dart-part-1.html#lists
 -  https://nextflow.in.th/2018/google-flutter-using-dart-list-set-map-data-type-thai/
 -  https://www.geeksforgeeks.org/dart-runes/
-
-
+-  https://dart-tutorial.com/introduction-and-basics/datatypes-in-dart/
+-  https://medium.com/@kithe.raker/dart-null-safety-%E0%B8%84%E0%B8%B7%E0%B8%AD-%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%84%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B9%88%E0%B8%B2-4991edde9bca
 
 
 

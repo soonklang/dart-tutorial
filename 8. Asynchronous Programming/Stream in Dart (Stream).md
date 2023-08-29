@@ -42,6 +42,36 @@ Stream สามารถมีผู้ฟัง (Listeners) ได้ตั้
 หมายความว่าการมี ผู้ฟัง (Listeners) ก็คือการที่สามารถนำค่าที่ได้จาก Stream มาใช้งานต่อได้นั่นเอง !!
 <br>
 
+## เทียบกับ Stream ของภาษาอื่นที่
+หลักจากที่ได้ทำความรู้จักกับ Stream ใน Dart แล้วเรามาดูบทบาทของ Stream ในภาษาอื่นกันบ้าง
+
+### Stream ใน C  
+- ในภาษา C ไม่มี Stream เตรียมไว้ให้แต่
+ แต่จะมี libraries จำพวก I/O (Input Output)  ที่มี function `fopen`
+,`fread`,`fwrite` ที่สามารถอ่านหรือเขียนข้อมูล จากไฟล์ได้
+function พวกนี้สามารถทำหน้าที่คล้ายๆกับ Stream ได้แต่จะเป็น Stream ในเชิงของไฟล์ ไม่ใช่ Asynchronous programming แบบใน Dart
+แต่เราก็สามารถประยุกต์ใช้ในรูปแบบ Async ได้เหมือนกัน
+
+### Stream ใน Java
+- ในภาษา Java มี Stream และสามารถใช้ทำเป็น Asynchronous programming ได้
+แต่จริงๆแล้ว Stream ใน Java จะมุ่งเน้นไปที่การจัดการกับข้อมูลด้วยการใช้ function ซะมากกว่า เช่น
+>การ filter (คัดกรองข้อมูลที่ต้องการจาก Stream)
+```java 
+List names = Arrays.asList("Reflection","Collection","Stream");  
+List result = names.stream().filter(s->s.startsWith("S")).collect(Collectors.toList()); 
+```
+> หรือ sort (เรียงข้อมูลใน Stream)
+```java
+List names = Arrays.asList("Reflection","Collection","Stream");  
+List result = names.stream().sorted().collect(Collectors.toList());
+```
+
+
+### Stream ใน Python
+- Python มีแนวคิดของ Stream ในรูปแบบของ File เหมือน C
+และก็ยังรองรับการเขียนแบบ Asynchronous คล้ายๆกับ Dart โดยมี library ที่ชื่อ `asyncio` 
+โดยจะมี keywords ก็คือ `async` และ `await` เหมือนกัน
+
 
 ## วิธีสร้าง Stream ใน Dart
 หลังจากที่รู้แนวคิดของ Stream คร่าวๆแล้วเราจะลอง สร้าง Stream ใน Dart ซึ่ง Stream เป็น class หนึ่งที่อยู่ใน Dart อยู่แล้ว 
@@ -215,8 +245,14 @@ streamSubscription.cancel();
 
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)
 <br>
+[Streams (The GNU C Library)](https://www.gnu.org/software/libc/manual/html_node/Streams.html)
+<br>
 [Dart - Streams - GeeksforGeeks](https://www.geeksforgeeks.org/dart-streams/)
 <br>
 [Asynchronous programming: Streams | Dart (dart.dev)](https://dart.dev/tutorials/language/streams)
 <br>
 [StreamController class - dart:async library - Dart API](https://api.dart.dev/stable/3.1.0/dart-async/StreamController-class.html)
+<br>
+[java.util.stream (Java Platform SE 8 ) (oracle.com)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
+<br>
+[Streams — Python 3.11.5 documentation](https://docs.python.org/3/library/asyncio-stream.html)

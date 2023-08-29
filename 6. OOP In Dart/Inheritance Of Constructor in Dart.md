@@ -283,6 +283,31 @@ int main() {
 1. `Default Constructor`
     - Dart ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ<br>
     - Java ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ แต่ถ้าระบุ Constructor ใด ๆ จะต้องระบุ default constructor ด้วยเอง
+**จากตัวอย่างด้านล่างนี้** จะอธิบายในกรณีที่มีการระบุ Constructor ใด ๆ และจะต้องกำหนดค่า default constructor ด้วยตนเองในภาษา java
+```java
+class NoDefaultConstructor {
+    private int value;
+
+    // มีการระบุ Constructor อื่นที่ไม่ใช่ default constructor
+    public NoDefaultConstructor(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // เราไม่ได้กำหนด default Constructor ในคลาส NoDefaultConstructor
+        // ดังนั้นเราต้องสร้าง default Constructor ด้วยตัวเองเมื่อสร้างวัตถุ
+        NoDefaultConstructor obj1 = new NoDefaultConstructor(10);
+        System.out.println("Value from constructor: " + obj1.getValue());
+    }
+}
+
+```
 2. `การเรียก Constructor ของคลาสแม่ (Implicit Call to Super Constructor)`
     - Dart และ Java ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
 3. `การวางตำแหน่งการเรียก Super Constructor (Super Constructor Call Placement)`

@@ -20,6 +20,7 @@
 #### Const
 ```dart
 	void main() {
+	  const PI; //error
 	  const PI_1 = 3.14;
 	}
 ```

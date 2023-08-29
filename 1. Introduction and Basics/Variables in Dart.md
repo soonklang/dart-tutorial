@@ -59,6 +59,10 @@ pi = 4.23; // not possible
 print("Value of PI is $pi");
 }
 ```
+- output
+Constant variables can't be assigned a value
+(ไม่สามารถกำหนดค่าตัวแปรคงที่ได้)
+
 # Naming Convention For Variables In Dart
 - การปฏิบัติตามแบบแผนการตั้งชื่อถือเป็นนิสัยที่ดี ใน Dart Variables ชื่อตัวแปรควรขึ้นต้นด้วยตัวพิมพ์เล็ก และตัวอักษรแรกของคำทุก ๆ วินาทีจะเป็นตัวพิมพ์ใหญ่ เช่น num1, fullName, isMarried เป็นต้น ในทางเทคนิคแล้ว รูปแบบการตั้งชื่อนี้เรียกว่า lowerCamelCase
 
@@ -121,7 +125,7 @@ public class Main {
 }
 
 ```
-## ภาษา python
+## ภาษา Python
 
 ```
 

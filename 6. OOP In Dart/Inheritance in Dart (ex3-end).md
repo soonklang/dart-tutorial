@@ -143,7 +143,7 @@ The eagle has a sharp vision
 <details>
    <summary><strong>C++ code</strong></summary>
 
-   ```C++
+   ```c++
       #include <iostream>
       
       class Bird {
@@ -240,13 +240,146 @@ Peter
 21
 Computer Science
 ```
-สังเกตในตัวอย่าง Code เราได้สร้าง Class James กับ Class Peter ขึ้นมาโดยให้ทั้งสองอันทำการสืบทอดมาจาก Class Person เหมือนกัน
-ต่อมาเป็นการทดลองโดยสร้าง Instance ของ Class James กับ Class Peter ในตัว Main ละลองให้ทั้งสอง Object j กับ p เรียกใช้ method 
-dispName() กับ dispAge() และจะได้ผลลัพธ์ในตัว Output
+      สังเกตในตัวอย่าง Code เราได้สร้าง Class James กับ Class Peter ขึ้นมาโดยให้ทั้งสองอันทำการสืบทอดมาจาก Class Person เหมือนกัน
+      ต่อมาเป็นการทดลองโดยสร้าง Instance ของ Class James กับ Class Peter ในตัว Main ละลองให้ทั้งสอง Object j กับ p เรียกใช้ method 
+      dispName() กับ dispAge() และจะได้ผลลัพธ์ในตัว Output
+      
+      ผลลัพธ์ในตัว Output นี้แสดงให้เห็นว่า Class Peter กับ Class Jame ได้ทำการสืบทอดคุณสมบัติมาจาก Class Person ได้สำเร็จ และถูกต้อง
 
-ผลลัพธ์ในตัว Output นี้แสดงให้เห็นว่า Class Peter กับ Class Jame ได้ทำการสืบทอดคุณสมบัติมาจาก Class Person ได้สำเร็จ และถูกต้อง
+ต่อไปนี้ เหมือนที่เช่นเคยเราจะไปทดลองเขียน Scenario เดียวกันนี้ให้อยู่ในรูบแบบภาษาอื่นอีกที
+
+<details> 
+   <summary><strong>Python Code</strong></summary>
+
+   ```python
+   class Person:
+    def dispName(self, name):
+        print(name)
+
+    def dispAge(self, age):
+        print(age)
+
+    # inherit from parent class Person
 
 
+class James(Person):
+    def dispBranch(self, nationality):
+        print(nationality)
+
+    # inherit from parent class Person
+
+
+class Peter(Person):
+    def result(self, result):
+        print(result)
+
+    # Creating Object of James class
+
+
+j = James()
+j.dispName(name="James")
+j.dispAge(age=24)
+j.dispBranch(nationality="Computer Science")
+
+# Creating Object of Peter class
+p = Peter()
+p.dispName(name="Peter")
+p.dispAge(age=21)
+p.result(result="Passed")
+   ```
+</details>
+<details> 
+   <summary><strong>Java Code</strong></summary>
+
+   ```java
+   class Person {
+    void dispName(String name) {
+        System.out.println(name);
+    }
+
+    void dispAge(int age) {
+        System.out.println(age);
+    }
+}
+
+class Peter extends Person {
+    void dispBranch(String branch) {
+        System.out.println(branch);
+    }
+}
+
+class James extends Person {
+    void result(String result) {
+        System.out.println(result);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of James class
+        James j = new James();
+        j.dispName("James");
+        j.dispAge(24);
+        j.result("Passed");
+
+        // Creating an object of Peter class
+        Peter p = new Peter();
+        p.dispName("Peter");
+        p.dispAge(21);
+        p.dispBranch("Computer Science");
+    }
+}
+```
+</details>
+<details> 
+   <summary><strong>C++ Code</strong></summary>
+
+   ```c++
+   #include <iostream>
+using namespace std;
+
+class Person {
+public:
+    void dispName(string name) {
+        cout << name << endl;
+    }
+
+    void dispAge(int age) {
+        cout << age << endl;
+    }
+};
+
+class Peter : public Person {
+public:
+    void dispBranch(string branch) {
+        cout << branch << endl;
+    }
+};
+
+class James : public Person {
+public:
+    void result(string result) {
+        cout << result << endl;
+    }
+};
+
+int main() {
+    // Creating an object of James class
+    James j;
+    j.dispName("James");
+    j.dispAge(24);
+    j.result("Passed");
+
+    // Creating an object of Peter class
+    Peter p;
+    p.dispName("Peter");
+    p.dispAge(21);
+    p.dispBranch("Computer Science");
+
+    return 0;
+}
+```
+</details>
 
 
 

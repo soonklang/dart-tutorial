@@ -194,6 +194,9 @@ The eagle has a sharp vision
 
       นอกจากนี้มันก็ช่วย Improve Readability กับ Reusability ของ Programming อีกเช่นกัน ถถถ
 
+      อย่างไรก็ตามบางทีมันจะก่อให้เกิดปัญหา unexpected result ในเมื่อ 2 Levels of class หรือมากกว่านี้ มี Method ที่ลักษณะเหมือนกัน
+      มันจะทำให้มีความลำบากต่อการตัดสินใจว่าต้อง Execute Method ตัวไหน
+
 ## 4.  Hierarchical Inheritance
 ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/c85e6699-feb7-4be4-96e8-3d4de6edb8ed)
 

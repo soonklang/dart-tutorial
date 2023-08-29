@@ -235,5 +235,53 @@ main() {
    ```
 
     Output => 341
-    		1
+    	 1
 เกิด error เนื่องจากไม่สามารถกำหนดค่าประเภท `String` ให้กับตัวแปรประเภท `int` ได้
+## *Example 6*
+```  dart
+	abstract class Shape {
+	  	double get area;
+	}
+	
+	class Circle extends Shape {
+	  	double radius;
+	
+	  	Circle({required this.radius});
+	
+	  	@override
+	  	double get area => 3.14 * radius * radius;
+	}
+	
+	class Square extends Shape {
+	  	double length;
+	  	Square({required this.length});
+	
+	  	@override
+	  	double get area => length * length;
+	}
+	
+	class Region<T extends Shape> {
+		List<T> shapes;
+	  	Region({required this.shapes});
+	
+	  	double get area {
+	    	double totalArea = 0;
+	    		for (var shape in shapes) {
+	      			totalArea += shape.area;
+	    		}
+	    		return totalArea;
+	  	}
+	}
+	
+	void main() {
+		var circle = Circle(radius: 10);
+		var square = Square(length: 20);
+		// สร้าง list ของ Shape objects
+		var region = Region(shapes: [circle, square]);
+		print(region.area);
+	}
+   ```
+
+    Output => 714
+
+กำหนด `<T extends Shape>` T เป็น subclass ของ `class Shape` นั่นคือ Circle และ Square 

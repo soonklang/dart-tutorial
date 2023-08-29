@@ -1,4 +1,5 @@
 
+
 # Stream (กระแสข้อมูล)
 ยินดีต้อนรับทุกท่านเข้าสู่เนื้อหา **Stream** ของหัว Asynchronous Programming 
 <br>
@@ -74,6 +75,42 @@ Stream<String> getUserName() {
   return Stream.fromIterable(['Mark', 'John', 'Smith']);  
 }
 ```
+## วิธีการใช้ Stream ใน Dart
+หลังจากที่เราสามารถสร้าง function ที่สามารถคืนค่าเป็น Stream ได้แล้ว
+<br>
+ต่อไปจะเข้าสู่ขั้นตอนการใช้งาน หรือ ดึงค่า จาก Stream นั่นเอง
+<br>
+
+  เราสามารถใช้คำสั่ง **`await for`**  เพื่อดึงค่าจาก Stream ได้
+```dart
+// function ที่คืนค่า Stream
+Stream<String> getUserName() async* {
+  await Future.delayed(Duration(seconds: 1));
+  yield 'Mark';
+  await Future.delayed(Duration(seconds: 1));
+  yield 'John';
+  await Future.delayed(Duration(seconds: 1));
+  yield 'Smith';
+}
+
+// main function
+void main() async {
+  // สามารถใช้ await for เพื่อดึงค่าจาก Stream 
+  await for (String name in getUserName()) {
+    print(name);
+  }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Time            │     │    │
+0|             1sec.  │    │
+1| Mark  ───────┘    2sec. │
+2| John  ─────────────┘  3sec.
+3| Smith ──────────────────┘
+
+</code></pre>
+</details>
 
 
 [Streams In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://www.dart-tutorial.com/asynchronous-programming/stream-in-dart/)

@@ -213,6 +213,8 @@ Anya forger love her mom
 
 
 ## Link เนื้อหาเพิ่มเติม
-[Dart-tutorial](https://dart-tutorial.com/asynchronous-programming/future-in-dart/)
+https://dart-tutorial.com/asynchronous-programming/future-in-dart/
 
-[Dart.dev](https://api.dart.dev/stable/3.1.0/dart-async/Future-class.html)
+https://api.dart.dev/stable/3.1.0/dart-async/Future-class.html
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html

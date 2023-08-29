@@ -103,7 +103,9 @@ void main() async {
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Mark<br>John<br>Smith</code></pre>
+  <pre><code>Mark
+  John
+  Smith</code></pre>
   <pre><code>
 Time            │     │    │
 0|             1sec.  │    │

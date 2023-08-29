@@ -27,7 +27,10 @@ void main() {
 <details close>
 <summary><b>output</b></summary>
  <pre>
-A
+1
+2
+3
+4
  </pre>
 </details>
 

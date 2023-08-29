@@ -184,16 +184,13 @@ import java.util.Scanner;
 >ต่อไปเราใช้เมธอด sn.next(); ในการอ่านค่าชื่อเข้ามายังตัวแปร name และอ่านค่าตัวเลขด้วยเมธอด sn.nextInt(); มาเก็บไว้ในตัวแปร number
 ```java
 import java.util.Scanner;
-
-public class GettingInput {
-    public static void main (String[] atgs) {   
+class HelloWorld {
+    public static void main(String[] args) {
 
         Scanner sn = new Scanner(System.in);
 
         String name;  
         int number;
-
-        System.out.println("\tGreeting program");
 
         System.out.print("Enter your name: ");
         name = sn.next();
@@ -207,3 +204,18 @@ public class GettingInput {
     }
 }
 ```
+<details open>
+<summary><b>Input</b></summary>
+ <pre>
+Eim
+30
+</pre>
+</details>
+<summary><b>output</b></summary>
+ <pre>
+Enter your name: Eim
+Enter your favorite number: 30
+Hello Eim, your favorite number is 30
+</pre>
+</details>
+

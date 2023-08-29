@@ -108,7 +108,6 @@ void main() async {
 1| Mark  ───────┘    2sec. │
 2| John  ─────────────┘  3sec.
 3| Smith ──────────────────┘
-
 </code></pre>
 </details>
 

@@ -15,10 +15,6 @@
 ```python
 lambda arguments : expression
 ```
-- Java
-```java
-(parameters) -> { body }  
-```
 - C#
 ```c#
 (input-parameters) => { <sequence-of-statements> }
@@ -71,25 +67,7 @@ class Program
     }
 }
 ```
-- Java
-```java
-public class Main {
-    public static void main(String[] args) {
-        Operation sum = new Operation() {
-            public int operate(int x, int y) {
-                return x + y;
-            }
-        };
 
-        int result = sum.operate(10, 20);
-        System.out.println("Result: " + result);
-    }
-}
-
-interface Operation {
-    int operate(int x, int y);
-}
-```
 ### For Example 2 :
 - Dart
 ```dart

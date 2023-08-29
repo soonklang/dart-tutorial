@@ -284,4 +284,104 @@ main() {
 
     Output => 714
 
-กำหนด `<T extends Shape>` T เป็น subclass ของ `class Shape` นั่นคือ Circle และ Square 
+กำหนด `<T extends Shape>` T เป็น subtype ของ `Shape` class นั่นคือ Circle และ Square 
+## Generics in Java Python and C
+										
+
+Dart
+
+```  dart
+	 class Data<T> {
+	  T data;
+	  Data(this.data);
+	}
+	void main() {
+	  // create an object of type int and double
+	  Data<int> intData = Data<int>(10);
+   /* Dart มี Type Inference ที่ช่วยในการระบุประเภทข้อมูลอัตโนมัติ สามารถเขียนได้อีกแบบ คือ
+	  Data  intData = Data(10);
+   */
+      Data<double> doubleData = Data<double>(10.5);
+   /* Data  DoubleData = Data(10.5); */
+	  // print the data
+	  print("IntData: ${intData.data}");
+	  print("DoubleData: ${doubleData.data}");
+	}
+
+   ```
+
+ - Dart VS Java
+ 
+Java
+```  java
+class Data<T> {
+    private T data;
+    
+	public Data(T data) {
+        this.data = data;
+    }
+    public T getData() {
+        return data;
+    }
+}
+
+ public class Main {
+    public static void main(String[] args) {
+        // create an object of type Integer and Double
+        
+        // Type Inference
+        Data<Integer> intData = new Data<>(10);
+        Data<Double> doubleData = new Data<>(10.5);
+
+        // print the data
+        System.out.println("IntData: " + intData.getData());
+        System.out.println("DoubleData: " + doubleData.getData());
+    }
+}
+   ```
+
+Dart และ Java มีการประกาศใช้ Generics โดย เครื่องหมาย  `<T>` เช่นเดียวกัน แต่การสร้าง object นั้น Java สร้างโดยใช้คำสั่ง new ซึ่ง Dart สามารถละ new ได้
+ทั้ง Dart และ Java มีคุณสมบัติ Type Inference แต่แตกต่างกันเล็กน้อยในวิธีการเขียน โดย Dart สามารถนำ `<>` ออกได้ท้งหมด แต่ใน Java ยังคงต้องมี `<>` ไว้ แต่สามารถละการระบุ type หน้า `(parameter)` ได้
+ - Dart VS Python
+
+Python
+```  Python
+	class  Data:
+		def  __init__(self,  data):
+			self.data  = data
+	def  generic_method(value):
+		return value
+	def  main():
+	#create an object of type int and double
+		int_data =  Data(10)
+		double_data =  Data(10.5)
+	# print the data
+		print("IntData:", int_data.data)
+		print("DoubleData:", double_data.data)
+
+	if __name__ ==  "__main__":
+		main()
+```  
+ใน Python การใช้งาน generics การประกาศ object การใช้งาน function/method ต่าง ๆ ไม่ต้องระบุประเภทข้อมูลอย่างในภาษา Dart 
+ - Dart VS C
+ 
+
+
+ C
+ ```  C
+ #include <stdio.h>
+
+#define GENERIC(type) type
+
+int main() {
+    GENERIC(int) integer = 42;
+    GENERIC(float) floatingPoint = 3.14;
+
+    printf("Integer: %d\n", integer);
+    printf("Float: %f\n", floatingPoint);
+
+    return 0;
+}
+
+``` 
+ในภาษา C ไม่มี Generics สามารถใช้ Macro เพื่อสร้างโค้ดที่เป็น Generics ดังนั้น ความแตกต่างระหว่าง Dart และ C คือ Dart มี Generics  C ใช้ Macro

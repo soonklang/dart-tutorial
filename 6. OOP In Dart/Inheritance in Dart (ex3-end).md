@@ -191,3 +191,66 @@ The eagle has a sharp vision
       การสืบทอดแบบ Hierarchical เกิดขึ้นตอนทีมี 2 Classes หรือมากกว่า 2 Classes ทำการถ่ายทอดมาจาก Class อันหนึ่งเดียวกัน
 
       ในภาษา Dart นี้ก็เช่นกัน ก็ถูกพัฒนาขึ้นมาให้ perform การสืบทอดแบบ Multilevel ได้โดยดี เราจะไปดูตัวอย่างต่อไปนี้
+#### Hierarchical Inheritance in Dart :
+      
+```dart
+class Person {  
+  void dispName(String name) {  
+    print(name);  
+  }  
+  
+  void dispAge(int age) {  
+    print(age);  
+  }  
+}  
+  
+class Peter extends Person {  
+   
+  void dispBranch(String nationality) {  
+    print(nationality);  
+  }  
+}  
+//Derived class created from another derived class.  
+class James extends Person {  
+          void result(String result){  
+              print(result);  
+}  
+}  
+void main() {  
+      // Creating Object of James class  
+      James j = new James();  
+      j.dispName("James");  
+      j.dispAge(24);  
+      j.result("Passed");  
+  
+    // Creating Object of Peter class  
+      Peter p = new Peter();  
+      p.dispName("Peter");  
+      p.dispAge(21);  
+      p.dispBranch("Computer Science");  
+  
+}
+```
+output
+```
+James
+24
+Passed
+Peter
+21
+Computer Science
+```
+สังเกตในตัวอย่าง Code เราได้สร้าง Class James กับ Class Peter ขึ้นมาโดยให้ทั้งสองอันทำการสืบทอดมาจาก Class Person เหมือนกัน
+ต่อมาเป็นการทดลองโดยสร้าง Instance ของ Class James กับ Class Peter ในตัว Main ละลองให้ทั้งสอง Object j กับ p เรียกใช้ method 
+dispName() กับ dispAge() และจะได้ผลลัพธ์ในตัว Output
+
+ผลลัพธ์ในตัว Output นี้แสดงให้เห็นว่า Class Peter กับ Class Jame ได้ทำการสืบทอดคุณสมบัติมาจาก Class Person ได้สำเร็จ และถูกต้อง
+
+
+
+
+
+
+
+
+

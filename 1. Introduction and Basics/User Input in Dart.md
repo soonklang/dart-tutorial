@@ -220,7 +220,7 @@ Hello Eim, your favorite number is 30
 </details>
 
 ## **อ้างอิง** ##
-https://kittimasak.com/user-input-python/
-https://www.geeksforgeeks.org/dart-standard-input-output/
-http://marcuscode.com/lang/java/input-output
+https://kittimasak.com/user-input-python/ <br>
+https://www.geeksforgeeks.org/dart-standard-input-output/<br>
+http://marcuscode.com/lang/java/input-output<br>
 https://dart-tutorial.com/introduction-and-basics/user-input-in-dart/

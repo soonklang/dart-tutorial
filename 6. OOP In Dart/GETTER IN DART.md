@@ -508,7 +508,7 @@ class Person:
 
 
 # สรุป
-Getter เป็นเมธตอดในค่าที่การเข้าถึงแบบ private แต่ถ้าหากต้องการเข้าไปแก้ไขค่าจะต้องใช่ [Setter](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/setter%20in%20Dart.md) แทน
+Getter เป็นเมธตอดในค่าที่ส่วนใหญ่จะเป็นการเข้าถึงแบบ private แต่ถ้าหากต้องการเข้าไปแก้ไขค่าจะต้องใช่ [Setter](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/setter%20in%20Dart.md) แทน
 
 # แหล่งอ้างอิง
 

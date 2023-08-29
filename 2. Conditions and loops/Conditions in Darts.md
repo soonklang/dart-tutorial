@@ -172,3 +172,5 @@ Num 1 is greater: i.e 1200
  </pre>
 </details>
 
+## เปรียบเทียบความแตกต่างของเงื่อนไขในภาษา Dart กับ ภาษา C,Java,Python
+

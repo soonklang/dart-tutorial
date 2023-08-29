@@ -38,7 +38,7 @@ Future<String> getName() async {
 ```
 
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **C**
-```bash
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -73,7 +73,7 @@ int main() {
 ```
 
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
-```bash
+```Java
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -99,7 +99,7 @@ public class Main {
 
 ```
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Python**
-```bash
+```Python
 import asyncio
 
 async def get_name():
@@ -120,14 +120,14 @@ asyncio.run(main())
 
 ### อีกวิธีในการสร้าง future คือการใช้ method **Future.value()** ที่จะคืนค่า **Future<String>** ในทันที
 
-```bash
+```Dart
 // ฟังก์ชั่นเพื่อคืนค่า Future
 Future<String> getName() {
   return Future.value('Mark');
 }
 ```
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **C**
-```bash
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -150,7 +150,7 @@ int main() {
 ```
 
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
-```bash
+```Java
 import java.util.concurrent.CompletableFuture;
 
 public class Main {
@@ -167,7 +167,7 @@ public class Main {
 
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Python**
 
-```bash
+```Python
 import asyncio
 
 async def get_name():
@@ -187,7 +187,7 @@ asyncio.run(main())
 ## วิธีการใช้ Future ใน Dart
 เราสามารถใช้ future ใน dart โดยการใช้ method **then()** และนี่คือตัวอย่างฟังก์ชั่นที่จะคืนค่า **Future<String>** หลังจากผ่านไป 10 วินาที
 
-```bash
+```Dart
 // ฟังก์ชั่นเพื่อคืนค่า Future
 Future<String> getName() async {
   return Future.delayed(Duration(seconds: 10), () => 'Anya forger');
@@ -213,7 +213,7 @@ Anya forger
 </details>
 
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **C**
-```bash
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -259,7 +259,7 @@ Anya forger
 
 
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
-```bash
+```Java
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -295,9 +295,9 @@ Anya forger
 </code></pre>
 </details>
 
-เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
+เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Python**
 
-```bash
+```Python
 import asyncio
 
 async def get_name():
@@ -313,13 +313,22 @@ async def main():
 asyncio.run(main())
 ```
 
+<details>
+<summary><strong>Output</strong></summary>
+<pre><code>
+Hi! This is Python language!!
+Start here
+End
+Anya forger
+</code></pre>
+</details>
 
 
 ## ตัวอย่างการทำงานของ Future ในภาษา Dart
 
 ในCode ตัวอย่างด้านล่าง เราจะสร้างฟังก์ชั่น ชื่อ **middleFunction()** ที่จะคืนค่า future ซึ่งฟังก์ชั่นตัวนี้จะคืนค่า **Future<String>** หลังจากผ่านไป 50 วินาที
 
-```bash
+```Dart
 void main() {
   print("Dart example :")  
   print("Start tong nee na ja ");
@@ -349,7 +358,7 @@ Anya forger love her mom but i have to wait 50 sec ToT
 เปรียบเทียบกับการทำแบบเดียวกันใน ภาษา **Java**
 
 
-```bash
+```Java
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 

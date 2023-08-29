@@ -67,10 +67,11 @@ condition ? expr1 : expr2;
 ```c
 condition ? expr1 : expr2;
  ```
-- Phython
+- Python
 ```python
 expr1 if condition else expr2
- ```
+ ```  
+
 > **Note :** ในภาษา Python ไม่มี Ternary Operator ในรูปแบบเดียวกันกับภาษาอื่น แต่มี Conditional Expression ที่ใช้เพื่อสร้างเงื่อนไขและคืนค่าในรูปแบบที่คล้ายกับ Ternary Operator 
 <br>
 รูปแบบการใช้งานและ Syntax อาจเหมือนหรือคล้ายคลึงกัน แต่จะมีการใช้งานเพิ่มเติมหรือการเขียนที่แตกต่างกันในแต่ละภาษา
@@ -155,7 +156,7 @@ int main() {
   <pre><code>The greatest number is 15</code></pre>
 </details>
 
-- Phython
+- Python
 ```python
 num1 = 10
 num2 = 15

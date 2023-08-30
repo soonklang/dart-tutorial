@@ -46,6 +46,34 @@ MacBook constructor</code>
     - ในส่วน "main" เราสร้างอ็อบเจ็กต์ของคลาส "MacBook" ด้วย __var macbook = MacBook();__
     - เมื่อสร้างอ็อบเจ็กต์จากคลาส "MacBook" ตัวที่สร้างจะทำการเรียกคอนสตรักเตอร์ของทั้ง "MacBook" และ "Laptop"
     - ผลลัพธ์ที่แสดงจะเป็นตามลำดับของการเรียกคอนสตรักเตอร์โดยเริ่มจาก "Laptop constructor" และตามด้วย "MacBook constructor"
+<details> 
+   <summary><strong>C Code</strong></summary>
+
+   ```c
+   #include <stdio.h>
+
+// Base class
+struct Laptop {
+  // Constructor
+  Laptop() {
+    printf("Laptop constructor\n");
+  }
+};
+
+// Derived class
+struct MacBook : Laptop {
+  // Constructor
+  MacBook() {
+    printf("MacBook constructor\n");
+  }
+};
+
+int main() {
+  struct MacBook macbook;
+  return 0;
+}
+   ```
+</details>
 
 #### `ตัวอย่างที่ 2` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์
 >ในตัวอย่างที่2 มีคลาสที่ชื่อว่า "Laptop" มีคอนสตรักเตอร์ที่รับพารามิเตอร์ และมีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดจากคลาส "Laptop" คลาส "MacBook" มีคอนสตรักเตอร์ที่รับพารามิเตอร์ของตัวเองด้วยเช่นกัน

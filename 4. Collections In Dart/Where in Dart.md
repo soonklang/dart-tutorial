@@ -72,7 +72,7 @@ void main() {
 ```Dart
 [Sunday, Saturday]
 ```
-**3.Filter ใน maps หาคะแนนนักเรียนที่ได้น้อยกว่าหรือเท่ากับ 12**
+**3.Filter ใน maps หาคะแนนนักเรียนที่ได้น้อยกว่าหรือเท่ากับ 32**
 ```Dart
 void main() {
   Map<String, double> mathMarks = {
@@ -92,7 +92,10 @@ void main() {
 ```Dart
 {mark: 32.0, harry: 88.0, raj: 69.0}
 ```
+### *< Reference >*
+[Where in Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://dart-tutorial.com/collections/where-in-dart/)
 
+[[Dart] รวมคำสั่งดีๆ เอาไว้ใช้กับ List – TAmemo.com](https://www.tamemo.com/post/177/dart-list-helper-method/)
 
 
 

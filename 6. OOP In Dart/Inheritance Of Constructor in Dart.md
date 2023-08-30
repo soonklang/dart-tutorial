@@ -51,14 +51,13 @@ MacBook constructor</code>
 
    ```c
    #include <stdio.h>
-
-// Base class
-struct Laptop {
-  // Constructor
-  Laptop() {
-    printf("Laptop constructor\n");
-  }
-};
+   // Base class
+     struct Laptop {
+     // Constructor
+     Laptop() {
+      printf("Laptop constructor\n");
+     }
+   };
 
 // Derived class
 struct MacBook : Laptop {
@@ -73,6 +72,8 @@ int main() {
   return 0;
 }
    ```
+   คำอธิบาย code
+  >dsdsdsddsdsdsdsdsdsdsdsd
 </details>
 
 #### `ตัวอย่างที่ 2` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์

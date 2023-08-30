@@ -43,7 +43,7 @@ Wikorn
  void main(){
   var firstName = "Wikorn";
   var lastName = "Sangsuk";
-  print("Full name is $firstName $lastName");
+  print("$firstName $lastName");
 }
 ```
 
@@ -105,16 +105,253 @@ The div is 2.0
 ```dart
  dart run
 ```
-
+Dartเป็นภาษาเชิงวัตถุที่มีไวยากรณ์สไตล์cและสามารถคัดลอกเป็นจาวาสคริปต์ได้ สนับสนุนเครื่องมือช่วยในการเขียนโปรแกรมที่หลากหลายเช่นอินเทอร์เฟซคลาสคอลเลกชันทั่วไปและตัวเลือก
 ## **แปลงรหัส dart เป็น Javascript** ##
 คําสั่ง | คําอธิบาย
 ------------ | -------------
 dart รวบรวมแฟ้ม js ชื่อแฟ้ม.dart | คอมไพล์ dart ไปเป็นJavascript. คุณสามารถเรียกใช้ไฟล์นี้ด้วยNode.js
 
+## **เปรียบเทียบกับภาษาC พื้นฐานสําหรับพิมพ์ชื่อ เช่น** ##
+
+```
+#include <stdio.h>
+
+int main() {
+    char name[] = "Wikorn";
+    printf("%s\n", name);
+    return 0;
+}
+```
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+Wikorn
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษาC พื้นฐานที่เชื่อมต่อตัวแปรอย่างน้อยหนึ่งตัว เช่น** ##
+
+```
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char firstName[] = "Wikorn";
+    char lastName[] = "Sangsuk";
+    printf("%s %s\n", firstName, lastName);
+    return 0;
+}
+
+```
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+Wikorn Sangsuk
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษาC สําหรับการคํานวณพื้นฐาน เช่น** ##
+ดําเนินการบวกการลบการคูณและการหารในภาษาC
+
+```
+#include <stdio.h>
+
+int main() {
+    int num1 = 20; // declaring number1
+    int num2 = 10; // declaring number2
+    
+    // Calculation
+    int sum = num1 + num2;
+    int diff = num1 - num2;
+    int mul = num1 * num2;
+    double div = (double)num1 / num2; // It is double because it outputs number with decimal.
+    
+    // displaying the output
+    printf("The sum is %d\n", sum);
+    printf("The diff is %d\n", diff);
+    printf("The mul is %d\n", mul);
+    printf("The div is %.2lf\n", div);
+    
+    return 0;
+}
+
+```
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+The sum is 30
+The diff is 10
+The mul is 200
+The div is 2.0
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษา Java พื้นฐานสําหรับพิมพ์ชื่อ เช่น** ##
+
+```
+public class Main {
+    public static void main(String[] args) {
+        String name = "Wikorn";
+        System.out.println(name);
+    }
+}
+
+```
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+Wikorn
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษา Java พื้นฐานที่เชื่อมต่อตัวแปรอย่างน้อยหนึ่งตัว เช่น** ##
+
+```
+public class Main {
+    public static void main(String[] args) {
+        String firstName = "Wikorn";
+        String lastName = "Sangsuk";
+        System.out.println(firstName + " " + lastName);
+    }
+}
+
+```
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+Wikorn Sangsuk
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษา Java สําหรับการคํานวณพื้นฐาน เช่น** ##
+ดําเนินการบวกการลบการคูณและการหารในภาษาC
+
+```
+public class Main {
+    public static void main(String[] args) {
+        int num1 = 20; // declaring number1
+        int num2 = 10; // declaring number2
+        
+        // Calculation
+        int sum = num1 + num2;
+        int diff = num1 - num2;
+        int mul = num1 * num2;
+        double div = (double) num1 / num2; // It is double because it outputs number with decimal.
+        
+        // displaying the output
+        System.out.println("The sum is " + sum);
+        System.out.println("The diff is " + diff);
+        System.out.println("The mul is " + mul);
+        System.out.println("The div is " + div);
+    }
+}
+
+```
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+The sum is 30
+The diff is 10
+The mul is 200
+The div is 2.0
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษา Python พื้นฐานสําหรับพิมพ์ชื่อ เช่น** ##
+
+```
+def main():
+    name = "Wikorn"
+    print(name)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+ในภาษา Python เราใช้ def เพื่อประกาศฟังก์ชัน main() แทน void main() ในภาษา Dart และเราใช้ print() เหมือนเดิมในการพิมพ์ข้อความ และใน Python เราใช้ if __name__ == "__main__": เพื่อกำหนดว่าคำสั่งที่ตามหลังจะทำงานเมื่อไฟล์ถูกเรียกใช้โดยตรง.
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+Wikorn
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษา Python พื้นฐานที่เชื่อมต่อตัวแปรอย่างน้อยหนึ่งตัว เช่น** ##
+
+```
+def main():
+    firstName = "Wikorn"
+    lastName = "Sangsuk"
+    print("{} {}".format(firstName, lastName))
+
+if __name__ == "__main__":
+    main()
+
+
+```
+
+ในภาษา Python เราใช้ def เพื่อประกาศฟังก์ชัน main() แทน void main() ในภาษา Dart และในการต่อข้อความเราใช้ .format() หรือใน Python 3.6 และเวอร์ชันใหม่กว่าเราสามารถใช้ f-strings 
+เพื่อแทรกตัวแปรลงในสตริงได้ โดยตัวอย่างด้านบนเลือกใช้ .format() และใน Python เราใช้ if __name__ == "__main__": เพื่อกำหนดว่าคำสั่งที่ตามหลังจะทำงานเมื่อไฟล์ถูกเรียกใช้โดยตรง.
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+Wikorn Sangsuk
+</pre>
+</details>
+
+## **เปรียบเทียบกับภาษา Python สําหรับการคํานวณพื้นฐาน เช่น** ##
+ดําเนินการบวกการลบการคูณและการหารในภาษาC
+
+```
+def main():
+    num1 = 20  # declaring number1
+    num2 = 10  # declaring number2
+    
+    # Calculation
+    sum = num1 + num2
+    diff = num1 - num2
+    mul = num1 * num2
+    div = num1 / num2  # It is double because it outputs number with decimal.
+    
+    # displaying the output
+    print(f"The sum is {sum}")
+    print(f"The diff is {diff}")
+    print(f"The mul is {mul}")
+    print(f"The div is {div}")
+
+if __name__ == "__main__":
+    main()
+
+```
+
+ในภาษา Python เราใช้ def เพื่อประกาศฟังก์ชัน main() แทน void main() ในภาษา Dart และใช้ # ในการคอมเมนต์เป็นหมายเหตุ และในการต่อข้อความใช้ + แทนการใช้ $ ในการแทรกค่าตัวแปร และเราใช้ print() 
+เหมือนเดิมในการพิมพ์ข้อความ แต่เพิ่ม f ด้านหน้าสตริงและใช้ {} เพื่อแทรกตัวแปร. สุดท้ายใน Python เราใช้ if __name__ == "__main__": เพื่อกำหนดว่าคำสั่งที่ตามหลังจะทำงานเมื่อไฟล์ถูกเรียกใช้โดยตรง.
+
+<details open>
+<summary><b>Output</b></summary>
+ <pre>
+The sum is 30
+The diff is 10
+The mul is 200
+The div is 2.0
+</pre>
+</details>
+
 # Reference
 
 https://www.javatpoint.com/dart-first-program
 
+https://dart-tutorial.com/introduction-and-basics/basic-dart-program/
+
 https://www.tutorialspoint.com/dart_programming/index.htm
 
-https://dart-tutorial.com/introduction-and-basics/basic-dart-program/
+https://www.tutorialspoint.com/dart_programming/dart_programming_overview.htm

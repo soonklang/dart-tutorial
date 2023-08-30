@@ -216,9 +216,9 @@ class Point {
 ## C
 ![](https://scontent.fbkk4-1.fna.fbcdn.net/v/t1.15752-9/371892639_204081532671915_311293905671308031_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFmYnG7iIcIW35zy42UZIBSgd3Gt40fSgqB3ca3jR9KCpKmeByYKXs2J0xO0Sz2BKElSYQDFXk7wHNbBojP_vsz&_nc_ohc=iTaXr105fmYAX_8ibag&_nc_ht=scontent.fbkk4-1.fna&oh=03_AdRkq_yBK4uHtnCZaGRzWko17zx5muM50CefJcwAo-o6fg&oe=65171CC9)
 
-ในภาษา **C** ไม่มีตัวอย่างโค้ดที่เหมือนกับโค้ดใน **Dart** แบบที่คุณให้มาที่สามารถใช้งาน **named constructors** ได้อย่างตรงไปตรงมา 
+ในภาษา C , ไม่มี named constructors ในแบบเดียวกับ Dart  แต่สามารถใช้ **function** เพื่อสร้างตัวอย่างที่คล้ายคลึงกับ **named constructors** โดยใช้มาตรฐานไลบรารี **stdlib.h** ในการจองหน่วยความจำและกำหนดค่าสมาชิกของอ็อบเจกต์นั้น ๆ
 
-**แต่สามารถเขียนโค้ดใน C ที่มีลักษณะคล้ายกับโค้ดใน Dart ได้ดังนี้**
+**C ที่มีลักษณะคล้ายใน Dart ได้ดังนี้**
 ```c
 #include <stdio.h>   
 #include <stdlib.h>

@@ -30,3 +30,9 @@ void main() {
    print(str3.trim()); 
 }
 ```
+#### output :
+```
+hello 
+hello world 
+hello
+```

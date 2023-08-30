@@ -29,6 +29,11 @@ void main(){
    ans == 10 ? print("Answer is 10") : print("Oh no!");
 }
 ```
+> แสดงผลลัพธ์ที่ได้ โดยตรวจสอบเงื่อนไขว่า ค่าของตัวแปร ans เท่ากับ 10 หรือไม่
+> - ถ้าเงื่อนไขเป็นจริงจะแสดงผลลัพธ์ว่า "Answer is 10"
+> - ถ้าเงื่อนไขเป็นเท็จจะแสดงผลลัพธ์ "Oh no!"
+
+
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>Answer is 10</code></pre>
@@ -51,6 +56,11 @@ void main(){
    ans ?? print("ans is null");
 }
 ```
+
+> แสดงผลลัพธ์ที่ได้ โดยตรวจสอบเงื่อนไขว่า ค่าของตัวแปร ans ไม่เป็น null
+> - ถ้าค่าของ ans ไม่เป็น null (มีการกำหนดค่าของ ans) จะไม่แสดงผลลัพธ์ออกมา
+> - ถ้าค่าของ ans เป็น null (ค่าของ ans ไม่ได้ถูกกำหนดค่า) จะแสดงผลลัพธ์ "ans is null"
+
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>ans is null</code></pre>
@@ -58,7 +68,7 @@ void main(){
 
 <br>
 
-## เทียบ Syntax ในภาษาอื่นๆ
+## เปรียบเทียบ Syntax ในภาษาอื่นๆ
 - Java
 ```java
 condition ? expr1 : expr2;
@@ -74,9 +84,91 @@ expr1 if condition else expr2
 
 > **Note :** ในภาษา Python ไม่มี Ternary Operator ในรูปแบบเดียวกันกับภาษาอื่น แต่มี Conditional Expression ที่ใช้เพื่อสร้างเงื่อนไขและคืนค่าในรูปแบบที่คล้ายกับ Ternary Operator 
 <br>
-รูปแบบการใช้งานและ Syntax อาจเหมือนหรือคล้ายคลึงกัน แต่จะมีการใช้งานเพิ่มเติมหรือการเขียนที่แตกต่างกันในแต่ละภาษา
+
+ รูปแบบการใช้งานและ Syntax อาจเหมือนหรือคล้ายคลึงกัน แต่จะมีการใช้งานเพิ่มเติมหรือการเขียนที่แตกต่างกันในแต่ละภาษา
 
 <br>
+
+### ตัวอย่างในภาษาอื่นๆ
+
+- Java
+```java
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    // รับค่าคะแนนจากผู้ใช้
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter your marks: ");
+    double marks = input.nextDouble();
+
+    // ตรวจสอบค่าคะแนนว่าเกิน 40 หรือไม่
+    String result = (marks > 40) ? "pass" : "fail";
+
+    System.out.println("You " + result + " the exam.");
+    input.close();
+  }
+}
+ ```
+> แสดงผลลัพธ์ โดยตรวจสอบว่า คะแนนที่ผู้ใช้ป้อนเข้ามาเกิน 40 หรือไม่
+> - ถ้าเงื่อนไขเป็นจริง จะกำหนดค่า result และแสดงผลลัพธ์เป็น "pass" 
+> - ถ้าเงื่อนไขเป็นจริง จะกำหนดค่า result และแสดงผลลัพธ์เป็น "fail"
+
+<details>
+  <summary><strong>Output 1</strong></summary>
+  <pre><code>Enter your marks: 75
+You pass the exam.</code></pre>
+</details>
+
+<details>
+  <summary><strong>Output 2</strong></summary>
+  <pre><code>Enter your marks: 24
+You fail the exam.</code></pre>
+</details>
+
+
+- C
+```c
+#include <stdio.h>
+int main() {
+  int age;
+
+  // รับค่าอายุจากผู้ใช้
+  printf("Enter your age: ");
+  scanf("%d", &age);
+
+  // ตรวจสอบเงื่อนไขว่าอายุมากกว่าหรือเท่ากับ 18 หรือไม่
+  (age >= 18) ? printf("You can vote") : printf("You cannot vote");
+
+  return 0;
+}
+ ```
+> แสดงผลลัพธ์ โดยตรวจสอบว่า ผู้ใช้มีอายุมากกว่าหรือเท่ากับ 18 หรือไม่ ด้วยการรับข้อมูลอายุจากผู้ใช้
+> - ถ้าเงื่อนไขเป็นจริงจะแสดงผลลัพธ์เป็น "You can vote" 
+> - ถ้าเงื่อนไขเป็นเท็จจะแสดงผลลัพธ์เป็น "You cannot vote" 
+
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Enter your age: 12
+You cannot vote</code></pre>
+</details>
+
+- Python
+```python
+to_check = 6
+msg = "Even" if to_check%2 == 0 else "Odd"
+print(msg)
+ ```
+> แสดงผลลัพธ์ โดย ตรวจสอบว่าตัวแปร to_check เป็นเลขคู่หรือเลขคี่ ซึ่งมีเงื่อนไขว่า หารด้วย 2 แล้วเหลือเศษเป็น 0 หรือไม่ (กล่าวคือเป็นเลขคู่)
+> - ถ้าเงื่อนไขเป็นจริง msg (เป็นเลขคู่) จะถูกกำหนดค่าและแสดงผลลัพธ์เป็น "Even" 
+> - ถ้าเงื่อนไขเป็นเท็จ msg (เป็นเลขคี่) จะถูกกำหนดค่าและแสดงผลลัพธ์เป็น "Odd" 
+
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Even</code></pre>
+</details>
+ 
 
 <br>
 
@@ -97,7 +189,11 @@ void main() {
   print("The greatest number is $max");
 }
 ```
-> หาตัวเลขที่มากที่สุดระหว่างสองตัวเลขโดยใช้เงื่อนไข if-else
+> แสดงตัวเลขที่มากที่สุดระหว่างสองตัวเลข โดยตรวจสอบเงื่อนไขว่า ค่าของตัวแปร num1 มากกว่า num2 หรือไม่
+> - ถ้าเงื่อนไขเป็นจริงจะกำหนดค่า max เป็นค่าของ num1
+> - ถ้าเงื่อนไขเป็นเท็จจะกำหนดค่า max เป็นค่าของ num2
+> จากนั้นแสดงผลลัพธ์ว่า "The greatest number is [ค่าที่มากที่สุด]" โดยใช้ค่าของ max
+
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>The greatest number is 15</code></pre>
@@ -184,5 +280,7 @@ https://dart-tutorial.com/conditions-and-loops/ternary-operator-in-dart/ <br>
 https://dart.dev/language/operators#conditional-expressions <br>
 https://www.educative.io/answers/ternary-operator-in-dart <br>
 https://www.tutorialspoint.com/ternary-operator-in-dart-programming
-
+https://www.programiz.com/c-programming/ternary-operator#google_vignette
+https://www.programiz.com/java-programming/ternary-operator
+https://www.educative.io/answers/what-is-the-ternary-operator-in-python
 

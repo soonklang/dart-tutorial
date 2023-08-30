@@ -160,30 +160,30 @@ void main() {
 <details> 
    <summary><strong>Java code</strong></summary>
 	
-```java
-public class MyClass {    
-    private int x;
-    private int y;
+	```java
+		public class MyClass {    
+    		private int x;
+   		 private int y;
 
-    private MyClass(int x, int y) {			//default constructor
-        this.x = x;
-        this.y = y;
-    }
+    		private MyClass(int x, int y) {			//default constructor
+      		  this.x = x;
+       		  this.y = y;
+    		}
 
-    public static MyClass createFromCoordinates(int x, int y) {
-        return new MyClass(x, y);										//factory constructor
-    }
+   		 public static MyClass createFromCoordinates(int x, int y) {
+        		return new MyClass(x, y);										//factory constructor
+   		 }
 
-    public static MyClass createOrigin() {
-        return new MyClass(0, 0);										//factory constructor
-    }
+    		public static MyClass createOrigin() {
+       	        return new MyClass(0, 0);										//factory constructor
+   		 }
 
-    public static void main(String[] args) {
-        MyClass point1 = MyClass.createFromCoordinates(10, 20);
-        MyClass point0 = MyClass.createOrigin();
-    }
-}
-```
+    		public static void main(String[] args) {
+        		MyClass point1 = MyClass.createFromCoordinates(10, 20);
+        		MyClass point0 = MyClass.createOrigin();
+    		}
+	}
+	```
 
 </details>
 

@@ -47,7 +47,7 @@ void main() {
 Hello Male your gender is John.
 Hello John your gender is Male.
 ```
-
+## ตัวอย่างในภาษาอื่นๆ
 ### Python
 ```python
 def nameAge(name, age):
@@ -86,6 +86,7 @@ Hello sir/ma'am John your gender is Male.
 Hello Mr. John your gender is Male.
 Hello Ms. Kavya your gender is Female.
 ```
+## ตัวอย่างในภาษาอื่นๆ
 ### Python
 ```python
 def student(firstname, lastname ='Mark', standard ='Fifth'):
@@ -150,6 +151,7 @@ void main() {
 Hello John your gender is Male.
 Hello Sita your gender is Female.  
 ```
+## ตัวอย่างในภาษาอื่นๆ
 ### Python
 ```python
 def my_function(child3, child2, child1):
@@ -209,6 +211,7 @@ Hello  John your gender is Male.
 Hello Mr. John your gender is Male.
 Hello Ms. Kavya your gender is Female.  
 ```
+## ตัวอย่างในภาษาอื่นๆ
 ### Python
 ```python
 def fun2(string1, string2=""):

@@ -38,6 +38,19 @@ hello</code></pre>
 </details>
 <br>
 
+#### ตัวอย่าง trim() ในภาษา Java
+```java
+String myStr = "       Hello World!       ";
+System.out.println(myStr);
+System.out.println(myStr.trim());
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hello World!       
+Hello World!</code></pre>
+</details>
+<br>
+
 ## Compare String In Dart
 
   Return สตริงใหม่โดยการลบช่องว่างนำหน้าและต่อท้ายทั้งหมด วิธีการนี้สามารถเปรียบเทียบสตริงสองสตริงได้ 

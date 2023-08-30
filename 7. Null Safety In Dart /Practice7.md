@@ -135,16 +135,16 @@ Generated Status: 100
 Random Number: 0
 Generated Status: null
 ```
+</details>
+## References
 
-### อ้างอิง
+- https://dart.dev/codelabs/null-safety#:~:text=Null-aware%20operators,-If%20a%20variable&text=Sometimes%20the%20flow%20of%20the,this%20operator%20throws%20an%20exception.
 
-https://dart.dev/codelabs/null-safety#:~:text=Null-aware%20operators,-If%20a%20variable&text=Sometimes%20the%20flow%20of%20the,this%20operator%20throws%20an%20exception.
+- https://dart-tutorial.com
 
---- https://dart-tutorial.com
+- https://dartpad.dev/?
 
---- https://dartpad.dev/?
-
---- ChatGPT
+- ChatGPT
 
 ```bash
 640710553 นาย ภานุวัฒน์ เจนภพ CS

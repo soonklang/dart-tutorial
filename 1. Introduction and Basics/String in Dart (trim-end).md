@@ -6,7 +6,7 @@
 *  replaceAll(): แทนที่สตริงย่อยทั้งหมดที่ตรงกับรูปแบบที่ระบุด้วยค่าที่กำหนด
 *   split(): แยกสตริงที่ตรงกับตัวคั่นที่ระบุและส่งคืนรายการสตริงย่อย
 *    toString(): ส่งกลับการแสดงสตริงของวัตถุนี้
-* string(): ส่งกลับสตริงย่อยของสตริงนี้ที่ขยายจาก startIndex แบบรวม ถึง endIndex แบบเอกสิทธิ์เฉพาะบุคคล
+* substring(): ส่งกลับสตริงย่อยของสตริงนี้ที่ขยายจาก startIndex แบบรวม ถึง endIndex แบบเอกสิทธิ์เฉพาะบุคคล
 *  codeUnitAt(): ส่งกลับหน่วยรหัส UTF-16 16 บิตที่ดัชนีที่กำหนด
 
 ## Trim String In Dart
@@ -138,6 +138,19 @@ public class Main {
 </details>
 <br>
 
+ #### ตัวอย่าง replaceAll() ในภาษา Python
+ ```python
+txt = "one one was a race horse, two two was one too."
+x = txt.replace("one", "three")
+print(x)
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>three three was a race horse, two two was three too." </code></pre>
+</details>
+<br>
+
+
 ## Split String In Dart
 
 สามารถแยกสตริงที่คั่นด้วยช่องว่าง เครื่องหมายต่างๆ หรือข้อความอื่นๆ และreturn สตริงย่อย
@@ -159,6 +172,36 @@ void main() {
 </details>
 <br>
 
+#### ตัวอย่าง split() ในภาษา Java
+ ```java
+import java.util.Arrays;
+class Main {
+  public static void main(String[] args) {
+    String vowels = "a::b::c::d:e";
+
+    String[] result = vowels.split("::");
+    System.out.println("result = " + Arrays.toString(result));
+  }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>result = [a, b, c, d:e]</code></pre>
+</details>
+<br>
+
+#### ตัวอย่าง split() ในภาษา Python
+ ```java
+txt = "welcome to the jungle"
+x = txt.split()
+print(x)
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>['welcome', 'to', 'the', 'jungle']</code></pre>
+</details>
+<br>
+
 ## ToString In Dart
 
 Return การแสดงสตริงของค่า/วัตถุ
@@ -167,7 +210,7 @@ Return การแสดงสตริงของค่า/วัตถุ
    Return ค่า String objects.
 
 
-  #### ตัวอย่าง split() ในภาษา Dart
+  #### ตัวอย่าง toString() ในภาษา Dart
 ```dart
 void main() { 
    int n = 12; 
@@ -181,6 +224,25 @@ void main() {
 </details>
 <br>
 
+#### ตัวอย่าง toString() ในภาษา Java
+ ```java
+public class Test { 
+
+   public static void main(String args[]) {
+      Integer x = 5;
+
+      System.out.println(x.toString());  
+      System.out.println(Integer.toString(12)); 
+   }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>5
+12</code></pre>
+</details>
+<br>
+
 ## SubString In Dart
 
 สามารถใช้สตริงย่อยใน Dart เมื่อคุณต้องการรับข้อความจากตำแหน่งใดก็ได้
@@ -191,7 +253,7 @@ void main() {
    Return ค่า String objects.
 
 
-  #### ตัวอย่าง split() ในภาษา Dart
+  #### ตัวอย่าง substring() ในภาษา Dart
 ```dart
 void main() { 
    String str1 = "Hello World"; 
@@ -201,7 +263,7 @@ void main() {
    print("New String: ${str1.substring(2,6)}"); 
    
    // from index 2 to the 6th index 
-} 
+   } 
 }   
 ```
 <details>
@@ -211,14 +273,30 @@ New String: llo </code></pre>
 </details>
 <br>
 
-## codeUnitAt In Dart
+#### ตัวอย่าง substring() ในภาษา Java
+ ```java
+class Main {
+  public static void main(String[] args) {
+    String str1 = "java is fun";
+
+    System.out.println(str1.substring(0, 4));
+  }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>java</code></pre>
+</details>
+<br>
+
+## CodeUnitAt In Dart
 Return หน่วยรหัส UTF-16 16 บิตที่ดัชนีที่กำหนด
 
 #### Return Type
    Return ค่าจำนวนเต็ม
 
 
-  #### ตัวอย่าง split() ในภาษา Dart
+  #### ตัวอย่าง codeUnitAt() ในภาษา Dart
 ```dart
 void main() { 
    var res = "Good Day"; 
@@ -235,7 +313,7 @@ void main() {
 
 หากต้องการย้อนกลับสตริงใน Dart สามารถย้อนกลับได้โดยใช้วิธีแก้ไขปัญหาอื่น 
 
-#### ตัวอย่าง split() ในภาษา Dart
+#### ตัวอย่าง reverse() ในภาษา Dart
 ```dart
 void main() { 
   String input = "Hello"; 
@@ -264,3 +342,8 @@ void main() {
   <pre><code>Capitalized first letter of String: Hello world</code></pre>
 </details>
 <br>
+
+## Reference
+
+https://dart-tutorial.com/introduction-and-basics/string-in-dart/
+https://www.tutorialspoint.com/dart_programming/dart_programming_string.htm

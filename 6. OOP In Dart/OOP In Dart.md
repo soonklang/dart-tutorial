@@ -7,7 +7,7 @@
 - Constructor in Dart
 - Default Constructor in Dart
 - Parameterized Constructor in Dart
-- Named Constructor in Dart
+- [Named Constructor in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Named%20Constructor%20in%20Dart.md)
 - Constant Constructor in Dart
 - Encapsulation in Dart
 - Getter in Dart

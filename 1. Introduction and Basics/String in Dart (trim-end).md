@@ -198,3 +198,20 @@ void main() {
   <pre><code>Hello Reverse is olleH </code></pre>
 </details>
 <br>
+
+## วิธีการใช้ตัวอักษรตัวแรกของสตริงเป็นตัวพิมพ์ใหญ่ใน Dart
+
+หากคุณต้องการใช้อักษรตัวแรกของ String ใน Dart ให้เป็นตัวพิมพ์ใหญ่ คุณสามารถใช้โค้ดต่อไปนี้
+
+#### ตัวอย่างการใช้อักษรตัวแรกของ String ให้เป็นตัวพิมพ์ใหญ่ ในภาษา Dart
+```dart
+void main() { 
+  String text = "hello world"; 
+  print("Capitalized first letter of String: ${text[0].toUpperCase()}${text.substring(1)}"); 
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Capitalized first letter of String: Hello world</code></pre>
+</details>
+<br>

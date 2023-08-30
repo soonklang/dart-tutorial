@@ -1,2 +1,1 @@
-# Class in Dart
-ในการเขียนโปรแกรมเชิงวัตถุ Class จะเปรียบเสมือนกับ Blueprint หรือแบบแปลนสำหรับสร้าง Object (วัตถุ) ซึ่ง Class จะประกอบด้วย Properties (คุณลักษณะ) และ Method (กระบวนการ) โดย Class จะเป็นตัวกำหนด Properties และ Method ของ Object ยกตัวอย่างเช่น สร้าง Class ชื่อว่า **Dog (สุนัข)** ก็อาจจะมี Properties อย่างการ **Breed (พันธุ์)** , **Color (สี)** และ Method เป็น  **Bark (เห่า)** , **Run(วิ่ง)**
+

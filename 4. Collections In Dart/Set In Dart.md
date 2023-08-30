@@ -3,13 +3,13 @@
   เซตจะกำหนดด้วยปีกกาใหญ่ {}
   
 **List สามารถเพิ่มค่าซ้ำกันได้แต่ Set ไม่สามารถทำได้  
-## การสร้างเซต
+## การสร้าง Set
 
     var variable_name = <variable_type>{};
 หรือ
 
      Set <variable_type> variable_name = {};
-Example 1 สร้างเซตจากสองวิธีที่ต่างกัน
+Example 1 สร้าง Set จากสองวิธีที่ต่างกัน
 
     void main()
     {
@@ -74,7 +74,7 @@ Output
     The length of fruits is 4
     true
     
-Finding --> ค้นหาค่าใร Set
+Finding --> ค้นหาค่าใน Set
     
     var gfg = <String>{'Hello Geek'};
 
@@ -86,8 +86,8 @@ Finding --> ค้นหาค่าใร Set
 Output
 
     The value of check is: true
-## แสดงค่าในเซต
-แสดงค่าในเซตด้วยการใช้ loop
+## แสดงค่าใน Set
+แสดงค่าใน Set ด้วยการใช้ loop
 
     void main(){
      Set<String> fruits = {"Apple", "Orange", "Mango"};
@@ -109,7 +109,7 @@ addAll() --> เพิ่มค่าหลายตัว
     
     fruit.addAll([strawberry, melon]);}
 
-clear() --> ลบค่าในเซตทั้งหมด  
+clear() --> ลบค่าใน Set ทั้งหมด  
 
     fruits.clear();
 

@@ -155,10 +155,8 @@ void main() {
 ใน Java เนื่องจากไม่มี **named constructors** เหมือนกับ Dart แต่สามารถใช้ **static factory methods** ในการทำแนวคิดที่คล้ายกัน
 
 **นี่คือตัวอย่างของการใช้ static factory methods ในภาษา Java:**
-</details>
 
 
-	
 ```java
 public class MyClass {    
 	private int x;

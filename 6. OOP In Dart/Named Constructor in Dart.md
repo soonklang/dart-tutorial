@@ -155,6 +155,11 @@ void main() {
 ใน Java เนื่องจากไม่มี **named constructors** เหมือนกับ Dart แต่สามารถใช้ **static factory methods** ในการทำแนวคิดที่คล้ายกัน
 
 **นี่คือตัวอย่างของการใช้ static factory methods ในภาษา Java:**
+</details>
+
+<details> 
+   <summary><strong>Java code</strong></summary>
+	
 ```java
 public class MyClass {    
     private int x;
@@ -179,6 +184,9 @@ public class MyClass {
     }
 }
 ```
+
+</details>
+
 หรือ สามารถใช้วิธี **Overload** ในการเขียนก็ได้
 ```java
 class Point {       

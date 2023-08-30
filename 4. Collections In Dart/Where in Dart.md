@@ -72,7 +72,7 @@ void main() {
 ```Dart
 [Sunday, Saturday]
 ```
-**3.Filter ใน maps หาคะแนนนักเรียนที่ได้น้อยกว่าหรือเท่ากับ 32**
+**3.Filter ใน maps หาคะแนนนักเรียนที่ได้มากกว่าหรือเท่ากับ 32**
 ```Dart
 void main() {
   Map<String, double> mathMarks = {
@@ -83,7 +83,7 @@ void main() {
     "john": 15,
   };
 
-  mathMarks.removeWhere((key, value) => value < 32);
+  mathMarks.removeWhere((key, value) => value < 32); # ใช้ removeWhere เพื่อเอาสิ่งที่ไม่ต้องการออก ในทีนี้คือค่า value ที่น้อยกว่า 32 ให้เอาออกไป #
 
   print(mathMarks);
 }

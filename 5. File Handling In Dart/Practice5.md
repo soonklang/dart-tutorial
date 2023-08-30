@@ -101,7 +101,93 @@ void main() {
   print('Friend\'s name added to the file.');
 }
    ```
+### • C
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
+int main() {
+    // File path
+    const char *filePath = "names.txt";
+
+    // Your name
+    const char *yourName = "Your Name";
+
+    // Your friend's name
+    const char *friendName = "Friend's Name";
+
+    // Open the file in append mode
+    FILE *file = fopen(filePath, "a");
+    
+    if (file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // Append your friend's name
+    fprintf(file, "%s\n", friendName);
+
+    // Close the file
+    fclose(file);
+
+    printf("Friend's name added to the file.\n");
+
+    return 0;
+}
+```
+```java
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
+public class AppendToFile {
+    public static void main(String[] args) {
+        // File path
+        String filePath = "names.txt";
+
+        // Your name
+        String yourName = "Your Name";
+
+        // Your friend's name
+        String friendName = "Friend's Name";
+
+        try {
+            // Open the file in append mode
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true));
+
+            // Append your friend's name
+            writer.write(friendName);
+            writer.newLine();
+
+            // Close the writer
+            writer.close();
+
+            System.out.println("Friend's name added to the file.");
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+}
+```
+### • Python
+```python
+# File path
+file_path = 'names.txt'
+# Your name
+your_name = 'Your Name'
+# Your friend's name
+friend_name = "Friend's Name"
+try:
+    # Open the file in append mode
+    with open(file_path, 'a') as file:
+        # Append your friend's name
+        file.write(friend_name + '\n')
+    
+    print("Friend's name added to the file.")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+```
 ## 3.Write a dart program to get the current working directory.
 
 ## 4.Write a dart program to copy the “hello.txt” file to “hello_copy.txt” file.

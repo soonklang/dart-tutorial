@@ -546,7 +546,7 @@ class Student {
   }
 
   static Student fromCsvString(String csvString) {
-    List<String> values = csvString.split(',');
+    List<String> values = csvString.split(','); 
     return Student(values[0], int.parse(values[1]), values[2]);
   }
 }

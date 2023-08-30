@@ -46,7 +46,7 @@ System.out.println(myStr.trim());
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Hello World!       
+  <pre><code>       Hello World!              
 Hello World!</code></pre>
 </details>
 <br>

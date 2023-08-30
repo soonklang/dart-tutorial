@@ -58,11 +58,11 @@ String? nullableString = null;
 ```dart
 void main(){
    int? age; //  <<---
-   aeg = null;
-   print(aeg);  // give null
+   age = null;
+   print(age);  // give null
 }
 ```
-
+[Run code](https://dartpad.dev/?iex4444)
 ```bash
  not use '?' ไม่สามารถใส่ค่า null ลงในตัวแปรได้
 ```

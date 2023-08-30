@@ -713,8 +713,8 @@ public class Main {
 
 ```
 __คำอธิบายโค้ด__ 
--ในภาษา Java ใช้คำสำคัญ class แทน class ในภาษา Dart
--ในภาษา Java การสร้าง constructor แบบที่มีชื่อเรียกว่า "named constructor" ทำได้โดยการสร้าง constructor พร้อมกับ parameter ที่ตรงกับชื่อ constructor ที่เราต้องการ
+- ในภาษา Java ใช้คำสำคัญ class แทน class ในภาษา Dart
+- ในภาษา Java การสร้าง constructor แบบที่มีชื่อเรียกว่า "named constructor" ทำได้โดยการสร้าง constructor พร้อมกับ parameter ที่ตรงกับชื่อ constructor ที่เราต้องการ
 </details>
 
 <details> 

@@ -9,3 +9,6 @@
  - Assignment Operators
  - Logical Operators
  - Type Test Operators
+# Arithmetic Operators
+- ตัวดำเนินการทางคณิตศาสตร์ คือตัวดำเนินการที่ใช้เพื่อกระทำการดำเนินการทางคณิตศาสตร์ระหว่างตัวแปรหรือค่าคงที่ เช่น การบวก การลบ การคูณ และการหาร
+- ใน

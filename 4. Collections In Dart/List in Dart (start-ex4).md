@@ -9,7 +9,7 @@
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/141746029/e8eebce2-cf4f-4fc4-85b3-d6ec4319eb11)
 
-อ้างอิง: https://www.geeksforgeeks.org/dart-programming-list/
+อ้างอิง:	 https://www.geeksforgeeks.org/dart-programming-list/
 
 จากภาพจะเห็นได้ว่าการเก็บข้อมูลนั้นจะเก็บเป็นส่วนๆ โดยจะมีเลข Index ของแต่ละตำแหน่งของข้อมูลที่เราทำการจัดเก็บ การที่จะนำข้อมูลมาแสดงผล จำเป็นต้องใช้เลขตำแหน่ง หรือ Index นั่นเอง
 
@@ -367,6 +367,7 @@ Output:
  *** NOTE:  การเพิ่มค่าข้างต้นทั้งหมด 4 ตัวอย่างไม่ใช่การแทนที่ ดังนั้นค่าหรือข้แมูลที่อยู่ใน List ก่อนหน้าจะยังอยู่เหมือนเดิม
 
  อ้างอิง:
+ 
  https://dart-tutorial.com/collections/list-in-dart/
  
  https://www.darttutorial.org/dart-tutorial/dart-list/

@@ -163,5 +163,6 @@ class Student{
 จากตัวอย่างการสร้าง class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
 
 # Reference
-[What is pascal case?](https://www.theserverside.com/definition/Pascal-case)
+https://www.theserverside.com/definition/Pascal-case
+https://www.tutorialspoint.com/dart_programming/dart_programming_classes.htm
 

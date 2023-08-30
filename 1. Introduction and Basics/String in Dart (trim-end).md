@@ -35,7 +35,7 @@ void main() {
   <pre><code>Answer is 10</code></pre>
 </details> 
 
-<br>
+
 ```
 hello 
 hello world 

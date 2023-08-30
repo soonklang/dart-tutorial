@@ -396,6 +396,9 @@ int main() {
 ### Conclusion :
       งานนี้เหมาะสำหรับการที่เราอยากสร้างกลุ่มของClasses ที่มีควาทสัมพันกัน ที่มีคุณสมบัติคลายๆกัน
 
+      ช่วยให้โปรแกรมของเราเป็นระเบียบเรียบร้อยและมีประสิทธิภาพดีขึ้น เนื่องจากสมาชิกของ base classes ทั้งหมด available 
+      สำหรับ derived classes
+
 ## References :
 https://www.javatpoint.com/dart-inheritance
 

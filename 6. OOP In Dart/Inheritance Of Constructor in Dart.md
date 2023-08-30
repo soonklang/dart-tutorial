@@ -280,16 +280,31 @@ int main() {
 
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Java
   1. `การเรียกใช้คอนสตรักเตอร์ของคลาสแม่`
+   - Dart ไม่มีการใช้คีย์เวิร์ด super เพื่อเรียก constructor ของคลาสแม่ แต่จะเรียกผ่านชื่อคลาสแม่ตรงๆ โดยใช้ ClassName.constructorName
+   - Java ใช้ super() เพื่อเรียก constructor ของคลาสแม่
   2. `การส่งพารามิเตอร์ให้ Constructor ของคลาสแม่`
+   - Dart คุณสามารถส่งพารามิเตอร์ให้กับ constructor ของคลาสแม่ผ่านการใช้ : super(parameter) หลังจากหัว constructor ของคลาสลูก
+   - Java สามารถส่งพารามิเตอร์ให้กับ constructor ของคลาสแม่โดยใช้ super(parameter) ในโครงสร้างของ constructor ของคลาสลูก
   3. `การส่งพารามิเตอร์เพิ่มเติมใน Constructor ของคลาสลูก`
+   - Dart คลาสลูกสามารถรับพารามิเตอร์เพิ่มเติมใน constructor ได้ โดยคลาสลูกสามารถประกาศพารามิเตอร์ของตัวเองและส่งให้ constructor ของคลาสแม่โดยใช้ super เพื่อทำงานกับพารามิเตอร์เพิ่มเติมนั้น
+   - Java การส่งพารามิเตอร์เพิ่มเติมใน constructor ของคลาสลูกใน Java ก็เช่นกัน คุณสามารถประกาศพารามิเตอร์เพิ่มเติมในคลาสลูกและส่งให้ constructor ของคลาสแม่ผ่าน super
   4. `การ Override Constructor`
+   - Dart ไม่รองรับการ override constructor โดยตรง แต่คุณสามารถ override named constructor หรือเพิ่ม named constructor ในคลาสลูกได้
+   - Java ไม่รองรับการ override constructor โดยตรงเช่นกัน แต่คุณสามารถสร้าง constructor ใหม่ในคลาสลูกและเรียก constructor ของคลาสแม่ผ่าน super() หากต้องการ
 
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python
 1. `การเรียกใช้คอนสตรักเตอร์ของคลาสแม่`
    - Dart เมื่อคลาสลูกสร้าง instance ด้วย constructor ของตัวเองคอนสตรักเตอร์ของคลาสแม่ไม่ถูกเรียกโดยอัตโนมัติคุณจะต้องเรียก super() ใน constructor ของคลาสลูกเพื่อเรียก constructor ของคลาสแม่
-3. `การส่งพารามิเตอร์ให้ Constructor ของคลาสแม่`
-4. `การส่งพารามิเตอร์เพิ่มเติมใน Constructor ของคลาสลูก`
-5. `การ Override Constructor`
+   - Python constructorของคลาสลูกสามารถเรียก constructor ของคลาสแม่โดยอัตโนมัติผ่าน super().__init__() โดยไม่ต้องเรียกใน constructor ของคลาสลูกเอง
+2. `การส่งพารามิเตอร์ให้ Constructor ของคลาสแม่`
+   - Dart อนุญาตให้ส่งพารามิเตอร์ให้กับ constructor ของคลาสแม่ผ่าน super ใน constructor ของคลาสลูก
+   - Python ใช้ super().__init__(...) เพื่อส่งพารามิเตอร์ให้กับ constructor ของคลาสแม่
+3. `การส่งพารามิเตอร์เพิ่มเติมใน Constructor ของคลาสลูก`
+   - Dart ส่งพารามิเตอร์เพิ่มเติมใน constructor ของคลาสลูก และคอนสตรักเตอร์ของคลาสแม่จะถูกเรียกใช้กับพารามิเตอร์ที่กำหนดใน super
+   - Python ส่งพารามิเตอร์เพิ่มเติมใน constructor ของคลาสลูก และเมื่อใช้ super().__init__(...) คอนสตรักเตอร์ของคลาสแม่จะถูกเรียกใช้กับพารามิเตอร์ที่กำหนดใน super
+4. `การ Override Constructor`
+   - Dart ไม่สนับสนุนการ override constructor โดยตรง เนื่องจากไม่สามารถสร้างเมทอด constructor ที่มีชื่อเดียวกับคลาสได้
+   - Python สามารถ override constructor ของคลาสแม่ได้โดยการประกาศ constructor ในคลาสลูกและใช้ super().__init__() เพื่อเรียก constructor ของคลาสแม่
 
 # Reference
 https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart<br>

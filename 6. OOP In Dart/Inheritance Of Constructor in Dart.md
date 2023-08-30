@@ -285,10 +285,11 @@ int main() {
   4. `การ Override Constructor`
 
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python
-  1. `การเรียกใช้คอนสตรักเตอร์ของคลาสแม่`
-  2. `การส่งพารามิเตอร์ให้ Constructor ของคลาสแม่`
-  3. `การส่งพารามิเตอร์เพิ่มเติมใน Constructor ของคลาสลูก`
-  4. `การ Override Constructor`
+1. `การเรียกใช้คอนสตรักเตอร์ของคลาสแม่`
+   - Dart เมื่อคลาสลูกสร้าง instance ด้วย constructor ของตัวเองคอนสตรักเตอร์ของคลาสแม่ไม่ถูกเรียกโดยอัตโนมัติคุณจะต้องเรียก super() ใน constructor ของคลาสลูกเพื่อเรียก constructor ของคลาสแม่
+3. `การส่งพารามิเตอร์ให้ Constructor ของคลาสแม่`
+4. `การส่งพารามิเตอร์เพิ่มเติมใน Constructor ของคลาสลูก`
+5. `การ Override Constructor`
 
 # Reference
 https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart<br>

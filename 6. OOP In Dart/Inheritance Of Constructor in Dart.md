@@ -488,30 +488,101 @@ _จากโค้ดตัวอย่างที่ 4 โค้ดด้า�
    <summary><strong>ตัวอย่างที่ 4 ในรูปแบบภาษา C</strong></summary>
 
 ```c
+#include <stdio.h>
+
+struct Laptop {
+    char name[50];
+    char color[20];
+};
+
+void initLaptop(struct Laptop *laptop, const char *name, const char *color) {
+    strcpy(laptop->name, name);
+    strcpy(laptop->color, color);
+    printf("Laptop constructor\n");
+    printf("Name: %s\n", laptop->name);
+    printf("Color: %s\n", laptop->color);
+}
+
+struct MacBook {
+    struct Laptop laptop;
+};
+
+void initMacBook(struct MacBook *macbook, const char *name, const char *color) {
+    initLaptop(&(macbook->laptop), name, color);
+    printf("MacBook constructor\n");
+}
+
+int main() {
+    struct MacBook macbook;
+    initMacBook(&macbook, "MacBook Pro", "Silver");
+    return 0;
+}
 
 ```
 __คำอธิบายโค้ด__ 
-
+- ในภาษา C, ไม่มีโครงสร้างเหมือนกับคลาสใน Dart, ดังนั้นเราใช้โครงสร้าง struct แทน ซึ่งเก็บข้อมูลภายใน
+- การสร้าง constructor ในภาษา C ไม่ได้เป็นที่เสริมเช่นใน Dart, แทนที่เราสร้างฟังก์ชันแยกในการกำหนดค่าเริ่มต้น
+- เราใช้ฟังก์ชัน strcpy() เพื่อคัดลอกข้อความใน C
+- การเข้าถึงสมาชิกของโครงสร้างใน C เราใช้ . แทน -> ในภาษา Dart
 </details>
 
 <details> 
    <summary><strong>ตัวอย่างที่ 4 ในรูปแบบภาษา Java </strong></summary>
 
 ```java
+class Laptop {
+    Laptop(String name, String color) {
+        System.out.println("Laptop constructor");
+        System.out.println("Name: " + name);
+        System.out.println("Color: " + color);
+    }
+}
+
+class MacBook extends Laptop {
+    MacBook(String name, String color) {
+        super(name, color);
+        System.out.println("MacBook constructor");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MacBook macbook = new MacBook("MacBook Pro", "Silver");
+    }
+}
 
 ```
 __คำอธิบายโค้ด__ 
-
+- ในภาษา Java, เราใช้คีย์เวิร์ด class แทนคีย์เวิร์ด class ในภาษา Dart
+- ใน Java, การเรียก constructor ของคลาสแม่เราใช้ super(name, color) แทน super(name: name, color: color) ใน Dart
+- การประกาศและกำหนดค่าตัวแปรใน Java เราต้องระบุชนิดข้อมูล เช่น String name
+- ใน Java, เราใช้ System.out.println() แทน print() ใน Dart
 </details>
 
 <details> 
    <summary><strong>ตัวอย่างที่ 4 ในรูปแบบภาษา Python </strong></summary>
 
 ```Python
+class Laptop:
+    def __init__(self, name='', color=''):
+        print("Laptop constructor")
+        print("Name:", name)
+        print("Color:", color)
+
+class MacBook(Laptop):
+    def __init__(self, name='', color=''):
+        super().__init__(name, color)
+        print("MacBook constructor")
+
+macbook = MacBook(name="MacBook Pro", color="Silver")
 
 ```
 __คำอธิบายโค้ด__ 
-
+- ใน Python, คำสั่ง class แทนคำสั่ง class ในภาษา Dart
+- Python ไม่ต้องระบุชนิดข้อมูลของตัวแปรเมื่อประกาศ
+- เราใช้ def แทน fun เพื่อประกาศฟังก์ชันใน Python
+- เราใช้ super().__init__(name, color) เพื่อเรียก constructor ของคลาสแม่
+- การพิมพ์ผลลัพธ์ใน Python ใช้ print() โดยไม่ต้องใส่วงเล็บ
 </details>
 
 ##### จากตัวอย่างที่ 4 : การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์แบบชื่อใน Dart มีประโยชน์อย่างไร

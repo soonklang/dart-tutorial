@@ -3,7 +3,7 @@
 - OOP in Dart
 - [Class in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20in%20Dart.md)
 - [Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Object%20in%20dart.md)
-- Class and Objects in Dart
+- [Class and Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20and%20Objects%20in%20Dart.md)
 - Constructor in Dart
 - Default Constructor in Dart
 - Parameterized Constructor in Dart

@@ -93,13 +93,15 @@ int returnZeroIfNull(int? value){
     return value ?? 0;  // ถ้าค่าเป็น null จะ return 0
 }
 void main(){
-   int? value1 = null;
-   int? value1 = 5;
+   int? value1;
+        value1 = null;
+   int? value2 = 5;
 
    print(returnZeroIfNull(value1));  // output 0
    print(returnZeroIfNull(value2));  // output 5
 }
 ```
+[Run code](https://dartpad.dev/?idex.5)
 
 ## 6.Write a function named generateRandom() in dart that randomly returns 100 or null. Also, assign a return value of the function to a variable named status that can’t be null. Give status a default value of 0, if generateRandom() function returns null.
 

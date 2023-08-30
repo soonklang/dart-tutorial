@@ -75,6 +75,32 @@ with open("hello.txt", "w") as f:
 
 ```
 ## 2.Write a dart program to append your friends name to a file that already has your name.
+```dart
+  import 'dart:io';
+
+void main() {
+  // File path
+  String filePath = 'names.txt';
+
+  // Your name
+  String yourName = 'Your Name';
+
+  // Your friend's name
+  String friendName = 'Friend\'s Name';
+
+  // Open the file in append mode
+  File file = File(filePath);
+  IOSink sink = file.openWrite(mode: FileMode.append);
+
+  // Append your friend's name
+  sink.write('$friendName\n');
+
+  // Close the file
+  sink.close();
+
+  print('Friend\'s name added to the file.');
+}
+   ```
 
 ## 3.Write a dart program to get the current working directory.
 

@@ -73,7 +73,7 @@ void main(){
    print(age);  // give null
 }
 ```
-[Run code](https://dartpad.dev/?iex4444)
+[Run code](https://dartpad.dev/?iex4.1)
 ```bash
  not use '?' ไม่สามารถใส่ค่า null ลงในตัวแปรได้
 ```

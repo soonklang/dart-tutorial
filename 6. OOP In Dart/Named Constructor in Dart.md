@@ -16,7 +16,7 @@ ____________________________
 สำหรับคนที่ศึกษาเรื่อง **Class** มาเเล้ว จะเข้าใจว่า เราสามารถ สร้าง **Function** ที่เรียกอีกชื่อว่า **Constructor methob** ได้
 ### Syntax default Constructor ⌨️
 ```dart
-class ClassName {																							 Dart
+class ClassName {																							 D
   // default constructor
   ClassName(parameters) {
     // Initialization logic
@@ -32,7 +32,7 @@ class ClassName {																							 Dart
 
 ###  Syntax Name Constructors in dart
 ```dart
-class ClassName {																									 Dart
+class ClassName {																							
   // default constructor
   ClassName(parameters) {
     // Initialization logic
@@ -57,7 +57,7 @@ ClassName instance2 = ClassName.namedConstructor(parameters);   // named constru
 ### Example 1
 ##### ตัวอย่างเเรก จะเป็นตัวอย่างเเบบง่ายๆ เพื่อความเข้าใจของผู้อ่าน
 ```dart
-class Point {																									      Dart
+class Point {																								
     int x, y;
 		//Default Constructor
     Point(this.x, this.y);
@@ -84,7 +84,7 @@ var point0 = Point.origin();
 ### Example 2
 ##### ตัวอย่าง โปรเเกรมคำนวนพื้นที่วงกลม
 ```dart
-class Circle {																									      Dart
+class Circle {																								
   double radius;
   const double pi = 3.1415926535897932;
   
@@ -156,7 +156,7 @@ void main() {
 
 **นี่คือตัวอย่างของการใช้ static factory methods ในภาษา Java:**
 ```java
-public class MyClass {                                                                                                      Java
+public class MyClass {    
     private int x;
     private int y;
 
@@ -181,7 +181,7 @@ public class MyClass {                                                          
 ```
 หรือ สามารถใช้วิธี **Overload** ในการเขียนก็ได้
 ```java
-class Point {                                                                                                                         Java
+class Point {       
     int x, y;
      
 	 Point() {
@@ -212,7 +212,7 @@ class Point {                                                                   
 
 **แต่สามารถเขียนโค้ดใน C ที่มีลักษณะคล้ายกับโค้ดใน Dart ได้ดังนี้**
 ```c
-#include <stdio.h>                                                                                                              C
+#include <stdio.h>   
 #include <stdlib.h>
 
 // Declare the Point structure
@@ -257,7 +257,7 @@ int main() {
 
 **นี่คือตัวอย่างของการใช้ class methods ในภาษา Python:**
 ```python
-class MyClass:                                                                                                             pyhon
+class MyClass:  
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -284,7 +284,7 @@ point0 = MyClass.create_origin()
 
 **นี่คือตัวอย่างของการใช้ Named Constructors ในภาษา Kotlin:**
 ```kotlin
-class Point(private val x: Int, private val y: Int) {                                                          Kotiln
+class Point(private val x: Int, private val y: Int) {            
 
     companion object {
         fun origin(): Point {

@@ -339,13 +339,72 @@ void main() {
   var rect2 = Rectangle(25, 35, 40, 30);
 var intersection = rect1.intersection(rect2);
 print("Intersection ${intersection}");
-
 }
 ```
 output
 ```
 Intersection Rectangle (25, 35) 15 x 25
 //  หมายความว่าจุดที่มันซ้อนทับกันจะเริ่มตั้งแต่จุดที่ (25,35)  และขยายไปทางขวา 15 หน่วย และขยายลงมา 25 หน่วย        
+```
+## เปรียบเทียบ Point class กับ java
+ในจาวาในทำงานกับพื้นที่สี่เหลี่ยมจะคล้ายกับ dart เนื่องจากมีฟังชั่นช่วย
+ซึ่งเราจะ import java.awt.Rectangle;
+```java
+import java.awt.Rectangle;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Rectangle rect1 = new Rectangle(10, 20, 30, 40); //สร้าง constructors
+        Rectangle rect2 = new Rectangle(25, 35, 40, 30);
+
+        System.out.println("rect1: " + rect1);
+        System.out.println("rect2: " + rect2);
+        
+        Rectangle intersection1 = rect1.intersection(rect2);//หาค่า intersection
+        Rectangle intersection2 = rect2.intersection(rect1);
+   
+        System.out.println("Intersection1 Rectangle: " + intersection1);
+        
+    }
+}
+
+```
+output
+```
+rect1: java.awt.Rectangle[x=10,y=20,width=30,height=40]
+rect2: java.awt.Rectangle[x=25,y=35,width=40,height=30]
+Intersection1 Rectangle: java.awt.Rectangle[x=25,y=35,width=15,height=25] //ค่าจะเหมือนกับ dart และวิธีก็คล้ายกัน
+```
+## เปรียบเทียบ Point class กับ python
+การทำด้วย python จะไม่มีคราสเจาะจงเหมือน dart กับ java เราจึ้นต้องเขียนขึ้นมาเอง
+```python
+class Rectangle:# สร้างคราส Rectangle
+    def __init__(self, left, top, width, height): #เก็บค่า 
+        self.left = left
+        self.top = top
+        self.width = width
+        self.height = height
+
+    def intersection(self, other_rect):#เขียนวิธีเช็คว่าพื้นที่สี่เหลียมมันทับซ้อนกันหรือป่าว
+        x_overlap = max(0, min(self.left + self.width, other_rect.left + other_rect.width) - max(self.left, other_rect.left))
+        y_overlap = max(0, min(self.top + self.height, other_rect.top + other_rect.height) - max(self.top, other_rect.top))
+        
+        if x_overlap > 0 and y_overlap > 0:
+            return Rectangle(max(self.left, other_rect.left), max(self.top, other_rect.top), x_overlap, y_overlap)
+        else:
+            return Rectangle(0, 0, 0, 0)
+
+rect1 = Rectangle(10, 20, 30, 40)
+rect2 = Rectangle(25, 35, 40, 30)
+
+intersection_rect = rect1.intersection(rect2)
+print("Intersection Rectangle: left =", intersection_rect.left, "top =", intersection_rect.top,
+      "width =", intersection_rect.width, "height =", intersection_rect.height)
+```
+output
+```
+Intersection Rectangle: left = 25 top = 35 width = 15 height = 25
 ```
 
 

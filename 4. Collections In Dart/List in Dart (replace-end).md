@@ -66,12 +66,12 @@ void main() {
   print("หลังใช้ : ${list}");
 }
 ```
-### output
+#### output
 ```
 ก่อนใช้ : [10, 11, 12, 13, 14]
 หลังใช้ : [10, 11, 12, 14]
 ```
-### Ex 2.
+#### Ex 2.
 ```
  List<Map<String, dynamic>> people = [
   {'name': 'John', 'age': 30},
@@ -81,11 +81,121 @@ void main() {
 ];
 
 void main() {
+  print("ก่อนใช้: ${people}");
   people.removeAt(2);
-  print(people);
+  print("หลังใช้: ${people}");
 }
 ```
 ### output
 ```
-[{name: John, age: 30}, {name: Bob, age: 50}, {name: Donald, age: 3}]
+ก่อนใช้: [{name: John, age: 30}, {name: Bob, age: 50}, {name: Tom, age: 14}, {name: Donald, age: 3}]
+หลังใช้: [{name: John, age: 30}, {name: Bob, age: 50}, {name: Donald, age: 3}]
+```
+### ตัวอย่างที่3:removeLast()
+วิธีนี้จะใช้เม็ดตอด removeLast() วิธีนี้จะลบค่าสุดท้ายออกจาก list
+#### Ex 1.
+```
+void main() {
+  var list = [10, 20, 30, 40, 50];
+  print("ก่อนใช้ :${list}");
+  list.removeLast();
+  print("หลังใช้ :${list}");
+}
+```
+#### output
+```
+ก่อนใช้ :[10, 20, 30, 40, 50]
+หลังใช้ :[10, 20, 30, 40]
+```
+#### Ex 2.
+```
+final List<Map<String, dynamic>> people = [
+  {'name': 'John', 'age': 30},
+  {'name': 'Bob', 'age': 50},
+  {'name': 'Tom', 'age': 14},
+  {'name': 'Donald', 'age': 3}
+];
+
+void main() {
+  print("ก่อนใช้ : ${people}");
+  people.removeLast();
+  print("หลังใช้ : ${people}");
+}
+```
+#### output
+```
+ก่อนใช้ : [{name: John, age: 30}, {name: Bob, age: 50}, {name: Tom, age: 14}, {name: Donald, age: 3}]
+หลังใช้ : [{name: John, age: 30}, {name: Bob, age: 50}, {name: Tom, age: 14}]
+```
+### ตัวอย่างที่4:removeRange()
+วิธีนี้จะใช้เม็ดตอด removeLast() เป็นการลบข้อมูลในตำแหน่งที่กำหนดเป็นช่วงจนถึงตำแหน่งสุดท้ายที่กำหนด
+#### Ex 1.
+```
+void main() {
+  var list = [10, 20, 30, 40, 50];
+  print("ก่อนใช้ :${list}");
+  list.removeRange(1, 3);
+  print("หลังใช้ :${list}");
+}
+```
+#### output
+```
+ก่อนใช้ :[10, 20, 30, 40, 50]
+หลังใช้ :[10, 40, 50]
+```
+#### Ex 2.
+```
+final myList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+
+void main(){
+  print("ก่อนใช้ : ${myList}");
+  myList.removeRange(2, 6);
+  print("หลังใช้ : ${myList}");
+}
+```
+#### output
+```
+ก่อนใช้ : [a, b, c, d, e, f, g, h]
+หลังใช้ : [a, b, g, h]
+```
+### การลบข้อมูลใน list ใน Java และ C
+ในภาษา Java นั้นสามารถใช้ วิธีการแบบภาษา Dart ได้แต่สามารถใช้ได้เพียงเม็ดตอด remove() เท่านั้น
+และ C นั้นไม่สามารถทำได้
+#### Ex Java.
+```
+import java.util.*;
+  
+public class GFG {
+    public static void main(String[] args)
+    {
+  
+        // Declare an empty List of size 5
+        List<String> list = new ArrayList<String>(5);
+  
+        // Add elements to the list
+        list.add("Welcome");
+        list.add("to");
+        list.add("Geeks");
+        list.add("for");
+        list.add("Geeks");
+  
+        // Index from which you want
+        // to remove element
+        int index = 2;
+  
+        // Initial list
+        System.out.println("Initial List: " + list);
+  
+        // remove element
+        list.remove(index);
+  
+        // Final list
+        System.out.println("Final List: " + list);
+    }
+}
+```
+#### output
+```
+Initial List: [Welcome, to, Geeks, for, Geeks]
+Final List: [Welcome, to, for, Geeks]
 ```

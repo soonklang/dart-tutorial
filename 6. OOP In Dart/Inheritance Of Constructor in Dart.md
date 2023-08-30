@@ -80,6 +80,36 @@ __คำอธิบายโค้ด__
 
 </details>
 
+<details> 
+   <summary><strong>Java Code</strong></summary>
+
+```java
+class Laptop {
+    // Constructor
+    Laptop() {
+        System.out.println("Laptop constructor");
+    }
+}
+
+class MacBook extends Laptop {
+    // Constructor
+    MacBook() {
+        System.out.println("MacBook constructor");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MacBook macbook = new MacBook();
+    }
+}
+
+```
+__คำอธิบายโค้ด__ 
+จะเห็นได้ว่าโค้ดในภาษา Java มีความคล้ายคลึงกันในเรื่องของโครงสร้างและกระบวนการการทำงาน
+
+</details>
+
 #### `ตัวอย่างที่ 2` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์
 >ในตัวอย่างที่2 มีคลาสที่ชื่อว่า "Laptop" มีคอนสตรักเตอร์ที่รับพารามิเตอร์ และมีคลาสอีกอันชื่อ "MacBook" ที่สืบทอดจากคลาส "Laptop" คลาส "MacBook" มีคอนสตรักเตอร์ที่รับพารามิเตอร์ของตัวเองด้วยเช่นกัน
 

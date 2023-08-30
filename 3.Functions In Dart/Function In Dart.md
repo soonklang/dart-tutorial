@@ -22,6 +22,32 @@ returnType functionName(parameter1, parameter2, ...) {
 - **Function Name** : คือชื่อของ Function เราจะสามารถตั้งชื่อเป็นอะไรก็ได้ ถ้าเราทำตามกฎการตั้งชื่อที่ชื่อว่า lowerCamelCase อย่างเช่น void printName()
 - **Parameters** : Parameter คือข้อมูลเข้าของ function โดยเราจะสามารถกำหนดประเภทของข้อมูลและชื่อข้อมูลได้ในวงเล็บ () ชื่อนั้นควรตั้งตามกฎ lowerCamelCase ด้วยเหมือนกัน
 
+สำหรับ functions ที่มีแค่คำสั่งเดียว เราสามารถเขียนให้สั้นลงได้อีกแบบเช่น 
+```dart
+bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
+}
+ ```
+=> expr คือการเขียนย่อของ { return expr; } 
+
+## Anonymous functions
+ใน Dart เราจะสามารถสร้าง Anonymous functions หรือบางครั้งถูกเรียกว่า lambda functions หรือ closure functions โดยเราจะมีตัวอย่างเป็น โค้ดที่มี item เป็นตัว parameter ส่งไปเปลี่ยนเป็นตัวอักษรใหญ่ จากในส่งให้ Anonymous function แสดงคำๆนั้นออกมาพร้อมกับความของข้อความ
+```dart
+const list = ['apples', 'bananas', 'oranges'];
+list.map((item) {
+  return item.toUpperCase();
+}).forEach((item) {
+  print('$item: ${item.length}');
+});
+}
+ ```
+Output
+```
+APPLES: 6
+BANANAS: 7
+ORANGES: 7
+ ```
+
+
 
 ## เทียบกับภาษาอื่นๆ
 - Java
@@ -182,6 +208,8 @@ https://dart-tutorial.com/dart-functions/functions-in-dart/
 https://www.programiz.com/java-programming/methods
 
 https://www.w3schools.com/c/index.php
+
+https://dart.dev/language/functions
 
 https://www.techtarget.com/whatis/definition/lowerCamelCase
 

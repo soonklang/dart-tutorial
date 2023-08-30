@@ -40,9 +40,13 @@ hello</code></pre>
 
 #### ตัวอย่าง trim() ในภาษา Java
 ```java
-String myStr = "       Hello World!       ";
-System.out.println(myStr);
-System.out.println(myStr.trim());
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "       Hello World!        ";
+    System.out.println(myStr);
+    System.out.println(myStr.trim());
+  }
+}
 ```
 <details>
   <summary><strong>Output</strong></summary>
@@ -83,9 +87,14 @@ str3.compareTo(str2): 1 </code></pre>
 
  #### ตัวอย่าง compareTo() ในภาษา Java
  ```java
-String myStr1 = "Hello";
-String myStr2 = "Hello";
-System.out.println(myStr1.compareTo(myStr2));
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "Hello";
+    System.out.println(myStr1.compareTo(myStr2)); // Returns 0 because they are equal
+  }
+}
+
 ```
 <details>
   <summary><strong>Output</strong></summary>
@@ -114,7 +123,22 @@ void main() {
 </details>
 <br>
 
-## Replace String In Dart
+ #### ตัวอย่าง replaceAll() ในภาษา Java
+ ```java
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.replace('l', 'p'));
+  }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Heppo </code></pre>
+</details>
+<br>
+
+## Split String In Dart
 
 สามารถแยกสตริงที่คั่นด้วยช่องว่าง เครื่องหมายต่างๆ หรือข้อความอื่นๆ และreturn สตริงย่อย
 

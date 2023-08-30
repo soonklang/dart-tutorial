@@ -125,7 +125,7 @@ void main() {
   }
 }
 ```
-[Run code](https://dartpad.dev/?id=0b97978a7e5d8a4f830d9bb2648c65a9)
+[Run code](https://dartpad.dev/?id)
 
 ```bash
 Random Number: 1

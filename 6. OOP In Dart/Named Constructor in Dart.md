@@ -157,35 +157,34 @@ void main() {
 **นี่คือตัวอย่างของการใช้ static factory methods ในภาษา Java:**
 </details>
 
-<details> 
-   <summary><strong>Java code</strong></summary>
+
 	
-	```java
-		public class MyClass {    
-    		private int x;
-   		 private int y;
+```java
+public class MyClass {    
+	private int x;
+	private int y;
 
-    		private MyClass(int x, int y) {			//default constructor
-      		  this.x = x;
-       		  this.y = y;
-    		}
-
-   		 public static MyClass createFromCoordinates(int x, int y) {
-        		return new MyClass(x, y);										//factory constructor
-   		 }
-
-    		public static MyClass createOrigin() {
-       	        return new MyClass(0, 0);										//factory constructor
-   		 }
-
-    		public static void main(String[] args) {
-        		MyClass point1 = MyClass.createFromCoordinates(10, 20);
-        		MyClass point0 = MyClass.createOrigin();
-    		}
+	private MyClass(int x, int y) {			//default constructor
+		this.x = x;
+ 		this.y = y;
 	}
-	```
 
-</details>
+	public static MyClass createFromCoordinates(int x, int y) {
+	return new MyClass(x, y);										//factory constructor
+	}
+
+	public static MyClass createOrigin() {
+	return new MyClass(0, 0);										//factory constructor
+	}
+
+	public static void main(String[] args) {
+	MyClass point1 = MyClass.createFromCoordinates(10, 20);
+	MyClass point0 = MyClass.createOrigin();
+	}
+	}
+```
+
+
 
 หรือ สามารถใช้วิธี **Overload** ในการเขียนก็ได้
 ```java

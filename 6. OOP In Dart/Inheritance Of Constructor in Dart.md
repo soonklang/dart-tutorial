@@ -107,7 +107,31 @@ public class Main {
 ```
 __คำอธิบายโค้ด__ 
 จะเห็นได้ว่าโค้ดในภาษา Java มีความคล้ายคลึงกันในเรื่องของโครงสร้างและกระบวนการการทำงาน แต่หน้าตาของคำสั่งจะมีความแตกต่างกันเพียงเล็กน้อย เช่น 
-ใน Java มีการใช้ System.out.println() เพื่อแสดงผลทางหน้าจอแทนการใช้ print() ใน Dart 
+ใน Java มีการใช้ `System.out.println()` เพื่อแสดงผลทางหน้าจอแทนการใช้ `print()` ใน Dart 
+</details>
+
+<details> 
+   <summary><strong>ตัวอย่างที่1 ในรูปแบบภาษา Python </strong></summary>
+
+```Python
+class Laptop:
+    # Constructor
+    def __init__(self):
+        print("Laptop constructor")
+
+class MacBook(Laptop):
+    # Constructor
+    def __init__(self):
+        print("MacBook constructor")
+
+def main():
+    macbook = MacBook()
+
+if __name__ == "__main__":
+    main()
+```
+__คำอธิบายโค้ด__ 
+ใน Python,ช้ `def __init__(self):` แทน `Laptop()` เพื่อประกาศคอนสตรักเตอร์ และเรียกใช้ `super().__init__()` ในคอนสตรักเตอร์ของคลาสลูกเพื่อเรียกคอนสตรักเตอร์ของคลาสแม่ นอกจากนี้ยังใช้ `if __name__ == "__main__":` เพื่อเรียกใช้ฟังก์ชัน main() เมื่อโปรแกรมถูกเรียกใช้งาน.
 </details>
 
 #### `ตัวอย่างที่ 2` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์

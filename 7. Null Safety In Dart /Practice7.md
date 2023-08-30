@@ -150,11 +150,17 @@ Generated Status: null
 [Run code](https://dartpad.dev/?iex6)
 
 </details>
+
 ## References
+
 - https://dart.dev/codelabs/null-safety#:~:text=Null-aware%20operators,-If%20a%20variable&text=Sometimes%20the%20flow%20of%20the,this%20operator%20throws%20an%20exception.
+
 - https://dart-tutorial.com
+
 - https://dev.to/pktintali/late-variables-in-dart-dart-learning-series-1-2opf
+
 - https://dartpad.dev/?
+
 - ChatGPT
 
 ```bash

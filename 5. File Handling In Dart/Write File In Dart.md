@@ -175,7 +175,7 @@ void main() {
 <br><br><br>
 
 ## การเขียนไฟล์ในภาษาอื่นๆ
-## - **Python**
+- **Python**
   
   ## Write to an Existing File
 
@@ -268,7 +268,7 @@ void main() {
   f = open("myfile.txt", "w")
   ```
 
-## - **C**
+- **C**
 
   ในภาษา C เราสามารถสร้างไฟล์, อ่านไฟล์, และเขียนไฟล์ได้โดยประกาศตัวชี้ประเภท FILE และใช้ฟังก์ชัน fopen():
   
@@ -348,7 +348,7 @@ void main() {
 
   **!NOTE** ด้วยเหตุนี้หากเราเปิดไฟล์ **filename.txt** บนคอมพิวเตอร์ของเรา ข้อมูลในไฟล์จะเป็น ```Hello World!``` แทนที่จะเป็น ```Some text```
 
-## - **Java**
+- **Java**
 
   ## Create a File
 

@@ -123,7 +123,7 @@ a =  Math.floor(Math.random() *(max - min + 1) + min);
 }
 }
 ```
-## สรุปข้อดีข้อเสียของการ random
+## ข้อดีข้อเสียของแต่ละภาษา
 การ random ค่าต่างๆของแต่ละภาษานั้นจะค่อนข้างแตกต่างกันโดยสิ้นเชิง
 โดยจะเห็นได้ว่า การ random ตัวเลขนั้น ภาษา dart กับ python จะเขียนได้ง่ายและไม่ซับซ้อน ส่วน c กับ java อาจจะต้องเขียนเยอะกว่าหน่อยถ้าเทียบกัน
 ส่วนการเขียน random boolean นั้น จะเห็นความเเตกต่างโดยชัดเจน ซึ่ง dart จะเขียนแค่ บรรทัดเดียวเเละเรียบง่าย ส่วน python กับ java อาจจะดูซับซ้อนขึ้นนิดหน่อย และ c ผมหาวิธีไม่เจอหรือ
@@ -258,10 +258,9 @@ Point 1: (3.000000, 4.000000)
 Point 2: (1.000000, -2.000000)
 Distance between points: 6.324555
 ```
-ปล. อ้างอิงวิธีนี้จาก chatGPT
 ## เปรียบเทียบ Point class กับ python
 ใน python นั้น วิธีการจะใกล้เคียงกับ dart เนื่องจากมี librarie ที่สามารถเข้ามาช่วยได้
-แต่อาจจะต้องสร้างเขียนวิธีการหา distance เหมือนกับ c เข้ามาเหมือนกัน โ
+แต่อาจจะต้องสร้างเขียนวิธีการหา distance เหมือนกับ c เข้ามาเหมือนกัน 
 ```python
 import math
 class Point:
@@ -285,9 +284,12 @@ output
 P1:  3 , 4
 P2:  1 , -2
 Distance between points: 6.324555320336759
+
 ```
+## ข้อดีข้อเสียของแต่ละภาษา
+pyhon และ java จะมีวิธีเขียนที่ค่อนข้างสะดวกกว่าเพราะมีการใช้ libary มาช่วย ต่างจาก c ที่ไม่มีและต้องเขียน class ขึ้นมาเองจึงทำให้เสียเปรียบ
 # 3.Rectangle class
-Rectangle class คลาสนี้ใช้สำหรับแสดงเป็นตัวเเทนรูปสี่เหลี่ยมสองมิติ ซึ่งประกอบไปด้วย left,top right และ bottom เพื่อเป็นตัวแทนของสี่เหลียมในสองมิติ
+Rectangle class คลาสนี้ใช้สำหรับแสดงเป็นตัวเเทนรูปสี่เหลี่ยมสองมิติและมีคุณสมบัติคงที่ ซึ่งประกอบไปด้วย left,top right และ bottom เพื่อเป็นตัวแทนของสี่เหลียมในสองมิติ
 ซึ่งในการเขียนโค้ดนั้น เราจะสร้าง constructor ขึ้นมาเเต่เราจะกำหนด เป็น left,top ,width,height ซึ่ง width จะคือค่าของ right = width + left และ bottom =top + height
 ```dart
  import 'dart:math';
@@ -377,7 +379,7 @@ rect2: java.awt.Rectangle[x=25,y=35,width=40,height=30]
 Intersection1 Rectangle: java.awt.Rectangle[x=25,y=35,width=15,height=25] //ค่าจะเหมือนกับ dart และวิธีก็คล้ายกัน
 ```
 ## เปรียบเทียบ Point class กับ python
-การทำด้วย python จะไม่มีคราสเจาะจงเหมือน dart กับ java เราจึ้นต้องเขียนขึ้นมาเอง
+การทำด้วย python จะไม่มีคราสเจาะจงเหมือน dart กับ java เราจึนต้องเขียนขึ้นมาเอง
 ```python
 class Rectangle:# สร้างคราส Rectangle
     def __init__(self, left, top, width, height): #เก็บค่า 
@@ -406,5 +408,26 @@ output
 ```
 Intersection Rectangle: left = 25 top = 35 width = 15 height = 25
 ```
+## ข้อดีข้อเสียของแต่ละภาษา
+จะเห็นได้ว่า java กับ dart ค่อนค้างที่จะใกล้เคียงกันเป็นอย่างมากแต่ python นั้นเรายังจะต้องเขียน class ด้วยตัวเอง
 
-
+# 4.MutableRectangle class
+ซึ่งคราสนี้จะมีคุณสมบัติเหมือนกับ  Rectangle class แต่สามารถเปลี่ยนแปลงค่าได้
+```dart
+import 'dart:math';
+void main() {
+var rect = MutableRectangle(20, 50, 300, 600);
+print(rect);
+//ทำการเปลี่ยนค่า
+rect.left = 70;
+rect.top = 40;
+rect.width = 200;
+rect.height = 100;
+print(rect);
+}
+```
+output
+```
+Rectangle (20, 50) 300 x 600
+Rectangle (70, 40) 200 x 100 //ค่าจะเปลี่ยนไป
+```

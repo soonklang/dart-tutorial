@@ -7,7 +7,7 @@ In Dart null safety, the ? operator serves as a key component to indicate nullab
 หากต้องการใส่ค่าให้ตัวแปร(values) ก็สามารถใส่ได้เลย และตรวจจับ error ขณะ run code เพื่อที่จะได้ไม่เกิดการ error 
 ในการประกาศตัวแปรแบบปกติ
 
-
+### ตัวอย่างการใช้ ?
 
 ```dart
 void main(){
@@ -45,6 +45,9 @@ void main(){
 Nullable Types: When you declare a variable, parameter, or return type with ?, you're indicating that the value can be either of the specified type or null. For instance, int? signifies a nullable integer, meaning it can hold an integer value or be null.
 
 การประกาศตัวแปรประเภท nullable type ทำได้โดยการเพิ่ม “?” ด้านหลังการประกาศ ชนิดข้อมูล int,double,String หรือ class ก็ใข้ได้ และอื่นๆ ทำให้เราสามารถกำหนดค่าของตัวแปรเป็นการระบุค่าหรือเป็นnullได้
+
+### ตัวอย่างการประกาศ nullable type
+
 ```dart
 int? nullableInt;      // Nullable integer
 double? nullableDouble; // Nullable double

@@ -74,7 +74,7 @@ void main(){
    print(aeg);  // give error
 }
 ```
-
+[Run code](https://dartpad.dev/?iex4.2)
 ## 5.Write a function that accepts a nullable int parameter and returns 0 if the value is null using null coalescing operator '??'.
 
 ```dart

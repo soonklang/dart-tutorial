@@ -159,7 +159,7 @@ void main(){
 }
 ```
 - Output
-- เมื่อไม่มีการส่งค่าผ่านการเรียนใช้ Constructor ค่าของ Property จะเป็นไปตามค่าที่กำหนด Default Values ไว้
+- เมื่อไม่มีการส่งค่าผ่านการเรียนใช้ Constructor ค่าของ Property จะเป็นไปตามค่าที่กำหนดเป็น Default Values ไว้
 ```
 Square height: 2
 Square width: 2
@@ -176,14 +176,8 @@ public class MyClass {
       this.y = "Educative";
       
    }
-
-   public int getX() {
-      return x;
-   }
-
-   public String getY() {
-      return y;
-   }
+   public int getX(){return x;}
+   public String getY(){return y;}
 
    public static void main(String[] args) {
      MyClass myClass = new MyClass();
@@ -197,5 +191,14 @@ public class MyClass {
 5
 Educative
 ```
+## Key Points
+- Constructor ต้องมีชื่อเดียวกับ Class
+- Constructor ไม่มี return type
+- Constructor ถูกเรียกใช้เพียงครั้งเดียว ณ เวลาสร้าง Object
+- Constructor ถูกเรียกใช้งานอย่างอัตโนมัติ ณ เวลาสร้าง Object
+- Constructor ถูกใช้เพื่อน initialize ค่าของ Properties ของ Class
 
-
+## reference(s)
+- https://dart-tutorial.com
+- https://dart.dev
+- https://www.educative.io

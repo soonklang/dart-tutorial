@@ -131,12 +131,19 @@ class Dog {
    }
 }
 ```
+<!---
 ### C
 ```c
-
-
-
+class Student{
+	String breed = "Dart";
+	String name = "Dog";
+	void displayInfo(){
+		printf(...);
+		printf(...);
+	}
+};
 ```
+-->
 จากตัวอย่างการสร้าง class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
 
 # Reference

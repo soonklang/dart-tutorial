@@ -447,7 +447,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 # Video
 
 
-# Reference from
+# Reference
 
 https://www.programiz.com/c-programming/types-user-defined-functions#google_vignette
 https://www.scaler.com/topics/types-of-functions-in-c/

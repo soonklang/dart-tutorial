@@ -365,12 +365,12 @@
 ```
 ###### NOTE:  การเพิ่มค่าข้างต้นทั้งหมด 4 ตัวอย่างไม่ใช่การแทนที่ ดังนั้นค่าหรือข้แมูลที่อยู่ใน List ก่อนหน้าจะยังอยู่เหมือนเดิม
 
- # อ้างอิง:
+ ## อ้างอิง:
  
-*https://dart-tutorial.com/collections/list-in-dart/*
+*<https://dart-tutorial.com/collections/list-in-dart/>*
  
- *https://www.darttutorial.org/dart-tutorial/dart-list/*
+ *<https://www.darttutorial.org/dart-tutorial/dart-list/>*
  
- *https://www.geeksforgeeks.org/dart-programming-list/*
+ *<https://www.geeksforgeeks.org/dart-programming-list/>*
  
- *https://dart.dev/language/collections*
+ *<https://dart.dev/language/collections>*

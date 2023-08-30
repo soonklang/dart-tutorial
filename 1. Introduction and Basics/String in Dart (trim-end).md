@@ -30,7 +30,12 @@ void main() {
    print(str3.trim()); 
 }
 ```
-#### output :
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Answer is 10</code></pre>
+</details> 
+
+<br>
 ```
 hello 
 hello world 

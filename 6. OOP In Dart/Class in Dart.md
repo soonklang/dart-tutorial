@@ -109,6 +109,9 @@ class Dog:
 	  print("Breed : "+self.breed)
 	  print("Dog Name: "+self.name)  
 ```
+<!---
+//python code here
+-->
 ### Java
 ```java
 class Dog {
@@ -120,6 +123,13 @@ class Dog {
    }
 }
 ```
+<!---
+```java
+//java core here
+}
+```
+-->
+ 
 ### Dart
 ```dart
 class Dog {
@@ -131,6 +141,12 @@ class Dog {
    }
 }
 ```
+<!---
+```dart
+//dart code here
+```
+-->
+
 <!---
 ### C
 ```c

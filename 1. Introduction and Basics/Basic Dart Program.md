@@ -123,6 +123,8 @@ int main() {
 }
 ```
 
+ในภาษา C เราใช้ #include <stdio.h> เพื่อใช้งานฟังก์ชัน printf และใช้ #include <string.h> เพื่อใช้งานฟังก์ชัน strcpy ในการก๊อปปี้ข้อความ (string) จากตัวแปร name ใน Dart มายัง name ในภาษา C และใน printf เราใช้ %s เพื่อพิมพ์ข้อความแบบฟอร์แมต.
+
 <details open>
 <summary><b>Output</b></summary>
  <pre>
@@ -144,6 +146,8 @@ int main() {
 }
 
 ```
+
+ในภาษา C เราใช้ #include <stdio.h> เพื่อใช้งานฟังก์ชัน printf และ #include <string.h> เพื่อใช้งานฟังก์ชัน strcpy หรือการใส่ข้อความลงในตัวแปรแบบอาเรย์เพื่อใช้เก็บชื่อและนามสกุล และใน printf เราใช้ %s เพื่อพิมพ์ข้อความแบบฟอร์แมต.
 
 <details open>
 <summary><b>Output</b></summary>
@@ -179,6 +183,9 @@ int main() {
 
 ```
 
+ในภาษา C เราใช้ #include <stdio.h> เพื่อใช้งานฟังก์ชัน printf และในการทำการหารค่าเลขจำนวนเต็ม num1 ด้วย num2 เราแปลงตัวอักษรที่ได้จากการหารเป็นตัวเลขทศนิยมโดยแปลง 
+num1 เป็น double ก่อนแล้วทำการหารและแปลงผลลัพธ์เป็น double ด้วย เพื่อให้แสดงผลทศนิยมได้ถูกต้อง และใน printf ใน C เราใช้ %d สำหรับจำนวนเต็มและ %.2lf สำหรับจำนวนทศนิยมที่มี 2 ตำแหน่งหลังจุดทศนิยม.
+
 <details open>
 <summary><b>Output</b></summary>
  <pre>
@@ -201,6 +208,8 @@ public class Main {
 
 ```
 
+ในภาษา Java เราใช้ public static void main(String[] args) เป็นจุดเริ่มต้นของโปรแกรมแทน void main() ในภาษา Dart และเราใช้ String แทน var ในการประกาศตัวแปรชนิดข้อความ และใช้ System.out.println() แทน print() ในการพิมพ์ข้อความ.
+
 <details open>
 <summary><b>Output</b></summary>
  <pre>
@@ -219,7 +228,11 @@ public class Main {
     }
 }
 
+
 ```
+
+ในภาษา Java เราใช้ public static void main(String[] args) เป็นจุดเริ่มต้นของโปรแกรมแทน void main() ในภาษา Dart และใช้ String แทน var 
+ในการประกาศตัวแปรชนิดข้อความ และในการต่อข้อความเราใช้ + แทนการใช้ $ ในการแทรกค่าตัวแปร และเราใช้ System.out.println() เหมือนเดิมในการพิมพ์ข้อความ.
 
 <details open>
 <summary><b>Output</b></summary>
@@ -252,6 +265,9 @@ public class Main {
 }
 
 ```
+
+ในภาษา Java เราใช้ public static void main(String[] args) เป็นจุดเริ่มต้นของโปรแกรมแทน void main() ในภาษา Dart และเราใช้ int ในการประกาศตัวแปรชนิดจำนวนเต็ม และในการทำการหารค่าเลขจำนวนเต็ม 
+num1 ด้วย num2 เราแปลง num1 เป็น (double) ก่อนแล้วทำการหารและแปลงผลลัพธ์เป็น double ด้วย เพื่อให้แสดงผลทศนิยมได้ถูกต้อง และเราใช้ System.out.println() แทน print() ในการพิมพ์ข้อความ.
 
 <details open>
 <summary><b>Output</b></summary>

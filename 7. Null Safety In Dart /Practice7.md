@@ -36,7 +36,7 @@ void main(){
   print(name);   // give 'US'
 }
 ```
-[Run code](https://dartpad.dev/?iex2)
+// [Run code](https://dartpad.dev/?iex2)
 ```bash
  output: US
 ```

@@ -127,7 +127,7 @@ dart compile js filename.dart | Compile dart to javascript. You can run this fil
 
 * int ชนิดข้อมูลเลขจำนวนเต็ม
 * float ชนิดข้อมูลเลขทศนิยม
-* octa ชนิดข้อมูลเลขฐานแปด
+* octal ชนิดข้อมูลเลขฐานแปด
 * hex ชนิดข้อมูลเลขฐานสิบหก
 * char ข้อมูลชนิดตัวอักขระ 
 * string ชนิดข้อมูลตัวอักษร

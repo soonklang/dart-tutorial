@@ -1,7 +1,7 @@
 # *Generics in Dart*
 Generics เป็นวิธีการสร้าง Class, Function หรือ Method ที่สามารถทำงานได้กับข้อมูล (Objects)
 ประเภทต่างๆ ให้มีลักษณะ Dynamic ตามการเรียกใช้งาน โดยหลักการคือ ให้ผู้เรียกใช้เป็นคนกำหนดเองว่าdata type ที่จะทำงานด้วยคืออะไร
- ## *Contents*
+ ## *Content*
  - [Syntax](#syntax)
  - [Example 1 Without Using Generics](#example-1-without-using-generics)
  - [Dart Generics Class](#dart-generics-class)

@@ -9,14 +9,14 @@
 
 ```dart
 class Laptop {
-  // Constructor
+// Constructor
   Laptop() {
     print("Laptop constructor");
   }
 }
 
 class MacBook extends Laptop {
-  // Constructor
+// Constructor
   MacBook() {
     print("MacBook constructor");
   }
@@ -74,8 +74,9 @@ int main() {
   struct MacBook macbook;
   return 0;
 }
-
    ```
+คำอธิบายโค้ด
+>โค้ดด้านบนเป็นการแปลงโค้ด Dart เป็นภาษา C โดยใช้ `struct` เพื่อสร้างคลาสและการสืบทอด โดยฟังก์ชัน constructor ถูกแปลงเป็นการใช้ `printf` เพื่อแสดงผลลัพธ์เช่นเดียวกันกับคำสั่ง `print` ใน Dart และ main ใน C มีการสร้างอ็อบเจกต์ของคลาส MacBook อย่างเดียวและส่งคืนค่า 0 เพื่อแสดงว่าโปรแกรมทำงานสมบูรณ์แล้ว
 </details>
 
 #### `ตัวอย่างที่ 2` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์

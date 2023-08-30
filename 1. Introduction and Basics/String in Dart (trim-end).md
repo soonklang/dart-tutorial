@@ -81,6 +81,18 @@ str3.compareTo(str2): 1 </code></pre>
 </details>
 <br>
 
+ #### ตัวอย่าง compareTo() ในภาษา Java
+ ```java
+String myStr1 = "Hello";
+String myStr2 = "Hello";
+System.out.println(myStr1.compareTo(myStr2));
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>0 </code></pre>
+</details>
+<br>
+
 ## Replace String In Dart
 
    สามารถแแทนที่ค่าหนึ่งด้วยอีกค่าหนึ่งด้วยวิธีแทนที่ทั้งหมด("เก่า", "ใหม่") ใน Dart มันจะแทนที่คำ "เก่า" ทั้งหมดด้วย "ใหม่" 

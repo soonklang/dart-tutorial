@@ -323,3 +323,4 @@ public class Main {
 3. `การวางตำแหน่งการเรียก Super Constructor (Super Constructor Call Placement)`
     - Dart คำสั่ง super() จะต้องอยู่ในร่างของ Constructor ของคลาสลูกเท่านั้นและไม่สามารถเรียกต่อจากการทำงานอื่นได้
     - Python Constructor ของคลาสแม่จะถูกเรียกก่อน Constructor ของคลาสลูกโดยอัตโนมัติและไม่ต้องเรียก super().__init__() ใน Constructor ของคลาสลูก
+# Reference

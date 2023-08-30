@@ -2,9 +2,10 @@
 
 While loop เป็นคำสั่งวนซ้ำที่ดำเนินการหลายครั้งตามค่า boolean โดยโครงสร้างภาษาของ While Loop จะเป็นดังนี้
 
+**Syntax Dart**
 ```dart
 while(conditional expression) {
-  //statements   
+  statements   
 }
 ```
 * **Conditional expression (เงื่อนไข)** คือ เป็นตัวเช็คเงื่อนไขจริงหรือเท็จเท่านั้น หากเป็นจริงคำสั่งภายในลูปจะถูกดำเนินการ หากเป็นเท็จลูปจะถูกหยุดทำงาน
@@ -41,3 +42,48 @@ void main() {
 ```dart
 The Sum is 55
 ```
+
+# While loop ของภาษา Dart แตกต่างกับภาษา C Java และ Python อย่างไร
+
+* ตัวอย่าง While loop ภาษา C
+
+```C
+int i = 0;
+
+while (i < 5) {
+  printf("%d\n", i);
+  i++;
+}
+```
+
+* ตัวอย่าง While loop ภาษา Java
+
+```Java
+int i = 0;
+
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+```
+
+จะสังเกตุได้ว่า โครงสร้างของภาษา C และ Java มีโครงสร้างแบบเดียวกันกับภาษา Dart และเงื่อนไขจะต้องเป็นจริงเท่านั้นถึงจะดำเนินการคำสั่งและวนลูปซ้ำ<br>
+แตกต่างจาก Python ที่มีโครงสร้างภาษาแตกต่างจาก C และ Java ที่กล่าวถึงข้างต้น
+
+* ตัวอย่าง While loop ภาษา Python
+
+```Python
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+```
+
+**Syntax Python**
+
+```Python
+while conditional expression :
+    statements
+```
+
+โครงสร้างแตกต่างเพียงแค่เล็กน้อย เงื่อนไข While loop ของ Python ไม่ต้องอยู่ใน"()"เหมือนของ C และ Java หลังจากสร้างเงื่อนไขลูปแล้วต้องคั่นหลังด้วย colon(:) While loop เป็นวิธีที่ใช้ง่ายไม่ซับซ้อนมากเพราะสามารถนำโครงสร้างของภาษา C และ Java มาช่วยทำความเข้าใจได้ง่ายขึ้น

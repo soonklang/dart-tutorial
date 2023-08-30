@@ -98,7 +98,7 @@ class Student {
 -   properties เรียกอีกอย่างว่า fields, attributes หรือ data members.
 -   methods เรียกอีกอย่างว่า behaviors หรือ member functions.
 
-# Difference Between Dart and Java and Python
+# Difference Between Dart and Java and Python and C
 จากตัวอย่างด้านล่างจะเป็นการสร้าง class ของทั้ง 3 ภาษา โดย class ชื่อ **Dog** จะมี properties คือ **breed** ,**name** และมี method **displayInfo** สำหรับแสดงค่าของ properties
 ### Python
 ```python

@@ -199,3 +199,44 @@ public class GFG {
 Initial List: [Welcome, to, Geeks, for, Geeks]
 Final List: [Welcome, to, for, Geeks]
 ```
+ส่วนใน Python นั้นมีคำสั่งที่ใช้งานคล้าย ภาษา Dart ได้
+#### EX 1 remove().
+ใช้งานเหมืนกับ remove() ใน Dart 
+```
+myList = ["Bran",11,22,33,"Stark",22,33,11]
+ 
+myList.remove(22)
+ 
+myList
+```
+#### output
+```
+[‘Bran’, 11, 33, ‘Stark’, 22, 33, 11]
+```
+#### EX 2 pop().
+ใช้งานเหมืนกับ removeAt() ใน Dart 
+```
+myList = ["Bran",11,22,33,"Stark",22,33,11]
+ 
+myList.pop(1)
+myList
+```
+#### output
+```
+ [‘Bran’, 22, 33, ‘Stark’, 22, 33, 11]
+```
+#### EX 3 del.
+ใช้งานเหมืนกับ removeRange() ใน Dart 
+```
+myList = ["Bran",11,22,33,"Stark",22,33,11]
+ 
+del myList[1:4]
+ 
+myList
+```
+#### output
+```
+[‘Bran’,"Stark",22, 33, 11]
+```
+### Loops In List
+

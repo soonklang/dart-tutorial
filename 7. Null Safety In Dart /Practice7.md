@@ -1,10 +1,13 @@
 # Practice7
 
 ## 1.What is the purpose of the ? operator in Dart null safety?
+In Dart null safety, the ? operator serves as a key component to indicate nullable types and to help prevent null-related errors during compilation and runtime. It is used in several contexts:
 
   วัตถุประสงค์ของตัว operator “?” คือให้กำหนดค่าตัวแปรเริ่มต้นให้เป็น null 
-หากต้องการใส่ค่าให้ตัวแปร(values) ก็สามารถใส่ได้เลย เพื่อที่จะได้ไม่เกิดการ error 
+หากต้องการใส่ค่าให้ตัวแปร(values) ก็สามารถใส่ได้เลย และตรวจจับ error ขณะ run code เพื่อที่จะได้ไม่เกิดการ error 
 ในการประกาศตัวแปรแบบปกติ
+
+
 
 ```dart
 void main(){
@@ -35,8 +38,11 @@ void main(){
 ```
 
 ## 3.How do you declare a nullable type in Dart null safety?
-
-
+Nullable Types: When you declare a variable, parameter, or return type with ?, you're indicating that the value can be either of the specified type or null. For instance, int? signifies a nullable integer, meaning it can hold an integer value or be null.
+```dart
+int? nullableInt;
+String? nullableString = null;
+```
 ## 4.Write a program in a dart to create an age variable and assign a null value to it using ?.
 
 การประกาศตัวแปรในรูปแบบของ nullable type
@@ -126,9 +132,11 @@ Random Number: 0
 Generated Status: null
 ```
 
+### อ้างอิง
 
+https://dart.dev/codelabs/null-safety#:~:text=Null-aware%20operators,-If%20a%20variable&text=Sometimes%20the%20flow%20of%20the,this%20operator%20throws%20an%20exception.
 
-
+https://dart-tutorial.com
 
 
 

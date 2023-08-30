@@ -1,7 +1,7 @@
 # List in Dart (start-ex4)
-  List ในภาษา Dart ใช้ในการเก็บข้อมูลหลายๆประเภทในพื้นที่จัดเก็บที่สร้างขึ้น โดยจะเรียงลำดับของข้อมูลด้วย
+  List ในภาษา Dart ใช้ในการเก็บข้อมูลหลายๆ ประเภทในพื้นที่จัดเก็บที่สร้างขึ้น โดยจะเรียงลำดับของข้อมูลด้วย
 
-โดย List จะคล้ายกับ Array ในภาษาโปรแกรมอืนๆ โดยขอยกตัวอย่างภาษา Java แต่จะแตกต่างกันในส่วนของ Array นั้นจำเป็นต้องจัดเก็บข้อมูลประเภทเดียวกัน ไม่สามารถเก็บข้อมูลหรือตัวแปรต่างประเภทกันได้
+โดย List จะคล้ายกับ Array ในภาษาโปรแกรมอื่นๆ โดยขอยกตัวอย่างภาษา Java แต่จะแตกต่างกันในส่วนของ Array นั้นจำเป็นต้องจัดเก็บข้อมูลประเภทเดียวกัน ไม่สามารถเก็บข้อมูล หรือตัวแปรต่างประเภทกันได้
 
   *** เช่น เราสามารถเก็บตัวแปรประเภท Int (ซึ่งเป็นตัวเลข) ร่วมกับ String (ซึ่งเป็นตัวอักษร) ได้ใน List ของ Dart แต่ในภาษา Java จำเป็นต้องสร้าง Array แยกกัน เป็น Array ของ Int และ Array ของ String
 
@@ -15,7 +15,7 @@
 
 # วิธีการสร้าง List
 
-การสร้าง List เราจะใช้ [] (วงเล็บก้ามปู) ในการ fill ข้อมูล และหากมีการ fill ข้อมูลพร้อมกันหลายๆตัว จำเป็นต้องใส่เครื่องหมาย , (comma) คั่นระหว่างข้อมูล
+การสร้าง List เราจะใช้ [] (วงเล็บก้ามปู) ในการ fill ข้อมูล และหากมีการ fill ข้อมูลพร้อมกันหลายๆ ตัว จำเป็นต้องใส่เครื่องหมาย , (comma) คั่นระหว่างข้อมูล
 
   // Integer List
 
@@ -41,7 +41,7 @@
       'Plane',
       ];
 
-*** NOTE : สามารถสร้างเป็น List เปล่าๆขึ้นมาได้ด้วยเช่นกัน
+*** NOTE : สามารถสร้างเป็น List เปล่าๆ ขึ้นมาได้ด้วยเช่นกัน
 
       var scores = [];
 
@@ -49,9 +49,9 @@
 
   List ถูกแบ่งออกเป็น 2 ประเภท
   
-  1.Fixed Length List (List ที่กำหนดขอบเขต)
+  1. Fixed Length List (List ที่กำหนดขอบเขต)
   
-  2.Growable List (List ที่ไม่มีการกำหนดขอบเขต)
+  2. Growable List (List ที่ไม่มีการกำหนดขอบเขต)
 
 # Fixed Length List
 
@@ -175,3 +175,199 @@ Output:
 
 # การหาความยาวของ List
 
+การหาความยาวของ List สามารถใช้ .length ในการหาและแสดงผลออกมา
+
+//Ex
+
+ 	void main(){  
+   	  List<String> names = ["Raj", "John", "Rocky"];
+      	  print(names.length);
+ 	}
+
+  Output:
+
+	3
+
+ *** NOTE: List index จะเริ่มที่ 0 และ ความยาวจะเริ่มที่ 1 เสมอ
+
+ # การเปลี่ยนค่าใน List
+
+ เราสามารถเปลี่ยนค่าใน List โดยใช้ listName[index]=value;
+
+ //Ex
+
+	void main(){  
+   	  List<String> names = ["Raj", "John", "Rocky"];
+   	  names[1] = "Bill"; //แทนค่าตำแหน่งที่ 2 Index = 1 ด้วย "Bill"
+   	  names[2] = "Elon"; //แทนค่าตำแหน่งที่ 3 Index = 2 ด้วย "Elon"
+   	  print(names);
+	}
+
+ Output:
+
+ 	[Raj, Bill, Elon]
+
+ # Mutable And Immutable List
+
+ list ที่ ตัวแปรเปลี่ยนค่า (Mutable List) ได้สามารถเปลี่ยนแปลงค่าได้หลังจากการประกาศค่าไปแล้ว และ List ที่ตัวแปรเปลี่ยนค่าไม่ได้ (Immutable List) ไม่สามารถเปลี่ยนแปลงค่าได้หลังจากการประกาศค่าไปแล้ว 
+
+ //Ex
+
+ 
+	List<String> names = ["Raj", "John", "Rocky"]; // Mutable List
+	names[1] = "Bill"; // possible
+	names[2] = "Elon"; // possible
+    
+	const List<String> names = ["Raj", "John", "Rocky"]; // Immutable List
+	names[1] = "Bill"; // not possible
+	names[2] = "Elon"; // not possible
+
+ จะสังเกตได้ว่าก่อนหน้าการประกาศ List ของ String ตัวที่ 2 มี const อยู่ ทำให้เป็น Immutable list ที่ไม่สามารถเปลี่ยนค่าได้นั่นเอง
+
+ # คำสั่งที่ใช้ได้กับ List ในภาษา Dart
+
+ 1. first: ใช้คืนค่าของข้อมูลหรือค่าในตำแหน่ง "แรก" ใน List
+ 2. last: ใช้คืนค่าของข้อมูลหรือค่าในตำแหน่ง "สุดท้าย" ใน List
+ 3. isEmpty: จะคืนค่า true เมื่อภายใน List มีข้อมูล และจะคืนค่า false เมื่อ List นั้นว่างเปล่า
+ 4. isNotEmpty: จะตรงข้ามกับ isEmpty คือ จะคืนค่า true เมื่อ List นั้นว่างเปล่า และจะคืนค่า false เมื่อ List นั้นมีข้อมูล
+ 5. length: จะคืนค่าความยาวของ List
+ 6. reversed: จะคืนค่าใน List จากตำแหน่งสุดท้ายจนถึงตำแหน่งแรก หรือการแสดงค่านับจากหลังมาหน้านั่นเอง
+ 7. single: ใช้ในการตรวจสอบว่าใน List นั้นมีตัวแปรประเภทเดียวหรือไม่ และคืนค่ากลับไป
+
+# การเข้าถึงค่าแรกและค่าสุดท้ายของ List
+
+เราสามารถเข้าถึงค่าตัวแรกและตัวสุดท้ายได้โดย
+
+//Ex
+
+	void main() {
+  	 List<String> drinks = ["water", "juice", "milk", "coke"];
+  	 print("First element of the List is: ${drinks.first}");
+  	 print("Last element of the List is: ${drinks.last}");
+	}  
+
+Output:
+
+	First element of the List is: water
+	Last element of the List is: coke
+
+# การตรวจสอบว่าเป็น List ที่ว่างเปล่าหรือไม่
+
+//Ex
+
+	void main() {
+ 	  List<String> drinks = ["water", "juice", "milk", "coke"];
+ 	  List<int>  ages = [];
+ 	  print("Is drinks Empty: "+drinks.isEmpty.toString());
+          print("Is drinks not Empty: "+drinks.isNotEmpty.toString());
+ 	  print("Is ages Empty: "+ages.isEmpty.toString());
+ 	  print("Is ages not Empty: "+ages.isNotEmpty.toString());
+   
+	}  
+
+Output:
+
+	Is drinks Empty: false
+	Is drinks not Empty: true
+	Is ages Empty: true
+	Is ages not Empty: false
+
+จะเห็นได้ว่าการแสดงค่าของมาเป็น true และ false โดยกรณีใช้ isEmpty, List ที่มีค่าจะคืนค่า false ส่วนที่ว่างเปล่าจะคืนค่า true , กรณีที่ใช้ isNotEmpty, List ที่มีค่าจะคืนค่า true ส่วนที่ว่างเปล่าจะคืนค่า false
+
+# การกลับด้าน List ในภาษา Dart
+
+การกลับด้าน List สามารถทำได้ง่ายๆ โดยใช้คำสั่ง .reversed 
+
+//Ex
+
+	void main() {
+ 	  List<String> drinks = ["water", "juice", "milk", "coke"];
+ 	  print("List in reverse: ${drinks.reversed}");
+	}  
+
+Output:
+
+	List in reverse: (coke, milk, juice, water)
+
+ จะเห็นว่าเราได้ List ที่กลับด้านโดยพิมพ์จากด้านหลังมาด้านหน้า
+
+ # การเพิ่มข้อมูล หรือค่าลงใน List
+
+ คำสั่งที่สามารถใช้ได้มีดังนี้
+ 
+ 1. add(): คือการเพิ่มค่า 1 ตัว ใน  1 ครั้ง
+ 2. addall(): คือการเพิ่มค่าหลายๆตัวใน 1 ครั้ง โดยแต่ละตัวจะคั่นด้วย , (comma) ใน [] (วงเล็บก้ามปู)
+ 3. insert(): ใช้เพิ่มค่าลงไปโดยระบุตำแหน่ง (index) ที่ต้องการเพิ่มลงไป
+ 4. insertall: ใช้เพิ่มค่าหลายๆ ตัวโดยระบุตำแหน่ง (index) ที่ต้องการลงไป
+
+# ตัวอย่างที่ 1: 
+
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้ add() เพิ่มค่าลงใน List
+
+	void main() {  
+ 	   var evenList = [2,4,6,8,10];  
+ 	   print(evenList);  
+ 	   evenList.add(12);  
+ 	   print(evenList);  
+	}  
+
+Output:
+
+	[2, 4, 6, 8, 10]
+	[2, 4, 6, 8, 10, 12] 
+
+# ตัวอย่างที่ 2:
+
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้ addall() เพิ่มค่าหลายๆ ตัวลงใน List
+
+	void main() {
+ 	 var evenList = [2, 4, 6, 8, 10];
+ 	 print(evenList);
+ 	 evenList.addAll([12, 14, 16, 18]);
+ 	 print(evenList);
+	}
+
+ Output:
+
+ 	[2, 4, 6, 8, 10]
+	[2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+ # ตัวอย่างที่ 3:
+
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้  insert() เพิ่มค่าลงใน List
+
+	void main() {
+	  List myList = [3, 4, 2, 5];
+	  print(myList);
+	  myList.insert(2, 15);
+	  print(myList);
+	}
+
+Output:
+
+	[3, 4, 2, 5]
+	[3, 4, 15, 2, 5]
+
+ # ตัวอย่างที่ 4:
+
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้ insertall() เพิ่มค่าหลายๆ ตัวลงใน List
+
+	void main() {
+	  var myList = [3, 4, 2, 5];
+	  print(myList);
+	  myList.insertAll(1, [6, 7, 10, 9]);
+	  print(myList);
+	}
+
+Output:
+
+  	[3, 4, 2, 5]
+	[3, 6, 7, 10, 9, 4, 2, 5]
+
+ *** NOTE:  การเพิ่มค่าข้างต้นทั้งหมด 4 ตัวอย่างไม่ใช่การแทนที่ ดังนั้นค่าหรือข้แมูลที่อยู่ใน List ก่อนหน้าจะยังอยู่เหมือนเดิม
+
+ อ้างอิง:
+ https://dart-tutorial.com/collections/list-in-dart/
+ https://www.darttutorial.org/dart-tutorial/dart-list/
+ https://www.geeksforgeeks.org/dart-programming-list/
+ https://dart.dev/language/collections

@@ -32,10 +32,8 @@ void main() {
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Answer is 10</code></pre>
-</details> 
-```dart
-hello 
+  <pre><code>Answer hello 
 hello world 
-hello
-```
+hello</code></pre>
+</details> 
+

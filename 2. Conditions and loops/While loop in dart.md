@@ -14,7 +14,7 @@ while(conditional expression) {
 
 **Flowchart While loop in dart มีขั้นตอนการทำงานของ while loop ดังรูปต่อไปนี้**
 
-![Flowchart](https://github.com/630710041/Flowchart/blob/main/Screenshot%202023-08-30%20013938.png)
+![Flowchart](https://github.com/630710041/Flowchart/blob/main/flowchart_whileloop.png)
 
 # ตัวอย่างโค้ด While loop ในภาษา Dart
 

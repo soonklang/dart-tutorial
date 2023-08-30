@@ -130,5 +130,132 @@ a =  Math.floor(Math.random() *(max - min + 1) + min);
 
 # 2.Point class
 
+ซึ่งใน point class นั้นก็จะมี features ต่างๆดังนี้
+- Point(x, y) ซึ่งเป็นการกำหนดตัวเลขของจุดหรือพิกัดโดย x,y จะเป็นตัวเเทนของตัวเลขที่เรากำหนดเราไว้
+- Point.x และ point.y ซึ่งเป็นการเข้าถึงพิกัดตัวเลขที่เรากำหนดไว้
+- Point.magnitude เป็นการหาค่าระยะทางระหว่างจุดที่เรากำหนดกับพิกัด (0,0)
+- Point1.distanceTo(Point2) เป็นการหาระยะทางระหว่างจุดสองจุด
+- Point1.squaredDistanceTo(์Point2) เป็นการยกกำลังสองของระยะทางระหว่างจุดสองจุด
+- Point * num เป็นการเพิ่มค่าของพิกัดโดยการคูณ
+- Point1 + Point2 และ Point1 - Point2 จะเป็นการบวก และ ลบกันของจุดสองจุด
+- Point1 == point2 เป็นการเท่ากันของจุดสองจุดและส่งค่ากลับมาเป็น boolean
+```dart
+import 'dart:math'; 
+void main() {
 
+var p1 = Point(1, 2);//กำหนดจุดที่ตำแหน่ง(0,0)
+var p2 = Point(10, 14);//กำหนดจุดที่ตำแหน่ง(10, 14)
+var p3 = Point(14.2, 13.3);//กำหนดจุดที่ตำแหน่ง(14.2, 13.3)
 
+print("x value of p1: ${p1.x}"); //เป็นการปริ้นค่า x ของ p1
+print("y value of p1: ${p1.y}"); //เป็นการปริ้นค่า y ของ p1
+
+print("Magnitude of p2: ${p2.magnitude}");//หาค่าระยะทางระหว่างจุดที่ p2 กับ (0,0)
+
+print("Distance between p1 and p2: ${p1.distanceTo(p2)}");//หาระยะทางระหว่างจุดของ p1 กับ p2
+
+print("Squared distance between p1 and p2: ${p1.squaredDistanceTo(p2)}");//หาระยะทางกำลังสองของจุด p1 กับ p2
+
+Point newP2 = p2*3; //เพิ่มค่าของพิกัด p2 เป็นสามเท่า
+print("x value of newP2 scaled by 3: ${newP2.x}");
+print("y value of newP2 scaled by 3: ${newP2.y}");
+
+Point sum = p2 + newP2;//เป็นการหาค่าผลรวมของจุดสองจุด
+print("x value of the sum of p2 and newP2: ${sum.x}");
+print("y value of the sum of p2 and newP2: ${sum.y}");
+
+Point diff = newP2 - p3;
+print("x value of the difference between newP2 and p3: ${diff.x}");
+print("y value of the difference between newP2 and p3: ${diff.y}");
+
+Point p4 = p1;
+print("p1 and newP2 are equal: ${p1==newP2}");
+print("p1 and p4 are equal: ${p1==p4}");
+}
+```
+output
+```
+x value of p1: 1
+y value of p1: 2
+Magnitude of p2: 17.204650534085253
+Distance between p1 and p2: 15.0
+Squared distance between p1 and p2: 225
+x value of newP2 scaled by 3: 30
+y value of newP2 scaled by 3: 42
+x value of the sum of p2 and newP2: 40
+y value of the sum of p2 and newP2: 56
+```
+## เปรียบเทียบ Point class กับ java
+ใน java ถ้าเราจะต้องการทำงานเกี่ยวกับจุดสองมิติเราสามารถ import java.awt.geom.Point2D มาใช้ได้
+
+```java
+import java.awt.geom.Point2D;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Point2D p1 = new Point2D.Double(3, 4);
+        Point2D p2 = new Point2D.Double(1, -2);
+
+       
+        System.out.println("P1: (" + p1.getX() + ", " + p1.getY() + ")");//เปรียบเสมือนการหาค่าของ (x,y)
+        System.out.println("P2: (" + p2.getX() + ", " + p2.getY() + ")");
+
+   
+        Point2D p3 = new Point2D.Double(p1.getX()+p2.getX(), p1.getY()+p2.getY());
+        System.out.println("P3: (" + p3.getX() + ", " + p3.getY() + ")"); //ส่วนการหาการบวกลบจะใช้วิธีนี้
+        
+        double distance = p1.distance(p2); //หาระยะทางของสองจุด
+
+        System.out.println("Distance between points: " + distance);
+    }
+}
+
+```
+output
+```
+P1: (3.0, 4.0)
+P2: (1.0, -2.0)
+P3: (4.0, 2.0)
+Distance between points: 6.324555320336759
+```
+## เปรียบเทียบ Point class กับ c
+ใน ภาษา c นั้น จะไม่มีคราสให้ import เหมือนกับภาษา dart เราแต่เราสามารถทำได้โดยการสร้างขึ้นมาเองได้
+```c
+#include <stdio.h>
+#include <math.h>
+
+struct Point {
+    double x;
+    double y;
+//สร้าาง struct เอาไว้เก็บค่าจุด x,y
+};
+
+double distance(struct Point p1, struct Point p2) {
+    double dx = p2.x - p1.x;
+    double dy = p2.y - p1.y;
+    return sqrt(dx*dx + dy*dy);
+//สร้างคราส distance เอาไว้หาระยะทางระหว่างจุด
+}
+
+int main() {
+    struct Point point1 = {3, 4};
+    struct Point point2 = {1, -2};
+
+    printf("Point 1: (%lf, %lf)\n", point1.x, point1.y);
+    printf("Point 2: (%lf, %lf)\n", point2.x, point2.y);
+
+    double dist = distance(point1, point2);
+    printf("Distance between points: %lf\n", dist);
+
+    return 0;
+}
+
+```
+output
+```
+Point 1: (3.000000, 4.000000)
+Point 2: (1.000000, -2.000000)
+Distance between points: 6.324555
+```
+ปล. อ้างอิงวิธีนี้จาก chatGPT

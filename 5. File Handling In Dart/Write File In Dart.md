@@ -68,6 +68,7 @@ void main() {
 
 ตัวอย่าง การเพิ่มข้อมูลในไฟล์โดยการใช้ **FileMode.append**
 
+#### `ตัวอย่าง`
 ```dart
 // dart program to write to existing file
 import 'dart:io';
@@ -94,6 +95,7 @@ void main() {
 โดยวิธีนี้จะต้องระบุชื่อ directory ที่ต้องการจะสร้างไฟล์และชื่อของไฟล์ที่ต้องการจะสร้าง<br>
 ตัวอย่าง หากต้องการสร้างไฟล์ชื่อ **sample.txt** ใน directory ชื่อ **my_files** สามารถทำได้ดังนี้:
 
+#### `ตัวอย่าง`
 ```dart
 import 'dart:io'; 
 
@@ -108,6 +110,7 @@ void main() {
 
 ตัวอย่าง การขอให้ผู้ใช้ป้อน **name** และ **phone** ของนักเรียน 3 คนและเขียนลงในไฟล์ csv ชื่อ **students.csv**
 
+#### `ตัวอย่าง`
 ```dart
 // dart program to write to csv file
 import 'dart:io';
@@ -143,7 +146,7 @@ Congratulations!! CSV file written successfully.</code>
 </pre>
 </details>
 
-ไฟล์ **students.csv** จะมีลักษณะดังนี้:
+> ไฟล์ **students.csv** จะมีลักษณะดังนี้:
 ```
 Name,Phone
 John,1234567890
@@ -156,10 +159,10 @@ Elon,0122112322
 ## Writing to a Stream
 
 ในบางกรณี เราอาจต้องเขียนข้อมูลลงในไฟล์ด้วยวิธีที่ยืดหยุ่นมากขึ้น เช่น อาจจะต้องเขียนข้อมูลเป็นส่วนๆ หรืออาจต้องเขียนข้อมูลจากหลาย ๆ แหล่ง 
-คลาส **File** มีเมธอด **openWrite()** ที่สามารถคืนค่า StreamSink object ได้ โดย object นี้สามารถใช้ในการเขียนข้อมูลไปยังไฟล์ในรูปแบบ streaming
-
+คลาส **File** มีเมธอด **openWrite()** ที่สามารถคืนค่า StreamSink object ได้ โดย object นี้สามารถใช้ในการเขียนข้อมูลไปยังไฟล์ในรูปแบบ streaming<br>
 ตัวอย่าง เมื่อต้องการเขียนข้อความ "Hello, world!" แล้วข้อความ "Goodbye, world!" ไปยังไฟล์ **sample.txt** สามารถทำได้ดังนี้:
 
+#### `ตัวอย่าง`
 ```dart
 import 'dart:io'; 
 
@@ -180,12 +183,11 @@ void main() {
   ## Write to an Existing File
 
   ในการเขียนข้อมูลลงในไฟล์ที่มีอยู่ก่อนแล้วเราต้องเพิ่มพารามิเตอร์ลงในฟังก์ชัน open() ดังนี้:<br>
-  "a" - Append - จะเพิ่มข้อมูลต่อกับส่วนท้ายของไฟล์<br>
-  "w" - Write - จะเขียนข้อมูลทับเนื้อหาที่มีอยู่ก่อนแล้วในไฟล์
+  > "a" - Append - จะเพิ่มข้อมูลต่อกับส่วนท้ายของไฟล์<br>
+  > "w" - Write - จะเขียนข้อมูลทับเนื้อหาที่มีอยู่ก่อนแล้วในไฟล์
 
   #### `ตัวอย่าง`
-  
-  ไฟล์ **demofile.txt** มีข้อมูลอยู่ก่อนแล้วดังนี้:
+  > ไฟล์ **demofile.txt** มีข้อมูลอยู่ก่อนแล้วดังนี้:
   ```
   Hello! Welcome to demofile.txt
   This file is for testing purposes.
@@ -193,8 +195,7 @@ void main() {
   ```
 
   #### `ตัวอย่างที่ 1`
-
-  เปิดไฟล์ **demofile.txt** และเพิ่มข้อมูลลงในไฟล์:
+  > เปิดไฟล์ **demofile.txt** และเพิ่มข้อมูลลงในไฟล์:
   ```python
   f = open("demofile.txt", "a")
   f.write("Now the file has more content!")
@@ -215,8 +216,7 @@ void main() {
   </details>
 
   #### `ตัวอย่างที่ 2`
-
-  เปิดไฟล์ **demofile.txt** และเขียนข้อมูลทับลงไปในไฟล์:
+  > เปิดไฟล์ **demofile.txt** และเขียนข้อมูลทับลงไปในไฟล์:
   ```python
   f = open("demofile.txt", "w")
   f.write("Woops! I have deleted the content!")
@@ -239,13 +239,12 @@ void main() {
   ## Create a New File
 
   หากต้องการสร้างไฟล์ใหม่ใน Python ต้องใช้เมธอด open() ร่วมกับหนึ่งในพารามิเตอร์ต่อไปนี้:<br>
-  "x" - Create - จะสร้างไฟล์และ return ค่า error กลับมาหากมีไฟล์นั้นอยู่ก่อนแล้ว<br>
-  "a" - Append - จะสร้างไฟล์หากไฟล์ที่สร้างไม่ใช่ไฟล์ที่มีอยู่ก่อนแล้ว<br>
-  "w" - Write - จะสร้างไฟล์หากไฟล์ที่สร้างไม่ใช่ไฟล์ที่มีอยู่ก่อนแล้ว
+  > "x" - Create - จะสร้างไฟล์และ return ค่า error กลับมาหากมีไฟล์นั้นอยู่ก่อนแล้ว<br>
+  > "a" - Append - จะสร้างไฟล์หากไฟล์ที่สร้างไม่ใช่ไฟล์ที่มีอยู่ก่อนแล้ว<br>
+  > "w" - Write - จะสร้างไฟล์หากไฟล์ที่สร้างไม่ใช่ไฟล์ที่มีอยู่ก่อนแล้ว
 
   #### `ตัวอย่างที่ 1`
-  
-  สร้างไฟล์ชื่อ **myfile.txt**:
+  >สร้างไฟล์ชื่อ **myfile.txt**:
   ```python
   f = open("myfile.txt", "x")
   ```
@@ -258,8 +257,7 @@ void main() {
   </details>
 
   #### `ตัวอย่างที่ 2`
-  
-  การสร้างไฟล์ใหม่หากไฟล์นั้นไม่ได้มีอยู่ก่อนแล้ว:
+  > การสร้างไฟล์ใหม่หากไฟล์นั้นไม่ได้มีอยู่ก่อนแล้ว:
   ```python
   f = open("myfile.txt", "a")
   ```
@@ -291,7 +289,6 @@ void main() {
   โดยโหมด "w" จะใช้เพื่อเขียนไฟล์ แต่ถ้าหากไม่มีไฟล์นั้น โหมดนี้จะสร้างไฟล์ให้เราโดยอัตโนมัติ:
 
   #### `ตัวอย่าง`
-  
   ```c
   FILE *fptr;
 
@@ -310,7 +307,6 @@ void main() {
   ในการแทรกข้อมูลนั้น เราสามารถใช้ฟังก์ชัน fprint() และเพิ่มตัวชี้ (ตัวอย่างเช่น fptr) หรือเนื้อหาบางส่วนได้:
 
   #### `ตัวอย่าง`
-  
   ```c
   FILE *fptr;
 
@@ -333,8 +329,7 @@ void main() {
 
   **!NOTE** ถ้าเราเขียนข้อมูลในไฟล์ที่มีอยู่แล้ว ข้อมูลเก่าจะถูกลบ และถูกแทนที่ด้วยข้อมูลใหม่ นี่เป็นสิ่งสําคัญที่ต้องจำให้ขึ้นใจเนื่องจากเราอาจจะเผลอลบข้อมูลที่มีอยู่โดยไม่ตั้งใจ
 
-  #### `ตัวอย่าง`
-  
+  #### `ตัวอย่าง` 
   ```c
   fprintf(fptr, "Hello World!");
   ```
@@ -358,7 +353,6 @@ void main() {
   ซึ่งเมธอดนี้อยู่ใน catch block ดังนั้นจะส่ง IOException กลับมาหากมีข้อผิดพลาดเกิดขึ้น
 
   #### `ตัวอย่าง`
-  
   ```java
   import java.io.File;  // Import the File class
   import java.io.IOException;  // Import the IOException class to handle errors
@@ -390,7 +384,6 @@ void main() {
   ถ้าหากต้องการสร้างไฟล์ใน directory เฉพาะ ให้ระบุ **path** ของไฟล์และใช้เครื่องหมาย **double backslashes** (สําหรับ Windows แต่ถ้าเป็น Mac หรือ Linux สามารถเขียน path เช่น: /Users/name/filename.txt ได้เลย)
 
   #### `ตัวอย่าง`
-  
   ```java
   import java.io.File; 
   import java.io.IOException;
@@ -426,7 +419,6 @@ void main() {
   เราจะใช้คลาส **FileWriter** ร่วมกับเมธอด **write()** เพื่อเขียนข้อมูลบางส่วนในไฟล์ที่เราสร้างขึ้น โดยเมื่อเขียนข้อมูลที่ต้องการใส่ลงในไฟล์เสร็จแล้วควรปิดท้ายด้วยเมธอด **close()**:
 
   #### `ตัวอย่าง`
-  
   ```java
   import java.io.FileWriter;
   import java.io.IOException;
@@ -458,15 +450,15 @@ void main() {
 1. ภาษา Dart และภาษา Python มีลักษณะการเขียนโปรแกรมในการเขียนไฟล์ที่ง่ายและกระชับกว่าภาษา C และภาษา Java
 2. หลังจากเพิ่มข้อมูลในไฟล์เสร็จแล้วภาษา dart ไม่จำเป็นต้องใช้เมธอดเพื่อปิดไฟล์เหมือนกับภาษาอื่น ๆ ยกเว้นการเขียนไฟล์แบบ Stream
 3. ภาษา Dart และภาษา Java ไม่จำเป็นต้องระบุพารามิเตอร์เพื่อบอกว่าต้องการทำอะไรกับไฟล์
-ในขณะที่ภาษา Python และภาษา C จะต้องระบุพารามิเตอร์ตัวอักษรหนึ่งตัว เช่น "a" และ "w"
+ในขณะที่ภาษา Python และภาษา C จะต้องระบุพารามิเตอร์ตัวอักษรหนึ่งตัว เช่น "a" หรือ "w"
 
 ## Reference
 
 https://dart-tutorial.com/file-handling-in-dart/write-file-in-dart/<br>
+https://dart.helpful.codes/tutorials/How-to-Write-Files/<br>
 https://www.w3schools.com/python/python_file_write.asp<br>
 https://www.w3schools.com/c/c_files.php<br>
 https://www.w3schools.com/c/c_files_write.php<br>
 https://www.w3schools.com/java/java_files_create.asp<br>
-https://dart.helpful.codes/tutorials/How-to-Write-Files/<br>
 
 

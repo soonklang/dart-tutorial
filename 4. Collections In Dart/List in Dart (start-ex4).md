@@ -45,6 +45,34 @@
 ```bash
       var scores = [];
 ```
+
+### การสร้าง List ในภาษาอื่นๆ
+
+> Java
+```bash
+	//Creating a List of type String using ArrayList  
+	List<String> list=new ArrayList<String>();  
+  
+	//Creating a List of type Integer using ArrayList  
+	List<Integer> list=new ArrayList<Integer>();  
+  
+	//Creating a List of type Book using ArrayList  
+	List<Book> list=new ArrayList<Book>();  
+  
+	//Creating a List of type String using LinkedList  
+	List<String> list=new LinkedList<String>(); 
+```
+> Python
+```bash
+	# list with elements of different data types
+	list1 = [1, "Hello", 3.4]
+
+	# list with duplicate elements
+	list1 = [1, "Hello", 3.4, "Hello", 1]
+
+	# empty list
+	list3 = []
+```
 ## ประเภทของ List
 
   List ถูกแบ่งออกเป็น 2 ประเภท
@@ -365,12 +393,117 @@
 ```
 ###### NOTE:  การเพิ่มค่าข้างต้นทั้งหมด 4 ตัวอย่างไม่ใช่การแทนที่ ดังนั้นค่าหรือข้อมูลที่อยู่ใน List ก่อนหน้าจะยังอยู่เหมือนเดิม
 
+### การเพิ่มข้อมูลใน List ในภาษาอื่นๆ
+> Java
+
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้ `add()` เพิ่มค่าลงใน List ของ Java
+
+```bash
+	// Java Program to Add Elements to a List
+	
+	// Importing all utility classes
+	import java.util.*;
+	
+	// Main class
+	class GFG {
+	
+	// Main driver method
+	public static void main(String args[])
+	{
+	// Creating an object of List interface,
+	// implemented by ArrayList class
+		List<String> al = new ArrayList<>();
+	
+	// Adding elements to object of List interface
+	// Custom elements
+		al.add("Geeks");
+		al.add("Geeks");
+		al.add(1, "For");
+	
+	// Print all the elements inside the
+	// List interface object
+		System.out.println(al);
+	}
+}
+```
+> Python
+
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้ `add()` เพิ่มค่าลงใน List ของ Python
+
+```bash
+	# Python program to demonstrate
+	# Addition of elements in a List
+	
+	# Creating a List
+	List = []
+	print("Initial blank List: ")
+	print(List)
+	
+	# Addition of Elements
+	# in the List
+	List.append(1)
+	List.append(2)
+	List.append(4)
+	print("\nList after Addition of Three elements: ")
+	print(List)
+	
+	# Adding elements to the List
+	# using Iterator
+	for i in range(1, 4):
+		List.append(i)
+	print("\nList after Addition of elements from 1-3: ")
+	print(List)
+	
+	# Adding Tuples to the List
+	List.append((5, 6))
+	print("\nList after Addition of a Tuple: ")
+	print(List)
+	
+	# Addition of List to a List
+	List2 = ['For', 'Geeks']
+	List.append(List2)
+	print("\nList after Addition of a List: ")
+	print(List)
+
+```
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้ `append()` เพิ่มค่าลงใน List ของ Python
+```bash
+	numbers = [21, 34, 54, 12]
+
+	print("Before Append:", numbers)
+
+	# using append method
+	numbers.append(32)
+
+	print("After Append:", numbers)
+```
+โปรแกรมด้านล่างแสดงตัวอย่างการใช้ `extend()` เพิ่มค่าลงใน List ของ Python
+```bash
+	numbers = [1, 3, 5]
+
+	even_numbers = [4, 6, 8]
+
+	# add elements of even_numbers to the numbers list
+	numbers.extend(even_numbers)
+
+	print("List after append:", numbers) 
+```
+###### NOTE:  การใช้ `append()` และ `extend()` ใน Python จะเพิ่มค่าเข้าไปใน List ที่ตำแหน่งสุดท้ายเสมอ
+
  ## อ้างอิง:
  
 *<https://dart-tutorial.com/collections/list-in-dart/>*
  
- *<https://www.darttutorial.org/dart-tutorial/dart-list/>*
+*<https://www.darttutorial.org/dart-tutorial/dart-list/>*
  
- *<https://www.geeksforgeeks.org/dart-programming-list/>*
+*<https://www.geeksforgeeks.org/dart-programming-list/>*
  
- *<https://dart.dev/language/collections>*
+*<https://dart.dev/language/collections>*
+
+*<https://www.geeksforgeeks.org/list-interface-java-examples/>*
+
+*<https://www.javatpoint.com/java-list>*
+
+*<https://www.geeksforgeeks.org/python-lists/>*
+
+*<https://www.programiz.com/python-programming/list#google_vignette>*

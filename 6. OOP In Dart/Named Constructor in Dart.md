@@ -140,7 +140,7 @@ void main() {
 
 ## Differences Named Constructors in other languages
 ![](https://scontent.fbkk4-4.fna.fbcdn.net/v/t1.15752-9/370567382_631034772181519_3993493830743264420_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHLAkaxUI6O_gDFsYGEOkQulBd9InIH5k6UF30icgfmTmcIwbK1k9yLEql3y7Cb3jkpFl2Wbe3m1ON-qFwl78Jk&_nc_ohc=bu1ia4fy-8gAX8okL0T&_nc_ht=scontent.fbkk4-4.fna&oh=03_AdQRCnqP6FwzslXUgiN2Ol9Y49wJuDfKVjmKt05lnpq8ZQ&oe=65171FF9)
-**"Named constructor"** หรือ **"Alternative constructor"** เป็นแนวคิดในการสร้าง ** Object** ใน **Programming language** โดยทั่วไปแล้วแนวคิดนี้เป็นเกี่ยวกับการสร้าง **Object** โดยใช้ **Methob** หรือ **Function** ที่มีชื่อเฉพาะเพื่อสร้าง **Object** ที่ต้องการ 
+**"Named constructor"** หรือ **"Alternative constructor"** เป็นแนวคิดในการสร้าง **Object** ใน **Programming language** โดยทั่วไปแล้วแนวคิดนี้เป็นเกี่ยวกับการสร้าง **Object** โดยใช้ **Methob** หรือ **Function** ที่มีชื่อเฉพาะเพื่อสร้าง **Object** ที่ต้องการ 
 
 ------------
 

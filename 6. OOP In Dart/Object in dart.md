@@ -116,11 +116,148 @@ Life Span: 10.</code></pre>
 Audi Car Started.</code></pre>
 </details>
 
-# Keypointห
+# Keypoint
 - method **main** คือจุดเริ่มต้นของโปรแกรม จึงจำเป็นต้องดูผลลัพธ์เสมอ  
 - keyword **new** สามารถใช้เพื่อสร้าง object ใหม่ได้ แต่ไม่จำเป็น
 
-# Difference Between Dart and Java and Python
+# Difference Between Dart , C , Java and Python
+### Dart
+```dart
+// Defining class  
+class Student {  
+   String? stdName;  
+   int? stdAge;  
+   int? stdRoll_nu;  
+     
+   // defining class function  
+    showStdInfo() {  
+        print("Student Name is : ${stdName}");  
+        print("Student Age is : ${stdAge}");  
+        print("Student Roll Number is : ${stdRoll_nu}");  
+  
+               }  
+}  
+void main () {  
+  
+  // Creating object called std  
+  var std = new Student();  
+  std.stdName = "Peter";  
+  std.stdAge =24;  
+  std.stdRoll_nu = 90001;  
+// Accessing class Function  
+ std.showStdInfo();  
+}  
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Student Name is: Peter
+Student Age is: 24
+Student Roll Number is: 90001</code></pre>
+</details>
 
+### C
+```c
+#include <stdio.h>
+
+// Defining structure
+struct Student {
+    char stdName[50];
+    int stdAge;
+    int stdRoll_nu;
+};
+
+// Defining function
+void showStdInfo(struct Student std) {
+    printf("Student Name is: %s\n", std.stdName);
+    printf("Student Age is: %d\n", std.stdAge);
+    printf("Student Roll Number is: %d\n", std.stdRoll_nu);
+}
+
+int main() {
+    // Creating structure variable
+    struct Student std;
+    strcpy(std.stdName, "Peter");
+    std.stdAge = 24;
+    std.stdRoll_nu = 90001;
+
+    // Accessing function
+    showStdInfo(std);
+
+    return 0;
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Student Name is: Peter
+Student Age is: 24
+Student Roll Number is: 90001</code></pre>
+</details>
+
+### Java
+```java
+// Defining class
+class Student {
+    String stdName;
+    int stdAge;
+    int stdRoll_nu;
+
+    // Defining class method
+    void showStdInfo() {
+        System.out.println("Student Name is: " + stdName);
+        System.out.println("Student Age is: " + stdAge);
+        System.out.println("Student Roll Number is: " + stdRoll_nu);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating object called std
+        Student std = new Student();
+        std.stdName = "Peter";
+        std.stdAge = 24;
+        std.stdRoll_nu = 90001;
+        
+        // Accessing class method
+        std.showStdInfo();
+    }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Student Name is: Peter
+Student Age is: 24
+Student Roll Number is: 90001</code></pre>
+</details>
+
+### Python
+```python
+class Student:
+    def __init__(self):
+        self.stdName = ""
+        self.stdAge = 0
+        self.stdRoll_nu = 0
+    
+    def showStdInfo(self):
+        print("Student Name is:", self.stdName)
+        print("Student Age is:", self.stdAge)
+        print("Student Roll Number is:", self.stdRoll_nu)
+
+# Creating object called std
+std = Student()
+std.stdName = "Peter"
+std.stdAge = 24
+std.stdRoll_nu = 90001
+
+# Accessing class method
+std.showStdInfo()
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Student Name is: Peter
+Student Age is: 24
+Student Roll Number is: 90001</code></pre>
+</details>
 
 # Reference
+https://dart-tutorial.com/object-oriented-programming/object-in-dart/  
+https://www.javatpoint.com/dart-classes-and-object

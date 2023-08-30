@@ -56,7 +56,7 @@ _จากโค้ดตัวอย่างที่1 โค้ดด้า�
 #include <stdio.h>
 // Base class
 struct Laptop {
-// Constructor
+  // Constructor
   Laptop() {
     printf("Laptop constructor\n");
   }

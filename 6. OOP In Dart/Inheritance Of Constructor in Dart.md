@@ -51,6 +51,7 @@ _จากโค้ดตัวอย่างที่1 โค้ดด้า�
 
 <details> 
    <summary><strong>C Code</strong></summary>
+
    ```c
    #include <stdio.h>
    // Base class
@@ -73,6 +74,7 @@ int main() {
   struct MacBook macbook;
   return 0;
 }
+
    ```
 </details>
 

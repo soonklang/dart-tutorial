@@ -340,10 +340,43 @@ _จากโค้ดตัวอย่างที่ 3 โค้ดด้า�
    <summary><strong>ตัวอย่างที่ 3 ในรูปแบบภาษา C</strong></summary>
 
 ```c
+#include <stdio.h>
+#include <string.h>
+
+struct Person {
+    char name[50];
+    int age;
+};
+
+struct Student {
+    struct Person person;
+    int rollNumber;
+};
+
+void initPerson(struct Person *p, const char *name, int age) {
+    strcpy(p->name, name);
+    p->age = age;
+}
+
+void initStudent(struct Student *s, const char *name, int age, int rollNumber) {
+    initPerson(&(s->person), name, age);
+    s->rollNumber = rollNumber;
+}
+
+int main() {
+    struct Student student;
+    initStudent(&student, "John", 20, 1);
+
+    printf("Student name: %s\n", student.person.name);
+    printf("Student age: %d\n", student.person.age);
+    printf("Student roll number: %d\n", student.rollNumber);
+
+    return 0;
+}
 
 ```
 __คำอธิบายโค้ด__ 
-
+ในภาษา C เราใช้โครงสร้าง (struct) เพื่อแทนคลาสและใช้ฟังก์ชันสำหรับการกำหนดค่าแทนการสร้าง constructor ในภาษาอื่น ๆ และใช้เว้นวรรคแทนการใช้ {} ในภาษา Dart หรือภาษาอื่น ๆ ในการกำหนด block ของโค้ด
 </details>
 
 <details> 
@@ -380,8 +413,6 @@ public class Main {
     }
 }
 ```
-__คำอธิบายโค้ด__ 
-
 </details>
 
 <details> 
@@ -403,8 +434,6 @@ print("Student name:", student.name)
 print("Student age:", student.age)
 print("Student roll number:", student.rollNumber)
 ```
-__คำอธิบายโค้ด__ 
-
 </details>
 
 #### `ตัวอย่างที่ 4` การสืบทอดคอนสตรักเตอร์ที่มีพารามิเตอร์แบบชื่อ
@@ -550,8 +579,6 @@ _จากโค้ดตัวอย่างที่ 5 โค้ดด้า�
 ```c
 
 ```
-__คำอธิบายโค้ด__ 
-
 </details>
 
 <details> 
@@ -560,8 +587,6 @@ __คำอธิบายโค้ด__
 ```java
 
 ```
-__คำอธิบายโค้ด__ 
-
 </details>
 
 <details> 
@@ -570,8 +595,6 @@ __คำอธิบายโค้ด__
 ```Python
 
 ```
-__คำอธิบายโค้ด__ 
-
 </details>
       
 # Reference

@@ -279,48 +279,10 @@ int main() {
 โค้ดด้านบนเป็นการแปลงโค้ด Dart เป็นภาษา C โดยใช้ `struct` เพื่อสร้างคลาสและการสืบทอด โดยฟังก์ชัน constructor ถูกแปลงเป็นการใช้ `printf` เพื่อแสดงผลลัพธ์เช่นเดียวกันกับคำสั่ง `print` ใน Dart และ main ใน C มีการสร้างอ็อบเจกต์ของคลาส MacBook อย่างเดียวและส่งคืนค่า 0 เพื่อแสดงว่าโปรแกรมทำงานสมบูรณ์แล้ว
 
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Java
-  การสืบทอด Constructor ใน Java มีลักษณะที่คล้ายคลึงกัน โดยใน Java เราใช้ super() เพื่อเรียก Constructor ของคลาสแม่เช่นกัน แต่ยังมีบางความแตกต่างบ้างที่ควรรู้
-1. `Default Constructor`
-    - Dart ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ<br>
-    - Java ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติ แต่ถ้าระบุ Constructor ใด ๆ จะต้องระบุ default constructor ด้วยเอง<br>
-**จากตัวอย่างด้านล่างนี้** จะอธิบายในกรณีที่มีการระบุ Constructor ใด ๆ และจะต้องกำหนดค่า default constructor ด้วยตนเองในภาษา java
-```java
-class NoDefaultConstructor {
-    private int value;
 
-    // มีการระบุ Constructor อื่นที่ไม่ใช่ default constructor
-    public NoDefaultConstructor(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        // เราไม่ได้กำหนด default Constructor ในคลาส NoDefaultConstructor
-        // ดังนั้นเราต้องสร้าง default Constructor ด้วยตัวเองเมื่อสร้างวัตถุ
-        NoDefaultConstructor obj1 = new NoDefaultConstructor(10);
-        System.out.println("Value from constructor: " + obj1.getValue());
-    }
-}
-
-```
-2. `การเรียก Constructor ของคลาสแม่ (Implicit Call to Super Constructor)`
-    - Dart และ Java ถ้าไม่ระบุ super() ใน Constructor ของคลาสลูกจะเรียก Constructor ที่ไม่มีพารามิเตอร์ของคลาสแม่โดยอัตโนมัติ
-3. `การวางตำแหน่งการเรียก Super Constructor (Super Constructor Call Placement)`
-    - Dart ใช้ **super()** เพื่อเรียก Constructor ของคลาสแม่ในร่าง Constructor ของคลาสลูก โดย**จำเป็นต้องเรียกในร่าง Constructor ของคลาสลูก**
-    - Java ใช้ **super()** ในร่าง Constructor ของคลาสลูกเพื่อเรียก Constructor ของคลาสแม่ โดยต้องเป็น**คำสั่งแรกในร่าง Constructor ของคลาสลูก**
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python
-  การสืบทอด Constructor ใน Python คล้ายกันในแง่ของพื้นฐาน แต่ก็มีบางความแตกต่างที่ควรนำเสนอ:
-1. `Default Constructor`
-    - Dart และ Python ถ้าคลาสไม่ระบุ Constructor ใด ๆ ระบบจะสร้าง Constructor ที่ไม่มีพารามิเตอร์โดยอัตโนมัติและจะถูกเรียกใช้งานเมื่อสร้างอ็อบเจกต์ของคลาสโดยไม่ต้องระบุอะไรเพิ่มเติม
-2. `การเรียก Constructor ของคลาสแม่ (Implicit Call to Super Constructor)`
-    - Dart เมื่อสร้างอ็อบเจกต์ของคลาสลูก โครงสร้าง Constructor ของคลาสแม่จะถูกเรียกก่อน Constructor ของคลาสลูก โดยเราจะใช้ super() เพื่อเรียก Constructor ของคลาสแม่ การเรียก super() จะต้องอยู่ในร่าง Constructor ของคลาสลูกเท่านั้น
-    - Python เมื่อสร้างอ็อบเจกต์ของคลาสลูกใน การเรียก Constructor ของคลาสแม่จะเกิดขึ้นอัตโนมัติ โดยไม่ต้องระบุการเรียกในคลาสลูก
-3. `การวางตำแหน่งการเรียก Super Constructor (Super Constructor Call Placement)`
-    - Dart คำสั่ง super() จะต้องอยู่ในร่างของ Constructor ของคลาสลูกเท่านั้นและไม่สามารถเรียกต่อจากการทำงานอื่นได้
-    - Python Constructor ของคลาสแม่จะถูกเรียกก่อน Constructor ของคลาสลูกโดยอัตโนมัติและไม่ต้องเรียก super().__init__() ใน Constructor ของคลาสลูก
+
 # Reference
+https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart
+https://www.ninenik.com/การใช้งาน_การสืบทอด_ Inheritance_class_ในภาษา_Dart_เบื้องต้น-944.html
+https://www.geeksforgeeks.org/inheritance-in-python

@@ -34,7 +34,7 @@ class Person{
  ```dart
 class Person {
   String? name;
-  String? lastName
+  String? lastName;
   int? age;
   
   // Constructor
@@ -43,8 +43,8 @@ class Person {
   // Method
   void display() {
     print("Name: ${this.name}");
-    print("Last Name: ${this.age}");
-    print("Age: ${this.subject}");
+    print("Last Name: ${this.lastName}");
+    print("Age: ${this.age}");
   }
 }
 
@@ -59,10 +59,10 @@ Name: David
 Last Name: Carter
 Age: 0
 ```
-- ตัวอย่าง Optional Parameters ในภาษา Java
+### ตัวอย่าง Optional Parameters ในภาษา Java
 > หมายเหตุ ภาษา Java นั้นไม่มี Optional Parameters เป็นการประยุกต์ใช้จาก Parameters แบบปกติ
 ```java
-Class Person{
+class Person{
   String name;
   String lastName;
   int age;
@@ -89,7 +89,7 @@ Class Person{
   }
 
   public static void main(String arg[]){
-    Person person = new Person("David","Carter")
+    Person person = new Person("David","Carter");
     person.display();
   }
 }
@@ -106,24 +106,24 @@ Age: 0
  สำหรับ **lastName** เเละ **age** จะถูกกำหนดเป็น Parameters ที่มีชื่อโดยครอบด้วยเครื่องหมาย {} (ปีกกา)
 **Syntax**
 ```dart
-class ShowMyDeails{
+class ShowMyDetails{
   String? name;
-  String? lastName
+  String? lastName;
   int? age;
 
-  ShowMyDetails(String name, {String lastName, int age});
+  ShowMyDetails(this.name,{this.lastName,this.age=0});
 
   void display(){
     print("Name: ${this.name}");
-    print("Last Name: ${this.age}");
-    print("Age: ${this.subject}");
-  }
-    
-  void main() {
+    print("Last Name: ${this.lastName}");
+    print("Age: ${this.age}");
+  }  
+}
+
+void main(){
     ShowMyDetails smd = ShowMyDetails("Jay", age: 24 ,lastName: "Tillu",);
     smd.display();
   }
-}
 ```
 - Output
 >สังเกตที่ฟังก์ชัน Main() ตรงบรรทัดการสร้าง Object ใช้การส่งค่าผ่านชื่อของ Parameters ถึงเเม้ว่าลำดับจะไม่ถูกต้อง Constructor ก็ยังทำงานได้ตามปกติ
@@ -131,6 +131,71 @@ class ShowMyDeails{
 Name : Jay
 Last Name : Tillu
 Age : 24
+```
+> หมายเหตุ ภาษา Java ไม่มีการ Support การตั้งชื่อ Parameters
+
+## ตัวอย่างที่ 8 : การกำหนด Default Values ใน Constructor
+- เป็นการกำหนดค่าเริ่มต้นหากไม่มีการส่งค่าผ่านการเรียกใช้ Constructor ตอนสร้าง Object
+- ตัวอย่างด้านล่างนี้ เราได้ทำการสร้าง Class Square มี Property คือ **height** เเละ **width** จากนั้นสร้าง Constructor เพื่อ initialize ค่าของ Property ทั้งสองตัว เเละกำหนด Default Values ให้กับ **height** เเละ **width** ใน Constructor
+```dart
+class Square {
+  int? height;
+  int? width;
+
+  // Assign Default Values in Constructor
+  Square({this.height = 2, this.width = 2});
+
+  // Method
+  void display() {
+    print("Square height: ${this.height}");
+    print("Square width: ${this.width}");
+    
+  }
+}
+
+void main(){
+  Square sq1 = Square();
+  sq1.display();
+}
+```
+- Output
+- เมื่อไม่มีการส่งค่าผ่านการเรียนใช้ Constructor ค่าของ Property จะเป็นไปตามค่าที่กำหนด Default Values ไว้
+```
+Square height: 2
+Square width: 2
+ ```
+### ตัวอย่างการกำหนด Default Values ใน Constructor ในภาษา java
+ ```java
+public class MyClass {
+   private int x;
+   private String y;
+
+   public MyClass() {
+      //Assign Default Values
+      this.x = 5;
+      this.y = "Educative";
+      
+   }
+
+   public int getX() {
+      return x;
+   }
+
+   public String getY() {
+      return y;
+   }
+
+   public static void main(String[] args) {
+     MyClass myClass = new MyClass();
+     System.out.println(myClass.getX());
+     System.out.println(myClass.getY()); 
+   }
+}
+ ```
+- Output
+```
+5
+Educative
 ```
 
 

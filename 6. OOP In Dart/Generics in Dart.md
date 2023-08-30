@@ -1,6 +1,24 @@
 # *Generics in Dart*
 Generics เป็นวิธีการสร้าง Class, Function หรือ Method ที่สามารถทำงานได้กับข้อมูล (Objects)
 ประเภทต่างๆ ให้มีลักษณะ Dynamic ตามการเรียกใช้งาน โดยหลักการคือ ให้ผู้เรียกใช้เป็นคนกำหนดเองว่าdata type ที่จะทำงานด้วยคืออะไร
+ ## *Contens*
+ - [Syntax](#syntax)
+ - [Example 1 Without Using Generics](#example-1-without-using-generics)
+ - [Dart Generics Class](#dart-generics-class)
+ - [Example 2 Using Generics](#example-2-using-generics)
+ - [Generics Type Variable](#generics-type-variable)
+ - [Generics Methods](#generics-methods)
+ - [Example 3 Generic Method With Multiple Parameters](#example-3-generic-method-with-multiple-parameters)
+ - [Restricting the Type of Data](#restricting-the-type-of-data)
+ - [Example 4 Generic Class With Restriction](#example-4-generic-class-with-restriction)
+ - [Example 5 Generic Method With
+   Restriction](#example-5-generic-method-with-restriction)
+ - [Using Generics with Dart
+   Collections](#using-generics-with-dart-collections)
+ - [Example6](#example-6)
+ - [Generics in Java Python and C](#generics-in-java-python-and-c)
+ - [Advantages of Dart Generics](#advantages-of-dart-generics)
+ - [References](#references)
 
 ## *Syntax*
 
@@ -11,7 +29,7 @@ Generics เป็นวิธีการสร้าง Class, Function หร
 
 > T ภายในเครื่องหมาย `< >` จะอธิบายในหัวข้อ Generics Type Variable
 
-## *Example1* : Without Using Generics
+## *Example 1* Without Using Generics
 
    ```dart  
     // สร้าง class สำหรับ int
@@ -58,7 +76,7 @@ Generics เป็นวิธีการสร้าง Class, Function หร
  ```
 พารามิเตอร์ T หมายถึงการไม่ได้ระบุชนิดของข้อมูลที่คลาสจะรับมาดำเนินการ(จะเป็นชนิดใดก็ได้) และ field ใน class ก็ถูกประกาศโดยอ้างอิงพารามิเตอร์ T เช่นเดียวกัน
 
-## *Example2* : Using Generics
+## *Example 2* Using Generics
 
    ```  dart
     class Data<T> {
@@ -131,7 +149,7 @@ void main() {
     
 	    String: Hello
 
-## *Example 3*: Generic Method With Multiple Parameters
+## *Example 3* Generic Method With Multiple Parameters
 หากต้องการ Generics Type มากกว่า1ตัว ให้คั่น generic แต่ละตัวด้วย comma (,)
 ```  dart
 // สร้าง generic method
@@ -152,7 +170,7 @@ void main() {
 ## *Restricting the Type of Data*
 ขณะที่ใช้งาน Generics สามารถจำกัดประเภทของชนิดข้อมูลที่ใช้งานกับ Class หรือ Method ได้โดยใช้คีย์เวิร์ด extends
 
-## Example 4: Generic Class With Restriction
+## Example 4 Generic Class With Restriction
 ```  dart
 	// ประกาศ generic class โดยจำกัดประเภทของชนิดข้อมูล
 	class Data<T extends num> {
@@ -173,7 +191,7 @@ void main() {
    ```
 `<T extends num>` ทำให้     `Class Data()`  ใช้ได้กับ `int` และ `double` เท่านั้น จะใช้กับประเภทอื่นไม่ได้
 
-## *Example 5*: Generic Method With Restriction
+## *Example 5* Generic Method With Restriction
 ```  dart
 	T getVal<T extends String>(T value1, T value2) {
 	  	return (value1);
@@ -429,12 +447,21 @@ Python
 ## References
 
 https://dart-tutorial.com/object-oriented-programming/generics-in-dart/
+
 https://dart.dev/guides/language/numbers
+
 https://www.geeksforgeeks.org/dart-collections/
+
 https://www.geeksforgeeks.org/dart-generics/
+
 https://www.tutorialspoint.com/dart_programming/dart_programming_generics.htm
+
 https://www.darttutorial.org/dart-tutorial/dart-generics/
+
 https://www.slingacademy.com/article/python-generic-types-tutorial-examples/
+
 https://www.programiz.com/java-programming/generics#google_vignette
+
 https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html
+
 https://www.geeksforgeeks.org/macros-and-its-types-in-c-cpp/

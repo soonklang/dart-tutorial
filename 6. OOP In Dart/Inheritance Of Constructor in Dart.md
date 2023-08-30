@@ -648,24 +648,103 @@ _จากโค้ดตัวอย่างที่ 5 โค้ดด้า�
    <summary><strong>ตัวอย่างที่ 5 ในรูปแบบภาษา C</strong></summary>
 
 ```c
+#include <stdio.h>
+
+struct Laptop {
+    // Default Constructor
+    Laptop() {
+        printf("Laptop constructor\n");
+    }
+
+    // Named Constructor
+    static struct Laptop named() {
+        struct Laptop laptop;
+        printf("Laptop named constructor\n");
+        return laptop;
+    }
+};
+
+struct MacBook {
+    struct Laptop laptop;
+};
+
+int main() {
+    struct MacBook macbook;
+    macbook.laptop = Laptop_named();
+    printf("MacBook constructor\n");
+    return 0;
+}
 
 ```
+__คำอธิบายโค้ด__ 
+- ในภาษา C ไม่ได้มีการรองรับคุณสมบัติเหมือนในภาษา Dart, ดังนั้นต้องใช้โครงสร้าง (struct) แทน
+- ในภาษา C ไม่มีการสนับสนุนชื่อ constructor แบบที่มีในภาษา Dart, แทนที่จะใช้ฟังก์ชันเสมือน constructor และกำหนดค่าเริ่มต้นเป็นส่วนหนึ่งของการเรียกฟังก์ชันนั้น
 </details>
 
 <details> 
    <summary><strong>ตัวอย่างที่ 5 ในรูปแบบภาษา Java </strong></summary>
 
 ```java
+class Laptop {
+    // Default Constructor
+    Laptop() {
+        System.out.println("Laptop constructor");
+    }
+
+    // Named Constructor
+    Laptop(String named) {
+        System.out.println("Laptop named constructor");
+    }
+}
+
+class MacBook extends Laptop {
+    // Constructor
+    MacBook() {
+        super("named");
+        System.out.println("MacBook constructor");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MacBook macbook = new MacBook();
+    }
+}
 
 ```
+__คำอธิบายโค้ด__ 
+-ในภาษา Java ใช้คำสำคัญ class แทน class ในภาษา Dart
+-ในภาษา Java การสร้าง constructor แบบที่มีชื่อเรียกว่า "named constructor" ทำได้โดยการสร้าง constructor พร้อมกับ parameter ที่ตรงกับชื่อ constructor ที่เราต้องการ
 </details>
 
 <details> 
    <summary><strong>ตัวอย่างที่ 5 ในรูปแบบภาษา Python </strong></summary>
 
 ```Python
+class Laptop:
+    # Default Constructor
+    def __init__(self):
+        print("Laptop constructor")
 
+    # Named Constructor
+    @classmethod
+    def named(cls):
+        laptop = cls()
+        print("Laptop named constructor")
+        return laptop
+
+class MacBook(Laptop):
+    # Constructor
+    def __init__(self):
+        super().named()
+        print("MacBook constructor")
+
+macbook = MacBook()
 ```
+__คำอธิบายโค้ด__ 
+- ในภาษา Python ใช้ def แทน fun เพื่อประกาศฟังก์ชัน
+- ใช้ decorator @classmethod เพื่อประกาศเมธอดชื่อเดียวกับคลาส เพื่อทำให้เป็นเมธอดที่สามารถเรียกใช้ได้จากคลาสและไม่จำเป็นต้องสร้างอ็อบเจ็กต์ก่อน
+- ใน Python ใช้ super().named() เพื่อเรียก constructor ของคลาสแม่และสร้างอ็อบเจ็กต์
 </details>
       
 # Reference

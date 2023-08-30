@@ -70,8 +70,8 @@ void main(){
 ```dart
 void main(){
    int age;  //  <<---
-   aeg = null;
-   print(aeg);  // give error
+   age = null;
+   print(age);  // give error
 }
 ```
 [Run code](https://dartpad.dev/?iex4.2)

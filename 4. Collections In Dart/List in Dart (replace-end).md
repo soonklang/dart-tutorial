@@ -158,7 +158,7 @@ void main(){
 ก่อนใช้ : [a, b, c, d, e, f, g, h]
 หลังใช้ : [a, b, g, h]
 ```
-### การลบข้อมูลใน list ใน Java และ C
+### การลบข้อมูลใน list ใน Java,C และ Python
 ในภาษา Java นั้นสามารถใช้ วิธีการแบบภาษา Dart ได้แต่สามารถใช้ได้เพียงเม็ดตอด remove() เท่านั้น
 และ C นั้นไม่สามารถทำได้
 #### Ex Java.
@@ -239,4 +239,58 @@ myList
 [‘Bran’,"Stark",22, 33, 11]
 ```
 ### Loops In List
-
+การพิมพ์ค่าใน list โดยใช้ loop สามารถใช้ for loop ,for each loop หรื่อloop อื่นๆ ได้
+#### Ex.
+```
+void main() {
+  List<int> list = [10, 20, 30, 40, 50];
+  list.forEach((n) => print(n));
+}
+```
+#### output
+```
+10
+20
+30
+40
+50
+```
+#### Loops In List ใน Java และ Python
+ใน และ ก็สามารถใช้ loop ในการพิมพ์ค่าใน list ได้เช่นกัน
+#### Ex Java
+```
+import java.util.*;
+ 
+class GFG {
+ 
+    public static void main(String args[])
+    {
+        List<String> myList = new ArrayList<String>();
+        myList.add("A");
+        myList.add("B");
+        myList.add("C");
+        myList.add("D");
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+    }
+}
+```
+#### output
+```
+A
+B
+C
+D
+```
+#### Ex Python
+```
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+```
+#### output
+```
+apple
+banana
+cherry
+```

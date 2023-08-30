@@ -73,16 +73,19 @@ Output
     Is fruits not empty? true
     The length of fruits is 4
     true
-union --> แสดงค่าทั้งหมดระหว่างสองเซต
+    
+Finding --> ค้นหาค่าใร Set
+    
+    var gfg = <String>{'Hello Geek'};
 
-    void main() {
-      var a = {1, 2, 3};
-      var b = {2, 3, 4};
-      var c = a.union(b);
-      print(c);}
+    // Finding the element in the set
+    bool check = gfg.contains("GeeksForGeeks");
+   
+    // Printing boolean value
+    print("The value of check is: $check");
 Output
 
-    {1,2,3,4}
+    The value of check is: true
 ## แสดงค่าในเซต
 แสดงค่าในเซตด้วยการใช้ loop
 
@@ -109,22 +112,132 @@ addAll() --> เพิ่มค่าหลายตัว
 clear() --> ลบค่าในเซตทั้งหมด  
 
     fruits.clear();
-difference() --> สร้างเซตใหม่ที่ใส่ค่าที่ต่างกันกับอีกเซต  
 
-    Set<String> fruits1 = {"Apple", "Orange", "Mango"};
-    Set<String> fruits2 = {"Apple", "Grapes", "Banana"};
-
-    final differenceSet = fruits1.difference(fruits2);
 elementAt() --> แสดงค่าที่ระบุ  
 
     Set<String> days = {"Sunday", "Monday", "Tuesday"};
-intersection --> สร้างเซตที่มีค่าซ้ำกัน  
 
-    Set<String> fruits1 = {"Apple", "Orange", "Mango"};
-    Set<String> fruits2 = {"Apple", "Grapes", "Banana"};
+## การแปลง Set ให้เป็น List ในภาษา Dart
 
-    final intersectionSet = fruits1.intersection(fruits2);
+    void main()
+    {
+    // Declaring set with value
+    var gfg = <String>{'Hello Geek',"GeeksForGeeks","Geek1","Geek2","Geek3"}; 
+   
+    // Printing values in set
+    print("Values in set are:");
+    print(gfg);
+   
+    print("");
+   
+    // Converting Set to List
+    List<String> gfg_list = gfg.toList();
+   
+    // Printing values of list
+    print("Values in the list are:");
+    print(gfg_list);
+    }
+Output
 
+    Values in set are:
+    {Hello Geek, GeeksForGeeks, Geek1, Geek2, Geek3}
+
+    Values in the list are:
+    [Hello Geek, GeeksForGeeks, Geek1, Geek2, Geek3]
+## การแปลง Set ให้เป็น map ในภาษา Dart
+
+    void main()
+    {
+    // Declaring set 1 with value
+    var gfg = <String>{"GeeksForGeeks","Geek1","Geek2","Geek3"};
+   
+    var geeksforgeeks = gfg.map((value) {
+    return 'mapped $value';
+    });
+    print("Values in the map:");
+    print(geeksforgeeks);
+     }
+Output
+
+    Values in the map:
+    (mapped GeeksForGeeks, mapped Geek1, mapped Geek2, mapped Geek3)
+
+## Set Operations in Dart
+
+    void main()
+    {
+    // Declaring set 1 with value
+    var gfg1 = <String>{"GeeksForGeeks","Geek1","Geek2","Geek3"};
+   
+    // Printing values in set
+    print("Values in set 1 are:");
+    print(gfg1);
+   
+    print("");
+     
+    // Declaring set 2 with value
+    var gfg2 = <String>{"GeeksForGeeks","Geek3","Geek4","Geek5"};
+   
+    // Printing values in set
+    print("Values in set 2 are:");
+    print(gfg2);
+   
+    print("");
+   
+   
+    // Finding Union
+    print("Union of two sets is ${gfg1.union(gfg2)} \n");
+   
+    // Finding Intersection
+    print("Intersection of two sets is ${gfg1.intersection(gfg2)} \n");
+   
+    // Finding Difference
+    print("Difference of two sets is ${gfg2.difference(gfg1)} \n");
+     
+    }
+Output
+
+    Values in set 1 are:
+    {GeeksForGeeks, Geek1, Geek2, Geek3}
+
+    Values in set 2 are:
+    {GeeksForGeeks, Geek3, Geek4, Geek5}
+
+    Union of two sets is {GeeksForGeeks, Geek1, Geek2, Geek3, Geek4, Geek5} 
+
+    Intersection of two sets is {GeeksForGeeks, Geek3} 
+
+    Difference of two sets is {Geek4, Geek5} 
+สามารถใช้ Set Operations ได้กับหลาย Set
+Example:
+
+    void main()
+    {
+    // Declaring set 1 with value
+    var gfg1 = <String>{"GeeksForGeeks","Geek1","Geek2","Geek3"};
+   
+    // Declaring set 2 with value
+    var gfg2 = <String>{"GeeksForGeeks","Geek3","Geek4","Geek5"};
+   
+    // Declaring set 3 with value
+    var gfg3 = <String>{"GeeksForGeeks","Geek5","Geek6","Geek7"};
+   
+    // Finding Union
+    print("Union of two sets is ${gfg1.union(gfg2).union(gfg3)}\n");
+   
+    // Finding Intersection
+    print("Intersection of two sets is ${gfg1.intersection(gfg2).intersection(gfg3)}\n");
+   
+    // Finding Difference
+    print("Difference of two sets is ${gfg2.difference(gfg1).difference(gfg3)}\n");
+    }
+Output
+
+    Union of two sets is {GeeksForGeeks, Geek1, Geek2, Geek3, Geek4, Geek5, Geek6, Geek7} 
+
+    Intersection of two sets is {GeeksForGeeks} 
+
+    Difference of two sets is {Geek4} 
 อ้างอิง  
 https://www.geeksforgeeks.org/dart-sets/  
 https://dart-tutorial.com/collections/set-in-dart/  

@@ -36,6 +36,10 @@ void main(){
   print(name);   // give 'US'
 }
 ```
+[Run code](https://dartpad.dev/?)
+```bash
+ output: US
+```
 
 ## 3.How do you declare a nullable type in Dart null safety?
 Nullable Types: When you declare a variable, parameter, or return type with ?, you're indicating that the value can be either of the specified type or null. For instance, int? signifies a nullable integer, meaning it can hold an integer value or be null.

@@ -13,6 +13,7 @@
 * Do While Loop in Dart
 * [Break and Continue in Dart](https://github.com/soonklang/dart-tutorial/blob/main/2.%20Conditions%20and%20loops/Break%20and%20Continue%20in%20Dart.md)
 * Exception Handling in Dart
+* [While loop in dart](https://github.com/soonklang/dart-tutorial/blob/main/2.%20Conditions%20and%20loops/While%20loop%20in%20dart.md)
 
 # แบบฝึกหัด
 * Practice2

@@ -16,7 +16,7 @@ ____________________________
 สำหรับคนที่ศึกษาเรื่อง **Class** มาเเล้ว จะเข้าใจว่า เราสามารถ สร้าง **Function** ที่เรียกอีกชื่อว่า **Constructor methob** ได้
 ### Syntax default Constructor ⌨️
 ```dart
-class ClassName {																							 D
+class ClassName {																							 
   // default constructor
   ClassName(parameters) {
     // Initialization logic

@@ -129,7 +129,7 @@ a =  Math.floor(Math.random() *(max - min + 1) + min);
 ส่วนการเขียน random boolean นั้น จะเห็นความเเตกต่างโดยชัดเจน ซึ่ง dart จะเขียนแค่ บรรทัดเดียวเเละเรียบง่าย ส่วน python กับ java อาจจะดูซับซ้อนขึ้นนิดหน่อย และ c ผมหาวิธีไม่เจอหรือ
 
 # 2.Point class
-
+Point class เป็นคราสที่เอาไว้ใช้กับพิกัดสองมิติ
 ซึ่งใน point class นั้นก็จะมี features ต่างๆดังนี้
 - Point(x, y) ซึ่งเป็นการกำหนดตัวเลขของจุดหรือพิกัดโดย x,y จะเป็นตัวเเทนของตัวเลขที่เรากำหนดเราไว้
 - Point.x และ point.y ซึ่งเป็นการเข้าถึงพิกัดตัวเลขที่เรากำหนดไว้
@@ -259,3 +259,93 @@ Point 2: (1.000000, -2.000000)
 Distance between points: 6.324555
 ```
 ปล. อ้างอิงวิธีนี้จาก chatGPT
+## เปรียบเทียบ Point class กับ python
+ใน python นั้น วิธีการจะใกล้เคียงกับ dart เนื่องจากมี librarie ที่สามารถเข้ามาช่วยได้
+แต่อาจจะต้องสร้างเขียนวิธีการหา distance เหมือนกับ c เข้ามาเหมือนกัน โ
+```python
+import math
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+#สร้างคราสขึ้นมาเพื่อเก็บค่า x,y
+
+p1 = Point(3, 4) 
+p2 = Point(1, -2)
+
+print("P1: "p1.x, p1.y)
+print("P2: "p2.x, p2.y)
+
+distance = math.sqrt((p2.x - p1.x)**2 + (p2.y - p1.y)**2)
+#อ้างอิงวิธีการหาระยะทางระหว่างจุดจากสมการทางคณิตศาตร์
+print("Distance between points:", distance)
+```
+output
+```
+P1:  3 , 4
+P2:  1 , -2
+Distance between points: 6.324555320336759
+```
+# 3.Rectangle class
+Rectangle class คลาสนี้ใช้สำหรับแสดงเป็นตัวเเทนรูปสี่เหลี่ยมสองมิติ ซึ่งประกอบไปด้วย left,top right และ bottom เพื่อเป็นตัวแทนของสี่เหลียมในสองมิติ
+ซึ่งในการเขียนโค้ดนั้น เราจะสร้าง constructor ขึ้นมาเเต่เราจะกำหนด เป็น left,top ,width,height ซึ่ง width จะคือค่าของ right = width + left และ bottom =top + height
+```dart
+ import 'dart:math';
+void main() {
+var rect = Rectangle(10, 20, 30, 40);//สร้าง constructor โดยค่าข้างในจะเป็น (left, top, width, height)
+  print("Left: ${rect.left}");
+  print("Top: ${rect.top}");
+  print("Right: ${rect.right}");
+  print("Bottom: ${rect.bottom}");
+  print("Width: ${rect.width}");
+  print("Height: ${rect.height}");
+
+}
+```
+output
+```
+Left: 10
+Top: 20
+Right: 40 //เกิดจาก width + left
+Bottom: 60 //เกิดจาก top + height
+Width: 30
+Height: 40
+
+```
+เราสามารถเราเรื่อง point มาประยุกต์ได้โดยใช้คำสั่ง containsPoint(...) เพื่อหาจุดว่าอยู่ในขอบเขตของสี่เหลียมหรือป่าว
+```dart
+ import 'dart:math';
+void main() {
+var rect = Rectangle(10, 20, 30, 40);
+  var point = Point(20, 30);
+  if (rect.containsPoint(point)) {
+    print("The point is inside the rectangle.");
+  } else {
+    print("The point is outside the rectangle.");
+  }
+}
+```
+output
+```
+The point is inside the rectangle.
+```
+เมื่อเรามีสี่เหลียมสองรูแล้วอยากจะหาช่วงที่ซ้อนทับกัน
+เราจะใช้วิธี .intersection() เพื่อหาว่าสี่เหลียมทั้งสองรูปกันเกิดการซ้อนกันหรือไหม
+```dart
+import 'dart:math';
+void main() {
+  // Create a rectangle using constructor
+  var rect1 = Rectangle(10, 20, 30, 40);
+  var rect2 = Rectangle(25, 35, 40, 30);
+var intersection = rect1.intersection(rect2);
+print("Intersection ${intersection}");
+
+}
+```
+output
+```
+Intersection Rectangle (25, 35) 15 x 25
+//  หมายความว่าจุดที่มันซ้อนทับกันจะเริ่มตั้งแต่จุดที่ (25,35)  และขยายไปทางขวา 15 หน่วย และขยายลงมา 25 หน่วย        
+```
+
+

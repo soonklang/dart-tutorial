@@ -279,8 +279,8 @@ Ternary Operator สามารถใช้เป็นวิธีแทนท
 https://dart-tutorial.com/conditions-and-loops/ternary-operator-in-dart/ <br>
 https://dart.dev/language/operators#conditional-expressions <br>
 https://www.educative.io/answers/ternary-operator-in-dart <br>
-https://www.tutorialspoint.com/ternary-operator-in-dart-programming
-https://www.programiz.com/c-programming/ternary-operator#google_vignette
-https://www.programiz.com/java-programming/ternary-operator
+https://www.tutorialspoint.com/ternary-operator-in-dart-programming <br>
+https://www.programiz.com/c-programming/ternary-operator#google_vignette <br>
+https://www.programiz.com/java-programming/ternary-operator <br>
 https://www.educative.io/answers/what-is-the-ternary-operator-in-python
 

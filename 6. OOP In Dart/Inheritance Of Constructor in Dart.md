@@ -350,7 +350,35 @@ __คำอธิบายโค้ด__
    <summary><strong>ตัวอย่างที่ 3 ในรูปแบบภาษา Java </strong></summary>
 
 ```java
+class Person {
+    String name;
+    int age;
 
+    // Constructor
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+class Student extends Person {
+    int rollNumber;
+
+    // Constructor
+    Student(String name, int age, int rollNumber) {
+        super(name, age);
+        this.rollNumber = rollNumber;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student("John", 20, 1);
+        System.out.println("Student name: " + student.name);
+        System.out.println("Student age: " + student.age);
+        System.out.println("Student roll number: " + student.rollNumber);
+    }
+}
 ```
 __คำอธิบายโค้ด__ 
 
@@ -360,7 +388,20 @@ __คำอธิบายโค้ด__
    <summary><strong>ตัวอย่างที่ 3 ในรูปแบบภาษา Python </strong></summary>
 
 ```Python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+class Student(Person):
+    def __init__(self, name, age, rollNumber):
+        super().__init__(name, age)
+        self.rollNumber = rollNumber
+
+student = Student("John", 20, 1)
+print("Student name:", student.name)
+print("Student age:", student.age)
+print("Student roll number:", student.rollNumber)
 ```
 __คำอธิบายโค้ด__ 
 

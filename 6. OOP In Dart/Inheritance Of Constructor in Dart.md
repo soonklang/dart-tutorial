@@ -283,6 +283,6 @@ int main() {
 - ### ภาษาโปรแกรม Dart เมื่อเทียบกับภาษา Python
 
 # Reference
-https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart
-https://www.ninenik.com/การใช้งาน_การสืบทอด_ Inheritance_class_ในภาษา_Dart_เบื้องต้น-944.html
-https://www.geeksforgeeks.org/inheritance-in-python
+https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart<br>
+https://www.ninenik.com/การใช้งาน_การสืบทอด_ Inheritance_class_ในภาษา_Dart_เบื้องต้น-944.html<br>
+https://www.geeksforgeeks.org/inheritance-in-python<br>

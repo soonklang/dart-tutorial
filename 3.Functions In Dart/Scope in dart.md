@@ -109,7 +109,7 @@ void main(){
 Language is DartLang
 ```
 
-**Pythod**
+**Python**
 ```python
 def f():
     print(x)

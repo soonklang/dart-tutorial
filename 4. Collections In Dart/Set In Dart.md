@@ -3,12 +3,49 @@
   เซตจะกำหนดด้วยปีกกาใหญ่ {}
   
 **List สามารถเพิ่มค่าซ้ำกันได้แต่ Set ไม่สามารถทำได้  
-Syntext สร้างเซต
+## การสร้างเซต
 
     var variable_name = <variable_type>{};
-    or,
-     Set <variable_type> variable_name = {};
+หรือ
 
+     Set <variable_type> variable_name = {};
+Example 1 สร้างเซตจากสองวิธีที่ต่างกัน
+
+    void main()
+    {
+    // Declaring set in First Way
+    var gfg1 = <String>{'GeeksForGeeks'};
+    print("Output of first set: $gfg1");
+   
+    // Declaring set in Second Way
+    Set<String> gfg2 = {'GeeksForGeeks'}; 
+    print("Output of second set: $gfg2");
+    }
+Output
+
+    Output of first set: {GeeksForGeeks}
+    Output of second set: {GeeksForGeeks}
+Example 2 ลองสร้างและเรียกดูค่าทั้ง Set และ List
+
+    void main()
+    {
+    // Declaring list with repeated value
+    var gfg = ['Geeks','For','Geeks'];
+   
+    // Printing List
+    print("Output of the list is: $gfg");
+     
+    // Declaring set with repeated value
+    var gfg1 = <String>{'Geeks','For','Geeks'}; 
+   
+    // Printing Set
+    print("Output of the set is: $gfg1");
+    }
+Output
+
+    Output of the list is: [Geeks, For, Geeks]
+    Output of the set is: {Geeks, For}
+NOTE : ใน Set จะไม่แสดงข้อมูลที่ซ้ำกันอย่างใน List  
 ## คุณสมบัติของ Dart
 first --> แสดงค่าตัวแรกในเซต  
 last --> แสดงค่าตัวสุดท้ายในเซต  
@@ -17,7 +54,10 @@ isNotEmpty --> ตรวจว่าใรเซตว่ามีข้อม�
 length --> แสดง จำนวนของข้อมูลในเซต  
 contains --> เช็คข้อมูลในเซตเป็น True หรือ False
 
-    Set<String> fruits = {"Apple", "Orange", "Mango", "Banana"};
+    void main(){
+    Set<String> fruits = {"Apple", "Orange", "Mango"};
+    print(fruits);
+    }
     
     print("First Value is ${fruits.first}");
     print("Last Value is ${fruits.last}");
@@ -25,7 +65,14 @@ contains --> เช็คข้อมูลในเซตเป็น True ห�
     print("Is fruits not empty? ${fruits.isNotEmpty}");
     print("The length of fruits is ${fruits.length}");
     print(fruits.contains("Mango"));
+Output
 
+    First Value is Apple
+    Last Value is Banana
+    Is fruits empty? false
+    Is fruits not empty? true
+    The length of fruits is 4
+    true
 union --> แสดงค่าทั้งหมดระหว่างสองเซต
 
     void main() {
@@ -33,7 +80,9 @@ union --> แสดงค่าทั้งหมดระหว่างสอ�
       var b = {2, 3, 4};
       var c = a.union(b);
       print(c);}
+Output
 
+    {1,2,3,4}
 ## แสดงค่าในเซต
 แสดงค่าในเซตด้วยการใช้ loop
 
@@ -79,4 +128,4 @@ intersection --> สร้างเซตที่มีค่าซ้ำกั
 อ้างอิง  
 https://www.geeksforgeeks.org/dart-sets/  
 https://dart-tutorial.com/collections/set-in-dart/  
-https://www.darttutorial.org/dart-tutorial/dart-set/
+https://www.darttutorial.org/dart-tutorial/dart-set/  

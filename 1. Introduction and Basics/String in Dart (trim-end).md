@@ -34,9 +34,7 @@ void main() {
   <summary><strong>Output</strong></summary>
   <pre><code>Answer is 10</code></pre>
 </details> 
-
-
-```
+```dart
 hello 
 hello world 
 hello

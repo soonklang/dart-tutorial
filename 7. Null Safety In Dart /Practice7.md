@@ -43,12 +43,23 @@ void main(){
 
 ## 3.How do you declare a nullable type in Dart null safety?
 Nullable Types: When you declare a variable, parameter, or return type with ?, you're indicating that the value can be either of the specified type or null. For instance, int? signifies a nullable integer, meaning it can hold an integer value or be null.
+
+การประกาศตัวแปรประเภท nullable type ทำได้โดยการเพิ่ม “?” ด้านหลังการประกาศ ชนิดข้อมูล int,double,String หรือ class ก็ใข้ได้ และอื่นๆ ทำให้เราสามารถกำหนดค่าของตัวแปรเป็นการระบุค่าหรือเป็นnullได้
 ```dart
-int? nullableInt;
+int? nullableInt;      // Nullable integer
+double? nullableDouble; // Nullable double
+bool? nullableBool;    // Nullable boolean
+
 String? nullableString = null;
 ```
+```dart
+class MyClass {
+  // ...
+}
+MyClass? nullableInstance; // Nullable instance of custom class
+```
 ## 4.Write a program in a dart to create an age variable and assign a null value to it using ?.
-
+เขียนโปรแกรม create an age variable แค่ากำหนดค่าให้เป็น null โดยใช้ “?”
 การประกาศตัวแปรในรูปแบบของ nullable type
 
 ```bash

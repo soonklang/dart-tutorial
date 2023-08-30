@@ -87,7 +87,7 @@ void main(){
 ```
 [Run code](https://dartpad.dev/?iex4.2)
 ## 5.Write a function that accepts a nullable int parameter and returns 0 if the value is null using null coalescing operator '??'.
-
+เขียนฟังก์ชัน ที่รับพารามิเตอร์เป็นประเภท int nullable และส่งค่าคืนเป็น 0 ถ้าค่าที่รับมาเป็น null โดยใช้ operator ‘??’
 ```dart
 int returnZeroIfNull(int? value){
     return value ?? 0;  // ถ้าค่าเป็น null จะ return 0
@@ -117,7 +117,7 @@ int? generateRandom() {
   int? randomValue = Random().nextInt(2);
 
   print("Random Number: $randomValue");
-  
+  // กำหนดเอง
   if(randomValue == 1){
     return 100;
   } else {
@@ -138,7 +138,6 @@ void main() {
   }
 }
 ```
-[Run code](https://dartpad.dev/?id)
 
 ```bash
 Random Number: 1
@@ -148,6 +147,8 @@ Generated Status: 100
 Random Number: 0
 Generated Status: null
 ```
+[Run code](https://dartpad.dev/?id)
+
 </details>
 ## References
 

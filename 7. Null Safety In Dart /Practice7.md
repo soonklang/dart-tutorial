@@ -147,7 +147,7 @@ Generated Status: 100
 Random Number: 0
 Generated Status: null
 ```
-[Run code](https://dartpad.dev/?id)
+[Run code](https://dartpad.dev/?iex6)
 
 </details>
 ## References

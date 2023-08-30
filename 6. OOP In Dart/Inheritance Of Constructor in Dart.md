@@ -52,16 +52,16 @@ _จากโค้ดตัวอย่างที่1 โค้ดด้า�
 <details> 
    <summary><strong>C Code</strong></summary>
 
-   ```c
-   #include <stdio.h>
-   // Base class
-     struct Laptop {
-     // Constructor
-     Laptop() {
-      printf("Laptop constructor\n");
-     }
-   };
-     
+```c
+#include <stdio.h>
+// Base class
+struct Laptop {
+// Constructor
+  Laptop() {
+    printf("Laptop constructor\n");
+  }
+};
+
 // Derived class
 struct MacBook : Laptop {
   // Constructor

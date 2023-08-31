@@ -18,7 +18,7 @@ dart --enable-asserts file_name.dart
 
 >จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
-<details>
+<details open>
   <summary><strong>Output</strong></summary>
   <pre><code>Uncaught Error: Assertion failed</code></pre>
 </details>
@@ -35,7 +35,7 @@ void main(){
 
 >จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นเท็จ
 
-<details>
+<details open>
   <summary><strong>Output1</strong></summary>
   <pre><code>Uncaught Error: Assertion failed: "x should be greater then y"</code></pre>
 </details>
@@ -51,7 +51,7 @@ void main(){
 
 >จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
-<details>
+<details open>
   <summary><strong>Output2</strong></summary>
   <pre><code>Program continues after than assert</code></pre>
 </details>
@@ -98,7 +98,7 @@ int main(){
 
 >จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
-<details>
+<details open>
   <summary><strong>Output</strong></summary>
   <pre><code>Program continues after than assert</code></pre>
 </details>
@@ -126,7 +126,7 @@ public class Main{
 
 >จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
-<details>
+<details open>
   <summary><strong>Output</strong></summary>
   <pre><code>Program continues after than assert</code></pre>
 </details>
@@ -142,7 +142,7 @@ print("Program continues after than assert")
 
 >จากตัวอย่าง assert ตรวจสอบว่า x > y เป็นจริง
 
-<details>
+<details open>
   <summary><strong>Output</strong></summary>
   <pre><code>Program continues after than assert</code></pre>
 </details>

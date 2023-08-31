@@ -41,7 +41,7 @@ You are voter.
 </details>
 
 > ## ตัวอย่างการทำงานเพิ่มเติมของเงื่อนไข If
-> โปรแกรมจะทำเปรียบเทียบค่าที่อยู่ในตัวแปร x กับค่าที่อยู่ในตัวแปร y หากค่าที่อยู่ในตัวแปร x มีค่ามากกว่าค่าที่อยู่ในตัวแปร y โปรแกรมจะทำการพิมพ์ข้อความออกมาว่า ค่าที่อยู่ในตัวแปร x มากกว่า ค่าที่อยู่ในตัวแปร y แต่ถ้าเช็คแล้วค่า x มีค่าน้อยกว่าตัวแปร y โปรแกรมจะพิมพ์ข้อความออกมาว่า จบการทำงาน
+> โปรแกรมนี้จะทำเปรียบเทียบค่าที่อยู่ในตัวแปร x กับค่าที่อยู่ในตัวแปร y 
 ```dart
   void main(){
   int x = 10,y=15;
@@ -93,17 +93,16 @@ You are not voter.
 </details>
 
 > ## ตัวอย่างการทำงานเพิ่มเติมของเงื่อนไข If-Else
+> โปรแกรมนี้จะทำการเช็คว่าค่าตัวเลขที่อยู่ในตัวแปร x นั้นเป็นเลขคู่หรือเลขคี่
 ```dart
   void main() {
-  printOddEven(4);
-}
-  void printOddEven(int val) {
-  if(val % 2 == 0){
-    print('$val is even');
-  } else {
-    print('$val is odd');
+  int x = 4;
+    if(x%2 == 0){
+      print("$x is even");
+    }else{
+      print("$x is odd");
+    }
   }
-}
 ```
 <details close>
 <summary><b>output</b></summary>
@@ -132,7 +131,7 @@ You are single.
 </details>
 
 ## 3. เงื่อนไข If-Else-IF
-  เงื่อนไข If-Else-If เป็นเงื่อนไขที่มีการทำงานคล้ายกันกับเงื่อนไข If-Else แต่เป็นการสร้างทางเลือกมากกว่า 2 ทาง และจะดูเงื่อนไขเรียงลำดับไปเรื่อยๆจนถึงอันที่ถูก จากนั้นก็จะรันคำสั่ง แล้วออกจาก decision
+เงื่อนไข If-Else-If เป็นเงื่อนไขที่มีการทำงานคล้ายกันกับเงื่อนไข If-Else แต่เป็นการสร้างทางเลือกมากกว่า 2 ทาง และจะดูเงื่อนไขเรียงลำดับไปเรื่อยๆจนถึงอันที่ถูก จากนั้นก็จะรันคำสั่ง แล้วออกจาก decision
 
 > ## Flowchart การทำงานของเงื่อนไข IF-Else-IF
   ![image](https://github.com/soonklang/dart-tutorial/assets/95902698/072b11db-94c4-463c-ab2c-1eba501cd5f2)
@@ -154,7 +153,7 @@ You are single.
   }
 ```
 > ## ตัวอย่างการทำงานของเงื่อนไข If-Else-If
-  โปรแกรมต่อไปนี้จะทำการพิมพ์ชื่อของเดือนออกมาตามค่าตัวเลขของเดือนนั้น ผลลัพธ์จะแตกต่างกันออกไปหากเราเปลี่ยนค่าตัวเลขของเดือน
+> โปรแกรมต่อไปนี้จะทำการพิมพ์ชื่อของเดือนออกมาตามค่าตัวเลขของเดือนนั้น ผลลัพธ์จะแตกต่างกันออกไปหากเราเปลี่ยนค่าตัวเลขของเดือน
 ```dart
  void main() {
   int noOfMonth = 5;
@@ -283,8 +282,6 @@ https://www.w3schools.com/c/c_conditions.php
 https://www.w3schools.com/java/java_conditions.asp
 
 https://www.w3schools.com/python/python_conditions.asp
-
-https://programmerthailand.com/tutorial/post/view/281/if-%E0%B9%81%E0%B8%A5%E0%B8%B0-else-%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-dart
 
 https://www.mindphp.com/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-dart-flutter/8904-control-structures-in-dart-language.html
 

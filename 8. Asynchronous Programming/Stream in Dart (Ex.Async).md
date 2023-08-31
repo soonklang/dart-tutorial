@@ -176,6 +176,7 @@ void main() {
 ## ภาษา Java
 
 ### Example Of async
+ภาษา Java ไม่ได้มีคำว่า async เป็นคำสงวนเหมือน ภาาษา Dart ที่มีการรองรับการเขียน asynchronous code โดยตรงด้วยคีย์เวิร์ด "async" และ "await"
 
 ```dart
 class ThreadClass extends Thread{
@@ -190,6 +191,7 @@ class AsyncExample {
     }
 }
 ```
+>จากตัวอย่างมีการสร้าง Tread เพื่อที่จะสามารถทำงานหลายๆอย่างได้พร้อมกัน
 
 <details>
 <summary><strong>Output</strong></summary>
@@ -200,8 +202,9 @@ class AsyncExample {
 ## ภาษา Python
 
 ### Example Of async
-
+Python จะมีโมดูล asyncio ซึ่งเป็นตัวช่วยสำหรับการเขียน asynchronous programming และมีมาตั้งแต่เวอร์ชั่น 3.4 
 ```dart
+
 import asyncio
 async def do_task(task_name):
     print(f"Start {task_name}")

@@ -196,6 +196,8 @@ int main() {
 }
 ```
 
+# Comparing Dart with other languages (Python, C and Java) 
+
 
 
 

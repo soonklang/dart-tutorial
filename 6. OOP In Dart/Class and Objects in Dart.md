@@ -5,11 +5,11 @@
 # Class คืออะไร ?
 Class  จะเปรียบเสมือนกับ Blueprint หรือแบบแปลนสำหรับสร้าง Object แล้ว
 Class ยังเป็นตัวกำหนด Properties และ Mehtods ของ Object
-ถ้าอยากรู้เกี่ยวกับ Class มากขึ้นให้ไปที่หัวข้อ Class
+ถ้าอยากรู้เกี่ยวกับ Class มากขึ้นให้ไปที่หัวข้อ [Class in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20in%20Dart.md)
 
 # Object คืออะไร ?
 Object คือตัวอย่างของ Class คุณสามารถสร้างได้หลาย Object ใน Class เดียวกัน
-ถ้าอยากรู้เกี่ยวกับ Object มากขึ้นให้ไปที่หัวข้อ Object
+ถ้าอยากรู้เกี่ยวกับ Object มากขึ้นให้ไปที่หัวข้อ [Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Object%20in%20dart.md)
 
 # ตัวอย่าง Class และ Object ในภาษา Dart
 ตัวอย่างข้างล่างนี้จะมี Class Animal มี properties 3 อย่าง คือ

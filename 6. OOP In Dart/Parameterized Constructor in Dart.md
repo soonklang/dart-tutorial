@@ -113,7 +113,8 @@
 ## 
 ### Example 3: Parameterized Constructor With Default Values In Dart
 ในตัวอย่างที่ 3 มี **Class Student** ที่มี ตัวแปร 2 ตัว คือ **name** และ **age**
-ใน **Class Student** มี **constructor** ตัวเดียว ที่มีการกำหนดค่าให้ตัว **parameters** เพื่อใช้กำหนดค่าให้ตัวแปรใน Class
+ใน **Class Student** มี **constructor** ตัวเดียวและมีการกำหนดค่าให้ตัว **parameters** เพื่อใช้กำหนดค่าให้ตัวแปรใน **Class**
+จะสังเกตได้ว่าจะมีการใส่ **{ }** ครอบ **parameter** เหมือนตัวอย่างที่ 2 แต่จะมีการกำหนดค่าให้ **parameters**
 ```dart
     class Student {
       String? name;

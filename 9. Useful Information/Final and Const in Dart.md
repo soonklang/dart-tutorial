@@ -55,6 +55,16 @@ void main(){
 }
 ```
 
+#### Java language
+ในภาษา Java, คีย์เวิร์ด final ถูกใช้เพื่อประกาศค่าคงที่ (constant) แทนตัวแปรที่ค่าของมันไม่สามารถเปลี่ยนแปลงได้หลังจากกำหนดค่าแล้ว นี่เป็นวิธีการที่ Java ใช้ในการสร้างค่าคงที่
+```java
+class Demo{
+  public static void main(String args[]){
+    final int MY_CONSTANT = 10;
+  }
+}
+```
+
 #### Python language
 
 ในภาษา python นั้นไม่มี const และ final

@@ -81,12 +81,15 @@ void main() {
 
 ## Delete file in other language
 - # Java
-## delete() method
+## delete() and deleteOnExit() method 
 ## Declaration
 
- Following is the declaration for delete() function.
+The method signature is:
  ```java
 public boolean delete() 
+```
+```java
+public void deleteOnExit()  
 ```
 ## Ex
 use delete() method to delete file.

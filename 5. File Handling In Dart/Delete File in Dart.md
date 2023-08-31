@@ -16,7 +16,7 @@ File file = File('test.txt');
 ```
 **FileSystemEntity** is a directory
 
-if **recursive** is false, the directory must be empty. and if **recursive** is ture, the directory  
+if **recursive** is false, the directory must be empty. and if **recursive** is true, FileStstemEntity will be deleted including, all directory and sup-directories and files in the directories. 
 
 
  **test.txt** ใน directory เดียวกันกับโปรแกรม Dart

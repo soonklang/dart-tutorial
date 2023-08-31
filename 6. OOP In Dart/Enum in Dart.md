@@ -24,14 +24,37 @@ enum cars {
   Benz,
   Volvo
 }
+
 ```
 ## การเปรียบเทียบ รูปแบบการใช้งาน กับ ภาษาอื่น ๆ
- * รูปแบบในการใช้ ของ Enum ในภาษา Java 
+ * ### รูปแบบในการใช้ ของ Enum ในภาษา Java และความแตกต่าง กับภาษา Dart
+	* จะเห็นได้ว่า ความแตกต่างจาก Dart คือ java จะต้องประกาศ Enum ในคลาสเท่านั้น ส่วน รูปแบบมีลักษณะที่เหมือนกัน
+```java
+  class Car {
+    // Enum Declared
+   enum cars {  
+        Toyota,
+        Honda,
+        Nissan,
+        Ferrari,
+        Bugatti,
+        Benz,
+        Volvo;
+}
+```
+ * รูปแบบในการใช้ ของ Enum ในภาษา C    และความแตกต่าง กับภาษา Dart
 
- * รูปแบบในการใช้ ของ Enum ในภาษา C
-
- * รูปแบบในการใช้ ของ Enum ในภาษา Python
-
+ * รูปแบบในการใช้ ของ Enum ในภาษา Python และความแตกต่าง กับภาษา Dart
+   ```python
+   from enum import Enum
+ 
+   class Season(Enum):
+    SPRING = 1
+    SUMMER = 2
+    AUTUMN = 3
+    WINTER = 4
+   
+```
 
 ## ตัวอย่างการใช้ Enum ใน Dart
 ```dart
@@ -179,6 +202,48 @@ int main() {
 
     return 0;
 }
+```
+
+Output  
+```
+Today I choose Volvo.
+```
+
+## ตัวอย่างการใช้ Enum ใน Python
+```python
+from enum import Enum
+
+class Cars(Enum):
+    Toyota = 1
+    Honda = 2
+    Nissan = 3
+    Ferrari = 4
+    Bugatti = 5
+    Benz = 6
+    Volvo = 7
+
+def main():
+    Mycartoday = Cars.Volvo
+    
+    if Mycartoday == Cars.Toyota:
+        print("Today I choose Toyota.")
+    elif Mycartoday == Cars.Honda:
+        print("Today I choose Honda.")
+    elif Mycartoday == Cars.Nissan:
+        print("Today I choose Nissan.")
+    elif Mycartoday == Cars.Ferrari:
+        print("Today I choose Ferrari.")
+    elif Mycartoday == Cars.Bugatti:
+        print("Today I choose Bugatti.")
+    elif Mycartoday == Cars.Benz:
+        print("Today I choose Benz.")
+    elif Mycartoday == Cars.Volvo:
+        print("Today I choose Volvo.")
+    else:
+        print("Not my cars")
+
+if __name__ == "__main__":
+    main()
 ```
 
 Output  

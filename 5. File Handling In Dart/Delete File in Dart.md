@@ -94,7 +94,6 @@ public static boolean deleteIfExists(Path path)
                               throws IOException
 ``` 
 ## Ex delete()
-use delete() method to delete file.
 ```java
 
 // Java program to delete a file
@@ -118,7 +117,6 @@ public class delete {
 </details>
 
 ## Ex deleteOnExit()  
-use delete() method to delete file.
 ```java
 import java.io.IOException;
 import java.nio.file.*;

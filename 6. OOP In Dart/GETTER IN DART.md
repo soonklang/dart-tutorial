@@ -512,8 +512,8 @@ Getter เป็นเมธตอดในค่าที่ส่วนให�
 
 # แหล่งอ้างอิง
 
-https://dart-tutorial.com/
+https://dart-tutorial.com/object-oriented-programming/getter-in-dart/
 
-https://dart.dev/tutorials
+https://dart.dev/language/methods
 
-https://www.geeksforgeeks.org/dart-tutorial/
+https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/?ref=lbp

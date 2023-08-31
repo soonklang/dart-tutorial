@@ -38,4 +38,7 @@ deleteSync() is Synchronously deletes this  **FileSystemEntity**.
 // FileSystemEntity
 File file = File('test.txt');
 ```
+**FileSystemEntity** is a directory
+if **recursive** is *false*
+
 

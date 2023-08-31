@@ -159,13 +159,14 @@ name = 'Eric Cartman'
   # print the value
 print(name)
 ```
+>ที่นี่ได้สร้างความคิดเห็นบรรทัดเดียวทั้งหมดสองรายการ คือ # create a variable และ # print the value
 <details open>
 <summary><b>output</b></summary>
  <pre>
 Eric Cartman
 </pre>
 </details>
->ที่นี่ได้สร้างความคิดเห็นบรรทัดเดียวทั้งหมดสองรายการ คือ # create a variable และ # print the value
+
 
   ## multi-line comments
   * C

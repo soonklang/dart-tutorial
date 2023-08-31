@@ -3,8 +3,15 @@
 Enum  คือ type ประเภทหนึ่ง เหมือนกับ class ใช้สำหรับกำหนดค่า constant values ที่เรารู้หรือจะเป็นค่า status ต่างๆที่เรารู้อยู่ก่อนแล้วก็ได้  เมื่อเรารู้ค่าล่วงหน้าอยู่แล้ว ว่า values ของเรามีอะไรบ้าง เราก็กำหนดมันเข้าไปได้ตั้งแต่ต้นเลย  พูดง่ายๆคือกำหนดค่าไว้ใช้งาน ซึ่งเป็นการกำหนดไว้ล่วงหน้า ประโยชน์ของมันคือ ทำให้ code เราอ่านง่ายและเข้าใจได้ทัน
 
 
-## รูปแบบในการใช้ ของ Enum ในภาษา Dart 
+## Syntax Of Enum In Dart
 ```dart
+enum enumName {
+  constantName1,
+  constantName2,
+  constantName3,
+  ...
+  constantNameN
+}
 enum cars {  
   Toyota,
   Honda,
@@ -94,4 +101,4 @@ Colors.Rainbow
 ```
 
 ## อ้างอิง
-.........
+https://dart-tutorial.com/introduction-and-basics/

@@ -1,5 +1,5 @@
 # Delete File in Dart
-## deleteSync method
+# deleteSync method
 ## Declaration
 
  Following is the declaration for deleteSync() function.
@@ -43,7 +43,7 @@ void main() {
 
 **!NOTE** Throws an exception if the FileSystemEntity cannot be deleted.
 
-## existsSync abstract method
+# existsSync abstract method
 ## Declaration
 
  Following is the declaration for existsSync() function.

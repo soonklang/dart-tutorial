@@ -165,12 +165,12 @@ os.remove(path, *, dir_fd=None)
 ```Python
 os.path.exists(path)
 ``` 
-## Ex os.remove()
+## Example os.remove()
 ```Python
 import os
 os.remove("demofile.txt")
 ```
-## Ex os.path.exists()  
+## Example os.path.exists()  
 ```Python
 import os
 if os.path.exists("demofile.txt"):
@@ -190,7 +190,7 @@ Syntax:
 int remove(const char *filename);
 ```
 
-## Ex remove()
+## Example remove()
 ```C
 #include <stdio.h>
 

@@ -41,7 +41,7 @@ void main() {
   print("Area is: ${area2.area}");
 }
 ```
-#Output
+Output
 ```dart
 Area is: 200
 Area is: -200
@@ -78,7 +78,7 @@ void main() {
   print("Area is: ${area2.area}");
 }
 ```
-#Output
+Output
 ```dart
 Area is: 200
 Unhandled exception:
@@ -131,7 +131,7 @@ void main() {
   shape2.draw();
 }
 ```
-#Output
+Output
 ```dart
 Drawing circle
 Drawing rectangle
@@ -171,4 +171,10 @@ void main() {
   print("Person2 name is : ${person2.name} with hashcode ${person2.hashCode}");
   print("Person3 name is : ${person3.name} with hashcode ${person3.hashCode}");
 }
+```
+Output
+```dart
+Person1 name is : John with hashcode 117
+Person2 name is : Harry with hashcode 118
+Person3 name is : John with hashcode 117
 ```

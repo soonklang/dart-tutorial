@@ -2,7 +2,7 @@
 # deleteSync method
 ## Declaration
 
- Following is the declaration for deleteSync() function.
+ Following is the declaration for deleteSync() method.
  ```dart
 void deleteSync(
 {bool recursive = false}
@@ -46,7 +46,7 @@ void main() {
 # existsSync abstract method
 ## Declaration
 
- Following is the declaration for existsSync() function.
+ Following is the declaration for existsSync() method.
  ```dart
 bool existsSync()
 ```
@@ -79,14 +79,14 @@ void main() {
 </pre>
 </details>
 
-# other language
-
-# existsSync abstract method
+# Delete file in other language
+- Java
+# delete() method
 ## Declaration
 
- Following is the declaration for existsSync() function.
+ Following is the declaration for delete() function.
  ```dart
-bool existsSync()
+public boolean delete() 
 ```
 existsSync() is checks whether the file system entity with this path exists.
 

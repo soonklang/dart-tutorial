@@ -102,25 +102,15 @@ class Student {
 จากตัวอย่างด้านล่างจะเป็นการสร้าง class ของทั้ง 3 ภาษา โดย class ชื่อ **Dog** จะมี properties คือ **breed** ,**name** และมี method **displayInfo** สำหรับแสดงค่าของ properties
 ### Python
 ```python
-class Dog:
-	breed = "Python"
-	name = "Dog"
-	def displayInfo(self):
-	  print("Breed : "+self.breed)
-	  print("Dog Name: "+self.name)  
-```
- 
-//python code here
-class Car {  
+class Car:  
    // field or properties
     engine = "E1001";  
    
    // function or method
-   def disp() { 
-      print(engine); 
-   } 
-}
-
+    def disp(): 
+      print(engine);   
+```
+ 
 ### Java
 ```java
 class Car {  
@@ -133,13 +123,7 @@ class Car {
    } 
 }
 ```
- 
-```java
-//java core here
-}
-```
 
- 
 ### Dart
 ```dart
 class Car {  
@@ -153,22 +137,18 @@ class Car {
 }
 ```
  
-```dart
-//dart code here
-```
-
-
- 
 ### C
 ```c
-class Student{
-	String breed = "Dart";
-	String name = "Dog";
-	void displayInfo(){
-		printf(...);
-		printf(...);
-	}
-};
+class Car {  
+   // field or properties
+    engine = "E1001";  
+   
+   // function or method
+   void disp() { 
+      printf(engine); 
+   } 
+}
+
 ```
 
 จากตัวอย่างการสร้าง class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน

@@ -43,7 +43,8 @@ enum cars {
 }
 ```
  * ### รูปแบบในการใช้ ของ Enum ในภาษา C    และความแตกต่าง กับภาษา Dart
-	* มีรูปแบบที่คล้ายกัน 
+	* มีรูปแบบที่คล้ายกัน
+        * มีค่าเริ่มต้นใน Enum คือ 1 ไปเรื่อยๆ 
 ```c
  enum cars {
     Toyota,
@@ -264,7 +265,7 @@ Output
 Today I choose Volvo.
 ```
 
-## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum
+## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum ในภาษา Dart
 
 
 ```dart
@@ -287,6 +288,104 @@ Colors.Yellow
 Colors.Pink
 Colors.Black
 Colors.Rainbow
+```
+
+## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum ในภาษา Java
+
+
+```java
+import java.io.*;
+ 
+// Enum Declared
+enum Color {
+    Green,
+    Red,
+    Blue,
+    Yellow,
+    Pink,
+    Black,
+    Rainbow;
+}
+ 
+// Driver Class
+ class GFG {
+ 
+    // Main Function
+    public static void main(String[] args)
+    {
+        // Iterating over all the values in
+        // enum using for loop
+        for (Color col : Color.values()) {
+            System.out.println(col);
+        }
+    }
+}
+}
+```
+Output  
+```
+Green
+Red
+Blue
+Yellow
+Pink
+Black
+Rainbow
+
+```
+
+## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum ในภาษา C
+
+
+```dart
+enum Colors { Green, Red, Blue, Yellow, Pink, Black, Rainbow }
+
+void main() {
+ // Colors.values: จะคืนค่าทั้งหมดที่อยู่ใน Enum(Colors).
+  for (Colors color in Colors.values) {
+    print(color);
+  }
+}
+
+```
+Output  
+```
+Colors.Green
+Colors.Red
+Colors.Blue
+Colors.Yellow
+Colors.Pink
+Colors.Black
+Colors.Rainbow
+```
+
+## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum ในภาษา Python
+
+
+```python
+from enum import Enum
+ 
+class Color(Enum):
+    Green =1 
+    Red=2 
+    Blue =3 
+    Yellow=4 
+    Pink=4 
+    Black=5 
+    Rainbow=6
+ 
+for color in (Color):
+    print(color.value,"-",color)
+
+```
+Output  
+```
+1 - Color.Green
+2 - Color.Red
+3 - Color.Blue
+4 - Color.Yellow
+5 - Color.Black
+6 - Color.Rainbow
 ```
 
 ## อ้างอิง

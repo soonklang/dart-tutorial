@@ -80,7 +80,7 @@ void main() {
 </details>
 
 # Delete file in other language
-- Java
+- ## Java
 # delete() method
 ## Declaration
 

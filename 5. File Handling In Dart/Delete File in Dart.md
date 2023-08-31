@@ -174,7 +174,6 @@ else:
 - # C
 ## remove() function
 ## Declaration
-Use the C remove() function from the standard library to delete a file.
 Syntax:
  ```C
 int remove(const char *filename);
@@ -195,6 +194,7 @@ int main() {
   return 0;
 }
 ```
+Use the C remove() function from the standard library to delete a file.
 
 # Comparing Dart with other languages (Python, C and Java) 
 

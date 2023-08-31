@@ -13,7 +13,7 @@
 ClassName objectName = ClassName();
 ```
 
-# ตัวอย่างที่ 1: Declaring An Objet In Dart
+# Example 1: Declaring An Objet In Dart
 ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ**currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจากนี้ยังมี object ของ class**Bicycle** ที่calledเรียก**bicycle**
 ```dart
     class Bicycle {
@@ -49,7 +49,7 @@ Size: 26
 Current Speed: 5</code></pre>
 </details>
 
-# ตัวอย่างที่ 2: Declaring Animal Class Object In dart
+# Example 2: Declaring Animal Class Object In dart
 ในตัวอย่างนี้มี class **Animal**ทีมี properties 3 ประการ: **name** , **numberOfLegs**และ**lifeSpan** class ยังมี method **display**ที่พิมพ์ค่าของ properties ทั้งสามออกมา และยังมี object ของ class**Animal** ที่เรียกว่า**animal**
 ```dart
     class Animal {
@@ -81,7 +81,7 @@ Life Span: 10.</code></pre>
 </details>
 
 
-# ตัวอย่างที่ 3: Declaring Car Class Object In dart
+# Example 3: Declaring Car Class Object In dart
 ในตัวอย่างนี้มี class **Car**ทีมี properties 3 ประการ: **name** , **color**และ**numberOfSeats** class ยังมี method **start**ที่พิมพ์ข้อความ "Car Started" และยังมี object ของ class**Car** ที่เรียกว่า**car**
 ```dart
     class Car {
@@ -156,6 +156,7 @@ Student Roll Number is: 90001</code></pre>
 </details>
 
 ### C
+ในภาษา C เราใช้ **struct** เพื่อแทน class ในภาษา Dart โดยการสร้างหนึ่งโครงสร้างที่มีชื่อว่า "Student" ซึ่งประกอบด้วย field ต่างๆ ที่เหมือนกับตัวแปรใน class Dart ในส่วนของการเข้าถึง**ฟังก์ชัน(method)** ใน C นั้นเราเปลี่ยนมันเป็นฟังก์ชันเรียกใช้งานด้วยการส่งค่าโครงสร้างเป็น **Argument** เช่น **showStdInfo(std)** และเราใช้ฟังก์ชัน strcpy จากไลบรารี <string.h> เพื่อคัดลอกชื่อนักเรียนเข้าสู่field stdName ในโครงสร้าง.
 ```c
 #include <stdio.h>
 
@@ -194,6 +195,8 @@ Student Roll Number is: 90001</code></pre>
 </details>
 
 ### Java
+ใน Java เราเก็บคลาส Student ที่มีแอตทริบิวต์ stdName, stdAge และ stdRoll_nu และเมธอด showStdInfo() ไว้ ส่วนใน main เราจะสร้างอ็อบเจ็กต์ของคลาส Student กำหนดค่าแอตทริบิวต์ของอ็อบเจ็กต์ด้วยการใช้สมาชิกจากตัวอ็อบเจ็กต์ และเรียกใช้เมธอด showStdInfo() เพื่อแสดงข้อมูลนักเรียน   
+Java และ Dart เป็นภาษาเชิงวัตถุ ดังนั้นแนวคิดและโครงสร้างจึงมีความคล้ายกัน แต่ยังคงมีความแตกต่างในเทคนิคและวิธีการเขียนเชิงลึกที่แตกต่างกันไป
 ```java
 // Defining class
 class Student {
@@ -230,6 +233,7 @@ Student Roll Number is: 90001</code></pre>
 </details>
 
 ### Python
+ในภาษา Python เราสร้าง class Student และเมธอด **__init__** เพื่อกำหนดค่าเริ่มต้นสำหรับ attribute ในคลาส เราไม่ต้องกำหนดชนิดข้อมูลของแอตทริบิวต์เนื่องจาก Python เป็นภาษาที่ไม่ต้องการประกาศชนิดข้อมูลโดยชัดเจน ส่วนเมธอด **showStdInfo()** ถูกเรียกใช้เหมือนกับเมธอดใน Dart และการเข้าถึง attribute ใน Python จะใช้ **self** ในการอ้างอิงถึงแอตทริบิวต์ในคลาส
 ```python
 class Student:
     def __init__(self):

@@ -72,9 +72,50 @@ void main() {
 }
 ```
 <details>
+ 
 <summary><strong>Output</strong></summary>
 <pre>
 <code>File does not exist.</code>
 </pre>
 </details>
+
+# other language
+
+# existsSync abstract method
+## Declaration
+
+ Following is the declaration for existsSync() function.
+ ```dart
+bool existsSync()
+```
+existsSync() is checks whether the file system entity with this path exists.
+
+## Ex
+use existsSync() method to check if a file exists or not.
+```dart
+// dart program to delete file if exists
+import 'dart:io';
+
+void main() {
+  // open file
+  File file = File('test.txt');
+  // check if file exists
+  if (file.existsSync()) {
+    // delete file
+    file.deleteSync();
+    print('File deleted.');
+  } else {
+    print('File does not exist.');
+  }
+}
+```
+<details>
+ 
+<summary><strong>Output</strong></summary>
+<pre>
+<code>File does not exist.</code>
+</pre>
+</details>
+
+
 

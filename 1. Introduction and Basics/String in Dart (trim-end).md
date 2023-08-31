@@ -455,6 +455,22 @@ void main() {
 </details>
 <br>
 
+#### ตัวอย่าง toString() ในภาษา C
+```c
+#include<stdio.h>
+
+int main() {
+  int num = 123;
+  char str[5];
+  sprintf(str, "%d", num); // integer to string
+  printf("%s\n", str);
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>"123"</code></pre>
+</details>
+<br>
 #### ตัวอย่าง toString() ในภาษา Java
  ```java
 public class Test { 

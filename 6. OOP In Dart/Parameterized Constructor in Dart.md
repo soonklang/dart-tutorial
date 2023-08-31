@@ -11,3 +11,16 @@
       ClassName(this.number, this.name);
     }
 ```
+หรือจะเขียนกำหนดค่าให้ **Instance Variables** แบบนี้ก็ได้
+```dart
+    class ClassName {
+      // Instance Variables
+      int? number;
+      String? name;
+      // Parameterized Constructor
+      ClassName(int number, String name){
+	      this.number = number;
+	      this.name = name;
+      }
+    }
+```

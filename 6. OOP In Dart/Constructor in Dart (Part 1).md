@@ -56,8 +56,8 @@ ClassName() {
 > หมายเหตุ เมื่อคุณสร้าง Object ของ class ใดๆ Constructor จะถูกเรียกอัตโนมัติ มันถูกใช้ในการกำหนดค่าเริ่มต้นเมื่อมีการสร้าง Object
 
 
-##  Example 1: How To Declare Constructor In Dart
-    ในตัวอย่างนี้ด้านล่างมี class Student ที่มีคุณสมบัติสามอย่างคือ  name , age และ rollNumber ใน class นี้จะใช้ constructor เพื่อกำหนดค่าของคุณสมบัติทั้งสาม นอกจากนี้เรายังสร้างวัตถุของ class Student ใน main
+##  ตัวอย่างที่ 1: วิธีการประกาศ Constructor ใน Dart
+- ในตัวอย่างนี้ด้านล่างมี class Student ที่มีคุณสมบัติสามอย่างคือ  name , age และ rollNumber ใน class นี้จะใช้ constructor เพื่อกำหนดค่าของคุณสมบัติทั้งสาม นอกจากนี้เรายังสร้างวัตถุของ class Student ใน main
 ```dart
 class Student {
   //เราประกาศคลาส Student ซึ่งมีคุณสมบัติ name และ age และ rollNumber โดยใช้คีย์เวิร์ด String? และ int? เพื่อระบุว่าคุณสมบัติเหล่านี้อาจมีค่า null หรือไม่ก็ได้
@@ -125,7 +125,7 @@ public class Main {
 }
 ```
 
-## Example 2: Constructor In Dart
+## ตัวอย่างที่ 2: ตัวสร้างใน Dart
 
 - ในตัวอย่างด้านล่างนี้ มี class ชื่อ Teacher มีคุณสมบัติทั้งหมด 4 ค่า คือ name, age, subject, และ salary คลาสนี้มี constructor 1 ตัวที่ใช้ในการกำหนดค่าเริ่มต้นของคุณสมบัติต่าง ๆ ใน class 
 - นอกจากนี้ class ยังมี method ชื่อ display() ที่ใช้ในการแสดงค่าของคุณสมบัติต่าง ๆ ใน class  เราได้สร้าง Object 2 ตัวของ class Teacher โดยตั้งชื่อว่า teacher1 และ teacher2
@@ -220,7 +220,7 @@ public class Main {
 >เมื่อคุณสร้าง object ของ class แต่ละ Object นั่นคือ ถึงแม้คุณสร้าง Object หลายตัวที่เป็นของ class เดียวกัน แต่แต่ละ Object จะมีสำเนาของคุณสมบัติที่แตกต่างกันเอง
 >นั่นหมายความว่าการเปลี่ยนแปลงค่าคุณสมบัติใน Object หนึ่งจะไม่กระทบถึงค่าคุณสมบัติใน Object อื่น ทำให้แต่ละ Object มีความอิสระในการจัดการค่าของตัวเองโดยไม่ส่งผลกระทบกับ Object อื่นใด ๆ ที่เป็นของ class เดียวกัน
 
-## Example 3: Constructor In Dart
+## ตัวอย่างที่ 3: ตัวสร้างใน Dart
 
 - ในตัวอย่างด้านล่างนี้, มี class ชื่อ Car ที่มีคุณสมบัติ 2 อย่างคือ name และ prize class นี้มี constructor 1 ตัวสำหรับกำหนดค่าเริ่มต้นของคุณสมบัติต่าง ๆ ใน class
 - นอกจากนี้ class ยังมี method ชื่อ display() ที่ใช้สำหรับแสดงค่าของคุณสมบัติต่าง ๆ ใน class เราได้สร้าง object 1 ตัวของ class  Car และตั้งชื่อว่า car
@@ -284,7 +284,7 @@ public class Main {
     }
 }
 ```
-## Example 4: Constructor In Dart
+## ตัวอย่างที่ 4: ตัวสร้างใน Dart
 - ในตัวอย่างด้านล่างนี้, มี class ชื่อ Staff ที่มีคุณสมบัติ 4 อย่างคือ name, phone1, phone2, และ subject class นี้มี constructor 1 
 - ตัวสำหรับกำหนดค่าเริ่มต้นของคุณสมบัติบางส่วนใน class นอกจากนี้ class ยังมี method ชื่อ display() ที่ใช้สำหรับแสดงค่าของคุณสมบัติต่าง ๆ ใน class เราได้สร้าง object 1 ตัวของ class Staff และตั้งชื่อว่า staff
 ```dart

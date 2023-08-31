@@ -137,7 +137,7 @@ class Car {
 จากตัวอย่างด้านบน class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
 
 ### C
-ภาษา C เนื่องจากเป็นภาษา Procedural Programming ไม่ใช่ Object Oriented Programming (OOP) ทำให้ถ้าหากต้องการเขียน code ให้ทำงานใกล้เคียงกับภาษาอื่นๆ ในตัวอย่างด้านบนจึงต้องใช้ struct มาช่วย
+เนื่องจาก C เป็นภาษา Procedural Programming ไม่ใช่ Object Oriented Programming (OOP) จึงไม่สามารถสร้าง class ได้
 
  
 

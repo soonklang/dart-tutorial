@@ -21,7 +21,7 @@ interface Animal {
   public void sleep(); 
 }
 ```
-#ตัวอย่างการใช้ Interface ในภาษา Dart
+# ตัวอย่างการใช้ Interface ในภาษา Dart
 ```dart
 class Zoo {
   void Animal() {
@@ -43,7 +43,7 @@ void main() {
   khao_kheow_zoo.Animal();
 }
 ```
-#Output
+# Output
 ```
 สวนสัตว์เขาเขียวมี สิงโต ม้าลาย อย่างล่ะตัว
 ```

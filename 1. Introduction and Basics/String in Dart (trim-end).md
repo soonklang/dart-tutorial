@@ -140,11 +140,26 @@ public class Main {
     System.out.println(myStr1.compareTo(myStr2)); // Returns 0 because they are equal
   }
 }
-
 ```
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>0 </code></pre>
+</details>
+<br>
+
+#### ตัวอย่าง compareTo() ในภาษา Python
+```
+string1 = "Hello"
+string2 = "Hello"
+
+if string1 == string2:
+    print("Both strings are equal")
+else:
+    print("Both strings are not equal")
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Both strings are equal</code></pre>
 </details>
 <br>
 
@@ -335,23 +350,22 @@ class Main {
 </details>
 <br>
 
-## CodeUnitAt In Dart
-Return หน่วยรหัส UTF-16 16 บิตที่ดัชนีที่กำหนด
+#### ตัวอย่าง substring() ในภาษา Python
+ ```python
+s = 'My Name is Pankaj'
 
-#### Return Type
-   Return ค่าจำนวนเต็ม
+# create substring using slice
+name = s[11:]
+print(name)
 
-
-  #### ตัวอย่าง codeUnitAt() ในภาษา Dart
-```dart
-void main() { 
-   var res = "Good Day"; 
-   print("Code Unit of index 0 (G): ${res.codeUnitAt(0)}");  
-}  
+# list of substrings using split
+l1 = s.split()
+print(l1)
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Code Unit of index 0 (G): 71   </code></pre>
+  <pre><code>Pankaj
+['My', 'Name', 'is', 'Pankaj']</code></pre>
 </details>
 <br>
 
@@ -371,6 +385,34 @@ void main() {
   <pre><code>Hello Reverse is olleH </code></pre>
 </details>
 <br>
+
+#### ตัวอย่าง reverse() ในภาษา Java
+ ```java
+class Main {
+  public static void main(String[] args) {
+    String str1 = "java is fun";
+
+    System.out.println(str1.substring(0, 4));
+  }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>java</code></pre>
+</details>
+<br>
+
+#### ตัวอย่าง reverse() ในภาษา Python
+```python
+txt = "Hello World"[::-1]
+print(txt)
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>dlroW olleH</code></pre>
+</details>
+<br>
+
 
 ## วิธีการใช้ตัวอักษรตัวแรกของสตริงเป็นตัวพิมพ์ใหญ่ใน Dart
 
@@ -395,3 +437,5 @@ https://dart-tutorial.com/introduction-and-basics/string-in-dart/
 https://www.tutorialspoint.com/dart_programming/dart_programming_string.htm
 https://www.w3schools.com/python/python_ref_string.asp
 https://www.programiz.com/python-programming/methods/string
+
+https://www.freecodecamp.org/news/python-strip-how-to-trim-a-string-or-line/

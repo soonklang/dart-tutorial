@@ -29,7 +29,7 @@
 ในตัวอย่างที่ 1 มี **Class Student** ที่มี ตัวแปร 3 ตัว คือ **name** , **age** และ **rollNumber**
 ใน **Class Student** มี **constructor** ตัวเดียว ที่มีการรับ **parameters** มากำหนดค่าให้**ตัวแปร**ใน class ทั้ง 3 ตัว
 ```dart
-	class Student {
+    class Student {
       String? name;
       int? age;
       int? rollNumber;

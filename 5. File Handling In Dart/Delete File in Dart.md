@@ -39,6 +39,6 @@ deleteSync() is Synchronously deletes this  **FileSystemEntity**.
 File file = File('test.txt');
 ```
 **FileSystemEntity** is a directory
-and if **recursive** is false it mean the directory is empty
+**recursive** is bool 
 
 

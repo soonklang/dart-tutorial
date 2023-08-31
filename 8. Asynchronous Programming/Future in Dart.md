@@ -180,7 +180,6 @@ async def main():
 asyncio.run(main())
 ```
 
-### ความแตกต่างหลักๆของภาษาอื่นๆเทียบกับ Dart
 
 
 

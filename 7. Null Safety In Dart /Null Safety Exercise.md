@@ -16,7 +16,7 @@ void main() {
 
 <details>
   <summary><strong>Correct Code</strong></summary>
-  
+
 ```dart
 //Code after using '?'
 void main() {
@@ -26,11 +26,14 @@ void main() {
 }
 ```
 
-Correct Output
+#### Correct Output
+
 ```
 Age is null
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' (int? age;) code จะรันผ่านและขึ้นผลลัพธ์
 ```
+
+
 
 </details>
 
@@ -57,7 +60,7 @@ void main() {
 }
 ```
 
-Correct Output
+#### Correct Output
 ```
 [1, 2, null, 4]
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' (List<int?> items = [1, 2, null, 4];) code จะรันผ่านและขึ้นผลลัพธ์
@@ -92,7 +95,7 @@ void main() {
 }
 ```
 
-Correct Output
+#### Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (String name1 = name!;) ในกรณีนี้ name เป็น null จึงทำให้เกิด NullError
@@ -130,7 +133,7 @@ void main() {
   print(name1);
 }
 ```
-Correct Output
+#### Correct Output
 ```
 a
 //จะเห็นว่าถ้าหาก name ไม่เป็น null มันก็จะปริ้นค่านั้นออกมา 
@@ -169,7 +172,7 @@ void main() {
 }
 ```
 
-Correct Output
+#### Correct Output
 ```
 1
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (int firstItem = items.first!;)
@@ -207,7 +210,7 @@ void main() {
   print(firstItem);
 }
 ```
-Correct Output
+#### Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ตัวแรกใน List เป็น null จะทำให้เกิด NullError
@@ -246,7 +249,7 @@ void main() {
 }
 ```
 
-Correct Output
+#### Correct Output
 ```
 5
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (int result = returnNullButSometimesNot()!.abs();)
@@ -285,7 +288,7 @@ void main() {
  print(result);
 }
 ```
-Correct Output
+#### Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่า return เป็น null จะทำให้เกิด NullError
@@ -327,7 +330,7 @@ void main() {
 }
 ```
 
-Correct Output
+#### Correct Output
 ```
 The length of the string is 5
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม (return name!.length;) ในกรณีนี้ค่า length ของ 'name' = 5 ก็จะแสดง 5 ออกมา
@@ -367,7 +370,7 @@ void main() {
   print("The length of the string is $length");
 }
 ```
-Correct Output
+#### Correct Output
 ```
 Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: TypeError: Cannot read properties of null (reading 'toString')
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '!' ที่เป็นตัวยืนยันว่าค่าเป็น null ไหม ในกรณีนี้ ค่าตัวแปร 'name' เป็น null จะทำให้เกิด NullError
@@ -404,7 +407,7 @@ void main() {
 }
 ```
 
-Correct Output
+#### Correct Output
 ```
 Hello
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '??' ต่อหลัง 'name' (String name1 = name ?? 'Hello';)
@@ -435,7 +438,7 @@ if(name is String){
 }
 ```
 
-Correct Output
+#### Correct Output
 ```
 4
 //จะเห็นว่าเมื่อเราใช้ type promotion if(name is String) จะปรับปรุงชนิดของตัวแปรโดยอัตโนมัติ ในตัวแปร 'name'
@@ -495,7 +498,7 @@ void main() {
 
 ```
 
-Correct Output
+#### Correct Output
 ```
 The length of value is 5 or The value is not string.
 //ใน code นี้ เรากำหนดตัวแปร 'value' เพื่อจะสุ่มเก็บค่า String (true) หรือไม่ก็ null(false) ตอน random boolean แล้วเราจะ type promoted เป็น non-nullalbe type String ตรง  if(value is String)
@@ -549,7 +552,7 @@ void main() {
 
 ```
 
-Correct Output
+#### Correct Output
 ```
 Mark
 //เมื่อเราใส่คำสั่ง late ไปตอนประกาศตัวแปร late String _name; จะเป็นการบอกว่าจะกำหนดค่าให้ภายหลัง ใช้ในการประกาศ non-nullable

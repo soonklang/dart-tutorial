@@ -109,45 +109,56 @@ class Dog:
 	  print("Breed : "+self.breed)
 	  print("Dog Name: "+self.name)  
 ```
-<!---
+ 
 //python code here
--->
+class Car {  
+   // field or properties
+    engine = "E1001";  
+   
+   // function or method
+   def disp() { 
+      print(engine); 
+   } 
+}
+
 ### Java
 ```java
-class Dog {
-    	String breed = "Java";
-	String name = "Dog";	
-	void displayInfo() {
-	  System.out.println("Breed: "+breed);
-	  System.out.println("Dog Name: "+name);
-   }
+class Car {  
+   // field or properties
+   String engine = "E1001";  
+   
+   // function or method
+   void disp() { 
+      System.out.println(engine); 
+   } 
 }
 ```
-<!---
+ 
 ```java
 //java core here
 }
 ```
--->
+
  
 ### Dart
 ```dart
-class Dog {
-	String breed = "Dart";
-	String name = "Dog";	
-	void displayInfo() {
-	  print("Breed: $breed");
-	  print("Dog Name: $name");
-   }
+class Car {  
+   // field or properties
+   String engine = "E1001";  
+   
+   // function or method
+   void disp() { 
+      print(engine); 
+   } 
 }
 ```
-<!---
+ 
 ```dart
 //dart code here
 ```
--->
 
-<!---
+
+ 
 ### C
 ```c
 class Student{
@@ -159,7 +170,7 @@ class Student{
 	}
 };
 ```
--->
+
 จากตัวอย่างการสร้าง class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
 
 # Reference

@@ -12,10 +12,10 @@ class Class_name implements Interface_class_name {
    ...
 }
 ```
-จะเห็น ว่า ไม่ต้องเติม  คำว่า intterface หน้า ชื่อคลาสแม่แบบที่ต้องการให้implement  
+จะเห็นว่า ไม่ต้องเติมคำว่า intterface หน้าชื่อคลาสแม่แบบที่ต้องการให้implement  
  ในภาษา Dart จะมองว่าทุกๆ class เป็น interface สามารถนำไปใช้งานได้ โดยไม่ต้องใช้ interface keyword
 # Syntax ของ java 
-```dart
+```java
 interface Animal {
   public void animalSound(); 
   public void sleep(); 

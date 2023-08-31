@@ -47,7 +47,7 @@ Output
 ```
 สวนสัตว์เขาเขียวมี สิงโต ม้าลาย อย่างล่ะตัว
 ```
-# การใช้ Implementing Multiple Interfaces
+# ตัวอย่างการใช้ Implementing Multiple Interfaces
 ```dart
 void main() { 
    Calculator c = new Calculator(); 

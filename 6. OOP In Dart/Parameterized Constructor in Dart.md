@@ -1,4 +1,3 @@
-
 # Parameterized Constructor in Dart
 **Parameterized Constructor** เป็น **constructor** ที่มีการกำหนด **parameters** และ ค่าที่รับมาจะถูกส่งไปใน **constructor** ขณะที่กำลังมีการสร้าง **object** อาจเพื่อใช้กำหนดค่าให้  **instance variables** หรือ **ตัวแปร** ของ **Class**
 
@@ -37,7 +36,7 @@
       Student(this.name, this.age, this.rollNumber);
     }
     
-	void main(){
+    void main(){
         // Here student is object of class Student. 
         Student student = Student("John", 20, 1);
         print("Name: ${student.name}");

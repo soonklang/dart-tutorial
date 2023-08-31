@@ -47,7 +47,7 @@ void main() {
 ## Declaration
  **deleteSync()** 
  Following is the declaration for existsSync() function.
- ```
+ ```dart
 bool existsSync()
 ```
 existsSync() is checks whether the file system entity with this path exists.

@@ -7,8 +7,8 @@
 *   split(): แยกสตริงที่ตรงกับตัวคั่นที่ระบุและส่งคืนรายการสตริงย่อย
 *    toString(): ส่งกลับการแสดงสตริงของวัตถุนี้
 * substring(): ส่งกลับสตริงย่อยของสตริงนี้ที่ขยายจาก startIndex แบบรวม ถึง endIndex แบบเอกสิทธิ์เฉพาะบุคคล
-*  codeUnitAt(): ส่งกลับหน่วยรหัส UTF-16 16 บิตที่ดัชนีที่กำหนด
-
+*  Reverse(): หากต้องการย้อนกลับสตริงใน Dart สามารถย้อนกลับได้โดยใช้วิธีแก้ไขปัญหาอื่น
+  
 ## Trim String In Dart
 
    Return สตริงใหม่โดยการลบช่องว่างนำหน้าและต่อท้ายทั้งหมด และยังสามารถใช้เมธอด trimLeft() และ trimRight() เพื่อลบช่องว่างจากซ้ายและขวาตามลำดับ
@@ -35,6 +35,44 @@ void main() {
   <pre><code>hello 
 hello world 
 hello</code></pre>
+</details>
+<br>
+
+#### ตัวอย่าง trim() ในภาษา C
+```dart
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char *trimString(char *str)
+{
+    char *end;
+    while(isspace((unsigned char)*str)) str++;
+    if(*str == 0)
+        return str;
+    end = str + strlen(str) - 1;
+
+    while(end > str && isspace((unsigned char)*end)) end--;
+    end[1] = '\0';
+    return str;
+}
+
+int main(void) {
+    const char *str1 = "  temporary string     ";
+    printf("%s\n", str1);
+
+    char *tmp = strdup(str1);
+    printf("%s\n", trimString(tmp));
+
+    free(tmp);
+    exit(EXIT_SUCCESS);
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>  temporary string     
+temporary string</code></pre>
 </details>
 <br>
 
@@ -131,6 +169,35 @@ str3.compareTo(str2): 1 </code></pre>
 </details>
 <br>
 
+#### ตัวอย่าง compareTo() ในภาษา C
+```dart
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main() {
+    const char* str1 = "hello there 1";
+    const char* str2 = "hello there 2";
+    const char* str3 = "Hello there 2";
+
+    !strcmp(str1, str2) ?
+        printf("strings are equal\n") :
+        printf("strings are not equal\n");
+
+    !strcmp(str1, str3) ?
+        printf("strings are equal\n") :
+        printf("strings are not equal\n");
+
+    exit(EXIT_SUCCESS);
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>strings are not equal
+strings are not equal</code></pre>
+</details>
+<br>
+
  #### ตัวอย่าง compareTo() ในภาษา Java
  ```java
 public class Main {
@@ -184,6 +251,51 @@ void main() {
 </details>
 <br>
 
+#### ตัวอย่าง replaceAll() ในภาษา C
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+void solve()
+{
+    
+    char c[100];
+    int i, j, length = 0;
+    
+    printf("Enter a string : ");
+    printf("\n");
+    // gets(c);
+    scanf("%s", c);
+    length = strlen(c);
+    for (i = 0; i < length; i++) {
+       
+        if (c[i] == 'A' || c[i] == 'E' || c[i] == 'I' || c[i] == 'O' || c[i] == 'U' ||
+         c[i] == 'a' || c[i] == 'e' || c[i] == 'i' || c[i] == 'o' || c[i] == 'u' ) {
+           
+            for (j = i; j < length; j++) {
+              
+                c[j] = c[j + 1];
+            }
+            i--;
+            length--;
+        }
+        c[length + 1] = '\0';
+    }
+   printf("After Deletion the string will be  : %s", c);
+ 
+}
+int main()
+{
+    solve();
+    return 0;
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>The quick brown cat jumps over the lazy dog.</code></pre>
+</details>
+<br>
+
  #### ตัวอย่าง replaceAll() ในภาษา Java
  ```java
 public class Main {
@@ -230,6 +342,37 @@ void main() {
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>New String: [Today,  is,  Thursday]</code></pre>
+</details>
+<br>
+
+  #### ตัวอย่าง split() ในภาษา C
+```c
+#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+    char str[] = "Geeks-for-Geeks";
+ 
+    // Returns first token
+    char *token = strtok(str, "-");
+   
+    // Keep printing tokens while one of the
+    // delimiters present in str[].
+    while (token != NULL)
+    {
+        printf("%s\n", token);
+        token = strtok(NULL, "-");
+    }
+ 
+    return 0;
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code> Geeks
+    for
+    Geeks</code></pre>
 </details>
 <br>
 

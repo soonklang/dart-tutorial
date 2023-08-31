@@ -495,7 +495,7 @@ Anya forger love her mom but i have to wait 50 sec ToT
 
  - ใน Java เราใช้ method `Thread.sleep()` เพื่อใช้ในการรอโปรแกรมให้ไปทำงานส่วนตรงอื่นก่อน และไม่มีการสั่งรอโดยตรงเหมือน Dart จึงต้องเรียก Thread เข้ามาใช้ด้วย
 
- - ใน Python ฟังก์ชั่น `time.sleep' ต้อง import เข้ามาก่อนจึงจะสามารถเรียกใช้ได้
+ - ใน Python ฟังก์ชั่น `time.sleep()` ต้อง import เข้ามาก่อนจึงจะสามารถเรียกใช้ได้
 
 
 ## Link เนื้อหาเพิ่มเติม

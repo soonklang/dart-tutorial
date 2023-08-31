@@ -55,7 +55,7 @@ void main() {
  str(10).forEach(print);
 }
 ```
-
+>จากตัวอย่าง มีการใช้ yield* เพื่อพิมพ์ค่าของฟังก์ชัน recursive(เรียกใช้ str() ซ้ำๆ)
 <details>
 <summary><strong>Output</strong></summary>
 <pre><code>10
@@ -85,6 +85,7 @@ void main() {
   controller.close();
 }
 ```
+>จากตัวอย่าง String integer และ error จะถูกเพิ่มลงใน StreamController() โดยใช้ listen() ในการรับค่าและพิมพ์ค่า
 <details>
 <summary><strong>Output</strong></summary>
 <pre><code>Hello
@@ -110,6 +111,7 @@ void main(List<String> arguments) {
   stream.listen((s) => print(s));
 }
 ```
+>จากตัวอย่าง จะเห็นได้ว่า async* สามารถพิมพ์ค่าได้หลายๆค่า นั่นก็คือ 0-6
 
 <details>
 <summary><strong>Output</strong></summary>
@@ -139,6 +141,7 @@ void main() {
  str(10).forEach(print);
 }
 ```
+>จากตัวอย่าง จะเห็นได้ว่ามีการพิมพ์ค่า 0-10 โดยแต่ละค่าจะพิมพ์ค่าหลังจากผ่านไป 1 วินาที
 
 <details>
 <summary><strong>Output</strong></summary>
@@ -154,13 +157,13 @@ void main() {
 |async                             |async*                                             |
 |----------------------------------|---------------------------------------------------|
 |ใช้กับ  Future                      |ใช้กับ  Stream                                       |
-|async อาจใช้เวลาในการทำงานที่อาจยาวนาน|async* ส่งค่าผลลัพธ์ที่เป็น Future values หลายๆ ครั้งพร้อมกัน|
+|async อาจใช้เวลาในการทำงานที่อาจยาวนาน|async* พิมพ์ค่าที่เป็น Future values หลายๆครั้งพร้อมกัน    |
 |ส่งผลลัพธ์กลับมาในรูปแบบของ Future    |ส่งผลลัพธ์กลับมาในรูปแบบของ Stream                     |
 
 ## yield vs yield*
 |yield                                               |yield*                           |
 |----------------------------------------------------|---------------------------------|
-|ใช้สำหรับคืนค่าผลลัพธ์แบบค่าเดียว แต่ไม่หยุดการทำงานของฟังก์ชัน |ใช้สำหรับคืนค่าผลลัพธ์ recursive      |
+|ใช้สำหรับคืนค่าผลลัพธ์แบบค่าเดียว แต่ไม่หยุดการทำงานของฟังก์ชัน |ใช้สำหรับคืนค่าผลลัพธ์ฟังก์ชัน recursive |
 
 
 

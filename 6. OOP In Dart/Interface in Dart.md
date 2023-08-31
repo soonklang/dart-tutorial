@@ -85,8 +85,8 @@ Discount:50
 
 5.เราสามารถใช้อินเทอร์เฟซหนึ่งหรือหลายอินเทอร์เฟซพร้อมกันได้
 # Reference
-https://dart-tutorial.com/object-oriented-programming/interface-in-dart/
-https://www.geeksforgeeks.org/interface-in-dart/
-https://www.educative.io/answers/what-is-an-interface-in-dart/
-https://www.darttutorial.org/dart-tutorial/dart-interface/
-https://www.javatpoint.com/dart-interfaces
+https://dart-tutorial.com/object-oriented-programming/interface-in-dart/<br>
+https://www.geeksforgeeks.org/interface-in-dart/<br>
+https://www.educative.io/answers/what-is-an-interface-in-dart/<br>
+https://www.darttutorial.org/dart-tutorial/dart-interface/<br>
+https://www.javatpoint.com/dart-interfaces<br>

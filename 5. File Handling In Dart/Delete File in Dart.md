@@ -145,5 +145,30 @@ public class deleteIfExists {
 </details>
 
 
+- # Python
+## os.remove() and os.path.exists() method 
+## Declaration
+
+Syntax:
+ ```Python
+os.remove(path, *, dir_fd=None)
+```
+```Python
+os.path.exists(path)
+``` 
+## Ex os.remove()
+```Python
+import os
+os.remove("demofile.txt")
+```
+## Exos.path.exists()  
+```Python
+import os
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
+```
+
 
 

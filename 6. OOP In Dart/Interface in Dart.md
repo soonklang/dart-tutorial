@@ -80,3 +80,13 @@ Discount:50
 2.คลาสสามารถขยายได้เพียงคลาสเดียว แต่สามารถนำไปใช้ได้มากเท่าที่คุณต้องการ
 
 3.Dart ไม่มีวิธีการโดยตรงในการประกาศอินเทอร์เฟซ ดังนั้นการประกาศคลาสจึงถือเป็นการประกาศบนอินเทอร์เฟซ
+
+4.คลาสย่อยจะต้องแทนที่ฟิลด์ของอินเทอร์เฟซ
+
+5.เราสามารถใช้อินเทอร์เฟซหนึ่งหรือหลายอินเทอร์เฟซพร้อมกันได้
+# Reference
+https://dart-tutorial.com/object-oriented-programming/interface-in-dart/
+https://www.geeksforgeeks.org/interface-in-dart/
+https://www.educative.io/answers/what-is-an-interface-in-dart
+https://www.darttutorial.org/dart-tutorial/dart-interface/
+https://www.javatpoint.com/dart-interfaces

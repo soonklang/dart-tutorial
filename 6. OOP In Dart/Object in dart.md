@@ -3,7 +3,7 @@
 **ตัวอย่าง** objectจักรยาน อาจมีattributes(คุณลักษณะ)ต่างๆ เช่น **color(สี)** , **size(ขนาด)** , **current speed(ความเร็วปัจจุบัน)** อาจมีmethod เช่น changeGear , PadalFaster และ Brake
 
 # Instantiation
-การเขียนโปรแกรมเชิงวัตถุ **การสร้าง instantiation** คือ กระบวนการสร้างinstanceของclass หรือจะบอกได้ว่าการสร้าง instantiation เป็นกระบวนการสร้างobjectของclass เช่น หากคุณมีclassชื่อ **Bicycle** จะสามารถสร้างobjectของclassชื่อ **Bicycle** ได้
+การเขียนโปรแกรมเชิงวัตถุ **การสร้าง instantiation** คือ กระบวนการสร้างinstanceของclass หรือจะบอกได้ว่าการสร้าง instantiation เป็นกระบวนการสร้าง object ของ class เช่น หากคุณมี class ชื่อ **Bicycle** จะสามารถสร้างobjectของclassชื่อ **Bicycle** ได้
 
 # Declaring Object In Dart
 เมื่อทำการสร้าง class แล้วจะต้องประกาศobject คุณสามารถประกาศ object โดยใช้ syntax ต่อไปนี้:
@@ -14,7 +14,7 @@ ClassName objectName = ClassName();
 ```
 
 # Example 1: Declaring An Objet In Dart
-ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ**currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจากนี้ยังมี object ของ class**Bicycle** ที่calledเรียก**bicycle**
+ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ **currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจากนี้ยังมี object ของ class **Bicycle** ที่calledเรียก **bicycle**
 ```dart
     class Bicycle {
       String? color;
@@ -50,7 +50,7 @@ Current Speed: 5</code></pre>
 </details>
 
 # Example 2: Declaring Animal Class Object In dart
-ในตัวอย่างนี้มี class **Animal**ทีมี properties 3 ประการ: **name** , **numberOfLegs**และ**lifeSpan** class ยังมี method **display**ที่พิมพ์ค่าของ properties ทั้งสามออกมา และยังมี object ของ class**Animal** ที่เรียกว่า**animal**
+ในตัวอย่างนี้มี class **Animal**ทีมี properties 3 ประการ: **name** , **numberOfLegs** และ **lifeSpan** class ยังมี method **display**ที่พิมพ์ค่าของ properties ทั้งสามออกมา และยังมี object ของ class**Animal** ที่เรียกว่า**animal**
 ```dart
     class Animal {
       String? name;
@@ -82,7 +82,7 @@ Life Span: 10.</code></pre>
 
 
 # Example 3: Declaring Car Class Object In dart
-ในตัวอย่างนี้มี class **Car**ทีมี properties 3 ประการ: **name** , **color**และ**numberOfSeats** class ยังมี method **start**ที่พิมพ์ข้อความ "Car Started" และยังมี object ของ class**Car** ที่เรียกว่า**car**
+ในตัวอย่างนี้มี class **Car**ทีมี properties 3 ประการ: **name** , **color**และ**numberOfSeats** class ยังมี method **start**ที่พิมพ์ข้อความ "Car Started" และยังมี object ของ class **Car** ที่เรียกว่า **car**
 ```dart
     class Car {
       String? name;
@@ -156,18 +156,19 @@ Student Roll Number is: 90001</code></pre>
 </details>
 
 ### C
-ในภาษา C เราใช้ **struct** เพื่อแทน class ในภาษา Dart โดยการสร้างหนึ่งโครงสร้างที่มีชื่อว่า "Student" ซึ่งประกอบด้วย field ต่างๆ ที่เหมือนกับตัวแปรใน class Dart ในส่วนของการเข้าถึง**ฟังก์ชัน(method)** ใน C นั้นเราเปลี่ยนมันเป็นฟังก์ชันเรียกใช้งานด้วยการส่งค่าโครงสร้างเป็น **Argument** เช่น **showStdInfo(std)** และเราใช้ฟังก์ชัน strcpy จากไลบรารี <string.h> เพื่อคัดลอกชื่อนักเรียนเข้าสู่field stdName ในโครงสร้าง.
+ในภาษา C เราจะใช้**โครงสร้าง (struct)** ชื่อ Student เพื่อเก็บข้อมูลเหมือนกับคลาสใน Dart ในส่วนของการเข้าถึง**ฟังก์ชัน (method)** เราเปลี่ยนเป็นฟังก์ชันเรียกใช้งานโดยส่งโครงสร้างเป็น**Argument** และเราใช้**ฟังก์ชัน strcpy** เพื่อคัดลอกชื่อนักเรียนเข้าสู่ฟิลด์ stdName ในโครงสร้าง.
 ```c
 #include <stdio.h>
+#include <string.h>
 
-// Defining structure
+// Define a structure to represent Student
 struct Student {
     char stdName[50];
     int stdAge;
     int stdRoll_nu;
 };
 
-// Defining function
+// Define a function to display student information
 void showStdInfo(struct Student std) {
     printf("Student Name is: %s\n", std.stdName);
     printf("Student Age is: %d\n", std.stdAge);
@@ -175,15 +176,15 @@ void showStdInfo(struct Student std) {
 }
 
 int main() {
-    // Creating structure variable
+    // Create a structure variable named std
     struct Student std;
     strcpy(std.stdName, "Peter");
     std.stdAge = 24;
     std.stdRoll_nu = 90001;
-
-    // Accessing function
+    
+    // Call the showStdInfo function to display student information
     showStdInfo(std);
-
+    
     return 0;
 }
 ```
@@ -195,7 +196,7 @@ Student Roll Number is: 90001</code></pre>
 </details>
 
 ### Java
-ใน Java เราเก็บคลาส Student ที่มีแอตทริบิวต์ stdName, stdAge และ stdRoll_nu และเมธอด showStdInfo() ไว้ ส่วนใน main เราจะสร้างอ็อบเจ็กต์ของคลาส Student กำหนดค่าแอตทริบิวต์ของอ็อบเจ็กต์ด้วยการใช้สมาชิกจากตัวอ็อบเจ็กต์ และเรียกใช้เมธอด showStdInfo() เพื่อแสดงข้อมูลนักเรียน   
+ใน Java เราเก็บคลาส Student ที่มี attribute **stdName**, **stdAge** และ **stdRoll_nu** และเมธอด **showStdInfo()** ไว้ ส่วนใน main เราจะสร้างอ็อบเจ็กต์ของคลาส Student กำหนดค่าแอตทริบิวต์ของอ็อบเจ็กต์ด้วยการใช้สมาชิกจากตัวอ็อบเจ็กต์ และเรียกใช้เมธอด **showStdInfo()** เพื่อแสดงข้อมูลนักเรียน   
 Java และ Dart เป็นภาษาเชิงวัตถุ ดังนั้นแนวคิดและโครงสร้างจึงมีความคล้ายกัน แต่ยังคงมีความแตกต่างในเทคนิคและวิธีการเขียนเชิงลึกที่แตกต่างกันไป
 ```java
 // Defining class
@@ -233,7 +234,7 @@ Student Roll Number is: 90001</code></pre>
 </details>
 
 ### Python
-ในภาษา Python เราสร้าง class Student และเมธอด **__init__** เพื่อกำหนดค่าเริ่มต้นสำหรับ attribute ในคลาส เราไม่ต้องกำหนดชนิดข้อมูลของแอตทริบิวต์เนื่องจาก Python เป็นภาษาที่ไม่ต้องการประกาศชนิดข้อมูลโดยชัดเจน ส่วนเมธอด **showStdInfo()** ถูกเรียกใช้เหมือนกับเมธอดใน Dart และการเข้าถึง attribute ใน Python จะใช้ **self** ในการอ้างอิงถึงแอตทริบิวต์ในคลาส
+ในภาษา Python เราสร้าง class **Student** และเมธอด **__init__** เพื่อกำหนดค่าเริ่มต้นสำหรับ attribute ในคลาส เราไม่ต้องกำหนดชนิดข้อมูลของ attribute เนื่องจาก Python เป็นภาษาที่ไม่ต้องการประกาศชนิดข้อมูลโดยชัดเจน ส่วนเมธอด **showStdInfo()** ถูกเรียกใช้เหมือนกับเมธอดใน Dart และการเข้าถึง attribute ใน Python จะใช้ **self** ในการอ้างอิงถึงแอตทริบิวต์ในคลาส
 ```python
 class Student:
     def __init__(self):

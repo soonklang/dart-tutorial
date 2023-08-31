@@ -807,8 +807,8 @@ print(cap_string)
 ## Reference
 
 https://dart-tutorial.com/introduction-and-basics/string-in-dart/
-https://www.tutorialspoint.com/dart_programming/dart_programming_string.htm
-https://www.w3schools.com/python/python_ref_string.asp
+https://www.tutorialspoint.com/dart_programming/dart_programming_string.htm <br>
+https://www.w3schools.com/python/python_ref_string.asp 
 https://www.programiz.com/python-programming/methods/string
 https://www.w3schools.com/python/default.asp
 https://www.programiz.com/java-programming/library/string

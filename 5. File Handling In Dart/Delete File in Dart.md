@@ -23,3 +23,5 @@ void main() {
 <code>File deleted.</code>
 </pre>
 </details>
+
+**!NOTE** If you try to delete a file that does not exist, then it will throw an exception.

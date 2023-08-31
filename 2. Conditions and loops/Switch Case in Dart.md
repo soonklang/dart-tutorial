@@ -510,3 +510,4 @@ if __name__ == "__main__":
 - https://www.w3schools.com/js/js_switch.asp
 - https://www.javatpoint.com/dart-switch-case-statement
 - https://flutterrdart.com/dart-switch-case-statement-with-examples/
+- https://flutterbyexample.com/lesson/switch-statements-and-case

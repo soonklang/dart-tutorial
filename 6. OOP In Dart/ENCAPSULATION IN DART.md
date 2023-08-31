@@ -217,6 +217,63 @@ Toyota
 - การใช้ getter และ setter ช่วยในการปกป้อง properties ของคลาสจากการเข้าถึงหรือการแก้ไขที่ไม่คาดคิด
 
 
+## การเปรียบเทียบการสร้างเมธอด Getter และ Setter ใน Dart และ Java:
+
+**Dart**:
+```dart
+class Student {
+  String _name; // private property
+
+  Student(this._name);
+
+  // Getter
+  String get name => _name;
+
+  // Setter
+  set name(String newName) => _name = newName;
+}
+
+void main() {
+  var student = Student("John");
+  print(student.name); // John
+  student.name = "Doe";
+  print(student.name); // Doe
+}
+```
+
+**Java**:
+```java
+public class Student {
+    private String name; // private property
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+    // Setter
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    public static void main(String[] args) {
+        Student student = new Student("John");
+        System.out.println(student.getName()); // John
+        student.setName("Doe");
+        System.out.println(student.getName()); // Doe
+    }
+}
+```
+
+
+1. **การประกาศ properties ส่วนตัว**: ใน Dart, คุณใช้ขีดล่าง (_) นำหน้าชื่อ properties เพื่อทำให้มันเป็น private. ใน Java, คุณใช้คำว่า `private` นำหน้าการประกาศ properties.
+2. **Getter และ Setter**: ใน Dart, คุณสามารถใช้คำว่า `get` และ `set` สำหรับการสร้าง getter และ setter. ใน Java, คุณต้องสร้างเมธอด `getName()` และ `setName()` แบบปกติ.
+
+
 ---
 
 

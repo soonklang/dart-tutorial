@@ -19,7 +19,7 @@ File file = File('test.txt');
 if **recursive** is false, the directory must be empty. and if **recursive** is true, FileStstemEntity will be deleted including, all directory and sup-directories and files in the directories. 
 
 ## Ex
- **test.txt** ใน directory เดียวกันกับโปรแกรม Dart
+Assume file named **test.txt** in same directory with dart program
 
  #### `test.txt`
 ```dart

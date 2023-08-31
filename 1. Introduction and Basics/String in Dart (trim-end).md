@@ -571,6 +571,28 @@ void main() {
 </details>
 <br>
 
+#### ตัวอย่าง reverse() ในภาษา C
+```c
+#include <stdio.h>  
+#include <string.h>  
+int main()  
+{  
+    char str[40]; // declare the size of character string  
+    printf (" \n Enter a string to be reversed: ");  
+    scanf ("%s", str);  
+      
+    // use strrev() function to reverse a string  
+    printf (" \n After the reverse of a string: %s ", strrev(str));  
+    return 0;  
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Enter a string to be reversed: AMBULANCE
+ After the reverse of a string: ECNALUBMA</code></pre>
+</details>
+<br>
+
 #### ตัวอย่าง reverse() ในภาษา Java
  ```java
 import java.io.*;
@@ -627,6 +649,45 @@ void main() {
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>Capitalized first letter of String: Hello world</code></pre>
+</details>
+<br>
+
+#### ตัวอย่างการใช้อักษรตัวแรกของ String ให้เป็นตัวพิมพ์ใหญ่ ในภาษา C
+```c
+#include<stdio.h>
+#include<conio.h>
+#include <ctype.h>
+#include<string.h>
+int main() 
+{
+  //Initializing variables
+  char str[100] = "str ing";
+  int length = 0;
+  
+  //Calculating length.
+  length = strlen(str);
+  for(int i=0;i<length;i++)
+  {
+      if(i==0||i==(length-1)) //Converting character at first and last index to uppercase.
+      {
+          str[i]=toupper(str[i]);
+      }
+      else if(str[i]==' ') //Converting characters present before and after space to uppercase.
+      {
+          str[i-1]=toupper(str[i-1]);
+          str[i+1]=toupper(str[i+1]);
+      }
+  }
+  
+  //Printing result.
+  printf("String after capitalizing first and last letter of each word:\n%s", str);
+  return 0;
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>String after capitalizing first and last letter of each word:
+StR InG</code></pre>
 </details>
 <br>
 

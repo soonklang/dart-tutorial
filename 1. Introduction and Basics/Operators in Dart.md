@@ -45,3 +45,10 @@
 ## ใน Dart Type Test Operators ใช้ในการตรวจสอบชนิดของตัวแปรหรือข้อมูล มีประโยชน์สำหรับการตรวจสอบประเภทขณะรันไทม์
 - is ใช้เช็คว่าเป็นชนิดข้อมูลนั้นหรือไม่
 - is! ใช้เช็คว่าไม่ใช่ชนิดข้อมูลนั้น
+
+# อ้างอิง
+- https://dart-tutorial.com/introduction-and-basics/operators-in-dart/
+- https://lungmaker.com/c-programming/operators-%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%94%E0%B8%B3%E0%B9%80%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-c/
+- http://marcuscode.com/lang/c/operators
+- https://toupawa.com/learn-dart-from-zero-to-standard/
+- https://blog.intception.me/dev/flutter/dart-part-2.html#equality-and-relational-operators

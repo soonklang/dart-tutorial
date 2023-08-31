@@ -16,8 +16,8 @@ class ClassName {
 }
 ```
 # Rules For Factory Constructors
-- Constructor แบบ factory จำเป็นต้องส่งคืนตัวอย่างของคลาสหรือคลาสย่อย
-- คุณไม่สามารถใช้คีย์เวิร์ด this ภายใน constructor แบบ factory ได้
+- factory Constructor จำเป็นต้องส่งคืนตัวอย่างของคลาสหรือคลาสย่อย
+- ไม่สามารถใช้คีย์เวิร์ด this ภายใน factory constructor ได้
 - มันสามารถมีชื่อหรือไม่มีชื่อและเรียกใช้เหมือนกับ constructor ทั่วไป
 - มันไม่สามารถเข้าถึงสมาชิกของตัวอย่างได้
 # Example 1: Without Factory Constructor
@@ -41,9 +41,14 @@ void main() {
   print("Area is: ${area2.area}");
 }
 ```
-วัตถุ area2 มีค่าที่เป็นลบ เนื่องจากเรายังไม่ได้ตรวจสอบข้อมูลเข้าเงื่อนไขการตรวจสอบ ในกรณีนี้เราจะสร้าง constructor แบบ factory เพื่อทำการตรวจสอบข้อมูลที่ถูกส่งเข้ามา
+#Output
+```dart
+Area is: 200
+Area is: -200
+```
+วัตถุ area2 มีค่าที่เป็นลบ เนื่องจากยังไม่ได้ตรวจสอบข้อมูลเข้าเงื่อนไขการตรวจสอบ ในกรณีนี้เราจะสร้าง factory constructor เพื่อทำการตรวจสอบข้อมูลที่ถูกส่งเข้ามา
 # Example 2: With Factory Constructor
-ในตัวอย่างด้านล่างนี้ มีการใช้ constructor แบบ factory เพื่อทำการตรวจสอบข้อมูลเข้าเกณฑ์ หากข้อมูลเข้าเกณฑ์ถูกต้อง จะส่งคืนอินสแตนซ์ของคลาสใหม่ แต่หากข้อมูลเข้าเกณฑ์ไม่ถูกต้อง จะโยนข้อผิดพลาดออกมา
+ในตัวอย่างด้านล่างนี้ มีการใช้ factory constructor เพื่อทำการตรวจสอบข้อมูลเข้าเกณฑ์ หากข้อมูลเข้าเกณฑ์ถูกต้อง จะส่งคืนอินสแตนซ์ของคลาสใหม่ แต่หากข้อมูลเข้าเกณฑ์ไม่ถูกต้อง จะโยนข้อผิดพลาดออกมา
 ```dart
 class Area {
   final int length;
@@ -73,39 +78,14 @@ void main() {
   print("Area is: ${area2.area}");
 }
 ```
-# Example 3: Factory Constructor In Dart
-ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ Person ที่มีคุณสมบัติสองอย่างคือ firstName และ lastName และมี constructor อย่างน้อยสองตัว คือ constructor ปกติและ constructor แบบ factory Constructor แบบ factory นั้นสร้างวัตถุ Person จาก Map
+#Output
 ```dart
-class Person {
-  String firstName;
-  String lastName;
-
-  // constructor
-  Person(this.firstName, this.lastName);
-
-  // factory constructor Person.fromMap
-  factory Person.fromMap(Map<String, Object> map) {
-    final firstName = map['firstName'] as String;
-    final lastName = map['lastName'] as String;
-    return Person(firstName, lastName);
-  }
-}
-
-void main() {
-  // create a person object
-  final person = Person('John', 'Doe');
-
-  // create a person object from map
-  final person2 = Person.fromMap({'firstName': 'Harry', 'lastName': 'Potter'});
-
-  // print first and last name
-  print("From normal constructor: ${person.firstName} ${person.lastName}");
-  print("From factory constructor: ${person2.firstName} ${person2.lastName}");
-}
+Area is: 200
+Unhandled exception:
+Exception: Length and breadth must be positive
 ```
-ในเมธอด main ถูกสร้างวัตถุสองตัว โดยใช้ constructor แบบ generative/ปกติ และอีกตัวใช้ constructor แบบ factory
-# Example 4: Factory Constructor In Dart
-ในตัวอย่างด้านล่างนี้ มี enum ชื่อ ShapeType มีค่าสองค่า คือ circle และ rectangle มีอินเทอร์เฟซชื่อ Shape มี constructor แบบ factory ที่สร้างวัตถุของชนิด Shape ที่เป็นเหรียญกลมหรือสี่เหลี่ยม ในเมธอด main มีการสร้างวัตถุสองตัว หนึ่งในแต่ละชนิด และเรียกใช้เมธอด draw() บนแต่ละวัตถุ
+# Example 3: Factory Constructor In Dart
+ในตัวอย่างด้านล่างนี้ มี enum ชื่อ ShapeType มีค่าสองค่า คือ circle และ rectangle มีอินเทอร์เฟซชื่อ Shape มี factory constructor ที่สร้างวัตถุของชนิด Shape ที่เป็นวงกลมหรือสี่เหลี่ยม ในเมธอด main มีการสร้างวัตถุสองตัว หนึ่งในแต่ละชนิด และเรียกใช้เมธอด draw() บนแต่ละวัตถุ
 ```dart
 // enum ShapeType
 enum ShapeType { circle, rectangle }
@@ -151,8 +131,13 @@ void main() {
   shape2.draw();
 }
 ```
-# Example 5: Factory Constructor In Dart
-ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ Person ที่มีฟิลด์ final ชื่อ name นอกจากนี้ยังมี constructor เป็นส่วนตัวและฟิลด์ static _cache คลาสยังมี constructor แบบ factory ที่ตรวจสอบว่าฟิลด์ _cache มีคีย์ที่ตรงกับพารามิเตอร์ชื่อหรือไม่ หากมีคีย์ที่ตรงกันจะส่งคืนวัตถุ Person ที่เชื่อมโยงกับคีย์นั้น มิฉะนั้นจะสร้างวัตถุ Person ใหม่ นำไปเพิ่มใน _cache และส่งคืนกลับ
+#Output
+```dart
+Drawing circle
+Drawing rectangle
+```
+# Example 4: Factory Constructor In Dart
+ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ Person ที่มีฟิลด์ final ชื่อ name นอกจากนี้ยังมี private constructorและฟิลด์ static _cache คลาสยังมี factory constructor ที่ตรวจสอบว่าฟิลด์ _cache มีคีย์ที่ตรงกับพารามิเตอร์ชื่อหรือไม่ หากมีคีย์ที่ตรงกันจะส่งคืนวัตถุ Person ที่เชื่อมโยงกับคีย์นั้น มิฉะนั้นจะสร้างวัตถุ Person ใหม่ นำไปเพิ่มใน _cache และส่งคืนกลับ
 ```dart
 class Person {
   // final fields
@@ -187,36 +172,3 @@ void main() {
   print("Person3 name is : ${person3.name} with hashcode ${person3.hashCode}");
 }
 ```
-# Singleton In Dart
-Singletonsเป็นแพทเทิร์นการออกแบบที่พบบ่อยในโปรแกรมเชิงวัตถุ คลาสซิงเกิลตันสามารถมีเพียงหนึ่งตัวอย่างเท่านั้นและให้จุดเข้าถึงที่เป็นสากลสำหรับตัวอย่างนั้น คุณสามารถสร้างซิงเกิลตันใน Dart โดยกำหนด constructor แบบ factory ที่ส่องกลับอินสแตนซ์เดียวเสมอ มันมีประโยชน์มากในกรณีที่คุณต้องการสร้างอินสแตนซ์เดียวของคลาสและใช้งานอย่างต่อเนื่องในแอปพลิเคชัน เช่นการเชื่อมต่อฐานข้อมูลในแอปพลิเคชัน
-# Example 6: Singleton Using Factory Constructor
-โค้ดนี้สร้างคลาสซิงเกิลตันที่สามารถสร้างอินสแตนซ์ได้เพียงครั้งเดียวเท่านั้น และมี constructor แบบ factory เพื่อรับอินสแตนซ์ของคลาส ในเมธอด main ถูกสร้างวัตถุสองตัวของคลาสซิงเกิลตันและพิมพ์ hashcode ของวัตถุเพื่อยืนยันว่าเป็นตัวเดียวกัน
-```dart
-// Singleton using dart factory
-class Singleton {
- // static variable
- static final Singleton _instance = Singleton._internal();
- 
-// factory constructor
- factory Singleton() {
-   return _instance;
- }
- // private constructor 
- Singleton._internal();
-}
- 
-void main() {
- Singleton obj1 = Singleton();
- Singleton obj2 = Singleton();
- print(obj1.hashCode);
- print(obj2.hashCode);
-}
-```
-คุณสามารถเห็นได้ว่าทั้งสองวัตถุมี hashcode เดียวกัน นี่เป็นเพราะทั้งสองวัตถุกำลังชี้ไปที่อินสแตนซ์เดียวกัน
-# Key Points
-ที่นี่หมายถึง constructor แบบ factory
-- นี่หมายถึง constructor แบบ factory ใช้คีย์เวิร์ด factory เพื่อกำหนด constructor แบบ factory
-- มันส่งคืนอินสแตนซ์ของคลาสเดียวกันหรือคลาสย่อย
-- มันใช้ในการนำมาใช้รูปแบบการออกแบบแบบเฟคทอรี่ [ส่งคืนอินสแตนซ์ย่อยๆ ตามพารามิเตอร์นำเข้าตามที่แสดงในตัวอย่างที่ 4]
-- มันใช้ในการนำมาใช้รูปแบบการออกแบบแบบซิงเกิลตัน [ส่งคืนอินสแตนซ์เดียวเสมอทุกครั้ง]
-- มันใช้ในการกำหนดค่าตัวแปร final โดยใช้ตรรกะที่ไม่สามารถจัดการได้ในรายการตัวกำหนดค่าได้

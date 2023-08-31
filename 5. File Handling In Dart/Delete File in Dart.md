@@ -1,6 +1,11 @@
 # Delete File in Dart
 
  **deleteSync()** 
+ ```
+void deleteSync(
+{bool recursive = false}
+)
+```
 
  **test.txt** ใน directory เดียวกันกับโปรแกรม Dart
 

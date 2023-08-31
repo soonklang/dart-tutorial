@@ -55,7 +55,7 @@ void main() {
  str(10).forEach(print);
 }
 ```
->จากตัวอย่าง มีการใช้ yield* เพื่อพิมพ์ค่าของฟังก์ชัน recursive(เรียกใช้ str() ซ้ำๆ)
+>จากตัวอย่าง มีการใช้ yield* เพื่อพิมพ์ค่าของฟังก์ชัน recursive(str() เรียกใช้ตัวเองซ้ำๆ)
 <details>
 <summary><strong>Output</strong></summary>
 <pre><code>10

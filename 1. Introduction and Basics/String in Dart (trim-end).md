@@ -447,6 +447,19 @@ public class Test {
 </details>
 <br>
 
+#### ตัวอย่าง toString() ในภาษา Python
+ ```python
+dict1 = {"first name": "Mickey", "last name": "Mouse"}
+print(dict1)
+print(str(dict1))
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>{'first name': 'Mickey', 'last name': 'Mouse'}
+{'first name': 'Mickey', 'last name': 'Mouse'}</code></pre>
+</details>
+<br>
+
 ## SubString In Dart
 
 สามารถใช้สตริงย่อยใน Dart เมื่อคุณต้องการรับข้อความจากตำแหน่งใดก็ได้

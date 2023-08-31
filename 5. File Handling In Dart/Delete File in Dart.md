@@ -116,7 +116,7 @@ public class delete {
 </pre>
 </details>
 
-## Ex deleteOnExit()  
+## Ex deleteIfExists()  
 ```java
 import java.io.IOException;
 import java.nio.file.*;
@@ -143,6 +143,9 @@ public class deleteIfExists {
 <code>Deletion successful.</code>
 </pre>
 </details>
+## Summary
+import java.io. use method delete() to delete a file and method deleteIfExists() to Deletes a file if it exists, By use Parameters is a path
+
 
 
 - # Python
@@ -169,6 +172,8 @@ if os.path.exists("demofile.txt"):
 else:
   print("The file does not exist")
 ```
+## Summary
+import module os  to use method os.remove() os.path.exists() to delete a file.
 
 
 - # C
@@ -194,6 +199,7 @@ int main() {
   return 0;
 }
 ```
+## Summary
 Use the C remove() function from the standard library to delete a file.
 
 # Comparing Dart with other languages (Python, C and Java) 

@@ -130,7 +130,7 @@ dart compile js filename.dart | Compile dart to javascript. You can run this fil
 * octal ชนิดข้อมูลเลขฐานแปด
 * hex ชนิดข้อมูลเลขฐานสิบหก
 * char ข้อมูลชนิดตัวอักขระ 
-* string ชนิดข้อมูลตัวอักษร
+* string ข้อมูลชนิดตัวอักษร
   
 ## พื้นฐานสําหรับPrint ข้อความ
 

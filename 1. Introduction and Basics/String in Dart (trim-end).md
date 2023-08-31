@@ -477,6 +477,48 @@ New String: llo </code></pre>
 </details>
 <br>
 
+  #### ตัวอย่าง substring() ในภาษา C
+```c
+#include <stdio.h>
+char* substring(char *destination, const char *source, int beg, int n)
+{
+
+    while (n > 0)
+    {
+        *destination = *(source + beg);
+ 
+        destination++;
+        source++;
+        n--;
+    }
+ 
+    *destination = '\0';
+ 
+    return destination;
+}
+ 
+int main()
+{
+    char source[] = "Techie Delight – Ace the Technical Interviews";
+    char destination[25];
+ 
+    int start = 7;
+    int len = 7;
+ 
+    substring(destination, source, start, len);
+ 
+    printf("%s\n", destination);
+ 
+    return 0;
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Delight
+ </code></pre>
+</details>
+<br>
+
 #### ตัวอย่าง substring() ในภาษา Java
  ```java
 class Main {

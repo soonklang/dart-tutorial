@@ -55,25 +55,36 @@ Michael,40,Chicago
 
 ~~~ dart
 import 'dart:async';
+Future<String> fetchData(String id) {
+  return Future.delayed(Duration(seconds: 2), () => 'Data for ID $id');
+}
 void main() {
-  runApp();
-}
-void runApp() async {
-  List<Future<int>> futures = [];
+  final List<Future<String>> futures = [];
   for (int i = 1; i <= 5; i++) {
-    futures.add(processAsync(i));
+    final future = fetchData(i.toString());
+    futures.add(future);
   }
-  List<int> results = await Future.wait(futures);
-  print("All operations completed. Results: $results");
-}
-Future<int> processAsync(int number) async {
-  await Future.delayed(Duration(seconds: 2));
-  return number * 2;
+  Future.wait(futures)
+      .then((List<String> results) {
+        print('All operations completed:');
+        for (int i = 0; i < results.length; i++) {
+          print('Result for operation ${i + 1}: ${results[i]}');
+        }
+      })
+      .catchError((error) {
+        print('An error occurred: $error');
+      });
 }
 ~~~
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>All operations completed. Results: [2, 4, 6, 8, 10]
+  <pre><code>All operations completed:
+Result for operation 1: Data for ID 1
+Result for operation 2: Data for ID 2
+Result for operation 3: Data for ID 3
+Result for operation 4: Data for ID 4
+Result for operation 5: Data for ID 5
+
 </code></pre>
 </details>
 
@@ -211,3 +222,8 @@ Future<String> reverseAsync(String text) async {
   <pre><code>"nrokapliS"
 </code></pre>
 </details>
+
+# Reference
+- https://dart.dev/codelabs/async-await
+- https://www.ninenik.com/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99_Asynchronous_Programming_%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2_Dart_%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99-949.html
+- https://dart-tutorial.com/asynchronous-programming/

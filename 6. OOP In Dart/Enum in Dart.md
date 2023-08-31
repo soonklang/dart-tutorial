@@ -12,6 +12,9 @@ enum enumName {
   ...
   constantNameN
 }
+```
+## ยกตัวอย่างการใช้ Syntax Of Enum In Dart
+```dart
 enum cars {  
   Toyota,
   Honda,

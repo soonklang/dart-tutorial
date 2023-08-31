@@ -810,5 +810,9 @@ https://dart-tutorial.com/introduction-and-basics/string-in-dart/
 https://www.tutorialspoint.com/dart_programming/dart_programming_string.htm
 https://www.w3schools.com/python/python_ref_string.asp
 https://www.programiz.com/python-programming/methods/string
+https://www.w3schools.com/python/default.asp
+https://www.programiz.com/java-programming/library/string
+https://www.delftstack.com/tags/c-string/
 
 https://www.freecodecamp.org/news/python-strip-how-to-trim-a-string-or-line/
+https://www.programiz.com/python-programming/examples/capitalise-first-character#google_vignette

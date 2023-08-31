@@ -122,6 +122,96 @@ void main() {
 // class Bird with Animal { } 
 }
 ```
+# ตัวอย่างของ Mixin ในภาษาที่ Python,JavaScript(ES6),Ruby
+ ### ข้อเเตกต่างการใช้งาน
+ ### Python
+Mixin ใน Python สามารถเรียกใช้เมท็อดและแอตทริบิวต์ในคลาสหรืออ็อบเจ็กต์ที่สืบทอด mixin ได้โดยตรง.
+### Ruby
+Mixin ใน Ruby สามารถเรียกใช้เมท็อดและแอตทริบิวต์ในคลาสหรืออ็อบเจ็กต์ที่รวม mixin ไปในคลาสด้วยการเรียกใช้เมธอดหรือแอตทริบิวต์.
+### JavaScript
+Mixin ใน JavaScript สามารถเรียกใช้เมท็อดและแอตทริบิวต์ในอ็อบเจ็กต์ที่ใช้ mixin โดยตรง.
+### ตัวอย่าง: การใช้ Mixin เพื่อคำนวณพื้นที่สี่เหลี่ยม
+ ### Python
+ ```python
+ class RectangleMixin:
+    def area(self):
+        return self.width * self.height
+
+class Rectangle(RectangleMixin):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+class Square(RectangleMixin):
+    def __init__(self, side_length):
+        self.width = self.height = side_length
+
+rectangle = Rectangle(5, 10)
+print("Rectangle area:", rectangle.area())
+
+square = Square(7)
+print("Square area:", square.area())
+```
+### Ruby
+```ruby
+ module RectangleMixin
+  def area
+    @width * @height
+  end
+end
+
+class Rectangle
+  include RectangleMixin
+  def initialize(width, height)
+    @width = width
+    @height = height
+  end
+end
+
+class Square
+  include RectangleMixin
+  def initialize(side_length)
+    @width = @height = side_length
+  end
+end
+
+rectangle = Rectangle.new(5, 10)
+puts "Rectangle area: #{rectangle.area}"
+
+square = Square.new(7)
+puts "Square area: #{square.area}"
+
+```
+### JavaScript (ES6)
+```JavaScript
+const RectangleMixin = {
+  area() {
+    return this.width * this.height;
+  }
+};
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+}
+
+Object.assign(Rectangle.prototype, RectangleMixin);
+
+class Square {
+  constructor(sideLength) {
+    this.width = this.height = sideLength;
+  }
+}
+
+const rectangle = new Rectangle(5, 10);
+console.log(`Rectangle area: ${rectangle.area()}`);
+
+const square = new Square(7);
+console.log(`Square area: ${square.area()}`);
+```
+ในตัวอย่างทั้งหมดนี้เราใช้ mixin เพื่อเพิ่มฟังก์ชัน area ในคลาส Rectangle และ Square เพื่อคำนวณพื้นที่ของสี่เหลี่ยม โดยไม่ต้องเขียนโค้ดการคำนวณพื้นที่ซ้ำซ้อนในทุกคลาส ทำให้โค้ดเป็นระเบียบและมีความยืดหยุ่นในการแก้ไขและเพิ่มคุณสมบัติใหม่ ทั้งนี้เป็นตัวอย่างที่แสดงถึงการใช้ mixin ในภาษา Python, Ruby และ JavaScript (ES6) ในทางปฏิบัติ
 # What Is Allowed For Mixin
 - **สามารถเพิ่มคุณสมบัติและตัวแปรแบบสแตติก (static variables) ได้**
 - **สามารถเพิ่มเมธอดปกติ (regular methods), เมธอด abstract, และเมธอดแบบสแตติก (static methods) ได้**
@@ -130,3 +220,11 @@ void main() {
 - **ไม่สามารถกำหนดคอนสตรักเตอร์ได้**
 - **ไม่สามารถสืบทอด (extend) mixin ได้**
 - **ไม่สามารถสร้างอ็อบเจ็กต์ของ mixin ได้**
+## Reference
+[Mixin in dart](https://dart-tutorial.com/object-oriented-programming/mixins-in-dart/)
+<br>
+[Minin in JavaScript](https://www.tutorialspoint.com/mixins-in-javascript)
+<br>
+[Minin in ruby](https://www.tutorialspoint.com/ruby/ruby_modules.htm)
+<br>
+[Example](https://en.wikipedia.org/wiki/Mixin)

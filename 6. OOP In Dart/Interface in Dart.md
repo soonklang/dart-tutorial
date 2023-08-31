@@ -1,7 +1,16 @@
 
 # Interface in Dart
 Interface คือ การกำหนดโครงสร้างของ methood ขึ้นมาไม่มีการกำหนดรายละเอียด การทำงานใดๆ โดยทุก method จะไม่อนุญาตให้เรียกใช้ทำงาน แต่จะถูกสืบทอดและกำหนดรายละเอียด ของ Interface นั้น คลาสที่ implement ก็จะมี methood ที่เรียกใช้งานได้
+-----------------------------------------------------------------------------
+# Syntax
 ```dart
+class Interface_class_name{
+   ...
+}
+
+class Class_name implements Interface_class_name {
+   ...
+}
 
 
 ```

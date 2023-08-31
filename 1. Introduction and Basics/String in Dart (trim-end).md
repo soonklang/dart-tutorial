@@ -809,7 +809,7 @@ print(cap_string)
 https://dart-tutorial.com/introduction-and-basics/string-in-dart/
 https://www.tutorialspoint.com/dart_programming/dart_programming_string.htm <br>
 https://www.w3schools.com/python/python_ref_string.asp <br>
-https://www.w3schools.com/python/default.asp <br>
+
 https://www.programiz.com/java-programming/library/string <br>
 https://www.delftstack.com/tags/c-string/ <br>
 

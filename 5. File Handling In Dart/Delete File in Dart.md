@@ -17,3 +17,9 @@ void main() {
   print('File deleted.');
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>File deleted.</code>
+</pre>
+</details>

@@ -12,7 +12,7 @@ class Class_name implements Interface_class_name {
    ...
 }
 ```
-จะเห็นว่า ไม่ต้องเติมคำว่า intterface หน้าชื่อคลาสแม่แบบที่ต้องการให้implement  
+จะเห็นว่า ไม่ต้องเติมคำว่า interface หน้าชื่อคลาสแม่แบบที่ต้องการให้implement  
  ในภาษา Dart จะมองว่าทุกๆ class เป็น interface สามารถนำไปใช้งานได้ โดยไม่ต้องใช้ interface keyword
 # Syntax ของ java 
 ```java
@@ -20,4 +20,30 @@ interface Animal {
   public void animalSound(); 
   public void sleep(); 
 }
+```
+#ตัวอย่างการใช้ Interface ในภาษา Dart
+```dart
+class Zoo {
+  void Animal() {
+    print("มีช้าง มีแมว");
+  }
+}
+ 
+// class Khao_kheow_zoo implementing class Zoo
+class Khao_kheow_zoo implements Zoo {
+
+  void Animal() {
+    print("สวนสัตว์เขาเขียวมี สิงโต ม้าลาย อย่างล่ะตัว");
+  }
+}
+ 
+void main() {
+  // creating instance of Class khao_kheow_zoo
+  var khao_kheow_zoo = Khao_kheow_zoo();
+  khao_kheow_zoo.Animal();
+}
+```
+#Output
+```
+สวนสัตว์เขาเขียวมี สิงโต ม้าลาย อย่างล่ะตัว
 ```

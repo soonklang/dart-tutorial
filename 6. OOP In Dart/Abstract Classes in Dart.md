@@ -162,7 +162,7 @@ The area of the triangle is 100.0
 ## การกำหนด  Constructor ใน Abstract Class
 	
   ใน abstract class นั่นสร้าง object ไม่ได้ก็จริง แต่อย่างไรก็ตาม เราสามารถกำหนด constructor ใน abstract class ได้
-	constructor ใน abstract class จะถูกเรียกเมื่อ object ของอื่นถูกสร้างขึ้น
+	constructor ใน abstract class จะถูกเรียกเมื่อ object ของคลาสอื่นถูกสร้างขึ้น
 	
 ## ตัวอย่างที่ 3 Constructor ใน  Abstract Class
 	

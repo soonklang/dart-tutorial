@@ -162,7 +162,7 @@ void main(){
 ก่อนใช้ : [a, b, c, d, e, f, g, h]
 หลังใช้ : [a, b, g, h]
 ```
-### การลบข้อมูลใน list ใน Java,C และ Python
+### การลบข้อมูลใน list ในภาษาอื่นๆ
 ในภาษา Java นั้นสามารถใช้ วิธีการแบบภาษา Dart ได้แต่สามารถใช้ได้เพียงเม็ดตอด remove() เท่านั้น
 และ C นั้นไม่สามารถทำได้
 #### Ex Java.
@@ -298,7 +298,7 @@ apple
 banana
 cherry
 ```
-### การเปลี่ยนค่าทั้งหมดใน list โดยการใช้ตัวแปลทางคณิตศาสตร์
+### การเปลี่ยนค่าทั้งหมดใน list โดยการใช้โอเปอร์เรเตอร์ต่างๆ
 เราสามารถเพิ่มลดค่าใน list ทั้งหมดพร้อมกันได้ เช่นการเพิ่มค่าทั้งหมดในลิสโดยการคูณสอง
 #### Ex 1.
 ```
@@ -327,7 +327,156 @@ void main() {
 ```
 (6, 16, 26, 36, 46)
 ```
-### รวม list สอง list เข้าด้วยกัน ใน Drat
+### รวม list เข้าด้วยกัน ใน Drat
 การนำ list มารวมเข้าด้วยกัน ใน Dart สามารถทำได้ หลายวิธี
+#### ตัวอย่างที่1 :ใช้เม็ดตอด addAll() 
+##### Ex.
+```
+// Main function
+main() {
+    
+  // Creating lists
+  List gfg1 = ['Welcome','to'];
+  List gfg2 = ['GeeksForGeeks'];
+    
+  // Combining lists
+  gfg1.addAll(gfg2);
+    
+  // Printing combined list
+  print(gfg1);
+}
+```
+##### output
+```
+[Welcome, to, GeeksForGeeks]
+```
+#### ตัวอย่างที่2 :ใช้เม็ดตอด expand() 
+##### Ex.
+```
+// Main function
+main() {
+    
+  // Creating lists
+  List gfg1 = ['Welcome'];
+  List gfg2 = ['to'];
+  List gfg3 = ['GeeksForGeeks'];
+    
+  // Combining lists
+  var newgfgList = [gfg1, gfg2, gfg3].expand((x) => x).toList();
+    
+  // Printing combined list
+  print(newgfgList);
+}
+```
+##### output
+```
+[Welcome, to, GeeksForGeeks]
+```
+#### ตัวอย่างที่3 :ใช้โอเปอร์เรเตอร์ +
+วิธีนี้ถูกอัพเดทเข้ามา ใน Dart 2.0
+##### Ex.
+```
+// Main function
+main() {
+    
+  // Creating lists
+  List gfg1 = ['Welcome'];
+  List gfg2 = ['to'];
+  List gfg3 = ['GeeksForGeeks'];
+    
+  // Combining lists
+  var newgfgList = gfg1 + gfg2 + gfg3;
+    
+  // Printing combined list
+  print(newgfgList);
+}
+```
+##### output
+```
+[Welcome, to, GeeksForGeeks]
+```
+#### ตัวอย่างที่3 :ใช้  spread operator
+วิธีนี้ถูกอัพเดทเข้ามา ใน Dart 2.3
+##### Ex.
+```
+// Main function
+main() {
+    
+  // Creating lists
+  List gfg1 = ['Welcome'];
+  List gfg2 = ['to'];
+  List gfg3 = ['GeeksForGeeks'];
+    
+  // Combining lists
+  var newgfgList = [...gfg1, ...gfg2, ...gfg3];
+    
+  // Printing combined list
+  print(newgfgList);
+}
+```
+##### output
+```
+[Welcome, to, GeeksForGeeks]
+```
+#### ตัวอย่างการรวม list เข้าด้วยกัน ในภาษาอื่นๆ
+ในภาษา Python สามารถใช้โอเปอร์เรเตอร์ + ได้เช่นกันกับภาษา Dart และยังมีวิธีอื่นเช่นการใช้ลูปหรือเม็ดตอด extend()
+##### Ex การรวม list ใน Python.
+```
+test_list3 = [1, 4, 5, 6, 5]
+test_list4 = [3, 5, 7, 2, 5]
+ 
+# using list.extend() to concat
+test_list3.extend(test_list4)
+ 
+# Printing concatenated list
+print ("Concatenated list using list.extend() : "
+                            + str(test_list3))
+```
+##### output
+```
+Concatenated list using list.extend() : [1, 4, 5, 6, 5, 3, 5, 7, 2, 5]
+```
+ในภาษา Java สามารถใช้เม็ดตอด addAll() เดียวกับ Dart หรือใช้ loop ในการรวม  list
+### การใส่เงื่อนไขใน list
+ในภาษา Dart เราสามารถตั้งเงื่อนไขไว้ภายใน list ซึ่ง ในภาษา Java,C หรือ Python ไม่สามารถทำได้
+Ex
+```
+void main() {
+  bool sad = false;
+  var cart = ['milk', 'ghee', if (sad) 'Beer'];
+  print(cart);
+}
+ 
+```
+Output
+```
+[milk, ghee]
+```
+จากในตัวอย่างหาก ```bool sad = true```output ที่ได้จะเท่ากับ ```[milk, ghee ,Beer]```
+### ตำแหน่งใน list ของ Drat
+ในภาษา เราสามารถใช้ตำแหน่งในการเป็นฟิวเตอร์ ในการหาข้อมูลที่ต้องการได้ ในตัวอย่างต่อไปนี้เลขคู่เท่านั้นที่จะถูกกรอง
+Ex
+```
+void main(){
+List<int> numbers = [2,4,6,8,10,11,12,13,14];
 
+List<int> even = numbers.where((number)=> number.isEven).toList(); 
+print(even);
+}
+```
+output
+```
+[2, 4, 6, 8, 10, 12, 14]
+```
+### อ้างอิง
+https://dart-tutorial.com/collections/list-in-dart/
+https://api.dart.dev/stable/1.20.0/dart-core/List/replaceRange.html
+https://www.kindacode.com/article/how-to-remove-items-from-a-list-in-dart/
+https://www.geeksforgeeks.org/list-removeint-index-method-in-java-with-examples/
+https://www.edureka.co/blog/python-list-remove/
+https://www.w3schools.com/python/python_lists_loop.asp
+https://www.geeksforgeeks.org/iterate-through-list-in-java/
+https://www.geeksforgeeks.org/how-to-combine-lists-in-dart/
+https://www.geeksforgeeks.org/python-ways-to-concatenate-two-lists/
+https://www.digitalocean.com/community/tutorials/merge-two-lists-in-jav
 

@@ -53,7 +53,7 @@ bool existsSync()
 existsSync() is checks whether the file system entity with this path exists.
 
 ## Ex
-use existsSync() method to check if a file ecists or not.
+use existsSync() method to check if a file exists or not.
 ```dart
 // dart program to delete file if exists
 import 'dart:io';

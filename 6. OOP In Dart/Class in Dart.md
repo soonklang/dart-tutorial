@@ -99,17 +99,16 @@ class Student {
 -   methods เรียกอีกอย่างว่า behaviors หรือ member functions.
 
 # Challenge
-สร้าง class book โดยมี 3 properties คือ name, author, and prize และสร้าง method display ที่จะแสดงค่าของทั้ง 3 properties
+สร้าง class book โดยมี 3 properties คือ name, author และ prize และสร้าง method display ที่จะแสดงค่าของทั้ง 3 properties
  ```dart
 class Book {
-  String name;
-  String author;
-  int prize;
-
+  String? name;
+  String? author;
+  int? prize;
   void display() {
-    print("Name: ${this.name}");
-    print("Author: ${this.author}");
-    print("Prize: ${this.prize}");
+    print("Name: $name");
+    print("Author: $author");
+    print("Prize: $prize");
   }
 }
 ```

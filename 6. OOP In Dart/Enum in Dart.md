@@ -42,9 +42,22 @@ enum cars {
         Volvo;
 }
 ```
- * รูปแบบในการใช้ ของ Enum ในภาษา C    และความแตกต่าง กับภาษา Dart
-
- * รูปแบบในการใช้ ของ Enum ในภาษา Python และความแตกต่าง กับภาษา Dart
+ * ### รูปแบบในการใช้ ของ Enum ในภาษา C    และความแตกต่าง กับภาษา Dart
+	* มีรูปแบบที่คล้ายกัน 
+```c
+ enum cars {
+    Toyota,
+    Honda,
+    Nissan,
+    Ferrari,
+    Bugatti,
+    Benz,
+    Volvo
+};
+```
+ * ### รูปแบบในการใช้ ของ Enum ในภาษา Python และความแตกต่าง กับภาษา Dart
+   * การสร้าง Enum ใน Python ใช้ Enum class ภายใน enum module
+   * ค่าใน Enum จะถูกกำหนดโดยค่าเริ่มต้นที่เป็นเลขจำนวนเต็มตั้งแต่ 1 เรื่อย ๆ ถ้าเราไม่ได้กำหนดค่าให้เอง
    ```python
    from enum import Enum
  
@@ -53,8 +66,8 @@ enum cars {
     SUMMER = 2
     AUTUMN = 3
     WINTER = 4
-   
-```
+   ```
+
 
 ## ตัวอย่างการใช้ Enum ใน Dart
 ```dart

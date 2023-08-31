@@ -86,7 +86,7 @@ class SingletonThree {
 
 
 
-## # Difference Between Dart with other
+## Difference Between Dart with other
 **รูปแบบการเขียน Singleton ใน java** 
 ```java
 public class Singleton {

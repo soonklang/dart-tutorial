@@ -96,20 +96,20 @@ public static boolean deleteIfExists(Path path)
 ## Ex delete()
 use delete() method to delete file.
 ```java
-import java.io.File;
-
-public class FileDeleteExample {
-    public static void main(String[] args) {
-        try {
-            File f = new File("E:\\demo.txt"); // file to be delete
-            if (f.delete())
-            {
-                System.out.println(f.getName() + " deleted"); // getting and printing the file name
-            } else {
-                System.out.println("failed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+// Java program to delete a file
+import java.io.*;
+ 
+public class Test {
+    public static void main(String[] args)
+    {
+        File file
+            = new File("C:\\Users\\Mayank\\Desktop\\1.txt");
+ 
+        if (file.delete()) {
+            System.out.println("File deleted successfully");
+        }
+        else {
+            System.out.println("Failed to delete the file");
         }
     }
 }
@@ -125,19 +125,29 @@ public class FileDeleteExample {
 ## Ex deleteOnExit()  
 use delete() method to delete file.
 ```java
-import java.io.File;
 import java.io.IOException;
-
-public class DeleteTextFileExample {
-    public static void main(String[] args) {
+import java.nio.file.*;
+ 
+public class Test {
+    public static void main(String[] args)
+    {
         try {
-            File file = new File("F:\\newfile.txt"); // creates a file instance
-            file.deleteOnExit(); // deletes the file when JVM terminates
-            System.out.println("Done");
-            Thread.sleep(1000);
-        } catch (Exception e) {
-            e.printStackTrace();
+            Files.deleteIfExists(
+                Paths.get("C:\\Users\\Mayank\\Desktop\\
+            445.txt"));
         }
+        catch (NoSuchFileException e) {
+            System.out.println(
+                "No such file/directory exists");
+        }
+        catch (DirectoryNotEmptyException e) {
+            System.out.println("Directory is not empty.");
+        }
+        catch (IOException e) {
+            System.out.println("Invalid permissions.");
+        }
+ 
+        System.out.println("Deletion successful.");
     }
 }
 ```

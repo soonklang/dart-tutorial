@@ -18,7 +18,7 @@ File file = File('test.txt');
 
 if **recursive** is false, the directory must be empty. and if **recursive** is true, FileStstemEntity will be deleted including, all directory and sup-directories and files in the directories. 
 
-## Ex
+## Example deleteSync()
 Assume that file named **test.txt** in same directory with dart program
 
  #### `test.txt`
@@ -52,7 +52,7 @@ bool existsSync()
 ```
 existsSync() is checks whether the file system entity with this path exists.
 
-## Ex
+## Example existsSync()
 use existsSync() method to check if a file exists or not.
 ```dart
 // dart program to delete file if exists
@@ -161,7 +161,7 @@ os.path.exists(path)
 import os
 os.remove("demofile.txt")
 ```
-## Exos.path.exists()  
+## Ex os.path.exists()  
 ```Python
 import os
 if os.path.exists("demofile.txt"):

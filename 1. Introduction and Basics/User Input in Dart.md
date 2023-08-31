@@ -159,8 +159,8 @@ print(f"พื้นที่สามเหลี่ยมคือ {area:.2f}"
 <details open>
 <summary><b>Input</b></summary>
  <pre>
-อิ่มบุญ
-22
+10
+5
 </pre>
 </details>
 <summary><b>output</b></summary>

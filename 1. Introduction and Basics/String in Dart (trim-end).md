@@ -255,44 +255,71 @@ void main() {
 ```c
 #include <stdio.h>
 #include <stdlib.h>
-#include<string.h>
-void solve()
-{
-    
-    char c[100];
-    int i, j, length = 0;
-    
-    printf("Enter a string : ");
-    printf("\n");
-    // gets(c);
-    scanf("%s", c);
-    length = strlen(c);
-    for (i = 0; i < length; i++) {
-       
-        if (c[i] == 'A' || c[i] == 'E' || c[i] == 'I' || c[i] == 'O' || c[i] == 'U' ||
-         c[i] == 'a' || c[i] == 'e' || c[i] == 'i' || c[i] == 'o' || c[i] == 'u' ) {
-           
-            for (j = i; j < length; j++) {
-              
-                c[j] = c[j + 1];
-            }
-            i--;
-            length--;
-        }
-        c[length + 1] = '\0';
-    }
-   printf("After Deletion the string will be  : %s", c);
+#include <string.h>
  
+// Function to replace a string with another
+// string
+char* replaceWord(const char* s, const char* oldW,
+                const char* newW)
+{
+    char* result;
+    int i, cnt = 0;
+    int newWlen = strlen(newW);
+    int oldWlen = strlen(oldW);
+ 
+    // Counting the number of times old word
+    // occur in the string
+    for (i = 0; s[i] != '\0'; i++) {
+        if (strstr(&s[i], oldW) == &s[i]) {
+            cnt++;
+ 
+            // Jumping to index after the old word.
+            i += oldWlen - 1;
+        }
+    }
+ 
+    // Making new string of enough length
+    result = (char*)malloc(i + cnt * (newWlen - oldWlen) + 1);
+ 
+    i = 0;
+    while (*s) {
+        // compare the substring with the result
+        if (strstr(s, oldW) == s) {
+            strcpy(&result[i], newW);
+            i += newWlen;
+            s += oldWlen;
+        }
+        else
+            result[i++] = *s++;
+    }
+ 
+    result[i] = '\0';
+    return result;
 }
+ 
+// Driver Program
 int main()
 {
-    solve();
+    char str[] = "xxforxx xx for xx";
+    char c[] = "xx";
+    char d[] = "Geeks";
+ 
+    char* result = NULL;
+ 
+    // oldW string
+    printf("Old string: %s\n", str);
+ 
+    result = replaceWord(str, c, d);
+    printf("New String: %s\n", result);
+ 
+    free(result);
     return 0;
 }
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>The quick brown cat jumps over the lazy dog.</code></pre>
+  <pre><code>Old string: xxforxx xx for xx
+New String: GeeksforGeeks Geeks for Geeks</code></pre>
 </details>
 <br>
 

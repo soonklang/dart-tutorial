@@ -1,7 +1,7 @@
 # Delete File in Dart
 ## deleteSync method
 ## Declaration
- **deleteSync()** 
+
  Following is the declaration for deleteSync() function.
  ```dart
 void deleteSync(
@@ -45,7 +45,7 @@ void main() {
 
 ## existsSync abstract method
 ## Declaration
- **deleteSync()** 
+
  Following is the declaration for existsSync() function.
  ```dart
 bool existsSync()

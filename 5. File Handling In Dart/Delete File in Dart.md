@@ -40,6 +40,6 @@ File file = File('test.txt');
 ```
 **FileSystemEntity** is a directory
 
-**recursive** is bool 
+**recursive** is false, the directory must be empty. 
 
 

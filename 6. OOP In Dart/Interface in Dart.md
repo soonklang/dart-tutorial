@@ -87,6 +87,6 @@ Discount:50
 # Reference
 https://dart-tutorial.com/object-oriented-programming/interface-in-dart/
 https://www.geeksforgeeks.org/interface-in-dart/
-https://www.educative.io/answers/what-is-an-interface-in-dart
+https://www.educative.io/answers/what-is-an-interface-in-dart/
 https://www.darttutorial.org/dart-tutorial/dart-interface/
 https://www.javatpoint.com/dart-interfaces

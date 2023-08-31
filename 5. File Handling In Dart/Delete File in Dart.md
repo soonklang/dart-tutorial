@@ -1,5 +1,5 @@
 # Delete File in Dart
-
+## deleteSync method
  **deleteSync()** 
  ```
 void deleteSync(

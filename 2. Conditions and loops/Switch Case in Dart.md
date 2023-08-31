@@ -77,7 +77,7 @@ else{
      }
  }
 ```
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Number Three. </code></pre>
 </details>
@@ -109,7 +109,7 @@ void main() {
 > - และกรณีที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จึงแสดงผลลัพธ์ Other.
 > - จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ number ให้มีค่าเป็น 3 ซึ่งเข้าเงื่อนไข case 3 จึงแสดงผลลัพธ์ Number Three. ออกมา
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Number Three. </code></pre>
 </details>
@@ -137,7 +137,7 @@ public class Main {
 }
 ```
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Number Three. </code></pre>
 </details>
@@ -166,7 +166,7 @@ int main() {
 }
 ```
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Number Three. </code></pre>
 </details>
@@ -189,7 +189,7 @@ if __name__ == "__main__":
     main()
 ```
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Number Three. </code></pre>
 </details>
@@ -224,7 +224,7 @@ void main() {
 > - และกรณีสุดท้ายที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จะแสดงผลลัพธ์ Sorry I am not familiar with such weather.
 > - จากcodeข้างต้น ได้ประกาศและกำหนดค่าของ weather = cloudy ซึ่งเข้าเงื่อนไขของกรณีที่ 3 จึงแสดงผลลัพธ์ Please bring umbrella.
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>
@@ -252,7 +252,7 @@ public class Main {
     }
 }
 ```
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>
@@ -275,7 +275,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>
@@ -318,7 +318,7 @@ void main() {
 > - เมื่อคำสั่งใน block ของ case NOW_CLOSED ทำงานเสร็จสิ้น เราใช้คำสั่ง break เพื่อออกจาก switch และไม่ทำงานใน case อื่น ๆ ถ้าหากค่าของ command ไม่ตรงกับเงื่อนไขที่มี
 > - ถ้าไม่เข้ากับ case ไหนเลย จะทำงานใน block default และแสดงผลลัพธ์เป็น It's weekend
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code>TUESDAY
 This is now closed </code></pre>
@@ -348,7 +348,7 @@ void main() {
 > - หลังจากทำงานใน case tiger หรือ case lion ใน alsoCat กำหนดตำแหน่งที่เราจะทำการตัดสินใจต่อ
 > - ใน case cat จะทำงานและแสดงผล "it's a cat" หลังจากทำงานที่ alsoCat.
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code>it's a tiger
 it's a cat</code></pre>
@@ -393,7 +393,7 @@ void main() {
 > - เมื่อทำการตรวจสอบแล้วพบว่าตรงกับ case Weather.cloudy
 > - จึงแสดงผลลัพธ์ Print Please bring an umbrella. ออกมา
 
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>
@@ -425,7 +425,7 @@ public class Main {
     }
 }
 ```
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>
@@ -460,7 +460,7 @@ int main() {
     return 0;
 }
 ```
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>
@@ -490,7 +490,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-<details>
+<details open>
 <summary><strong>ผลลัพธ์</strong></summary>
 <pre><code> Please bring umbrella. </code></pre>
 </details>

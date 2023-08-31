@@ -54,7 +54,7 @@ existsSync() is checks whether the file system entity with this path exists.
 
 ## Ex
 use existsSync() method to check if a file exists or not.
-```dart
+```Java
 // dart program to delete file if exists
 import 'dart:io';
 

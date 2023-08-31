@@ -98,7 +98,7 @@ void main() {
   printAddress(null); // Works
 }
 ```
-#Example 5: Null Safety In Dart Classes (Null Safety ในคลาสของ Dart)
+# Example 5: Null Safety In Dart Classes (Null Safety ในคลาสของ Dart)
 
 ในตัวอย่างนี้ คลาส Person มีพารามิเตอร์ชื่อ name ที่เป็นชนิดข้อมูล String หากคุณส่งค่า null เข้าไปในคลาสนี้ จะเกิดข้อผิดพลาดระหว่างเวลาคอมไพล์ (compile-time error)
 

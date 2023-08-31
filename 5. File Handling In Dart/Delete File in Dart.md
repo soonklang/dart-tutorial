@@ -171,4 +171,32 @@ else:
 ```
 
 
+- # C
+## remove() function
+## Declaration
+Use the C remove() function from the standard library to delete a file.
+Syntax:
+ ```C
+int remove(const char *filename);
+```
+
+## Ex remove()
+```C
+#include <stdio.h>
+
+int main() {
+  char* filename = "myfile.txt";
+  int status = remove(filename);
+  if (status == 0) {
+    printf("File '%s' deleted successfully.\n", filename);
+  } else {
+    printf("Error deleting file '%s'.\n", filename);
+  }
+  return 0;
+}
+```
+
+
+
+
 

@@ -98,6 +98,21 @@ class Student {
 -   properties เรียกอีกอย่างว่า fields, attributes หรือ data members.
 -   methods เรียกอีกอย่างว่า behaviors หรือ member functions.
 
+# Challenge
+สร้าง class book โดยมี 3 properties คือ name, author, and prize และสร้าง method display ที่จะแสดงค่าของทั้ง 3 properties
+ ```dart
+class Book {
+  String name;
+  String author;
+  int prize;
+
+  void display() {
+    print("Name: ${this.name}");
+    print("Author: ${this.author}");
+    print("Prize: ${this.prize}");
+  }
+}
+```
 # Difference Between Dart and Java and Python and C
 จากตัวอย่างด้านล่างจะเป็นการสร้าง class ของทั้ง 3 ภาษา โดย class ชื่อ **Dog** จะมี properties คือ **breed** ,**name** และมี method **displayInfo** สำหรับแสดงค่าของ properties
 ### Python

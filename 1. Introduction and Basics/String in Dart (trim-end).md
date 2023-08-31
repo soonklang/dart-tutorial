@@ -388,17 +388,31 @@ void main() {
 
 #### ตัวอย่าง reverse() ในภาษา Java
  ```java
-class Main {
-  public static void main(String[] args) {
-    String str1 = "java is fun";
-
-    System.out.println(str1.substring(0, 4));
-  }
+import java.io.*;
+import java.util.Scanner;
+ 
+class GFG {
+    public static void main (String[] args) {
+       
+        String str= "Geeks", nstr="";
+        char ch;
+       
+      System.out.print("Original word: ");
+      System.out.println("Geeks"); //Example word
+       
+      for (int i=0; i<str.length(); i++)
+      {
+        ch= str.charAt(i); //extracts each character
+        nstr= ch+nstr; //adds each character in front of the existing string
+      }
+      System.out.println("Reversed word: "+ nstr);
+    }
 }
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>java</code></pre>
+  <pre><code>Original word: Geeks
+Reversed word: skeeG</code></pre>
 </details>
 <br>
 
@@ -430,6 +444,35 @@ void main() {
   <pre><code>Capitalized first letter of String: Hello world</code></pre>
 </details>
 <br>
+
+#### ตัวอย่างการใช้อักษรตัวแรกของ String ให้เป็นตัวพิมพ์ใหญ่ ในภาษา Java
+```java
+public class FirstLetterCapital1  
+{  
+public static void main(String args[])   
+{  
+System.out.println(capitalize("javatpoint"));     
+System.out.println(capitalize("website"));          
+System.out.println(capitalize("@javatpoint"));    
+System.out.println(capitalize("it is the best website to learn technology."));   
+}  
+//user-defined function to capitalize the first letter also check for null string  
+public static final String capitalize(String str)   
+{  
+if (str == null || str.length() == 0) return str;  
+return str.substring(0, 1).toUpperCase() + str.substring(1);  
+}  
+}  
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Javatpoint
+Website
+@javatpoint
+It is the best website to learn technology.</code></pre>
+</details>
+<br>
+
 
 ## Reference
 

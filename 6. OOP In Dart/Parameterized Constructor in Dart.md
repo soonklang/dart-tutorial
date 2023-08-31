@@ -133,6 +133,13 @@
         print("Age: ${student.age}");
     }
 ```
+จาก code จะมีการกำหนดค่าให้ **parameters** name = "John" และ age = 0
+```dart
+      Student({String? name = "John", int? age = 0}) {
+        this.name = name;
+        this.age = age;
+      }
+```
 > Output
 > 
 ```dart

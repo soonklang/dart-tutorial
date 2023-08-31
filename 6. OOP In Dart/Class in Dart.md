@@ -103,12 +103,12 @@ class Student {
 ### Python
 ```python
 class Car:  
-   // field or properties
+    #field or properties
     engine = "E1001";  
-   
-   // function or method
-    def disp(): 
-      print(engine);   
+    #function or method
+    def disp(self): 
+      print(self.engine); 
+      
 ```
  
 ### Java
@@ -116,7 +116,6 @@ class Car:
 class Car {  
    // field or properties
    String engine = "E1001";  
-   
    // function or method
    void disp() { 
       System.out.println(engine); 
@@ -128,32 +127,24 @@ class Car {
 ```dart
 class Car {  
    // field or properties
-   String engine = "E1001";  
-   
+   String engine = "E1001";     
    // function or method
    void disp() { 
       print(engine); 
    } 
 }
 ```
-<!---
-### C
-```c
-class Car {  
-   // field or properties
-    engine = "E1001";  
-   
-   // function or method
-   void disp() { 
-      printf(engine); 
-   } 
-}
+จากตัวอย่างด้านบน class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
 
-```
--->
-จากตัวอย่างการสร้าง class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
+### C
+ภาษา C เนื่องจากเป็นภาษา Procedural Programming ไม่ใช่ Object Oriented Programming (OOP) ทำให้ถ้าหากต้องการเขียน code ให้ทำงานใกล้เคียงกับภาษาอื่นๆ ในตัวอย่างด้านบนจึงต้องใช้ struct มาช่วย
+
+ 
+
+ 
 
 # Reference
 https://www.theserverside.com/definition/Pascal-case<br>
 https://www.tutorialspoint.com/dart_programming/dart_programming_classes.htm<br>
+https://dart-tutorial.com/object-oriented-programming/class-in-dart/<br>
 

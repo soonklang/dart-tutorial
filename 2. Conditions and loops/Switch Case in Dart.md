@@ -502,11 +502,11 @@ if __name__ == "__main__":
 4. **Default Case** (ทำงานเมื่อไม่มีกรณีอื่นในคำสั่ง): ทุกภาษามี default หรือ else case ที่จะทำงานเมื่อไม่มีเงื่อนไขใดที่ตรงกัน
 
 ## **References**
-https://dart-tutorial.com/conditions-and-loops/switch-case-in-dart/
-<br>https://www.darttutorial.org/dart-tutorial/dart-switch/
-<br>https://www.geeksforgeeks.org/python-match-case-statement/
-<br>https://www.w3schools.com/c/c_switch.php
-<br>https://www.w3schools.com/java/java_switch.asp
-<br>https://www.w3schools.com/js/js_switch.asp
-<br>https://www.javatpoint.com/dart-switch-case-statement
-<br>https://flutterrdart.com/dart-switch-case-statement-with-examples/
+- https://dart-tutorial.com/conditions-and-loops/switch-case-in-dart/
+- https://www.darttutorial.org/dart-tutorial/dart-switch/
+- https://www.geeksforgeeks.org/python-match-case-statement/
+- https://www.w3schools.com/c/c_switch.php
+- https://www.w3schools.com/java/java_switch.asp
+- https://www.w3schools.com/js/js_switch.asp
+- https://www.javatpoint.com/dart-switch-case-statement
+- https://flutterrdart.com/dart-switch-case-statement-with-examples/

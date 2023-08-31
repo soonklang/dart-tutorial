@@ -113,6 +113,8 @@ int num = num1.singleWhere(
 
 [[Dart] รวมคำสั่งดีๆ เอาไว้ใช้กับ List – TAmemo.com](https://www.tamemo.com/post/177/dart-list-helper-method/)
 
+[Dart: มาหาข้อมูลเฉพาะตัวที่ต้องการใน List กัน - Nextflow](https://nextflow.in.th/2020/dart-filter-search-list-thai/)
+
 
 
 

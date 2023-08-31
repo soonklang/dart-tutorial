@@ -44,7 +44,6 @@ enum cars {
 ```
  * ### รูปแบบในการใช้ ของ Enum ในภาษา C    และความแตกต่าง กับภาษา Dart
 	* มีรูปแบบที่คล้ายกัน
-        * มีค่าเริ่มต้นใน Enum คือ 1 ไปเรื่อยๆ 
 ```c
  enum cars {
     Toyota,
@@ -337,14 +336,18 @@ Rainbow
 ## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum ในภาษา C
 
 
-```dart
-enum Colors { Green, Red, Blue, Yellow, Pink, Black, Rainbow }
+```c
+#include <stdio.h>
 
-void main() {
- // Colors.values: จะคืนค่าทั้งหมดที่อยู่ใน Enum(Colors).
-  for (Colors color in Colors.values) {
-    print(color);
-  }
+enum week { Mon, Tue, Wed, Thur, Fri, Sat, Sun };
+
+int main() {
+    enum week day;
+    day = Wed;
+    
+    printf("Enum value: %d\n", day);
+
+    return 0;
 }
 
 ```

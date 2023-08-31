@@ -49,8 +49,6 @@ void main() {
  ```dart
 bool existsSync()
 ```
-existsSync() is checks whether the file system entity with this path exists.
-
 ## Example existsSync()
 use **existsSync()** method to check if a file exists or not.
 ```dart

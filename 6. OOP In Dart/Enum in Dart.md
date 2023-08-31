@@ -33,7 +33,7 @@ enum cars {
  * รูปแบบในการใช้ ของ Enum ในภาษา Python
 
 
-## ตัวอย่างการใช้ Enum
+## ตัวอย่างการใช้ Enum ใน Dart
 ```dart
 enum cars {
   Toyota,

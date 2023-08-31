@@ -78,6 +78,114 @@ Output
 Today I choose Volvo.
 ```
 
+## ตัวอย่างการใช้ Enum ใน Java
+```java
+ class Car {
+    // Enum Declared
+   enum cars {  
+        Toyota,
+        Honda,
+        Nissan,
+        Ferrari,
+        Bugatti,
+        Benz,
+        Volvo;
+}
+ 
+    // Main Function
+    public static void main(String[] args)
+    {
+          cars Mycartoday = cars.Volvo;
+       
+          // Switch case with Enum
+    switch (Mycartoday) {
+    case Toyota:
+      System.out.println("Today I choose Toyota.");
+      break;
+    case Honda:
+     System.out.println("Today I choose Honda.");
+      break;
+    case Nissan:
+     System.out.println("Today I choose Nissan.");
+      break;
+    case Ferrari:
+      System.out.println("Today I choose Ferrari.");
+      break;
+    case Bugatti:
+    System.out.println("Today I choose Bugatti.");
+      break;
+    case Benz:
+       System.out.println("Today I choose Benz.");
+      break;
+    case Volvo:
+       System.out.println("Today I choose Volvo.");
+      break;
+      default:
+			System.out.println("Not my cars");
+  }
+    }
+}
+```
+
+Output  
+```
+Today I choose Volvo.
+```
+
+## ตัวอย่างการใช้ Enum ใน C
+```c
+ #include <stdio.h>
+
+// Enum Declared
+enum cars {
+    Toyota,
+    Honda,
+    Nissan,
+    Ferrari,
+    Bugatti,
+    Benz,
+    Volvo
+};
+
+int main() {
+    enum cars Mycartoday = Volvo;
+    
+    // Switch case with Enum
+    switch (Mycartoday) {
+        case Toyota:
+            printf("Today I choose Toyota.\n");
+            break;
+        case Honda:
+            printf("Today I choose Honda.\n");
+            break;
+        case Nissan:
+            printf("Today I choose Nissan.\n");
+            break;
+        case Ferrari:
+            printf("Today I choose Ferrari.\n");
+            break;
+        case Bugatti:
+            printf("Today I choose Bugatti.\n");
+            break;
+        case Benz:
+            printf("Today I choose Benz.\n");
+            break;
+        case Volvo:
+            printf("Today I choose Volvo.\n");
+            break;
+        default:
+            printf("Not my cars\n");
+    }
+
+    return 0;
+}
+```
+
+Output  
+```
+Today I choose Volvo.
+```
+
 ## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum
 
 

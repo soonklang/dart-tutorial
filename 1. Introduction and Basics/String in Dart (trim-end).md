@@ -473,6 +473,34 @@ It is the best website to learn technology.</code></pre>
 </details>
 <br>
 
+#### ตัวอย่างการใช้อักษรตัวแรกของ String ให้เป็นตัวพิมพ์ใหญ่ ในภาษา Python
+Python มีวิธีการ 2 วิธี
+> วิธีที่ 1
+```
+my_string = "programiz is Lit"
+
+print(my_string[0].upper() + my_string[1:])
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Programiz is Lit</code></pre>
+</details>
+<br>
+
+> วิธีที่ 2
+```
+my_string = "programiz is Lit"
+
+cap_string = my_string.capitalize()
+
+print(cap_string)
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Programiz is lit</code></pre>
+</details>
+<br>
+
 
 ## Reference
 

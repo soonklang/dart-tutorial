@@ -3,7 +3,7 @@
 ## Declaration
  **deleteSync()** 
  Following is the declaration for deleteSync() function.
- ```
+ ```dart
 void deleteSync(
 {bool recursive = false}
 )

@@ -78,8 +78,7 @@
         print("Roll Number: ${student.rollNumber}");
     }
 ```
-ในตัวอย่างที่ 2 ต่างจากตัวอย่างที่ 1 คือ มีการใช้ **name parameters** ใน **constructor** 
-ทำให้การสร้าง **object** ง่ายขึ้น เพราะ ไม่จำเป็นต้อง เรียง **argument** ที่จะส่งไปให้ตรงกับ **parameter** ของ **constructor** เช่น **constructor** ของ **Class Student** มี **parameters** เป็น **name** , **age** และ **rollNumber** ตามลำดับ
+ในตัวอย่างที่ 2 ใช้ **Class** เดียวกับตัวอย่างที่ 1 แต่มีการใช้ **name parameters** ใน **constructor**แทน สังเกตจากการใส่ **{ }** ครอบ **parameter**  ทำให้การสร้าง **object** ง่ายขึ้น เพราะ ไม่จำเป็นต้อง เรียง **argument** ที่จะส่งไปให้ตรงกับ **parameter** ของ **constructor** เช่น **constructor** ของ **Class Student** มี **parameters** เป็น **name** , **age** และ **rollNumber** ตามลำดับ
 ```dart
     class Student {
       String? name;
@@ -112,5 +111,36 @@
 	Roll Number: 1
 ```
 ## 
+### Example 3: Parameterized Constructor With Default Values In Dart
+ในตัวอย่างที่ 3 มี **Class Student** ที่มี ตัวแปร 2 ตัว คือ **name** และ **age**
+ใน **Class Student** มี **constructor** ตัวเดียว ที่มีการกำหนดค่าให้ตัว **parameters** เพื่อใช้กำหนดค่าให้ตัวแปรใน Class
+```dart
+    class Student {
+      String? name;
+      int? age;
+    
+      // Constructor
+      Student({String? name = "John", int? age = 0}) {
+        this.name = name;
+        this.age = age;
+      }
+    }
+    
+    void main(){
+        // Here student is object of class Student. 
+        Student student = Student();
+        print("Name: ${student.name}");
+        print("Age: ${student.age}");
+    }
+```
+> Output
+> 
+```dart
+	Name: John
+	Age: 0
+```
 
+# Reference
 
+ - https://dart-tutorial.com/object-oriented-programming/parameterized-constructor-in-dart/
+ - https://dart.dev/language/constructors

@@ -2,6 +2,7 @@
 ## deleteSync method
 ## Declaration
  **deleteSync()** 
+ Following is the declaration for deleteSync() function.
  ```
 void deleteSync(
 {bool recursive = false}

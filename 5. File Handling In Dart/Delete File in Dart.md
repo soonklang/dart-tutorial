@@ -88,10 +88,8 @@ void main() {
  ```java
 public boolean delete() 
 ```
-delete() is checks whether the file system entity with this path exists.
-
 ## Ex
-use existsSync() method to check if a file exists or not.
+use delete() method to delete file.
 ```java
 import java.io.File;
 

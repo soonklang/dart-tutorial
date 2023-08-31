@@ -105,3 +105,4 @@ Colors.Rainbow
 
 ## อ้างอิง
 https://dart-tutorial.com/introduction-and-basics/
+https://www.geeksforgeeks.org/enum-in-java/

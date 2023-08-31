@@ -8,6 +8,10 @@
   4. Switch case
 ## 1. เงื่อนไข If
   เงื่อนไข If เป็นเงื่อนไขที่ง่ายที่สุดในการใช้ควบคุมการไหลของโปรแกรม เรียกใช้งานผ่านการใช้คำสั่ง if โดยโปรแกรมจะทำงานต่อหากเงื่อนไขที่กำหนดเป็นจริง
+> ## Flowchart การทำงานของเงื่อนไข If  
+  
+  ![image](https://github.com/soonklang/dart-tutorial/assets/95902698/3a2481ef-4ee6-4d21-9cd1-4cdbeb5602ad)
+
 > ## Syntax
   ```dart
     if(condition){
@@ -36,8 +40,30 @@ You are voter.
  </pre>
 </details>
 
+> ## ตัวอย่างการทำงานเพิ่มเติมของเงื่อนไข If
+> โปรแกรมจะทำเปรียบเทียบค่าที่อยู่ในตัวแปร x กับค่าที่อยู่ในตัวแปร y หากค่าที่อยู่ในตัวแปร x มีค่ามากกว่าค่าที่อยู่ในตัวแปร y โปรแกรมจะทำการพิมพ์ข้อความออกมาว่า ค่าที่อยู่ในตัวแปร x มากกว่า ค่าที่อยู่ในตัวแปร y แต่ถ้าเช็คแล้วค่า x มีค่าน้อยกว่าตัวแปร y โปรแกรมจะพิมพ์ข้อความออกมาว่า จบการทำงาน
+```dart
+  void main(){
+  int x = 10,y=15;
+  if(x>y){
+    print("$x มากกว่า $y");//ถ้าเงื่อนไขจริง
+  }
+  print("จบการทำงาน");
+  }​
+}
+```
+<details close>
+ <summary><b>output</b></summary>
+ <pre>
+จบการทำงาน
+ </pre>
+</details>
+
 ## 2. เงื่อนไข If-Else
   เงื่อนไข If-Else เป็นเงื่อนไขเพื่อสร้างทางเลือก 2 ทาง ถ้าทางเลือกแรกเป็นเท็จ จึงจะรัน statement ทางเลือกที่สอง
+> ## Flowchart การทำงานของเงื่อนไข If-Else
+  ![image](https://github.com/soonklang/dart-tutorial/assets/95902698/3614aec4-3bb6-47ef-967f-ddec23f41854)
+
 
 > ## Syntax
 ```dart
@@ -66,6 +92,26 @@ You are not voter.
  </pre>
 </details>
 
+> ## ตัวอย่างการทำงานเพิ่มเติมของเงื่อนไข If-Else
+```dart
+  void main() {
+  printOddEven(4);
+}
+  void printOddEven(int val) {
+  if(val % 2 == 0){
+    print('$val is even');
+  } else {
+    print('$val is odd');
+  }
+}
+```
+<details close>
+<summary><b>output</b></summary>
+ <pre>
+4 is even
+ </pre>
+</details>
+
 > ## เงื่อนไขที่ขึ้นอยู่กับค่าของบูลีน
 > ถ้าหากสถานะแต่งงานไม่เป็นจริง โปรแกรมจะพิมพ์ข้อความ you are single ออกมา แต่ถ้าสถานะแต่งงานเป็นจริง โปรแกรมจะพิมพ์ข้อความ you are married ออกมา
 ```dart
@@ -87,6 +133,10 @@ You are single.
 
 ## 3. เงื่อนไข If-Else-IF
   เงื่อนไข If-Else-If เป็นเงื่อนไขที่มีการทำงานคล้ายกันกับเงื่อนไข If-Else แต่เป็นการสร้างทางเลือกมากกว่า 2 ทาง และจะดูเงื่อนไขเรียงลำดับไปเรื่อยๆจนถึงอันที่ถูก จากนั้นก็จะรันคำสั่ง แล้วออกจาก decision
+
+> ## Flowchart การทำงานของเงื่อนไข IF-Else-IF
+  ![image](https://github.com/soonklang/dart-tutorial/assets/95902698/072b11db-94c4-463c-ab2c-1eba501cd5f2)
+
 > ## Syntax
 ```dart
   if(condition1){
@@ -233,3 +283,10 @@ https://www.w3schools.com/c/c_conditions.php
 https://www.w3schools.com/java/java_conditions.asp
 
 https://www.w3schools.com/python/python_conditions.asp
+
+https://programmerthailand.com/tutorial/post/view/281/if-%E0%B9%81%E0%B8%A5%E0%B8%B0-else-%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-dart
+
+https://www.mindphp.com/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-dart-flutter/8904-control-structures-in-dart-language.html
+
+https://www.tutorialspoint.com/dart_programming/dart_programming_if_else_statement.htm
+https://www.darttutorial.org/dart-tutorial/dart-if-else-if/

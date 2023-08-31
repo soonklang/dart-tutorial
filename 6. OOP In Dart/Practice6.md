@@ -337,7 +337,7 @@ class Camera {
   double _price;
 
   Camera(this._id, this._brand, this._color, this._price);
-
+  // Create a getter and setter to get and set values
   int get id => _id;
   String get brand => _brand;
   String get color => _color;

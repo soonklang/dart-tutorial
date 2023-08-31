@@ -79,9 +79,9 @@ void main() {
 </pre>
 </details>
 
-# Delete file in other language
-- ## Java
-# delete() method
+## Delete file in other language
+- # Java
+## delete() method
 ## Declaration
 
  Following is the declaration for delete() function.

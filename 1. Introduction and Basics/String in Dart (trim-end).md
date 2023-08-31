@@ -55,6 +55,52 @@ Hello World!</code></pre>
 </details>
 <br>
 
+
+#### ตัวอย่าง trim() ในภาษา Python
+Python มีวิธีการ 3 วิธีสำหรับการตัดช่องว่างและอักขระที่นำหน้าและต่อท้ายจากสตริง
+> วิธีที่ 1 strip()
+```
+greeting = "     Hello!  "
+
+stripped_greeting = greeting.strip()
+
+print(stripped_greeting,"How are you?")
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hello! How are you?</code></pre>
+</details>
+<br>
+
+> วิธีที่ 2 lstrip()
+```
+greeting = "     Hello!  "
+
+stripped_greeting = greeting.lstrip()
+
+print(stripped_greeting,"How are you?" )
+
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hello!   How are you?</code></pre>
+</details>
+<br>
+
+> วิธีที่ 3 rstrip()
+```
+greeting = "     Hello!  "
+
+stripped_greeting = greeting.rstrip()
+
+print(stripped_greeting,"How are you?")
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>     Hello! How are you?</code></pre>
+</details>
+<br>
+
 ## Compare String In Dart
 
   Return สตริงใหม่โดยการลบช่องว่างนำหน้าและต่อท้ายทั้งหมด วิธีการนี้สามารถเปรียบเทียบสตริงสองสตริงได้ 

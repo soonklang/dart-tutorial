@@ -7,7 +7,7 @@ Future<int> doSomeLongTask() async {
   return 21;
 }main() async {
   int result = await doSomeLongTask();
-  print(result); // prints '42' after waiting 2 second
+  print(result); // prints '21' after waiting 2 second
 }
    ```
 

@@ -14,8 +14,8 @@
 - Getter in Dart
 - Setter in Dart
 - Getter and Setter in Dart
-- Inheritance in Dart (Part1)
-- Inheritance in Dart (Part2)
+- [Inheritance in Dart (Part1)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart.md)
+- [Inheritance in Dart (Part2)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart%20(ex3-end).md)
 - [Inheritance of Constructors in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20Of%20Constructor%20in%20Dart.md)
 - Super Keyword in Dart
 - Polymorphism in Dart

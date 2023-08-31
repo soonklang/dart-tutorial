@@ -8,6 +8,16 @@ void deleteSync(
 {bool recursive = false}
 )
 ```
+deleteSync() is Synchronously deletes this  **FileSystemEntity**.
+
+```dart
+// FileSystemEntity
+File file = File('test.txt');
+```
+**FileSystemEntity** is a directory
+
+if **recursive** is false, the directory must be empty. and if **recursive** is ture, the directory  
+
 
  **test.txt** ใน directory เดียวกันกับโปรแกรม Dart
 
@@ -31,17 +41,7 @@ void main() {
 </pre>
 </details>
 
-**!NOTE** If you try to delete a file that does not exist, then it will throw an exception.
+**!NOTE** Throws an exception if the FileSystemEntity cannot be deleted.
 
-
-deleteSync() is Synchronously deletes this  **FileSystemEntity**.
-
-```dart
-// FileSystemEntity
-File file = File('test.txt');
-```
-**FileSystemEntity** is a directory
-
-if **recursive** is false, the directory must be empty. and if **recursive** is ture, the directory  
 
 

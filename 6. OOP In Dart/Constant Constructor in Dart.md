@@ -102,5 +102,50 @@ void main() {
 # Benefits Of Constant Constructor In Dart
 ปรับปรุงประสิทธิภาพของโปรแกรม เพื่อให้โปรแกรมทำงานได้เร็วขึ้น
 
+# การใช้ Constant Constructor
+>[!NOTE]
+> การใช้ Constant Constructor ในภาษาอื่นแบบ Dart นั้นไม่มีแต่จะเป็นการกำหนดให้คุณสมบัติของคลาสเป็น **final** แทน เช่น java
+
+ตัวอย่างใน java
+```Java
+public class Point {
+    public final int x;
+    public final int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public static void main(String[] args) {
+        final Point p1 = new Point(1, 2);
+        final Point p2 = new Point(1, 2);
+
+        System.out.println(p1 == p2); // false
+        System.out.println(p1.equals(p2)); // false
+    }
+}
+```
+- ในตัวอย่างนี้เราใช้คีย์เวิร์ด **final** ในการประกาศตัวแปร p1 และ p2 เพื่อกำหนดให้ตัวแปรเหล่านี้เป็นค่าคงที่
+- ความแตกต่างระหว่าง **Java** กับ **Dart** คือใน Java เราจะต้องใช้ **equals()** ในการเปรียบเทียบเนื่องจาก **==** จะเปรียบเทียบการอ้างอิงถึงออบเจกต์ในหน่วยความจำแต่การใช้ equals() จะเปรียบเทียบค่าภายในออบเจกต์
+
+ตัวอย่างใน Kotlin
+```Kotlin
+class Point(val x: Int, val y: Int)
+
+fun main() {
+    val p1 = Point(1, 2)
+    val p2 = Point(1, 2)
+    
+    println(p1 == p2)  // true
+    println(p1 === p2) // false
+}
+```
+- Kotlin ไม่มีคอนสตรักเตอร์ที่เป็นค่าคงที่แบบเดียวกับ Dart แต่คุณสามารถใช้คอนสตรักเตอร์ปกติเพื่อสร้างออบเจกต์ที่มีค่าคงที่ โดยระบุตัวแปรด้วย val (คำว่า val ใน Kotlin คือค่าคงที่) และกำหนดค่าในคอนสตรักเตอร์
+
+
+
 # Reference
-https://dart-tutorial.com/object-oriented-programming/constant-constructor-in-dart/
+- https://dart-tutorial.com/object-oriented-programming/constant-constructor-in-dart
+- https://www.peachpit.com/articles/article.aspx?p=2468332&seqNum=5
+- https://dart.dev/language/constructors

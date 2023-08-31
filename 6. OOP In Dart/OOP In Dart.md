@@ -4,7 +4,8 @@
 - [Class in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20in%20Dart.md)
 - [Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Object%20in%20dart.md)
 - [Class and Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20and%20Objects%20in%20Dart.md)
-- Constructor in Dart
+- Constructor in Dart (Part1)
+- Constructor in Dart (Part2)
 - Default Constructor in Dart
 - Parameterized Constructor in Dart
 - [Named Constructor in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Named%20Constructor%20in%20Dart.md)
@@ -13,7 +14,8 @@
 - Getter in Dart
 - Setter in Dart
 - Getter and Setter in Dart
-- Inheritance in Dart
+- Inheritance in Dart (Part1)
+- Inheritance in Dart (Part2)
 - [Inheritance of Constructors in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20Of%20Constructor%20in%20Dart.md)
 - Super Keyword in Dart
 - Polymorphism in Dart
@@ -22,5 +24,7 @@
 - Abstract Class in Dart
 - Interface in Dart
 - Mixin in Dart
-- Factory Constructor in Dart
+- Factory Constructor in Dart (Part1)
+- Factory Constructor in Dart (Part2)
 - Generics in Dart
+- Practice6

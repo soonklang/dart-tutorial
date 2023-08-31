@@ -31,4 +31,4 @@ void main() {
 
 **!NOTE** If you try to delete a file that does not exist, then it will throw an exception.
 
-this method will be
+deleteSync() is Synchronously deletes this FileSystemEntity.

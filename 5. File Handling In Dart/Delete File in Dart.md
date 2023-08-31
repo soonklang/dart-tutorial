@@ -33,7 +33,8 @@ void main() {
 
 
 deleteSync() is Synchronously deletes this FileSystemEntity.
- ```
+
+```dart
 File file = File('test.txt');
 ```
 

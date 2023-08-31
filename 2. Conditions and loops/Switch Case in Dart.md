@@ -1,16 +1,16 @@
 # Switch Case in Dart
 
-ใน tutorial นี้คุณจะเรียนรู้การใช้ switch case ในภาษา Dart เพื่อควบคุมการทำงานของโปรแกรม คำสั่ง switch case ใช้ในการประมวลผลโปรแกรมตามเงื่อนไขที่กำหนด
+ใน tutorial นี้จะเรียนรู้การใช้ **switch case** ในภาษา **Dart** เพื่อควบคุมการทำงานของโปรแกรม โดยคำสั่ง switch case จะใช้ในการประมวลผลโปรแกรมตามเงื่อนไขที่กำหนด
 
 ### Switch Case Statement
-คำสั่ง switch ทำการตรวจสอบนิพจน์และเปรียบเทียบผลลัพธ์กับค่าที่กำหนด ถ้าเท่ากัน คำสั่ง switch จะดำเนินการในคำสั่งส่วนนั้นของ case ที่ตรงกัน
+คำสั่ง **switch** ทำการตรวจสอบนิพจน์(expression) และเปรียบเทียบผลลัพธ์กับค่าที่กำหนด ถ้าเท่ากัน คำสั่ง **switch** จะดำเนินการในคำสั่งส่วนนั้นของ **case** ที่ตรงกัน
 
 ภายในคำสั่ง switch ใช้ตัวดำเนินการเปรียบเทียบ (==) เพื่อเปรียบเทียบจำนวนเต็ม, สตริง, ชุดเลขประเภท (enumeration) หรือค่าคงที่ที่ระบุระหว่างการคอมไพล์
 
 ### หลักการทำงานของ Switch Case
 ![flow-SwitchCase](https://github.com/soonklang/dart-tutorial/assets/95559071/019cb533-7aea-462f-b251-3144a7a6b9a7)
 ## Syntax
-- ### ในภาษา Dart , C, Java , Javascript ใช้ switch case
+- ### ในภาษา Dart, C, Java, Javascript, C++, C# จะใช้ switch case
 ```dart
 switch(expression) {
     case value1:
@@ -28,8 +28,8 @@ switch(expression) {
 ```
 กระบวนการทำงาน **switch case**
 - นิพจน์ถูกประเมินครั้งเดียวและเปรียบเทียบกับค่าของแต่ละ **case**
-- หากนิพจน์ตรงกับค่าของ case ค่าที่ 1 คำสั่งใน case ค่าที่ 1 จะถูกประมวลผล ในทางเดียวกัน กรณีค่าที่ 2 จะถูกประมวลผลหากนิพจน์ตรงกับ case ค่าที่ 2 ถ้านิพจน์ตรงกับค่าของ case ค่าที่ 3 คำสั่งใน case ค่าที่ 3 จะถูกประมวลผล
-- คีย์เวิร์ด **break** ใช้ในการบอก Dart ให้ออกจากคำสั่ง switch เนื่องจากคำสั่งในบล็อก case เสร็จสิ้น
+- ถ้านิพจน์ตรงกันกับค่าของ **case 1** คำสั่งใน **case 1** จะถูกประมวลผล ในทางเดียวกัน กรณีค่าที่ 2 จะถูกประมวลผลหากนิพจน์ตรงกับ **case 2** ถ้านิพจน์ตรงกับค่าของ **case 3** คำสั่งใน **case** 3 ก็จะถูกประมวลผล
+- คีย์เวิร์ด **break** ใช้ในการบอกให้ออกจากคำสั่ง **switch** เนื่องจากคำสั่งใน case block เสร็จสิ้น
 - หากไม่มีการตรงกัน คำสั่งในบล็อก **default** จะถูกประมวลผล
 
 > [!NOTE]
@@ -52,9 +52,12 @@ match parameter:
     case _  :
           nothing_matched_function()
 ```
+กระบวนการทำงาน **match case**
+- ภาษา Python ใช้ match แทน switch
+- คำสั่งและการทำงานคล้ายๆกับ switch case เพียงแต่มีบางคำที่ใช้ต่างกัน 
 
 > [!IMPORTANT]
-> สามารถใช้ match case ได้ใน Python 3.10 หรือ version ที่ใหม่กว่า
+> **match case** เป็นคำสั่งใหม่ที่เพิ่มเข้ามา สามารถใช้ได้ใน Python 3.10 หรือ version ที่ใหม่กว่า
 
 ### ตัวอย่างกรณีที่ใช้ If Else If
 ```dart
@@ -219,7 +222,7 @@ void main() {
 > - กรณีที่ 2 switch ตรงกับ case snowy จะแสดงผลลัพธ์ Get your skis.
 > - กรณีที่ 3 switch ตรงกับ case cloudy หรือ rainy  จะแสดงผลลัพธ์ Please bring umbrella.
 > - และกรณีสุดท้ายที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จะแสดงผลลัพธ์ Sorry I am not familiar with such weather.
-> - จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ weather = "cloudy" ซึ่งเข้าเงื่อนไขของกรณีที่3 จึงแสดงผลลัพธ์ Please bring umbrella.
+> - จากcodeข้างต้น ได้ประกาศและกำหนดค่าของ weather = cloudy ซึ่งเข้าเงื่อนไขของกรณีที่ 3 จึงแสดงผลลัพธ์ Please bring umbrella.
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
@@ -308,12 +311,12 @@ void main() {
 }
 ```
 > - กำหนดค่าของตัวแปร command เป็น TUESDAY เพื่อใช้ทดสอบ switch กับเงื่อนไขต่างๆ
-> - เราใช้ switch ตรวจสอบค่าของ command ทำตามเงื่อนไขของ case ตามลำดับ
+> - ใช้ switch ตรวจสอบค่าของ command ตามเงื่อนไขของ case 
 > - ถ้าค่าของ command ตรงกับ case จะดำเนินการใน block ส่วนนั้น
-> - ในกรณีที่ มี continue จะกระโดดไปยัง lebel ที่กำหนด เช่น case TUESDAY จะกระโดดไปยัง lebel ที่ชื่อ nowClosed
-เมื่อเจอ continue ใน case TUESDAY code จะกระโดดไปทำงานใน case NOW_CLOSED ต่อทันที และแสดงผล This is now closed
-> - เมื่อคำสั่งในบล็อกของ case NOW_CLOSED ทำงานเสร็จสิ้น เราใช้คำสั่ง break เพื่อออกจาก switch และไม่ทำงานใน case อื่น ๆ หากค่า command ไม่ตรงกับเงื่อนไขใดเลย
-> - หากไม่เข้ากับ case ใดเลย เราจะทำงานใน block default และแสดงผล It's weekend
+> - ในกรณีที่ มี continue จะข้ามไปยัง lebel ที่กำหนด เช่น case TUESDAY จะข้ามไปยัง lebel ที่ชื่อ nowClosed
+เมื่อเจอ continue ใน case TUESDAY code จะข้ามไปทำงานใน case NOW_CLOSED ต่อทันที และแสดงผล This is now closed
+> - เมื่อคำสั่งใน block ของ case NOW_CLOSED ทำงานเสร็จสิ้น เราใช้คำสั่ง break เพื่อออกจาก switch และไม่ทำงานใน case อื่น ๆ ถ้าหากค่าของ command ไม่ตรงกับเงื่อนไขที่มี
+> - ถ้าไม่เข้ากับ case ไหนเลย จะทำงานใน block default และแสดงผลลัพธ์เป็น It's weekend
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
@@ -341,9 +344,9 @@ void main() {
 
 ```
 > - กำหนดค่าของตัวแปร animal เป็น tiger เพื่อใช้ทดสอบ switch กับเงื่อนไขต่างๆ
-> - ใน switch case เรามีการใช้ continue เพื่อกระโดดไปทำงานที่ alsoCat
-> - หลังจากทำงานใน case tiger หรือ case lion ใน alsoCat เรากำหนดตำแหน่งที่เราจะทำการตัดสินใจต่อ
-> - ใน case cat เราจะทำงานและแสดงผล "it's a cat" หลังจากทำงานที่ alsoCat.
+> - ใน switch case เรามีการใช้ continue เพื่อข้ามไปทำงานที่ alsoCat
+> - หลังจากทำงานใน case tiger หรือ case lion ใน alsoCat กำหนดตำแหน่งที่เราจะทำการตัดสินใจต่อ
+> - ใน case cat จะทำงานและแสดงผล "it's a cat" หลังจากทำงานที่ alsoCat.
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
@@ -498,7 +501,7 @@ if __name__ == "__main__":
 ## เปรียบเทียบการใช้ Switch Case ในภาษา Dart และ ภาษาอื่นๆ
 1. **การเรียกใช้งาน**: การใช้งาน switch case เริ่มต้นด้วยคำสั่ง switch และใช้คำสั่ง case เพื่อกำหนดเงื่อนไขที่เราต้องการเปรียบเทียบ
 2. **ประเภทของเงื่อนไข**: ภาษา Dart และ ภาษา Java รองรับการใช้งาน switch case กับ strings และตัวเลข  ภาษา C รองรับ characters และ integers และใน ภาษา Python รองรับการใช้งาน match case
-3. **Fall-Through** (กรณีถัดไปโดยไม่ต้องหยุด): ใน Dart และ C, คุณสามารถใช้งาน Fall-Through โดยไม่ต้องมี break ระหว่าง case ที่มีเงื่อนไขเป็นจริง ในขณะที่ใน Java และ Python คุณจำเป็นต้องระบุ break เพื่อหยุดการกระทำหรือย้ายไปยัง case ถัดไป
+3. **Fall-Through** (กรณีถัดไปโดยไม่ต้องหยุด): ใน Dart และ C สามารถใช้งาน Fall-Through โดยไม่ต้องมี break ระหว่าง case ที่มีเงื่อนไขเป็นจริง ในขณะที่ Java และ Python จำเป็นจะต้องระบุ **break** เพื่อหยุดการกระทำหรือย้ายไปยัง case ถัดไป
 4. **Default Case** (ทำงานเมื่อไม่มีกรณีอื่นในคำสั่ง): ทุกภาษามี default หรือ else case ที่จะทำงานเมื่อไม่มีเงื่อนไขใดที่ตรงกัน
 
 ## **References**

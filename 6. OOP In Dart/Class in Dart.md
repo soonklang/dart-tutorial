@@ -29,7 +29,6 @@ class Animal {
   String? name;
   int? numberOfLegs;
   int? lifeSpan;
-
   void display() {
     print("Animal name: $name.");
     print("Number of Legs: $numberOfLegs.");
@@ -48,7 +47,6 @@ class Person {
   String? phone;
   bool? isMarried;
   int? age;
-
   void displayInfo() {
     print("Person name: $name.");
     print("Phone number: $phone.");
@@ -67,7 +65,6 @@ class Person {
 class Area {
   double? length;
   double? breadth;
-
   double calculateArea() {
     return length! * breadth!;
   }
@@ -113,7 +110,7 @@ class Book {
 }
 ```
 # Difference Between Dart and Java and Python and C
-จากตัวอย่างด้านล่างจะเป็นการสร้าง class ของทั้ง 3 ภาษา โดย class ชื่อ **Dog** จะมี properties คือ **breed** ,**name** และมี method **displayInfo** สำหรับแสดงค่าของ properties
+จากตัวอย่างด้านล่างจะเป็นการสร้าง class ของแต่ละภาษา โดย class ชื่อ **Car** จะมี properties คือ **engine** และมี method **disp** สำหรับแสดงค่าของ properties
 ### Python
 ```python
 class Car:  

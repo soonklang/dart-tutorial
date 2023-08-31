@@ -1,14 +1,14 @@
 # Set In Dart
 เซต (Set) เป็นโครงสรา้งข้อมูลเก็บค่าหรือข้อมูล ซึ่งไม่สามารถเก็บค่าที่ซ้ำกันได้ในเซต โดยไม่มีการเรียงลำดับของข้อมูลทำงานได้เร็วกว่า list เมือต้องใช้กับข้อมูลขนาดใหญ่
   เซตจะกำหนดด้วยปีกกาใหญ่ {}
-  
-**List สามารถเพิ่มค่าซ้ำกันได้แต่ Set ไม่สามารถทำได้  
+    
 ## การสร้าง Set
 
     var variable_name = <variable_type>{};
 หรือ
 
      Set <variable_type> variable_name = {};
+Note : List สามารถเพิ่มค่าซ้ำกันได้แต่ Set ไม่สามารถทำได้  
 Example 1 สร้าง Set จากสองวิธีที่ต่างกัน
 
     void main()
@@ -46,6 +46,85 @@ Output
     Output of the list is: [Geeks, For, Geeks]
     Output of the set is: {Geeks, For}
 NOTE : ใน Set จะไม่แสดงข้อมูลที่ซ้ำกันอย่างใน List  
+## Set ในภาษา  C
+
+  ในโครงสร้างภาษา C ไม่มี Set อาจจะต้องใช้การเขียนฟังก์ชันเอง เพื่อสร้างเซตใน C ได้โดยใช้อาร์เรย์ข้อมูลเพื่อเก็บสมาชิกของเซตเอง  
+## Set ในภาษา Java  
+
+  เป็น Interface ที่ใช้จัดเก็บข้อมูลในรูปของการอ้างถึงสืบทอดมาจาก Collection จากชนิดต่าง ๆ HashSet ไม่อนุญาติใช้เก็บข้อมูลที่ซ้ำกันได้ถ้า Add ข้อมูลลงไปมันจะทับตัวเดิม และลำดับของข้อมูลจะไม่มีความสำคัญ  
+  การประกาศและใช้งาน HashSet  
+
+  ในการใช้งาน HashSet เพื่อเก็บข้อมูลที่ไม่ซ้ำกันเราจะต้องประกาศมันก่อน นี่เป็นรูปแบบที่ง่ายที่สุดในการประกาศออบเจ็ค HashSet ในภาษา Java  
+
+    HashSet<E> set = new HashSet<E>();
+  ในรูปแบบการใช้งานเป็นการประกาศออบเจ็ค HashSet สำหรับเก็บข้อมูลประเภท E โดยที่ E นั้นสามารถเป็นคลาสใดๆ ในภาษา Java  
+  เนื่องจาก HashSet นั้นเป็นคลาสที่ Implement มาจากอินเตอร์เฟซ Set<E> ดังนั้นในการประกาศออบเจ็ค เราสามารถใช้อินเตอร์เฟซ Set เป็นประเภทของออบเจ็คได้ดังนี้  
+
+    Set<E> set = new HashSet<E>();  
+  สำหรับตัวอย่างแรกในการใช้งาน HashSet เรามาใช้มันเก็บชื่อของสีซึ่งมีค่าเป็น String และเราจะแนะนำให้คุณรู้กับเมธอดพื้นฐานของ Set นี่เป็นตัวอย่าง  
+  
+    import java.util.HashSet;
+    public class HashSetEx1 {
+    public static void main(String[] args) {
+        HashSet<String> names = new HashSet<String>();
+
+        // Add three names to set
+        names.add("Metin");
+        names.add("Jacob");
+        names.add("Chris");
+
+        // Count values in set
+        System.out.println("Size: " + names.size());
+
+        // Add same value in set
+        names.add("Metin");
+        System.out.println("Size: " + names.size());
+
+        // Check if values are in the set
+        System.out.println("Contain Metin?: " + names.contains("Metin"));
+        System.out.println("Contain Foo?: " + names.contains("Foo"));
+
+        // Remove item from the set
+        names.remove("Chris");
+        System.out.println("Size: " + names.size());
+
+        // Remove all values from set
+        names.clear();
+        System.out.println("Is the set empty?: " + names.isEmpty());
+        System.out.println("Size: " + names.size());
+    }}
+Output
+
+    Size: 3
+    Size: 3
+    Contain Metin?: true
+    Contain Foo?: false
+    Size: 2
+    Is the set empty?: true
+    Size: 0
+
+## Set ในภาษา Python
+
+  Set เป็นออบเจ็คจากคลาส set เราสามารถใช้มันเพื่อสร้างออบเจ็คของ Set สำหรับเก็บข้อมูลที่ไม่ซ้ำกัน ในภาษา Python เราสามารถสร้างเซ็ตได้หลายวิธี นี่เป็นตัวอย่างการประกาศ Set ในภาษา Python โดยวิธีต่างๆ  
+
+    mySet1 = {"value1", "value2", "value3"}
+    mySet2 = set(["value1", "value2", "value3"])
+    mySet3 = set("value1")
+    mySet4 = set()
+
+    print(mySet1)
+    print(mySet2)
+    print(mySet3)
+    print(mySet4)
+Output
+
+    {'value3', 'value1', 'value2'}
+    {'value3', 'value1', 'value2'}
+    {'1', 'a', 'v', 'u', 'l', 'e'}
+    set()
+
+NOTE : Set ไม่ได้เก็บข้อมูลในรูปแบบของลำดับ ลำดับที่ได้จากการแสดงผลหรือการวนรอบค่าจะไม่เหมือนกับตอนที่เราเพิ่มเข้าไปยัง Set ดังนั้นคุณไม่ควรยึดติดกับลำดับของข้อมูลใน Set ในการเขียนโปรแกรม  
+
 ## คุณสมบัติของ Dart
 first --> แสดงค่าตัวแรกในเซต  
 last --> แสดงค่าตัวสุดท้ายในเซต  
@@ -242,3 +321,5 @@ Output
 https://www.geeksforgeeks.org/dart-sets/  
 https://dart-tutorial.com/collections/set-in-dart/  
 https://www.darttutorial.org/dart-tutorial/dart-set/  
+http://marcuscode.com/lang/java/hashset
+http://marcuscode.com/lang/python/set

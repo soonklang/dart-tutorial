@@ -116,9 +116,10 @@ public class FileDeleteExample {
  
 <summary><strong>Output</strong></summary>
 <pre>
-<code>File does not exist.</code>
+<code>demo.txt deleted.</code>
 </pre>
 </details>
+
 
 
 

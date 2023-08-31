@@ -90,8 +90,8 @@ public boolean delete()
 ```
 ```java
 public void deleteOnExit()  
-```
-## Ex
+``` 
+## Ex delete()
 use delete() method to delete file.
 ```java
 import java.io.File;
@@ -106,6 +106,33 @@ public class FileDeleteExample {
             } else {
                 System.out.println("failed");
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+<details>
+ 
+<summary><strong>Output</strong></summary>
+<pre>
+<code>demo.txt deleted.</code>
+</pre>
+</details>
+
+## Ex deleteOnExit()  
+use delete() method to delete file.
+```java
+import java.io.File;
+import java.io.IOException;
+
+public class DeleteTextFileExample {
+    public static void main(String[] args) {
+        try {
+            File file = new File("F:\\newfile.txt"); // creates a file instance
+            file.deleteOnExit(); // deletes the file when JVM terminates
+            System.out.println("Done");
+            Thread.sleep(1000);
         } catch (Exception e) {
             e.printStackTrace();
         }

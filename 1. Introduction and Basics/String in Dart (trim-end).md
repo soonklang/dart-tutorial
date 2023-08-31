@@ -813,5 +813,4 @@ https://www.programiz.com/python-programming/methods/string
 https://www.programiz.com/java-programming/library/string <br>
 https://www.delftstack.com/tags/c-string/ <br>
 
-https://www.freecodecamp.org/news/python-strip-how-to-trim-a-string-or-line/
-https://www.programiz.com/python-programming/examples/capitalise-first-character#google_vignette
+

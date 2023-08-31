@@ -100,11 +100,11 @@ void main() {
 }
 
 ```
-> ในกรณีที่ 1 switch ตรงกับ case 1 จะแสดงผลลัพธ์ Number One.
-<br>กรณีที่ 2 switch ตรงกับ case 2 จะแสดงผลลัพธ์ Number Two.
-<br>กรณีที่ 3 switch ตรงกับ case 3 จะแสดงผลลัพธ์ Number Three.
-<br>และกรณีที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จึงแสดงผลลัพธ์ Other.
-<br>จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ number ให้มีค่าเป็น 3 ซึ่งเข้าเงื่อนไข case 3 จึงแสดงผลลัพธ์ Number Three. ออกมา
+> - ในกรณีที่ 1 switch ตรงกับ case 1 จะแสดงผลลัพธ์ Number One.
+> - กรณีที่ 2 switch ตรงกับ case 2 จะแสดงผลลัพธ์ Number Two.
+> - กรณีที่ 3 switch ตรงกับ case 3 จะแสดงผลลัพธ์ Number Three.
+> - และกรณีที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จึงแสดงผลลัพธ์ Other.
+> - จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ number ให้มีค่าเป็น 3 ซึ่งเข้าเงื่อนไข case 3 จึงแสดงผลลัพธ์ Number Three. ออกมา
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
@@ -215,11 +215,11 @@ void main() {
 }
 ```
 
-> ในกรณีที่ 1 switch ตรงกับ case sunny จะแสดงผลลัพธ์ Its a sunny day. Put sunscreen.
-<br>กรณีที่ 2 switch ตรงกับ case snowy จะแสดงผลลัพธ์ Get your skis.
-<br>กรณีที่ 3 switch ตรงกับ case cloudy หรือ rainy  จะแสดงผลลัพธ์ Please bring umbrella.
-<br>และกรณีสุดท้ายที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จะแสดงผลลัพธ์ Sorry I am not familiar with such weather.
-<br>จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ weather = "cloudy" ซึ่งเข้าเงื่อนไขของกรณีที่3 จึงแสดงผลลัพธ์ Please bring umbrella.
+> - ในกรณีที่ 1 switch ตรงกับ case sunny จะแสดงผลลัพธ์ Its a sunny day. Put sunscreen.
+> - กรณีที่ 2 switch ตรงกับ case snowy จะแสดงผลลัพธ์ Get your skis.
+> - กรณีที่ 3 switch ตรงกับ case cloudy หรือ rainy  จะแสดงผลลัพธ์ Please bring umbrella.
+> - และกรณีสุดท้ายที่ switch ไม่ตรงกันกับ case ที่กล่าวมา จะแสดงผลลัพธ์ Sorry I am not familiar with such weather.
+> - จากcodeข้างต้น เราได้ประกาศและกำหนดค่าของ weather = "cloudy" ซึ่งเข้าเงื่อนไขของกรณีที่3 จึงแสดงผลลัพธ์ Please bring umbrella.
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
@@ -277,7 +277,81 @@ if __name__ == "__main__":
 <pre><code> Please bring umbrella. </code></pre>
 </details>
 
-## ตัวอย่างที่ 3:
+## ตัวอย่างที่ 3: Switch continue 
+- ### ในภาษา Dart ตัวอย่างที่ 1
+```dart
+void main() {
+  var command = 'TUESDAY';
+  switch (command) {
+    case 'MONDAY':
+      print('MONDAY');
+      break;
+    case 'TUESDAY':
+      print('TUESDAY');
+      continue nowClosed;
+    nowClosed:
+    case 'NOW_CLOSED':
+      print('This is now closed');
+      break;
+    case 'WEDNESDAY':
+      print('WEDNESDAY');
+      break;
+    case 'THURSDAY':
+      print('THURSDAY');
+      break;
+    case 'FRIDAY':
+      print('FRIDAY');
+      break;
+    default:
+      print('It\'s weekend');
+  }
+}
+```
+> - กำหนดค่าของตัวแปร command เป็น TUESDAY เพื่อใช้ทดสอบ switch กับเงื่อนไขต่างๆ
+> - เราใช้ switch ตรวจสอบค่าของ command ทำตามเงื่อนไขของ case ตามลำดับ
+> - ถ้าค่าของ command ตรงกับ case จะดำเนินการใน block ส่วนนั้น
+> - ในกรณีที่ มี continue จะกระโดดไปยัง lebel ที่กำหนด เช่น case TUESDAY จะกระโดดไปยัง lebel ที่ชื่อ nowClosed
+เมื่อเจอ continue ใน case TUESDAY code จะกระโดดไปทำงานใน case NOW_CLOSED ต่อทันที และแสดงผล This is now closed
+> - เมื่อคำสั่งในบล็อกของ case NOW_CLOSED ทำงานเสร็จสิ้น เราใช้คำสั่ง break เพื่อออกจาก switch และไม่ทำงานใน case อื่น ๆ หากค่า command ไม่ตรงกับเงื่อนไขใดเลย
+> - หากไม่เข้ากับ case ใดเลย เราจะทำงานใน block default และแสดงผล It's weekend
+
+<details>
+<summary><strong>ผลลัพธ์</strong></summary>
+<pre><code>TUESDAY
+This is now closed </code></pre>
+</details>
+
+- ### ในภาษา Dart ตัวอย่างที่ 2
+```dart
+void main() {
+  String animal = 'tiger';
+  switch (animal) {
+    case 'tiger':
+      print("it's a tiger");
+      continue alsoCat;
+    case 'lion':
+      print("it's a lion");
+      continue alsoCat;
+    alsoCat: // ตำแหน่งที่เราจะทำการตัดสินใจต่อ
+    case 'cat':
+      print("it's a cat");
+      break;
+  }
+}
+
+```
+> - กำหนดค่าของตัวแปร animal เป็น tiger เพื่อใช้ทดสอบ switch กับเงื่อนไขต่างๆ
+> - ใน switch case เรามีการใช้ continue เพื่อกระโดดไปทำงานที่ alsoCat
+> - หลังจากทำงานใน case tiger หรือ case lion ใน alsoCat เรากำหนดตำแหน่งที่เราจะทำการตัดสินใจต่อ
+> - ใน case cat เราจะทำงานและแสดงผล "it's a cat" หลังจากทำงานที่ alsoCat.
+
+<details>
+<summary><strong>ผลลัพธ์</strong></summary>
+<pre><code>it's a tiger
+it's a cat</code></pre>
+</details>
+
+## ตัวอย่างที่ 4:
 - ### Switch Case On Enum
 ## Syntax
 ```dart
@@ -311,7 +385,10 @@ void main() {
   }
 }
 ```
-> จากcodeข้างต้น ได้มีการนิยาม enum Weather ที่เก็บสภาพอากาศ (sunny, snowy, cloudy, rainy) โดยได้มีการกำหนดค่า weather ให้เป็น cloudy โดยใช้ enum Weather เป็นชนิดข้อมูล โดยใช้ switch case ในการตรวจสอบค่า weather เมื่อทำการตรวจสอบแล้วพบว่าตรงกับ case Weather.cloudy จึงแสดงผลลัพธ์ Print Please bring an umbrella. ออกมา
+> - จากcodeข้างต้น ได้มีการนิยาม enum Weather ที่เก็บสภาพอากาศ (sunny, snowy, cloudy, rainy)
+> - โดยได้มีการกำหนดค่า weather ให้เป็น cloudy โดยใช้ enum Weather เป็นชนิดข้อมูล โดยใช้ switch case ในการตรวจสอบค่า weather
+> - เมื่อทำการตรวจสอบแล้วพบว่าตรงกับ case Weather.cloudy
+> - จึงแสดงผลลัพธ์ Print Please bring an umbrella. ออกมา
 
 <details>
 <summary><strong>ผลลัพธ์</strong></summary>
@@ -416,7 +493,7 @@ if __name__ == "__main__":
 </details>
 
 ## ข้อดีของการใช้ Switch Case
-คำสั่ง **switch case** เป็นรูปแบบที่เรียบง่ายของคำสั่ง if ที่ถูกซ้อน if-else กัน ปัญหาที่เกิดขึ้นจาก if-else ที่ถูกซ้อนกันคือมันสร้างความซับซ้อนในโปรแกรมเมื่อมีการเพิ่มเส้นทางหลายเส้นเพิ่มขึ้น คำสั่ง **switch case** จึงช่วยลดความซับซ้อนของโปรแกรมได้  
+คำสั่ง **switch case** เป็นรูปแบบที่เรียบง่ายของคำสั่ง if ที่ถูกซ้อน if-else กัน หรือ if else if ปัญหาที่เกิดขึ้นจาก if-else ที่ถูกซ้อนกันคือมันสร้างความซับซ้อนในโปรแกรมเมื่อมีการเพิ่มเส้นทางหลายเส้นเพิ่มขึ้น คำสั่ง **switch case** จึงช่วยลดความซับซ้อนของโปรแกรมได้  
 
 ## เปรียบเทียบการใช้ Switch Case ในภาษา Dart และ ภาษาอื่นๆ
 1. **การเรียกใช้งาน**: การใช้งาน switch case เริ่มต้นด้วยคำสั่ง switch และใช้คำสั่ง case เพื่อกำหนดเงื่อนไขที่เราต้องการเปรียบเทียบ
@@ -432,3 +509,4 @@ https://dart-tutorial.com/conditions-and-loops/switch-case-in-dart/
 <br>https://www.w3schools.com/java/java_switch.asp
 <br>https://www.w3schools.com/js/js_switch.asp
 <br>https://www.javatpoint.com/dart-switch-case-statement
+<br>https://flutterrdart.com/dart-switch-case-statement-with-examples/

@@ -54,7 +54,7 @@ existsSync() is checks whether the file system entity with this path exists.
 
 ## Ex
 use existsSync() method to check if a file exists or not.
-```Java
+```dart
 // dart program to delete file if exists
 import 'dart:io';
 
@@ -85,14 +85,15 @@ void main() {
 ## Declaration
 
  Following is the declaration for delete() function.
- ```dart
+ ```java
 public boolean delete() 
 ```
 delete() is checks whether the file system entity with this path exists.
 
 ## Ex
 use existsSync() method to check if a file exists or not.
-```dartimport java.io.File;  
+```java
+import java.io.File;  
 public class FileDeleteExample  
 {  
 public static void main(String[] args)  

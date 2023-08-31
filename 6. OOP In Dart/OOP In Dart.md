@@ -17,7 +17,7 @@
 - [Inheritance of Constructors in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20Of%20Constructor%20in%20Dart.md)
 - Super Keyword in Dart
 - Polymorphism in Dart
-- Static in Dart
+- [Static in Dart](https://github.com/soonklang/dart-tutorial/blob/90c17fee57f597b8416d6fe9babbcc3c54c74ebb/6.%20OOP%20In%20Dart/Static%20in%20Dart.md)
 - Enum in Dart
 - Abstract Class in Dart
 - Interface in Dart

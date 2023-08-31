@@ -178,3 +178,36 @@ Person1 name is : John with hashcode 117
 Person2 name is : Harry with hashcode 118
 Person3 name is : John with hashcode 117
 ```
+# Factory ในภาษาต่าง ๆ
+Python
+```dart
+class BurgerStoreFactory(object):
+    @staticmethod
+    def getBurger(name):
+        if name == 'Beef':
+            return BeefBurgers()
+        elif name == 'Chicken':
+            return ChickenBurger()
+        elif name == 'Fish':
+            return FishBurger()
+```
+Java
+```dart
+public class BurgerStoreFactory { 
+ public getBurger(name) { 
+   if (name.equals("Beef")) {
+     return BeefBurgers();
+   } else if (name.equals("Chicken")) {
+     return ChickenBurger(); 
+   } else if (name.equals("Fish")) {
+     return FishBurger();
+   } 
+   return null;
+ }
+}
+```
+ในภาษา java จะต่างจาก Python โดยใช้ { หลังคลาสแต่ Python ใช้ : และ java ใช้คำสั่ง.equalแต่ของ Python ใช้ == ในการเช็ค
+# ที่มา
+https://iq.opengenus.org/factory-pattern-in-python/
+https://dart-tutorial.com/object-oriented-programming/factory-constructor-in-dart/
+https://stackoverflow.com/questions/545419/using-base-class-constructor-as-factory-in-python

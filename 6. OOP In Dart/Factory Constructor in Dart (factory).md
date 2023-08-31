@@ -209,5 +209,7 @@ public class BurgerStoreFactory {
 ในภาษา java จะต่างจาก Python โดยใช้ { หลังคลาสแต่ Python ใช้ : และ java ใช้คำสั่ง.equalแต่ของ Python ใช้ == ในการเช็ค
 # ที่มา
 https://iq.opengenus.org/factory-pattern-in-python/
+
 https://dart-tutorial.com/object-oriented-programming/factory-constructor-in-dart/
+
 https://stackoverflow.com/questions/545419/using-base-class-constructor-as-factory-in-python

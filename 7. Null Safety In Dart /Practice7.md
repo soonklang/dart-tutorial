@@ -26,7 +26,7 @@ void main(){
 ```
 
 ## 2.Create a late variable named address, assign a US value to it and print it.
-สร้างตัวแปร name เป็นที่อยู่ ทำการ assign “US” ใส่ name แล้วปริ้นดู
+สร้างตัวแปร name เป็นแบบ late variable ทำการ assign “US” ใส่ name แล้วปริ้นดู
 ```dart
 // late variable
 late String name;
@@ -62,7 +62,7 @@ class MyClass {
 MyClass? nullableInstance; // Nullable instance of custom class
 ```
 ## 4.Write a program in a dart to create an age variable and assign a null value to it using ?.
-เขียนโปรแกรม create an age variable แค่ากำหนดค่าให้เป็น null โดยใช้ “?”
+เขียนโปรแกรม create an age variable และกำหนดค่าให้เป็น null โดยใช้ “?”
 การประกาศตัวแปรในรูปแบบของ nullable type
 
 ```bash

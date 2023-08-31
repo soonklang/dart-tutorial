@@ -96,21 +96,16 @@ public static boolean deleteIfExists(Path path)
 ## Ex delete()
 use delete() method to delete file.
 ```java
+
 // Java program to delete a file
 import java.io.*;
- 
-public class Test {
-    public static void main(String[] args)
-    {
-        File file
-            = new File("C:\\Users\\Mayank\\Desktop\\1.txt");
- 
-        if (file.delete()) {
-            System.out.println("File deleted successfully");
-        }
-        else {
-            System.out.println("Failed to delete the file");
-        }
+
+public class delete {
+    public static void main(String[] args) {
+        File file = new File("demo.txt");
+        file.delete();
+        System.out.println("File deleted successfully");
+        
     }
 }
 ```
@@ -118,7 +113,7 @@ public class Test {
  
 <summary><strong>Output</strong></summary>
 <pre>
-<code>demo.txt deleted.</code>
+<code>File deleted successfully.</code>
 </pre>
 </details>
 
@@ -127,26 +122,18 @@ use delete() method to delete file.
 ```java
 import java.io.IOException;
 import java.nio.file.*;
- 
-public class Test {
-    public static void main(String[] args)
-    {
+
+public class deleteIfExists {
+    public static void main(String[] args) {
         try {
-            Files.deleteIfExists(
-                Paths.get("C:\\Users\\Mayank\\Desktop\\
-            445.txt"));
-        }
-        catch (NoSuchFileException e) {
-            System.out.println(
-                "No such file/directory exists");
-        }
-        catch (DirectoryNotEmptyException e) {
+            Files.deleteIfExists(Paths.get("demo.txt"));
+        } catch (NoSuchFileException e) {
+            System.out.println("No such file/directory exists");
+        } catch (DirectoryNotEmptyException e) {
             System.out.println("Directory is not empty.");
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Invalid permissions.");
-        }
- 
+        } 
         System.out.println("Deletion successful.");
     }
 }
@@ -155,7 +142,7 @@ public class Test {
  
 <summary><strong>Output</strong></summary>
 <pre>
-<code>demo.txt deleted.</code>
+<code>Deletion successful.</code>
 </pre>
 </details>
 

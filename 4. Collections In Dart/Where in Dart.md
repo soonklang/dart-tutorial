@@ -92,7 +92,23 @@ void main() {
 ```Dart
 {mark: 32.0, harry: 88.0, raj: 69.0}
 ```
-### *< Reference >*
+##  firstWhere() และ singleWhere()
+มีฟังก์ชันสำหรับเลือกค่าที่ตรงเงื่อนไขอีก 2 ตัวคือ firstWhere และ singleWhere ซึ่งจะตอบตัวเลขที่ตรงเงื่อนไขกลับมาแค่ตัวเดียวเท่านั้น
+ข้อแตกต่างคือ การใช้ singleWhere จะต้องมีค่านั้นเพียงตัวเดียวเท่านั้น ถ้ามีตัวที่ตรงกับเงื่อนไขหลายตัวจะเจอ Error: Bad state: Too many elements
+```Dart
+List<int> list = [1, 2, 3, 4, 5];
+int num = num1.firstWhere(
+    (x) => x % 2 == 0,
+    orElse: () => null
+);
+
+List<int> list = [1, 2, 3, 4, 5];
+int num = num1.singleWhere(
+    (x) => x % 2 == 0,
+    orElse: () => null
+);
+```
+### *< อ้างอิง >*
 [Where in Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://dart-tutorial.com/collections/where-in-dart/)
 
 [[Dart] รวมคำสั่งดีๆ เอาไว้ใช้กับ List – TAmemo.com](https://www.tamemo.com/post/177/dart-list-helper-method/)

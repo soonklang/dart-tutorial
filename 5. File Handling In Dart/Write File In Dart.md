@@ -1,5 +1,4 @@
-# File Handling In Dart
-## Write File in Dart
+# Write File in Dart
 
 วิธีที่ง่ายที่สุดในการเขียนไฟล์ในภาษา Dart คือการใช้เมธอด **writeAsString()** ของคลาส **File**
 

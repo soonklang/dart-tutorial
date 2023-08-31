@@ -81,15 +81,17 @@ void main() {
 
 ## Delete file in other language
 - # Java
-## delete() and deleteOnExit() method 
+## delete() and deleteIfExists() method 
 ## Declaration
 
 The method signature is:
  ```java
-public boolean delete() 
+public static void delete(Path path)
+                   throws IOException
 ```
 ```java
-public void deleteOnExit()  
+public static boolean deleteIfExists(Path path)
+                              throws IOException
 ``` 
 ## Ex delete()
 use delete() method to delete file.
@@ -100,7 +102,7 @@ public class FileDeleteExample {
     public static void main(String[] args) {
         try {
             File f = new File("E:\\demo.txt"); // file to be delete
-            if (f.delete()) // returns Boolean value
+            if (f.delete())
             {
                 System.out.println(f.getName() + " deleted"); // getting and printing the file name
             } else {

@@ -339,13 +339,16 @@ Rainbow
 ```c
 #include <stdio.h>
 
-enum week { Mon, Tue, Wed, Thur, Fri, Sat, Sun };
+enum Colors { Green, Red, Blue, Yellow, Pink, Black, Rainbow };
 
 int main() {
-    enum week day;
-    day = Wed;
+    const char *colorNames[] = {
+        "Green", "Red", "Blue", "Yellow", "Pink", "Black", "Rainbow"
+    };
     
-    printf("Enum value: %d\n", day);
+    for (int color = Green; color <= Rainbow; color++) {
+        printf("%s\n", colorNames[color]);
+    }
 
     return 0;
 }
@@ -353,13 +356,13 @@ int main() {
 ```
 Output  
 ```
-Colors.Green
-Colors.Red
-Colors.Blue
-Colors.Yellow
-Colors.Pink
-Colors.Black
-Colors.Rainbow
+Green
+Red
+Blue
+Yellow
+Pink
+Black
+Rainbow
 ```
 
 ## วิธี Print ค่าทั้งหมดที่อยู่ใน Enum ในภาษา Python

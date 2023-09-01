@@ -1,6 +1,6 @@
 # Object in dart
-**การเขียนโปรแกรมเชิงวัตถุ** Object(วัตถุ) คือ หน่วยของcode และข้อมูลในตัวเอง โดยจะถูกสร้างขึ้นจากเทมเพลสที่เรียกว่า Class(คลาส)  **object** ประกอบด้วย **properties(ตัวแปร)** และ**methods(ฟังก์ชัน)** วัตถุ คือ instance ของ class  
-**ตัวอย่าง** objectจักรยาน อาจมีattributes(คุณลักษณะ)ต่างๆ เช่น **color(สี)** , **size(ขนาด)** , **current speed(ความเร็วปัจจุบัน)** อาจมีmethod เช่น changeGear , PadalFaster และ Brake  
+**การเขียนโปรแกรมเชิงวัตถุ** Object(วัตถุ) คือ หน่วยของcode และข้อมูลในตัวเอง โดยจะถูกสร้างขึ้นจากเทมเพลสที่เรียกว่า Class(คลาส)  **Object** ประกอบด้วย **properties(ตัวแปร)** และ**methods(ฟังก์ชัน)** วัตถุ คือ instance ของ class  
+**ตัวอย่าง** Objectจักรยาน อาจมีattributes(คุณลักษณะ)ต่างๆ เช่น **color(สี)** , **size(ขนาด)** , **current speed(ความเร็วปัจจุบัน)** อาจมีmethod เช่น changeGear , PadalFaster และ Brake  
 > NOTE : หากต้องการสร้าง object เราต้องสร้าง class ก่อน
 
 
@@ -16,7 +16,7 @@ ClassName objectName = ClassName();
 ```
 
 
-# Example 1: Declaring An Objet In Dart
+# Example 1: Declaring An Object In Dart
 ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ **currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจากนี้ยังมี Object ของ class **Bicycle** ที่calledเรียก **bicycle**
 ```dart
     class Bicycle {
@@ -161,7 +161,7 @@ Student Roll Number is: 90001</code></pre>
 ## C
 
 ### Example
-ในภาษา C เราจะใช้**โครงสร้าง (struct)** ชื่อ Student เพื่อเก็บข้อมูลเหมือนกับคลาสใน Dart ในส่วนของการเข้าถึง**ฟังก์ชัน (method)** เราเปลี่ยนเป็นฟังก์ชันเรียกใช้งานโดยส่งโครงสร้างเป็น**Argument** และเราใช้**ฟังก์ชัน strcpy** เพื่อคัดลอกชื่อนักเรียนเข้าสู่ฟิลด์ stdName ในโครงสร้าง.
+ในภาษา C เราจะใช้**โครงสร้าง (struct)** ชื่อ Student เพื่อเก็บข้อมูลเหมือนกับคลาสใน Dart ในส่วนของการเข้าถึง**ฟังก์ชัน (method)** เราเปลี่ยนเป็นฟังก์ชันเรียกใช้งานโดยส่ง**โครงสร้าง (struct)** เป็น **Argument** และเราใช้**ฟังก์ชัน strcpy** เพื่อคัดลอกชื่อนักเรียนเข้าสู่ฟิลด์ stdName ใน struct.
 ```c
 #include <stdio.h>
 #include <string.h>

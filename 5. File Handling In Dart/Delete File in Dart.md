@@ -225,7 +225,7 @@ import java.io.*;
 ```Python
 import os
 ``` 
-- C <br><br>Standard library
+- C Standard library
 ## After import library or module, use method or funtion for File Handling target by use parameters is a path
 - Dart
  ```Dart
@@ -254,10 +254,10 @@ os.path.exists(path)
 int remove(const char *filename);
 ```
 ## Raference
-- Dart
-  https://api.flutter.dev/flutter/dart-io/FileSystemEntity/deleteSync.html
-  https://api.flutter.dev/flutter/dart-io/FileSystemEntity/existsSync.html
-  https://api.dart.dev/stable/3.1.0/dart-io/dart-io-library.html
+- Dart<br>
+  https://api.flutter.dev/flutter/dart-io/FileSystemEntity/deleteSync.html<br>
+  https://api.flutter.dev/flutter/dart-io/FileSystemEntity/existsSync.html<br>
+  https://api.dart.dev/stable/3.1.0/dart-io/dart-io-library.html<br>
 - Java
 - Python
 - C

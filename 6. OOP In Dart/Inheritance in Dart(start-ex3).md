@@ -135,6 +135,22 @@ Price: 20000
   3.Hierarchical Inheritance -> การมี 2 subclass สืบทอดคุณสมบัติต่างๆ จาก class parent เดียวกัน
   
   4.Multiple Inheritance -> classต่างๆ สืบทอดในรูปแบบลูกโซ่ subclassหนึ่งทำการสืบทอดคุณสมบัติต่อจาก subclassอื่น 
+  <details>
+  <summary><strong>Syntax</strong></summary>
+  <pre>
+  <code>class A{
+...
+}
+
+class B extends A{
+...
+}
+
+class C extends B{
+...
+}</code>
+  </pre>
+  </details>
   
 แต่ในภาษา Java มี 5 ประเภท จะมีการเพิ่ม Hybrid Inheritance เข้ามา
 

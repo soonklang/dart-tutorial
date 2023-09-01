@@ -211,10 +211,55 @@ int main()
 
 #### • Java
 ```Java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ListExpenseJava {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> list_expense = new ArrayList<Integer>();
+        System.out.println("Enter rent expense : ");
+        int n1 = scan.nextInt();
+        list_expense.add(n1); 
+
+        System.out.println("Enter wage expense : ");
+        int n2 = scan.nextInt();
+        list_expense.add(n2);
+
+        System.out.println("Enter maintenance expense : ");
+        int n3 = scan.nextInt();
+        list_expense.add(n3);
+
+        System.out.println("Your rent expense : "+list_expense.get(0).toString());
+        System.out.println("Your wage expense : "+list_expense.get(1).toString());
+        System.out.println("Your maintenance expense : "+list_expense.get(2).toString());
+        int sum = 0;
+        for(int i=0;i<3;i++){
+            sum+=list_expense.get(i);
+        }
+        System.out.println("Total expense : "+sum);
+    }
+}
 ```
 
 #### • Python
 ```Python
+list_expense = []
+rent = input("Enter rent expense : ")
+list_expense.append(int(rent))
+
+wage = input("Enter wage expense : ")
+list_expense.append(int(wage))
+
+maintenance = input("Enter maintenance expense : ")
+list_expense.append(int(maintenance))
+
+print(f"Your rent expense : {list_expense[0]}")
+print(f"Your wage expense : {list_expense[1]}")
+print(f"Your maintenance expense : {list_expense[2]}")
+
+summary = sum(list_expense)
+print(f"Total expense : {summary}")
 ```
 
 ### 4. สร้าง List ว่างชนิด String ให้มีชื่อว่า days ใช้เมทธอด add เพื่อเพิ่มชื่อของวัน 7 วันลงไป และแสดงผลวันทั้งหมด
@@ -267,10 +312,37 @@ int main(){
 
 #### • Java
 ```Java
+import java.util.ArrayList;
+
+public class ListDaysJava {
+    public static void main(String[] args) {
+        ArrayList<String> days = new ArrayList<String>();
+        
+        days.add("Sunday"); 
+        days.add("Monday"); 
+        days.add("Tueday"); 
+        days.add("Wednesday"); 
+        days.add("Thurday"); 
+        days.add("Friday"); 
+        days.add("Saturday"); 
+
+        System.out.println(days);
+    }
+}
 ```
 
 #### • Python
 ```Python
+list_days = []
+list_days.append("Sunday")
+list_days.append("Monday")
+list_days.append("Tueday")
+list_days.append("Wednesday")
+list_days.append("Thurday")
+list_days.append("Friday")
+list_days.append("Saturday")
+
+print(list_days)
 ```
 
 ### 5. เพิ่มชื่อเพื่อน 7 คนลงไปใน List ใช้ Where เพื่อหาชื่อเพื่อนที่ขึ้นต้นด้วยตัวอักษร a
@@ -324,6 +396,28 @@ int main()
 
 #### • Java
 ```Java
+import java.util.ArrayList;
+
+public class ListWhereJava {
+    public static void main(String[] args) {
+        ArrayList<String> friend_names = new ArrayList<String>();
+        friend_names.add("Taksin Shin");
+        friend_names.add("Abhisit Vej");
+        friend_names.add("Adam Lev");
+        friend_names.add("Chuan Leek");
+        friend_names.add("Donald Trump");
+        friend_names.add("Joe Biden");
+        friend_names.add("Vladimir Putin");
+        ArrayList<String> names = new ArrayList<String>();
+        for(int i=0;i<friend_names.size();i++){
+            char first_letter = friend_names.get(i).charAt(0);
+            if(first_letter=='A'){
+                names.add(friend_names.get(i));
+            }
+        }
+        System.out.println(names.toString());
+    }
+}
 ```
 
 #### • Python
@@ -513,3 +607,4 @@ Press other button to exit
 >https://dart-tutorial.com/collections
 >https://www.w3schools.com/java
 >https://www.w3schools.com/python
+>https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/

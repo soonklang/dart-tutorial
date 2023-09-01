@@ -168,17 +168,16 @@ Price: 20000
     t.display();
   }
   ```
-จากตัวอย่างด้านบนนี้ มีsuper classชื่อ Car พร้อมด้วยชื่อคุณสมบัติ มีsub classชื่อ Tesla ซึ่งสืบทอดคุณสมบัติของsuper class 
-<details> 
-   <summary><strong>output</strong></summary>
+จากตัวอย่างด้านบนนี้ มีsuper class ชื่อ Car พร้อมด้วยชื่อคุณสมบัติ มีsub classชื่อ Tesla ซึ่งสืบทอดคุณสมบัติของsuper class 
+
+output
 ```
 Name: Tesla Model 3
 Prize: 50000.0
 ```
-</details> 
+
  #### `Example 2 :` Single Inheritance In Dart
  ```dart
-  
 // Dart program to show hierarchical inheritance
   
 // Creating the parent class
@@ -208,9 +207,9 @@ void main() {
   // Creating an object of the superclass Animal
   var animal = Animal();
   animal.display();
-
 }
 ```
+
 output
 ```
   Maine Coon meow everytime.

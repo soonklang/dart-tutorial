@@ -225,9 +225,7 @@ import java.io.*;
 ```Python
 import os
 ``` 
-- C
-
-Standard library
+- C Standard library
 
 
 

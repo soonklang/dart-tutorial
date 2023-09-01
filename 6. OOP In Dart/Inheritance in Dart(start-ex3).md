@@ -127,13 +127,14 @@ Price: 20000
 # Inheritance ใน Dart
 ประเภทของinheritnce ใน dart มีอยู่ 4 ประเภทดังนี้
 
-  1.Single Inheritance
+  1.Single Inheritance -> subclass ทำการสืบทอด คุณสมสบัติต่างๆมาจาก class parent
   
-  2.Multilevel Inheritance
+  2.Multilevel Inheritance -> subclass ทำการสืบทอด subclass อื่น 
+                              Dart อนุญาตให้ class สืบทอดวิธีการและคุณสมบัติจากsubclass
   
-  3.Hierarchical Inheritance
+  3.Hierarchical Inheritance -> การมี 2 subclass สืบทอดคุณสมบัติต่างๆ จาก class parent เดียวกัน
   
-  4.Multiple Inheritance
+  4.Multiple Inheritance -> classต่างๆ สืบทอดในรูปแบบลูกโซ่ subclassหนึ่งทำการสืบทอดคุณสมบัติต่อจาก subclassอื่น 
   
 แต่ในภาษา Java มี 5 ประเภท จะมีการเพิ่ม Hybrid Inheritance เข้ามา
 
@@ -168,7 +169,11 @@ Price: 20000
     t.display();
   }
   ```
-จากตัวอย่างด้านบนนี้ มีsuper class ชื่อ Car พร้อมด้วยชื่อคุณสมบัติ มีsub classชื่อ Tesla ซึ่งสืบทอดคุณสมบัติของsuper class 
+`
+จากตัวอย่างด้านบนนี้ มี class parent ชื่อ Car โดยที่มี attribute ชื่อ name และ prize
+จากนั้น เราสร้าง subclass ชื่อ Tesla พร้อมด้วยฟังก์ชัน display() ที่สืบทอดคุณสมบัติของ class parent
+main() จะทำการสร้างวัตถุของ class และ กำหนดค่าให้กับ attribute โดยใช้ objects ของclass และ เรียกใช้ฟังก์ชัน
+`
 
 output
 ```
@@ -209,10 +214,10 @@ void main() {
   animal.display();
 }
 ```
- ### `จากตัวอย่าง เราสร้าง class parent ที่เรียกว่า Animal โดยมี attribute ที่ชื่อ breed และ ฟังก์ชัน display()
-        จากนั้น เราสร้าง subclass ชื่อ Cat พร้อมด้วยฟังก์ชัน meow() มันสืบทอดคุณสมบัติการผสมพันธุ์ของ class parent
-        และ ใน mian เราสร้างวัตถุของคลาส Cat และ Animal สุดท้ายนี้ เรากำหนดค่าให้กับ attribute โดยใช้ objects ของclass และเรียกใช้ฟังก์ชัน 
-    `
+` จากตัวอย่าง เราสร้าง class parent ชื่อ Animal โดยมี attribute ที่ชื่อ breed และ ฟังก์ชัน display()
+  จากนั้น เราสร้าง subclass ชื่อ Cat พร้อมด้วยฟังก์ชัน meow() ที่สืบทอดคุณสมบัติของ class parent
+  และ ใน mian class เราสร้างวัตถุของclass Cat และ Animal สุดท้ายนี้ เรากำหนดค่าให้กับ attribute โดยใช้ objects ของclass และเรียกใช้ฟังก์ชัน 
+`
       
 output
 ```
@@ -227,3 +232,5 @@ https://www.geeksforgeeks.org/dart-concept-of-inheritance/
 https://blog.devgenius.io/object-oriented-programming-in-java-57202e7c0abd
 
 http://marcuscode.com/lang/python/inheritance
+
+https://www.educative.io/answers/what-is-single-level-inheritance-in-dart

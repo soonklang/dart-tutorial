@@ -174,7 +174,7 @@ void main() {
 ภาษา C แท้จริงไม่มีระบบ Asynchronous แบบ Native อย่างที่มีในภาษาอื่น ๆ เช่น Dart หรือ Java โดยตรง ดังนั้นการจัดการกับ Asynchronous ใน C จะต้องใช้เทคนิคและเครื่องมือที่อยู่นอกเหนือจากภาษามาช่วย โดยทั่วไปแล้วจะใช้การทำงานแบบ Thread และการจัดการกับเวลาเพื่อจำลองการทำงานแบบ Asynchronous
 
 ## ภาษา Java
-ภาษา Java ไม่ได้มีคำว่า async เป็นคำสงวนเหมือน ภาาษา Dart ที่มีการรองรับการเขียน asynchronous code โดยตรงด้วยคีย์เวิร์ด "async" และ "await"
+ภาษา Java สามารถเขียน asynchronous programming ได้หลายวิธีและไม่ได้มีคำว่า async เป็นคำสงวนเหมือน ภาาษา Dart ที่มีการรองรับการเขียน asynchronous programming โดยตรงด้วยคีย์เวิร์ด "async" และ "await" 
 ### Example Of async
 
 ```dart

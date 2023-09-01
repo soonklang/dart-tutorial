@@ -272,8 +272,8 @@ print(extension.capitalize())  # แสดงผล "Hello"
 
 ## อ้างอิง
 [Dart Extension Methods](https://www.darttutorial.org/dart-tutorial/dart-extension-methods/)<br>
-[Dart Extension คืออะไร | Inception Hideout](https://blog.intception.me/dev/flutter/dart-extension.html#%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99)<br>
-[Dart: Extension Methods - มาเพิ่มความสามารถให้กับ Third-party Library กันเถอะ](https://www.petepittawat.dev/posts/dart-extension-methods)<br>
+[Dart Extension | Inception Hideout](https://blog.intception.me/dev/flutter/dart-extension.html#%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99)<br>
+[Dart: Extension Methods](https://www.petepittawat.dev/posts/dart-extension-methods)<br>
 [Extension Methods | Dart](https://dart.dev/language/extension-methods)
 
   

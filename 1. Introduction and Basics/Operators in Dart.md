@@ -76,13 +76,13 @@ void main() {
  int num2=3;
  
  // performing arithmetic calculation
- int sum=num1+num2;       // addition
- int diff=num1-num2;      // subtraction
+ int sum=num1+num2;       // การบวก
+ int diff=num1-num2;      // การลบ
  int unaryMinus = -num1;    // unary minus  
- int mul=num1*num2;       // multiplication
- double div=num1/num2;    // division
- int div2 =num1~/num2;     // integer division
- int mod=num1%num2;       // show remainder
+ int mul=num1*num2;       // การคูณ
+ double div=num1/num2;    // การหาร
+ int div2 =num1~/num2;     // การหารเเบบได้ผลลัพธ์เป็น integer
+ int mod=num1%num2;       // การหารเอาเศษ
  
 //Printing info 
  print("The addition is $sum.");
@@ -100,8 +100,8 @@ The addition is 13.
 The subtraction is 7.
 The unary minus is -10.
 The multiplication is 30.
-The division is 3.3333333333333335.
-The integer division is 3.
+The division is 3.3333333333333335. // เมื่อหารเเบบปรกติจะได้ผลลัพธ์เป็น double
+The integer division is 3.   // หารเเบบ Integer Divisionได้ผลลัพธ์เป็น integer
 The modulus is 1.
 ```
 # Increment and Decrement Operators
@@ -370,6 +370,7 @@ print(b is String);		// true
 ```
 # Bitwise operators
 ## คือ ตัวดำเนินการแบบบิต เป็นตัวดำเนินการที่ใช้กับชนิดข้อมูลเลขจำนวนเต็ม (integer) เท่านั้น โดยจะแปลงเป็นเลขฐาน 2 (8-bit) ก่อนดำเนินการ หลังจากนั้น จะแปลงค่ากลับเป็นฐาน 10 กลับมา 
+## ประเภทตัวดำเนินการระดับบิต
 - "&"	Bitwise AND
 - "|"	Bitwise inclusive OR
 - "^" Bitwise exclusive OR

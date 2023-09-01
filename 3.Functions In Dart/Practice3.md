@@ -8,9 +8,16 @@ void Name(String name) {
 
 void main() {
   String myName = "Weerapong";
-  printName(myName);
+  Name(myName);
 }
 ````
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>My name is Weerapong</code>
+</pre>
+</details>
+
 C
 ```bash
 #include <stdio.h>
@@ -67,6 +74,20 @@ void main() {
   EvenNumbers(intervalStart, intervalEnd);
 }
 ```
+Input: 10, 20
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>10
+12
+14
+16
+18
+20</code>
+</pre>
+</details>
+
+
 C
 ```bash
 #include <stdio.h>
@@ -154,6 +175,15 @@ void main() {
   print(password);
 }
 ```
+Input:8
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>ZlmyW1tP</code>
+</pre>
+</details>
+
+
 C
 ```bash
 #include <stdio.h>
@@ -240,6 +270,15 @@ void main() {
   Circle(radius);
   }
 ````
+Input:5
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>The area of the circle is 78.57142857142857</code>
+</pre>
+</details>
+
+
 C
 ```bash
 #include <stdio.h>
@@ -302,6 +341,15 @@ void main() {
   print("hypotenuse length = $hypotenuse");
 }
 ````
+Input: 4, 5
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>hypotenuse length = 6.4031242374328485</code>
+</pre>
+</details>
+
+
 C
 ```bash
 #include <stdio.h>
@@ -380,6 +428,16 @@ void main() {
   print("Reversed string: $reversed");
 }
 ````
+Input: today
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Original string: today
+Reversed string: yadot</code>
+</pre>
+</details>
+
+
 C
 ```bash
 #include <stdio.h>
@@ -459,6 +517,14 @@ void main() {
   print("$number ^ $power = $result");
 }
 ````
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>5.0 ^ 3 = 125.0</code>
+</pre>
+</details>
+
+
 C
 ```bash
 #include <stdio.h>
@@ -506,3 +572,17 @@ result = power_num(number, power)
     
 print(f"{number} ^ {power} = {result}")
 ```
+### *< Reference >*
+https://dart-tutorial.com/dart-functions/math-in-dart/
+
+https://dart-tutorial.com/dart-functions/arrow-function-in-dart/
+
+https://dart-tutorial.com/dart-functions/functions-in-dart/
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Random.html
+
+https://docs.python.org/3/library/random.html
+
+https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/the-pythagorean-theorem
+
+https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circumference/v/area-of-a-circle

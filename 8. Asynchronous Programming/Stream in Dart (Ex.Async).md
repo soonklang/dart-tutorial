@@ -174,9 +174,8 @@ void main() {
 ในภาษา C แท้จริงไม่มีระบบ Asynchronous แบบ Native อย่างที่มีในภาษาอื่น ๆ เช่น Dart หรือ Java โดยตรง ดังนั้นการจัดการกับ Asynchronous ใน C จะต้องใช้เทคนิคและเครื่องมือที่อยู่นอกเหนือจากภาษามาช่วย โดยทั่วไปแล้วจะใช้การทำงานแบบ Thread และการจัดการกับเวลาเพื่อจำลองการทำงานแบบ Asynchronous
 
 ## ภาษา Java
-
-### Example Of async
 ภาษา Java ไม่ได้มีคำว่า async เป็นคำสงวนเหมือน ภาาษา Dart ที่มีการรองรับการเขียน asynchronous code โดยตรงด้วยคีย์เวิร์ด "async" และ "await"
+### Example Of async
 
 ```dart
 class ThreadClass extends Thread{
@@ -200,9 +199,9 @@ class AsyncExample {
 </details>
 
 ## ภาษา Python
-
+ภาษา Python จะมีโมดูล asyncio ซึ่งเป็นตัวช่วยสำหรับการเขียน asynchronous programming และมีมาตั้งแต่เวอร์ชั่น 3.4
 ### Example Of async
-Python จะมีโมดูล asyncio ซึ่งเป็นตัวช่วยสำหรับการเขียน asynchronous programming และมีมาตั้งแต่เวอร์ชั่น 3.4 
+ 
 ```dart
 
 import asyncio

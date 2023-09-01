@@ -17,7 +17,7 @@ ClassName objectName = ClassName();
 
 
 # Example 1: Declaring An Object In Dart
-ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ **currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจากนี้ยังมี Object ของ class **Bicycle** ที่calledเรียก **bicycle**
+ตัวอย่างด้านล่างนี้ มีจะมี class **Bicycle** มี properties 3 ประการ: **color** , **size** และ **currentSpeed** ใน class จะมี 2 method คือ **changeGear** ซึ่งเป็นการเปลี่ยนเกียร์ของจักรยาน และ **display** จะพิมพ์ค่า properties ทั้งสามออกมา นอกจากนี้ยังมี Object ของ class **Bicycle** ที่เรียกว่า**bicycle**
 ```dart
     class Bicycle {
       String? color;

@@ -1,6 +1,6 @@
 # Inheritance In Dart
   การสืบทอด(Inheritance) คือ การที่ class หรือ object ได้รับการถ่ายทอด attributeและ method จากclassอื่น นั่นจะทำให้คลาสดังกล่าวมี attribute และ method เหมือน class ที่มันสืบทอดมา จะเรียกว่า Parent Class,base class หรือ superclass. ส่วน class ที่ได้รับการสืบทอดเรียกว่า Child Class,deprived class หรือ subclass 
-# Syntax ใน ภาษา Dart
+#### `Syntax ใน ภาษา Dart ` 
 ```dart
 class ParentClass {
   // Parent class code
@@ -10,7 +10,7 @@ class ChildClass extends ParentClass {
   // Child class code
 }
 ```
-# Syntax ใน ภาษา ภาษาอื่นๆ
+#### `Syntax ในภาษาอื่นๆ `
 - Java
 ```java
 class Employee{  
@@ -124,7 +124,7 @@ Car started
 Model: Camry
 Price: 20000
 ```
-# ประเภทของInheritance ใน Dart
+# Inheritance ใน Dart
 ประเภทของinheritnce ใน dart มีอยู่ 4 ประเภทดังนี้
 
   1.Single Inheritance
@@ -138,9 +138,7 @@ Price: 20000
 แต่ในภาษา Java มี 5 ประเภท จะมีการเพิ่ม Hybrid Inheritance เข้ามา
 
 1. Single Inheritance
-   inheritance ประเภทนี้ sub classจะสามารถทำการinheritanceจาก super class เดียวเท่านั้น
-   
-   ใน Dart เราสามารถ extend ได้ครั้งละหนึ่ง class เท่านั้น
+   subclass ทำการสืบทอด คุณสมสบัติต่างๆมาจาก class parent 
    
    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/2006eac9-6526-4757-a9c4-0559fb066768)
 
@@ -178,41 +176,44 @@ Prize: 50000.0
 ```
  #### `Example 2 :` Single Inheritance In Dart
  ```dart
-  class Person{
-    void showName(String name){
-      print(name);
-    }
-
-    void showAge(int age){
-      print(age);
-    }
+  
+// Dart program to show hierarchical inheritance
+  
+// Creating the parent class
+class Animal{
+    // Creating an attribute
+    String breed;
+  // Creating a function
+  void display(){
+    print("This is the Animal class called Parent class");
   }
+}
 
-  class Jay extends Person {}
-
-  main(){
-    var jay = new Jay();
-
-    jay.showName("JD");
-    jay.showAge(20);
+// Creating a child class
+class Cat extends Animal{
+  // Creating a function
+  void meow(){
+      print("$breed meow everytime.");
   }
+}
+  
+void main() {
+  // Creating an object of the class Cat
+  var cat = Cat();
+  cat.breed = "Maine Coon";
+  cat.meow();
+
+  // Creating an object of the superclass Animal
+  var animal = Animal();
+  animal.display();
+
+}
 ```
 output
 ```
-  JD
-  20
+  Maine Coon meow everytime.
+  This is the Animal class called Parent class
 ```
-2. Multilevel Inheritance
-   
-    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/840d3601-c5f0-4fe1-9f3b-00866a95c2ef)
-
-3. Hierarchical Inheritance
-
-    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/c85e6699-feb7-4be4-96e8-3d4de6edb8ed)
-
-4. Multiple Inheritance
-
-    ![image](https://github.com/soonklang/dart-tutorial/assets/141731788/dd87210d-7acb-4feb-84fc-3286f57c4b6f)
 
 ## แหล่งอ้างอิง
 

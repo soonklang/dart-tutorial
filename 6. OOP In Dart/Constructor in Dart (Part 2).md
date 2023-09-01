@@ -159,7 +159,7 @@ void main(){
 }
 ```
 - Output
-- เมื่อไม่มีการส่งค่าผ่านการเรียนใช้ Constructor ค่าของ Property จะเป็นไปตามค่าที่กำหนดเป็น Default Values ไว้
+> เมื่อไม่มีการส่งค่าผ่านการเรียนใช้ Constructor ค่าของ Property จะเป็นไปตามค่าที่กำหนดเป็น Default Values ไว้
 ```
 Square height: 2
 Square width: 2

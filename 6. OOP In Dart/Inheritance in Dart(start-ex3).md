@@ -131,8 +131,38 @@ Price: 20000
   
   2.Multilevel Inheritance -> subclass ทำการสืบทอด subclass อื่น 
                               Dart อนุญาตให้ class สืบทอดวิธีการและคุณสมบัติจากsubclass
+  <details>
+  <summary><strong>Syntax</strong></summary>
+  <pre>
+  <code>
+class A {
+    ...
+}
+class B extends A {
+    ...
+}
+class C extends A {
+    ...
+}</code>
+  </pre>
+  </details>
   
   3.Hierarchical Inheritance -> การมี 2 subclass สืบทอดคุณสมบัติต่างๆ จาก class parent เดียวกัน
+  <details>
+  <summary><strong>Syntax</strong></summary>
+  <pre>
+  <code>
+class A {
+    ...
+}
+class B extends A {
+    ...
+}
+class C extends A {
+    ...
+}</code>
+  </pre>
+  </details>
   
   4.Multiple Inheritance -> classต่างๆ สืบทอดในรูปแบบลูกโซ่ subclassหนึ่งทำการสืบทอดคุณสมบัติต่อจาก subclassอื่น 
   <details>
@@ -249,5 +279,7 @@ https://blog.devgenius.io/object-oriented-programming-in-java-57202e7c0abd
 http://marcuscode.com/lang/python/inheritance
 
 https://www.educative.io/answers/what-is-single-level-inheritance-in-dart
+
+https://www.tutorialspoint.com/hierarchical-inheritance-in-dart-programming#:~:text=Hierarchical%20inheritance%20is%20the%20case,classes%20inherit%20a%20single%20class.&text=In%20the%20above%20syntactic%20representation,(or%20extending)%20class%20A.
 
 https://www.educative.io/answers/what-is-multi-level-inheritance-in-dart

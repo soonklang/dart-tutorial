@@ -49,7 +49,7 @@ void main() {
 ```Dart
 [11, 13]
 ```
-**2.Filter วันที่เรื่มต้นด้วย "S"**
+**2.Filter วันที่เริ่มต้นด้วย "S"**
 ```Dart
 void main() {
   List<String> days = [
@@ -72,7 +72,7 @@ void main() {
 ```Dart
 [Sunday, Saturday]
 ```
-**3.Filter ใน maps หาคะแนนนักเรียนที่ได้มากกว่าหรือเท่ากับ 32**
+**3.Filter ใน Map หาคะแนนนักเรียนที่ได้มากกว่าหรือเท่ากับ 32**
 ```Dart
 void main() {
   Map<String, double> mathMarks = {
@@ -83,7 +83,7 @@ void main() {
     "john": 15,
   };
 
-  mathMarks.removeWhere((key, value) => value < 32); # ใช้ removeWhere เพื่อเอาสิ่งที่ไม่ต้องการออก ในทีนี้คือค่า value ที่น้อยกว่า 32 ให้เอาออกไป #
+  mathMarks.removeWhere((key, value) => value < 32); # ใช้ removeWhere เพื่อเอาสิ่งที่ไม่ต้องการออก ในทีนี้คือค่า value ที่น้อยกว่า 32 #
 
   print(mathMarks);
 }
@@ -93,7 +93,7 @@ void main() {
 {mark: 32.0, harry: 88.0, raj: 69.0}
 ```
 ##  firstWhere() และ singleWhere()
-มีฟังก์ชันสำหรับเลือกค่าที่ตรงเงื่อนไขอีก 2 ตัวคือ firstWhere และ singleWhere ซึ่งจะตอบตัวเลขที่ตรงเงื่อนไขกลับมาแค่ตัวเดียวเท่านั้น
+มีฟังก์ชั่นสำหรับเลือกค่าที่ตรงเงื่อนไขอีก 2 ตัวคือ firstWhere และ singleWhere ซึ่งจะตอบตัวเลขที่ตรงเงื่อนไขกลับมาแค่ตัวเดียวเท่านั้น
 ข้อแตกต่างคือ การใช้ singleWhere จะต้องมีค่านั้นเพียงตัวเดียวเท่านั้น ถ้ามีตัวที่ตรงกับเงื่อนไขหลายตัวจะเจอ Error: Bad state: Too many elements
 ```Dart
 List<int> list = [1, 2, 3, 4, 5];

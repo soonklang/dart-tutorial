@@ -258,9 +258,19 @@ int remove(const char *filename);
   https://api.flutter.dev/flutter/dart-io/FileSystemEntity/deleteSync.html<br>
   https://api.flutter.dev/flutter/dart-io/FileSystemEntity/existsSync.html<br>
   https://api.dart.dev/stable/3.1.0/dart-io/dart-io-library.html<br>
-- Java
-- Python
-- C
+- Java<br>
+  https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path)<br>
+  https://docs.oracle.com/javase/tutorial/essential/io/delete.html<br>
+  https://www.geeksforgeeks.org/delete-file-using-java/<br>
+- Python<br>
+  https://docs.python.org/3/library/os.html<br>
+  https://docs.python.org/3/library/os.path.html?highlight=os%20path%20exists#os.path.exists<br>
+  https://www.w3schools.com/python/python_file_remove.asp<br>
+- C<br>
+ https://www.ibm.com/docs/en/i/7.2?topic=functions-remove-delete-file<br>
+ https://iq.opengenus.org/different-ways-to-delete-file-in-c/<br>
+ https://www.learnc.net/c-tutorial/c-delete-file/<br>
+ https://www.tutorialkart.com/c-programming/c-delete-file/#gsc.tab=0<br>
 
 
 

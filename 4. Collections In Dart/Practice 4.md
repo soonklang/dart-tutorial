@@ -973,14 +973,7 @@ int main()
 <details>
 <summary><strong>Output</strong></summary>
 <pre>
-<code>Welcome to To-Do List
-Choose you want to do..
-Press 1 : add To-Do List
-Press 2 : remove To-Do List
-Press 3 : view task
-Press other number to exit
-7
-PS E:\Code-Java\ProgrammingLanguage> cd "e:\Code-Java\ProgrammingLanguage\" ; if ($?) { gcc SimpleToDoListC.c -o SimpleToDoListC } ; if ($?) { .\SimpleToDoListC }
+<code>
 Welcome to To-Do List 
 Choose you want to do..
 Press 1 : add To-Do List

@@ -244,14 +244,66 @@ print(x.strftime("%B")) // %B	Month name, full version
 - Output
   
 ซึ่งในตัวอย่างนี้ "%B" เป็นแค่ส่วนนึงของ Date format codes 
+
+# ตัวอย่าง Datetime in C
+- การแสดงผลเวลาในภาษา C
+ในการทำงานกับวันที่และเวลาในภาษา C เราใช้ฟังก์ชัน ctime สำหรับจัดรูปแบบการแสดงผลของวันที่ในรูปแบบที่มนุษย์สามารถเข้าใจได้ แต่ฟังก์ชันนี้สนับสนุนเพียงแค่รูปแบบเดียวนั่นคือ
+
+Www Mmm dd hh:mm:ss yyyy
+นี่เป็นรูปแบบของวันที่ที่เราสามารถแปลงได้โดยการใช้ฟังก์ชัน ctime โดยการส่งออบเจ็คของเวลาเข้าไปยังฟังก์ชัน และเราจะได้เวลาในรูปแบบ C-string ที่สอดคล้องกับเวลาท้องถิ่นจากออบเจ็คของเวลาดังกล่าว ยกตัวอย่างเช่น
+``` c
+#include <stdio.h>
+#include <time.h> // นำเข้าไลบรารี time.h เพื่อใช้งานฟังก์ชันเกี่ยวกับวันที่และเวลา
+
+int main()
+{
+    time_t now;
+    time(&now);
+
+    printf("The current local time is: %s", ctime(&now));
+    printf("The current timestamp is: %ld", now);
+    return 0;
+}
+```
+``` c
+The current local time is: Tue May 04 17:35:20 2021
+The current timestamp is: 1620124520
+```
+### ภาษา C มีการจัดรูปแบบของวันที่และเวลาที่ใช้function `strftime()` 
+จะเก็บผลลัพธ์ลงในตัวแปรarray buffer ที่มีขนาดไม่เกิน 80 ตัวอักษร รูปแบบที่ใช้ในการจัดรูปแบบการแสดงผลคือ %d %B %Y %H:%M:%S และค่านำเข้าของเวลาที่ใช้ในการจัดรูปแบบคือ timeinfo
+``` c
+#include <stdio.h>
+#include <time.h>
+
+int main ()
+{
+    time_t rawtime;
+    struct tm * timeinfo;
+    char buffer[80];
+
+    time(&rawtime);
+    timeinfo = localtime(&rawtime);
+
+    strftime(buffer, 80, "%B %d, %Y %I:%M:%S %p", timeinfo);
+    printf("%s\n", buffer);
+
+    strftime(buffer, 80, "%Y-%m-%dT%H:%M:%SZ", timeinfo);
+    printf("%s\n", buffer);
+    return 0;
+}
+```
+``` c
+```
+
+> ซึ่งในภาษา C มีรูปแบบการใช้ Date format codes คล้ายกับภาษา python
+
 ## Reference
-[Datetime in Dart](https://dart-tutorial.com/useful-information/date-time-in-dart/)
+[Datetime in Dart](https://dart-tutorial.com/useful-information/date-time-in-dart/)<br>
+[Datetime in Dart](https://siriphonnot.medium.com/7-ฟังก์ชันสำหรับ-datetime-ที่ควรรู้ในภาษา-dart-cad22cc61504)<br>
 
-https://siriphonnot.medium.com/7-ฟังก์ชันสำหรับ-datetime-ที่ควรรู้ในภาษา-dart-cad22cc61504
+[Datetime in Java](https://www.w3schools.com/java/java_date.asp)<br>
+[Datetime in Java](https://akexorcist.dev/datetime-api-in-java-8-cheatsheet/)<br>
 
-https://www.w3schools.com/java/java_date.asp
-https://akexorcist.dev/datetime-api-in-java-8-cheatsheet/
+[Datetime in Python](https://www.w3schools.com/python/python_datetime.asp)<br>
 
-https://www.w3schools.com/python/python_datetime.asp
-
-
+[Datetime in C](http://marcuscode.com/lang/c/date-and-time-formats)

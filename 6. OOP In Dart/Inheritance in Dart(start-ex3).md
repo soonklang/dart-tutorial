@@ -128,6 +128,18 @@ Price: 20000
 ประเภทของinheritnce ใน dart มีอยู่ 4 ประเภทดังนี้
 
   1.Single Inheritance -> subclass ทำการสืบทอด คุณสมสบัติต่างๆมาจาก class parent
+  <details>
+  <summary><strong>Syntax</strong></summary>
+  <pre>
+  <code>
+class parent_class{
+...
+}
+class child_class extends parent_class{
+...
+}</code>
+  </pre>
+  </details>
   
   2.Multilevel Inheritance -> subclass ทำการสืบทอด subclass อื่น 
                               Dart อนุญาตให้ class สืบทอดวิธีการและคุณสมบัติจากsubclass

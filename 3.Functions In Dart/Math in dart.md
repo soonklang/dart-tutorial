@@ -431,3 +431,6 @@ output
 Rectangle (20, 50) 300 x 600
 Rectangle (70, 40) 200 x 100 //ค่าจะเปลี่ยนไป
 ```
+# อ้างอิง
+https://www.educative.io/answers/how-to-use-the-dartmath-library
+https://api.dart.dev/stable/3.1.0/dart-math/dart-math-library.html

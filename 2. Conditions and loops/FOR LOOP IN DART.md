@@ -414,6 +414,8 @@ void main() {
 
 
 # Reference
-* https://www.javatpoint.com/dart-loops
-* https://www.tutorialspoint.com/dart_programming/dart_programming_for_loop.html
-* https://www.geeksforgeeks.org/dart-loops/
+* Dart tutorial. "LOOPS IN DART." [https://dart-tutorial.com/conditions-and-loops/for-loop-in-dart](https://dart-tutorial.com/conditions-and-loops/for-loop-in-dart/).
+* Aditya Taparia , GeeksforGeeks. "Dart Loops." [https://www.geeksforgeeks.org/dart-loops/](https://www.geeksforgeeks.org/dart-loops/).
+* Eric Windmill , Flutter by Example. "Loops: for and while." [https://flutterbyexample.com/lesson/loops-for-and-while](https://flutterbyexample.com/lesson/loops-for-and-while).
+* Dart Tutorials. "Loops." [https://dart.dev/language/loops](https://dart.dev/language/loops)
+  

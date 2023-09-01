@@ -74,26 +74,26 @@ class Cat extends Animal {
   }
 }
 
-class Dog extends Animal {
+class Cow extends Animal {
   @override
   void makeSound() {
-    print('Woof!');
+    print('Moow!');
   }
 }
 
 void main() {
   Animal cat = Cat();
-  Animal dog = Dog();
+  Animal cow = Cow();
   
   cat.makeSound();   // Output: Meow!
-  dog.makeSound();   // Output: Woof!
+  cow.makeSound();   // Output: Moow!
 }
 ```
 <details>
 <summary><strong>แสดงผลลัพธ์</strong></summary>
 <pre>
 <code>Cat : Meow!
-Dog : Woof!</code>
+Cow : Moow!</code>
 </pre>
 </details>
 
@@ -177,6 +177,3 @@ https://dart-tutorial.com/object-oriented-programming/polymorphism-in-dart/
 https://medium.com/@emanyaqoob/polymorphism-in-dart-refers-to-the-ability-of-objects-of-different-classes-to-be-treated-as-9e9d7cc9b4da#:~:text=Polymorphism%20in%20Dart%20refers%20to,a%20common%20interface%20or%20superclass.
 
 https://mobikul.com/polymorphism-in-dart/
-
-https://www.guru99.com/images/2/062920_1112_CPolymorphi1.png
-

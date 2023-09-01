@@ -1,6 +1,6 @@
 
 # Interface in Dart
-Interface คือ การกำหนดโครงสร้างของ methood ขึ้นมาไม่มีการกำหนดรายละเอียด การทำงานใดๆ โดยทุก method จะไม่อนุญาตให้เรียกใช้ทำงาน แต่จะถูกสืบทอดและกำหนดรายละเอียด ของ Interface นั้น คลาสที่ implement ก็จะมี methood ที่เรียกใช้งานได้
+Interface คือ การกำหนดโครงสร้างของ methood ขึ้นมาอาจไม่มีการกำหนดรายละเอียด การทำงานใดๆ โดยทุก method จะไม่อนุญาตให้เรียกใช้ทำงาน แต่จะถูกสืบทอดและกำหนดรายละเอียด ของ Interface นั้น คลาสที่ implement ก็จะมี methood ที่เรียกใช้งานได้ 
 -----------------------------------------------------------------------------
 # Syntax ของ Dart
 ```dart
@@ -47,6 +47,44 @@ Output
 ```
 สวนสัตว์เขาเขียวมี สิงโต ม้าลาย อย่างล่ะตัว
 ```
+# ตัวอย่างการใช้ Interface ในภาษา Java 
+```java
+import java.io.*;
+ 
+interface Songs {
+   
+    // public, static and final
+    final int like = 32000;
+ 
+    // public and abstract
+    void Name();
+}
+ 
+// A class that implements the interface.
+class Mv implements Songs {
+   
+    // Implementing the capabilities of
+    // interface.
+    public void Name(){
+      System.out.println("เพลงชาติไทย");
+    }
+ 
+    // Driver Code
+    public static void main(String[] args)
+    {
+        Mv v = new Mv();
+        v.Name();
+        System.out.println(like);
+    }
+}
+
+```
+Output
+```
+เพลงชาติไทย
+32000
+```
+
 # ตัวอย่างการใช้ Implementing Multiple Interfaces
 ```dart
 void main() { 

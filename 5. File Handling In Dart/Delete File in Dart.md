@@ -2,7 +2,7 @@
 # deleteSync method
 ## Declaration
 
- Following is the declaration for **deleteSync()** method.
+ The following code is the declaration for **deleteSync()** method.
  ```dart
 void deleteSync(
 {bool recursive = false}
@@ -16,10 +16,10 @@ void deleteSync(
 File file = File('test.txt');
 ```
 
-if **recursive** is false, the directory must be empty. and if **recursive** is true, FileStstemEntity will be deleted including, all directory and sup-directories and files in the directories. 
+if **recursive** is false, the directory must be empty. and if **recursive** is true, FileStstemEntity will be deleted including, all directory and sub-directories and files in the directories. 
 
 ## Example deleteSync()
-Assume that file named **test.txt** in same directory with dart program
+Assuming that file named **test.txt** is in the same directory with dart program
 
  #### `test.txt`
 ```dart
@@ -46,12 +46,12 @@ void main() {
 # existsSync abstract method
 ## Declaration
 
- Following is the declaration for **existsSync()** method.
+The following code is the declaration for **existsSync()** method.
  ```dart
 bool existsSync()
 ```
 ## Example existsSync()
-use **existsSync()** method to check if a file exists or not.
+use **existsSync()** method to check whether if a file exists or not.
 ```dart
 // dart program to delete file if exists
 import 'dart:io';
@@ -79,7 +79,7 @@ void main() {
 
 ## Summary
 
-import dart:io library to use **deleteSync()** for Synchronously deletes this FileSystemEntity.
+import dart:io library to use **deleteSync()** for Synchronously deletes this FileSystemEntity
 and **existsSync()** for Synchronously checks whether the file system entity with this path exists.
 
 **!NOTE** Synchronously 
@@ -89,7 +89,7 @@ and **existsSync()** for Synchronously checks whether the file system entity wit
 ## **delete()** and **deleteIfExists()** method 
 ## Declaration
 
-The method signature is:
+The method's signature is:
  ```java
 public static void delete(Path path)
                    throws IOException
@@ -151,7 +151,7 @@ public class deleteIfExists {
 
 ## Summary
 
-import Package java.io for use method **delete()** to delete a file and method **deleteIfExists()** to Deletes a file if it exists, By use Parameters is a path
+Import java.io package to use method **delete()** to delete a file and method **deleteIfExists()** to deletes a file if it exists (remind that that parameters must be a path).
 
 
 
@@ -180,8 +180,8 @@ else:
   print("The file does not exist")
 ```
 ## Summary
-import **module os**  to use method **os.remove()**  to delete a file and
-**os.path.exists()** is used to check whether the specified path exists or not.
+import **module os**  to use  **os.remove()** method to delete a file and
+**os.path.exists()** method is use to check whether the specified path is exists or not (remind that that parameters must be a path).
 
 
 - # C
@@ -212,7 +212,7 @@ Use the C **remove()** function from the standard library to delete a file.
 
 # Comparing Dart with other languages (Python, C and Java) 
 
-## File Handling must import  library or module that related with I/O Streams, required for input and output operations
+## The File Handling must import library or module that is related with I/O Streams (Input and output operations is required).
 - Dart
  ```Dart
 import 'dart:io'
@@ -226,7 +226,7 @@ import java.io.*;
 import os
 ``` 
 - C Standard library
-## After import library or module, use method or funtion for File Handling target by use parameters is a path
+## After import library or module, use method or funtion for File Handling target (remind that that parameters must be a path).
 - Dart
  ```Dart
 void deleteSync(

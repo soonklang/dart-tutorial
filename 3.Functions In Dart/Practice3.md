@@ -1,7 +1,7 @@
 # Practice 3
 ### 1. Write a program in Dart to print your own name using function.
 Dart
-```bash
+```dart
 void Name(String name) {
   print("My name is $name.");
 }

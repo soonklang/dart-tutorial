@@ -35,7 +35,7 @@ class Child(Parent):
   </pre>
   </details>
 
-#  Example 1: Inheritance In Dart
+#### `Example 1: `Inheritance In Dart
 ```dart
 class Person {
   // Properties
@@ -88,7 +88,7 @@ School Address: New York
 - ช่วยให้ code ง่ายขึ้น สะอาดขึ้น และประหยัดเวลา
 - อำนวยความสะดวกในการสร้างclass libraries
 
-# Example 2: Inheritance In Dart
+#### `Example 2: `Inheritance In Dart
 ```dart
 class Car{
   String? color;

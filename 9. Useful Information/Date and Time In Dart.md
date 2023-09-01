@@ -187,7 +187,7 @@ UTC
 > UTC (Coordinated Universal Time) หน่วยของเวลาในมาตรฐานของ GMT ที่ใช้ในการอ้างอิงการหมุนของโลก ใช้นาฬิกาอะตอม (Atomic clock) เป็นตัวกำหนดเวลา โดยการนับการสั่นของอะตอม
 
 
-# ตัวอย่าง Datetime in Java
+# ตัวอย่าง Date and time in Java
  ในภาษา Java จะไม่มี class Date มาในตัวซึ่งต่างจากภาษา Dart ที่มีอยู่แล้ว แต่ใน Java สามารถ import package `java.time` ที่ใช้เกี่ยวกับวันที่และเวลาได้ ตัวอย่างเช่น
  - Class
  
@@ -267,7 +267,7 @@ val dateTimeA: LocalDateTime = /* ... */
 val dateTimeB: LocalDateTime = /* ... */
 val diffInHour = ChronoUnit.HOURS.between(dateTimeA, dateTimeB)
 ```
-# ตัวอย่าง Datetime in Python
+# ตัวอย่าง Date and time in Python
 Datetime ใน Python ไม่ใช่ data type แต่เราสามารถ import module `datetime` เพื่อทำงานกับวันที่เป็นวัตถุวันที่
 
 Example 
@@ -315,7 +315,7 @@ June
   
 ซึ่งในตัวอย่างนี้ "%B" เป็นแค่ส่วนนึงของ Date format codes 
 
-# ตัวอย่าง Datetime in C
+# ตัวอย่าง Date and time in C
 - การแสดงผลเวลาในภาษา C
 ในการทำงานกับวันที่และเวลาในภาษา C เราใช้ฟังก์ชัน ctime สำหรับจัดรูปแบบการแสดงผลของวันที่ในรูปแบบที่มนุษย์สามารถเข้าใจได้ แต่ฟังก์ชันนี้สนับสนุนเพียงแค่รูปแบบเดียวนั่นคือ
 
@@ -378,9 +378,9 @@ September 01, 2023 03:14:07 PM
 > ซึ่งในภาษา C มีรูปแบบการใช้ Date format codes คล้ายกับภาษา python
 
 ## Reference
-[Datetime in Dart](https://dart-tutorial.com/useful-information/date-time-in-dart/)<br>
-[Datetime in Dart](https://siriphonnot.medium.com/7-ฟังก์ชันสำหรับ-datetime-ที่ควรรู้ในภาษา-dart-cad22cc61504)<br>
-[Datetime in Java](https://www.w3schools.com/java/java_date.asp)<br>
-[Datetime in Java](https://akexorcist.dev/datetime-api-in-java-8-cheatsheet/)<br>
-[Datetime in Python](https://www.w3schools.com/python/python_datetime.asp)<br>
-[Datetime in C](http://marcuscode.com/lang/c/date-and-time-formats)
+[Date and time in Dart](https://dart-tutorial.com/useful-information/date-time-in-dart/)<br>
+[Date and time in Dart](https://siriphonnot.medium.com/7-ฟังก์ชันสำหรับ-datetime-ที่ควรรู้ในภาษา-dart-cad22cc61504)<br>
+[Date and time in Java](https://www.w3schools.com/java/java_date.asp)<br>
+[Date and time in Java](https://akexorcist.dev/datetime-api-in-java-8-cheatsheet/)<br>
+[Date and time in Python](https://www.w3schools.com/python/python_datetime.asp)<br>
+[Date and time in C](http://marcuscode.com/lang/c/date-and-time-formats)

@@ -212,7 +212,7 @@ Use the C **remove()** function from the standard library to delete a file.
 
 # Comparing Dart with other languages (Python, C and Java) 
 
-File Handling must import  library or module that related with I/O Streams, required for input and output operations
+## File Handling must import  library or module that related with I/O Streams, required for input and output operations
 - Dart
  ```Dart
 import 'dart:io'
@@ -226,8 +226,33 @@ import java.io.*;
 import os
 ``` 
 - C Standard library
-
-
+## After import library or module, use method or funtion for delete file target by use parameters is a path
+- Dart
+ ```Dart
+void deleteSync(
+{bool recursive = false}
+)
+```
+- Java
+```Java
+public static void delete(Path path)
+                  throws IOException
+```
+```Java
+public static boolean deleteIfExists(Path path)
+                              throws IOException
+```  
+- Python
+```Python
+os.remove(path, *, dir_fd=None)
+```
+```Python
+os.path.exists(path)
+``` 
+- C 
+```C
+int remove(const char *filename);
+``` 
 
 
 

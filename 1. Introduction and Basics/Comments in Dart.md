@@ -244,8 +244,8 @@ public class JavaCommentsExample {
 > ใช้ comments เสมอเพื่ออธิบายว่าทำไมเราถึงต้องทำอะไรบางอย่าง comments ไม่ควรทดแทนการอธิบายโค้ดที่เขียนไม่ดี<br>
 
 ## สรุปเปรียบเทียบในภาษาต่างๆ
-  * Dart และ Java มี comments ที่เหมือนกันอยู่ 3 ประเภท
-  * แต่C และ Python มีอยู่ 2 ประเภท คือ single-line comments และ multi-line comments 
+  * Dart และ Java มี comments ที่เหมือนกันอยู่ทั้งหมด 3 ประเภท
+  * แต่C และ Python ไม่มี Documentation Comments 
   * Python มีการใช้ Syntax ไม่เหมือนภาษาอื่น โดยมีการใช้ #, ''' หรือ """
   
      

@@ -31,6 +31,23 @@ void main() {
 }
 
    ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Laptop ID: 1
+Laptop Name: Asus
+Laptop Ram: 16
+</n>
+Laptop ID: 2
+Laptop Name: Lenovo
+Laptop Ram: 8
+</n>
+Laptop ID: 2
+Laptop Name: Lenovo
+Laptop Ram: 8</code>
+</pre>
+</details>
+
 ### - C
 ```c
 #include <stdio.h>
@@ -94,6 +111,23 @@ void main() {
 }
 
    ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>House ID: 1
+House Name: House A
+House Price: 200000.0
+</n>
+House ID: 2
+House Name: House B
+House Price: 300000.0
+</n>
+House ID: 3
+House Name: House C
+House Price: 400000.0</code>
+</pre>
+</details>
+
 ### - C
 ```c
 #include <stdio.h>
@@ -177,6 +211,15 @@ void main() {
   }
 }
    ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Gender.male
+Gender.female
+Gender.others</code>
+</pre>
+</details>
+
 ### - C
 ```c
 #include <stdio.h>
@@ -261,6 +304,16 @@ void main() {
 }
 
    ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Cat ID: 1
+Cat Name: mali
+Cat Color: Gray
+Cat sound: Meow</code>
+</pre>
+</details>
+
 ### - C
 ```c
 #include <stdio.h>
@@ -370,6 +423,15 @@ void main() {
   print("Camera 3 - ID: ${camera3.id}, Brand: ${camera3.brand}, Color: ${camera3.color}, Price: ${camera3.price}");
 }
    ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Camera 1 - ID: 1, Brand: Sony, Color: Black, Price: 500.0
+Camera 2 - ID: 2, Brand: Canon, Color: Silver, Price: 600.0
+Camera 3 - ID: 3, Brand: Nikon, Color: Red, Price: 550.0</code>
+</pre>
+</details>
+
 ### - C
 ```c
 #include <stdio.h>
@@ -484,6 +546,13 @@ void main() {
 }
 
    ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Coke bottle is opened</code>
+</pre>
+</details>
+
 ### - Java
 ```java
 interface Bottle {
@@ -511,8 +580,132 @@ public class Main {
 ## 7.Create a simple quiz application using oop that allows users to play and view their score.
 ### - Dart
  ```dart
+import 'dart:io';
+
+class Question {
+  String text;
+  List<String> options;
+  int correctOption;
+
+  Question(this.text, this.options, this.correctOption);
+}
+
+class Quiz {
+  List<Question> questions = [];
+  int score = 0;
+
+  void addQuestion(String text, List<String> options, int correctOption) {
+    Question question = Question(text, options, correctOption);
+    questions.add(question);
+  }
+
+  void startQuiz() {
+    for (var question in questions) {
+      print(question.text);
+      String ans = "";
+      for (var i = 0; i < question.options.length; i++) {
+        if(i+1 == question.correctOption){
+          ans = question.options[i];
+        }
+        print("${i + 1}. ${question.options[i]}");
+      }
+
+      stdout.write("Enter your answer: ");
+      int userAnswer = int.parse(stdin.readLineSync()!);
+      
+
+      if (userAnswer == question.correctOption) {
+        print("Correct!\n");
+        score++;
+      } else {
+        print("Incorrect. The correct answer is: " + ans + "\n");
+      }
+    }
+
+    print("Score: $score/${questions.length}");
+  }
+}
+
+void main() {
+  Quiz quiz = Quiz();
+  quiz.addQuestion("12 * 23 = ?",["207", "216", "257", "276"],4);
+  quiz.addQuestion("540/6 = ?",["70", "85", "90", "95"],3);
+  quiz.addQuestion("102+(11*10) = ?",["212", "221", "313", "331"],1);
+
+  print("Welcome to the Quiz");
+  print("Answer the questions:\n");
+
+  quiz.startQuiz();
+}
 
    ```
+<details>
+<summary><strong>Output Correct</strong></summary>
+<pre>
+<code>Welcome to the Quiz
+Answer the questions:
+</n>
+12 * 23 = ?
+1. 207
+2. 216
+3. 257
+4. 276
+Enter your answer: 4
+Correct!
+</n>
+540/6 = ?
+1. 70
+2. 85
+3. 90
+4. 95
+Enter your answer: 3
+Correct!
+</n>
+102+(11*10) = ?
+1. 212
+2. 221
+3. 313
+4. 331
+Enter your answer: 1
+Correct!
+</n>
+Score: 3/3</code>
+</pre>
+</details>
+
+<details>
+<summary><strong>Output Incorrect</strong></summary>
+<pre>
+<code>Welcome to the Quiz
+Answer the questions:
+</n>
+12 * 23 = ?
+1. 207
+2. 216
+3. 257
+4. 276
+Enter your answer: 1
+Incorrect. The correct answer is: 276
+</n>
+540/6 = ?
+1. 70
+2. 85
+3. 90
+4. 95
+Enter your answer: 2
+Incorrect. The correct answer is: 90
+</n>
+102+(11*10) = ?
+1. 212
+2. 221
+3. 313
+4. 331
+Enter your answer: 3
+Incorrect. The correct answer is: 212
+</n>
+Score: 0/3</code>
+</pre>
+</details>
 
 ## Reference
 https://dart-tutorial.com/object-oriented-programming/<br>

@@ -254,7 +254,13 @@ os.path.exists(path)
 int remove(const char *filename);
 ```
 ## Raference
-
+- Dart
+  https://api.flutter.dev/flutter/dart-io/FileSystemEntity/deleteSync.html
+  https://api.flutter.dev/flutter/dart-io/FileSystemEntity/existsSync.html
+  https://api.dart.dev/stable/3.1.0/dart-io/dart-io-library.html
+- Java
+- Python
+- C
 
 
 

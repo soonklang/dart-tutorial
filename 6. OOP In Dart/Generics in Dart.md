@@ -234,7 +234,9 @@ Collections เป็นการเรียกกลุ่มของปร�
  - Generic List
 
 >  List Syntax: `var list_name = List(initial_size)`
-	```  dart
+>
+> 
+```  dart
 	main() { 
 	  	List<int> listEx = []; 
 	  	listEx.add(341); 

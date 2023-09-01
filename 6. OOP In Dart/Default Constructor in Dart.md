@@ -1,6 +1,6 @@
 # Default Constructor in Dart
 Default Constructor คือ contructor ที่ถูกสร้างขึ้นอัตโนมัติจาก compiler ของ Dart โดยจะไม่มีการใส่ parameter จะเป็นการเรียกใช้ default contructor โดยอัตโนมัติ
-# ตัวอย่าง
+## ตัวอย่าง
 ```dart
 class Laptop {
   String? brand;
@@ -22,7 +22,7 @@ void main() {
   <pre><code>This is a default constructor</code></pre>
 </details>
 
-# ตัวอย่างที่2
+## ตัวอย่างที่2
 ```dart
 class Student {
   String? name;

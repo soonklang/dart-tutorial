@@ -66,7 +66,47 @@ void main() {
 //จะเห็นว่าเมื่อเราใส่เครื่องหมาย '?' (List<int?> items = [1, 2, null, 4];) code จะรันผ่านและขึ้นผลลัพธ์
 ```
 
+
 </details>
+
+<details>
+  <summary><strong>การประกาศ List<> กับ Nullable เพิ่มเติม</strong></summary>
+
+### การประกาศ List<> กับ Nullable เพิ่มเติม : 
+- ความแตกต่างในการประกาศ List<> กับ Nullable ซึ่งเราประกาศได้ 4 แบบ
+
+
+  
+```dart
+void main() {
+  List<String> aListOfStrings = ['one', 'two', 'three']; //แบบที่ 1 List ห้าม null และ ห้าม push null ใส่ List ด้วย
+  List<String>? aNullableListOfStrings; //แบบที่ 2 List เป็น null ได้ แต่ไม่สามารถ push null ใส่ List ได้
+  List<String?> aListOfNullableStrings = ['one', null, 'three']; //แบบที่ 3 List ห้าม null แต่สามารถ push null ใส่ List ได้
+  List<String?>? aNullableListOfStrings2; //แบบที่ 4 List เป็น null ได้ และสามารถ push null ใส่ List ได้
+
+  aNullableListOfStrings = ['one'];
+  //aNullableListOfStrings?.add(null) หากเราใส่ null เข้าไปในแบบที่ 2 จะ error ทันที
+  aNullableListOfStrings2 = ['one','two'];
+  aNullableListOfStrings2?.add(null);  // กลับกันในแบบที่ 4 จะใส่ null ได้
+
+  print('aListOfStrings is $aListOfStrings.');
+  print('aNullableListOfStrings is $aNullableListOfStrings.');
+  print('aListOfNullableStrings is $aListOfNullableStrings.');
+  print('aNullableListOfStrings2 is $aNullableListOfStrings2.');
+}
+```
+#### Correct Output
+```
+aListOfStrings is [one, two, three]. //แบบที่ 1 
+aNullableListOfStrings is [one]. //แบบที่ 2 สามารถประกาศ List null ได้แต่ add ไม่ได้
+aListOfNullableStrings is [one, null, three]. //แบบที่ 3 List เป็น null ไม่ได้ แต่ add ได้
+aNullableListOfStrings2 is [one, two, null]. //แบบที่ 4 List null ได้และ add ได้ด้วย
+ 
+```
+
+
+</details>
+
 
 ## Exercise 3: Null Assertion Operator (!)
 - ลองใช้เครื่องหมายที่เป็นตัวยืนยันค่า null นั่นคือ **'!'** เพื่อแสดงค่า null หากตัวแปรมีค่าเป็น null

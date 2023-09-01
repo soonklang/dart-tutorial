@@ -85,7 +85,7 @@ Output
 32000
 ```
 
-# ตัวอย่างการใช้ Implementing Multiple Interfaces
+# ตัวอย่างการใช้ Implementing Multiple Interfaces Dart
 ```dart
 void main() { 
    Calculator c = new Calculator(); 

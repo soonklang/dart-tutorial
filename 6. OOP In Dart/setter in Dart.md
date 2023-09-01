@@ -17,7 +17,7 @@ void set employeeName(String name) {
   this.empName = name;
 }
 ```
-# ตัวอย่างโปรแกรม
+# ตัวอย่างโปรแกรมภาษา Dart
  ```dart
 // Creating Class named Gfg
 class Gfg {
@@ -51,9 +51,81 @@ print("Welcome to ${geek.getName}");
 }
 
 ```
+# ตัวอย่างโปรแกรมภาษา C
+ ```c
+#include <stdio.h>
+int x;
+void main() {
+    set_x(5);
+    printf("%d", get_x());
+}
+
+void set_x(int n) {
+    x = n;
+}
+
+int get_x() {
+    return x;
+}
+
+```
+# ตัวอย่างโปรแกรมภาษา Java
+ ```java
+class Person {
+  private String name; 
+  // Getter
+  public String getName() {
+    return name;
+  }
+  // Setter
+  public void setName(String newName) {
+    this.name = newName;
+  }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.setName("Hello");
+        System.out.println(p.getName());
+    }
+}
+
+```
+# ตัวอย่างโปรแกรมภาษา Python
+ ```python
+class Geek:
+    def __init__(self, age = 0):
+         self._age = age
+      
+    # getter method
+    def get_age(self):
+        return self._age
+      
+    # setter method
+    def set_age(self, x):
+        self._age = x
+  
+raj = Geek()
+  
+# setting the age using setter
+raj.set_age(21)
+  
+# retrieving age using getter
+print(raj.get_age())
+  
+print(raj._age)
+
+```
 
 ## **Reference**
-[geeksforgeeks](https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/)
+[เนื้อหาส่วนที่ 1](https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/)
 <br>
-[tutorialspoint](https://www.tutorialspoint.com/getter-and-setter-in-dart-programming)
+[เนื้อหาส่วนที่ 2](https://www.tutorialspoint.com/getter-and-setter-in-dart-programming)
+<br>
+[setter in C](https://stackoverflow.com/questions/27316233/getters-and-setters-in-pure-c)
+<br>
+[setter in Jaca](https://www.w3schools.com/java/java_encapsulation.asp)
+<br>
+[setter in Python](https://www.geeksforgeeks.org/getter-and-setter-in-python/)
 <br>

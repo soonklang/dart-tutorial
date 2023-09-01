@@ -28,7 +28,8 @@ void main()
 ```C
 #include<stdio.h>
 
-int main(){
+int main()
+{
     char names[10][25] = {"Christopher Nolan","Denis Villeneuve",
                          "Francis Ford Coppola",
                          "James Cameron","Martin Scorsese",
@@ -59,8 +60,8 @@ int main(){
 
 #### • Java
 ```Java
-public class ArrayNameJava {
-    public static void main(String[] args) {
+public class ArrayNameJava{
+    public static void main(String[] args){
         String[] names = {"Christopher Nolan","Denis Villeneuve",
                           "Francis Ford Coppola","James Cameron","Martin Scorsese",
                           "Quentin Tarantino","Ridley Scott","Stanley Kubrick",
@@ -292,22 +293,29 @@ void main()
 ```C
 #include<stdio.h>
 
-int main(){
-    
+void add(char *array_day[],int n,char *string_day)
+{
+    array_day[n]= string_day;
+}
+
+int main()
+{
     char *days[7];
-    days[0]="Sunday";
-    days[1]="Monday";
-    days[2]="Tueday";
-    days[3]="Wednesday";
-    days[4]="Thurday";
-    days[5]="Friday";
-    days[6]="Saturday";
+    add(days,0,"Sunday");
+    add(days,1,"Monday");
+    add(days,2,"Tueday");
+    add(days,3,"Wednesday");
+    add(days,4,"Thurday");
+    add(days,5,"Friday");
+    add(days,6,"Saturday");
     for(int i=0;i<7;i++){
         printf("%s\n", days[i]);
     }
 
     return 0;
 }
+
+
 ```
 
 #### • Java
@@ -345,8 +353,8 @@ list_days.append("Saturday")
 print(list_days)
 ```
 
-### 5. เพิ่มชื่อเพื่อน 7 คนลงไปใน List ใช้ Where เพื่อหาชื่อเพื่อนที่ขึ้นต้นด้วยตัวอักษร a
-###### Add your 7 friend names to the list. Use where to find a name that starts with alphabet a.
+### 5. เพิ่มชื่อเพื่อน 7 คนลงไปใน List ใช้ Where เพื่อหาชื่อเพื่อนที่ขึ้นต้นด้วยตัวอักษร A
+###### Add your 7 friend names to the list. Use where to find a name that starts with alphabet A.
 
 #### • Dart
 ```Dart
@@ -422,6 +430,13 @@ public class ListWhereJava {
 
 #### • Python
 ```Python
+friend_names = []
+add_names = ["Taksin Shin","Abhisit Vej","Adam Lev","Chuan Leek",
+                    "Donald Trump","Joe Biden","Vladimir Putin"]
+friend_names.extend(add_names)
+for name in friend_names:
+    if(name[0]=='A'): 
+        print(name)
 ```
 
 ### 6. สร้าง Map ด้วย name, address, age, country เป็น keys และป้อนค่าเก็บไว้ อัพเดทชื่อประเทศลงบน country และแสดงผล Keys กับค่าทั้งหมด
@@ -454,14 +469,67 @@ All values of Map: (Sherlock Holmes, 221B Baker Street, 35, England)</code>
 
 #### • C
 ```C
+#include <stdio.h>
+
+void update(char *keyOrValue[],int i,char *data)
+{
+    keyOrValue[i] = data;
+}
+
+int main() 
+{
+	char *keys[] = {"name", "address", "age", "country"};
+	char *values[] = {"Sherlock Holmes", "221B Baker Street", "35", "USA"};
+
+   printf("Before :\n");
+	for (int i = 0; i < sizeof(keys)/sizeof(keys[0]); i++) {
+		printf("%s: %s\n", keys[i], values[i]);
+	}
+
+   update(values,3,"England");
+   printf("%s\n", values[3]);
+   printf("After :\n");
+   for (int i = 0; i < sizeof(keys)/sizeof(keys[0]); i++) {
+		printf("%s: %s\n", keys[i], values[i]);
+   }
+
+	return 0;
+}
 ```
 
 #### • Java
 ```Java
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapCountryJava {
+
+    public static void main(String[] args) {
+        Map<String,String> country_map = new HashMap<>();
+        country_map.put("name", "Sherlock Holmes");
+        country_map.put("address", "221B Baker Street");
+        country_map.put("age", "35");
+        country_map.put("country", "USA");
+        System.out.println("Before : "+country_map);
+
+        country_map.computeIfPresent("country", (k,v) -> v="England");
+        System.out.println("After : "+country_map);
+    }
+}
 ```
 
 #### • Python
 ```Python
+dict_country = {
+    "name": "Sherlock Holmes",
+    "address": "221B Baker Street",
+    "age": 35, 
+    "country": "USA"
+}
+print(f"Before : {dict_country}")
+
+dict_country.update({"country": "England"})
+print(f"After : {dict_country}")
 ```
 
 ### 7. สร้าง Map ด้วย name, phone เป็น keys และทำการป้อนค่าไว้ ใช้ Where เพื่อหา keys ทั้งหมดที่มีความยาว 4 
@@ -491,14 +559,62 @@ void main()
 
 #### • C
 ```C
+#include<stdio.h>
+
+int string_length(char str[])
+{
+    int count;
+    for(count=0;str[count]!='\0';count++);
+    return count;
+}
+
+int main()
+{
+    char *keys[] = {"name", "phone", "date", "address"};
+	char *values[] = {"Albus Dumbledore", "+44 7911 123456", "13/03/1895", "England"};
+
+    for(int i=0;i<sizeof(keys)/sizeof(keys[0]);i++){
+        int length = string_length(keys[i]);
+        if(length==4){
+            printf("%s\n", keys[i]);
+        }
+    }
+
+    return 0;
+}
 ```
 
 #### • Java
 ```Java
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapKey4Java {
+    public static void main(String[] args) {
+        Map<String,String> map_citizen = new HashMap<>();
+        map_citizen.put("name", "Albus Dumbledore");
+        map_citizen.put("phone", "+44 7911 123456");
+        map_citizen.put("date", "13/03/1895");
+        map_citizen.put("address", "England");
+        for(String key: map_citizen.keySet()){
+            if(key.length()==4)
+                System.out.println(key);
+        }
+    }
+}
 ```
 
 #### • Python
 ```Python
+dict_citizen = {
+    'name': 'Albus Dumbledore',
+    'phone': '+44 7911 123456',
+    'date': '13/03/1895',
+    'address': 'England',
+}
+for k in dict_citizen.keys():
+    if(len(k)==4): 
+        print(k)
 ```
 
 ### 8. สร้าง simple to-do แอพพลิเคชั่น ที่อนุญาตให้ผู้ใช้ add, remove และ view task ได้
@@ -593,18 +709,137 @@ Press other button to exit
 
 #### • C
 ```C
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+void choice_massage()
+{
+    printf("Choose you want to do..\n");
+    printf("Press 1 : add To-Do List\n");
+    printf("Press 2 : remove To-Do List\n");
+    printf("Press 3 : view task\n");
+    printf("Press other number to exit\n");
+}
+
+int main()
+{
+    char *to_do_list[20];
+    printf("Welcome to To-Do List \n");
+    int count_list=0;
+    
+    while (1)
+    {
+        choice_massage();
+        int choose;
+        scanf("%d", &choose);
+        if (choose == 1)
+        {
+            char task[30];
+            printf("add task : ");
+            scanf("%30s", task);
+            to_do_list[count_list] = malloc(strlen(task) + 1);
+            strcpy(to_do_list[count_list], task);
+            count_list++;          
+        }
+        else if (choose == 2)
+        {
+            char delete[30];
+            printf("remove task : ");
+            scanf("%30s", delete);
+            for(int i=0;i<count_list;i++){
+                if (strcmp(to_do_list[i],delete)==0)
+                {
+                    printf("delete\n");
+                    for (int j=i;j<count_list;j++)
+                    {
+                        strcpy(to_do_list[j], to_do_list[j+1]);
+                    }   
+                }
+            }
+            count_list--;
+        }
+        
+        else if(choose == 3){
+            printf("view task :\n");
+            for(int i=0;i<count_list;i++){
+                printf("%s\n", to_do_list[i]);
+            }
+        }
+        else
+        {
+            break;
+        }
+    }
+}
 ```
 
 #### • Java
 ```Java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SimpleToDoListJava {
+    public static void main(String[] args) {
+        System.out.println("Welcome to To-Do List");
+        System.out.println("Choose you want to do..");
+
+        ArrayList<String> toDoListTask = new ArrayList<String>();
+        Scanner scan = new Scanner(System.in);
+
+        while(true){
+            System.out.println("Press 1 : add To-Do List");
+            System.out.println("Press 2 : remove To-Do List");
+            System.out.println("Press 3 : view task");
+            System.out.println("Press other number to exit");
+            
+            int choose = scan.nextInt();
+            
+            if(choose == 1){
+                System.out.print("add task : ");
+                String add_task = scan.next();
+                toDoListTask.add(add_task.toString());
+            }
+            else if(choose == 2){
+                System.out.println("remove task : ");
+                String remove_task = scan.next();
+                toDoListTask.remove(remove_task);
+            }
+            else if(choose == 3){
+                System.out.println("view task : "+toDoListTask);
+            }
+            else {
+                break;
+            }
+        }
+    }
+}
 ```
 
 #### • Python
 ```Python
+print("Welcome to To-Do List \nChoose you want to do..")
+toDoListTask = []
+while True:
+    print("Press 1 : add To-Do List \nPress 2 : remove To-Do List \nPress 3 : view task")
+    print("Press other number to exit")
+    choose = input()
+    if int(choose) == 1:
+        add_task = input("add task : ")
+        toDoListTask.append(add_task)
+    elif int(choose) == 2:
+        remove_task = input("remove task : ")
+        toDoListTask.remove(remove_task)
+    elif int(choose) == 3:
+        print(f"view task : {toDoListTask}")
+    else :
+        break
 ```
 
 ## อ้างอิง
->https://dart-tutorial.com/collections
->https://www.w3schools.com/java
->https://www.w3schools.com/python
+>https://dart-tutorial.com/collections/
+>https://www.w3schools.com/java/
+>https://www.w3schools.com/python/
 >https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/
+>https://www.scaler.com/topics/string-length-in-c/
+>https://stackoverflow.com/questions/29568297/c-how-to-store-multiple-strings-in-an-array/

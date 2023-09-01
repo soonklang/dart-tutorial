@@ -209,7 +209,9 @@ void main() {
   animal.display();
 }
 ```
-
+ **** จากตัวอย่าง เราสร้าง class parent ที่เรียกว่า Animal โดยมี attribute ที่ชื่อ breed และ ฟังก์ชัน display()
+          จากนั้น เราสร้าง subclass ชื่อ Cat พร้อมด้วยฟังก์ชัน meow() มันสืบทอดคุณสมบัติการผสมพันธุ์ของ class parent
+          และ ใน mian เราสร้างวัตถุของคลาส Cat และ Animal สุดท้ายนี้ เรากำหนดค่าให้กับ attribute โดยใช้ objects ของclass และเรียกใช้ฟังก์ชัน ***
 output
 ```
   Maine Coon meow everytime.

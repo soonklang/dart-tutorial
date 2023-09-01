@@ -22,7 +22,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
 
 ### Output: 
-	---> My name is John Doe.
+	 My name is John Doe.
 
 ตามตัวอย่าง printName() คือฟังก์ชันที่มีคีย์เวิร์ด void หมายความว่าไม่มีประเภทการส่งคืน และวงเล็บว่างแสดงว่าไม่มีพารามิเตอร์ที่ส่งผ่านไปยังฟังก์ชัน
 
@@ -43,7 +43,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
 
 ### Output: 
-	---> The sum is 30
+	 The sum is 30
 
 ตามตัวอย่าง add(int a, int b) คือฟังก์ชันที่มีคีย์เวิร์ด void หมายความว่าไม่มีประเภทการส่งคืน และวงเล็บไม่ว่าง แสดงว่ามีการส่งค่าพารามิเตอร์ไปยังฟังก์ชัน จากตัวอย่างส่งพารามิเตอร์ประเภท int
 
@@ -62,7 +62,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
 
 ### Output:  
-	---> The name from function is John Doe
+	 The name from function is John Doe
 
 ตามตัวอย่าง primeMinisterName() คือฟังก์ชันที่มีคีย์เวิร์ด String นำหน้าชื่อฟังก์ชัน หมายความว่าจะส่งกลับค่า String และวงเล็บว่างแสดงว่าไม่มีพารามิเตอร์ที่ถูกส่งผ่านไปยังฟังก์ชัน
 
@@ -85,7 +85,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
 
 ### Output: 
-	---> The simple interest is 450.0.
+	 The simple interest is 450.0.
 
 ตามตัวอย่าง calculateInterest(double principal, double rate, double time) คือฟังก์ชันที่มีคีย์เวิร์ด double นำหน้าชื่อฟังก์ชัน หมายความว่าจะส่งกลับค่า double และวงเล็บไม่ว่าง แสดงว่ามีการส่งค่าพารามิเตอร์ไปยังฟังก์ชัน จากตัวอย่างส่งพารามิเตอร์ประเภท double
 
@@ -106,7 +106,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> Hello everyone! I am a bot.
+	 Hello everyone! I am a bot.
  
 ### Example 2:
 	#include <stdio.h>
@@ -125,8 +125,8 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> enter the number you want to find square root of: 225
-	     The square root of 225.00 is 15.00.
+	 enter the number you want to find square root of: 225
+	 The square root of 225.00 is 15.00.
 
 จากตัวอย่าง มีการเรียกใช้ฟังก์ชันมากกว่า 1 ฟังก์ชัน ซึ่งเราต้องการรับค่าอินพุต หารากที่สองและพิมพ์ผลลัพธ์ จึงต้องมีการใช้สามฟังก์ชันดังนี้
 - printf(): มีอยู่ใน <stdio.h>
@@ -163,7 +163,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
 
 ### Output: 
-	---> Total sum of x = 15 and y = 50 is = 65
+	 Total sum of x = 15 and y = 50 is = 65
  
 ## Function With Parameter And No Return Type
 ### Example:
@@ -190,10 +190,10 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
 
 ### Output: 
-	---> Enter two integer values to add:  
-	     10
-	     20
-	     Total sum of 10 and 20 is = 30 
+	 Enter two integer values to add:  
+	 10
+	 20
+	 Total sum of 10 and 20 is = 30 
       
 ## Function With No Parameter And Return Type
 ### Example:
@@ -215,7 +215,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> The multiplication of x and y is = 50 
+	 The multiplication of x and y is = 50 
  
 ## Function With Parameter And Return Type
 ### Example:
@@ -231,7 +231,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> a-b = 8
+	 a-b = 8
 
  
 # Types of Functions in Java
@@ -266,9 +266,9 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> 900.0
-	     81.0
-	     556.9113382296638
+	 900.0
+	 81.0
+	 556.9113382296638
 
 ## User Defined Functions
 
@@ -295,7 +295,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> Hello I am learning how to create void function in Java.
+	 Hello I am learning how to create void function in Java.
  
 ## Function With Parameter And No Return Type
 ### Example:
@@ -315,7 +315,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> Sum of 10 and 20 is 30
+	 Sum of 10 and 20 is 30
  
 ## Function With No Parameter And Return Type
 ### Example:
@@ -332,7 +332,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> The value of PI is 22/7 = 3.142
+	 The value of PI is 22/7 = 3.142
  
 ## Function With Parameter And Return Type
 ### Example:
@@ -354,7 +354,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	}
  
 ### Output: 
-	---> Sum of 10 and 20 is 30
+	 Sum of 10 and 20 is 30
 
  
 # Types of Functions in Python
@@ -380,8 +380,8 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	print("2 to the power 3 is",power)
  
 ### Output: 
-	---> Square Root of 4 is 2.0
-	     2 to the power 3 is 8
+	 Square Root of 4 is 2.0
+	 2 to the power 3 is 8
 
 
 
@@ -404,7 +404,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	greet1()
  
 ### Output: 
-	---> Hello!
+	 Hello!
  
 ## Function With Parameter And No Return Type
 
@@ -415,7 +415,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	greet2('Jane')
 	
 ### Output: 
-	---> Hello, Jane !
+	 Hello, Jane !
  
 ## Function With No Parameter And Return Type
 
@@ -428,7 +428,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	print(grtng)
  
 ### Output: 
-	---> Hello !
+	 Hello !
  
 ## Function With Parameter And Return Type
 
@@ -441,10 +441,8 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 	print(grtng)
  
 ### Output: 
-	---> Hello, Bob
+	 Hello, Bob
 
-
-# Video
 
 
 # Reference

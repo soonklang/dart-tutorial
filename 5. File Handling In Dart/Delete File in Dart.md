@@ -180,7 +180,8 @@ else:
   print("The file does not exist")
 ```
 ## Summary
-import **module os**  to use method **os.remove()** **os.path.exists()** to delete a file.
+import **module os**  to use method **os.remove()**  to delete a file and
+**os.path.exists()** is used to check whether the specified path exists or not.
 
 
 - # C

@@ -36,7 +36,7 @@ void main() {
 ```
 
 ## การแปลง String เป็น Datetime
-ในกรณีที่รับค่าเข้ามาเราไม่สามารถรับวัน เดือน และปีได้โดยตร แต่ไม่สามารถดําเนินการคํานวณวันที่โดยใช้ String ได้ ดังนั้นเราต้องแปลง String เป็น DateTime ก่อน
+ในกรณีที่รับค่าเข้ามาเราไม่สามารถรับวัน เดือน และปีได้โดยตรง แต่ไม่สามารถดําเนินการคํานวณวันที่โดยใช้ String ได้ ดังนั้นเราต้องแปลง String เป็น DateTime ก่อน
 
 Example
 ``` dart
@@ -50,6 +50,7 @@ void main() {
 ```
 
 ## การเพิ่มจำนวนวันและเวลาใน Datetime
+ใช้ method `.add()`
 ``` dart
 void main() {
   DateTime myBirthday = DateTime.parse("1997-05-14");
@@ -61,6 +62,7 @@ void main() {
 ```
 
 ## การลดจำนวนวันและเวลาใน Datetime
+ใช้ method `.subtract()`
 ``` dart
 void main() {
   DateTime myBirthday = DateTime.parse("1997-05-14");
@@ -70,7 +72,8 @@ void main() {
   print("Day is " + myBirthday.day.toString());
 }
 ```
-## การหาความแตกต่างของวันที่ใน Dart
+## การหาระยะความต่างของวันที่ใน Dart
+ใช้ method `.difference()`
 ``` dart
 void main() {
   DateTime myBirthday = DateTime.parse("1997-05-14");
@@ -98,6 +101,7 @@ void main() {
 ```
 
 ## การเช็คว่า Datetime เท่ากันหรือไม่
+ใช้ method `.compareTo()`
 ``` dart
 void main() {
   var songKranDay = DateTime.utc(2019, 04, 13);
@@ -116,3 +120,138 @@ void main() {
 }
 ```
 > UTC (Coordinated Universal Time) หน่วยของเวลาในมาตรฐานของ GMT ที่ใช้ในการอ้างอิงการหมุนของโลก ใช้นาฬิกาอะตอม (Atomic clock) เป็นตัวกำหนดเวลา โดยการนับการสั่นของอะตอม
+
+# ตัวอย่าง Datetime in Java
+ ในภาษา Java จะไม่มี class Date มาในตัวซึ่งต่างจากภาษา Dart ที่มีอยู่แล้ว แต่ใน Java สามารถ import package `java.time` ที่ใช้เกี่ยวกับวันที่และเวลาได้ ตัวอย่างเช่น
+ - Class
+ 
+     LocalDate แสดงวันที่ (year, month, day (yyyy-MM-dd))
+
+  LocalTime แสดงเวลา (hour, minute, second and nanoseconds (HH-mm-ss-ns))
+  
+  LocalDateTime แสดงทั้งวันที่และเวลา (yyyy-MM-dd-HH-mm-ss-ns)
+  
+  DateTimeFormatter ใช้สำหรับแสดงแยกส่วนวัตถุของวันที่และเวลา
+
+ Example
+ ``` Java
+ import java.time.LocalDate; // import the LocalDate class
+
+ public class Main {
+  public static void main(String[] args) {
+   LocalDate myObj = LocalDate.now(); // Create a date object
+   System.out.println(myObj); // Display the current date
+  }
+ }
+```
+- Output
+``` Java
+2023-09-01
+```
+### Formatting Date and Time
+
+เราสามารถใช้class `DateTimeFormatter` กับmethod `ofPattern()` ในแพ็คเกจเดียวกันเพื่อจัดรูปแบบหรือแยกวัตถุของ date-time ตัวอย่างต่อไปนี้จะลบทั้ง "T" และนาโนวินาทีออกจากวันที่และเวลา
+
+Example
+
+``` Java
+import java.time.LocalDateTime; // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter; // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {
+    LocalDateTime myDateObj = LocalDateTime.now();
+    System.out.println("Before formatting: " + myDateObj);
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+    String formattedDate = myDateObj.format(myFormatObj);
+    System.out.println("After formatting: " + formattedDate);
+  }
+}
+```
+- Output
+``` Java
+Before Formatting: 2023-09-01T14:14:45.189226 
+After Formatting: 01-09-2023 14:14:45
+```
+- method `ofPattern()` ใช้จัดรูปแบบที่เราต้องการแสดงวันที่และเวลาในรูปแบบอื่นและสามารถใช้ได้กับทุกค่า
+
+Example  
+
+yyyy-MM-dd	     ->  "1988-09-29"	
+
+dd/MM/yyyy	     ->  "29/09/1988"	
+
+dd-MMM-yyyy     -> 	"29-Sep-1988"	
+
+E, MMM dd yyyy	 ->  "Thu, Sep 29 1988"
+
+### เทียบการเพิ่มและลด Datetime, ระยะของ Datetime ที่ต่างกัน
+- การเพิ่ม Datetime
+``` Java
+val next2Days = date.plusDays(2)
+// 2022-02-21T15:21:02.434+07:00
+```
+- การลด Datetime
+``` Java
+val previous2Months = date.minusMonths(2)
+// 2021-12-19T15:23:09.393+07:00
+```
+- ระยะ datetime ที่ต่างกัน
+- 
+ใช้ method `ChronoUnit.(object ของ Datetime).between( , )`
+``` Java
+val dateTimeA: LocalDateTime = /* ... */
+val dateTimeB: LocalDateTime = /* ... */
+val diffInHour = ChronoUnit.HOURS.between(dateTimeA, dateTimeB)
+```
+# ตัวอย่าง Datetime in Python
+Datetime ใน Python ไม่ใช่ data type แต่เราสามารถ import module `datetime` เพื่อทำงานกับวันที่เป็นวัตถุวันที่
+
+Example 
+``` Python
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+```
+- Output
+``` Python
+2023-09-01 15:21:18.035686
+```
+### หากต้องการข้อมูลเกี่ยวกับ object อื่นๆใน Datetime
+เช่น year, month, day, hour, minute, second, and microsecond.
+สามารถใช้ method `.year` `.mouth` เช่นเดียวกับภาษา Dart 
+
+Example
+``` Python
+import datetime
+
+x = datetime.datetime.now()
+print(x.day)
+print(x.hour)
+```
+- แต่ใน python object`datetime`มี method สำหรับ date object ที่เป็น String ที่อ่านได้
+method นี้เรียกว่า `strftime()` และใช้ 1 พารามิเตอร์และformat เพื่อระบุรูปแบบของ String ที่ส่งคืน 
+Example
+
+``` Python
+import datetime
+
+x = datetime.datetime(2018, 6, 1)
+print(x.strftime("%B")) // %B	Month name, full version
+```
+- Output
+  
+ซึ่งในตัวอย่างนี้ "%B" เป็นแค่ส่วนนึงของ Date format codes 
+## Reference
+[Datetime in Dart](https://dart-tutorial.com/useful-information/date-time-in-dart/)
+
+https://siriphonnot.medium.com/7-ฟังก์ชันสำหรับ-datetime-ที่ควรรู้ในภาษา-dart-cad22cc61504
+
+https://www.w3schools.com/java/java_date.asp
+https://akexorcist.dev/datetime-api-in-java-8-cheatsheet/
+
+https://www.w3schools.com/python/python_datetime.asp
+
+

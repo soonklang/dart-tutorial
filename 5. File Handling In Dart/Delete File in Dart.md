@@ -82,7 +82,7 @@ void main() {
 import dart:io library to use **deleteSync()** for Synchronously deletes this FileSystemEntity
 and **existsSync()** for Synchronously checks whether the file system entity with this path exists.
 
-**!NOTE** Synchronously 
+**!NOTE** Synchronous means the code runs in a particular sequence of instructions given in the program.
 
 ## Delete file in other language
 - # Java

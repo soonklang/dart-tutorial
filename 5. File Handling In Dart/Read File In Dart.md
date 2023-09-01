@@ -1,16 +1,22 @@
-# File Handling In Dart
-
-## Read File in Dart
-สันนิษฐานว่ามีไฟล์ที่ชื่อ test.txt อยู่ในdirectoryเดียวกันกับโปรแกรมdart
+# Read File in Dart
+สันนิษฐานว่ามีไฟล์ที่ชื่อ test.txt อยู่ใน directory เดียวกันกับโปรแกรม dart
 
 **test.txt**
 ```dart
 Welcome to test.txt file.
 This is a test file.
  ```
+ไฟล์จะเก็บ path ที่สามารถดำเนินการได้ เราสามารถรับ directory หลักของไฟล์ได้โดยใช้ parent ซึ่งเป็นคุณสมบัติที่สืบทอดมาจาก **FileSystemEntity**
+สร้าง File object ใหม่ด้วย pathname เพื่อเข้าถึงไฟล์ที่ระบุบนระบบไฟล์จากโปรแกรม
 
-ตอนนี้เราสามารถอ่านไฟล์นี้ได้โดยใช้คลาส File และเมธอด **readAsStringSync()** ได้เลย
+```dart
+var myFile = File('test.txt');
+```
 
+ตอนนี้เราสามารถอ่านไฟล์นี้ได้โดยใช้คลาส File และเมธอด **readAsStringSync()** หรือ **readAsString()** ได้เลย
+
+ #### `ตัวอย่างที่ 1`
+  >อ่านเนื้อหาทั้งหมดจากไฟล์เป็นสตริงโดยใช้เมธอด readAsStringSync() แบบซิงโครนัสและจะ return เนื้อหาของไฟล์เป็นสตริง: 
 ```dart
 // dart program to read from file
 import 'dart:io';
@@ -29,6 +35,50 @@ void main() {
 <summary><strong>Output</strong></summary>
 <pre>
 <code>Welcome to test.txt file.
+This is a test file.</code>
+</pre>
+</details>
+
+#### `ตัวอย่างที่ 2`
+```dart
+import 'dart:io';
+ 
+void main() {
+  var contents = File('resources/file.txt').readAsStringSync();
+  print('File Contents\n---------------');
+  print(contents);
+}
+```
+
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>File Contents
+---------------
+Welcome to test.txt file.
+This is a test file.</code>
+</pre>
+</details>
+
+#### `ตัวอย่างที่ 3`
+  >อ่านเนื้อหาทั้งหมดจากไฟล์เป็นสตริงโดยใช้เมธอด readAsString() แบบอะซิงโครนัสและจะ return Future<String> ในฟังก์ชันcallback จะได้รับ String พร้อมเนื้อหาของไฟล์: 
+```dart
+import 'dart:io';
+ 
+void main() {
+  File('resources/test.txt').readAsString().then((String contents) {
+    print('File Contents\n---------------');
+    print(contents);
+  });
+}
+```
+
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>File Contents
+---------------
+Welcome to test.txt file.
 This is a test file.</code>
 </pre>
 </details>
@@ -226,7 +276,7 @@ This is a test file.</code>
 
 - C
 
-  การเปิดอ่านไฟล์ของภาษาC จะใช้ฟังก์ชัน **fopen()** ซึ่งรับพารามิเตอร์ 2 ตัว ก็คือ **filename** และ **mode "r"**
+  การเปิดอ่านไฟล์ของภาษา C จะใช้ฟังก์ชัน **fopen()** ซึ่งรับพารามิเตอร์ 2 ตัว ก็คือ **filename** และ **mode "r"**
 
   #### `ตัวอย่างที่ 1`
   ```c
@@ -276,9 +326,253 @@ This is a test file.</code>
 
 - Java
 
-  การเปิดอ่านไฟล์ของภาษาC จะใช้คลาส **Scanner** เพื่ออ่านเนื้อหาของไฟล์
+  การเปิดอ่านไฟล์ของภาษา Java จะใช้คลาส **Scanner** เพื่ออ่านเนื้อหาของไฟล์
 
+  #### `ตัวอย่างที่ 1`
+  >ใช้คลาส Scanner ในการอ่านไฟล์
+  ```java
+   import java.io.File;  // Import the File class
+   import java.io.FileNotFoundException;  // Import this class to handle errors
+   import java.util.Scanner; // Import the Scanner class to read text files
+
+   public class ReadFile {
+    public static void main(String[] args) {
+     try {
+       File myObj = new File("filename.txt");
+       Scanner myReader = new Scanner(myObj);
+       while (myReader.hasNextLine()) {
+         String data = myReader.nextLine();
+         System.out.println(data);
+       }
+       myReader.close();
+     } catch (FileNotFoundException e) {
+       System.out.println("An error occurred.");
+       e.printStackTrace();
+      }
+    }
+  }
+  ```
+  <details>
+  <summary><strong>Output</strong></summary>
+  <pre>
+  <code>Files in Java might be tricky, but it is fun enough!</code>
+  </pre>
+  </details>
+
+  #### `ตัวอย่างที่ 2`
+  >ใช้คลาส BufferedReader ในการอ่านจากไฟล์ทีละบรรทัดและแสดงผลออกทางหน้าจอ
+  ```java
+  import java.io.BufferedReader;
+  import java.io.IOException;
+  import java.nio.charset.StandardCharsets;
+  import java.nio.file.Files;
+  import java.nio.file.Path;
+  import java.nio.file.Paths;
+
+  public class ReadFromFile {
+      public static void main(String[] args) {  
+          try {
+              Path file = Paths.get("D:\\example.txt");  //ตัวแปร file เป็นพาธของไฟล์ในการอ่าน
+              BufferedReader reader = Files.newBufferedReader(file ,   
+                      StandardCharsets.UTF_8); //reader เป็นตัวแปรที่ใช้สำหรับอ่านไฟล์
+              String line = null;  //line เป็นตัวแปรเก็บค่าชั่วคราวที่ผ่านมากจากไฟล์
+
+              while ((line = reader.readLine()) != null) {
+                  System.out.println(line);
+              }  //เมธอด reader.readLine() จะอ่านข้อมูลจากไฟล์ที่ละบรรทัด จนกว่าค่าที่ส่งกลับมาจะเป็น null
+
+              reader.close();  //ต้องทำการปิดไฟล์เสมอโดยการใช้เมธอด close() เพื่อให้ไฟล์สามารถนำไปใช้ในโปรแกรมอื่นต่อ
+          } catch (IOException e) {
+              System.err.println("IOException: " + e.getMessage());
+          }
+      }
+  }
+  ```
+
+  <details>
+  <summary><strong>Output</strong></summary>
+  <pre>
+  <code>Hello,
+  Welcome to MarcusCode tutorial
+  This is reading from text file example
+  This file has 4 lines</code>
+  </pre>
+  </details>
+
+  ### Get File Information
+  ถ้าการข้อมูลเพิ่มเติมเกี่ยวกับไฟล์ ให้ใช้ File methods ใดๆ:
+  
   #### `ตัวอย่าง`
   ```java
+  import java.io.File;  // Import the File class
 
+  public class GetFileInfo { 
+    public static void main(String[] args) {
+      File myObj = new File("filename.txt");
+      if (myObj.exists()) {
+        System.out.println("File name: " + myObj.getName());
+        System.out.println("Absolute path: " + myObj.getAbsolutePath());
+        System.out.println("Writeable: " + myObj.canWrite());
+        System.out.println("Readable " + myObj.canRead());
+        System.out.println("File size in bytes " + myObj.length());
+      } else {
+        System.out.println("The file does not exist.");
+      }
+    }
+  }
   ```
+
+  <details>
+  <summary><strong>Output</strong></summary>
+  <pre>
+  <code>File name: filename.txt
+  Absolute path: C:\Users\MyName\filename.txt
+  Writeable: true
+  Readable: true
+  File size in bytes: 0</code>
+  </pre>
+  </details>
+
+  **! NOTE**
+  มีคลาสอื่นๆอีกมากมายใน Java API ที่สามารถใช้เพื่ออ่านและเขียนไฟล์ใน **Java: FileReader, BufferedReader, Files, Scanner, FileInputStream, FileWriter, BufferedWriter, FileOutputStream** ,etc. ถ้าจะใช้อันไหนขึ้นอยู่กับเวอร์ชันของ Java ที่ใช้งานอยู่และไม่ว่าคุณจำเป็นต้องอ่านไบต์หรืออักขระ และขนาดของไฟล์/บรรทัด และอื่นๆ
+
+   ### Read CSV file in Java
+  มีอยู่ 3 วิธีในการอ่านไฟล์ CSV ใน Java
+  - **Scanner** class
+  - **String.split()** method
+  - การใช้ **OpenCSV** API
+ 
+    ### Scanner class
+    คลาส Scanner จะจัดเตรียม constructor ที่สร้างค่าที่สแกนจากไฟล์ที่ระบุ และแบ่งข้อมูลอยู่ในรูปแบบของ token จะใช้ delimiter pattern โดยค่าเริ่มต้นจะตรงกับช่องว่าง จากนั้นผลลัพธ์ token จะแปลงเป็นค่าประเภทต่างๆ โดยใช้เมธอด next()
+
+    #### `ตัวอย่าง`
+    ```java
+    import java.io.*;  
+    import java.util.Scanner;  
+    public class ReadCSVExample1{  
+      public static void main(String[] args) throws Exception{  
+      //parsing a CSV file into Scanner class constructor  
+        Scanner sc = new Scanner(new File("F:\\CSVDemo.csv"));  
+        sc.useDelimiter(",");   //sets the delimiter pattern  
+       while (sc.hasNext())  //returns a boolean value {  
+         System.out.print(sc.next());  //find and returns the next complete token from this scanner  
+       }   
+        sc.close();  //closes the scanner  
+       }  
+    }  
+    ```
+
+    <details>
+    <summary><strong>Output</strong></summary>
+    <pre>
+    <code>Shashank, Mishra, Auditor, 909090090, 45000, Moti Vihar
+    Naveen, Singh, Accountant, 213344455, 12000, Shastri Nagar
+    Mahesh, Nigam, Sr. Manager, 787878878, 30000, Ashok Nagar
+    Manish, Gupta, Manager, 999988765, 20000, Saket Nagar</code>
+    </pre>
+    </details>
+
+    ### String.split() method
+    **String.split()** ระบุตัวคั่นและแยกแถวออกเป็นtokens
+ 
+    **Syntax**
+    ```java
+    public String[] split(String regex) 
+    ```
+
+    #### `ตัวอย่าง`
+    >ใช้คลาส BufferedReader ในการอ่าน โดยจะอ่านไฟล์ทีละบรรทัดจนกระทั่งถึงอักขระ EOF (สิ้นสุดไฟล์)
+    ```java
+    import java.io.BufferedReader;  
+    import java.io.FileReader;  
+    import java.io.IOException;  
+    public class ReadCSVExample2 {  
+     public static void main(String[] args){  
+      String line = "";  
+      String splitBy = ",";  
+    try {  
+       //parsing a CSV file into BufferedReader class constructor  
+      BufferedReader br = new BufferedReader(new FileReader("CSVDemo.csv"));  
+      while ((line = br.readLine()) != null)   //returns a Boolean value {  
+       String[] employee = line.split(splitBy);    // use comma as separator  
+        System.out.println("Employee [First Name=" + employee[0] + ", Last Name=" + employee[1] + ", Designation=" + employee[2] + ", Contact=" + employee[3] + ", Salary= " + employee[4] + ", City= " + employee[5] +"]");  
+          }  
+        }   
+        catch (IOException e) {  
+         e.printStackTrace();  
+        }  
+      }  
+    }  
+    ```
+
+    <details>
+    <summary><strong>Output</strong></summary>
+    <pre>
+    <code>Employee [First Name= Shashank, Last Name= Mishra, Designation= Auditor, 
+    Contact= 909090090, Salary= 45000, City= Moti Vihar]
+    Employee [First Name= Naveen, Last Name=Singh, Designation= Accountant, 
+    Contact=213344455, Salary= 12000, City= Shastri Nagar]
+    Employee [First Name= Mahesh, Last Name=Nigam, Designation= Sr. Manager, 
+    Contact=787878878, Salary= 30000, City= Ashok Nagar]
+    Employee [First Name= Manish, Last Name=Gupta, Designation= Manager, 
+    Contact=999988765, Salary= 20000, City= Saket Nagar]</code>
+    </pre>
+    </details>
+
+    ### การใช้ OpenCSV API
+    OpenCSV เป็น API ของบุคคลที่สามซึ่งมีไลบรารีมาตรฐานสำหรับอ่านไฟล์ CSV หลากหลายเวอร์ชัน ไลบรารีให้การควบคุมที่ดีกว่าในการจัดการไฟล์ CSV และยังสามารถอ่านรูปแบบไฟล์ TDF (Tab-Delimited File) ได้
+
+    **Syntax**
+    ```java
+    public CSVReder(Reader reader, char separator)  
+    //OR  
+    public CSVReder(Reader reader)  
+    ```
+
+    #### `ตัวอย่าง`
+    ```java
+    import java.io.FileReader;  
+    import com.opencsv.CSVReader;  
+    public class ReadCSVExample3  {    
+     public static void main(String[] args)  {  
+      CSVReader reader = null;  
+     try  {  
+      //parsing a CSV file into CSVReader class constructor  
+        reader = new CSVReader(new FileReader("F:\\CSVDemo.csv"));  
+        String [] nextLine;  
+        //reads one line at a time  
+        while ((nextLine = reader.readNext()) != null)  {  
+         for(String token : nextLine)  {  
+          System.out.print(token);  
+          }  
+        System.out.print("\n");  
+        }  
+       }  
+       catch (Exception e)  {  
+        e.printStackTrace();  
+       }  
+      }  
+    }  
+    ```
+
+    <details>
+    <summary><strong>Output</strong></summary>
+    <pre>
+    <code>Shashank Mishra Auditor 909090090 45000 Moti Vihar
+    Naveen Singh Accountant 213344455 12000 Shastri Nagar
+    Mahesh NigamSr. Manager 787878878 30000 Ashok Nagar
+    Manish Gupta Manager 999988765 20000 Saket Nagar</code>
+    </pre>
+    </details>
+
+## Reference
+https://dart-tutorial.com/file-handling-in-dart/read-file-in-dart/<br>
+https://api.dart.dev/stable/3.1.0/dart-io/File-class.html<br>
+https://www.tutorialkart.com/dart/dart-read-file-as-string/#gsc.tab=0<br>
+https://www.w3schools.com/python/python_file_open.asp<br>
+https://www.w3schools.com/java/java_files_read.asp<br>
+https://www.geeksforgeeks.org/different-ways-reading-text-file-java/<br>
+https://www.w3schools.com/c/c_files_read.php<br>
+https://earthly.dev/blog/csv-python/<br>
+http://marcuscode.com/lang/java/files<br>
+https://www.javatpoint.com/how-to-read-csv-file-in-java<br>

@@ -169,11 +169,13 @@ Price: 20000
   }
   ```
 จากตัวอย่างด้านบนนี้ มีsuper classชื่อ Car พร้อมด้วยชื่อคุณสมบัติ มีsub classชื่อ Tesla ซึ่งสืบทอดคุณสมบัติของsuper class 
-output
+<details> 
+   <summary><strong>output</strong></summary>
 ```
 Name: Tesla Model 3
 Prize: 50000.0
 ```
+</details> 
  #### `Example 2 :` Single Inheritance In Dart
  ```dart
   

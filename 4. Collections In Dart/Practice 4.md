@@ -56,7 +56,34 @@ int main()
     return 0;
 }
 ```
-###### NOTE : จะเห็นได้ว่าเนื่องจากในภาษา C ไม่มีตัวแปรชนิด String จึงต้องทำการประกาศใช้เป็น อาเรย์ 2 มิติแทน
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Show names in Array :
+Christopher Nolan
+Denis Villeneuve
+Francis Ford Coppola
+James Cameron
+Martin Scorsese
+Quentin Tarantino
+Ridley Scott
+Stanley Kubrick
+Steven Spielberg
+Tim Burton
+Show names in Pointer Array :
+Christopher Nolan
+Denis Villeneuve
+Francis Ford Coppola
+James Cameron
+Martin Scorsese
+Quentin Tarantino
+Ridley Scott
+Stanley Kubrick
+Steven Spielberg
+Tim Burton</code>
+</pre>
+</details>
+###### NOTE : จะเห็นได้ว่าเนื่องจากในภาษา C ไม่มีตัวแปรชนิด String จึงต้องทำการประกาศใช้เป็น อาเรย์ 2 มิติ หรือ Pointer แทน
 
 #### • Java
 ```Java
@@ -73,6 +100,21 @@ public class ArrayNameJava{
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Christopher Nolan
+Denis Villeneuve    
+Francis Ford Coppola
+James Cameron       
+Martin Scorsese     
+Quentin Tarantino   
+Ridley Scott        
+Stanley Kubrick     
+Steven Spielberg    
+Tim Burton</code>
+</pre>
+</details>
 
 #### • Python
 ```Python
@@ -83,6 +125,12 @@ namesList = ["Christopher Nolan","Denis Villeneuve",
          "Steven Spielberg","Tim Burton"]
 print(namesList)
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>['Christopher Nolan', 'Denis Villeneuve', 'Francis Ford Coppola', 'James Cameron', 'Martin Scorsese', 'Quentin Tarantino', 'Ridley Scott', 'Stanley Kubrick', 'Steven Spielberg', 'Tim Burton']</code>
+</pre>
+</details>
 
 ### 2. สร้าง Set ของผลไม้ และแสดงผลทั้งหมด โดยใช้ Loop
 ###### Create a set of fruits and print all fruits using loop.
@@ -129,12 +177,29 @@ public class SetJava {
 }
 
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>banana
+apple 
+cherry</code>
+</pre>
+</details>
+
 #### • Python
 ```Python
 fruitsSet = {"apple", "banana", "cherry"}
 for f in fruitsSet:
     print(f)
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>banana
+cherry
+apple</code>
+</pre>
+</details>
 
 ### 3. สร้างโปรแกรมที่อ่าน List ของค่าใช้จ่าย โดยรับข้อมูลมาจากผู้ใช้ และแสดงผลรวมทั้งหมดออกมา
 ###### Create a program thats reads list of expenses amount using user input and print total.
@@ -209,6 +274,18 @@ int main()
     return 0;
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Enter rent expense : 5400
+Enter wage expense : 21000
+Enter maintenance expense : 5320
+Your rent expense : 5400
+Your wage expense : 21000
+Your maintenance expense : 5320
+Total expense : 31720</code>
+</pre>
+</details>
 
 #### • Java
 ```Java
@@ -242,6 +319,21 @@ public class ListExpenseJava {
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Enter rent expense : 
+5500
+Enter wage expense : 
+18900
+Enter maintenance expense : 
+4360
+Your rent expense : 5500       
+Your wage expense : 18900      
+Your maintenance expense : 4360
+Total expense : 28760</code>
+</pre>
+</details>
 
 #### • Python
 ```Python
@@ -262,6 +354,18 @@ print(f"Your maintenance expense : {list_expense[2]}")
 summary = sum(list_expense)
 print(f"Total expense : {summary}")
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Enter rent expense : 5000
+Enter wage expense : 16700
+Enter maintenance expense : 4590
+Your rent expense : 5000
+Your wage expense : 16700
+Your maintenance expense : 4590
+Total expense : 26290</code>
+</pre>
+</details>
 
 ### 4. สร้าง List ว่างชนิด String ให้มีชื่อว่า days ใช้เมทธอด add เพื่อเพิ่มชื่อของวัน 7 วันลงไป และแสดงผลวันทั้งหมด
 ###### Create an empty list of type string called days. Use the add method to add names of 7 days and print all days.
@@ -314,9 +418,19 @@ int main()
 
     return 0;
 }
-
-
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Sunday
+Monday
+Tueday
+Wednesday
+Thurday
+Friday
+Saturday</code>
+</pre>
+</details>
 
 #### • Java
 ```Java
@@ -338,6 +452,12 @@ public class ListDaysJava {
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>[Sunday, Monday, Tueday, Wednesday, Thurday, Friday, Saturday]</code>
+</pre>
+</details>
 
 #### • Python
 ```Python
@@ -352,6 +472,12 @@ list_days.append("Saturday")
 
 print(list_days)
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>['Sunday', 'Monday', 'Tueday', 'Wednesday', 'Thurday', 'Friday', 'Saturday']</code>
+</pre>
+</details>
 
 ### 5. เพิ่มชื่อเพื่อน 7 คนลงไปใน List ใช้ Where เพื่อหาชื่อเพื่อนที่ขึ้นต้นด้วยตัวอักษร A
 ###### Add your 7 friend names to the list. Use where to find a name that starts with alphabet A.
@@ -401,6 +527,13 @@ int main()
   return 0;
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Abhisit Vej
+Adam Lev</code>
+</pre>
+</details>
 
 #### • Java
 ```Java
@@ -427,6 +560,12 @@ public class ListWhereJava {
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>[Abhisit Vej, Adam Lev]</code>
+</pre>
+</details>
 
 #### • Python
 ```Python
@@ -438,6 +577,13 @@ for name in friend_names:
     if(name[0]=='A'): 
         print(name)
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Abhisit Vej
+Adam Lev</code>
+</pre>
+</details>
 
 ### 6. สร้าง Map ด้วย name, address, age, country เป็น keys และป้อนค่าเก็บไว้ อัพเดทชื่อประเทศลงบน country และแสดงผล Keys กับค่าทั้งหมด
 ###### Create a map with name, address, age, country keys and store values to it. Update country name to other country and print all keys and values.
@@ -496,6 +642,22 @@ int main()
 	return 0;
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Before :
+name: Sherlock Holmes     
+address: 221B Baker Street
+age: 35
+country: USA
+England
+After :
+name: Sherlock Holmes     
+address: 221B Baker Street
+age: 35
+country: England</code>
+</pre>
+</details>
 
 #### • Java
 ```Java
@@ -517,6 +679,13 @@ public class MapCountryJava {
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Before : {country=USA, address=221B Baker Street, name=Sherlock Holmes, age=35}
+After : {country=England, address=221B Baker Street, name=Sherlock Holmes, age=35}</code>
+</pre>
+</details>
 
 #### • Python
 ```Python
@@ -531,6 +700,13 @@ print(f"Before : {dict_country}")
 dict_country.update({"country": "England"})
 print(f"After : {dict_country}")
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Before : {'name': 'Sherlock Holmes', 'address': '221B Baker Street', 'age': 35, 'country': 'USA'}
+After : {'name': 'Sherlock Holmes', 'address': '221B Baker Street', 'age': 35, 'country': 'England'}</code>
+</pre>
+</details>
 
 ### 7. สร้าง Map ด้วย name, phone เป็น keys และทำการป้อนค่าไว้ ใช้ Where เพื่อหา keys ทั้งหมดที่มีความยาว 4 
 ###### Create a map with name, phone keys and store some values to it. Use where to find all keys that have length 4.
@@ -583,6 +759,13 @@ int main()
     return 0;
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>name
+date</code>
+</pre>
+</details>
 
 #### • Java
 ```Java
@@ -603,6 +786,13 @@ public class MapKey4Java {
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>date
+name</code>
+</pre>
+</details>
 
 #### • Python
 ```Python
@@ -616,6 +806,13 @@ for k in dict_citizen.keys():
     if(len(k)==4): 
         print(k)
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>name
+date</code>
+</pre>
+</details>
 
 ### 8. สร้าง simple to-do แอพพลิเคชั่น ที่อนุญาตให้ผู้ใช้ add, remove และ view task ได้
 ###### Create a simple to-do application that allows user to add, remove, and view their task.
@@ -750,11 +947,11 @@ int main()
             for(int i=0;i<count_list;i++){
                 if (strcmp(to_do_list[i],delete)==0)
                 {
-                    printf("delete\n");
                     for (int j=i;j<count_list;j++)
                     {
                         strcpy(to_do_list[j], to_do_list[j+1]);
-                    }   
+                    }
+                    continue; 
                 }
             }
             count_list--;
@@ -773,6 +970,73 @@ int main()
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Welcome to To-Do List
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+7
+PS E:\Code-Java\ProgrammingLanguage> cd "e:\Code-Java\ProgrammingLanguage\" ; if ($?) { gcc SimpleToDoListC.c -o SimpleToDoListC } ; if ($?) { .\SimpleToDoListC }
+Welcome to To-Do List 
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+1
+add task : work
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+1
+add task : run
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+1
+add task : swim
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+3
+view task :
+work
+run
+swim
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+2
+remove task : work
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+3
+view task :
+run
+swim
+Choose you want to do..
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+</code>
+</pre>
+</details>
 
 #### • Java
 ```Java
@@ -815,6 +1079,61 @@ public class SimpleToDoListJava {
     }
 }
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Welcome to To-Do List
+Choose you want to do..
+Press 1 : add To-Do List   
+Press 2 : remove To-Do List
+Press 3 : view task        
+Press other number to exit 
+1
+add task : work
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+1
+add task : eat
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+1
+add task : shop 
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+1
+add task : run
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+3
+view task : [work, eat, shop, run]
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+2
+remove task : 
+eat
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+3
+view task : [work, shop, run]
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+</code>
+</pre>
+</details>
 
 #### • Python
 ```Python
@@ -835,6 +1154,53 @@ while True:
     else :
         break
 ```
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>Welcome to To-Do List  
+Choose you want to do..
+Press 1 : add To-Do List    
+Press 2 : remove To-Do List 
+Press 3 : view task
+Press other number to exit  
+1
+add task : work
+Press 1 : add To-Do List    
+Press 2 : remove To-Do List 
+Press 3 : view task
+Press other number to exit  
+1
+add task : eat
+Press 1 : add To-Do List 
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+1
+add task : run
+Press 1 : add To-Do List 
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+3
+view task : ['work', 'eat', 'run']
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+2
+remove task : work
+Press 1 : add To-Do List 
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit
+3
+view task : ['eat', 'run']
+Press 1 : add To-Do List
+Press 2 : remove To-Do List
+Press 3 : view task
+Press other number to exit</code>
+</pre>
+</details>
 
 ## อ้างอิง
 >https://dart-tutorial.com/collections/

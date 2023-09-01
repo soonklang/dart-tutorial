@@ -138,14 +138,13 @@ Price: 20000
   <details>
   <summary><strong>Syntax</strong></summary>
   <pre>
-  <code>class A{
+  <code>
+class A{
 ...
 }
-
 class B extends A{
 ...
 }
-
 class C extends B{
 ...
 }</code>
@@ -250,3 +249,5 @@ https://blog.devgenius.io/object-oriented-programming-in-java-57202e7c0abd
 http://marcuscode.com/lang/python/inheritance
 
 https://www.educative.io/answers/what-is-single-level-inheritance-in-dart
+
+https://www.educative.io/answers/what-is-multi-level-inheritance-in-dart

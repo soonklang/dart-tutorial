@@ -165,6 +165,7 @@ Square height: 2
 Square width: 2
  ```
 ### ตัวอย่างการกำหนด Default Values ใน Constructor ในภาษา java
+- เป็นการกำหนดค่าลงไปใน Constructor โดยตรงเเละไม่มีพารามิเตอร์ใดๆ
  ```java
 public class MyClass {
    private int x;

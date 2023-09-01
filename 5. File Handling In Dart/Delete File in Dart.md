@@ -82,6 +82,8 @@ void main() {
 import 'dart:io' to use **deleteSync()** for Synchronously deletes this FileSystemEntity.
 and **existsSync()** for Synchronously checks whether the file system entity with this path exists.
 
+**!NOTE** Synchronously 
+
 ## Delete file in other language
 - # Java
 ## **delete()** and **deleteIfExists()** method 

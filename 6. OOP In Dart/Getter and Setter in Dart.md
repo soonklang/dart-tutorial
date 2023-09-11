@@ -12,8 +12,8 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
 
   ## *Content*
   - [Syntax](#syntax)
-  - [Example 1 : Basic Getter & Setter]((#example-1-;-basic-getter-&-setter))
-  - [Example 2 : Read-Only Property]((#example-2-;-read-only-property))
+  - [Example 1 : Basic Getter & Setter]((#example-1-basic-getter-&-setter))
+  - [Example 2 : Read-Only Property]((#example-2-read-only-property))
 
 ## *Syntax*
 เราสามารถเขียน Syntax ของ Getter ได้ดังนี้
@@ -38,7 +38,7 @@ set property_name (value) {
 set property_name(value_type value) => this.private_property = value;
 ```
 
-# *Example 1* : Basic Getter & Setter
+# *Example 1* Basic Getter & Setter
 ```dart
 class Circle {
   double radius;
@@ -62,7 +62,7 @@ void main() {
 }
 ```
 
-## *Example 2 :* Read-Only Property
+## *Example 2* Read-Only Property
 ```dart
 class Temperature {
   double _celsius;

@@ -98,23 +98,17 @@ class WriteOnlyProperty {
     _secretValue = newValue;
   }
   void setSecret(String newValue) {
-  //Assign new value
+  //Write-Only property
     _secret = newValue;
   }
 }
-```
-จากโค้ดนี้คือเราสามารถเปลี่ยนแปลงค่าที่เป็น Private property ได้แต่จะไม่สามารถอ่านค่าได้ว่าข้อมูลนั้นมีค่าเท่าไร
 
 void main() {
   var example = WriteOnlyProperty('initialSecret');
-
-  // You can't directly access the _secretValue outside the class
-  // print(example._secretValue); // This would result in an error
-
-  // Instead, use the public method to set the "write-only" property
   example.setSecret('newSecret');
 }
-
+```
+จากโค้ดนี้คือเราสามารถเปลี่ยนแปลงค่าที่เป็น Private property ได้แต่จะไม่สามารถอ่านค่าได้ว่าข้อมูลนั้นมีค่าเท่าไร
 
 ## *Example 3* Computed Property using Getter
 ในตัวอย่างต่อไปนี้แสดงถึงการคำนวณก่อนจะทำการบันทึกข้อมูล

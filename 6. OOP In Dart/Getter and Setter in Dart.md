@@ -12,7 +12,7 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
 
   ## *Content*
   - [Syntax](#syntax)
-  - [Example 1 : Basic Getter & Setter](#ex1)
+  - [Example 1 : Basic Getter & Setter](#example-1:-Basic-Getter-&-Setter)
   - [Example 2 : Read-Only Property](#ex2)
 
 ## *Syntax*
@@ -38,8 +38,8 @@ set property_name (value) {
 set property_name(value_type value) => this.private_property = value;
 ```
 
-## *Example 1* : Basic Getter & Setter
-## ex1
+# *Example 1* : Basic Getter & Setter
+# ex1
 ```dart
 class Circle {
   double radius;

@@ -12,16 +12,67 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
 
   ## *Content*
   - [Syntax](#syntax)
+  - [Example 1 : Basic Getter&Setter](#example-1-:-easic-getter&setter)
+  - [Example 2 : Read-Only Property](#example-2-:-read-only-property)
 
 ## *Syntax*
 เราสามารถเขียน Syntax ของ Getter ได้ดังนี้
 ```dart
-String get menu{
-  return food;
+return_type get property_name{
+  //Getter body
 }
 ```
 เราสามารถเขียนการเรียกใช้ Getter ให้กระชับยิ่งขึ้นโดยใช้เครื่องหมาย arrow syntax
 
 ```dart
-String get menu => food;
+return_type get property_name => value;
 ```
+ส่วน Syntax ของ Setter สามารถเขียนได้ดังนี้
+```dart
+set property_name (value) {
+  // Setter body
+}
+```
+เช่นเดียวกันกับ Getter เราสามารถทำให้โค้ดเราสั้นขึ้นโดยใช้ arrow syntax
+```dart
+set property_name(value_type value) => this.private_property = value;
+```
+
+## *Example 1 :* Basic Getter&Setter
+```dart
+class Circle {
+  double radius;
+
+  Circle(this.radius);
+
+  double get circumference => 2 * 3.1415 * radius;
+
+  set diameter(double value) {
+    radius = value / 2;
+  }
+}
+
+void main() {
+  var myCircle = Circle(5.0);
+  print("Radius: ${myCircle.radius}");
+  print("Circumference: ${myCircle.circumference}");
+
+  myCircle.diameter = 10.0;
+  print("New Radius: ${myCircle.radius}");
+}
+```
+## *Example 2 :* Read-Only Property
+class Temperature {
+  double _celsius;
+
+  Temperature(this._celsius);
+
+  double get celsius => _celsius;
+  double get fahrenheit => _celsius * 9 / 5 + 32;
+}
+
+void main() {
+  var temp = Temperature(25.0);
+  print("Celsius: ${temp.celsius}");
+  print("Fahrenheit: ${temp.fahrenheit}");
+}

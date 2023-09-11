@@ -1,19 +1,22 @@
 # *Getter and Setter in Dart*
 Getter และ Setter เป็นวิธีการเข้าถึงหรือเปลี่ยนแปลงคุณสมบัติ (Properties) ในวัตถุ(Object)นั้นๆ
 ในการเขียนภาษา Dart เราจะใช้คำว่า get กับ set เป็น Keywords ในการกำหนด Getter กับ Setter
-โดยที่ Getter ทำหน้าที่รับค่าของคุณสมบัติของวัตถุและทำหน้าที่เป็นตัวเข้าถึง ส่วน Setter มีหน้าที่แก้ไขค่าของคุณสมบัติในวัตถุและทำหน้าที่เป็นตัวปรับเปลี่ยนค่าของคุณสมบัตินั้น
+โดยที่ Getter ทำหน้าที่รับค่าคุณสมบัติของวัตถุและทำหน้าที่เป็นตัวเข้าถึง ส่วน Setter มีหน้าที่แก้ไขค่าของคุณสมบัติในวัตถุและทำหน้าที่เป็นตัวปรับเปลี่ยนค่าของคุณสมบัตินั้น
 
 
   # *ข้อดีของการใช้ Getter&Setter*
-  - สามารถตรวจสอบการข้อมูลก่อนจะทำการอ่านหรือเขียนข้อมูล
+  - สามารถตรวจสอบการส่งข้อมูลก่อนจะทำการอ่านหรือเขียนข้อมูล
   - จำกัดการอ่านและเขียนข้อมูลได้ทำให้ข้อมูลปลอดภัยมากยิ่งขึ้น
-  - สามารถสั่งให้ทำ action บางอย่างก่อนที่จะอ่านหรือเขียนข้อมูล เช่น การบันทึกข้อมูลเข้าสู่ระบบ
+  - สามารถทำให้โค้ดเป็นแบบ Read-Only หรือ Write-Only
+  - สามารถสั่งให้ทำ action บางอย่างก่อนที่จะอ่านหรือเขียนข้อมูล เช่น การคำนวณก่อนบันทึกข้อมูล
   
 
   ## *Content*
   - [Syntax](#syntax)
   - [Example 1 : Basic Getter & Setter](#example-1-basic-getter-and-setter)
-  - [Example 2 : Read-Only Property](#example-2-read-only-property)
+  - [Example 2 : Read-Only and Write-Only Property](#example-2-read-only-and-write-only-property)
+  - [Example 3 : Computed Property using Getter](example-3-computed-property-using-getter)
+  - [Example 4 : Getter and Setter with Validation](example-4-getter-and-setter-with-validation)
 
 ## *Syntax*
 เราสามารถเขียน Syntax ของ Getter ได้ดังนี้
@@ -38,44 +41,124 @@ set property_name (value) {
 set property_name(value_type value) => this.private_property = value;
 ```
 
-# *Example 1* Basic Getter and Setter
+## *Example 1* Basic Getter and Setter
+ในตัวอย่างต่อไปนี้จะแสดงถึงการเรียกใช้ Getter&Setter โดยทั่วไป
 ```dart
-class Circle {
-  double radius;
+class Person {
+  String _name = '';
 
-  Circle(this.radius);
+  String get name => _name;
 
-  double get circumference => 2 * 3.1415 * radius;
-
-  set diameter(double value) {
-    radius = value / 2;
+  set name(String value) {
+    if (value.isNotEmpty) {
+      _name = value;
+    }
   }
 }
 
 void main() {
-  var myCircle = Circle(5.0);
-  print("Radius: ${myCircle.radius}");
-  print("Circumference: ${myCircle.circumference}");
-
-  myCircle.diameter = 10.0;
-  print("New Radius: ${myCircle.radius}");
+  var person = Person();
+  person.name = 'John'; // Using the setter
+  print(person.name);   // Using the getter
 }
 ```
+ในกรณีนี้เราจะสามารถรับค่าและเปลี่ยนค่าตัวแปรที่เป็น private ได้
 
-## *Example 2* Read Only Property
+## *Example 2* Read Only and Write Only Property
+
+ในตัวอย่างต่อไปนี้จะแสดงถึงการเขียนโค้ดแบบ Read-Only
 ```dart
-class Temperature {
-  double _celsius;
+class Person {
+  String _name;
 
-  Temperature(this._celsius);
+  Person(this._name);
 
-  double get celsius => _celsius;
-  double get fahrenheit => _celsius * 9 / 5 + 32;
+  // Read-Only property
+  String get name => _name;
 }
 
 void main() {
-  var temp = Temperature(25.0);
-  print("Celsius: ${temp.celsius}");
-  print("Fahrenheit: ${temp.fahrenheit}");
+  var person = Person('Japon');
+
+  // Accessing read-only property
+  print('Name: ${person.name}');
 }
 ```
+ในกรณีนี้เราไม่สามารถเปลี่ยนข้อมูลในคลาส Person ได้เนื่องจากไม่มีการเขียน Setter ในนั้นทำให้สามารถอ่านข้อมูลได้อย่างเดียว
+
+ต่อไปเราจะมาพูดถึงการเขียนโค้ดแบบ Write-Only ซึ่งตรงข้ามกันกับกรณีด้านบน
+```dart
+class WriteOnlyProperty {
+  String _secretValue;
+
+  WriteOnlyProperty(this._secretValue);
+
+  // Write-Only property
+  void set _secret(String newValue) {
+    _secretValue = newValue;
+  }
+  void setSecret(String newValue) {
+  //Assign new value
+    _secret = newValue;
+  }
+}
+```
+จากโค้ดนี้คือเราสามารถเปลี่ยนแปลงค่าที่เป็น Private property ได้แต่จะไม่สามารถอ่านค่าได้ว่าข้อมูลนั้นมีค่าเท่าไร
+
+void main() {
+  var example = WriteOnlyProperty('initialSecret');
+
+  // You can't directly access the _secretValue outside the class
+  // print(example._secretValue); // This would result in an error
+
+  // Instead, use the public method to set the "write-only" property
+  example.setSecret('newSecret');
+}
+
+
+## *Example 3* Computed Property using Getter
+ในตัวอย่างต่อไปนี้แสดงถึงการคำนวณก่อนจะทำการบันทึกข้อมูล
+```dart
+class Rectangle {
+  double _length;
+  double _width;
+
+  Rectangle(this._length, this._width);
+
+  double get area => _length * _width; // Computed property using getter
+}
+
+void main() {
+  var myRectangle = Rectangle(5.0, 3.0);
+  print('Area: ${myRectangle.area}');
+}
+```
+จะเห็นได้ว่า Getter ได้ทำการคำนวณหาค่า Area ก่อนที่จะคืนค่ามาให้
+## *Example 4* Getter and Setter with Validation
+ในตัวอย่างนี้จะเป็นการตรวจสอบความถูกต้องของข้อมูลก่อนจะทำการบันทึกค่านั้นลงไป
+```dart
+class Student {
+  String _name;
+  int _age;
+
+  Student(this._name, this._age);
+
+  String get name => _name;
+  int get age => _age;
+
+  set age(int newAge) {
+    if (newAge >= 0 && newAge <= 100) {
+      _age = newAge;
+    } else {
+      print('Invalid Age');
+    }
+  }
+}
+
+void main() {
+  var student = Student('Son', 20);
+  print('Name: ${student.name}');
+  student.age = -10; 
+}
+```
+เราจะเห็นว่าหากอายุของนักเรียนติดลบหรือมากกว่า 100 ปีตัว Setter จะไม่ทำการบันทึกอายุลงไปแต่จะแจ้งผู้ใช้ว่ามีการใส่อายุผิด

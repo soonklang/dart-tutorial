@@ -167,7 +167,7 @@ void main() {
 ## *Comparison with Other Language*
 # Syntax for Other Languages
 * Getter&Setter in C++
-  ```c++
+  ```C++
       // Setter body
       void setPropertyName(type v) {
         value = v;
@@ -177,7 +177,7 @@ void main() {
         return value;
       }
   ```
-ในภาษา c++ จะใช้ method get กับ set ที่เป็น public ในการเข้่าถึงข้อมูลที่ Encapsulation ซึ่งจะเป็นการเก็บข้อมูลที่สำคัญไม่ให้ผู้ใช้สามารถแก้ไขได้และจะตั้งให้ตัวแปรนั้นเป็น private
+ในภาษา C++ จะใช้ method get กับ set ที่เป็น public ในการเข้่าถึงข้อมูลที่ Encapsulation ซึ่งจะเป็นการเก็บข้อมูลที่สำคัญไม่ให้ผู้ใช้สามารถแก้ไขได้และจะตั้งให้ตัวแปรนั้นเป็น private
 
 * java
 ```java
@@ -191,7 +191,7 @@ void main() {
     this.value = v;
   }
 ```
-เช่นเดียวกับภาษาอื่นๆการเข้าถึงข้อมูลที่เป็น Private ต้องใช้ method get และ setที่คล้ายกับภาษา C++
+เช่นเดียวกับภาษาอื่นๆการเข้าถึงข้อมูลที่เป็น Private จะใช้ method get และ set ที่เป็น Public ในการเข้าถึงค่า Private
 
 
   

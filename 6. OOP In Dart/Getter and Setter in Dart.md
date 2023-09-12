@@ -19,7 +19,7 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
   - [Example 4 : Getter and Setter with Validation](example-4-getter-and-setter-with-validation-in-dart)
 
   ## *Comparison with Other Language*
-  * [Syntax](#syntax-)
+  * [Syntax for Other Languages](#syntax-for-other-languages)
   * [Example](#example)
   * [Summary](#summary)
   
@@ -164,9 +164,73 @@ void main() {
 ```
 เราจะเห็นว่าหากอายุของนักเรียนติดลบหรือมากกว่า 100 ปีตัว Setter จะไม่ทำการบันทึกอายุลงไปแต่จะแจ้งผู้ใช้ว่ามีการใส่อายุผิด
 
-## Comparison with Other Language
-## Syntax 
+## *Comparison with Other Language*
+# Syntax for Other Languages
+* Getter&Setter in C++
+  ```c++
+      // Setter body
+      void setPropertyName(type v) {
+        value = v;
+     }
+      // Getter body
+      return_type getPropertyName() {
+        return value;
+      }
+```
+ในภาษา c++ จะใช้ method get กับ set ที่เป็น public ในการเข้่าถึงข้อมูลที่ Encapsulation ซึ่งจะเป็นการเก็บข้อมูลที่สำคัญไม่ให้ผู้ใช้สามารถแก้ไขได้และจะตั้งให้ตัวแปรนั้นเป็น private
+
+* java
+```java
+  // Getter  body
+  public return_type getPropertyName() {
+    return value;
+  }
+
+  // Setter body
+  public void setPropertyName(type v) {
+    this.value = v;
+  }
+```
+เช่นเดียวกับภาษาอื่นๆการเข้าถึงข้อมูลที่เป็น Private ต้องใช้ method get และ setที่คล้ายกับภาษา C++
+
+
+  
 ## Example
+* C++
+```C++
+#include <iostream>
+  using namespace std;
+
+  class bankAccount {
+    private:
+      int balance;
+
+  public:
+    // Setter body
+    void setBalance(int m) {
+      balance = m;
+   }
+      // Getter body
+      int getBalance() {
+        return balance;
+      }
+  };
+```
+* Java
+```java
+public class menu {
+  private String food;
+
+  // Getter
+  public String getFood() {
+    return food;
+  }
+  // Setter
+  public void setName(String newFood) {
+    this.food = newFood;
+  }
+}
+```
 ## Summary
 ## Reference
 https://www.researchgate.net/publication/339143252_JAVA_and_DART_programming_languages_conceptual_comparison

@@ -176,7 +176,7 @@ void main() {
       return_type getPropertyName() {
         return value;
       }
-```
+  ```
 ในภาษา c++ จะใช้ method get กับ set ที่เป็น public ในการเข้่าถึงข้อมูลที่ Encapsulation ซึ่งจะเป็นการเก็บข้อมูลที่สำคัญไม่ให้ผู้ใช้สามารถแก้ไขได้และจะตั้งให้ตัวแปรนั้นเป็น private
 
 * java

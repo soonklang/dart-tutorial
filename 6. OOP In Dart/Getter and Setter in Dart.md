@@ -12,7 +12,7 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
   
 
   ## *Content*
-  - [Syntax](#syntax)
+  - [Syntax in Dart](#syntax-in-dart)
   - [Example 1 : Basic Getter & Setter](#example-1-basic-getter-and-setter-in-dart)
   - [Example 2 : Read-Only and Write-Only Property](#example-2-read-only-and-write-only-property-in-dart)
   - [Example 3 : Computed Property using Getter](example-3-computed-property-using-getter-in-dart)
@@ -24,8 +24,8 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
   * [Summary](#summary)
   
 
-## *Syntax*
-เราสามารถเขียน Syntax ของ Getter ได้ดังนี้
+## *Syntax in Dart*
+เราสามารถเขียน Syntax ของ Getter ใน Dart ได้ดังนี้
 ```dart
 return_type get property_name{
   //Getter body
@@ -64,13 +64,11 @@ class Person {
 
 void main() {
   var person = Person();
-  person.name = 'John'; // Using the setter
+  person.name = 'Ham'; // Using the setter
   print(person.name);   // Using the getter
 }
 ```
 ในกรณีนี้เราจะสามารถรับค่าและเปลี่ยนค่าตัวแปรที่เป็น private ได้
-## Basic Getter and Setter in Other Language
-
 ## *Example 2* Read Only and Write Only Property in Dart
 
 ในตัวอย่างต่อไปนี้จะแสดงถึงการเขียนโค้ดแบบ Read-Only
@@ -191,7 +189,7 @@ void main() {
     this.value = v;
   }
 ```
-เช่นเดียวกับภาษาอื่นๆการเข้าถึงข้อมูลที่เป็น Private จะใช้ method get และ set ที่เป็น Public ในการเข้าถึงค่า Private
+เช่นเดียวกับภาษาอื่นๆการเข้าถึงข้อมูลที่เป็น Private จะใช้ method get และ set ที่เป็น Public ในการเข้าถึง Private property
 
 
   
@@ -231,6 +229,10 @@ public class menu {
   }
 }
 ```
+* Python
+  ```Python
+  
+  ```
 ## Summary
 ## Reference
 https://www.researchgate.net/publication/339143252_JAVA_and_DART_programming_languages_conceptual_comparison

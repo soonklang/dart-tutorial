@@ -156,3 +156,6 @@ void main() {
 }
 ```
 เราจะเห็นว่าหากอายุของนักเรียนติดลบหรือมากกว่า 100 ปีตัว Setter จะไม่ทำการบันทึกอายุลงไปแต่จะแจ้งผู้ใช้ว่ามีการใส่อายุผิด
+
+## Reference for Dart
+https://dart-tutorial.com/object-oriented-programming/getter-and-setter-in-dart/

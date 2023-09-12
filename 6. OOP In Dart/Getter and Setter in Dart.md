@@ -71,7 +71,7 @@ void main() {
 ในกรณีนี้เราจะสามารถรับค่าและเปลี่ยนค่าตัวแปรที่เป็น private ได้
 ## Basic Getter and Setter in Other Language
 
-## *Example 2* Read Only and Write Only Property
+## *Example 2* Read Only and Write Only Property in Dart
 
 ในตัวอย่างต่อไปนี้จะแสดงถึงการเขียนโค้ดแบบ Read-Only
 ```dart
@@ -117,7 +117,7 @@ void main() {
 ```
 จากโค้ดนี้คือเราสามารถเปลี่ยนแปลงค่าที่เป็น Private property ได้แต่จะไม่สามารถอ่านค่าได้ว่าข้อมูลนั้นมีค่าเท่าไร
 
-## *Example 3* Computed Property using Getter
+## *Example 3* Computed Property using Getter in Dart
 ในตัวอย่างต่อไปนี้แสดงถึงการคำนวณก่อนจะทำการบันทึกข้อมูล
 ```dart
 class Rectangle {
@@ -135,7 +135,7 @@ void main() {
 }
 ```
 จะเห็นได้ว่า Getter ได้ทำการคำนวณหาค่า Area ก่อนที่จะคืนค่ามาให้
-## *Example 4* Getter and Setter with Validation
+## *Example 4* Getter and Setter with Validation in Dart
 ในตัวอย่างนี้จะเป็นการตรวจสอบความถูกต้องของข้อมูลก่อนจะทำการบันทึกค่านั้นลงไป
 ```dart
 class Student {

@@ -17,12 +17,12 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
   - [Example 2 : Read-Only and Write-Only Property](#example-2-read-only-and-write-only-property-in-dart)
   - [Example 3 : Computed Property using Getter](example-3-computed-property-using-getter-in-dart)
   - [Example 4 : Getter and Setter with Validation](example-4-getter-and-setter-with-validation-in-dart)
-  - [Comparison with Other Language]
 
   ## *Comparison with Other Language*
-  -[Syntax](#syntax-)
+  -[Syntax](#syntax)
   -[Example][#example]
   -[Summary](#summary)
+  
 
 ## *Syntax*
 เราสามารถเขียน Syntax ของ Getter ได้ดังนี้

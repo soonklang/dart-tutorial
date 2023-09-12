@@ -175,7 +175,7 @@ void main() {
         return value;
       }
   ```
-ในภาษา C++ จะใช้ method get กับ set ที่เป็น public ในการเข้่าถึงข้อมูลที่ Encapsulation ซึ่งจะเป็นการเก็บข้อมูลที่สำคัญไม่ให้ผู้ใช้สามารถแก้ไขได้และจะตั้งให้ตัวแปรนั้นเป็น private
+ในภาษา C++ จะใช้ method get กับ set ที่เป็น public ในการเข้่าถึงข้อมูลที่ Encapsulation อยู่ซึ่งจะเป็นการเก็บข้อมูลที่สำคัญไม่ให้ผู้ใช้สามารถแก้ไขได้และจะตั้งให้ตัวแปรนั้นเป็น private
 
 * java
 ```java
@@ -189,7 +189,26 @@ void main() {
     this.value = v;
   }
 ```
-เช่นเดียวกับภาษาอื่นๆการเข้าถึงข้อมูลที่เป็น Private จะใช้ method get และ set ที่เป็น Public ในการเข้าถึง Private property
+เช่นเดียวกับภาษา C++ การเข้าถึงข้อมูลที่เป็น Private จะใช้ method get และ set ที่เป็น Public ในการเข้าถึง Private property
+ส่วนใหญ่จะนิยมเขียนกันในรูปแบบ get ตามด้วยชื่อของ property นั้นๆ
+
+* Python
+  ```Python
+  class Employee:
+    def __init__(self):
+        self._salary = 0  # Private attribute with an underscore prefix
+
+    # Getter method
+    @property
+    def salary(self):
+        return self._salary
+
+    # Setter method
+    @salary.setter
+    def salary(self, value):
+        if value >= 0:
+            self._salary = value
+  ```
 
 
   
@@ -229,15 +248,63 @@ public class menu {
   }
 }
 ```
+จะเห็นได้ว่า C++,Java,Dart มีการใช้ Getter และ Setter ที่ค่อนข้างคล้ายกันเนื่องจากภาษาข้างต้นนี้มีการออกแบบ Syntax ให้มีลักษณะคล้ายภาษา C
+แต่การใช้ Getter&Setter ใน Python จะมีลักษณะที่ต่างออกไป
+
 * Python
-  ```Python
+  ใน Python จะมีการใช้ Getter&Setter อยู่ 2 วิธีคือใช้ property() function หรือ @property decorator
   
+  1. ตัวอย่างการใช้ property()
+  ```Python
+  class MyClass:
+    def __init__(self):
+        self._my_variable = None  # Private attribute with an underscore prefix
+
+    # Getter method
+    def get_my_variable(self):
+        return self._my_variable
+
+    # Setter method
+    def set_my_variable(self, value):
+        self._my_variable = value
+
+    # Create a computed property
+    my_variable = property(get_my_variable, set_my_variable)
+
+# Create an instance of MyClass
+obj = MyClass()
+
+# Use the computed property
+obj.my_variable = 42
+print(obj.my_variable)  # Output: 42
+
   ```
+2. ตัวอย่างการใช้ decorator
+  ```Python
+    # Getter method
+    @property
+    def my_variable(self):
+        return self._my_variable
+
+    # Setter method
+    @my_variable.setter
+    def my_variable(self, value):
+        # Add process here for validation
+        self._my_variable = value
+
+  ```
+จากที่เห็นว่าการเขียนแบบ Decorator จะอ่านง่ายและเข้าใจง่ายมากกว่าการใช้ Function 
+และการส่วนใหญ่จะนิยมการเขียนแบบ Decorator มากกว่าเพราะเป็นการเขียนตาทสไตล์ภาษา Python (Pythonic way)
 ## Summary
+Getter กับ Setter ในภาษา C++,Java และ Dart มีหน้่าที่หลักคือการปกป้องข้อมูลส่วนที่ไม่ต้องการให้มีการดัดแปลง (ทั้งตัวเราหรือโดยคนอื่น) โดยจะจำกัดการเข้าถึง
+ได้ด้วยการเขียนโค้ดในลักษณะต่างๆทำให้โค้ดปลอดภัยมีความน่าเชื่อถือ และเราสามารถนำคุณสมบัติที่ว่านี้ไปประยุกต์ใช้ได้กับหลายๆวิธีเช่น[ตัวอย่าง](#content)ข้างบนที่กล่าวมา
+แต่ในภาษาอย่าง Python จะเน้นการใช้ประโยชน์ในด้่านการตรวจสอบข้อมูลหรือคำนวณมากกว่าเนื่องจาก Private variable ใน Python ไม่ได้ถูกซ่อนเหมือนภาษาที่มีการใช้ 
+oop ภาษาอื่น
 ## Reference
 https://www.researchgate.net/publication/339143252_JAVA_and_DART_programming_languages_conceptual_comparison
 https://www.researchgate.net/publication/358661479_AN_INTERPRETATION_OF_DART_PROGRAMMING_LANGUAGE
 https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/?ref=lbp
+https://www.geeksforgeeks.org/getter-and-setter-in-python/
 https://dart-tutorial.com/object-oriented-programming/getter-and-setter-in-dart/
 https://www.darttutorial.org/dart-tutorial/dart-getter-setter/
 https://www.w3schools.com/cpp/cpp_encapsulation.asp

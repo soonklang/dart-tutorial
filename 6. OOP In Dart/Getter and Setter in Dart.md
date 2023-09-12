@@ -17,7 +17,6 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
   - [Example 2 : Read-Only and Write-Only Property](#example-2-read-only-and-write-only-property-in-dart)
   - [Example 3 : Computed Property using Getter](example-3-computed-property-using-getter-in-dart)
   - [Example 4 : Getter and Setter with Validation](example-4-getter-and-setter-with-validation-in-dart)
-  - [Advantage of Dart](#advantage-of-dart)
 
   ## *Comparison with Other Language*
   * [Syntax for Other Languages](#syntax-for-other-languages)
@@ -164,7 +163,6 @@ void main() {
 ```
 เราจะเห็นว่าหากอายุของนักเรียนติดลบหรือมากกว่า 100 ปีตัว Setter จะไม่ทำการบันทึกอายุลงไปแต่จะแจ้งผู้ใช้ว่ามีการใส่อายุผิด
 
-## *Comparison with Other Language*
 # Syntax for Other Languages
 * Getter&Setter in C++
   ```C++
@@ -211,7 +209,7 @@ void main() {
         if value >= 0:
             self._salary = value
   ```
-
+Python จะมี Syntax ที่แตกต่างกับภาษาอื่นโดยจะมีการอธิบายอย่างละเอียดในตัวอย่างด้านล่าง
 
   
 ## Example
@@ -254,7 +252,8 @@ public class menu {
 แต่การใช้ Getter&Setter ใน Python จะมีลักษณะที่ต่างออกไป
 
 * Python
-  ใน Python จะมีการใช้ Getter&Setter อยู่ 2 วิธีคือใช้ property() function หรือ @property decorator
+  
+ใน Python จะมีการใช้ Getter&Setter อยู่ 2 วิธีคือใช้ property() function หรือ @property decorator
   
 1. ตัวอย่างการใช้ property()
   ```Python
@@ -327,3 +326,4 @@ https://www.geeksforgeeks.org/getter-and-setter-in-python/
 https://dart-tutorial.com/object-oriented-programming/getter-and-setter-in-dart/
 https://www.darttutorial.org/dart-tutorial/dart-getter-setter/
 https://www.w3schools.com/cpp/cpp_encapsulation.asp
+https://www.w3schools.com/java/java_encapsulation.asp

@@ -19,9 +19,9 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
   - [Example 4 : Getter and Setter with Validation](example-4-getter-and-setter-with-validation-in-dart)
 
   ## *Comparison with Other Language*
-  -[Syntax](#syntax)
-  -[Example][#example]
-  -[Summary](#summary)
+  * [Syntax](#syntax)
+  * [Example](#example)
+  * [Summary](#summary)
   
 
 ## *Syntax*
@@ -165,7 +165,8 @@ void main() {
 เราจะเห็นว่าหากอายุของนักเรียนติดลบหรือมากกว่า 100 ปีตัว Setter จะไม่ทำการบันทึกอายุลงไปแต่จะแจ้งผู้ใช้ว่ามีการใส่อายุผิด
 
 ## Comparison with Other Language
-
+## Example
+## Summary
 ## Reference
 https://www.researchgate.net/publication/339143252_JAVA_and_DART_programming_languages_conceptual_comparison
 https://www.researchgate.net/publication/358661479_AN_INTERPRETATION_OF_DART_PROGRAMMING_LANGUAGE

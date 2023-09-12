@@ -13,10 +13,16 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
 
   ## *Content*
   - [Syntax](#syntax)
-  - [Example 1 : Basic Getter & Setter](#example-1-basic-getter-and-setter)
-  - [Example 2 : Read-Only and Write-Only Property](#example-2-read-only-and-write-only-property)
-  - [Example 3 : Computed Property using Getter](example-3-computed-property-using-getter)
-  - [Example 4 : Getter and Setter with Validation](example-4-getter-and-setter-with-validation)
+  - [Example 1 : Basic Getter & Setter](#example-1-basic-getter-and-setter-in-dart)
+  - [Example 2 : Read-Only and Write-Only Property](#example-2-read-only-and-write-only-property-in-dart)
+  - [Example 3 : Computed Property using Getter](example-3-computed-property-using-getter-in-dart)
+  - [Example 4 : Getter and Setter with Validation](example-4-getter-and-setter-with-validation-in-dart)
+  - [Comparison with Other Language]
+
+  ## *Comparison with Other Language*
+  -[Syntax](#syntax-)
+  -[Example][#example]
+  -[Summary](#summary)
 
 ## *Syntax*
 เราสามารถเขียน Syntax ของ Getter ได้ดังนี้
@@ -41,7 +47,7 @@ set property_name (value) {
 set property_name(value_type value) => this.private_property = value;
 ```
 
-## *Example 1* Basic Getter and Setter
+## *Example 1* Basic Getter and Setter in Dart
 ในตัวอย่างต่อไปนี้จะแสดงถึงการเรียกใช้ Getter&Setter โดยทั่วไป
 ```dart
 class Person {
@@ -63,6 +69,7 @@ void main() {
 }
 ```
 ในกรณีนี้เราจะสามารถรับค่าและเปลี่ยนค่าตัวแปรที่เป็น private ได้
+## Basic Getter and Setter in Other Language
 
 ## *Example 2* Read Only and Write Only Property
 
@@ -157,5 +164,12 @@ void main() {
 ```
 เราจะเห็นว่าหากอายุของนักเรียนติดลบหรือมากกว่า 100 ปีตัว Setter จะไม่ทำการบันทึกอายุลงไปแต่จะแจ้งผู้ใช้ว่ามีการใส่อายุผิด
 
-## Reference for Dart
+## Comparison with Other Language
+
+## Reference
+https://www.researchgate.net/publication/339143252_JAVA_and_DART_programming_languages_conceptual_comparison
+https://www.researchgate.net/publication/358661479_AN_INTERPRETATION_OF_DART_PROGRAMMING_LANGUAGE
+https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/?ref=lbp
 https://dart-tutorial.com/object-oriented-programming/getter-and-setter-in-dart/
+https://www.darttutorial.org/dart-tutorial/dart-getter-setter/
+https://www.w3schools.com/cpp/cpp_encapsulation.asp

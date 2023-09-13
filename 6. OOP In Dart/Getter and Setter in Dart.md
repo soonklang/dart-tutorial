@@ -334,10 +334,19 @@ Getter กับ Setter ในภาษา C++,Java และ Dart มีหน�
 OOP ภาษาอื่นๆ
 ## Reference
 https://www.researchgate.net/publication/339143252_JAVA_and_DART_programming_languages_conceptual_comparison
+
 https://www.researchgate.net/publication/358661479_AN_INTERPRETATION_OF_DART_PROGRAMMING_LANGUAGE
+
 https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/?ref=lbp
+
 https://www.geeksforgeeks.org/getter-and-setter-in-python/
+
 https://dart-tutorial.com/object-oriented-programming/getter-and-setter-in-dart/
+
 https://www.darttutorial.org/dart-tutorial/dart-getter-setter/
+
 https://www.w3schools.com/cpp/cpp_encapsulation.asp
+
 https://www.w3schools.com/java/java_encapsulation.asp
+
+https://www.geeksforgeeks.org/getter-and-setter-in-python/

@@ -120,25 +120,21 @@ int? generateRandom() {
   int? randomValue = Random().nextInt(2);
 
   print("Random Number: $randomValue");
+  
   // กำหนดเอง
   if(randomValue == 1){
-    return 100;
+    return randomValue = 100;
   } else {
-    return 0;
+    return randomValue = null;
   }
-
-  //return randomValue >= 1 ? 100 : 0;
+  
+  //return randomValue ;
+  
 }
 void main() {
   int? status = generateRandom() ?? 0;
-  
- // print("Generated Status: $status");
    
-  if(status == 0){
-     print("Generated Status: null");
-  } else {
-     print("Generated Status: $status");
-  }
+  print("Generated Status: $status");
 }
 ```
 
@@ -148,7 +144,7 @@ Generated Status: 100
 ```
 ```bash
 Random Number: 0
-Generated Status: null
+Generated Status: 0  // return null จะถูกเปลี่ยนเป็น 0
 ```
 [Run code](https://dartpad.dev/?iex6)
 

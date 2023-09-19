@@ -29,16 +29,19 @@ void main(){
 สร้างตัวแปร name เป็นแบบ late variable ทำการ assign “US” ใส่ name แล้วปริ้นดู
 ```dart
 // late variable
-late String name;
+late String name,address;
 void main(){
   // assigning value to late variable
-  name = "US";
-  print(name);   // give 'US'
+  name = "Jame";
+  address = "Bangkok";
+  print("Name: $name");   
+  print("Address: $address");
 }
 ```
-// [Run code](https://dartpad.dev/?iex2)
 ```bash
- output: US
+ output:
+Name: Jame
+Address: Bangkok
 ```
 
 ## 3.How do you declare a nullable type in Dart null safety?

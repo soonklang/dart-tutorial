@@ -26,7 +26,7 @@ void main(){
 ```
 
 ## 2.Create a late variable named address, assign a US value to it and print it.
-สร้างตัวแปร name เป็นแบบ late variable ทำการ assign “US” ใส่ name แล้วปริ้นดู
+สร้างตัวแปร name address เป็นแบบ late variable ทำการ assign ค่า แล้วปริ้นดู
 ```dart
 // late variable
 late String name,address;

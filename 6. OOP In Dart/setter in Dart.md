@@ -125,7 +125,7 @@ print(raj._age)
 <br>
 [setter in C](https://stackoverflow.com/questions/27316233/getters-and-setters-in-pure-c)
 <br>
-[setter in Jaca](https://www.w3schools.com/java/java_encapsulation.asp)
+[setter in Java](https://www.w3schools.com/java/java_encapsulation.asp)
 <br>
 [setter in Python](https://www.geeksforgeeks.org/getter-and-setter-in-python/)
 <br>

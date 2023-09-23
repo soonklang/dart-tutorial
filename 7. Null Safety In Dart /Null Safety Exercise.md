@@ -421,9 +421,9 @@ Uncaught TypeError: Cannot read properties of null (reading 'toString')Error: Ty
 
 ## Exercise 7: Null Coalescing Operator (??)
 - หากคุณต้องการกำหนดค่า default ให้กับตัวแปรหากเป็น null คุณสามารถใช้ coalescing operator **'??'**
-ลองใช้ null coaslescing operator **'??'** เพื่อกำหนดค่า default **Stranger** หากเป็น null
+ลองใช้ null coaslescing operator **'??'** เพื่อกำหนดค่า default **name** หากเป็น null
 ```dart
-// Try to use null coalescing operator(??) to assign a default value to Stranger if it is null
+// Try to use null coalescing operator(??) to assign a default value to name if it is null
 void main() {
   String? name;
   name = null;

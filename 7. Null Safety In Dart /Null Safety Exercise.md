@@ -541,7 +541,8 @@ void main() {
 #### Correct Output
 ```
 The length of value is 5 or The value is not string.
-//ใน code นี้ เรากำหนดตัวแปร 'value' เพื่อจะสุ่มเก็บค่า String (true) หรือไม่ก็ null(false) ตอน random boolean แล้วเราจะ type promoted เป็น non-nullalbe type String ตรง  if(value is String)
+//ใน code นี้ เรากำหนดตัวแปร 'value' เพื่อจะสุ่มเก็บค่า String (true) หรือไม่ก็ null(false) ตอน random boolean
+แล้วเราจะ type promoted เป็น non-nullalbe type String ตรง  if(value is String)
 ถ้าสุ่มค่า 'value' เป็น null(false) จะแสดงผลลัพธ์ The value is not string. ถ้าเป็น String(true) ก็จะแสดง The length of value is 5
 ```
 </details>

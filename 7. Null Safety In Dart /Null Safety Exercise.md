@@ -1,4 +1,4 @@
-# Null Safety Exercises
+![image](https://github.com/soonklang/dart-tutorial/assets/141984088/307df72a-32eb-4781-bcbe-6a2e05b80da7)# Null Safety Exercises
 ฝึกฝนแบบฝึกหัดเหล่านี้เพื่อให้เกิดความเชี่ยวชาญใน **Dart Null Safety** เพื่อฝึกฝน คุณสามารถกดปุุ่ม **ลองทำแบบฝึกหัด** และลองแก้ปัญหา
 
 ## Exercise 1: Null Safety In Dart
@@ -456,7 +456,7 @@ Hello
 </details>
 
 ## Exercise 8: Type Promotion
-- แก้ไข error ด้วยการใช้ promotion
+- แก้ไข error ด้วยการใช้ promotion (general types to specific subtypes)
 ```dart
 // Try to solve the error using type promotion
 Object name = "Mark";
@@ -488,7 +488,7 @@ if(name is String){
 </details>
 
 ## Exercise 9: Type Promotion
-- แก้ไข error ด้วยการใช้ promotion
+- แก้ไข error ด้วยการใช้ promotion (nullable types to non-nullable types)
 ```dart
 // Try to solve the error using type promotion
 import 'dart:math';

@@ -1,4 +1,4 @@
-![image](https://github.com/soonklang/dart-tutorial/assets/141984088/307df72a-32eb-4781-bcbe-6a2e05b80da7)# Null Safety Exercises
+# Null Safety Exercises
 ฝึกฝนแบบฝึกหัดเหล่านี้เพื่อให้เกิดความเชี่ยวชาญใน **Dart Null Safety** เพื่อฝึกฝน คุณสามารถกดปุุ่ม **ลองทำแบบฝึกหัด** และลองแก้ปัญหา
 
 ## Exercise 1: Null Safety In Dart

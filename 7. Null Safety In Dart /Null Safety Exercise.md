@@ -183,7 +183,7 @@ a
 </details>
 
 
-## Exercise 4: Nullable Assertion Operator (!) For Generics
+## Exercise 4: Null Assertion Operator (!) For Generics
 - ลองใช้เครื่องหมายที่เป็นตัวยืนยันค่า null นั่นคือ **'!'** เพื่อแสดงค่า null หากตัวแปรมีค่าเป็น null
 ```dart
 // Try to use null assertion operator(!) to print null if the variable is null

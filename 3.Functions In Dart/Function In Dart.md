@@ -179,7 +179,7 @@ def add(num1, num2):
 def main():
     add(10, 20)
  ```
-## Function Paramaters Vs Arguments
+## Function Parameters Vs Arguments
 ```dart
 // ในที่นี้ num1 และ num2 คือ parameter
 void add(int num1, int num2){

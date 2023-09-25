@@ -72,7 +72,7 @@ def function_name(arguments):
  ```
 ส่วนใหญ่จะมี syntax ที่คล้ายๆกันแต่จะมีรายละเอียดยิบย่อยที่ต่างกันไปตามภาษา
 ## Keypoint ของ Function 
-- ใน Dart function ก็เป็น opject
+- ใน Dart function ก็เป็น object
 - ควรจะตั้งชื่อ function ตามกฎ lowerCamelCase
 - ควรจะตั้งชื่อ function parameter ตามกฎ lowerCamelCase
 ## อะไรคือ lowerCamelCase

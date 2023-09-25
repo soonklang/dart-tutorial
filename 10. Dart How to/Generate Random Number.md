@@ -110,7 +110,8 @@ import 'dart:math';
 void main() {
    Random r1 = new Random();
    print(r1.nextDouble()); 
-   print(r1.nextDouble()*256); 
+   print(r1.nextDouble()*256);
+   print((r1.nextDouble()*(256-250)+250));  
 }
 ```
 <details>
@@ -120,6 +121,7 @@ void main() {
 ```dart  
 0.6221115104341204
 176.945116547545
+253.53952131205276
 ```
 
 > เราจะเห็นได้ว่า method nextDouble() ถ้าเราไม่ * ค่าคงที่เข้าไปข้างหลังช่วงที่จะสุ่มได้จะเป็น [0.0 , 1.0)

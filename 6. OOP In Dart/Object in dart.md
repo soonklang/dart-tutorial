@@ -123,7 +123,7 @@ Audi Car Started.</code></pre>
 - method **main** คือจุดเริ่มต้นของโปรแกรม จึงจำเป็นต้องดูผลลัพธ์เสมอ  
 - keyword **new** สามารถใช้เพื่อสร้าง Object ใหม่ได้ แต่ไม่จำเป็น
 
-# Difference Between Dart , C , Java and Python
+# Difference Between Dart , Java and Python
 ## Dart
 ```dart
 // Defining class  

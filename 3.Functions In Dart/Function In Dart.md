@@ -194,7 +194,7 @@ void main(){
   add(10, 20);
 }
  ```
-- arguments คือสอ่งที่เป็นเหมือนข้อมูลเข้าให้กับ Function
+- arguments คือสิ่งที่เป็นเหมือนข้อมูลเข้าให้กับ Function
 - ในที่นี้ add(int num1, int num2), num1 และ num2 เป็น parameters และใน add(10, 20), 10 และ 20 คือ arguments.
 - Parameter คือชื่อและ data type ที่คุณอยากจะให้เป็นข้อมูลเข้าของ function.
 **ข้อควรจำ**

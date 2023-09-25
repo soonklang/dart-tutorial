@@ -62,7 +62,7 @@ returnType functionName(parameter1, parameter2, parameter3) {
   // code to be executed
 }
  ```
-- Phython
+- python
 ```python
 def function_name(arguments):
     # function body 

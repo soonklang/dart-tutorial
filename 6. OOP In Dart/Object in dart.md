@@ -128,15 +128,15 @@ Audi Car Started.</code></pre>
 ```dart
 // Defining class  
 class Student {  
-   String? stdName;  
-   int? stdAge;  
-   int? stdRoll_nu;  
+   String? name;  
+   int? age;  
+   int? rollNo;  
      
    // defining class function  
     showStdInfo() {  
-        print("Student Name is : ${stdName}");  
-        print("Student Age is : ${stdAge}");  
-        print("Student Roll Number is : ${stdRoll_nu}");  
+        print("Student Name is : ${name}");  
+        print("Student Age is : ${age}");  
+        print("Student Roll Number is : ${rollNo}");  
   
                }  
 }  
@@ -144,9 +144,9 @@ void main () {
   
   // Creating object called std  
   Student std = Student();  
-  std.stdName = "Peter";  
-  std.stdAge =24;  
-  std.stdRoll_nu = 90001;  
+  std.name = "Peter";  
+  std.age =24;  
+  std.rollNo = 90001;  
 // Accessing class Function  
  std.showStdInfo();  
 }  
@@ -189,15 +189,15 @@ Java และ Dart เป็นภาษาเชิงวัตถุ ดั�
 ```java
 // Defining class
 class Student {
-    String stdName;
-    int stdAge;
-    int stdRoll_nu;
+    String name;
+    int age;
+    int rollNo;
 
     // Defining class method
     void showStdInfo() {
-        System.out.println("Student Name is: " + stdName);
-        System.out.println("Student Age is: " + stdAge);
-        System.out.println("Student Roll Number is: " + stdRoll_nu);
+        System.out.println("Student Name is: " + name);
+        System.out.println("Student Age is: " + age);
+        System.out.println("Student Roll Number is: " + rollNo);
     }
 }
 
@@ -205,9 +205,9 @@ public class Main {
     public static void main(String[] args) {
         // Creating object called std
         Student std = new Student();
-        std.stdName = "Peter";
-        std.stdAge = 24;
-        std.stdRoll_nu = 90001;
+        std.name = "Peter";
+        std.age = 24;
+        std.rollNo = 90001;
         
         // Accessing class method
         std.showStdInfo();
@@ -228,20 +228,20 @@ Student Roll Number is: 90001</code></pre>
 ```python
 class Student:
     def __init__(self):
-        self.stdName = ""
-        self.stdAge = 0
-        self.stdRoll_nu = 0
+        self.name = ""
+        self.age = 0
+        self.rollNo = 0
     
     def showStdInfo(self):
-        print("Student Name is:", self.stdName)
-        print("Student Age is:", self.stdAge)
-        print("Student Roll Number is:", self.stdRoll_nu)
+        print("Student Name is:", self.name)
+        print("Student Age is:", self.age)
+        print("Student Roll Number is:", self.rollNo)
 
 # Creating object called std
 std = Student()
-std.stdName = "Peter"
-std.stdAge = 24
-std.stdRoll_nu = 90001
+std.name = "Peter"
+std.age = 24
+std.rollNo = 90001
 
 # Accessing class method
 std.showStdInfo()

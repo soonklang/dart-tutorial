@@ -158,47 +158,6 @@ Student Age is: 24
 Student Roll Number is: 90001</code></pre>
 </details>
 
-## C
-
-### Example
-ในภาษา C เราจะใช้**โครงสร้าง (struct)** ชื่อ Student เพื่อเก็บข้อมูลเหมือนกับคลาสใน Dart ในส่วนของการเข้าถึง**ฟังก์ชัน (method)** เราเปลี่ยนเป็นฟังก์ชันเรียกใช้งานโดยส่ง**โครงสร้าง (struct)** เป็น **Argument** และเราใช้**ฟังก์ชัน strcpy** เพื่อคัดลอกชื่อนักเรียนเข้าสู่ฟิลด์ stdName ใน struct.
-```c
-#include <stdio.h>
-#include <string.h>
-
-// Define a structure to represent Student
-struct Student {
-    char stdName[50];
-    int stdAge;
-    int stdRoll_nu;
-};
-
-// Define a function to display student information
-void showStdInfo(struct Student std) {
-    printf("Student Name is: %s\n", std.stdName);
-    printf("Student Age is: %d\n", std.stdAge);
-    printf("Student Roll Number is: %d\n", std.stdRoll_nu);
-}
-
-int main() {
-    // Create a structure variable named std
-    struct Student std;
-    strcpy(std.stdName, "Peter");
-    std.stdAge = 24;
-    std.stdRoll_nu = 90001;
-    
-    // Call the showStdInfo function to display student information
-    showStdInfo(std);
-    
-    return 0;
-}
-```
-<details>
-  <summary><strong>Output</strong></summary>
-  <pre><code>Student Name is: Peter
-Student Age is: 24
-Student Roll Number is: 90001</code></pre>
-</details>
 
 ## Java
 Object ใน Java เป็นพื้นฐานของการเขียนโปรแกรมเชิงวัตถุ Object จะสอดคล้องกับสิ่งต่าง ๆ ที่พบในโลกแห่งความเป็นจริง ตัวอย่างเช่น โปรแกรมกราฟิกอาจมีวัตถุเช่น **วงกลม** **สี่เหลี่ยม** และ **เมนู** ระบบช้อปปิ้งออนไลน์อาจมีวัตถุเช่น **ตะกร้าสินค้า** **ลูกค้า** และ **ผลิตภัณฑ์**  

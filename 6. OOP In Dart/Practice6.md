@@ -8,7 +8,7 @@ class Laptop {
   int id;
   String name;
   int ram;
-  // สร้าง 3 Object ใน Laptop
+  // สร้าง Class Laptop เเละ properties
   Laptop(this.id, this.name, this.ram);
 
   // print ข้อมูลใน Laptop
@@ -21,6 +21,7 @@ class Laptop {
 }
 
 void main() {
+  // สร้าง Object Laptop 3 อัน
   Laptop Asus = Laptop(1, 'Asus', 16);
   Laptop Lenovo = Laptop(2, 'Lenovo', 8);
   Laptop Acer = Laptop(3, 'Acer', 32);

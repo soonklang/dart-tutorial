@@ -27,4 +27,4 @@
 - [Factory Constructor in Dart (Part1)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Factory%20Constructor%20in%20Dart%20(factory).md)
 - [Factory Constructor in Dart (Part2)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/factory%20constructor%20in%20dart%20(singleton).md)
 - [Generics in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Generics%20in%20Dart.md)
-- Practice6
+- [Practice6](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Practice6.md)

@@ -371,8 +371,8 @@ Point(x=10,y=20)
 ```python
 class Point:
     def __init__(self, x, y):  # Constructor
-        self.x = x
-        self.y = y
+        self._x = x
+        self._y = y
 
     def show(self):
         print(f"Point(x={self.x}, y={self.y})")

@@ -315,7 +315,7 @@ public class Main {
 
       void main(){
         // Creating an object of the Staff class
-        Staff staff = new Staff("Alice", 1234567890 , "Math");
+        Staff staff = new Staff("John", 1234567890 , "Math");
         staff.display();
       }
 ```

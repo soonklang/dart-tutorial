@@ -197,7 +197,7 @@ Educative
 - Constructor ไม่มี return type
 - Constructor ถูกเรียกใช้เพียงครั้งเดียว ณ เวลาสร้าง Object
 - Constructor ถูกเรียกใช้งานอย่างอัตโนมัติ ณ เวลาสร้าง Object
-- Constructor ถูกใช้เพื่อน initialize ค่าของ Properties ของ Class
+- Constructor ถูกใช้เพื่อ initialize ค่าของ Properties ของ Class
 
 ## reference(s)
 - https://dart-tutorial.com

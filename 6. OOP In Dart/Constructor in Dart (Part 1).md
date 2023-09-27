@@ -335,12 +335,12 @@ Subject: Maths
 ```dart
 class Staff {
     String name;
-    String phone1;
-    String phone2;
+    int phone1;
+    int phone2;
     String subject;
 
     // Constructor
-    Staff(String name, String phone1, String subject) {
+    Staff(String name, int phone1, String subject) {
         this.name = name;
         this.phone1 = phone1;
         this.subject = subject;

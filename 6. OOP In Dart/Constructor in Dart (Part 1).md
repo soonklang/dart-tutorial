@@ -290,10 +290,10 @@ public class Main {
 ```dart
     //class Staff มีคุณสมบัติ 4 อย่างคือ name, phone1, phone2, และ subject.
     class Staff {
-    String name;
-    String phone1;
-    String phone2;
-    String subject;
+    String? name;
+    int? phone1;
+    int? phone2;
+    String? subject;
 
     // Constructor
     //มี constructor สำหรับclass Staff ที่รับพารามิเตอร์บางส่วน และกำหนดค่าเริ่มต้นให้กับคุณสมบัติต่าง ๆ ในclass

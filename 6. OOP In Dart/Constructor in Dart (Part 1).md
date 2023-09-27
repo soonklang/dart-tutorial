@@ -306,21 +306,18 @@ public class Main {
     // Method to display information
     //method display() ใช้สำหรับแสดงค่าของคุณสมบัติใน class.
     void display() {
-        System.out.println("Name: " + this.name);
-        System.out.println("Phone 1: " + this.phone1);
-        System.out.println("Phone 2: " + this.phone2);
-        System.out.println("Subject: " + this.subject);
+         print("Name: ${this.name}");
+         print("Phone1: ${this.phone1}");
+         print("Phone2: ${this.phone2}");
+         print("Subject: ${this.subject}");
     }
 }
 
-public class Main {
-    public static void main(String[] args) {
+      void main(){
         // Creating an object of the Staff class
-        //สร้าง Object 1 ตัวของ class Staff และเรียกใช้ method display() เพื่อแสดงข้อมูลของ Object.
         Staff staff = new Staff("Alice", 1234567890 , "Math");
         staff.display();
-    }
-}
+      }
 ```
 >output
 ```

@@ -297,7 +297,7 @@ public class Main {
 
     // Constructor
     //มี constructor สำหรับclass Staff ที่รับพารามิเตอร์บางส่วน และกำหนดค่าเริ่มต้นให้กับคุณสมบัติต่าง ๆ ในclass
-    Staff(String name, String phone1, String subject) {
+    Staff(String name, int phone1, String subject) {
         this.name = name;
         this.phone1 = phone1;
         this.subject = subject;

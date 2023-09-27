@@ -317,7 +317,7 @@ public class Main {
     public static void main(String[] args) {
         // Creating an object of the Staff class
         //สร้าง Object 1 ตัวของ class Staff และเรียกใช้ method display() เพื่อแสดงข้อมูลของ Object.
-        Staff staff = new Staff("Alice", "1234567890", "Math");
+        Staff staff = new Staff("Alice", 1234567890 , "Math");
         staff.display();
     }
 }
@@ -358,7 +358,7 @@ class Staff {
 public class Main {
     public static void main(String[] args) {
         // Creating an object of the Staff class
-        Staff staff = new Staff("Alice", "1234567890", "Math");
+        Staff staff = new Staff("Alice", 1234567890 , "Math");
         staff.display();
     }
 }

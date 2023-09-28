@@ -17,7 +17,7 @@
 - [Inheritance in Dart (Part1)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart.md)
 - [Inheritance in Dart (Part2)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart%20(ex3-end).md)
 - [Inheritance of Constructors in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20Of%20Constructor%20in%20Dart.md)
-- Super Keyword in Dart
+- [Super Keyword in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Super%20Keyword%20in%20Dart.md)
 - Polymorphism in Dart
 - [Static in Dart](https://github.com/soonklang/dart-tutorial/blob/90c17fee57f597b8416d6fe9babbcc3c54c74ebb/6.%20OOP%20In%20Dart/Static%20in%20Dart.md)
 - [Enum in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Enum%20in%20Dart.md)

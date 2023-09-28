@@ -5,27 +5,39 @@
 ### - Dart
  ```dart
 class Laptop {
-  int id;
-  String name;
-  int ram;
-  // สร้าง Class Laptop เเละ properties
-  Laptop(this.id, this.name, this.ram);
+  int? id;
+  String? name;
+  int? ram;
 
-  // print ข้อมูลใน Laptop
   void printDetails() {
     print('Laptop ID: $id');
     print('Laptop Name: $name');
-    print('Laptop Ram: $ram');
+    print('Laptop RAM: $ram');
     print("");
+    
   }
 }
 
 void main() {
-  // สร้าง Object Laptop 3 อัน
-  Laptop Asus = Laptop(1, 'Asus', 16);
-  Laptop Lenovo = Laptop(2, 'Lenovo', 8);
-  Laptop Acer = Laptop(3, 'Acer', 32);
+  // สร้าง 3 objects ของ Class Laptop
+  Laptop Asus = Laptop();
+  Laptop Lenovo = Laptop();
+  Laptop Acer = Laptop();
 
+  // Set the properties ของ Laptop objects
+  Asus.id = 1;
+  Asus.name = 'Asus';
+  Asus.ram = 8;
+
+  Lenovo.id = 2;
+  Lenovo.name = 'Lenovo';
+  Lenovo.ram = 16;
+
+  Acer.id = 3;
+  Acer.name = 'Acer';
+  Acer.ram = 32;
+
+  // Print the details.
   Asus.printDetails();
   Lenovo.printDetails();
   Acer.printDetails();
@@ -37,46 +49,58 @@ void main() {
 <pre>
 <code>Laptop ID: 1
 Laptop Name: Asus
-Laptop Ram: 16
+Laptop RAM: 8
 </n>
 Laptop ID: 2
 Laptop Name: Lenovo
-Laptop Ram: 8
+Laptop RAM: 16
 </n>
 Laptop ID: 2
-Laptop Name: Lenovo
-Laptop Ram: 8</code>
+Laptop Name: Acer
+Laptop RAM: 32</code>
 </pre>
 </details>
 
-### - C
-```c
-#include <stdio.h>
-#include <string.h>
+### - Java
+```java
+class Laptop {
+    public Integer id;
+    public String name;
+    public Integer ram;
 
-struct Laptop {
-    int id;
-    char name[50];
-    int ram;
-};
 
-void printLaptopDetails(struct Laptop laptop) {
-    printf("Laptop Id: %d\n", laptop.id);
-    printf("Laptop Name: %s\n", laptop.name);
-    printf("Laptop Ram: %d GB\n", laptop.ram);
-    printf("\n");
+    public void printDetails() {
+        System.out.println("Laptop ID: " + id);
+        System.out.println("Laptop Name: " + name);
+        System.out.println("Laptop RAM: " + ram);
+        System.out.println("");
+    }
 }
 
-int main() {
-    struct Laptop laptop1 = {1, "Asus", 16};
-    struct Laptop laptop2 = {2, "Lenovo", 8};
-    struct Laptop laptop3 = {3, "Acer", 32};
+public class Main {
+    public static void main(String[] args) {
+        Laptop Asus = new Laptop();
+        Laptop Lenovo = new Laptop();
+        Laptop Acer = new Laptop();
 
-    printLaptopDetails(laptop1);
-    printLaptopDetails(laptop2);
-    printLaptopDetails(laptop3);
+        Asus.id = 1;
+        Asus.name = "Asus";
+        Asus.ram = 8;
 
-    return 0;
+        Lenovo.id = 2;
+        Lenovo.name = "Lenovo";
+        Lenovo.ram = 16;
+
+        Acer.id = 3;
+        Acer.name = "Acer";
+        Acer.ram = 32;
+
+        Asus.printDetails();
+        Lenovo.printDetails();
+        Acer.printDetails();
+    }
+}
+
 }
 
    ```
@@ -129,39 +153,6 @@ House Price: 400000.0</code>
 </pre>
 </details>
 
-### - C
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-struct House {
-    int id;
-    char name[50];
-    double price;
-};
-
-int main() {
-    struct House houses[3];
-
-    struct House house_1 = {1, "House A", 200000.0};
-    struct House house_2 = {2, "House B", 300000.0};
-    struct House house_3 = {3, "House C", 400000.0};
-
-    houses[0] = house_1;
-    houses[1] = house_2;
-    houses[2] = house_3;
-
-    for (int i = 0; i < 3; i++) {
-        printf("House ID: %d\n", houses[i].id);
-        printf("House Name: %s\n", houses[i].name);
-        printf("House Price: $%.2f\n", houses[i].price);
-        printf("\n");
-    }
-
-    return 0;
-}
-
-   ```
 ### - Java
 ```java
 class House {
@@ -315,36 +306,6 @@ Cat sound: Meow</code>
 </pre>
 </details>
 
-### - C
-```c
-#include <stdio.h>
-#include <string.h>
-
-// Animal structure
-struct Animal {
-    int id;
-    char name[50];
-    char color[20];
-};
-
-// Cat inheriting from Animal
-struct Cat {
-    struct Animal animal;
-    char sound[20];
-};
-
-int main() {
-    struct Cat cat = {{1, "mali", "Gray"}, "Meow"};
-
-    printf("Cat ID: %d\n", cat.animal.id);
-    printf("Cat Name: %s\n", cat.animal.name);
-    printf("Cat Color: %s\n", cat.animal.color);
-    printf("Cat Sound: %s\n", cat.sound);
-
-    return 0;
-}
-
-   ```
 ### - Java
 ```java
 class Animal {
@@ -385,140 +346,138 @@ public class Main {
 ### - Dart
  ```dart
 class Camera {
-  int _id;
-  String _brand;
-  String _color;
-  double _price;
+ int? _id;
+ String? _brand;
+ String? _color;
+ double? _price;
 
-  Camera(this._id, this._brand, this._color, this._price);
-  // Create a getter and setter to get and set values
-  int get id => _id;
-  String get brand => _brand;
-  String get color => _color;
-  double get price => _price;
+ // สร้าง getter and setter to get and set values
+ int get id => this._id!;
+ String get brand => this._brand!;
+ String get color => this._color!;
+ double get price => this._price!;
 
-  set id(int value) {
-    _id = value;
-  }
+ set id(int value) => this._id = value;
 
-  set brand(String value) {
-    _brand = value;
-  }
+ set brand(String value) => this._brand = value;
 
-  set color(String value) {
-    _color = value;
-  }
+ set color(String value) => this._color = value;
 
-  set price(double value) {
-    _price = value;
-  }
+ set price(double value) => this._price = value;
 }
 
 void main() {
-  Camera camera1 = Camera(1, "Sony", "Black", 500.0);
-  Camera camera2 = Camera(2, "Canon", "Silver", 600.0);
-  Camera camera3 = Camera(3, "Nikon", "Red", 550.0);
+ Camera camera1 = new Camera();
+ Camera camera2 = new Camera();
+ Camera camera3 = new Camera();
+  camera1.id = 1;
+  camera2.id = 2;
+  camera3.id = 3;
+  camera1.brand = "Canon";
+  camera2.brand = "Sony";
+  camera3.brand = "Nikon";
+  camera1.color = "Black";
+  camera2.color = "While";
+  camera3.color = "Silver";
+  camera1.price = 500.0;
+  camera2.price = 600.0;
+  camera3.price = 700.0;
 
-  print("Camera 1 - ID: ${camera1.id}, Brand: ${camera1.brand}, Color: ${camera1.color}, Price: ${camera1.price}");
-  print("Camera 2 - ID: ${camera2.id}, Brand: ${camera2.brand}, Color: ${camera2.color}, Price: ${camera2.price}");
-  print("Camera 3 - ID: ${camera3.id}, Brand: ${camera3.brand}, Color: ${camera3.color}, Price: ${camera3.price}");
-}
+ print("Camera 1 - ID: ${camera1.id}, Brand: ${camera1.brand}, Color: ${camera1.color}, Price: ${camera1.price}");
+ print("Camera 2 - ID: ${camera2.id}, Brand: ${camera2.brand}, Color: ${camera2.color}, Price: ${camera2.price}");
+ print("Camera 3 - ID: ${camera3.id}, Brand: ${camera3.brand}, Color: ${camera3.color}, Price: ${camera3.price}");
+  }
    ```
 <details>
 <summary><strong>Output</strong></summary>
 <pre>
-<code>Camera 1 - ID: 1, Brand: Sony, Color: Black, Price: 500.0
-Camera 2 - ID: 2, Brand: Canon, Color: Silver, Price: 600.0
-Camera 3 - ID: 3, Brand: Nikon, Color: Red, Price: 550.0</code>
+<code>Camera 1 - ID: 1, Brand: Canon, Color: Black, Price: 500
+Camera 2 - ID: 2, Brand: Sony, Color: While, Price: 600
+Camera 3 - ID: 3, Brand: Nikon, Color: Silver, Price: 700</code>
 </pre>
 </details>
 
-### - C
-```c
-#include <stdio.h>
-#include <string.h>
-
-struct Camera {
-    int id;
-    char brand[50];
-    char color[20];
-    double price;
-};
-
-int main() {
-    struct Camera camera1 = {1, "Sony", "Black", 500.0};
-    struct Camera camera2 = {2, "Canon", "Silver", 600.0};
-    struct Camera camera3 = {3, "Nikon", "Red", 550.0};
-
-    printf("Camera Details:\n");
-    printf("Camera 1 - ID: %d, Brand: %s, Color: %s, Price: $%.2f\n", camera1.id, camera1.brand, camera1.color, camera1.price);
-    printf("Camera 2 - ID: %d, Brand: %s, Color: %s, Price: $%.2f\n", camera2.id, camera2.brand, camera2.color, camera2.price);
-    printf("Camera 3 - ID: %d, Brand: %s, Color: %s, Price: $%.2f\n", camera3.id, camera3.brand, camera3.color, camera3.price);
-
-    return 0;
-}
-
-   ```
 ### - Java
 ```java
 class Camera {
-    int id;
-    String brand;
-    String color;
-    double price;
+    public Integer id;
+    public String brand;
+    public String color;
+    public Double price;
 
-    public Camera(int id, String brand, String color, double price) {
-        this.id = id;
-        this.brand = brand;
-        this.color = color;
-        this.price = price;
+    // Constructor
+    public Camera() {
+        this.id = null;
+        this.brand = null;
+        this.color = null;
+        this.price = null;
     }
-    //สร้าง method เพื่อให้สามารถเข้าถีงเเต่ละวัตถุได้
-    public int getId() {
+
+    // Getters and setters
+    public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getBrand() {
         return brand;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public String getColor() {
+        return color;
     }
 
     public void setColor(String color) {
         this.color = color;
     }
 
-    public void setPrice(double price) {
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
         this.price = price;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Camera camera1 = new Camera(1, "Sony", "Black", 500.0);
-        Camera camera2 = new Camera(2, "Canon", "Silver", 600.0);
-        Camera camera3 = new Camera(3, "Nikon", "Red", 550.0);
+        Camera camera1 = new Camera();
+        Camera camera2 = new Camera();
+        Camera camera3 = new Camera();
 
-        System.out.println("Camera Details:");
-        System.out.println("Camera 1 - ID: " + camera1.getId() + ", Brand: " + camera1.getBrand() + ", Color: " + camera1.getColor() + ", Price: " + camera1.getPrice());
-        System.out.println("Camera 2 - ID: " + camera2.getId() + ", Brand: " + camera2.getBrand() + ", Color: " + camera2.getColor() + ", Price: " + camera2.getPrice());
-        System.out.println("Camera 3 - ID: " + camera3.getId() + ", Brand: " + camera3.getBrand() + ", Color: " + camera3.getColor() + ", Price: " + camera3.getPrice());
+        camera1.setId(1);
+        camera2.setId(2);
+        camera3.setId(3);
+
+        camera1.setBrand("Canon");
+        camera2.setBrand("Sony");
+        camera3.setBrand("Nikon");
+
+        camera1.setColor("Black");
+        camera2.setColor("White");
+        camera3.setColor("Silver");
+
+        camera1.setPrice(500.0);
+        camera2.setPrice(600.0);
+        camera3.setPrice(700.0);
+
+        System.out.println("Camera 1 - ID: " + camera1.getId() + ", Brand: " + camera1.getBrand() +
+                ", Color: " + camera1.getColor() + ", Price: " + camera1.getPrice());
+        System.out.println("Camera 2 - ID: " + camera2.getId() + ", Brand: " + camera2.getBrand() +
+                ", Color: " + camera2.getColor() + ", Price: " + camera2.getPrice());
+        System.out.println("Camera 3 - ID: " + camera3.getId() + ", Brand: " + camera3.getBrand() +
+                ", Color: " + camera3.getColor() + ", Price: " + camera3.getPrice());
     }
 }
+
 
    ```
 

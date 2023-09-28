@@ -131,22 +131,21 @@ import 'dart:async';
 Future<String> fetchData(String id) {
   return Future.delayed(Duration(seconds: 2), () => 'Data for ID $id');
 }
-void main() {
-  final List<Future<String>> futures = [];
-  for (int i = 1; i <= 5; i++) {
+void main() async {
+  final futures = <Future<String>>[];
+  for (var i = 1; i <= 5; i++) {
     final future = fetchData(i.toString());
     futures.add(future);
   }
-  Future.wait(futures)
-      .then((List<String> results) {
-        print('All operations completed:');
-        for (int i = 0; i < results.length; i++) {
-          print('Result for operation ${i + 1}: ${results[i]}');
-        }
-      })
-      .catchError((error) {
-        print('An error occurred: $error');
-      });
+  try {
+    final results = await Future.wait(futures);
+    print('All operations completed:');
+    results.asMap().forEach((index, value) {
+      print('Result for operation ${index + 1}: $value');
+    });
+  } catch (error) {
+    print('An error occurred: $error');
+  }
 }
 ~~~
 - Python

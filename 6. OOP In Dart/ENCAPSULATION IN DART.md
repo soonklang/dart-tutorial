@@ -62,30 +62,6 @@ Name: John
 
 คุณสมบัติส่วนตัวคือคุณสมบัติที่สามารถเข้าถึงได้เฉพาะจากไลบรารีเดียวกันเท่านั้น ใน Dart ไม่มีคำสำคัญเฉพาะเจาะจงเพื่อกำหนดคุณสมบัติเป็นส่วนตัว แต่เราสามารถกำหนดให้คุณสมบัติเป็นส่วนตัวได้โดยการเติมขีดล่าง (_) นำหน้าชื่อคุณสมบัติ
 
-**ตัวอย่าง:**
-
-```dart
-class Student {
-  final _schoolname = "ABC School";
-
-  String getSchoolName() {
-    return _schoolname;
-  }
-}
-
-void main() {
-  var student = Student();
-  print(student.getSchoolName());
-  // การทำแบบนี้ไม่เป็นไปได้
-  //student._schoolname = "XYZ School";
-}
-```
-
-**ผลลัพธ์:**
-```
-ABC School
-```
-
 ### สรุป Private Properties ใน Dart:
 
 Properties ที่เริ่มต้นด้วยขีดล่าง (_) ใน Dart ถือว่าเป็น "private" หรือ "ส่วนตัว". นั่นหมายความว่า properties นั้นสามารถเข้าถึงได้เฉพาะภายในไลบรารี (library) ที่ประกาศ properties นั้น, แต่ไม่สามารถเข้าถึงจากไลบรารีอื่นได้.

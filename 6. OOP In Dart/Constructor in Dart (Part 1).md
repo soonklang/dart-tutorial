@@ -374,6 +374,9 @@ public class Main {
 - https://drive.google.com/file/d/17YLoOmr7QfNonxh__3capLUcGWDJWHcJ/view?usp=sharing
 
 ## Silde นำเสนอ
-- [Constructor in Dart Part 1.pptx](https://github.com/soonklang/dart-tutorial/files/12751821/Constructor.in.Dart.Part.1.pptx)
+- [Constructor in Dart Part 1.pptx](https://github.com/soonklang/dart-tutorial/files/12751849/Constructor.in.Dart.Part.1.pptx)
+- [Constructor in Dart Part 1.pdf](https://github.com/soonklang/dart-tutorial/files/12751850/Constructor.in.Dart.Part.1.pdf)
+
+
 
 

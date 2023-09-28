@@ -369,3 +369,11 @@ public class Main {
 - https://dart-tutorial.com
 - https://dart.dev
 - https://www.tutorialspoint.com
+
+## Link Video
+- https://drive.google.com/file/d/17YLoOmr7QfNonxh__3capLUcGWDJWHcJ/view?usp=sharing
+
+## Silde นำเสนอ
+- [Constructor in Dart Part 1.pptx](https://github.com/soonklang/dart-tutorial/files/12751821/Constructor.in.Dart.Part.1.pptx)
+
+

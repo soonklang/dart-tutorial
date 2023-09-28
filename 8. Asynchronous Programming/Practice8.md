@@ -357,102 +357,61 @@ if __name__ == '__main__':
 - Dart
 ~~~ dart
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
-void main() {
-  print('Enter a list of integers separated by spaces:');
-  String input = stdin.readLineSync()!;
-  List<int> inputList = input.split(' ').map((e) => int.parse(e)).toList();
-  multiplyAndPrint(inputList);
-}
-Future<void> multiplyAndPrint(List<int> numbers) async {
-  List<Future<int>> futures = [];
-  for (int number in numbers) {
-    Future<int> future = multiplyAsync(number);
-    futures.add(future);
+Future<void> main() async {
+  final numbers = <int>[];
+  int input;
+  while (true) {
+    stdout.write('Enter an integer (Enter -1 to finish): ');
+    input = int.tryParse(stdin.readLineSync());
+    if (input == -1) break;
+    numbers.add(input);
   }
-  List<int> modifiedList = await Future.wait(futures);
-  print('$modifiedList');
-}
-Future<int> multiplyAsync(int number) async {
-  await Future.delayed(Duration(seconds: 2));
-  return number * 2;
-}
-~~~
-- Java
-~~~ java
-import java.util.Scanner;
-import java.util.concurrent.CompletableFuture;
-public class Main {
-    public static CompletableFuture<String> readLineAsync(Scanner scanner) {
-        CompletableFuture<String> future = new CompletableFuture<>();
-        new Thread(() -> {
-            String input = scanner.nextLine();
-            future.complete(input);
-        }).start();
-        return future;
-    }
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a list of integers separated by spaces: ");
-        CompletableFuture<String> inputFuture = readLineAsync(scanner);
-        inputFuture.thenAcceptAsync(input -> {
-            String[] inputArray = input.split(" ");
-            int[] numbers = new int[inputArray.length];
-            for (int i = 0; i < inputArray.length; i++) {
-                numbers[i] = Integer.parseInt(inputArray[i]);
-            }
-            multiplyAndPrint(numbers);
-        });
-        try {
-            // รอให้การอ่านข้อมูลเสร็จสิ้น
-            inputFuture.get();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        scanner.close();
-    }
-    public static void multiplyAndPrint(int[] numbers) {
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] *= 2;
-        }
-        System.out.print("[");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i]);
-            if (i < numbers.length - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
-    }
+  Future<int> multiplyByTwo(int number) async {
+    await Future.delayed(Duration(seconds: 1));
+    return number * 2;
+  }
+  final results = await Future.wait(numbers.map((number) async {
+    final result = await multiplyByTwo(number);
+    return result;
+  }));
+  print('Modified list: $results');
 }
 ~~~
 - Python
 ~~~ python
 import asyncio
-async def read_line_async():
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, input)
 async def main():
-    try:
-        input_str = await read_line_async()
-        input_list = list(map(int, input_str.split()))
-        await multiply_and_print(input_list)
-    except Exception as e:
-        print(f'Error: {e}')
-async def multiply_and_print(numbers):
-    await asyncio.gather(*[multiply_async(number) for number in numbers])
-async def multiply_async(number):
-    await asyncio.sleep(2)  # รอ 2 วินาที
-    result = number * 2
-    print(result, end=', ')
-if __name__ == '__main__':
+    numbers = []
+    while True:
+        try:
+            input_str = input('Enter an integer (Enter -1 to finish): ')
+            input_num = int(input_str)
+            if input_num == -1:
+                break
+            numbers.append(input_num)
+        except ValueError:
+            print('Pls int')
+    async def multiply_by_two(number):
+        await asyncio.sleep(1)
+        return number * 2
+    tasks = [multiply_by_two(number) for number in numbers]
+    results = await asyncio.gather(*tasks)
+    print(f'Modified list: {results}')
+if __name__ == "__main__":
     asyncio.run(main())
+
 ~~~
-- Input 1 2 3 4 5
+- Input 1 2 3 4 5 -1
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>[2,4,6,8,10]
+  <pre><code>Enter an integer (Enter -1 to finish): 1
+Enter an integer (Enter -1 to finish): 2
+Enter an integer (Enter -1 to finish): 3
+Enter an integer (Enter -1 to finish): 4
+Enter an integer (Enter -1 to finish): 5
+Modified list: [2, 4, 6, 8, 10]
+
 </code></pre>
 </details>
 

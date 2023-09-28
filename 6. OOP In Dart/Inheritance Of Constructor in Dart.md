@@ -740,7 +740,7 @@ __คำอธิบายโค้ด__
 </details>
 
 # Silde นำเสนอ
-- [Inheritance Of Constructor.pdf](https://github.com/soonklang/dart-tutorial/files/12751849/Constructor.in.Dart.Part.1.pptx)
+- [Inheritance Of Constructor.pdf]()
 
 # Link Video
 - https://youtu.be/pPnw_07POx0

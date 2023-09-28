@@ -4,7 +4,7 @@
 - [Class in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20in%20Dart.md)
 - [Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Object%20in%20dart.md)
 - [Class and Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Class%20and%20Objects%20in%20Dart.md)
-- Constructor in Dart (Part1)
+- [Constructor in Dart (Part1)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Constructor%20in%20Dart%20(Part%201).md)
 - [Constructor in Dart (Part2)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Constructor%20in%20Dart%20(Part%202).md)
 - [Default Constructor in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Default%20Constructor%20in%20Dart.md)
 - [Parameterized Constructor in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Parameterized%20Constructor%20in%20Dart.md)

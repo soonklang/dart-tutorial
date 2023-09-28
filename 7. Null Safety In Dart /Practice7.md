@@ -165,6 +165,12 @@ Generated Status: 0  // return null จะถูกเปลี่ยนเป�
 
 - ChatGPT
 
+## Link Video
+
+https://youtu.be/Pi0YifTRdm8
+
+
+
 ```bash
 640710553 นาย ภานุวัฒน์ เจนภพ CS
 ```

@@ -514,4 +514,4 @@ https://docs.python.org/3/library/asyncio.html
 https://docs.oracle.com/cd/E26502_01/html/E35303/tlib-1.html
 
 ## Video
-[Future in Dart]([https://github.com/soonklang/dart-tutorial/blob/main/8.%20Asynchronous%20Programming/Future%20in%20Dart.md](https://youtu.be/AB3Ft04H6e0?si=WBOllNT2BylqR1Qd)https://youtu.be/AB3Ft04H6e0?si=WBOllNT2BylqR1Qd)
+[Future in Dart](https://youtu.be/AB3Ft04H6e0?si=WBOllNT2BylqR1Qd)

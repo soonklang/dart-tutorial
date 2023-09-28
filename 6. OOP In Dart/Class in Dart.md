@@ -167,6 +167,6 @@ https://youtu.be/mZNdXMa__nI
 
 # Slide
 
-[Class_In_Dart.pdf](https://github.com/630710676/pl/blob/cf9d00e45915b3e5205a903904b1e5f3d58291bc/Class%20in%20Dart.pdf?raw=true)<br>
-[Class_In_Dart.pptx](https://github.com/630710676/pl/blob/cf9d00e45915b3e5205a903904b1e5f3d58291bc/Class%20in%20Dart.pptx?raw=true)
+[Class_In_Dart.pdf](https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pdfx?raw=true)<br>
+[Class_In_Dart.pptx](https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pptx?raw=true)
 

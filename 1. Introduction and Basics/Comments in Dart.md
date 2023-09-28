@@ -125,6 +125,11 @@ int main()
   ## single-line comment 
    * C
 ```
+#include <studio.h>
+
+Int main()
+
+{
 // print Hello world to the screen
 
 print(“Hello world”);

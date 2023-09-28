@@ -167,6 +167,6 @@ https://dart-tutorial.com/object-oriented-programming/class-in-dart/<br>
 
 # file การนำเสนอ
 
-[Class_In_Dart.pdf](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pdf)<br>
-[Class_In_Dart.pptx](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pptx)
+[Class_In_Dart.pdf]( )<br>
+[Class_In_Dart.pptx]( )
 

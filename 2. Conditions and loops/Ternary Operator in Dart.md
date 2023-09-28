@@ -4,7 +4,7 @@
 ในหัวข้อนี้จะอธิบายเกี่ยวกับ Ternary Operator ในภาษา Dart โดย Ternary Operator คือ วิธีในการจัดการเงื่อนไขและคืนค่าในบรรทัดเดียว เพื่อให้โค้ดอ่านได้ง่ายขึ้น และส่วนใหญ่จะใช้แทนที่คำสั่ง if-else หรือเรียกว่า if-else แบบลดรูป ซึ่งจะมีรูปแบบเหมือนกับคำสั่ง if-else แต่มีการทำงานที่สั้นและกระชับกว่า โดยใช้เครื่องหมาย ? และ : ในการตรวจสอบเงื่อนไข เพื่อเลือกคืนค่าใดค่าหนึ่ง ซึ่งขึ้นอยู่กับผลลัพธ์ของเงื่อนไขที่กำหนด
 
 > [!IMPORTANT]
-> จุดประสงค์หลักของ Ternary Operator คือ ลดจำนวนบรรทัดในการเขียนโค้ดและใช้ในกรณีที่เงื่อนไขไม่ซับซ้อน หากเงื่อนไขมีความซับซ้อนหรือมีการกระทำหลายอย่างที่ต้องประมวลผล ควรใช้ if-else แทนเพื่อให้โค้ดอ่านง่ายและเข้าใจมากขึ้น
+> จุดประสงค์หลักของ Ternary Operator คือ ลดจำนวนบรรทัดในการเขียนโค้ดและใช้ในกรณีที่เงื่อนไขไม่ซับซ้อน
 
 ## ประโยชน์ของ Ternary Operator
 - ทำให้โค้ดกระชับและสามารถอ่านได้ง่าย
@@ -13,7 +13,6 @@
 
 ## Syntax ของ Ternary Operator ในภาษา Dart
   
-- **กรณีที่ต้องการเลือกคืนค่าตามเงื่อนไขที่กำหนด**
 ```dart
 condition ? expr1 : expr2
 ```
@@ -38,34 +37,6 @@ void main(){
   <summary><strong>Output</strong></summary>
   <pre><code>Answer is 10</code></pre>
 </details> 
-
-<br>
-
-- **กรณีที่ต้องการจัดการค่า null**
-```dart
-expr1 ?? expr2
-```
-> **คำอธิบาย** <br>
->- **expr1 :** นิพจน์ที่จะถูกประเมิน หากมีค่าไม่เป็น null จะคืนค่าของ expr1
->- **expr2 :** นิพจน์ที่จะถูกคืนค่า หาก expr1 เป็น null
-
-### ตัวอย่าง
-```dart
-void main(){
-   var ans;
-   ans ?? print("ans is null");
-}
-```
-
-> แสดงผลลัพธ์ที่ได้โดยตรวจสอบเงื่อนไขว่า ค่าของตัวแปร ans เป็น null หรือไม่
-> - ถ้าค่าของ ans ไม่เป็น null (มีการกำหนดค่าของ ans) จะไม่แสดงผลลัพธ์ออกมา
-> - ถ้าค่าของ ans เป็น null (ค่าของ ans ไม่ได้ถูกกำหนดค่า) จะแสดงผลลัพธ์ "ans is null"
-
-<details>
-  <summary><strong>Output</strong></summary>
-  <pre><code>ans is null</code></pre>
-</details>
-
 <br>
 
 ## เปรียบเทียบ Syntax ในภาษาอื่นๆ
@@ -115,7 +86,7 @@ class Main {
  ```
 > แสดงผลลัพธ์โดยตรวจสอบเงื่อนไขว่า คะแนนที่ผู้ใช้ป้อนเข้ามาเกิน 40 หรือไม่
 > - ถ้าเงื่อนไขเป็นจริง จะกำหนดค่า result และแสดงผลลัพธ์เป็น "pass" 
-> - ถ้าเงื่อนไขเป็นจริง จะกำหนดค่า result และแสดงผลลัพธ์เป็น "fail"
+> - ถ้าเงื่อนไขเป็นเท็จ จะกำหนดค่า result และแสดงผลลัพธ์เป็น "fail"
 
 <details>
   <summary><strong>Output 1</strong></summary>
@@ -175,9 +146,9 @@ print(msg)
 <br>
 
 ## Ternary Operator Vs If Else
-เปรียบเทียบการใช้ if-else แบบทั่วไป กับการใช้ Ternary Operator หรือ If-else แบบลดรูปในการจัดการเงื่อนไข
-
-### ตัวอย่าง : ใช้ If else
+เปรียบเทียบการใช้ if-else แบบทั่วไป กับการใช้ Ternary Operator ในการจัดการเงื่อนไข
+### - Dart
+- ##### ตัวอย่าง : ใช้ If else
 ```dart
 void main() {
   int num1 = 10;
@@ -201,8 +172,7 @@ void main() {
   <pre><code>The greatest number is 15</code></pre>
 </details>
 
-### ตัวอย่าง : ใช้ Ternary Operation
-- Dart
+- ##### ตัวอย่าง : ใช้ Ternary Operation
 ```dart
 void main() {
   int num1 = 10;
@@ -222,8 +192,29 @@ void main() {
 <br>
 
 ## ตัวอย่างเดียวกันในภาษาอื่นๆ
+### - Java
+- ##### ตัวอย่าง : ใช้ If else
+```java
+public class Main {
+    public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 15;
+        int max;
+        if (num1 > num2) {
+            max = num1;
+        } else {
+            max = num2;
+        }
+        System.out.println("The greatest number is " + max);
+    }
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>The greatest number is 15</code></pre>
+</details>
 
-- Java
+- ##### ตัวอย่าง : ใช้ Ternary Operation
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -239,7 +230,29 @@ public class Main {
   <pre><code>The greatest number is 15</code></pre>
 </details>
 
-- C
+### - C
+- ##### ตัวอย่าง : ใช้ If else
+```c
+#include <stdio.h>
+int main() {
+    int num1 = 10;
+    int num2 = 15;
+    int max;
+    if (num1 > num2) {
+        max = num1;
+    } else {
+        max = num2;
+    }
+    printf("The greatest number is %d\n", max);
+    return 0;
+}
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>The greatest number is 15</code></pre>
+</details>
+
+- ##### ตัวอย่าง : ใช้ Ternary Operation
 ```c
 #include <stdio.h>
 int main() {
@@ -255,7 +268,23 @@ int main() {
   <pre><code>The greatest number is 15</code></pre>
 </details>
 
-- Python
+### - Python
+- ##### ตัวอย่าง : ใช้ If else
+```python
+num1 = 10
+num2 = 15
+if num1 > num2:
+    max = num1
+else:
+    max = num2
+print("The greatest number is", max)
+```
+<details>
+  <summary><strong>Output</strong></summary>
+  <pre><code>The greatest number is 15</code></pre>
+</details>
+
+- ##### ตัวอย่าง : ใช้ Ternary Operation
 ```python
 num1 = 10
 num2 = 15
@@ -268,14 +297,9 @@ print("The greatest number is", max)
 </details>
 
 ## Summary
-Ternary Operator สามารถใช้เป็นวิธีแทนที่คำสั่ง if-else ในกรณีที่เงื่อนไขไม่ซับซ้อน ช่วยลดจำนวนบรรทัดในการเขียนโค้ดและเพิ่มประสิทธิภาพในการจัดการเงื่อนไขและคืนค่าในรูปแบบที่สั้นและกระชับ <br>
+Ternary Operator สามารถใช้เป็นวิธีแทนที่คำสั่ง if-else ได้ นอกจากช่วยลดจำนวนบรรทัดในการเขียนโค้ด ยังเพิ่มประสิทธิภาพในการจัดการเงื่อนไขและคืนค่าในรูปแบบที่สั้นและกระชับด้วย<br>
 
-**สรุปเปรียบเทียบในภาษาต่าง ๆ**
-- Dart มี Ternary Operator และ Null Coalescing Operator เพื่อจัดการเงื่อนไขและค่า null ในรูปแบบที่สะดวกและกระชับ
-- Java และ C มี Ternary Operator สำหรับจัดการเงื่อนไขและคืนค่า
-- Python ไม่มี Ternary Operator แต่มี Conditional Expression ที่คล้ายกับ Ternary Operator ในภาษาอื่น
-
-อย่างไรก็ตาม Ternary Operation ถึงจะเปรียบเสมือนแบบจำลองของ If-Else แต่ก็ไม่สามารถแทนที่คำสั่ง If-Else ได้อย่างสมบูรณ์เสมอไป สำหรับเงื่อนไขที่ซับซ้อนหรือมีการกระทำหลายอย่างควรใช้ if-else เพื่อให้โค้ดมีความเข้าใจง่ายและชัดเจนมากขึ้น
+  แต่อย่างไรก็ตาม Ternary Operator ก็ไม่สามารถแทนที่คำสั่ง If-Else ได้อย่างสมบูรณ์เสมอไป สำหรับเงื่อนไขที่ซับซ้อนหรือมีการกระทำหลายอย่าง ควรใช้ if-else เพื่อให้โค้ดมีความเข้าใจง่ายและชัดเจนมากขึ้น
 
 ## Reference
 
@@ -287,3 +311,5 @@ https://www.programiz.com/c-programming/ternary-operator#google_vignette <br>
 https://www.programiz.com/java-programming/ternary-operator <br>
 https://www.educative.io/answers/what-is-the-ternary-operator-in-python
 
+## Link Video
+https://youtu.be/zKQtcvB3RyA

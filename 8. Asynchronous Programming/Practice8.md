@@ -275,81 +275,50 @@ Enter : 1 และ Enter : 2
 ## 8.เขียนโปรแกรมDartที่จะรับStringเป็นInputเรียงลำดับรายการแบบ asynchronous จากนั้นพิมพ์รายการที่เรียงลำดับแล้ว
 - Dart
 ~~~ dart
+import 'dart:async';
 import 'dart:io';
 Future<void> main() async {
-  try {
-    String input = stdin.readLineSync()!;
-    List<String> items = input.split(' ');
-    items.sort(); // เรียงลำดับรายการ
-    for (String item in items) {
-      print(item);
-    }
-  } catch (error) {
-    print('Error : $error');
-  }
+  final inputList = await getInputListAsync();
+  final sortedList = await sortListAsync(inputList);
+  print('list: $sortedList');
 }
-~~~
-- Java
-~~~ java
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.concurrent.CompletableFuture;
-
-public class Main {
-    public static CompletableFuture<String> readLineAsync(Scanner scanner) {
-        CompletableFuture<String> future = new CompletableFuture<>();
-        new Thread(() -> {
-            String input = scanner.nextLine();
-            future.complete(input);
-        }).start();
-        return future;
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        CompletableFuture<String> inputFuture = readLineAsync(scanner);
-        inputFuture.thenAccept(input -> {
-            String[] items = input.split(" ");
-            Arrays.sort(items);
-            for (String item : items) {
-                System.out.println(item);
-            }
-        });
-        try {
-            // รอให้การอ่านข้อมูลเสร็จสิ้น
-            inputFuture.get();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        scanner.close();
-    }
+Future<List<String>> getInputListAsync() async {
+  final inputList = <String>[];
+  await for (final line in stdin.transform(utf8.decoder).transform(LineSplitter())) {
+    if (line.isEmpty) break;
+    inputList.add(line);
+  }
+  return inputList;
+}
+Future<List<String>> sortListAsync(List<String> list) async {
+  final sortedList = List<String>.from(list)..sort();
+  return sortedList;
 }
 ~~~
 - Python
 ~~~ python
 import asyncio
-async def read_line_async():
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, input, "Enter a list of words separated by space: ")
 async def main():
-    try:
-        input_str = await read_line_async()
-        items = input_str.split()
-        items.sort()
-        for item in items:
-            print(item)
-    except Exception as e:
-        print(f'Error: {e}')
+    input_list = await get_input_list()
+    sorted_list = await sort_list_async(input_list)
+    print(f'list: {sorted_list}')
+async def get_input_list():
+    input_list = []
+    while True:
+        line = input()
+        if not line:
+            break
+        input_list.append(line)
+    return input_list
+async def sort_list_async(input_list):
+    return sorted(input_list)
 if __name__ == '__main__':
     asyncio.run(main())
 ~~~
 - Input "Bat Ant Cat"
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>
-    Ant
-    Bat
-    Cat
+  <pre><code>list: Ant Bat Cat
 </code></pre>
 </details>
 

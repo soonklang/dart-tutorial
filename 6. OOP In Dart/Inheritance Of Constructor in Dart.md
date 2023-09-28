@@ -738,7 +738,13 @@ __คำอธิบายโค้ด__
 - ใช้ decorator @classmethod เพื่อประกาศเมธอดชื่อเดียวกับคลาส เพื่อทำให้เป็นเมธอดที่สามารถเรียกใช้ได้จากคลาสและไม่จำเป็นต้องสร้างอ็อบเจ็กต์ก่อน
 - ใน Python ใช้ super().named() เพื่อเรียก constructor ของคลาสแม่และสร้างอ็อบเจ็กต์
 </details>
-      
+
+# Silde นำเสนอ
+- [Inheritance Of Constructor.pdf](https://github.com/soonklang/dart-tutorial/files/12751849/Constructor.in.Dart.Part.1.pptx)
+
+# Link Video
+- https://youtu.be/pPnw_07POx0
+
 # Reference
 https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart<br>
 https://www.w3schools.com/c/c_structs.php<br>

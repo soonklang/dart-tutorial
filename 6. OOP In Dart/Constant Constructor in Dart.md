@@ -214,7 +214,12 @@ void main() {
   John
   </code></pre>
 </details>
-     
+
+# Link Video
+-https://drive.google.com/drive/folders/1pFweMcq_S47yTn77I-L3Lhj2r1XQxDK6?usp=sharing
+# Slide
+[640710061_Constant Constructor in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12753164/640710061_Constant.Constructor.in.Dart.pptx)
+
 # Reference
 - https://dart-tutorial.com/object-oriented-programming/constant-constructor-in-dart
 - https://www.peachpit.com/articles/article.aspx?p=2468332&seqNum=5

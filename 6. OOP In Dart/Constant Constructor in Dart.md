@@ -103,7 +103,7 @@ void main() {
 # การสร้างConstant Object ในภาษาอื่นๆ 
 ในกรณีนี้จะขอพูดถึงใน C++
 ## C++
-ในภาษา C++ จะมีการสร้างวัตถุคงที่(Costant Object)โดยใช้Keyword: **const**
+ในภาษา C++ จะมีการสร้างวัตถุคงที่(Constant Object)โดยใช้Keyword: **const**
 ```C++
   // keyword class_name name_Object();
   const date birthday(7,3,9);
@@ -168,7 +168,7 @@ public:
  
 int main()
 {
-    // non const object
+    //  const object
     const Test t(20);
     cout << t.getValue();
     return 0;

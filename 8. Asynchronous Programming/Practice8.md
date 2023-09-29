@@ -425,6 +425,10 @@ if __name__ == '__main__':
 </code></pre>
 </details>
 
+# Link Video
+- https://youtu.be/rEW9-OnsbaY
+- [Practice 8.pptx](https://github.com/soonklang/dart-tutorial/files/12769061/Practice.8.pptx)
+
 # Reference
 - https://dart.dev/codelabs/async-await
 - https://www.ninenik.com/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99_Asynchronous_Programming_%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2_Dart_%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99-949.html

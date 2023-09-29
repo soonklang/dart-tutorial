@@ -13,11 +13,12 @@ extension NumberParsing on String {
   int parseInt() { 
     return int.parse(this);
   }
-
 }
 
 void main() {
-  print('1'.parseInt()); //เรียกใช้ฟังก์ชัน parseInt()
+  String value_str = "1";
+  int n = value_str.parseInt();
+  print(n); 
 }
 ```
 Output  

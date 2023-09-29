@@ -572,7 +572,7 @@ class Quiz {
         print("${i + 1}. ${question.options[i]}");
       }
 
-      stdout.write("Enter your answer: ");
+      print("Enter your answer: ");
       int userAnswer = int.parse(stdin.readLineSync()!);
       
 
@@ -588,17 +588,6 @@ class Quiz {
   }
 }
 
-void main() {
-  Quiz quiz = Quiz();
-  quiz.addQuestion("12 * 23 = ?",["207", "216", "257", "276"],4);
-  quiz.addQuestion("540/6 = ?",["70", "85", "90", "95"],3);
-  quiz.addQuestion("102+(11*10) = ?",["212", "221", "313", "331"],1);
-
-  print("Welcome to the Quiz");
-  print("Answer the questions using the number in front of the answer:\n");
-
-  quiz.startQuiz();
-}
 
    ```
 <details>
@@ -612,7 +601,8 @@ Answer the questions using the number in front of the answer:
 2. 216
 3. 257
 4. 276
-Enter your answer: 4
+Enter your answer: 
+4
 Correct!
 </n>
 540/6 = ?
@@ -620,7 +610,8 @@ Correct!
 2. 85
 3. 90
 4. 95
-Enter your answer: 3
+Enter your answer: 
+3
 Correct!
 </n>
 102+(11*10) = ?
@@ -628,7 +619,8 @@ Correct!
 2. 221
 3. 313
 4. 331
-Enter your answer: 1
+Enter your answer: 
+1
 Correct!
 </n>
 Score: 3/3</code>
@@ -646,7 +638,8 @@ Answer the questions using the number in front of the answer:
 2. 216
 3. 257
 4. 276
-Enter your answer: 1
+Enter your answer: 
+1
 Incorrect. The correct answer is: 276
 </n>
 540/6 = ?
@@ -654,7 +647,8 @@ Incorrect. The correct answer is: 276
 2. 85
 3. 90
 4. 95
-Enter your answer: 2
+Enter your answer: 
+2
 Incorrect. The correct answer is: 90
 </n>
 102+(11*10) = ?
@@ -662,7 +656,8 @@ Incorrect. The correct answer is: 90
 2. 221
 3. 313
 4. 331
-Enter your answer: 3
+Enter your answer: 
+3
 Incorrect. The correct answer is: 212
 </n>
 Score: 0/3</code>

@@ -210,7 +210,7 @@ print(random.randint(0,99))
 > 
 > ❗❗ แต่ในภาษา C จะต้องนำตัวเลขมา % ข้างหลังเพื่อกำหนดค่าสิ้นสุดที่สามารถสุ่มได้ ❗❗
 
-Link Slide https://docs.google.com/presentation/d/1aEdE28PKA6iLmqUr6I7x7cfrGzo6Ma_C/edit#slide=id.p1
+Link Slide https://docs.google.com/presentation/d/1aEdE28PKA6iLmqUr6I7x7cfrGzo6Ma_C/edit?usp=sharing&ouid=113718269283843830663&rtpof=true&sd=true
 
 Link Video https://youtu.be/F55rFfzL85Y
 

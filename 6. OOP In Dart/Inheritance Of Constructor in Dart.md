@@ -740,7 +740,8 @@ __คำอธิบายโค้ด__
 </details>
 
 ## Silde นำเสนอ
-- [Inheritance Of Constructor.pdf](https://drive.google.com/file/d/1a7h0G9o6689O92cefkJkcjhFZPdtGKum/view?usp=drivesdk)
+- [Inheritance Of Constructor.pdf](https://drive.google.com/file/d/1thOsd1cZ3sff_yluJhbOtW_AirJmTIhP/view?usp=sharing)
+- [Inheritance Of Constructor.pptx](https://docs.google.com/presentation/d/1vl7Ce8Sh53dXD6qorPAn-lF27pBpBjGT/edit?usp=sharing&ouid=116662538381881581640&rtpof=true&sd=true)
 
 ## Link Video
 - https://youtu.be/pPnw_07POx0

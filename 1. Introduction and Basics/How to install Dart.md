@@ -54,5 +54,8 @@ https://www.python.org/downloads/
 - https://www.tutorialkart.com/dart/install-dart-onwindows/#gsc.tab=0
 - https://www.javatpoint.com/how-to-install-c
 - https://www.tutorialspoint.com/how-to-install-python-in-windows
-- # Link Video
+# Slide
+[how to install dart.pdf](https://github.com/soonklang/dart-tutorial/files/12765270/how.to.install.dart.pdf)
+
+# Link Video
 - https://youtu.be/AQoeNMXYQzs

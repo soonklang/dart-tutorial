@@ -420,9 +420,7 @@ void main() {
 * Dart Tutorials. "Loops." [https://dart.dev/language/loops](https://dart.dev/language/loops)
 
 
-# VDO
-  [![Final video of fixing issues in your code in VS Code]
-(https://img.youtube.com/vi/<https://youtu.be/67DbhBAfJFU/sddefault.jpg)]
-(https://youtu.be/67DbhBAfJFU)
-  
+# Slides & Clip
+  [<img src="https://i.ytimg.com/vi/67DbhBAfJFU/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
+
 https://youtu.be/67DbhBAfJFU

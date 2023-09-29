@@ -28,7 +28,7 @@ class Person{
 ```
 
 ## ตัวอย่างที่ 6 : Constructor แบบมี Optional Parameters
-- Optional Parameters คือ Parameters ที่เราจะสามารถส่งหรือไม่ส่งค่ามาก็ได้ Constructor ก็ยังสามารถทำงานได้ตามปกติ ถ้าไม่ได้กำหนดค่า  Defalut จะมีค่าเป็น NULL
+- Optional Parameters คือ Parameters ที่เราจะสามารถส่งหรือไม่ส่งค่ามาก็ได้ Constructor ก็ยังสามารถทำงานได้ตามปกติ ถ้าไม่ได้กำหนดค่า  default จะมีค่าเป็น NULL
 - ในตัวอย่างด้านล่าง เราได้ทำการสร้าง Class Person มี Property คือ **name**,**lastName** เเละ **age** จากนั้นสร้าง Constructor เพื่อ initialize ค่าของ Property ทุกตัว เเต่สำหรับ **age** เเละ **lastName** เราจะรับค่าแบบ Optional Parameters 
 
  ```dart

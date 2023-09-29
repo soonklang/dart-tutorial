@@ -484,24 +484,25 @@ public class Main {
 ### - Dart
  ```dart
 // สร้าง interface bottle
-abstract class Bottle {
-  void open();
-  //สร้าง factory constructor ที่ return CokeBottle
-  factory Bottle() {
-    return CokeBottle();
-  }
+class Bottle {
+ void open(){
+   print("Coke bottle is opened");
+ }
+ //สร้าง factory constructor ที่ return CokeBottle
+ factory Bottle() {
+   return CokeBottle();
+ }
 }
 // สร้าง Class CokeBottle implements Bottle
 class CokeBottle implements Bottle {
-  @override
-  void open() {
-    print("Coke bottle is opened");
-  }
-}
+ void open() {
+   print("Coke bottle is opened");
+ }
 
+}
 void main() {
-  Bottle cokeBottle = Bottle();
-  cokeBottle.open();
+ Bottle cokeBottle = Bottle();
+ cokeBottle.open();
 }
 
    ```

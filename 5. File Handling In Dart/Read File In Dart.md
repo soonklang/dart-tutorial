@@ -61,7 +61,7 @@ This is a test file.</code>
 </details>
 
 #### `ตัวอย่างที่ 3`
-  >อ่านเนื้อหาทั้งหมดจากไฟล์เป็นสตริงโดยใช้เมธอด readAsString() แบบอะซิงโครนัสและจะ return Future(String) ในฟังก์ชันcallback จะได้รับ String พร้อมเนื้อหาของไฟล์: 
+  >อ่านเนื้อหาทั้งหมดจากไฟล์เป็นสตริงโดยใช้เมธอด readAsString() แบบอะซิงโครนัสและจะ return Future< String > ในฟังก์ชันcallback จะได้รับ String พร้อมเนื้อหาของไฟล์: 
 ```dart
 import 'dart:io';
  

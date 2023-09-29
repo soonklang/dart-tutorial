@@ -200,6 +200,9 @@ Hello
 - **async function** : function ที่มี keyword async เรียกว่า async funtion
 - **await** : หมายความว่า ให้รอ รอจนกว่า fucntion นี้จะทำงานเสร็จและจะ return value กลับไป (จะใช้ได้กับ Function ที่เป็น Future เท่านั้น)
 
+## Slide
+- [AsyncAndAwait.pptx](https://github.com/soonklang/dart-tutorial/files/12769061/AsyncAndAwait.pptx)
+
 ## **Reference**
 [Async and Await In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://dart-tutorial.com/asynchronous-programming/async-and-await-in-dart/)
 <br>

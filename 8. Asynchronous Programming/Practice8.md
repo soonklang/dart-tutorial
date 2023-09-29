@@ -426,7 +426,7 @@ if __name__ == '__main__':
 </details>
 
 # Link Video
-- https://youtu.be/rEW9-OnsbaY
+- [https://youtu.be/rEW9-OnsbaY](https://drive.google.com/file/d/1VI1bvelyO9BvAKKnSahD8_6aFS7i3rC7/view?usp=sharing)
 
 # Slide
 - [Practice 8.pptx](https://github.com/soonklang/dart-tutorial/files/12769061/Practice.8.pptx)

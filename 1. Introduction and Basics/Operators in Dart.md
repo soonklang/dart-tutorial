@@ -521,3 +521,8 @@ public class BitwiseOperators {
 - https://toupawa.com/learn-dart-from-zero-to-standard/
 - https://blog.intception.me/dev/flutter/dart-part-2.html#equality-and-relational-operators
 - http://marcuscode.com/lang/python/operators
+# File การนำเสนอ
+[Operators in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12767750/Operators.in.Dart.pdf)
+# Video นำเสนอ
+https://youtu.be/YUftb_KjFKE
+

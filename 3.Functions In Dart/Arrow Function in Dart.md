@@ -91,3 +91,5 @@ https://www.w3schools.com/python/python_lambda.asp
 https://javascript.info/arrow-functions-basics
 
 https://www.geeksforgeeks.org/javascript-ternary-operator/
+### *< Video >*
+https://youtu.be/UVtbrH8uqWE

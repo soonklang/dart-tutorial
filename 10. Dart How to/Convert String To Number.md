@@ -123,7 +123,7 @@ print(n)
 ```
 จากCodeจะเห็นว่า Dart,C,Java,Pythonมีลักษณะคล้ายกันคือการเรียกใช้ Method มาแปลง String เป็น Number
 
-Link Slide file:///C:/Users/tanac/OneDrive/Desktop/Convert%20String%20To%20Number.pdf
+Link Slide 
 
 Link Video https://www.youtube.com/watch?v=IVHSiPTrHqk
 ### Reference

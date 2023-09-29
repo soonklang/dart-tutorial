@@ -180,7 +180,7 @@ class C extends A {
   </pre>
   </details>
   
-  4.Multiple Inheritance -> classต่างๆ สืบทอดในรูปแบบลูกโซ่ subclassหนึ่งทำการสืบทอดคุณสมบัติต่อจาก subclassอื่น 
+  4.Multiple Inheritance -> subclass  ทำการสืบทอดคุณสมบัติจาก class super มากว่า 1  
   <details>
   <summary><strong>Syntax</strong></summary>
   <pre>

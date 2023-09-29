@@ -9,15 +9,15 @@ extension <extension name> on <type> {
 ```
 ### Example การใช้ Extension  
 ```dart
-extension NumberParsing on String { 
-  int parseInt() { 
+extension NumberParsing on String { // คลาสที่ต้องการเพิ่ม Method
+  int parseInt() { //Methodที่เพิ่ม
     return int.parse(this);
   }
 }
 
 void main() {
   String value_str = "1";
-  int n = value_str.parseInt();
+  int n = value_str.parseInt(); //เรียกใช้
   print(n); 
 }
 ```
@@ -123,8 +123,7 @@ print(n)
 ```
 จากCodeจะเห็นว่า Dart,C,Java,Pythonมีลักษณะคล้ายกันคือการเรียกใช้ Method มาแปลง String เป็น Number
 
-Link Slide https://drive.google.com/file/d/1PNsXX0vH3VoOKS6U-xWZUfbXXORM78Nq/view?usp=drive_link
-
+Link Slide https://drive.google.com/file/d/1PIbymgrPPZ_J8Fpera3TyCkzZ0uYqTa1/view?usp=drive_link
 Link Video https://www.youtube.com/watch?v=IVHSiPTrHqk
 ### Reference
 https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/  

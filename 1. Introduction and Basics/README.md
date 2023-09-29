@@ -11,7 +11,7 @@
   คอมเม้นต์ (Comments)<br>
   [ตัวดำเนินการ (Operators)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/Operators%20in%20Dart.md)<br>
   คำสั่งรับข้อมูล (User Input)<br>
-  สตริง (String)<br>
+  [สตริง (String) start-ToUpperCase&LowerCase.md](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/String%20in%20Dart%20(start-ToUpperCase%26LowerCase).md)<br>
 
 ## แบบฝึกหัด
   [โจทย์คำถาม (Practice)](Practice1.md)

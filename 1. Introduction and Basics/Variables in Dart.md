@@ -237,3 +237,13 @@ https://www.tamemo.com/post/172/dart-101-intro/
 https://www.geeksforgeeks.org/introduction-to-python/
 
 https://chat.openai.com/
+
+# file การนำเสนอ
+
+
+[Variables in dart.pptx](https://github.com/soonklang/dart-tutorial/files/12765103/Variables.in.dart.pptx)
+
+
+# วีดีโอการนำเสนอ
+
+https://youtu.be/8jklk8WcByQ?si=0hw3paTl4JrBZZW4

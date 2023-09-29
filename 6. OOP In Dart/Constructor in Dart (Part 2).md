@@ -60,7 +60,7 @@ Last Name: Carter
 Age: 0
 ```
 ### ตัวอย่าง Optional Parameters ในภาษา Java
-> หมายเหตุ ภาษา Java นั้นไม่มี Optional Parameters เป็นการประยุกต์ใช้จาก Parameters แบบปกติ
+> หมายเหตุ ภาษา Java นั้นไม่มี Optional Parameters เป็นการประยุกต์ใช้จากวิธี Constructor Overloading
 ```java
 class Person{
   String name;

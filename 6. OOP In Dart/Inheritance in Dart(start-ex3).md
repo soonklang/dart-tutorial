@@ -286,8 +286,6 @@ output
   This is the Animal class called Parent class
 ```
 ## Slides
-https://docs.google.com/presentation/d/1cCb04nuA20mEEd7VYdco7daK5hGTwe97/edit?usp=drive_link&ouid=106402149949170545615&rtpof=true&sd=true
-
 https://drive.google.com/file/d/1wxVeym9zz1jPUzJ7XPAcYgN0C6x02VIY/view?usp=drive_link
 ## แหล่งอ้างอิง
 

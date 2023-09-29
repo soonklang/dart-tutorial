@@ -203,6 +203,9 @@ Hello
 ## Slide
 - [AsyncAndAwait.pptx](https://github.com/soonklang/dart-tutorial/files/12769061/AsyncAndAwait.pptx)
 
+## Video
+- [Async and Await In Dart](https://youtu.be/ZwQyOYOw8zE)
+
 ## **Reference**
 [Async and Await In Dart :: Dart Tutorial - Learn Dart Programming (dart-tutorial.com)](https://dart-tutorial.com/asynchronous-programming/async-and-await-in-dart/)
 <br>

@@ -1,5 +1,5 @@
 # STRING IN DART 
-String (สตริง) หมายถึงลำดับอักขระหรือลำดับของ UTF-16 code units หน้าที่หลักของสตริงสามารถจัดเก็บข้อมูลในรูปแบบข้อความ นอกจากอักขระแล้วยังมีตัวเลขและตัวอักษรพิเศษที่นับรวมว่าเป็นสตริงด้วยเช่นกัน
+String (สตริง) หมายถึงลำดับอักขระหรือลำดับของรหัสตัวอักษร unit code หน้าที่หลักของสตริงสามารถจัดเก็บข้อมูลในรูปแบบข้อความ นอกจากอักขระแล้วยังมีตัวเลขและตัวอักษรพิเศษที่นับรวมว่าเป็นสตริงด้วยเช่นกัน
  
 ### รูปแบบการเขียนสตริง
    -	การเขียนสตริงในภาษา Dart จะเขียนโดยใช้เครื่องหมาย single quotes ( '' ) , double quotes ( "" ) และเครื่องหมาย Triple quotes ( """ ) จะถูกใช้ในกรณีที่มีสตริงหลายบรรทัด
@@ -138,7 +138,7 @@ print(name)
 ------
 
 ### Properties Of String (คุณสมบัติของสตริง)
-•	codeUnits: คืนค่า UTF-16 code units หรือค่า Decimal ในตารางแอสกี(ASCII)
+•	codeUnits: คืนค่ารหัสตัวอักษรใน unit code หรือค่า Decimal ในตารางแอสกี(ASCII)
 
 •	isEmpty: คืนค่าเป็น true เมื่อสตริงเป็นค่าว่าง
 
@@ -286,10 +286,19 @@ florida texas
 ------
 
 ## Reference
-☐	[Dart Tutorial](https://dart-tutorial.com/introduction-and-basics/string-in-dart/)
+➔	https://dart-tutorial.com/introduction-and-basics/string-in-dart/
 
-☐	[String class](https://api.flutter.dev/flutter/dart-core/String-class.html)
+➔	https://api.flutter.dev/flutter/dart-core/String-class.html
 
-☐	[Strings in Dart](https://www.geeksforgeeks.org/strings-in-dart/)
+➔	https://www.geeksforgeeks.org/strings-in-dart/
 
-☐	[C, Java, Python Tutorial](https://www.w3schools.com/)
+➔	https://www.w3schools.com/python/python_strings.asp
+
+➔	https://www.w3schools.com/java/java_strings_concat.asp
+
+➔	https://www.w3schools.com/c/c_strings.php
+
+## Slides & Clip
+➔	[Slides](https://www.canva.com/design/DAFvL5vEsPc/cgiww3czRiSTwzszcbVNIQ/edit?utm_content=DAFvL5vEsPc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+➔	[Clip](https://www.youtube.com/watch?v=7yOTvk1ISeU)

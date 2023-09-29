@@ -101,7 +101,7 @@ Last Name: Carter
 Age: 0
 ```
 ## ตัวอย่างที่ 7 :  Parameters ที่มีชื่อ (Named Parameters)
-* Parameters ที่มีชื่อทำให้สามารถส่งค่าได้ผ่านชื่อของ Parameters โดยไม่ต้องคำนึงถึงลำดับของ Parameters ที่เขียนไว้ใน Constroctor ก็ได้
+* Parameters ที่มีชื่อทำให้สามารถส่งค่าโดยการเรียกชื่อของ Parameters โดยไม่ต้องคำนึงถึงลำดับของ Parameters ที่เขียนไว้ใน Constroctor ก็ได้
 * ตัวอย่างด้านล่างเราได้สร้าง Class ShowMyDetails มี Property คือ **name**,**lastName** เเละ **age**
  สำหรับ **lastName** เเละ **age** จะถูกกำหนดเป็น Parameters ที่มีชื่อโดยครอบด้วยเครื่องหมาย {} (ปีกกา)
 ```dart

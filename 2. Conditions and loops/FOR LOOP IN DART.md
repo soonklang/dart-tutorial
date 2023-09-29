@@ -421,6 +421,7 @@ void main() {
 
 
 # Slides & Clip
-  [<img src="https://i.ytimg.com/vi/67DbhBAfJFU/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
+  [<img src="https://i.ytimg.com/vi/67DbhBAfJFU/maxresdefault.jpg" width="50%">](https://youtu.be/67DbhBAfJFU
+ "Now in Android: 55")
 
-https://youtu.be/67DbhBAfJFU
+link vdo : https://youtu.be/67DbhBAfJFU

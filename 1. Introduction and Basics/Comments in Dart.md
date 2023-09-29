@@ -271,7 +271,7 @@ https://unstop.com/blog/comments-in-c
 https://youtu.be/nBpeLYa4Xno?feature=shared
 
 ## Slide
-[Comments in Dart.pdf](https://github.com/KanoknatCh/File/Comments in Dart.pdf)
+
 
 
   

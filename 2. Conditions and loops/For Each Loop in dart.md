@@ -275,6 +275,9 @@ for number in numbers:
 </pre>
 </details>
 
+## **Link Video** ##
+https://youtu.be/_7Pun0i6BDQ
+
 ## **อ้างอิง** ##
 https://dart-tutorial.com/conditions-and-loops/for-each-loop-in-dart/<br>
 https://www.w3schools.com/java/java_foreach_loop.asp<br>

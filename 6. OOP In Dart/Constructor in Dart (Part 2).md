@@ -111,7 +111,7 @@ class ShowMyDetails{
   String? lastName;
   int? age;
 
-  ShowMyDetails(this.name,{this.lastName,this.age=0});
+  ShowMyDetails({this.name,this.lastName,this.age=0});
 
   void display(){
     print("Name: ${this.name}");
@@ -121,7 +121,7 @@ class ShowMyDetails{
 }
 
 void main(){
-    ShowMyDetails smd = ShowMyDetails("Jay", age: 24 ,lastName: "Tillu",);
+    ShowMyDetails smd = ShowMyDetails(name: "Jay", age: 24 ,lastName: "Tillu",);
     smd.display();
   }
 ```

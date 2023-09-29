@@ -267,6 +267,9 @@ https://www.programiz.com/python-programming/comments<br>
 https://unstop.com/blog/comments-in-c
 
 
+## Link Video
+https://youtu.be/nBpeLYa4Xno?feature=shared
+
 
   
 

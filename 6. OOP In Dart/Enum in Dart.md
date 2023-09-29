@@ -393,6 +393,12 @@ Output
 6 - Color.Rainbow
 ```
 
+## link video
+https://www.youtube.com/watch?v=Ik26T96waPE
+
+## link slide
+https://drive.google.com/file/d/1whcD2uMeb9mJV4Oh-Bbpr4E1WDIYo6Cc/view?usp=drive_link
+
 ## อ้างอิง
 https://dart-tutorial.com/introduction-and-basics/   
 https://www.geeksforgeeks.org/enum-in-java/

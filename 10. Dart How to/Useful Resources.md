@@ -69,9 +69,11 @@
 
     ---
 
-    Link Slide : https://drive.google.com/drive/folders/1IJftJQ962W1H9BmwCS3ZcuH4hK8Ek6bQ?usp=sharing
+    ## Link Slide
+    ### 
 
-    Link Video : 
+    ## Link Video
+    ### 
 
     ## Reference
 

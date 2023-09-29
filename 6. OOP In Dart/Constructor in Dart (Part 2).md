@@ -38,7 +38,7 @@ class Person {
   int? age;
   
   // Constructor
-  Person([this.name, this.lastName, this.age=0]);
+  Person([this.name, this.lastName, this.age]);
 
   // Method
   void display() {

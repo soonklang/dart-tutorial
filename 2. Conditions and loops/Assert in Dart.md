@@ -176,6 +176,9 @@ print("Program continues after than assert")
 
 >การเปิดโหมดใช้งานโดย: java -ea หรือ java -enableassertions
 
+### *< Link Video >*
+https://youtu.be/Ebv6g1nUe5A
+
 ### *< Reference >*
 https://dart-tutorial.com/conditions-and-loops/assert-in-dart/
 

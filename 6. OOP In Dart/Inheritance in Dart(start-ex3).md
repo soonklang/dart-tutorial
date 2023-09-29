@@ -286,7 +286,7 @@ output
   This is the Animal class called Parent class
 ```
 ## Slide & Clip
-[Slide](https://drive.google.com/file/d/1wxVeym9zz1jPUzJ7XPAcYgN0C6x02VIY/view?usp=drive_link)
+[Slide Inheritance in dart](https://drive.google.com/file/d/1wxVeym9zz1jPUzJ7XPAcYgN0C6x02VIY/view?usp=drive_link)
 
 ## แหล่งอ้างอิง
 

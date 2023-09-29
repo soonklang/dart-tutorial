@@ -197,7 +197,7 @@ Hello
 
 ## คำศัพท์สำคัญ
 - **async** : หมายความว่า function นี้เป็น asynchronous และจะไม่เกิดขึ้นทันที เราอาจต้องรอสักครู่เพื่อให้ได้รับ result
-- **async function** : function ที่มี keyword async เรียกว่า async funtion
+- **async function** : function ที่มี keyword async เรียกว่า async function
 - **await** : หมายความว่า ให้รอ รอจนกว่า fucntion นี้จะทำงานเสร็จและจะ return value กลับไป (จะใช้ได้กับ Function ที่เป็น Future เท่านั้น)
 
 ## Slide

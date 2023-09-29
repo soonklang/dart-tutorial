@@ -409,6 +409,10 @@ Point(x=10,y=20)
 
 ---
 
+Link Slide https://docs.google.com/presentation/d/1SJITF6u0dMYAjQyJEUxEs8U6CDjIWAj9/edit?usp=sharing&ouid=100004491191685025312&rtpof=true&sd=true
+
+Link Video https://youtu.be/znxouJBiX9c
+
 ## Reference
 https://www.tutorialandexample.com/dart-important-concepts
 

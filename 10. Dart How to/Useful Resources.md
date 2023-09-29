@@ -69,6 +69,10 @@
 
     ---
 
+    Link Slide : https://drive.google.com/drive/folders/1IJftJQ962W1H9BmwCS3ZcuH4hK8Ek6bQ?usp=sharing
+
+    Link Video : https://youtu.be/ZXSCkK1XEKQ
+
     ## Reference
 
     https://exercism.org/docs/tracks/dart/resources

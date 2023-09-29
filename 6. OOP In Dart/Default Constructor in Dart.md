@@ -176,6 +176,8 @@ C ไม่มี default contrutor เพราะ C ไม่มีconceptข�
 Python จะรับparameterเป็นselfเท่านั้นซึ่งselfจะ reference ถึง object ของ class นั้น
 ## ภาษา java
 Java มีความใกล้เคียงกับ Dart มีความแตกต่างตรงที่ java จะมีการ initializes fields เป็น default value นั่นคือ 0 ส่วน Dart จะไม่มีการ initializes fields ทำให้ค่าที่ default value เป็น null
+## ภาษา C++
+C++ จะมีการ initializes fields เป็น default value นั่นคือ 0 ส่วน Dart จะไม่มีการ initializes fields ทำให้ค่าที่ default value เป็น null
 # Reference
 ## Dart :
 - https://dart-tutorial.com/object-oriented-programming/default-constructor-in-dart
@@ -195,8 +197,8 @@ Java มีความใกล้เคียงกับ Dart มีควา
 - https://www.sciencedirect.com/topics/computer-science/default-constructor
 - https://www.geeksforgeeks.org/default-constructors-in-cpp/
 
-
-
+## Video :
+- https://youtu.be/U1IMsBtooyE
 
 640710051 ธนธรณ์ ยุวรรณศิริ
 

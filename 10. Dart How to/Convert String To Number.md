@@ -123,9 +123,9 @@ print(n)
 ```
 จากCodeจะเห็นว่า Dart,C,Java,Pythonมีลักษณะคล้ายกันคือการเรียกใช้ Method มาแปลง String เป็น Number
 
-Link Slide  
+Link Slide file:///C:/Users/tanac/OneDrive/Desktop/Convert%20String%20To%20Number.pdf
 
-Link Video
+Link Video https://www.youtube.com/watch?v=IVHSiPTrHqk
 ### Reference
 https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/  
 https://www.educative.io/answers/how-to-convert-a-string-to-an-integer-in-c  

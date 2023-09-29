@@ -285,8 +285,7 @@ This is a test file.</code>
   // Open a file in read mode
   fptr = fopen("filename.txt", "r");
   ```
-
-  ฟังก์ชัน **fread()** 
+  
   #### `ตัวอย่างที่ 2`
   > mode "rb" ใช้ในเปิดการอ่านไฟล์ในโหมดไบนารี
   ```c

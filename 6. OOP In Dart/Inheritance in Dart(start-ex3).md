@@ -286,7 +286,7 @@ output
   This is the Animal class called Parent class
 ```
 ## Slides
-[Constructor in Dart Part2](https://drive.google.com/file/d/1wxVeym9zz1jPUzJ7XPAcYgN0C6x02VIY/view?usp=drive_link)
+[Inheritance in dart](https://drive.google.com/file/d/1wxVeym9zz1jPUzJ7XPAcYgN0C6x02VIY/view?usp=drive_link)
 
 ## แหล่งอ้างอิง
 

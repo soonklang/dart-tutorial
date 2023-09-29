@@ -110,7 +110,7 @@ class ShowMyDetails{
   String? lastName;
   int? age;
 
-  ShowMyDetails({this.name,this.lastName,this.age=0});
+  ShowMyDetails({this.name,this.lastName,this.age});
 
   void display(){
     print("Name: ${this.name}");

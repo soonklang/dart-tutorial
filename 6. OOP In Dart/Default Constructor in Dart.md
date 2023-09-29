@@ -196,9 +196,11 @@ C++ จะมีการ initializes fields เป็น default value นั�
 ## อื่นๆ :
 - https://www.sciencedirect.com/topics/computer-science/default-constructor
 - https://www.geeksforgeeks.org/default-constructors-in-cpp/
-
-## Video :
+- 
+## Video
 - https://youtu.be/U1IMsBtooyE
+## Slide
+- [640710051 Default Contructor in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12765100/640710051.Default.Contructor.in.Dart.pdf)
 
 640710051 ธนธรณ์ ยุวรรณศิริ
 

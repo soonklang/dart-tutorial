@@ -285,8 +285,8 @@ output
   Maine Coon meow everytime.
   This is the Animal class called Parent class
 ```
-## Slides
-[Inheritance in dart](https://drive.google.com/file/d/1wxVeym9zz1jPUzJ7XPAcYgN0C6x02VIY/view?usp=drive_link)
+## Slides & Clip
+[Slides](https://drive.google.com/file/d/1wxVeym9zz1jPUzJ7XPAcYgN0C6x02VIY/view?usp=drive_link)
 
 ## แหล่งอ้างอิง
 

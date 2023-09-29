@@ -299,6 +299,6 @@ florida texas
 ➔	https://www.w3schools.com/c/c_strings.php
 
 ## Slides & Clip
-➔	[Slides](https://www.canva.com/design/DAFvL5vEsPc/cgiww3czRiSTwzszcbVNIQ/edit?utm_content=DAFvL5vEsPc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+➔	[Slides](620710306-Sting-In-Dart-Start-ToUpperCaseLowerCase.pdf)
 
 ➔	[Clip](https://www.youtube.com/watch?v=7yOTvk1ISeU)

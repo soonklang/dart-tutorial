@@ -55,4 +55,4 @@ https://www.python.org/downloads/
 - https://www.javatpoint.com/how-to-install-c
 - https://www.tutorialspoint.com/how-to-install-python-in-windows
 - # Link Video
-- 
+- https://youtu.be/AQoeNMXYQzs

@@ -118,6 +118,9 @@ def g(foo):
     x = 99
     foo()
     print(x)
+
+x = 1
+g(f)
 ```
 
 ### Output :

@@ -1,4 +1,4 @@
-# Anonymous Function in Dart
+# Arrow Functions in Dart
 ใน tutorial นี้ คุณจะได้เรียนรู้วิธีการเขียน Function ใน ภาษา Dart ให้สั้นลงโดยใช้ arrow functions
 ## Arrow functions หรือฟังก์ชันลูกศร
 Arrow Function เป็นการเขียนฟังก์ชันแบบย่อ ใช้สำหรับการเขียนฟังก์ชันที่มีเพียงนิพจน์เดียวให้สั้นลง โดย arrow function มีหน้าตาเป็นแบบนี้ => โดยฝั่งขวาของลูกศร จะเป็นค่าที่เราต้องการ return

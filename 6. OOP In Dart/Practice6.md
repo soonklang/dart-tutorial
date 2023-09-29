@@ -484,26 +484,28 @@ public class Main {
 ### - Dart
  ```dart
 // สร้าง interface bottle
-class Bottle {
- void open(){
-   print("Coke bottle is opened");
- }
- //สร้าง factory constructor ที่ return CokeBottle
- factory Bottle() {
-   return CokeBottle();
- }
+abstract class Bottle {
+  void open();
+
+  //สร้าง factory constructor ที่ return CokeBottle
+  factory Bottle() {
+    return CokeBottle();
+  }
 }
+
 // สร้าง Class CokeBottle implements Bottle
 class CokeBottle implements Bottle {
- void open() {
-   print("Coke bottle is opened");
- }
+  @override
+  void open() {
+    print("Coke bottle is opened");
+  }
+}
 
-}
 void main() {
- Bottle cokeBottle = Bottle();
- cokeBottle.open();
+  Bottle cokeBottle = Bottle();
+  cokeBottle.open();
 }
+
 
    ```
 <details>
@@ -593,7 +595,7 @@ void main() {
   quiz.addQuestion("102+(11*10) = ?",["212", "221", "313", "331"],1);
 
   print("Welcome to the Quiz");
-  print("Answer the questions:\n");
+  print("Answer the questions using the number in front of the answer:\n");
 
   quiz.startQuiz();
 }
@@ -603,7 +605,7 @@ void main() {
 <summary><strong>Output Correct</strong></summary>
 <pre>
 <code>Welcome to the Quiz
-Answer the questions:
+Answer the questions using the number in front of the answer:
 </n>
 12 * 23 = ?
 1. 207
@@ -637,7 +639,7 @@ Score: 3/3</code>
 <summary><strong>Output Incorrect</strong></summary>
 <pre>
 <code>Welcome to the Quiz
-Answer the questions:
+Answer the questions using the number in front of the answer:
 </n>
 12 * 23 = ?
 1. 207

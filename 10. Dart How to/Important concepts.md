@@ -375,7 +375,7 @@ class Point:
         self._y = y
 
     def show(self):
-        print(f"Point(x={self.x}, y={self.y})")
+        print(f"Point(x={self._x}, y={self._y})")
 
 def main():
     p1 = Point(10, 20)

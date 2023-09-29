@@ -11,7 +11,7 @@ return_type get property_name {
   // Getter body
 }
 ```
-นอกจากนี้ แทนที่จะเขียน { } หลังชื่อ property คุณยังสามารถเขียน => (เครื่องหมายลูกศรหนา) หลังชื่อ property แทนที่ได้
+นอกจากนี้ แทนที่จะเขียน { } หลังชื่อ property คุณยังสามารถเขียน => (เครื่องหมายลูกศร) หลังชื่อ property แทนที่ได้
 ```dart
 class Person {
   String _name;

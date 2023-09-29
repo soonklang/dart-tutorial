@@ -122,7 +122,8 @@ print(n)
 ```
 จากCodeจะเห็นว่า Dart,C,Java,Pythonมีลักษณะคล้ายกันคือการเรียกใช้ Method มาแปลง String เป็น Number
 
-Link Slide
+Link Slide  
+
 Link Video
 ### Reference
 https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/  

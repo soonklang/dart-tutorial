@@ -641,8 +641,9 @@ if __name__ == "__main__":
     main()
 ```
 # Presentation
-Link video : https://youtu.be/NQtiZqzITSc?feature=shared
-Link slides : file:///C:/Users/user/Downloads/Practice5_630710668.pdf
+Link video : https://youtu.be/NQtiZqzITSc?feature=shared <br>
+Link slides : [Practice5_630710668.pdf](https://github.com/soonklang/dart-tutorial/files/12774793/Practice5_630710668.pdf)
+
 
 ## < Reference >
 https://dart-tutorial.com/introduction-and-basics/questions-for-practice-1/<br>

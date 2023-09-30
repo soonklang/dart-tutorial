@@ -299,6 +299,6 @@ florida texas
 ➔	https://www.w3schools.com/c/c_strings.php
 
 ## Slides & Clip
-➔	[Slides](620710306-Sting-In-Dart-Start-ToUpperCaseLowerCase.pdf)
+➔	[Slides](https://github.com/soonklang/dart-tutorial/files/12775171/620710306.-.Sting.In.Dart.Start-ToUpperCase.LowerCase.pdf)
 
 ➔	[Clip](https://www.youtube.com/watch?v=7yOTvk1ISeU)

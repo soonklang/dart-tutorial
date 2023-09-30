@@ -454,7 +454,7 @@ void main() {
 ```
 จากในตัวอย่างหาก ```bool sad = true```output ที่ได้จะเท่ากับ ```[milk, ghee ,Beer]```
 ## ตำแหน่งใน list ของ Drat
-ในภาษา เราสามารถใช้ตำแหน่งในการเป็นฟิวเตอร์ ในการหาข้อมูลที่ต้องการได้ ในตัวอย่างต่อไปนี้เลขคู่เท่านั้นที่จะถูกกรอง
+ในภาษา Dart เราสามารถใช้ตำแหน่งในการเป็นฟิวเตอร์ ในการหาข้อมูลที่ต้องการได้ ในตัวอย่างต่อไปนี้เลขคู่เท่านั้นที่จะถูกกรอง
 >Ex
 ```
 void main(){
@@ -480,4 +480,4 @@ https://www.geeksforgeeks.org/how-to-combine-lists-in-dart/
 https://www.geeksforgeeks.org/python-ways-to-concatenate-two-lists/
 https://www.digitalocean.com/community/tutorials/merge-two-lists-in-jav
 ## Link VDO :
-## Link Slide : [List in Dart (replace-end)](https://github.com/SuwatchaChaikamhang/Slidepl/raw/main/List-in-Dart-replace-end.pptx)
+## Link Slide : [List in Dart (replace-end)](https://github.com/SuwatchaChaikamhang/Slidepl/raw/main/List-in-Dart-replace-end%20(2).pptx)

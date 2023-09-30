@@ -176,7 +176,7 @@ Finding --> ค้นหาค่าใน Set
 ```
 Output
 ```dart
-    The value of check is: true
+    The value of check is: false
 ```
 ## แสดงค่าใน Set
 แสดงค่าใน Set ด้วยการใช้ loop

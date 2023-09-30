@@ -56,20 +56,18 @@ Output
 # เปรียบเทียบกับภาษา Java 
 ```
 interface Zoo {
-    void Animal();
-}
+   public void Animal(); 
+      }
 
-// Define the Panda class implementing the Zoo interface
-class Panda implements Zoo {
-    @Override
-    public void Animal() {
-        System.out.println("สวนสัตว์มี แพนด้า 2 ตัว");
+// class Panda implementing class Zoo
+public class Panda implements Zoo {
+
+  public void Animal() {
+        System.out.println("สวนสัตว์มี แพนด้า 2 ตัว ");
     }
-}
 
-public class Main {
     public static void main(String[] args) {
-        // Create an instance of the Panda class
+        // สร้างอินสแตนซ์ของคลาส Khao_kheow_zoo
         Panda panda = new Panda();
         panda.Animal();
     }

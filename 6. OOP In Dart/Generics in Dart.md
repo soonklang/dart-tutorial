@@ -451,7 +451,7 @@ Python
 ## Slide
 
 ## Video
-[Generics in Dart](#https://www.youtube.com/watch?v=I044098K6Fk)
+- [Generics in Dart](https://www.youtube.com/watch?v=I044098K6Fk)
 ## References
 
 https://dart-tutorial.com/object-oriented-programming/generics-in-dart/

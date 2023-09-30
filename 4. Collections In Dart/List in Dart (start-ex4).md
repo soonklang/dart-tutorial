@@ -509,7 +509,7 @@
 *<https://www.programiz.com/python-programming/list#google_vignette>*
 
 # Presentation
-Link video :
+Link video : https://www.youtube.com/watch?v=MrJ3x-j5f6w&feature=youtu.be
 
 PDF : https://drive.google.com/file/d/1wectlY0A5VBTkI-IlJXhYh8MgSq_G2H8/view
 

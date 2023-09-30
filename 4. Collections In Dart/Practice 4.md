@@ -241,7 +241,7 @@ Enter maintenance expense :
 3650
 Your rent expense : 4500
 Your wage expense : 15000
-Your maintenance expense : 4500
+Your maintenance expense : 3650
 Total expense : 23150</code>
 </pre>
 </details>

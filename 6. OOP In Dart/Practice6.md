@@ -475,25 +475,25 @@ public class Main {
  ```dart
 // สร้าง interface bottle
 abstract class Bottle {
-  void open();
+ void open();
 
-  //สร้าง factory constructor ที่ return CokeBottle
-  factory Bottle() {
-    return CokeBottle();
-  }
+ //สร้าง factory constructor ที่ return CokeBottle
+ factory Bottle.bottle() {
+   return CokeBottle();
+ }
 }
 
 // สร้าง Class CokeBottle implements Bottle
 class CokeBottle implements Bottle {
-  @override
-  void open() {
-    print("Coke bottle is opened");
-  }
+ @override
+ void open() {
+   print("Coke bottle is opened");
+ }
 }
 
 void main() {
-  Bottle cokeBottle = Bottle();
-  cokeBottle.open();
+ final cokeBottle = Bottle.bottle();
+ cokeBottle.open();
 }
 
 

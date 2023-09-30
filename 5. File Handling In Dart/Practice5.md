@@ -541,50 +541,46 @@ else:
 ## 7.Write a dart program to store name, age, and address of students in a csv file and read it.
 ```dart
 import 'dart:io';
-
-class Student {
-  String name;
-  int age;
-  String address;
-
-  Student(this.name, this.age, this.address);
-
-  String toCsvString() {
-    return '$name,$age,$address';
-  }
-
-  static Student fromCsvString(String csvString) {
-    List<String> values = csvString.split(','); 
-    return Student(values[0], int.parse(values[1]), values[2]);
-  }
-}
+import 'package:csv/csv.dart';
 
 void main() {
-  List<Student> students = [
-    Student('Alice', 20, '123 Main St'),
-    Student('Bob', 22, '456 Elm St'),
-    Student('Eve', 19, '789 Oak St'),
-  ];
+  final students = <Map<String, dynamic>>[];
 
+  // Collect student information
+  for (var i = 1; i <= 3; i++) {
+    stdout.write('Enter name of student $i: ');
+    final name = stdin.readLineSync() ?? '';
+    stdout.write('Enter age of student $i: ');
+    final age = stdin.readLineSync() ?? '';
+    stdout.write('Enter address of student $i: ');
+    final address = stdin.readLineSync() ?? '';
+
+    students.add({
+      'Name': name,
+      'Age': age,
+      'Address': address,
+    });
+  }
+  // Write the student information to a CSV file
   final csvFile = File('students.csv');
+  csvFile.writeAsString(const ListToCsvConverter().convert(students));
 
-  // Writing to CSV file
-  String csvContent = students.map((student) => student.toCsvString()).join('\n');
-  csvFile.writeAsStringSync(csvContent);
+  print('Student information has been saved to students.csv');
 
-  print('Data written to students.csv');
+  // Read and display the contents of the CSV file
+  final csvContent = csvFile.readAsStringSync();
+  final csvToList = CsvToListConverter().convert(csvContent);
 
-  // Reading from CSV file
-  String fileContent = csvFile.readAsStringSync();
-  List<String> lines = fileContent.trim().split('\n');
+  print('\nStudent information from students.csv:');
+  for (final row in csvToList) {
+    final name = row[0];
+    final age = row[1];
+    final address = row[2];
 
-  List<Student> readStudents = lines.map((line) => Student.fromCsvString(line)).toList();
-
-  // Displaying read data
-  for (var student in readStudents) {
-    print('Name: ${student.name}, Age: ${student.age}, Address: ${student.address}');
+    print('Name: $name, Age: $age, Address: $address');
   }
 }
+
    ```
 <details>
 <summary><strong>Output</strong></summary>
@@ -646,6 +642,7 @@ if __name__ == "__main__":
 ```
 # Presentation
 Link video : https://youtu.be/NQtiZqzITSc?feature=shared
+Link slides : file:///C:/Users/user/Downloads/Practice5_630710668.pdf
 
 ## < Reference >
 https://dart-tutorial.com/introduction-and-basics/questions-for-practice-1/<br>

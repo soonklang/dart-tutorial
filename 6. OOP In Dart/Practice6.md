@@ -535,48 +535,62 @@ public class Main {
 import 'dart:io';
 
 class Question {
-  String text;
-  List<String> options;
-  int correctOption;
+ String text;
+ List<String> options;
+ int correctOption;
 
-  Question(this.text, this.options, this.correctOption);
+ Question(this.text, this.options, this.correctOption);
 }
 
 class Quiz {
-  List<Question> questions = [];
-  int score = 0;
+ List<Question> questions = [];
+ int score = 0;
 
-  void addQuestion(String text, List<String> options, int correctOption) {
-    Question question = Question(text, options, correctOption);
-    questions.add(question);
-  }
+ void addQuestion(String text, List<String> options, int correctOption) {
+   Question question = Question(text, options, correctOption);
+   questions.add(question);
+ }
 
-  void startQuiz() {
-    for (var question in questions) {
-      print(question.text);
-      String ans = "";
-      for (var i = 0; i < question.options.length; i++) {
-        if(i+1 == question.correctOption){
-          ans = question.options[i];
-        }
-        print("${i + 1}. ${question.options[i]}");
-      }
+ void startQuiz() {
+   for (var question in questions) {
+     print(question.text);
+     String ans = "";
+     for (var i = 0; i < question.options.length; i++) {
+       if(i+1 == question.correctOption){
+         ans = question.options[i];
+       }
+       print("${i + 1}. ${question.options[i]}");
+     }
 
-      print("Enter your answer: ");
-      int userAnswer = int.parse(stdin.readLineSync()!);
-      
+     print("Enter your answer: ");
+     int userAnswer = int.parse(stdin.readLineSync()!);
+     
 
-      if (userAnswer == question.correctOption) {
-        print("Correct!\n");
-        score++;
-      } else {
-        print("Incorrect. The correct answer is: " + ans + "\n");
-      }
-    }
+     if (userAnswer == question.correctOption) {
+       print("Correct!\n");
+       score++;
+     } else {
+       print("Incorrect. The correct answer is: " + ans + "\n");
+     }
+   }
 
-    print("Score: $score/${questions.length}");
-  }
+   print("Score: $score/${questions.length}");
+ }
 }
+
+
+void main() {
+  Quiz quiz = Quiz();
+  quiz.addQuestion("12 * 23 = ?",["207", "216", "257", "276"],4);
+  quiz.addQuestion("540/6 = ?",["70", "85", "90", "95"],3);
+  quiz.addQuestion("102+(11*10) = ?",["212", "221", "313", "331"],1);
+
+  print("Welcome to the Quiz");
+  print("Answer the questions:\n");
+
+  quiz.startQuiz();
+}
+
 
 
    ```

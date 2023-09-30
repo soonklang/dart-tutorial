@@ -586,3 +586,6 @@ https://docs.python.org/3/library/random.html
 https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/the-pythagorean-theorem
 
 https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circumference/v/area-of-a-circle
+
+### *< vdo presentation>*
+https://youtu.be/wVn2PZxak2k

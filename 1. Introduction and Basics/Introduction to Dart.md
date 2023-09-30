@@ -149,7 +149,7 @@ class Main {
   → https://www.w3schools.com/c/
 
   # Slides and Clip
-[Slides][Introduction to Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12774465/Introduction.to.Dart.pdf)
+[Slides](Introduction to Dart.pdf)(https://github.com/soonklang/dart-tutorial/files/12774465/Introduction.to.Dart.pdf)
 
 
   

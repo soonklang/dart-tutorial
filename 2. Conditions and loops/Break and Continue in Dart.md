@@ -297,7 +297,7 @@ for i in range(0, 5):
 4</pre>
 </details>
 
-## Slides & Clips
+## Clips
 Vdo link : https://youtu.be/U9qI0j3olEc?si=UyryZNU85180Wwa7
 
 ## Reference

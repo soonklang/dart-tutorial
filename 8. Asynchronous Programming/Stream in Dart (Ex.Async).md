@@ -234,3 +234,6 @@ End Task 1
 :https://dev.java/learn/api/streams/<br>
 :https://docs.python.org/3/library/asyncio-stream.html#streamwriter<br>
 :https://dart-tutorial.com/asynchronous-programming/stream-in-dart/
+
+## **Video**
+[Stream in Dart Ex Async]([https://youtu.be/kMgyhTy7xOM](https://youtu.be/dO88yiwcJcU)https://youtu.be/dO88yiwcJcU)

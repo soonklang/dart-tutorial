@@ -142,15 +142,12 @@ Discount:50
 -นิยามเมทอดใน Interface แบบ abstract โดยไม่ระบุรายละเอียดการทำงาน.<br>
 2การ Implement Interface:<br>
 -ใช้คีย์เวิร์ด implements เมื่อประกาศคลาสที่จะ Implement Interface.<br>
--นิยาม (override) เมทอดที่ปรากฏใน Interface ในคลาสที่ Implement โดยใช้ @override และระบุรายละเอียดการทำงานของเมทอด.<br>
-3การสร้างอินสแตนซ์:<br>
--สามารถสร้างอินสแตนซ์ของคลาสที่ Implement Interface และเรียกใช้งานเมทอดของ Interface ได้.<br>
-4การใช้งานหลาย Interface:<br>
+3การใช้งานหลาย Interface:<br>
 -คลาสสามารถ Implement หลาย Interface พร้อมกัน โดยใช้ , เพื่อคั่นระหว่างชื่อ Interface.<br>
-5การเปลี่ยนแปลง Interface:<br>
+4การเปลี่ยนแปลง Interface:<br>
 หากมีการเปลี่ยนแปลงใน Interface โดยการเพิ่มหรือลบเมทอด คุณต้องปรับปรุงทุกคลาสที่ Implement Interface นั้น.<br>
 
-การใช้งาน Interface ช่วยให้คุณสามารถสร้างโค้ดที่มีโครงสร้างและสัญญาที่มั่นใจได้ และสนับสนุนความยืดหยุ่นในการสร้างคลาสที่ต้องการนำไปใช้ในที่ต่าง ๆ โดยใช้รูปแบบที่ถูกกำหนดล่วงหน้าใน Interface.<br>
+
 # Reference
 https://dart-tutorial.com/object-oriented-programming/interface-in-dart/<br>
 https://www.geeksforgeeks.org/interface-in-dart/<br>

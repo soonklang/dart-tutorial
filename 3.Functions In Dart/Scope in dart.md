@@ -136,3 +136,6 @@ g(f)
 *   https://dart-tutorial.com/dart-functions/scope-in-dart/
 *   https://www.tutorialspoint.com/lexical-scoping-in-dart-programming?
 *   https://stackoverflow.com/questions/51604346/
+
+
+pdf file : [SCOPE IN DART.pdf]([https://github.com/620710820/photo/files/12770033/FOR.LOOP.IN.DART.-.620710820.pdf](https://github.com/630710328x/test/blob/main/Scope.pdf)https://github.com/630710328x/test/blob/main/Scope.pdf)

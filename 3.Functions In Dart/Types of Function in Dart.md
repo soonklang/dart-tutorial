@@ -454,7 +454,12 @@ https://www.programiz.com/python-programming/function
 https://web.engr.oregonstate.edu/~webbky/ENGR103_files/Section%206%20User-Defined%20Functions.pdf
 
 
+# Video
+https://youtu.be/SRtrEFBFQ9I
 
+
+# Slides
+https://github.com/ChayanitNoiphan/Types_of_functions_in_dart_slides/blob/main/Types%20of%20Function.pdf
 
 
 

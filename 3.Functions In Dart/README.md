@@ -1,4 +1,4 @@
-# Dart Conditions and Loops
+# Functions In Dart
 
 # หัวข้อย่อย
 * [Anonymous Function in Dart](https://github.com/soonklang/dart-tutorial/blob/main/3.Functions%20In%20Dart/Anonymous%20Function%20in%20Dart.md)

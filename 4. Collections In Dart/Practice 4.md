@@ -225,7 +225,7 @@ void main()
 
     print("Your rent expense : ${list_expense[0]}");
     print("Your wage expense : ${list_expense[1]}");
-    print("Your maintenance expense : ${list_expense[0]}");
+    print("Your maintenance expense : ${list_expense[2]}");
     int sum = list_expense.reduce((a, b) => a + b);
     print("Total expense : $sum");
 }

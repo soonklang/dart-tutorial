@@ -204,8 +204,8 @@ Educative
 - https://www.educative.io
 
 ## วิดีโอนำเสนอ
-- [Video](https://drive.google.com/file/d/1SGjWTSb65Rp_0Dy2itYXcIJk0b5c2GLj/view?usp=drive_link)
-
+- [Google Drive](https://drive.google.com/file/d/1SGjWTSb65Rp_0Dy2itYXcIJk0b5c2GLj/view?usp=drive_link)
+- [Youtube](https://www.youtube.com/watch?v=GpzJq3lpHew)
 ## สไลด์นำเสนอ
 - [Constructor in Dart Part2.pptx](https://github.com/ThanatatYAM/files/raw/main/Constructor%20in%20Dart%20Part2.pptx)
 - [Constructor in Dart Part2.pdf](https://github.com/ThanatatYAM/files/raw/main/Constructor%20in%20Dart%20Part2.pptx)

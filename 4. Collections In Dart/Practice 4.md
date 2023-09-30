@@ -1204,4 +1204,10 @@ Press other number to exit</code>
 >https://stackoverflow.com/questions/29568297/c-how-to-store-multiple-strings-in-an-array/
 >http://zerocontroller.blogspot.com/2017/05/c.html
 
+## VDO
+>https://www.youtube.com/watch?v=SeFhrsoDRbM
+
+## Slide
+[Programming-LanguagePresentation-Practice-4-Collections-In-Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12775137/Programming-LanguagePresentation-Practice-4-Collections-In-Dart.pptx)
+
 ## นายธนวัต ศิลป์สะอาด 630710654

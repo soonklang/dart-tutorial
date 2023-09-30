@@ -137,5 +137,7 @@ g(f)
 *   https://www.tutorialspoint.com/lexical-scoping-in-dart-programming?
 *   https://stackoverflow.com/questions/51604346/
 
+## **Link Video** ##
+https://youtu.be/SiUSeKjG1HU
 
 pdf file : [SCOPE IN DART.pdf](https://github.com/soonklang/dart-tutorial/files/12774190/Scope.pdf)

@@ -272,6 +272,11 @@ Num 1 is greater: i.e 1200
 
 https://www.youtube.com/watch?v=B17QgDSAovk&t=1s
 
+## สไลด์การบรรยาย
+
+## วิดิโอการบรรยาย
+https://www.youtube.com/watch?v=BmY-mjvE-is
+
 # Reference
 https://dart-tutorial.com/conditions-and-loops/conditions-in-dart/
 

@@ -129,14 +129,10 @@ void main(){
 # Python
 ```python
 class Bmi:
-  calbmi = 0.000
-  weight = 0.000
-  height = 0.000
   def __init__(self):
-    self.calbmi = 0.000
-    self.weight = 0.000
-    self.height = 0.000
-
+    self.calbmi = 0
+    self.weight = 0
+    self.height = 0
 
   def calculatorbmi(self):
     self.calbmi = self.weight/(self.height/100 * self.height/100)
@@ -152,8 +148,8 @@ class Bmi:
 
 
 bmi = Bmi()
-bmi.weight = 80.000
-bmi.height = 180.000
+bmi.weight = 80
+bmi.height = 180
 bmi.calculatorbmi()
 ```
 <details>

@@ -140,6 +140,6 @@ Weight cannot be negative
 * https://www.tutorialspoint.com/dart_programming/dart_programming_exceptions.htm
 
 ## Slides & Clips
-*Vdo link : https://youtu.be/s0UPdajVGjE
+Vdo link : https://youtu.be/s0UPdajVGjE
 
-*Slide Files : [Exception Handling In Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12774188/Exception.Handling.In.Dart.pptx)
+Slide Files : [Exception Handling In Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12774188/Exception.Handling.In.Dart.pptx)

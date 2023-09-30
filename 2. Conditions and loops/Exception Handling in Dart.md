@@ -75,7 +75,7 @@ catch Exception2 {
    //  โค๊ดจัดการ Exception
 }    
 finally {   
-   // โคีดที่จะรันเสมอไม่ว่าจะมี Exception หรือไม่  
+   // โค๊ดที่จะรันเสมอไม่ว่าจะมี Exception หรือไม่  
 }  
 ```
 ## ตัวอย่างการใช้งาน Final Block

@@ -155,3 +155,6 @@ https://www.geeksforgeeks.org/interface-in-dart/<br>
 https://www.educative.io/answers/what-is-an-interface-in-dart/<br>
 https://www.darttutorial.org/dart-tutorial/dart-interface/<br>
 https://www.javatpoint.com/dart-interfaces<br>
+
+# Slide & Video
+https://drive.google.com/file/d/19We0iNx2LEJqzrn5mBA8vhvWYh7-uVTC/view?usp=drive_link

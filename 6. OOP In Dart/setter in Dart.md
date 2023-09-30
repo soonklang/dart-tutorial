@@ -1,5 +1,5 @@
 # Setter in Dart
-  - ใช้ตั้งค่าข้อมูลในตัวแปรที่ได้รับจากเมธอด getter
+  - ใช้ตั้งค่าข้อมูลในตัวแปรที่ได้รับจากพารามิเตอร์
   - คือการที่เรารับค่าค่าหนึ่งเข้ามาเพื่อนำมาตั้งค่าตัวแปรนั้น ๆ ใน method
   - ทุกคลาสมี default setter method
 # Syntax
@@ -117,6 +117,10 @@ print(raj.get_age())
 print(raj._age)
 
 ```
+
+## **คลิปการสอน**
+[คลิกที่นี่!!]([https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/](https://www.youtube.com/watch?v=MP-wzHpVKoI&ab_channel=AtthayaThongkhum))
+<br>
 
 ## **Reference**
 [เนื้อหาส่วนที่ 1](https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/)

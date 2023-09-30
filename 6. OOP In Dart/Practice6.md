@@ -64,9 +64,9 @@ Laptop RAM: 32</code>
 ### - Java
 ```java
 class Laptop {
-    public Integer id;
+    public int id;
     public String name;
-    public Integer ram;
+    public int ram;
 
 
     public void printDetails() {
@@ -399,25 +399,17 @@ Camera 3 - ID: 3, Brand: Nikon, Color: Silver, Price: 700</code>
 ### - Java
 ```java
 class Camera {
-    public Integer id;
-    public String brand;
-    public String color;
-    public Double price;
+    private int id;
+    private String brand;
+    private String color;
+    private double price;
 
-    // Constructor
-    public Camera() {
-        this.id = null;
-        this.brand = null;
-        this.color = null;
-        this.price = null;
-    }
-
-    // Getters and setters
-    public Integer getId() {
+    // Getter and setter
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -437,11 +429,11 @@ class Camera {
         this.color = color;
     }
 
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }
@@ -451,23 +443,18 @@ public class Main {
         Camera camera1 = new Camera();
         Camera camera2 = new Camera();
         Camera camera3 = new Camera();
-
         camera1.setId(1);
         camera2.setId(2);
         camera3.setId(3);
-
         camera1.setBrand("Canon");
         camera2.setBrand("Sony");
         camera3.setBrand("Nikon");
-
         camera1.setColor("Black");
         camera2.setColor("White");
         camera3.setColor("Silver");
-
         camera1.setPrice(500.0);
         camera2.setPrice(600.0);
         camera3.setPrice(700.0);
-
         System.out.println("Camera 1 - ID: " + camera1.getId() + ", Brand: " + camera1.getBrand() +
                 ", Color: " + camera1.getColor() + ", Price: " + camera1.getPrice());
         System.out.println("Camera 2 - ID: " + camera2.getId() + ", Brand: " + camera2.getBrand() +
@@ -476,6 +463,7 @@ public class Main {
                 ", Color: " + camera3.getColor() + ", Price: " + camera3.getPrice());
     }
 }
+
 
 
    ```
@@ -518,7 +506,11 @@ void main() {
 ### - Java
 ```java
 interface Bottle {
-    void open();
+     void open();
+
+    public static Bottle bottle() {
+        return new CokeBottle();
+    }
 }
 
 class CokeBottle implements Bottle {
@@ -530,9 +522,7 @@ class CokeBottle implements Bottle {
 
 public class Main {
     public static void main(String[] args) {
-        // สร้าง CokeBottle โดยใช้ Bottle factory constructor
-        Bottle cokeBottle = new CokeBottle();
-
+        Bottle cokeBottle = Bottle.bottle();
         cokeBottle.open();
     }
 }

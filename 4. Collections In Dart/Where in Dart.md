@@ -118,6 +118,7 @@ int num = num1.singleWhere(
 ### *< Silde&Video >*
 [PDF silde](https://github.com/soonklang/dart-tutorial/files/12774938/Where.In.Dart.pdf)
 
+[Video](https://youtu.be/tvE-H-jlu1U)
 
 
 

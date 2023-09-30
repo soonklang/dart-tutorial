@@ -119,7 +119,7 @@ print(raj._age)
 ```
 
 ## **คลิปการสอน**
-[คลิกที่นี่!!](https://www.geeksforgeeks.org/getter-and-setter-methods-in-dart/](https://www.youtube.com/watch?v=MP-wzHpVKoI&ab_channel=AtthayaThongkhum))
+[คลิกที่นี่!!](https://www.youtube.com/watch?v=MP-wzHpVKoI&ab_channel=AtthayaThongkhum))
 <br>
 
 ## **Reference**

@@ -35,23 +35,23 @@ class Zoo {
   }
 }
  
-// class Khao_kheow_zoo implementing class Zoo
-class Khao_kheow_zoo implements Zoo {
+// class Panda implementing class Zoo
+class Panda implements Zoo {
 
   void Animal() {
-    print("สวนสัตว์เขาเขียวมี สิงโต ม้าลาย อย่างล่ะตัว");
+    print("สวนสัตว์มี แพนด้า 2 ตัว");
   }
 }
  
 void main() {
-  // creating instance of Class khao_kheow_zoo
-  var khao_kheow_zoo = Khao_kheow_zoo();
-  khao_kheow_zoo.Animal();
+  // creating instance of Class Panda
+  var anda = Panda();
+ panda.Animal();
 }
 ```
 Output
 ```
-สวนสัตว์เขาเขียวมี สิงโต ม้าลาย อย่างล่ะตัว
+สวนสัตว์มี แพนด้า 2 ตัว
 ```
 # ตัวอย่างการใช้ Interface ในภาษา Java 
 ```java
@@ -93,25 +93,26 @@ Output
 
 # ตัวอย่างการใช้ Implementing Multiple Interfaces Dart
 ```dart
+
 void main() {
-   Calculator c = Calculator();
-   print("The gross total : ${c.ret_tot()}");
-   print("Discount : ${c.ret_dis()}");
+   Bank c = Bank();
+   print("coinSilver : ${c.coinSilver()}");
+   print("coinGold : ${c.coinGold()}");
 }
 
- abstract class Calculate_Total {
-   int ret_tot();
+ abstract class Silver {
+   int coinSilver();
 }
 
- abstract class Calculate_Discount {
-   int ret_dis();
+ abstract class Gold  {
+   int coinGold();
 }
 
-class Calculator implements Calculate_Total, Calculate_Discount {
-   int ret_tot() {
+class Bank implements Silver, Gold {
+   int coinSilver() {
       return 1000;
    }
-   int ret_dis() {
+   int coinGold() {
       return 50;
    }
 }
@@ -120,8 +121,8 @@ class Calculator implements Calculate_Total, Calculate_Discount {
 ```
 Output
 ```
-The gross total: 1000 
-Discount:50 
+coinSilver: 1000 
+coinGold:50 
 ```
 # สิ่งที่ต้องระวัง
 1.การนิยามเมทอด: เมทอดในอินเทอร์เฟซจะถูกนิยามเป็น abstract และต้องถูกนิยามใหม่ในคลาสที่ Implement อินเทอร์เฟซนั้น ถ้าคุณละเมทอดหรือทำผิดพลาดในการระบุเมทอดจากอินเทอร์เฟซ จะทำให้เกิดข้อผิดพลาด.<br>

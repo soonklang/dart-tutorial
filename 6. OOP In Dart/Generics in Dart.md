@@ -449,7 +449,7 @@ Python
 ความสามารถของ generic ช่วยให้ คนที่เรียกใช้งานเป็นคนกำหนดเองได้ว่า อยากทำงานกับ data type อะไร ช่วยทำให้โค้ดมีความยืดหยุ่น และนำกลับมาใช้ใหม่ได้มากขึ้น
 
 ## Slide
-
+- [GenericsinDart.pdf](https://github.com/soonklang/dart-tutorial/files/12774187/GenericsinDart.pdf)
 ## Video
 - [Generics in Dart](https://www.youtube.com/watch?v=I044098K6Fk)
 ## References

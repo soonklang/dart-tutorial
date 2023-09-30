@@ -500,7 +500,6 @@
  
 *<https://dart.dev/language/collections>*
 
-# Link Video
 *<https://www.geeksforgeeks.org/list-interface-java-examples/>*
 
 *<https://www.javatpoint.com/java-list>*
@@ -508,3 +507,7 @@
 *<https://www.geeksforgeeks.org/python-lists/>*
 
 *<https://www.programiz.com/python-programming/list#google_vignette>*
+
+# Presentation
+Link video :
+PDF :

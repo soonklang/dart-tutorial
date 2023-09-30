@@ -201,7 +201,7 @@ Hello
 - **await** : หมายความว่า ให้รอ รอจนกว่า fucntion นี้จะทำงานเสร็จและจะ return value กลับไป (จะใช้ได้กับ Function ที่เป็น Future เท่านั้น)
 
 ## Slide
-- [AsyncAndAwait.pptx]([https://github.com/soonklang/dart-tutorial/files/12769061/AsyncAndAwait.pptx](https://github.com/Lathavit/PL/blob/main/AsyncAndAwait.pptx))
+- [AsyncAndAwait.pptx]([https://github.com/Lathavit/PL/blob/main/AsyncAndAwait.pptx])
 
 ## Video
 - [Async and Await In Dart](https://youtu.be/ZwQyOYOw8zE)

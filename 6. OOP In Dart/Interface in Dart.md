@@ -54,8 +54,7 @@ Output
 สวนสัตว์มี แพนด้า 2 ตัว
 ```
 # เปรียบเทียบกับภาษา Java 
-```
-interface Zoo {
+```interface Zoo {
    public void Animal(); 
       }
 

@@ -587,5 +587,7 @@ https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pyt
 
 https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circumference/v/area-of-a-circle
 
-### *< vdo presentation>*
+### *< video presentation>*
 https://youtu.be/wVn2PZxak2k
+### *< presentation file>*
+[630710336 Presentation Practice 3.pptx](https://github.com/soonklang/dart-tutorial/files/12775084/630710336.Presentation.Practice.3.pptx)

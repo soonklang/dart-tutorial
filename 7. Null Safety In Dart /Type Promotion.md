@@ -68,6 +68,11 @@ void main(){
 ถือว่าเป็นการ promoting general types เป็น specific subtypes
 
 ```
+## Presentation Slide
+[Type-Promotion Slide]
+
+## Link Video
+[Type-Promotion Video](https://www.youtube.com/watch?v=AR9E8RRx5i8)
 
 ## ข้อมูลอ้างอิง
 [dart-tutorial](https://dart-tutorial.com/null-safety/type-promotion-in-dart/) 

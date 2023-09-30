@@ -345,3 +345,7 @@ https://dart-tutorial.com/collections/set-in-dart/
 https://www.darttutorial.org/dart-tutorial/dart-set/  
 http://marcuscode.com/lang/java/hashset  
 http://marcuscode.com/lang/python/set
+
+
+## Link VDO
+https://youtu.be/f_2FvIE9828

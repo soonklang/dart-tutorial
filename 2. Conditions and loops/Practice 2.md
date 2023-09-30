@@ -499,6 +499,10 @@ for i in range(1, 101):
         print(i)
 ```
 ---
+## file powerpoint
+
+[Practice2.pptx]([https://github.com/630710133Ratchata/Slide_Download/raw/main/Practice%202.pptx])
+
 # อ้างอิง
 >https://dart-tutorial.com/conditions-and-loops/
 
@@ -508,4 +512,4 @@ for i in range(1, 101):
 
 >https://www.geeksforgeeks.org/python-programming-examples/
 
->ChatGPT
+

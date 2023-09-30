@@ -1,6 +1,5 @@
 Datatypes in Dart (5-8)
 
-https://youtu.be/O985hzMjih0
 
 
  # DATA TYPES IN DART
@@ -178,8 +177,11 @@ Dart ได้แบ่ง type เป็น nullable และ non-nullable แ
 
 ![image](https://github.com/soonklang/dart-tutorial/assets/120002243/45aedfd6-0b27-4b71-a997-de5c60255566)
 
+ลิงค์ Video
+https://youtu.be/O985hzMjih0
 
-
+Slide 
+[Uploading PL287.pdf…]()
 
 
 

@@ -176,3 +176,9 @@ void main() {
 
 [more exaple](https://www.educative.io/answers/what-is-the-late-keyword-in-dart)
 [Lazy Initialization](https://dev.to/pktintali/late-variables-in-dart-dart-learning-series-1-2opf)
+
+## Slide
+[late keyword in dart](https://github.com/soonklang/dart-tutorial/files/12752742/)
+
+## Link Vdo
+[late keyword in dart](https://www.youtube.com/watch?v=jtz-0pcnAQ4)

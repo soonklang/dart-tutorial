@@ -274,7 +274,7 @@ https://www.youtube.com/watch?v=B17QgDSAovk&t=1s
 
 ## สไลด์การบรรยาย
 
-## วิดิโอการบรรยาย
+## Videoการบรรยาย
 https://www.youtube.com/watch?v=BmY-mjvE-is
 
 # Reference

@@ -260,7 +260,7 @@ void main() {
 50
 ```
 #### Loops In List ใน Java และ Python
-ใน และ ก็สามารถใช้ loop ในการพิมพ์ค่าใน list ได้เช่นกัน
+ใน java และ python ก็สามารถใช้ loop ในการพิมพ์ค่าใน list ได้เช่นกัน
 >Ex Java
 ```
 import java.util.*;

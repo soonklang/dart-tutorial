@@ -149,5 +149,7 @@ public static Singleton getInstance() {
  - [Singleton Design Pattern in Python - javatpoint](https://www.javatpoint.com/singleton-design-pattern-in-python)
  - [Singleton Design Pattern | Implementation - GeeksforGeeks](https://www.geeksforgeeks.org/singleton-design-pattern/)
  - [How do you build a Singleton in Dart? - Stack Overflow](https://stackoverflow.com/questions/12649573/how-do-you-build-a-singleton-in-dart)
+## Video
+-https://youtu.be/jdqeFUmnteA
 
 

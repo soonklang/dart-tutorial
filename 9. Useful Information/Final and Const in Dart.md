@@ -81,7 +81,7 @@ IP = "192.168.1.1"
 ## Presentation
 https://youtu.be/I_898-H7j8M
 ## Slide
-[Dart Tutorial]([https://dart-tutorial.com/useful-information/final-vs-const-in-dart/](https://drive.google.com/file/d/1Inl69lhhaHoY6VLmtwxIFx1xg56TVwCL/view?usp=drive_link))
+[Slide](https://drive.google.com/file/d/1Inl69lhhaHoY6VLmtwxIFx1xg56TVwCL/view?usp=drive_link)
 
 ## Reference
 [Dart Tutorial](https://dart-tutorial.com/useful-information/final-vs-const-in-dart/)

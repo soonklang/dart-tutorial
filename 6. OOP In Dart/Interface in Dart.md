@@ -45,8 +45,34 @@ class Panda implements Zoo {
  
 void main() {
   // creating instance of Class Panda
-  var anda = Panda();
+  var panda = Panda();
  panda.Animal();
+}
+```
+Output
+```
+สวนสัตว์มี แพนด้า 2 ตัว
+```
+# เปรียบเทียบกับภาษา Java 
+```
+interface Zoo {
+    void Animal();
+}
+
+// Define the Panda class implementing the Zoo interface
+class Panda implements Zoo {
+    @Override
+    public void Animal() {
+        System.out.println("สวนสัตว์มี แพนด้า 2 ตัว");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of the Panda class
+        Panda panda = new Panda();
+        panda.Animal();
+    }
 }
 ```
 Output
@@ -139,13 +165,21 @@ coinGold:50
 
 # สรุปการใช้ Interface in Dart
 1การประกาศ Interface:<br>
+
 -ใช้ abstract class เพื่อประกาศ Interface.<br>
+
 -นิยามเมทอดใน Interface แบบ abstract โดยไม่ระบุรายละเอียดการทำงาน.<br>
+
 2การ Implement Interface:<br>
+
 -ใช้คีย์เวิร์ด implements เมื่อประกาศคลาสที่จะ Implement Interface.<br>
+
 3การใช้งานหลาย Interface:<br>
+
 -คลาสสามารถ Implement หลาย Interface พร้อมกัน โดยใช้ , เพื่อคั่นระหว่างชื่อ Interface.<br>
+
 4การเปลี่ยนแปลง Interface:<br>
+
 หากมีการเปลี่ยนแปลงใน Interface โดยการเพิ่มหรือลบเมทอด คุณต้องปรับปรุงทุกคลาสที่ Implement Interface นั้น.<br>
 
 
@@ -157,5 +191,5 @@ https://www.darttutorial.org/dart-tutorial/dart-interface/<br>
 https://www.javatpoint.com/dart-interfaces<br>
 
 # Slide & Video
-https://drive.google.com/file/d/19We0iNx2LEJqzrn5mBA8vhvWYh7-uVTC/view?usp=drive_link
-https://youtu.be/bX7q5cZDatQ?feature=shared
+https://drive.google.com/file/d/19We0iNx2LEJqzrn5mBA8vhvWYh7-uVTC/view?usp=drive_link<br>
+https://youtu.be/bX7q5cZDatQ?feature=shared<br>

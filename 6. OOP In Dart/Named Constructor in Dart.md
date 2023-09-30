@@ -316,8 +316,7 @@ fun main() {
 
 ------------
 ## Veido
-[Named Constructor in dart youtube](https://youtu.be/kU5ItGHXyiM "Named Constructor in dart youtube")
-
+[Named Constructor in dart Youtube](https://www.youtube.com/watch?v=xUFV2qlhx9M "Named Constructor in dart Youtube")
 ------------
 
 ## Slide

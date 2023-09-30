@@ -814,4 +814,8 @@ https://www.programiz.com/python-programming/methods/string <br>
 https://www.programiz.com/java-programming/library/string <br>
 https://www.delftstack.com/tags/c-string/ <br>
 
+## Link Video
+
+https://youtu.be/iPKQW0uKcbw?feature=shared
+
 

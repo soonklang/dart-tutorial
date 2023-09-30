@@ -384,3 +384,9 @@ September 01, 2023 03:14:07 PM
 [Date and time in Java](https://akexorcist.dev/datetime-api-in-java-8-cheatsheet/)<br>
 [Date and time in Python](https://www.w3schools.com/python/python_datetime.asp)<br>
 [Date and time in C](http://marcuscode.com/lang/c/date-and-time-formats)
+
+## Slide
+https://drive.google.com/file/d/1ErxLdy1oYK4Jlbzk4Jzs7HqbdJXhHL7y/view?usp=drivesdk
+
+## Video
+https://youtu.be/_TP8emNyrU8?si=Hi47ev2IP73jvfkd

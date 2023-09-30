@@ -142,4 +142,4 @@ https://www.w3schools.com/c/c_while_loop.php<br>
 # Link Video
 Link video : https://youtu.be/JSo3PoHSRxI
 # Slide
-Download slide here : [While loop in Dart](https://github.com/630710041/Download_pptx_file/blob/main/while_loop_in_dart.pptx)
+Download slide here : [While loop in Dart](https://github.com/630710041/Download_pptx_file/raw/main/while_loop_in_dart.pptx)

@@ -273,10 +273,9 @@ Num 1 is greater: i.e 1200
 https://www.youtube.com/watch?v=B17QgDSAovk&t=1s
 
 ## สไลด์การบรรยาย
-[Condition_in_Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12774575/Condition_in_Dart.pptx.pptx)
+[Condition_in_Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12774579/Condition_in_Dart.pptx)
 
-
-## Videoการบรรยาย
+## Video การบรรยาย
 https://www.youtube.com/watch?v=BmY-mjvE-is
 
 # Reference

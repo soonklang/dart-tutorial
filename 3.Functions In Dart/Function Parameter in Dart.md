@@ -233,3 +233,8 @@ GeeksForGeeks
 *   https://www.geeksforgeeks.org/default-arguments-in-python/
 *   https://www.w3schools.com/python/gloss_python_function_keyword_arguments.asp
 *   https://www.geeksforgeeks.org/how-to-pass-optional-parameters-to-a-function-in-python/
+
+*   ## Slides & Clips
+Vdo link : [https://youtu.be/s0UPdajVGjE](https://www.youtube.com/watch?v=EK4lRPd3mGA)https://www.youtube.com/watch?v=EK4lRPd3mGA
+
+Slide Files : [Function Parameter in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12774265/Function.Parameter.in.Dart.pptx)

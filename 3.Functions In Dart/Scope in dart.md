@@ -138,4 +138,4 @@ g(f)
 *   https://stackoverflow.com/questions/51604346/
 
 
-pdf file : [SCOPE IN DART.pdf](https://github.com/soonklang/dart-tutorial/files/12774190/Scope.pdf))
+pdf file : [SCOPE IN DART.pdf](https://github.com/soonklang/dart-tutorial/files/12774190/Scope.pdf)

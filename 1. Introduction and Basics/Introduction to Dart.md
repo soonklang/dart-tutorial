@@ -140,7 +140,7 @@ class Main {
 
   
   → https://www.tamemo.com/post/172/dart-101-intro/
-[Introduction to Dart.pdf]
+
 
   
   → http://sutir.sut.ac.th:8080/jspui/bitstream/123456789/5187/2/Fulltext.pdf
@@ -149,7 +149,9 @@ class Main {
   → https://www.w3schools.com/c/
 
   # Slides and Clip
-Slides(Introduction to Dart.pdf)(https://github.com/soonklang/dart-tutorial/files/12774465/Introduction.to.Dart.pdf)
+[Slides](https://github.com/soonklang/dart-tutorial/files/12774465/Introduction.to.Dart.pdf)
+
+
 [Clip](https://youtu.be/yyQTLctgoV0)
 
   

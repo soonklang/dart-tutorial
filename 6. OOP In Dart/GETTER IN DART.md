@@ -510,6 +510,12 @@ class Person:
 # สรุป
 Getter เป็นเมธตอดในค่าที่ส่วนใหญ่จะเป็นการเข้าถึงแบบ private แต่ถ้าหากต้องการเข้าไปแก้ไขค่าจะต้องใช่ [Setter](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/setter%20in%20Dart.md) แทน
 
+* คลิปสอนและสไลด์:
+
+  https://youtu.be/TEqHg_ZWAfI
+
+  https://drive.google.com/file/d/15Twp_qixtOJHiNdF-8Kv8AaT1J77peAS/view?usp=sharing
+
 # แหล่งอ้างอิง
 
 https://dart-tutorial.com/object-oriented-programming/getter-in-dart/

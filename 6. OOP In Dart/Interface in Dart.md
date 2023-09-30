@@ -12,14 +12,20 @@ class Class_name implements Interface_class_name {
    ...
 }
 ```
-จะเห็นว่า ไม่ต้องเติมคำว่า interface หน้าชื่อคลาสแม่แบบที่ต้องการให้implement  
- ในภาษา Dart จะมองว่าทุกๆ class เป็น interface สามารถนำไปใช้งานได้ โดยไม่ต้องใช้ interface keyword
+จะเห็นว่า ไม่ต้องใช้ interface keyword หน้าชื่อคลาสแม่แบบที่ต้องการให้implement  
+ ในภาษา Dart จะมองว่าทุกๆ class เป็น interface สามารถนำไปใช้งานได้เลย 
 # Syntax ของ java 
 ```java
 interface Animal {
-  public void animalSound(); 
+
   public void sleep(); 
 }
+class Print implements Animal{
+  public void sleep(){
+System.out.println("หลับ");
+   }
+}
+
 ```
 # ตัวอย่างการใช้ Interface ในภาษา Dart
 ```dart
@@ -87,25 +93,30 @@ Output
 
 # ตัวอย่างการใช้ Implementing Multiple Interfaces Dart
 ```dart
-void main() { 
-   Calculator c = new Calculator(); 
-   print("The gross total : ${c.ret_tot()}"); 
-   print("Discount :${c.ret_dis()}"); 
-}  
-class Calculate_Total { 
-   int ret_tot() {} 
-}  
-class Calculate_Discount { 
-   int ret_dis() {} 
-}                                     //ใช้ " , " ในการใช้ implements หลาย class
-class Calculator  implements Calculate_Total,Calculate_Discount { 
-   int ret_tot() { 
-      return 1000; 
-   } 
-   int ret_dis() { 
-      return 50; 
-   } 
+void main() {
+   Calculator c = Calculator();
+   print("The gross total : ${c.ret_tot()}");
+   print("Discount : ${c.ret_dis()}");
 }
+
+ abstract class Calculate_Total {
+   int ret_tot();
+}
+
+ abstract class Calculate_Discount {
+   int ret_dis();
+}
+
+class Calculator implements Calculate_Total, Calculate_Discount {
+   int ret_tot() {
+      return 1000;
+   }
+   int ret_dis() {
+      return 50;
+   }
+}
+
+
 ```
 Output
 ```
@@ -113,20 +124,33 @@ The gross total: 1000
 Discount:50 
 ```
 # สิ่งที่ต้องระวัง
-แม้ว่าการใช้งานหลายอินเทอร์เฟซจะมีประสิทธิภาพ แต่มาพร้อมกับความท้าทาย:<br>
+1.การนิยามเมทอด: เมทอดในอินเทอร์เฟซจะถูกนิยามเป็น abstract และต้องถูกนิยามใหม่ในคลาสที่ Implement อินเทอร์เฟซนั้น ถ้าคุณละเมทอดหรือทำผิดพลาดในการระบุเมทอดจากอินเทอร์เฟซ จะทำให้เกิดข้อผิดพลาด.<br>
 
-ความซับซ้อน : ยิ่งคลาสใช้อินเทอร์เฟซมากเท่าใด คลาสก็จะยิ่งซับซ้อนมากขึ้นเท่านั้น จำเป็นอย่างยิ่งที่จะต้องรักษาสมดุลเพื่อหลีกเลี่ยงการเขียนCodeที่ซับซ้อนเกินไป<br>
-วิธีการทับซ้อนกัน : หากสองอินเทอร์เฟซมีวิธีการที่มีชื่อเดียวกัน แต่มีฟังก์ชันการทำงานที่แตกต่างกัน อาจนำไปสู่ความสับสนได้<br>
+2.การสร้างอินสแตนซ์: อินสแตนซ์ของคลาสที่ Implement อินเทอร์เฟซจะต้องนำเอาทุกเมทอดในอินเทอร์เฟซมานิยามใหม่ ไม่ว่าจะมีการใช้งานเมทอดนั้นหรือไม่.<br>
+
+3.การอัปเดต: หากคุณเพิ่มเมทอดใหม่ในอินเทอร์เฟซที่มีคลาส Implement แล้ว คุณจะต้องอัปเดตทุกคลาสที่ Implement อินเทอร์เฟซนั้น เพื่อนิยามเมทอดใหม่ด้วย.<br>
+
+4.สองคลาสอาจมีเมทอดชื่อเดียว: ถ้าคุณมีคลาสที่ Implement หลายอินเทอร์เฟซ และอินเทอร์เฟซเหล่านี้มีเมทอดที่มีชื่อเดียวกัน คุณจะต้องสร้างการนิยามของเมทอดที่ชื่อซ้ำนี้ในคลาสที่ Implement และระบุการทำงานที่ถูกต้องในแต่ละเมทอด.<br>
+
+
+
+
+
 # สรุปการใช้ Interface in Dart
-1.ใช้เพื่อสืบทอดmethod ของคลาสแม่แบบ
+1การประกาศ Interface:<br>
+-ใช้ abstract class เพื่อประกาศ Interface.<br>
+-นิยามเมทอดใน Interface แบบ abstract โดยไม่ระบุรายละเอียดการทำงาน.<br>
+2การ Implement Interface:<br>
+-ใช้คีย์เวิร์ด implements เมื่อประกาศคลาสที่จะ Implement Interface.<br>
+-นิยาม (override) เมทอดที่ปรากฏใน Interface ในคลาสที่ Implement โดยใช้ @override และระบุรายละเอียดการทำงานของเมทอด.<br>
+3การสร้างอินสแตนซ์:<br>
+-สามารถสร้างอินสแตนซ์ของคลาสที่ Implement Interface และเรียกใช้งานเมทอดของ Interface ได้.<br>
+4การใช้งานหลาย Interface:<br>
+-คลาสสามารถ Implement หลาย Interface พร้อมกัน โดยใช้ , เพื่อคั่นระหว่างชื่อ Interface.<br>
+5การเปลี่ยนแปลง Interface:<br>
+หากมีการเปลี่ยนแปลงใน Interface โดยการเพิ่มหรือลบเมทอด คุณต้องปรับปรุงทุกคลาสที่ Implement Interface นั้น.<br>
 
-2.คลาสสามารถขยายได้เพียงคลาสเดียว แต่สามารถนำไปใช้ได้มากเท่าทีเราต้องการ
-
-3.Dart ไม่มีวิธีการโดยตรงในการประกาศอินเทอร์เฟซ ดังนั้นการประกาศคลาสจึงถือเป็นการประกาศบนอินเทอร์เฟซ
-
-4.คลาสย่อยจะต้องแทนที่ฟิลด์ของอินเทอร์เฟซ
-
-5.เราสามารถใช้อินเทอร์เฟซหนึ่งหรือหลายอินเทอร์เฟซพร้อมกันได้
+การใช้งาน Interface ช่วยให้คุณสามารถสร้างโค้ดที่มีโครงสร้างและสัญญาที่มั่นใจได้ และสนับสนุนความยืดหยุ่นในการสร้างคลาสที่ต้องการนำไปใช้ในที่ต่าง ๆ โดยใช้รูปแบบที่ถูกกำหนดล่วงหน้าใน Interface.<br>
 # Reference
 https://dart-tutorial.com/object-oriented-programming/interface-in-dart/<br>
 https://www.geeksforgeeks.org/interface-in-dart/<br>

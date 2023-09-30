@@ -276,6 +276,14 @@ print(extension.capitalize())  # แสดงผล "Hello"
 [Dart: Extension Methods](https://www.petepittawat.dev/posts/dart-extension-methods)<br>
 [Extension Methods | Dart](https://dart.dev/language/extension-methods)
 
+## Presentation
+
+- [Extension in Dart.mp4](https://youtu.be/FEfZlpPtuPo?si=cDvAbPuD1Vavfx10)<br>
+
+## Slide
+
+- [Extension in Dart.pdf](https://drive.google.com/file/d/1OIJG0ARjdH6jcnzdbtJdqY80-d-YSalT/view?usp=sharing)
+
   
   
  

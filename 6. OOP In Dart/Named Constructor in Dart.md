@@ -320,7 +320,7 @@ fun main() {
 ------------
 
 ## Slide
-[Named Constructor in dart power point](https://github.com/yimsukananP/hello_flutter/blob/master/640710056%20Named%20Constructor%20in%20dart%20pdf.pdf"Named Constructor in dart power point")
+[Named Constructor in dart pdf](https://github.com/yimsukananP/hello_flutter/blob/master/640710056%20Named%20Constructor%20in%20dart%20pdf.pdf "Named Constructor in dart pdf")
 ------------
 
 

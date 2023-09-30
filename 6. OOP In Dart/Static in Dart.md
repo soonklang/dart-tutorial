@@ -564,6 +564,11 @@ https://www.digitalocean.com/community/tutorials/python-static-method
 
 https://pynative.com/python-static-method/
 
+## link slide
+https://drive.google.com/file/d/1CutkhPXm--f0nin7slFim4WYJFf0UjGn/view?usp=sharing
+
+## link video 
+https://youtu.be/lK9A1bseCM4?feature=shared
 
 
 

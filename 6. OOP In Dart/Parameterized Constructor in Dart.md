@@ -343,6 +343,10 @@
 	Second number = 20
 	Addition of two numbers = 30
 ```
+# Video
+
+# Slied
+- [Parameterized Constructor in Dart.pdf](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Parameterized%20Constructor%20in%20Dart.pdf)
 
 # Reference
 
@@ -353,3 +357,5 @@
  - https://www.geeksforgeeks.org/constructors-c/
  - https://www.geeksforgeeks.org/constructors-in-java/
  - https://www.geeksforgeeks.org/constructors-in-python/
+
+640710052 ธนาดล ชีวโรจน์ณรงค์

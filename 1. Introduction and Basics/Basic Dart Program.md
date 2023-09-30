@@ -393,6 +393,9 @@ https://www.tutorialspoint.com/dart_programming/index.htm
 
 https://www.tutorialspoint.com/dart_programming/dart_programming_overview.htm
 
-## Clip
+## Slides & Clip
 link vdo : https://youtu.be/1C6uwTi5MbU
+
+pptx file : [Basic Dart Program.pptx](https://github.com/soonklang/dart-tutorial/files/12774177/Basic.Dart.Program.pptx)
+
 

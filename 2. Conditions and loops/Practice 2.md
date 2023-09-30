@@ -500,11 +500,12 @@ for i in range(1, 101):
 ```
 ---
 ## Video
-Link video : https://www.youtube.com/watch?v=kfxUKefYSP0
+
+[Video](https://www.youtube.com/watch?v=kfxUKefYSP0)
 
 ## file powerpoint
 
-Practice2 : https://github.com/630710133Ratchata/Slide_Download/raw/main/Practice%202.pptx
+[Practice2](https://github.com/630710133Ratchata/Slide_Download/raw/main/Practice%202.pptx)
 
 # อ้างอิง
 >https://dart-tutorial.com/conditions-and-loops/

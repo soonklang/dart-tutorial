@@ -70,10 +70,10 @@
     ---
 
     ## Link Slide
-    ### 
+    https://drive.google.com/drive/folders/1IJftJQ962W1H9BmwCS3ZcuH4hK8Ek6bQ?usp=sharing 
 
     ## Link Video
-    ### 
+    https://youtu.be/VLp6zG8Bxu0
 
     ## Reference
 

@@ -138,3 +138,8 @@ https://www.tutorialspoint.com/dart_programming/dart_programming_while_loop.htm<
 https://www.datacamp.com/tutorial/python-while-loop<br>
 https://www.w3schools.com/java/java_while_loop.asp<br>
 https://www.w3schools.com/c/c_while_loop.php<br>
+
+# Link Video
+Link video : https://youtu.be/JSo3PoHSRxI
+# Slide
+

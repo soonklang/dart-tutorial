@@ -154,6 +154,7 @@ House Price: 400000.0</code>
 
 ### - Java
 ```java
+import java.util.ArrayList;
 class House {
     int id;
     String name;
@@ -168,24 +169,25 @@ class House {
 
 public class Main {
     public static void main(String[] args) {
-        House[] houses = new House[3];
+        ArrayList<House> houses = new ArrayList<House>();
 
         House house_1 = new House(1, "House A", 200000.0);
         House house_2 = new House(2, "House B", 300000.0);
         House house_3 = new House(3, "House C", 400000.0);
 
-        houses[0] = house_1;
-        houses[1] = house_2;
-        houses[2] = house_3;
-
+        houses.add(house_1);
+        houses.add(house_2);
+        houses.add(house_3);
+        
         for (House house : houses) {
             System.out.println("House ID: " + house.id);
             System.out.println("House Name: " + house.name);
-            System.out.println("House Price: " + house.price));
+            System.out.println("House Price: " + house.price);
             System.out.println("");
         }
     }
 }
+
 
    ```
 

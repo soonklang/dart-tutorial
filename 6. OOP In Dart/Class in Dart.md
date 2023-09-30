@@ -162,7 +162,7 @@ https://dart-tutorial.com/object-oriented-programming/class-in-dart/<br>
 
  
 # Slides & Clip
-[Clip](https://youtu.be/JJe66ftuMK4)<br>
+https://youtu.be/JJe66ftuMK4<br>
 [Slide.pdf](https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pdf?raw=true)<br>
 [Slide.pptx](https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pptx?raw=true)
 

@@ -818,4 +818,6 @@ https://www.delftstack.com/tags/c-string/ <br>
 
 https://youtu.be/iPKQW0uKcbw?feature=shared
 
+## Slide
 
+[Comments in Dart.pdf](https://github.com/Pannita205/StringInDart/blob/92f778fae4ea4c17645f9cb80129ff3b5bdb5d3e/String%20In%20Dart%20(trim-end).pdf)

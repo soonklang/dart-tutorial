@@ -401,12 +401,9 @@ int main() {
 
 
 ## Video Link 
-[
-](https://youtu.be/H1vG-EsnUw4)
+https://youtu.be/H1vG-EsnUw4
 
 ## Slide link
-[
-](
 https://drive.google.com/file/d/18-KzZVMCf_Ofc58J_YlUuVXuiiRfvOv1/view?usp=share_link)
 ## References :
 https://www.javatpoint.com/dart-inheritance

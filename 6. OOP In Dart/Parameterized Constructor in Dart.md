@@ -71,7 +71,7 @@
         this.name = name;
         this.age = age;
         this.rollNumber = rollNumber;
-      }**strong text**
+      }
     }
     
     void main(){

@@ -11,39 +11,42 @@ Class ยังเป็นตัวกำหนด Properties และ Mehtods
 Object คือตัวอย่างของ Class คุณสามารถสร้างได้หลาย Object ใน Class เดียวกัน
 ถ้าอยากรู้เกี่ยวกับ Object มากขึ้นให้ไปที่หัวข้อ [Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Object%20in%20dart.md)
 
-# ตัวอย่าง Class และ Object ในภาษา Dart
 ตัวอย่างข้างล่างนี้จะมี Class Animal มี properties 3 อย่าง คือ
-name(ชื่อ) , numberOfLegs(จำนวนขา) และ lifeSpan(อายุไข) และ Class จะมี method ชื่อ display
-ซึ่งจะพิมพ์ค่า properties ทั้ง 3 อย่างออกมา
+weight(น้ำหนัก) , height(ส่วนสูง) และ calbmi(ค่า bmi) และ Class จะมี method ชื่อ calculatorbmi
+ซึ่งจะพิมพ์ว่าค่า bmi อยู่ในเกณฑ์ไหน
 
 ```dart
-class Animal {
-  String? name;
-  int? numberOfLegs;
-  int? lifeSpan;
+class Bmi{
+  double? weight;
+  double? height;
+  double? calbmi;
 
-  void display() {
-    print("Animal name: $name.");
-    print("Number of Legs: $numberOfLegs.");
-    print("Life Span: $lifeSpan.");
+  void calculatorbmi(){
+     calbmi = weight!/(height!/100 * height!/100);
+    if(calbmi! > 30){
+     print("อ้วนมาก"); 
+    }else if(calbmi! >= 25){
+      print("อ้วน"); 
+    }else if(calbmi! >=18.6){
+      print("สมส่วน");
+    }else{
+      print("ผอมเกินไป");
+    }
   }
 }
 
-void main(){
-  // Here animal is object of class Animal. 
-  Animal animal = Animal();
-  animal.name = "Lion";
-  animal.numberOfLegs = 4;
-  animal.lifeSpan = 10;
-  animal.display();
+void main() {
+  Bmi bmi = Bmi(); 
+  bmi.weight = 80;
+  bmi.height = 180;
+  bmi.calculatorbmi();
 }
+
 ```
 
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Animal name: Lion.
-Number of Legs: 4.
-Life Span: 10.</code></pre>
+  <pre><code>สมส่วน</code></pre>
 </details>
 
 # ตัวอย่าง 2: หาพื้นที่สี่เหลี่ยมผืนผ้าโดยใช้ Class และ Objects

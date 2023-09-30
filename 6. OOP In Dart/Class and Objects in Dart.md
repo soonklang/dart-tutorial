@@ -1,4 +1,8 @@
 
+# Project Title
+
+A brief description of what this project does and who it's for
+
 # Class and Objects in Dart
 
 
@@ -11,6 +15,7 @@ Class ยังเป็นตัวกำหนด Properties และ Mehtods
 Object คือตัวอย่างของ Class คุณสามารถสร้างได้หลาย Object ใน Class เดียวกัน
 ถ้าอยากรู้เกี่ยวกับ Object มากขึ้นให้ไปที่หัวข้อ [Objects in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Object%20in%20dart.md)
 
+# ตัวอย่าง Class และ Object ในภาษา Dart
 ตัวอย่างข้างล่างนี้จะมี Class Animal มี properties 3 อย่าง คือ
 weight(น้ำหนัก) , height(ส่วนสูง) และ calbmi(ค่า bmi) และ Class จะมี method ชื่อ calculatorbmi
 ซึ่งจะพิมพ์ว่าค่า bmi อยู่ในเกณฑ์ไหน
@@ -41,6 +46,7 @@ void main() {
   bmi.height = 180;
   bmi.calculatorbmi();
 }
+
 
 ```
 
@@ -118,97 +124,78 @@ void main(){
 </details>
 
 
-# ตัวอย่างของ Class กับ Object ในภาษา Python และ Java โดยจะใช้ชื่อ Class ว่า Dog
+# ตัวอย่างของ Class กับ Object ในภาษา Python และ Java โดยจะใช้ชื่อ Class ว่า Bmi
 
 # Python
 ```python
-# Python3 program to
-# demonstrate instantiating
-# a class
-class Dog:
- 
-    # A simple class
-    # attribute
-    attr1 = "mammal"
-    attr2 = "dog"
- 
-    # A sample method
-    def fun(self):
-        print("I'm a", self.attr1)
-        print("I'm a", self.attr2)
- 
- 
-# Driver code
-# Object instantiation
-Rodger = Dog()
- 
-# Accessing class attributes
-# and method through objects
-print(Rodger.attr1)
-Rodger.fun()
+class Bmi:
+  calbmi = 0.000
+  weight = 0.000
+  height = 0.000
+  def __init__(self):
+    self.calbmi = 0.000
+    self.weight = 0.000
+    self.height = 0.000
+
+
+  def calculatorbmi(self):
+    self.calbmi = self.weight/(self.height/100 * self.height/100)
+    if self.calbmi > 30:
+     print("อ้วนมาก")
+    elif self.calbmi >= 25:
+      print("อ้วน")
+    elif self.calbmi >=18.6:
+      print("สมส่วน")
+    else:
+      print("ผอมเกินไป")
+
+
+
+bmi = Bmi()
+bmi.weight = 80.000
+bmi.height = 180.000
+bmi.calculatorbmi()
 ```
 <details>
   <summary><strong>Output</strong></summary>
   <pre><code>mammal.
-     I'm a mammal
-     I'm a dog </code></pre>
+     สมส่วน </code></pre>
 </details>
 
 # Java
 ```java
-/ Class Declaration
- 
-public class Dog {
-    // Instance Variables
-    String name;
-    String breed;
-    int age;
-    String color;
- 
-    // Constructor Declaration of Class
-    public Dog(String name, String breed, int age,
-               String color)
-    {
-        this.name = name;
-        this.breed = breed;
-        this.age = age;
-        this.color = color;
+public class Bmi{
+  double weight;
+  double height;
+  double calbmi;
+  void calculatorbmi(){
+     calbmi = weight/(height/100 * height/100);
+    if(calbmi > 30){
+     System.out.println("อ้วนมาก"); 
+    }else if(calbmi >= 25){
+      System.out.println("อ้วน"); 
+    }else if(calbmi >=18.6){
+      System.out.println("สมส่วน");
+    }else{
+      System.out.println("ผอมเกินไป");
     }
- 
-    // method 1
-    public String getName() { return name; }
- 
-    // method 2
-    public String getBreed() { return breed; }
- 
-    // method 3
-    public int getAge() { return age; }
- 
-    // method 4
-    public String getColor() { return color; }
- 
-    @Override public String toString()
-    {
-        return ("Hi my name is " + this.getName()
-                + ".\nMy breed,age and color are "
-                + this.getBreed() + "," + this.getAge()
-                + "," + this.getColor());
-    }
- 
-    public static void main(String[] args)
-    {
-        Dog tuffy
-            = new Dog("tuffy", "papillon", 5, "white");
-        System.out.println(tuffy.toString());
-    }
+  }
+  public static void main(String[] args) {
+  Bmi bmi = new Bmi(); 
+  bmi.weight = 80;
+  bmi.height = 180;
+  bmi.calculatorbmi();
 }
+    }
+
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>Hi my name is tuffy.
-My breed,age and color are papillon,5,white </code></pre>
+  <pre><code>สมส่วน </code></pre>
 </details>
 
 # Reference
 https://dart-tutorial.com/object-oriented-programming/class-and-objects-in-dart/<br>
 https://www.geeksforgeeks.org/<br>
+
+# Video

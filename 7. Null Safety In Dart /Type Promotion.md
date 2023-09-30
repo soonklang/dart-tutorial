@@ -69,7 +69,7 @@ void main(){
 
 ```
 ## Presentation Slide
-[Type-Promotion Slide]
+[Type-Promotion Slide](https://github.com/soonklang/dart-tutorial/files/12751557/Type_Promotion.pdf)
 
 ## Link Video
 [Type-Promotion Video](https://www.youtube.com/watch?v=AR9E8RRx5i8)

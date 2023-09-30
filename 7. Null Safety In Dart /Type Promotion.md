@@ -69,7 +69,7 @@ void main(){
 
 ```
 ## Presentation Slide
-[Type-Promotion Slide](https://github.com/soonklang/dart-tutorial/files/12751557/Type_Promotion.pdf)
+[Type_Promotion.pdf](https://github.com/soonklang/dart-tutorial/files/12775141/Type_Promotion.pdf)
 
 ## Link Video
 [Type-Promotion Video](https://www.youtube.com/watch?v=AR9E8RRx5i8)
@@ -78,3 +78,4 @@ void main(){
 [dart-tutorial](https://dart-tutorial.com/null-safety/type-promotion-in-dart/) 
 
 [dart-dev](https://dart.dev/effective-dart/usage#consider-assigning-a-nullable-field-to-a-local-variable-to-enable-type-promotion)
+

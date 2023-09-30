@@ -29,13 +29,13 @@ class Bmi{
   void calculatorbmi(){
      calbmi = weight!/(height!/100 * height!/100);
     if(calbmi! > 30){
-     print("อ้วนมาก"); 
+     print("น้ำหนักอยู่ในเกณฑ์ อ้วนมาก"); 
     }else if(calbmi! >= 25){
-      print("อ้วน"); 
+      print("น้ำหนักอยู่ในเกณฑ์ อ้วน"); 
     }else if(calbmi! >=18.6){
-      print("สมส่วน");
+      print("น้ำหนักอยู่ในเกณฑ์ สมส่วน");
     }else{
-      print("ผอมเกินไป");
+      print("น้ำหนักอยู่ในเกณฑ์ ผอมเกินไป");
     }
   }
 }
@@ -52,7 +52,7 @@ void main() {
 
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>สมส่วน</code></pre>
+  <pre><code>น้ำหนักอยู่ในเกณฑ์ สมส่วน</code></pre>
 </details>
 
 # ตัวอย่าง 2: หาพื้นที่สี่เหลี่ยมผืนผ้าโดยใช้ Class และ Objects
@@ -141,13 +141,13 @@ class Bmi:
   def calculatorbmi(self):
     self.calbmi = self.weight/(self.height/100 * self.height/100)
     if self.calbmi > 30:
-     print("อ้วนมาก")
+     print("น้ำหนักอยู่ในเกณฑ์ อ้วนมาก")
     elif self.calbmi >= 25:
-      print("อ้วน")
+      print("น้ำหนักอยู่ในเกณฑ์ อ้วน")
     elif self.calbmi >=18.6:
-      print("สมส่วน")
+      print("น้ำหนักอยู่ในเกณฑ์ สมส่วน")
     else:
-      print("ผอมเกินไป")
+      print("น้ำหนักอยู่ในเกณฑ์ ผอมเกินไป")
 
 
 
@@ -158,8 +158,8 @@ bmi.calculatorbmi()
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>mammal.
-     สมส่วน </code></pre>
+  <pre><code>
+     น้ำหนักอยู่ในเกณฑ์ สมส่วน </code></pre>
 </details>
 
 # Java
@@ -171,13 +171,13 @@ public class Bmi{
   void calculatorbmi(){
      calbmi = weight/(height/100 * height/100);
     if(calbmi > 30){
-     System.out.println("อ้วนมาก"); 
+     System.out.println("น้ำหนักอยู่ในเกณฑ์ อ้วนมาก"); 
     }else if(calbmi >= 25){
-      System.out.println("อ้วน"); 
+      System.out.println("น้ำหนักอยู่ในเกณฑ์ อ้วน"); 
     }else if(calbmi >=18.6){
-      System.out.println("สมส่วน");
+      System.out.println("น้ำหนักอยู่ในเกณฑ์ สมส่วน");
     }else{
-      System.out.println("ผอมเกินไป");
+      System.out.println("น้ำหนักอยู่ในเกณฑ์ ผอมเกินไป");
     }
   }
   public static void main(String[] args) {
@@ -191,7 +191,7 @@ public class Bmi{
 ```
 <details>
   <summary><strong>Output</strong></summary>
-  <pre><code>สมส่วน </code></pre>
+  <pre><code>น้ำหนักอยู่ในเกณฑ์ สมส่วน </code></pre>
 </details>
 
 # Reference

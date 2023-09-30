@@ -164,21 +164,21 @@ coinGold:50
 # สรุปการใช้ Interface in Dart
 1การประกาศ Interface:<br>
 
--ใช้ abstract class เพื่อประกาศ Interface.<br>
+   -ใช้ abstract class เพื่อประกาศ Interface.<br>
 
--นิยามเมทอดใน Interface แบบ abstract โดยไม่ระบุรายละเอียดการทำงาน.<br>
+   -นิยามเมทอดใน Interface แบบ abstract โดยไม่ระบุรายละเอียดการทำงาน.<br>
 
 2การ Implement Interface:<br>
 
--ใช้คีย์เวิร์ด implements เมื่อประกาศคลาสที่จะ Implement Interface.<br>
+   -ใช้คีย์เวิร์ด implements เมื่อประกาศคลาสที่จะ Implement Interface.<br>
 
 3การใช้งานหลาย Interface:<br>
 
--คลาสสามารถ Implement หลาย Interface พร้อมกัน โดยใช้ , เพื่อคั่นระหว่างชื่อ Interface.<br>
+   -คลาสสามารถ Implement หลาย Interface พร้อมกัน โดยใช้ , เพื่อคั่นระหว่างชื่อ Interface.<br>
 
 4การเปลี่ยนแปลง Interface:<br>
 
-หากมีการเปลี่ยนแปลงใน Interface โดยการเพิ่มหรือลบเมทอด คุณต้องปรับปรุงทุกคลาสที่ Implement Interface นั้น.<br>
+   -หากมีการเปลี่ยนแปลงใน Interface โดยการเพิ่มหรือลบเมทอด คุณต้องปรับปรุงทุกคลาสที่ Implement Interface นั้น.<br>
 
 
 # Reference

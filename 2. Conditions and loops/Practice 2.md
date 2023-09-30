@@ -501,7 +501,7 @@ for i in range(1, 101):
 ---
 ## file powerpoint
 
-[Practice2.pptx]([https://github.com/630710133Ratchata/Slide_Download/raw/main/Practice%202.pptx])
+[Practice2.pptx](https://github.com/630710133Ratchata/Slide_Download/raw/main/Practice%202.pptx)
 
 # อ้างอิง
 >https://dart-tutorial.com/conditions-and-loops/

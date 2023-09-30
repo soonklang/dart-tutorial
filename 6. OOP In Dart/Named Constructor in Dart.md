@@ -316,11 +316,11 @@ fun main() {
 
 ------------
 ## Veido
-[Named Constructor in dart Youtube](https://www.youtube.com/watch?v=xUFV2qlhx9M "Named Constructor in dart Youtube")
+[Named Constructor in dart Youtube](https://youtu.be/jOeYV6uZhvA "Named Constructor in dart Youtube")
 ------------
 
 ## Slide
-[Named Constructor in dart power point](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/640710056%20Named%20Constructor%20in%20dart.pdf "Named Constructor in dart power point")
+[Named Constructor in dart power point](https://github.com/yimsukananP/hello_flutter/blob/master/640710056%20Named%20Constructor%20in%20dart%20pdf.pdf"Named Constructor in dart power point")
 ------------
 
 

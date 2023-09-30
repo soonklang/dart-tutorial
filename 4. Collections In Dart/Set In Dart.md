@@ -161,7 +161,7 @@ Output
     Last Value is Banana
     Is fruits empty? false
     Is fruits not empty? true
-    The length of fruits is 4
+    The length of fruits is 3
     true
 ```
 Finding --> ค้นหาค่าใน Set

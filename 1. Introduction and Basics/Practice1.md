@@ -450,7 +450,7 @@ if __name__ == "__main__":
     main()
 ```
 ## < Slide&Video>
-[Practice.pptx](https://github.com/soonklang/dart-tutorial/files/12777734/620710327.Practice.pptx) /<br>
+[Practice.pptx](https://github.com/soonklang/dart-tutorial/files/12777734/620710327.Practice.pptx) <br>
 https://youtu.be/or15PgLEskY?si=SgAuMLiQjBy4Ul3O
 ## < Reference >
 https://dart-tutorial.com/introduction-and-basics/questions-for-practice-1/<br>

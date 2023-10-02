@@ -289,3 +289,11 @@ int main () {
 * https://www.javatpoint.com/dart-do-while-loop
 * https://dart-tutorial.com/conditions-and-loops/do-while-loop-in-dart/
 * https://www.darttutorial.org/dart-tutorial/dart-do-while/
+
+
+# **VIDEO**
+* https://www.youtube.com/watch?v=rYP6R_3CqVE&t=2s
+* https://www.youtube.com/watch?v=0-I3fQO7ECs
+
+# **SLIDE**
+* [DO WHILE LOOP IN DART.pptx](https://github.com/soonklang/dart-tutorial/files/12780154/DO.WHILE.LOOP.IN.DART.pptx)

@@ -335,7 +335,7 @@ Getter กับ Setter ในภาษา C++,Java และ Dart มีหน�
 OOP ภาษาอื่นๆ
 
 ## Explanation Video
-https://www.youtube.com/watch?v=D5VMcAhDiNI
+[https://www.youtube.com/watch?v=D5VMcAhDiNI](https://youtu.be/D5VMcAhDiNI?si=ZqusDjiv2xVcgNv8)
 
 ## Reference
 https://www.researchgate.net/publication/339143252_JAVA_and_DART_programming_languages_conceptual_comparison

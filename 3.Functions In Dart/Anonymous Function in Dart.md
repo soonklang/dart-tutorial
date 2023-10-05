@@ -186,5 +186,5 @@ https://supapongai.com/lambda-function/
 https://www.javascripttutorial.net/javascript-anonymous-functions/
 
 ### *< Link Video>*
-[https://youtu.be/pJohuKxjlb8?feature=shared](https://youtu.be/wjLM1nS5iO4)https://youtu.be/wjLM1nS5iO4
+https://youtu.be/wjLM1nS5iO4
 

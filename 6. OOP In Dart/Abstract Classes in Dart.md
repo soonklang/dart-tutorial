@@ -285,8 +285,10 @@ Rate of Interest is: 8 %
 ```
 
 # Video
--https://www.youtube.com/watch?v=j8mrUyRI2IE&classId=e5e2b274-bbc3-4a1a-933d-44e26250f3fa&assignmentId=8b90540e-3a0f-49f4-bce2-c7b86d9501ec&submissionId=74dba728-a705-b527-04cd-42431099fb28
+[Abstract in dart Youtube](https://www.youtube.com/watch?v=j8mrUyRI2IE&classId=e5e2b274-bbc3-4a1a-933d-44e26250f3fa&assignmentId=8b90540e-3a0f-49f4-bce2-c7b86d9501ec&submissionId=74dba728-a705-b527-04cd-42431099fb28)
 
+# Slide
+[Abstract in dart Slide](https://github.com/ChatchawanA/dart-tutorialh/blob/main/640710507%20ABSTRACT.pdf)
 
 
 

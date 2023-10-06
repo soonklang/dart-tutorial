@@ -1,8 +1,3 @@
-
-# Project Title
-
-A brief description of what this project does and who it's for
-
 # Class and Objects in Dart
 
 
@@ -196,3 +191,8 @@ https://www.geeksforgeeks.org/<br>
 
 # Video
 [Video](https://www.youtube.com/watch?v=7nq2mcbd6xc)
+
+# Slide
+
+[SCSU-Slide-6.pptx](https://github.com/soonklang/dart-tutorial/files/12825973/SCSU-Slide-6.pptx)
+

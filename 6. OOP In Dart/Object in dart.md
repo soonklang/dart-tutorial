@@ -260,3 +260,6 @@ https://www.geeksforgeeks.org/classes-objects-java/
 
 # Link Video
 [Video](https://youtu.be/4Ced4Cb2BHE)
+
+# Slide
+[Object_In_Dart.pdf](https://github.com/Sxrxwxlxx/File-Dart/blob/main/slide%20object%20in%20dart.pdf)

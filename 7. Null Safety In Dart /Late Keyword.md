@@ -178,7 +178,7 @@ void main() {
 [Lazy Initialization](https://dev.to/pktintali/late-variables-in-dart-dart-learning-series-1-2opf)
 
 ## Slide
-[late keyword in dart](https://github.com/soonklang/dart-tutorial/files/12752742/)
+[late keyword in dart](https://drive.google.com/file/d/1WTe1IcG6Dq3Wc6b70MBrslaYR755WfEK/view?usp=sharing)
 
 ## Link Vdo
 [late keyword in dart](https://www.youtube.com/watch?v=jtz-0pcnAQ4)

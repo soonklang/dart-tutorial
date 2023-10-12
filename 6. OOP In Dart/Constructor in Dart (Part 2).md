@@ -207,5 +207,5 @@ Educative
 - [Google Drive](https://drive.google.com/file/d/1SGjWTSb65Rp_0Dy2itYXcIJk0b5c2GLj/view?usp=drive_link)
 - [Youtube](https://www.youtube.com/watch?v=GpzJq3lpHew)
 ## สไลด์นำเสนอ
-- [Constructor in Dart Part2.pptx](https://github.com/ThanatatYAM/files/raw/main/Constructor%20in%20Dart%20Part2.pptx)
+- [Constructor in Dart Part2.pptx](https://github.com/soonklang/dart-tutorial/raw/main/6.%20OOP%20In%20Dart/Constructor%20in%20Dart%20Part2.pptx)
 - [Constructor in Dart Part2.pdf](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Constructor%20in%20Dart%20Part2.pdf)

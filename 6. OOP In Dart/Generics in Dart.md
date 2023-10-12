@@ -450,6 +450,8 @@ Python
 
 ## Slide
 - [GenericsinDart.pdf](https://github.com/soonklang/dart-tutorial/files/12774187/GenericsinDart.pdf)
+- https://drive.google.com/file/d/1Yb91CGyULmnZ1agOMFNe1pB6BKO_wrbB/view?usp=sharing
+- https://drive.google.com/file/d/1XzDVM3t6prc_DVQBXWsxIUCHeNhGHNxf/view?usp=sharing
 ## Video
 - [Generics in Dart](https://www.youtube.com/watch?v=I044098K6Fk)
 ## References

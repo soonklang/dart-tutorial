@@ -189,5 +189,5 @@ https://www.darttutorial.org/dart-tutorial/dart-interface/<br>
 https://www.javatpoint.com/dart-interfaces<br>
 
 # Slide & Video
-https://drive.google.com/file/d/19We0iNx2LEJqzrn5mBA8vhvWYh7-uVTC/view?usp=drive_link<br>
+https://docs.google.com/presentation/d/1oADlS_xcE9EhjZayu_g-1ViwulF1Dc2WgGdxgK8i7ck/edit?usp=sharing<br>
 https://youtu.be/bX7q5cZDatQ?feature=shared<br>

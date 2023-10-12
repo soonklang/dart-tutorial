@@ -12,8 +12,8 @@ In Dart null safety, the ? operator serves as a key component to indicate nullab
 ```dart
 void main(){
   String? text;
-  text = null; // give null
-  print(text);
+ 
+  print(text); // give null
 
   String str;
   str = null; // error

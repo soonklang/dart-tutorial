@@ -450,6 +450,7 @@ Python
 
 ## Slide
 - [GenericsinDart.pdf](https://github.com/soonklang/dart-tutorial/files/12774187/GenericsinDart.pdf)
+- [GenericsinDart_new.pdf](https://github.com/soonklang/dart-tutorial/files/12883356/GenericsinDart_new.pdf)
 - https://drive.google.com/file/d/1Yb91CGyULmnZ1agOMFNe1pB6BKO_wrbB/view?usp=sharing
 - https://drive.google.com/file/d/1XzDVM3t6prc_DVQBXWsxIUCHeNhGHNxf/view?usp=sharing
 ## Video

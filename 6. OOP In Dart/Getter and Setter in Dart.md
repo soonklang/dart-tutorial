@@ -17,6 +17,7 @@ Getter และ Setter เป็นวิธีการเข้าถึง�
   - [Example 2 : Read-Only and Write-Only Property](#example-2-read-only-and-write-only-property-in-dart)
   - [Example 3 : Computed Property using Getter](#example-3-computed-property-using-getter-in-dart)
   - [Example 4 : Getter and Setter with Validation](#example-4-getter-and-setter-with-validation-in-dart)
+  - [Presentation Slide](#slide)
   - [Explanation Video](#explanation-video)
 
   ## *Comparison with Other Language*
@@ -333,6 +334,8 @@ Getter กับ Setter ในภาษา C++,Java และ Dart มีหน�
 ได้ด้วยการเขียนโค้ดในลักษณะต่างๆทำให้โค้ดปลอดภัยมีความน่าเชื่อถือ และเราสามารถนำคุณสมบัติที่ว่านี้ไปประยุกต์ใช้ได้กับหลายๆวิธีเช่น[ตัวอย่าง](#content)ข้างบนที่กล่าวมา
 แต่ในภาษาอย่าง Python จะเน้นการใช้ประโยชน์ในด้านการตรวจสอบข้อมูลหรือคำนวณมากกว่าเนื่องจาก Private variable ใน Python ไม่ได้ถูกซ่อนเหมือนภาษาที่มีการใช้ 
 OOP ภาษาอื่นๆ
+## Slide
+https://drive.google.com/drive/u/1/folders/1jKhdf0IGkxSQjPQKGSU3jyJa10NxLxrv
 
 ## Explanation Video
 [https://www.youtube.com/watch?v=D5VMcAhDiNI](https://youtu.be/D5VMcAhDiNI?si=ZqusDjiv2xVcgNv8)

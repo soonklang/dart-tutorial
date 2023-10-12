@@ -179,6 +179,9 @@ print("Program continues after than assert")
 ## *< Link Video >*
 https://youtu.be/Ebv6g1nUe5A
 
+## *< Slide presentation >*
+[Uploading Assert in Dart.pptx…]()
+
 ## *< Reference >*
 https://dart-tutorial.com/conditions-and-loops/assert-in-dart/
 

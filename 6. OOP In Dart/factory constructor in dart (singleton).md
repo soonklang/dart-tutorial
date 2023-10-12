@@ -153,6 +153,8 @@ public static Singleton getInstance() {
 -https://youtu.be/jdqeFUmnteA
 
 ## Slide
+
 -[pdf](https://drive.google.com/file/d/1mSNPw755RCxA4IBsEK5nawxxh_Im-oiW/view?usp=drive_link)
+
 -[Powerpoint](https://docs.google.com/presentation/d/1LnPVZ5FcOVgjTNYhDBmJgSr0gsBoN824/edit?usp=drive_link&ouid=109956211958922233250&rtpof=true&sd=true)
 

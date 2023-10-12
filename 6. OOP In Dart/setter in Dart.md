@@ -118,6 +118,10 @@ print(raj._age)
 
 ```
 
+## **สไลด์**
+[คลิกที่นี่!!](https://drive.google.com/file/d/1dfFgtl8jblZoBKNAJj6HLkppwFGeeuR9/view?usp=sharing)
+<br>
+
 ## **คลิปการสอน**
 [คลิกที่นี่!!](https://www.youtube.com/watch?v=MP-wzHpVKoI&ab_channel=AtthayaThongkhum)
 <br>

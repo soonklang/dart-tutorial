@@ -262,7 +262,10 @@ Name: Alice, Age: 30
 
 ## Video
 - https://youtu.be/5siEPvu0KWs
-## Slide
+## Slide  ver.1
+- [ENCAPSULATION.IN.DART.pdf](https://github.com/soonklang/dart-tutorial/files/12882177/ENCAPSULATION.IN.DART.pdf)
+
+## Slide  ver.2
 - [ENCAPSULATION IN DART-640710062.pdf](https://github.com/soonklang/dart-tutorial/files/12880636/ENCAPSULATION.IN.DART-640710062.pdf)
 
 640710062 เมธิสศรต์ ปล้องเจริญ

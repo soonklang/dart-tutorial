@@ -142,10 +142,10 @@ https://youtu.be/1LAhx-pod8I?feature=shared
 
 # Slide
 Version 1
-[Polymorphism in Dart(v.1)](https://github.com/Barbecue23/PL/raw/main/Polymorphism%20in%20Dart%20(1).pptx)
+[Polymorphism in Dart(v.1)](https://github.com/Barbecue23/PL/raw/main/Polymorphism%20in%20Dart%20(1).pptx?raw=true)
 
 Version 2
-[Polymorphism in Dart(v.2)](https://github.com/Barbecue23/PL/raw/main/Polymorphism%20in%20Dart%20(2).pptx)
+[Polymorphism in Dart(v.2)](https://github.com/Barbecue23/PL/raw/main/Polymorphism%20in%20Dart%20(2).pptx?raw=true)
 
 ## Reference
 https://dart-tutorial.com/object-oriented-programming/polymorphism-in-dart/

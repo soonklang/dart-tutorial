@@ -5,7 +5,7 @@
 การประกาศ Constant Constructor จะมี keyword: **const** อยู่ด้านหน้า constructor
 # Syntax
 ```dart
-const name_constructor(this.fieldname);
+const name_constructor(paramiter);
 ```
 ในการประกาศ Constant Constructor จะมีกฎอยู่ 3 ข้อดังนี้
 - คุณสมบัติ(Attribute)ทั้งหมดในคลาส ต้องเป็น **final** ทั้งหมด

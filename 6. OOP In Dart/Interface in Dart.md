@@ -30,7 +30,7 @@ System.out.println("หลับ");
 # ตัวอย่างการใช้ Interface ในภาษา Dart
 ```dart
 class Zoo {
-  void Animal() {
+  void animal() {
     print("มีช้าง มีแมว");
   }
 }
@@ -38,7 +38,7 @@ class Zoo {
 // class Panda implementing class Zoo
 class Panda implements Zoo {
 
-  void Animal() {
+  void animal() {
     print("สวนสัตว์มี แพนด้า 2 ตัว");
   }
 }
@@ -46,7 +46,7 @@ class Panda implements Zoo {
 void main() {
   // creating instance of Class Panda
   var panda = Panda();
- panda.Animal();
+ panda.animal();
 }
 ```
 Output

@@ -521,6 +521,8 @@ https://youtu.be/OU0TFuwThdc
 
 ## **Slides**
 [Switch Case in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12880759/Switch.Case.in.Dart.pdf)
-<br>[Switch Case in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12880765/Switch.Case.in.Dart.pptx)
+<br>[Switch Case in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12880765/Switch.Case.in.Dart.pptx) (V.1)
+<br>[Switch Case in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12882181/Switch.Case.in.Dart.pptx) (V.2)
+
 
 

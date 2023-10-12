@@ -313,3 +313,6 @@ https://www.educative.io/answers/what-is-the-ternary-operator-in-python
 
 ## Link Video
 https://youtu.be/zKQtcvB3RyA
+
+## Slide
+[Ternary Operator in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12880536/Ternary.Operator.in.Dart.pptx)

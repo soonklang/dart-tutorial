@@ -428,3 +428,4 @@ link vdo : https://youtu.be/67DbhBAfJFU
 
 pdf file : [FOR LOOP IN DART.pdf](https://github.com/620710820/photo/files/12770033/FOR.LOOP.IN.DART.-.620710820.pdf)
 
+Slides : [FOR LOOP IN DART](https://drive.google.com/file/d/1vZReXkCPW9JMhWV1PuW0ybU1ly6CGKYg/view?usp=sharing)

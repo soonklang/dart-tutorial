@@ -217,4 +217,7 @@ https://stackoverflow.com/questions/545419/using-base-class-constructor-as-facto
 [Video](https://youtu.be/IOOmS-eCiFo?feature=shared)
 # สไลด์
 [Factory Constructor in Dart (factory).pptx](https://github.com/soonklang/dart-tutorial/files/12883011/Factory.Constructor.in.Dart.factory.pptx)
+
 [Factory Constructor in Dart (factory).pdf](https://github.com/soonklang/dart-tutorial/files/12883112/Factory.Constructor.in.Dart.factory.pdf)
+
+https://drive.google.com/file/d/1jXnXznePUg9L8cQyqbW2AjSOrc_0LAsx/view

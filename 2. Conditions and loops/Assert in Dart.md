@@ -180,7 +180,7 @@ print("Program continues after than assert")
 https://youtu.be/Ebv6g1nUe5A
 
 ## *< Slide presentation >*
-[ Assert in Dart.pptx…](https://github.com/soonklang/dart-tutorial/edit/main/2.%20Conditions%20and%20loops/Assert in Dart.pptx)
+[Assert in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12774769/Assert in Dart.pptx)
 
 ## *< Reference >*
 https://dart-tutorial.com/conditions-and-loops/assert-in-dart/

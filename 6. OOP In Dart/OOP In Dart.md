@@ -14,7 +14,7 @@
 - [Getter in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/GETTER%20IN%20DART.md)
 - [Setter in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/setter%20in%20Dart.md)
 - Getter and Setter in Dart
-- [Inheritance in Dart (Part1)]([https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart.md](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart(start-ex3).md))
+- [Inheritance in Dart (Part1)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart(start-ex3).md)
 - [Inheritance in Dart (Part2)](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20in%20Dart%20(ex3-end).md)
 - [Inheritance of Constructors in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Inheritance%20Of%20Constructor%20in%20Dart.md)
 - [Super Keyword in Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/Super%20Keyword%20in%20Dart.md)

@@ -116,7 +116,9 @@ int num = num1.singleWhere(
 [Dart: มาหาข้อมูลเฉพาะตัวที่ต้องการใน List กัน - Nextflow](https://nextflow.in.th/2020/dart-filter-search-list-thai/)
 
 ### *< Silde&Video >*
-[PDF silde](https://github.com/soonklang/dart-tutorial/files/12774938/Where.In.Dart.pdf)
+[Silde](https://www.canva.com/design/DAFvpeG47Lw/F1ReSZwSnpEVWKMG8fN6Yg/edit)
+
+[PDF](https://github.com/soonklang/dart-tutorial/files/12774938/Where.In.Dart.pdf)
 
 [Video](https://youtu.be/tvE-H-jlu1U)
 

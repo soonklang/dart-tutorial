@@ -37,14 +37,14 @@ void main(){
 
 <details open>
   <summary><strong>Output1</strong></summary>
-  <pre><code>Uncaught Error: Assertion failed: "x should be greater then y"</code></pre>
+  <pre><code>Uncaught Error: Assertion failed: "x should be greater than y"</code></pre>
 </details>
 
 ```dart
 void main(){
   int x = 20;
   int y = 10;
-  assert(x > y, "x should be greater then y");
+  assert(x > y, "x should be greater than y");
  print("Program continues after than assert");
 }
 ```

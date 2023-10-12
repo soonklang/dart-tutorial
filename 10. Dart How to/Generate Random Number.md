@@ -210,8 +210,11 @@ print(random.randint(0,99))
 > 
 > ❗❗ แต่ในภาษา C จะต้องนำตัวเลขมา % ข้างหลังเพื่อกำหนดค่าสิ้นสุดที่สามารถสุ่มได้ ❗❗
 
-Link Slide : [Generate Random Number Silde](https://docs.google.com/presentation/d/1aEdE28PKA6iLmqUr6I7x7cfrGzo6Ma_C/edit?usp=sharing&ouid=113718269283843830663&rtpof=true&sd=true)
-
+## Link Slide : 
+- [Generate Random Number Silde(google_drive)](https://docs.google.com/presentation/d/1aEdE28PKA6iLmqUr6I7x7cfrGzo6Ma_C/edit?usp=sharing&ouid=113718269283843830663&rtpof=true&sd=true)
+- [Generate_Random_Number_640710974.pdf(google_drive)](https://drive.google.com/file/d/1sh1qwjz8mH_wQnZ-9X3jufvEtjjhb63R/view?usp=sharing)
+- [Generate_Random_Number_640710974.pdf](https://github.com/soonklang/dart-tutorial/files/12884723/Generate_Random_Number_640710974.pdf)
+- [Generate_Random_Number_640710974.pptx](https://github.com/soonklang/dart-tutorial/files/12884787/Generate_Random_Number_640710974.pptx)
 
 Link Video : [Generate Random Number Video](https://youtu.be/F55rFfzL85Y)
 

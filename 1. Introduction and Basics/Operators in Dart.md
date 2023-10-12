@@ -523,7 +523,7 @@ public class BitwiseOperators {
 - http://marcuscode.com/lang/python/operators
 # File การนำเสนอ
 [Operators in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12881234/Operators.in.Dart.pdf)
-[Operators.in.Dart (3).pdf](https://github.com/soonklang/dart-tutorial/files/12882732/Operators.in.Dart.3.pdf)
+[Operators in Dart (3).pdf](https://github.com/soonklang/dart-tutorial/files/12882763/Operators.in.Dart.3.pdf)
 
 # Video นำเสนอ
 https://youtu.be/YUftb_KjFKE

@@ -518,6 +518,10 @@ if __name__ == "__main__":
 ## **Link Video**
 https://youtu.be/OU0TFuwThdc
 
+## **Slide**
+[User Input in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12881556/User.Input.in.Dart.pdf)
+
+
 ## **Slides**
 [Switch Case in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12880759/Switch.Case.in.Dart.pdf)
 <br>[Switch Case in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12880765/Switch.Case.in.Dart.pptx)

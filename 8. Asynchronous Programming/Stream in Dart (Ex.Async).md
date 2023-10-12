@@ -235,5 +235,6 @@ End Task 1
 :https://docs.python.org/3/library/asyncio-stream.html#streamwriter<br>
 :https://dart-tutorial.com/asynchronous-programming/stream-in-dart/
 ___
-## **Video**
-[Stream in dart](https://youtu.be/kMgyhTy7xOM](https://www.youtube.com/watch?v=dO88yiwcJcU)https://www.youtube.com/watch?v=dO88yiwcJcU)
+# Slides and Clip
+[Slides]()
+[Clip](https://youtu.be/kMgyhTy7xOM](https://www.youtube.com/watch?v=dO88yiwcJcU)https://www.youtube.com/watch?v=dO88yiwcJcU)

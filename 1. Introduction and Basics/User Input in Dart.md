@@ -222,6 +222,10 @@ Hello Eim, your favorite number is 30
 ## **Youtube** ##
 https://youtu.be/Mj2l_hgnswI
 
+## **Slides**
+[User Input in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12881556/User.Input.in.Dart.pdf)
+[User Input in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12881710/User.Input.in.Dart.pptx)
+
 ## **อ้างอิง** ##
 https://kittimasak.com/user-input-python/ <br>
 https://www.geeksforgeeks.org/dart-standard-input-output/<br>

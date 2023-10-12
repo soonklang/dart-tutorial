@@ -236,5 +236,5 @@ End Task 1
 :https://dart-tutorial.com/asynchronous-programming/stream-in-dart/
 ___
 # Slides and Clip
-[Slides]()
+[Slides](https://github.com/soonklang/dart-tutorial/files/12774177/StreaminDart(Ex.Async).pdf)<br>
 [Clip](https://youtu.be/kMgyhTy7xOM](https://www.youtube.com/watch?v=dO88yiwcJcU)https://www.youtube.com/watch?v=dO88yiwcJcU)

@@ -1,4 +1,4 @@
-# Assert in Dart
+[Assert_in_Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12880887/Assert_in_Dart.pptx)# Assert in Dart
 ## Assert
 ใน Dart "assert" เป็นคำสั่งที่ถูกใช้เพื่อทดสอบเงื่อนไขขณะที่โปรแกรมกำลังทำงานและเป็นส่วนหนึ่งของการพัฒนา (development mode) เท่านั้น ถ้าเงื่อนไขที่ระบุใน "assert" เป็นเท็จ (false) โปรแกรมจะหยุดทำงานและแสดงข้อความข้อผิดพลาด
 ## How to Run File in Assert Mode
@@ -180,7 +180,7 @@ print("Program continues after than assert")
 https://youtu.be/Ebv6g1nUe5A
 
 ## *< Slide presentation >*
-[Assert in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12774769/Assert in Dart.pptx)
+[ Assert_in_Dart.pptx…](https://github.com/soonklang/dart-tutorial/files/12774769/Assert_in_Dart.pptx)
 
 ## *< Reference >*
 https://dart-tutorial.com/conditions-and-loops/assert-in-dart/

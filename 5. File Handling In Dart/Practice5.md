@@ -642,7 +642,7 @@ if __name__ == "__main__":
 ```
 # Presentation
 Link video : https://youtu.be/NQtiZqzITSc?feature=shared <br>
-Link slides : https://github.com/PhurichaN/668/blob/main/Practice5_630710668.pdf
+Link slides : https://github.com/PhurichaN/668/blob/main/Practice5_630710668.pdf <br>
 Link download slides : [Practice5_630710668.pdf](https://github.com/soonklang/dart-tutorial/files/12774793/Practice5_630710668.pdf)
 
 

@@ -821,3 +821,4 @@ https://youtu.be/iPKQW0uKcbw?feature=shared
 ## Slide
 
 [String In Dart.pdf](https://github.com/Pannita205/StringInDart/blob/92f778fae4ea4c17645f9cb80129ff3b5bdb5d3e/String%20In%20Dart%20(trim-end).pdf)
+[String In Dart (trim-end).pdf](https://github.com/soonklang/dart-tutorial/files/12884817/String.In.Dart.trim-end.pdf)

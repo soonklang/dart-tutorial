@@ -271,8 +271,9 @@ https://unstop.com/blog/comments-in-c
 https://youtu.be/nBpeLYa4Xno?feature=shared
 
 ## Slide
-[Comments in Dart.pdf](https://github.com/KanoknatCh/File/blob/main/Comments%20in%20Dart.pdf)
+[Comments in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12884850/Comments.in.Dart.pdf)
 
+[Comments in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12884874/Comments.in.Dart.pptx)
 
   
 

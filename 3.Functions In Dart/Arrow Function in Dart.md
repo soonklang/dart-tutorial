@@ -94,4 +94,4 @@ https://www.geeksforgeeks.org/javascript-ternary-operator/
 ### *< Video >*
 https://youtu.be/UVtbrH8uqWE
 ### *< slide >*
-https://docs.google.com/presentation/d/1jwt_gHkHa3OM4U3nYTxmdfcB9v8OviBx/edit#slide=id.p1
+[arrow fuunction.pdf](https://github.com/navamin0/test1/blob/main/arrow%20functions.pdf)

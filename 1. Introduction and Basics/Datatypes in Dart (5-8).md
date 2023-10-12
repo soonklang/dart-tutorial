@@ -181,8 +181,10 @@ Dart ได้แบ่ง type เป็น nullable และ non-nullable แ
 https://youtu.be/O985hzMjih0
 
 Slide 
+version 1
 [PL287.pdf](https://github.com/soonklang/dart-tutorial/files/12773805/PL287.pdf)
-
+version 2
+[PL287 version2.pdf](https://github.com/soonklang/dart-tutorial/files/12878016/PL287.version2.pdf)
 
 
 

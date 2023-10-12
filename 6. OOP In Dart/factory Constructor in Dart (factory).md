@@ -214,7 +214,7 @@ https://dart-tutorial.com/object-oriented-programming/factory-constructor-in-dar
 
 https://stackoverflow.com/questions/545419/using-base-class-constructor-as-factory-in-python
 # Video
-[Video](https://youtu.be/IOOmS-eCiFo?feature=shared)
+[Video]([https://youtu.be/IOOmS-eCiFo?feature=shared](https://www.youtube.com/watch?v=c5fTgTG_XF0))
 # สไลด์
 [Factory Constructor in Dart (factory).pptx](https://github.com/soonklang/dart-tutorial/files/12883011/Factory.Constructor.in.Dart.factory.pptx)
 

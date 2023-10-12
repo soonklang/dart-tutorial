@@ -740,11 +740,11 @@ __คำอธิบายโค้ด__
 </details>
 
 ## Silde นำเสนอ
-- [Inheritance Of Constructor.pdf](https://drive.google.com/file/d/1thOsd1cZ3sff_yluJhbOtW_AirJmTIhP/view?usp=sharing)
-- [Inheritance Of Constructor.pptx](https://docs.google.com/presentation/d/1vl7Ce8Sh53dXD6qorPAn-lF27pBpBjGT/edit?usp=sharing&ouid=116662538381881581640&rtpof=true&sd=true)
+- [Inheritance Of Constructor.pdf](https://drive.google.com/file/d/1veqfkulIit1M0HviQd9ufydO05yx8DYP/view?usp=sharing)
+- [Inheritance Of Constructor.pptx](https://docs.google.com/presentation/d/1y8xHc8P-gVhJJkAmNzXFunSN065MxiJo/edit?usp=sharing&ouid=116662538381881581640&rtpof=true&sd=true)
 
 ## Link Video
-- https://youtu.be/pPnw_07POx0
+- 
 
 ## Reference
 - https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart<br>

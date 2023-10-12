@@ -820,5 +820,5 @@ https://youtu.be/iPKQW0uKcbw?feature=shared
 
 ## Slide
 
-[Uploading String In Dart (trim-end).pptx…]()<br>
+[String In Dart (trim-end).pptx](https://github.com/soonklang/dart-tutorial/files/12884859/String.In.Dart.trim-end.pptx)<br>
 [String In Dart (trim-end).pdf](https://github.com/soonklang/dart-tutorial/files/12884817/String.In.Dart.trim-end.pdf)

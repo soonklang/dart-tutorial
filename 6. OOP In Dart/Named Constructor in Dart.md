@@ -139,7 +139,7 @@ void main() {
 
 
 ## Differences Named Constructors in other languages
-![](https://scontent.fbkk4-4.fna.fbcdn.net/v/t1.15752-9/370567382_631034772181519_3993493830743264420_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHLAkaxUI6O_gDFsYGEOkQulBd9InIH5k6UF30icgfmTmcIwbK1k9yLEql3y7Cb3jkpFl2Wbe3m1ON-qFwl78Jk&_nc_ohc=bu1ia4fy-8gAX8okL0T&_nc_ht=scontent.fbkk4-4.fna&oh=03_AdQRCnqP6FwzslXUgiN2Ol9Y49wJuDfKVjmKt05lnpq8ZQ&oe=65171FF9)
+![](https://scontent.fbkk4-4.fna.fbcdn.net/v/t1.15752-9/370567382_631034772181519_3993493830743264420_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHLAkaxUI6O_gDFsYGEOkQulBd9InIH5k6UF30icgfmTmcIwbK1k9yLEql3y7Cb3jkpFl2Wbe3m1ON-qFwl78Jk&_nc_ohc=PLq_rA3c3YUAX8Ldg-3&_nc_ht=scontent.fbkk4-4.fna&oh=03_AdRNFtxxUYG0r-IKQANfitB9ybUMzWw39bED2L8q_R6GEw&oe=654F9839)
 **"Named constructor"** หรือ **"Alternative constructor"** เป็นแนวคิดในการสร้าง **Object** ใน **Programming language** โดยทั่วไปแล้วแนวคิดนี้เป็นเกี่ยวกับการสร้าง **Object** โดยใช้ **Methob** หรือ **Function** ที่มีชื่อเฉพาะเพื่อสร้าง **Object** ที่ต้องการ 
 
 ------------
@@ -150,7 +150,7 @@ void main() {
 
 
 ## Java
-![](https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.15752-9/278848980_679598269819945_7666123435917040814_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF5PWsiOVgnDcGgO03cTeMjdr-EkcPc62N2v4SRw9zrY4DDd38HCEHrCgHuQuGB6NpngJB9wKPpYukVXRAxa9Da&_nc_ohc=McvYgSk2KvUAX8lWq3z&_nc_ht=scontent.fbkk3-4.fna&oh=03_AdT54rVVP0Ih9lVT4UBFDHZTSoEqAVBVJyJDQGUO8Ar6ew&oe=651724F3)
+![](https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.15752-9/278848980_679598269819945_7666123435917040814_n.png?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeF5PWsiOVgnDcGgO03cTeMjdr-EkcPc62N2v4SRw9zrY4DDd38HCEHrCgHuQuGB6NpngJB9wKPpYukVXRAxa9Da&_nc_ohc=dSdRJ8zLFHcAX8cLX0E&_nc_ht=scontent.fbkk3-4.fna&oh=03_AdTMsVXoMy2RgfDr1xDAjJV8oyjZezLbbzQFjTHzO4S31Q&oe=654F9D33)
 
 ใน Java เนื่องจากไม่มี **named constructors** เหมือนกับ Dart แต่สามารถใช้ **static factory methods** ในการทำแนวคิดที่คล้ายกัน
 
@@ -211,7 +211,7 @@ class Point {
 
 
 ## C
-![](https://scontent.fbkk4-1.fna.fbcdn.net/v/t1.15752-9/371892639_204081532671915_311293905671308031_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFmYnG7iIcIW35zy42UZIBSgd3Gt40fSgqB3ca3jR9KCpKmeByYKXs2J0xO0Sz2BKElSYQDFXk7wHNbBojP_vsz&_nc_ohc=iTaXr105fmYAX_8ibag&_nc_ht=scontent.fbkk4-1.fna&oh=03_AdRkq_yBK4uHtnCZaGRzWko17zx5muM50CefJcwAo-o6fg&oe=65171CC9)
+![](https://scontent.fbkk4-1.fna.fbcdn.net/v/t1.15752-9/371892639_204081532671915_311293905671308031_n.png?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeFmYnG7iIcIW35zy42UZIBSgd3Gt40fSgqB3ca3jR9KCpKmeByYKXs2J0xO0Sz2BKElSYQDFXk7wHNbBojP_vsz&_nc_ohc=0Pxnxm9-IPUAX8XZdgx&_nc_ht=scontent.fbkk4-1.fna&oh=03_AdRDIyQgEAAA_hjD4Yz7znMtWFSBejPdGZFR6hzdQEaj_Q&oe=654F9509)
 
 ในภาษา C , ไม่มี named constructors ในแบบเดียวกับ Dart  แต่สามารถใช้ **function** เพื่อสร้างตัวอย่างที่คล้ายคลึงกับ **named constructors** โดยใช้มาตรฐานไลบรารี **stdlib.h** ในการจองหน่วยความจำและกำหนดค่าสมาชิกของอ็อบเจกต์นั้น ๆ
 
@@ -256,7 +256,7 @@ int main() {
 ------------
 
 ## Python
-![](https://scontent.fbkk4-4.fna.fbcdn.net/v/t1.15752-9/327698238_913606733001601_7466354205277653364_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHrDDqU4tWqOzaG_-kc86aagjnCBXOG87-COcIFc4bzvzC0JWDaTZZBl6kvNyhsDn-bqCt5x2iFjjA6hLJ61OFT&_nc_ohc=VLNbJ7mETNsAX-RQCp9&_nc_ht=scontent.fbkk4-4.fna&oh=03_AdRT4zTRawsSZg_XFa0FQCqrSvWwUhIAQiCh8J-EN_9knw&oe=651713C0)
+![](https://scontent.fbkk4-4.fna.fbcdn.net/v/t1.15752-9/327698238_913606733001601_7466354205277653364_n.png?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHrDDqU4tWqOzaG_-kc86aagjnCBXOG87-COcIFc4bzvzC0JWDaTZZBl6kvNyhsDn-bqCt5x2iFjjA6hLJ61OFT&_nc_ohc=yqY6gwXXRW4AX_GACRW&_nc_ht=scontent.fbkk4-4.fna&oh=03_AdSusMofq15LQjx05tWlL9ap7PkUlampbpqUd63EmovOqQ&oe=654F8C00)
 
 เนื่องจาก **Python**ไม่มีเนื้อหาเกี่ยวกับ **constructor** หรือการสร้าง **Object** เหมือนกับภาษาอื่น ๆ สามารถใช้ **class methods** ในการทำ **Named constructors**
 
@@ -283,7 +283,7 @@ point0 = MyClass.create_origin()
 ------------
 
 ## Kotlin
-![](https://scontent.fbkk4-2.fna.fbcdn.net/v/t1.15752-9/371073470_1471538273613032_6524486673642902331_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGwUIIwyDU7rrQ4tRrcouyqTYWz8FVQyPtNhbPwVVDI--2wu4_81pTdJWFXS_I8st0E5ObbteIIfD2ExwSppIvO&_nc_ohc=RnzHX7B5Yz0AX-2D8ka&_nc_ht=scontent.fbkk4-2.fna&oh=03_AdSydqEtED7w2j9WVrKbluSizCHoavuXARJcvGq27bro-g&oe=65172A90)
+![](https://scontent.fbkk4-2.fna.fbcdn.net/v/t1.15752-9/371073470_1471538273613032_6524486673642902331_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGwUIIwyDU7rrQ4tRrcouyqTYWz8FVQyPtNhbPwVVDI--2wu4_81pTdJWFXS_I8st0E5ObbteIIfD2ExwSppIvO&_nc_ohc=-zGRlMdBGB0AX_ZBPE5&_nc_ht=scontent.fbkk4-2.fna&oh=03_AdRf22fzchd5VBvBVBEC_9wxgq_85qzWP_FTXjXDZlTA1Q&oe=654FA2D0)
 
 ในภาษา **Kotlin**การใช้งาน **Named Constructors** มีลักษณะคล้ายกับภาษา **Dart**และภาษาอื่น ๆ ในแนวคิดที่เรียกว่า **"Static Factory Methods"** ที่ใช้สร้าง **Object** จากชื่อ Methobเฉพาะ แต่ Kotlin จะมีลักษณะเฉพาะของภาษาที่ทำให้ Named Constructors มีรูปแบบที่แตกต่าง:
 

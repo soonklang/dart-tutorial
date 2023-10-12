@@ -744,7 +744,7 @@ __คำอธิบายโค้ด__
 - [Inheritance Of Constructor.pptx](https://docs.google.com/presentation/d/1y8xHc8P-gVhJJkAmNzXFunSN065MxiJo/edit?usp=sharing&ouid=116662538381881581640&rtpof=true&sd=true)
 
 ## Link Video
-- 
+- [คลิกเพื่อดูวิดีโอ](https://youtu.be/z-5hnCX3f9I?feature=shared)
 
 ## Reference
 - https://dart-tutorial.com/object-oriented-programming/inheritance-of-constructor-in-dart<br>

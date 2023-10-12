@@ -421,3 +421,6 @@ ___
 ___
 ## **Video**
 [Stream in dart](https://youtu.be/kMgyhTy7xOM)
+___
+## **Slide**
+[Stream In dart](https://github.com/soonklang/dart-tutorial/files/12884695/stream.pdf)

@@ -565,6 +565,8 @@ https://pynative.com/python-static-method/
 
 ## link slide
 https://drive.google.com/file/d/1b0J7GtaVqo_XLeQQXRR_FAUAngCrCmru/view?usp=share_link
+## link slide version 2
+https://drive.google.com/file/d/1NoHucWR60NhUIh-J-Dmm0TJrigrNHoLe/view?usp=sharing
 
 ## link video 
 https://youtu.be/lK9A1bseCM4?feature=shared

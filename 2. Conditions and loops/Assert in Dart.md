@@ -179,7 +179,7 @@ print("Program continues after than assert")
 ## *< Link Video >*
 https://youtu.be/Ebv6g1nUe5A
 
-## *< Slide presentation >*
+## *< Slides >*
 [Assert in Dart.pptx](https://github.com/soonklang/dart-tutorial/files/12881415/Assert.in.Dart.pptx)
 
 [Assert in Dart.pdf](https://github.com/soonklang/dart-tutorial/files/12881291/Assert.in.Dart.pdf)

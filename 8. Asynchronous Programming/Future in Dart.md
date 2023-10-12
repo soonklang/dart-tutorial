@@ -515,3 +515,6 @@ https://docs.oracle.com/cd/E26502_01/html/E35303/tlib-1.html
 
 ## Video
 [Future in Dart](https://youtu.be/AB3Ft04H6e0?si=WBOllNT2BylqR1Qd)
+
+## Slide
+[Future in Dart](https://drive.google.com/file/d/1x5U_ROHOfKfRq3SQeNZ6SB6uHzXo-KnZ/view?usp=sharing)

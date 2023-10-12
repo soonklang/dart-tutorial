@@ -279,7 +279,7 @@ for number in numbers:
 https://youtu.be/_7Pun0i6BDQ
 
 ## **Slide** ##
-[For each loop in dart.pptx](https://github.com/zhunAkkarapong/forEachLoopInDart/blob/main/For%20Each%20Loop%20in%20dart.pptx)
+[For each loop in dart.pptx](https://github.com/zhunAkkarapong/forEachLoopInDart/raw/main/For%20Each%20Loop%20in%20dart.pptx)
 
 ## **อ้างอิง** ##
 https://dart-tutorial.com/conditions-and-loops/for-each-loop-in-dart/<br>

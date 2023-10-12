@@ -151,6 +151,9 @@ class Main {
   # Slides and Clip
 [Slides](https://github.com/soonklang/dart-tutorial/files/12774465/Introduction.to.Dart.pdf)
 
+[Slidesv.2](https://github.com/soonklang/dart-tutorial/files/12884462/Introduction-to-Dart.pdf)
+
+
 
 [Clip](https://youtu.be/yyQTLctgoV0)
 

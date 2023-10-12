@@ -436,6 +436,6 @@ https://www.educative.io/answers/how-to-use-the-dartmath-library
 https://api.dart.dev/stable/3.1.0/dart-math/dart-math-library.html
 
 # Clip
-[Math in dart.pptx](https://www.youtube.com/watch?v=4ZBEun5JGNw)
+https://www.youtube.com/watch?v=4ZBEun5JGNw
 # silde
-https://github.com/vanittripichaphan/630710335/raw/b79537470158d9cc1a2f3506f16bcafb90ef1c0a/Math%20in%20Dart.pptx
+[Math in dart.pptx](https://github.com/vanittripichaphan/630710335/raw/b79537470158d9cc1a2f3506f16bcafb90ef1c0a/Math%20in%20Dart.pptx?)

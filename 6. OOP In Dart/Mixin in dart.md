@@ -231,3 +231,5 @@ console.log(`Square area: ${square.area()}`);
 <br>
 # Video
 [Video](https://www.youtube.com/watch?v=it0O8oQBliQ)
+# Presentation
+[Presentation (3).pdf](https://github.com/soonklang/dart-tutorial/files/12883031/Presentation.3.pdf)

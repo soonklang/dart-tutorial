@@ -63,7 +63,7 @@ Cow : Moow!</code>
 </pre>
 </details>
 
-# Example 3: Polymorphism By Method Overriding In Dart
+# Example 2: Polymorphism By Method Overriding In Dart
 ในตัวอย่างนี้ด้านล่าง มีคลาสชื่อ Vehicle โดยมีเมธอดชื่อ run() วิธีการ run() ถูกแทนที่ในคลาสลูกชื่อ Bus
 
 ```
@@ -96,7 +96,7 @@ Bus is running</code>
 </pre>
 </details>
 
-# Example 4: Polymorphism By Method Overriding In Dart
+# Example 3: Polymorphism By Method Overriding In Dart
 ในตัวอย่างด้านล่างนี้ มีคลาสชื่อ Employee โดยมีเมธอดชื่อเงินเดือน() วิธีการเงินเดือน () ถูกแทนที่ในคลาสย่อยสองคลาสชื่อผู้จัดการและนักพัฒนา
 
 ```

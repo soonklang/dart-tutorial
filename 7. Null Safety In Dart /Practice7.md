@@ -153,6 +153,15 @@ Generated Status: 0  // return null จะถูกเปลี่ยนเป�
 
 </details>
 
+## Link Video
+
+https://youtu.be/Pi0YifTRdm8
+
+## file การนำเสนอ
+
+[Practice7 Null safety in dart.pdf](https://github.com/soonklang/dart-tutorial/files/12751557/Practice7.Null.safety.in.dart.pdf)
+
+
 ## References
 
 - https://dart.dev/codelabs/null-safety#:~:text=Null-aware%20operators,-If%20a%20variable&text=Sometimes%20the%20flow%20of%20the,this%20operator%20throws%20an%20exception.
@@ -164,14 +173,6 @@ Generated Status: 0  // return null จะถูกเปลี่ยนเป�
 - https://dartpad.dev/?
 
 - ChatGPT
-
-## Link Video
-
-https://youtu.be/Pi0YifTRdm8
-
-## file การนำเสนอ
-
-[Practice7 Null safety in dart.pdf](https://github.com/soonklang/dart-tutorial/files/12751557/Practice7.Null.safety.in.dart.pdf)
 
 
 ```bash

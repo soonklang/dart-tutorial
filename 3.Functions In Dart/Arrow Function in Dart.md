@@ -95,5 +95,6 @@ https://www.geeksforgeeks.org/javascript-ternary-operator/
 https://youtu.be/UVtbrH8uqWE
 ### *< slide >*
 https://docs.google.com/presentation/d/1jwt_gHkHa3OM4U3nYTxmdfcB9v8OviBx/edit#slide=id.p1
+
 [arrow functions.pdf](https://github.com/soonklang/dart-tutorial/files/12888915/arrow.functions.pptx.pdf)
 

@@ -1,7 +1,7 @@
 [![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210317130050/Dart-Tutorial.png)](https://dart.dev/language/constructors)
 
 
-# Named constructors in dart   🐦
+# Named constructors in dart   🐦 
 ____________________________
 
 

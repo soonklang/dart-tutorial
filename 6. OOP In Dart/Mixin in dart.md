@@ -235,3 +235,5 @@ console.log(`Square area: ${square.area()}`);
 [Presentation (3).pdf](https://github.com/soonklang/dart-tutorial/files/12883031/Presentation.3.pdf)
 <br>
 [Presentation](https://drive.google.com/file/d/1KMNvLZ7ZT0t9wGqp8vpKxqfp5VF5M5te/view?usp=drive_link)
+<br>
+[Presentation.pptx](https://github.com/soonklang/dart-tutorial/files/12889041/Presentation.pptx)

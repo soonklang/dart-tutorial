@@ -430,6 +430,9 @@ if __name__ == '__main__':
 
 # Slide
 - [Practice 8.pptx](https://github.com/soonklang/dart-tutorial/files/12769061/Practice.8.pptx)
+# Slide2
+- [Practice 8.pdf](https://github.com/soonklang/dart-tutorial/files/12889154/Practice.8.pdf)
+
 
 # Reference
 - https://dart.dev/codelabs/async-await

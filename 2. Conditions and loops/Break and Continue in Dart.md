@@ -297,7 +297,7 @@ for i in range(0, 5):
 4</pre>
 </details>
 
-## Clips
+## Clips And Slide
 Vdo link : https://youtu.be/U9qI0j3olEc?si=UyryZNU85180Wwa7
 
 Download slide here : [Break and Continue in Dart](https://github.com/Natthawut630/file/raw/main/BREAK%20AND%20CONTINUE%201.pptx)

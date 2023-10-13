@@ -676,7 +676,7 @@ https://youtu.be/M2g2VdWVMG4
 
 ## Slide
 
-[Practice6.pdf](https://github.com/soonklang/dart-tutorial/files/12793837/Present.Dart.pdf)
+[Practice6.pdf](https://github.com/soonklang/dart-tutorial/files/12890760/Present.Dart.pdf)
 
 ## Reference
 https://dart-tutorial.com/object-oriented-programming/<br>

@@ -10,7 +10,7 @@
  [ชนิดข้อมูล(5-8) (Data types)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/Datatypes%20in%20Dart%20(5-8).md)<br>
   [คอมเม้นต์ (Comments)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/Comments%20in%20Dart.md)<br>
   [ตัวดำเนินการ (Operators)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/Operators%20in%20Dart.md)<br>
-  คำสั่งรับข้อมูล (User Input)<br>
+  [คำสั่งรับข้อมูล (User Input)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/User%20Input%20in%20Dart.md)<br>
   [สตริง (String) start-ToUpperCase&LowerCase.md](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/String%20in%20Dart%20(start-ToUpperCase%26LowerCase).md)<br>
 
 ## แบบฝึกหัด

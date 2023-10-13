@@ -248,8 +248,8 @@ https://www.geeksforgeeks.org/python-super/
 
 ## Link Video & Slide
 
-Video[https://youtu.be/yBH5ggRjTfY]
+[Video](https://youtu.be/yBH5ggRjTfY)
 
-SlidePDF[https://drive.google.com/file/d/1i86EDA9wc1QV2CiRtW4gkQTmC18zeDm7/view?usp=sharing]
+Slide [PDF](https://drive.google.com/file/d/1i86EDA9wc1QV2CiRtW4gkQTmC18zeDm7/view?usp=sharing) [PowerPoint](https://docs.google.com/presentation/d/1cFvfXN0p57oSyobPVj6GEiaOk4tLrMUP/edit?usp=sharing&ouid=110310470817710773976&rtpof=true&sd=true)
 
-SlidePowerPoint[https://docs.google.com/presentation/d/1cFvfXN0p57oSyobPVj6GEiaOk4tLrMUP/edit?usp=sharing&ouid=110310470817710773976&rtpof=true&sd=true]
+

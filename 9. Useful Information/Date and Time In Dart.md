@@ -387,6 +387,7 @@ September 01, 2023 03:14:07 PM
 
 ## Slide
 [Date_and_Time](https://drive.google.com/file/d/1ErxLdy1oYK4Jlbzk4Jzs7HqbdJXhHL7y/view?usp=drivesdk)
+[DateandTime.pdf](https://github.com/soonklang/dart-tutorial/files/12889458/DateandTime.pdf)
 
 
 ## Video

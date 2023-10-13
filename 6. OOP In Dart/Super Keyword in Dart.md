@@ -249,3 +249,5 @@ https://www.geeksforgeeks.org/python-super/
 ## Link Video
 
 https://youtu.be/yBH5ggRjTfY
+
+https://docs.google.com/presentation/d/1Cl-ooiVU8GSu-AEbrqgK7HcOqiZueAbT/edit?usp=drive_link&ouid=110310470817710773976&rtpof=true&sd=true

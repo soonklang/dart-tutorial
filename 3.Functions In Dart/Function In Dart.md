@@ -215,5 +215,5 @@ https://www.techtarget.com/whatis/definition/lowerCamelCase
 ### *< Link Video >*
 https://youtu.be/9-FAwjsoHUw?si=rFaw5hTHAWpHs-62
 ### *< Slide File >*
-https://docs.google.com/presentation/d/15pxK-8pOmNnBGjLrU7XZJ7pcvtpkwH8x/edit?usp=drive_link&ouid=106611674930876215642&rtpof=true&sd=true
+https://drive.google.com/file/d/1z7Z68ziZlJOVFV5aB7ptdcvd0k_kzkVe/view?usp=drive_link
 

@@ -262,5 +262,5 @@ https://www.geeksforgeeks.org/classes-objects-java/
 [Video](https://youtu.be/4Ced4Cb2BHE)
 
 # Slide
-[link slide](https://github.com/Sxrxwxlxx/File-Dart/blob/main/Slide_Object_In_Dart.pdf?raw=true)
+[link slide](https://github.com/Sxrxwxlxx/File-Dart/blob/main/Slide_Object_In_Dart.pdf?raw=true)  
 [link download slide](https://github.com/Sxrxwxlxx/File-Dart/blob/main/Slide_Object_In_Dart.pdf?raw=true)

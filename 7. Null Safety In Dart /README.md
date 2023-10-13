@@ -5,7 +5,7 @@
 ## หัวข้อย่อย
 
  - [Null sefety in dart](https://github.com/soonklang/dart-tutorial/blob/main/7.%20Null%20Safety%20In%20Dart%20/Null%20Safety%20In%20Dart.md)
- - [List in Dart (replace-end)](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/List%20in%20Dart%20(replace-end).md)
+ - [Type Promotion](https://github.com/soonklang/dart-tutorial/blob/main/7.%20Null%20Safety%20In%20Dart%20/Type%20Promotion.md)
  - [Set in Dart](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Set%20In%20Dart.md)
  - [Map in Dart](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Map%20in%20Dart.md)
  - [Where in Dart](https://github.com/soonklang/dart-tutorial/blob/main/4.%20Collections%20In%20Dart/Where%20in%20Dart.md)

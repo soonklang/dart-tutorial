@@ -83,7 +83,7 @@ void main() {
     "john": 15,
   };
 
-  mathMarks.removeWhere((key, value) => value < 32); # ใช้ removeWhere เพื่อเอาสิ่งที่ไม่ต้องการออก ในทีนี้คือค่า value ที่น้อยกว่า 32 #
+  mathMarks.removeWhere((key, value) => value < 32);  //ใช้ removeWhere เพื่อเอาสิ่งที่ไม่ต้องการออก ในทีนี้คือค่า value ที่น้อยกว่า 32 
 
   print(mathMarks);
 }

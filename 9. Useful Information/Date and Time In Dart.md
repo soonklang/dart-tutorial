@@ -52,6 +52,8 @@ Output
 ## การแปลง String เป็น Datetime
 ในกรณีที่รับค่าเข้ามาเราไม่สามารถรับวัน เดือน และปีได้โดยตรง แต่ไม่สามารถดําเนินการคํานวณวันที่โดยใช้ String ได้ ดังนั้นเราต้องแปลง String เป็น DateTime ก่อน
 
+ใช้ methods `DateTime.parse()`
+
 Example
 ``` dart
 void main() {

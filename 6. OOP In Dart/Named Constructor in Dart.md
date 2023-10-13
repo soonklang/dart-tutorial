@@ -320,12 +320,10 @@ fun main() {
 ------------
 
 ## Slide
-[Named Constructor in dart pdf](https://github.com/yimsukananP/hello_flutter/blob/master/640710056%20Named%20Constructor%20in%20dart%20pdf.pdf "Named Constructor in dart pdf")
+## [PDF](https://github.com/soonklang/dart-tutorial/files/12888782/640710056.Named.Constructor.in.dart.pdf.pdf)
 ------------
 ## Presentation
 
-
-## [PDF New](https://github.com/soonklang/dart-tutorial/files/12888782/640710056.Named.Constructor.in.dart.pdf.pdf)
 
 ## [Power Point](https://github.com/soonklang/dart-tutorial/files/12888807/640710056.Named.Constructor.in.dart.pre.pptx)
 

@@ -719,5 +719,5 @@ assert(teamAssignments['Catcher'] != null);
 https://www.youtube.com/watch?v=jPbbMs8yCWs
 
 ## Slide
-- [Map in Dart.pdf](https://github.com/PraeJi/File/blob/main/Map%20in%20Dart.pdf)
-- [Map in Dart v2.pdf](https://github.com/PraeJi/File/blob/main/Map%20in%20Dart%20v2.pdf)
+- [Map in Dart.pdf](https://github.com/PraeJi/File/blob/main/Map%20in%20Dart.pdf?raw=true)
+- [Map in Dart v2.pdf](https://github.com/PraeJi/File/blob/main/Map%20in%20Dart%20v2.pdf?raw=true)

@@ -155,29 +155,31 @@ bmi.calculatorbmi()
 
 # Java
 ```java
-public class Bmi{
-  double weight;
-  double height;
-  double calbmi;
-  void calculatorbmi(){
-     calbmi = weight/(height/100 * height/100);
-    if(calbmi > 30){
-     System.out.println("น้ำหนักอยู่ในเกณฑ์ อ้วนมาก"); 
-    }else if(calbmi >= 25){
-      System.out.println("น้ำหนักอยู่ในเกณฑ์ อ้วน"); 
-    }else if(calbmi >=18.6){
-      System.out.println("น้ำหนักอยู่ในเกณฑ์ สมส่วน");
-    }else{
-      System.out.println("น้ำหนักอยู่ในเกณฑ์ ผอมเกินไป");
-    }
-  }
-  public static void main(String[] args) {
-  Bmi bmi = new Bmi(); 
-  bmi.weight = 80;
-  bmi.height = 180;
-  bmi.calculatorbmi();
+class BMI {
+        double weight;
+        double height;
+        double calbmi;
+        void calculatorbmi(){
+            calbmi = weight/((height/100) * (height/100));
+            if(calbmi > 30){
+                System.out.println("น้ำหนักอยู่ในเกณฑ์ อ้วนมาก");
+            }else if(calbmi >= 25){
+                System.out.println("น้ำหนักอยู่ในเกณฑ์ อ้วน");
+            }else if(calbmi >= 18.6){
+                System.out.println("น้ำหนักอยู่ในเกณฑ์ สมส่วน");
+            }else{
+                System.out.println("น้ำหนักอยู่ใน้เกณฑ์ ผอมเกินไป");    
+                }
+        }
 }
+class Main{
+    public static void main(String[] args){
+        BMI bmi = new BMI();
+        bmi.weight = 80;
+        bmi.height = 180;
+        bmi.calculatorbmi();
     }
+}
 
 ```
 <details>

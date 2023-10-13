@@ -193,6 +193,6 @@ https://www.geeksforgeeks.org/<br>
 [Video](https://www.youtube.com/watch?v=7nq2mcbd6xc)
 
 # Slide
-[Slide.pptx][https://github.com/630710849Montree/midterm630710849gg/blob/master/Slide.pptx.pdf?raw=true]<br>
-[SCSU-Slide-6.pdf][https://github.com/630710849Montree/midterm630710849gg/blob/master/SCSU-Slide-6.pdf.pdf?raw=true]<br>
+[Slide.pptx](https://github.com/630710849Montree/midterm630710849gg/blob/master/Slide.pptx.pdf?raw=true)<br>
+[SCSU-Slide-6.pdf](https://github.com/630710849Montree/midterm630710849gg/blob/master/SCSU-Slide-6.pdf.pdf?raw=true)<br>
 

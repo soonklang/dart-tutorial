@@ -193,7 +193,6 @@ https://www.geeksforgeeks.org/<br>
 [Video](https://www.youtube.com/watch?v=7nq2mcbd6xc)
 
 # Slide
-[Slide.pptx](https://github.com/soonklang/dart-tutorial/files/12888483/Slide.pptx)
-
-[SCSU-Slide-6.pdf](https://github.com/soonklang/dart-tutorial/files/12888484/SCSU-Slide-6.pdf)
+[Slide.pptx][https://github.com/630710849Montree/midterm630710849gg/blob/master/Slide.pptx]<br>
+[SCSU-Slide-6.pdf][https://github.com/630710849Montree/midterm630710849gg/blob/master/SCSU-Slide-6.pdf]<br>
 

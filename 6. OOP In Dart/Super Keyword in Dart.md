@@ -246,8 +246,10 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/base
 
 https://www.geeksforgeeks.org/python-super/
 
-## Link Video
+## Link Video & Slide
 
-https://youtu.be/yBH5ggRjTfY
+Video[https://youtu.be/yBH5ggRjTfY]
 
-https://docs.google.com/presentation/d/1Cl-ooiVU8GSu-AEbrqgK7HcOqiZueAbT/edit?usp=sharing&ouid=110310470817710773976&rtpof=true&sd=true
+SlidePDF[https://drive.google.com/file/d/1i86EDA9wc1QV2CiRtW4gkQTmC18zeDm7/view?usp=sharing]
+
+SlidePowerPoint[https://docs.google.com/presentation/d/1cFvfXN0p57oSyobPVj6GEiaOk4tLrMUP/edit?usp=sharing&ouid=110310470817710773976&rtpof=true&sd=true]

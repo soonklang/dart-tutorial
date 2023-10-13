@@ -194,5 +194,7 @@ https://www.geeksforgeeks.org/<br>
 
 # Slide
 
-[SCSU-Slide-6.pptx](https://github.com/soonklang/dart-tutorial/files/12825973/SCSU-Slide-6.pptx)
+
+[Slide.pptx](https://github.com/soonklang/dart-tutorial/files/12888483/Slide.pptx)
+[SCSU-Slide-6.pdf](https://github.com/soonklang/dart-tutorial/files/12888484/SCSU-Slide-6.pdf)
 

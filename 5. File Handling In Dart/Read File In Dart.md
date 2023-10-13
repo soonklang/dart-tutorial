@@ -578,7 +578,7 @@ https://www.javatpoint.com/how-to-read-csv-file-in-java<br>
 
 ## Slide
 [Read File In Dart.pdf](https://drive.google.com/file/d/1aToIgireZPNZWOCuhpNGwAi4lMeVsLiC/view?usp=sharing)<br>
-[Read File In Dart v2.pdf](https://github.com/tmwwtcrrt/slide/blob/main/Read-file-in-Dart-v2.pdf)<br>
+[Read File In Dart v2.pdf](https://github.com/tmwwtcrrt/slide/blob/main/Read-file-in-Dart-v2.pdf?raw=true)<br>
 
 ## Video
 https://www.youtube.com/watch?v=exkBzlr8bZ4<br>

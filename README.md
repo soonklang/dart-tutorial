@@ -15,7 +15,7 @@
   5. [File Handling In Dart](https://github.com/soonklang/dart-tutorial/tree/main/5.%20File%20Handling%20In%20Dart)<br>
 
 ### Advanced
-  6. [OOP In Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart/OOP%20In%20Dart.md)<br>
+  6. [OOP In Dart](https://github.com/soonklang/dart-tutorial/blob/main/6.%20OOP%20In%20Dart)<br>
   7. [Null Safety In Dart](https://github.com/soonklang/dart-tutorial/tree/main/7.%20Null%20Safety%20In%20Dart%20)<br>
   8. [Asynchronous Programming](https://github.com/soonklang/dart-tutorial/tree/main/8.%20Asynchronous%20Programming)<br>
   9. Useful Information

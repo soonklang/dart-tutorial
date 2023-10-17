@@ -132,6 +132,12 @@ class Main {
  }
 }
 ```
+# ความแตกต่างระหว่าง Dart กับ Flutter
+
+Dart เป็นภาษาโปรแกรมเชิงวัตถุที่ได้รับการปรับให้เหมาะสมสำหรับไคลเอนต์ เป็นที่นิยมในปัจจุบัน เป็นเรื่องยากที่จะสร้างแอปที่สมบูรณ์โดยใช้ Dart เท่านั้น
+
+Flutter เป็นเฟรมเวิร์กที่ใช้ภาษาการเขียนโปรแกรม dart ด้วยความช่วยเหลือของ flutter สามารถสร้างแอปสำหรับ Android, iOS, เว็บ, เดสก์ท็อป ฯลฯ 
+เฟรมเวิร์กประกอบด้วยเครื่องมือสำเร็จรูปเพื่อทำให้แอปเร็วขึ้น
 # Reference
   → https://dart-tutorial.com/introduction-and-basics/introduction-to-dart/
 
@@ -152,6 +158,9 @@ class Main {
 [Slides](https://github.com/soonklang/dart-tutorial/files/12774465/Introduction.to.Dart.pdf)
 
 [Slidesv.2](https://github.com/soonklang/dart-tutorial/files/12884462/Introduction-to-Dart.pdf)
+
+
+[Slidesv.3](https://github.com/soonklang/dart-tutorial/files/12929822/Introduction.to.Dart.pdf)
 
 
 

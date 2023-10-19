@@ -82,7 +82,7 @@ IP = "192.168.1.1"
 https://youtu.be/I_898-H7j8M
 ## Slide
 [Slide](https://drive.google.com/file/d/1Inl69lhhaHoY6VLmtwxIFx1xg56TVwCL/view?usp=drive_link)
-
+[Slide v2](https://drive.google.com/file/d/1ksDi5Ih-pXBOn_W7WYexMlphJXd2E242/view?usp=sharing)
 ## Reference
 [Dart Tutorial](https://dart-tutorial.com/useful-information/final-vs-const-in-dart/)
 [siriphonnot.medium.com](https://siriphonnot.medium.com/const-static-%E0%B9%81%E0%B8%A5%E0%B8%B0-final-%E0%B9%83%E0%B8%99-dart-%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-f5eceed6b982)

@@ -12,6 +12,7 @@
   [ตัวดำเนินการ (Operators)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/Operators%20in%20Dart.md)<br>
   [คำสั่งรับข้อมูล (User Input)](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/User%20Input%20in%20Dart.md)<br>
   [สตริง (String) start-ToUpperCase&LowerCase.md](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/String%20in%20Dart%20(start-ToUpperCase%26LowerCase).md)<br>
-  [สตริง (string) trim-en]
+  [สตริง (string) trim-end](https://github.com/soonklang/dart-tutorial/blob/main/1.%20Introduction%20and%20Basics/String%20in%20Dart%20(trim-end).md) <br>
+  
 ## แบบฝึกหัด
   [โจทย์คำถาม (Practice)](Practice1.md)

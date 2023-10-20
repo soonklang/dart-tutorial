@@ -13,7 +13,7 @@
 * [Do While Loop in Dart](https://github.com/soonklang/dart-tutorial/blob/main/2.%20Conditions%20and%20loops/Do%20While%20Loop%20in%20Dart.md)
 * [Break and Continue in Dart](https://github.com/soonklang/dart-tutorial/blob/main/2.%20Conditions%20and%20loops/Break%20and%20Continue%20in%20Dart.md)
 * [Exception Handling in Dart](https://github.com/soonklang/dart-tutorial/blob/main/2.%20Conditions%20and%20loops/Exception%20Handling%20in%20Dart.md)
-* [While loop in dart](https://github.com/soonklang/dart-tutorial/blob/main/2.%20Conditions%20and%20loops/While%20loop%20in%20dart.md)
+
 
 # แบบฝึกหัด
 * [Practice2](https://github.com/soonklang/dart-tutorial/blob/main/2.%20Conditions%20and%20loops/Practice%202.md)

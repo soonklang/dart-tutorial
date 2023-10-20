@@ -20,10 +20,7 @@
   8. [Asynchronous Programming](https://github.com/soonklang/dart-tutorial/tree/main/8.%20Asynchronous%20Programming)<br>
   9. [Useful Information](https://github.com/soonklang/dart-tutorial/tree/main/9.%20Useful%20Information)<br>
   10. [Dart How To](https://github.com/soonklang/dart-tutorial/tree/main/10.%20Dart%20How%20to)<br>
-  11. Dart Quiz
-
-ตัวอย่างการใส่ link
-1. [What is programming?](basics/what-is-programming.md)
+  11. [Dart Quiz](https://forms.microsoft.com/r/MzsXeeLLkt?origin=lprLink)<br>
 
 ## Authors
 

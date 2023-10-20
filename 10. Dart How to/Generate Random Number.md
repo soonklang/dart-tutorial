@@ -212,7 +212,7 @@ print(random.randint(0,99))
 
 ## Link Slide : 
 - [Generate_Random_Number_640710974.pdf](https://github.com/soonklang/dart-tutorial/files/13046312/Generate_Random_Number_640710974.pdf)
-- [Generate_Random_Number_640710974.pptx](https://github.com/soonklang/dart-tutorial/files/13046307/Generate_Random_Number_640710974.pptx)
+- [Generate_Random_Number_640710974.pptx](https://github.com/soonklang/dart-tutorial/files/13049391/Generate_Random_Number_640710974.pptx)
 
 Link Video : [Generate Random Number Video](https://youtu.be/F55rFfzL85Y)
 

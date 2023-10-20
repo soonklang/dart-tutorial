@@ -388,9 +388,8 @@ September 01, 2023 03:14:07 PM
 [Date and time in C](http://marcuscode.com/lang/c/date-and-time-formats)
 
 ## Slide
-[Date_and_Time](https://drive.google.com/file/d/1ErxLdy1oYK4Jlbzk4Jzs7HqbdJXhHL7y/view?usp=drivesdk)
-[DateandTime.pdf](https://github.com/soonklang/dart-tutorial/files/12889458/DateandTime.pdf)
 
+[DateAndTime.pdf](https://github.com/soonklang/dart-tutorial/files/13049000/DateAndTime.pdf)
 
 ## Video
 https://youtu.be/_TP8emNyrU8?si=Hi47ev2IP73jvfkd

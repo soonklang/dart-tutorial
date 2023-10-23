@@ -147,10 +147,7 @@ class Car {
 ```
 จากตัวอย่างด้านบน class ของภาษา Dart จะใกล้เคียงกับของภาษา Java แต่จะแตกต่างกับภาษา Python ตรงที่ dart จะใช้ **{ }** ด้านหลังชื่อของ class แต่ python จะใช้ **:** แทน
 
-### C
-เนื่องจาก C เป็นภาษา Procedural Programming ไม่ใช่ Object Oriented Programming (OOP) จึงไม่สามารถสร้าง class ได้
 
- 
 
  
 
@@ -167,5 +164,4 @@ https://youtu.be/JJe66ftuMK4<br>
 [Slide.pdf](https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pdf?raw=true)<br>
 [Slide.pptx](https://github.com/630710676/pl/blob/main/Class%20in%20Dart.pptx?raw=true)<br>
 [Slide_2.pdf](https://github.com/630710676/pl/blob/main/Class%20in%20Dart_.pdf?raw=true)<br>
-[Slide_2.pdf](https://github.com/630710676/pl/blob/main/Class%20in%20Dart_.pdf)<br>
 [Slide_2.pptx](https://github.com/630710676/pl/blob/main/Class%20in%20Dart_.pptx)<br>
